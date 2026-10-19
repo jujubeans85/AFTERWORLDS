@@ -1,0 +1,206 @@
+{
+  "datasetId": "physical-lifecycle-disclosures",
+  "id": "physical-lifecycle-disclosures",
+  "schemaVersion": "1.0",
+  "title": "The footprint boundary",
+  "conceptIds": [
+    "30-8"
+  ],
+  "metric": "Selected lifecycle and marginal-inference disclosures; separate accounting panels",
+  "unit": "mixed, row-specific",
+  "denominator": "Model lifecycle versus a 400-token Le Chat response; never a shared denominator",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "Mistral’s published lifecycle assessment summary.",
+  "geographyMode": "categorical",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Nongeographic observation",
+    "definition": "Company, category or global aggregate; not a geographic map.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2025-01",
+    "observationEnd": "2025-07-22 disclosure",
+    "publishedAt": "2025-07-22",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "mistral-lca",
+      "publisher": "Mistral AI",
+      "title": "Our contribution to a global environmental standard for AI",
+      "url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+      "locator": "Key findings; lifecycle; marginal inference; optional disclosure",
+      "version": "2025-07-22",
+      "publishedAt": "2025-07-22",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+        "attribution": "Mistral AI — Our contribution to a global environmental standard for AI",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "mistral-lca",
+    "publisher": "Mistral AI",
+    "title": "Our contribution to a global environmental standard for AI",
+    "url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+    "locator": "Key findings; lifecycle; marginal inference; optional disclosure",
+    "version": "2025-07-22",
+    "publishedAt": "2025-07-22",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+      "attribution": "Mistral AI — Our contribution to a global environmental standard for AI",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "mistralcarbon",
+      "entityId": "mistralcarbon",
+      "name": "Mistral Large 2 lifecycle disclosure",
+      "value": 20.4,
+      "unit": "kt CO2e",
+      "period": "2025-01",
+      "sourceId": "mistral-lca",
+      "sourceLocator": "Key findings: training and 18 months of use",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Reported accumulated boundary includes manufacturing; source wording combines training and usage context."
+    },
+    {
+      "id": "mistralwater",
+      "entityId": "mistralwater",
+      "name": "Mistral Large 2 lifecycle disclosure",
+      "value": 281000,
+      "unit": "m3 water",
+      "period": "2025-01",
+      "sourceId": "mistral-lca",
+      "sourceLocator": "Key findings: training and 18 months of use",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Not a per-country withdrawal or inference-only total."
+    },
+    {
+      "id": "lechatcarbon",
+      "entityId": "lechatcarbon",
+      "name": "Le Chat 400-token response",
+      "value": 1.14,
+      "unit": "g CO2e/response",
+      "period": "2025-07-22 disclosure",
+      "sourceId": "mistral-lca",
+      "sourceLocator": "Marginal inference impacts",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Excludes user terminals; marginal impact is a different boundary from accumulated lifecycle."
+    },
+    {
+      "id": "lechatwater",
+      "entityId": "lechatwater",
+      "name": "Le Chat 400-token response",
+      "value": 45,
+      "unit": "mL water/response",
+      "period": "2025-07-22 disclosure",
+      "sourceId": "mistral-lca",
+      "sourceLocator": "Marginal inference impacts",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Water inventory is not a site-specific local water-stress indicator."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Mistral’s published lifecycle assessment summary.",
+    "included": "4 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "No training-to-inference ratio or comparable time series is disclosed here. The source uses approximations for embodied GPU impacts. Do not compare these response numbers directly to another model without harmonizing response length, hardware, electricity and boundary.",
+  "limitations": [
+    "No training-to-inference ratio or comparable time series is disclosed here.",
+    "The source uses approximations for embodied GPU impacts.",
+    "Do not compare these response numbers directly to another model without harmonizing response length, hardware, electricity and boundary."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "mistralcarbon",
+      "mistralwater",
+      "lechatcarbon",
+      "lechatwater"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "Which lifecycle stages and denominators appear in published AI footprint disclosures?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

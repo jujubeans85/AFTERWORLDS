@@ -1,0 +1,232 @@
+{
+  "datasetId": "society-company-gdp",
+  "id": "society-company-gdp",
+  "title": "A company beside an economy",
+  "conceptIds": [
+    "369"
+  ],
+  "metric": "A company beside an economy",
+  "unit": "current USD",
+  "denominator": "Two unlike absolute annual flow measures; no shared output denominator",
+  "rows": [
+    {
+      "id": "microsoft-fy2025",
+      "entityId": "microsoft-fy2025",
+      "name": "Microsoft total revenue",
+      "value": 281724000000,
+      "unit": "current USD",
+      "period": "2024-07-01/2025-06-30",
+      "sourceId": "microsoft-fy2026",
+      "sourceLocator": "Twelve Months Ended June30, 2025 revenue281724 million",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Company total sales, not AI-only revenue, profit, value added or country GDP.",
+      "measureType": "corporate revenue"
+    },
+    {
+      "id": "microsoft-fy2026",
+      "entityId": "microsoft-fy2026",
+      "name": "Microsoft total revenue",
+      "value": 331839000000,
+      "unit": "current USD",
+      "period": "2025-07-01/2026-06-30",
+      "sourceId": "microsoft-fy2026",
+      "sourceLocator": "Twelve Months Ended June30, 2026 revenue331839 million",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Company total sales, not AI-only revenue or GDP. FY2026 is not calendar2026.",
+      "measureType": "corporate revenue"
+    },
+    {
+      "id": "gdp-GRC",
+      "entityId": "gdp-GRC",
+      "name": "Greece GDP",
+      "value": 280635521324.441,
+      "unit": "current USD",
+      "period": "2025-01-01/2025-12-31",
+      "sourceId": "wdi-gdp",
+      "sourceLocator": "NY.GDP.MKTP.CD/GRC/2025",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "GRC",
+      "lat": null,
+      "lon": null,
+      "notes": "National value added, not corporate sales. Calendar2025 overlaps but does not equal either Microsoft fiscal year.",
+      "measureType": "national GDP"
+    },
+    {
+      "id": "gdp-NZL",
+      "entityId": "gdp-NZL",
+      "name": "New Zealand GDP",
+      "value": 264057413739.965,
+      "unit": "current USD",
+      "period": "2025-01-01/2025-12-31",
+      "sourceId": "wdi-gdp",
+      "sourceLocator": "NY.GDP.MKTP.CD/NZL/2025",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "NZL",
+      "lat": null,
+      "lon": null,
+      "notes": "National value added, not corporate sales. Calendar2025 overlaps but does not equal either Microsoft fiscal year.",
+      "measureType": "national GDP"
+    },
+    {
+      "id": "gdp-FIN",
+      "entityId": "gdp-FIN",
+      "name": "Finland GDP",
+      "value": 317039368819.607,
+      "unit": "current USD",
+      "period": "2025-01-01/2025-12-31",
+      "sourceId": "wdi-gdp",
+      "sourceLocator": "NY.GDP.MKTP.CD/FIN/2025",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "FIN",
+      "lat": null,
+      "lon": null,
+      "notes": "National value added, not corporate sales. Calendar2025 overlaps but does not equal either Microsoft fiscal year.",
+      "measureType": "national GDP"
+    },
+    {
+      "id": "gdp-PRT",
+      "entityId": "gdp-PRT",
+      "name": "Portugal GDP",
+      "value": 346639825141.821,
+      "unit": "current USD",
+      "period": "2025-01-01/2025-12-31",
+      "sourceId": "wdi-gdp",
+      "sourceLocator": "NY.GDP.MKTP.CD/PRT/2025",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "PRT",
+      "lat": null,
+      "lon": null,
+      "notes": "National value added, not corporate sales. Calendar2025 overlaps but does not equal either Microsoft fiscal year.",
+      "measureType": "national GDP"
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "measureType": "corporate revenue or national GDP; never treat as equivalent"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "company periods and selected economies",
+    "definition": "No company is rendered as territorial ownership; country labels identify GDP only.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2024-07-01",
+    "observationEnd": "2026-06-30",
+    "publishedAt": "2026-07-29",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "microsoft-fy2026",
+      "publisher": "Microsoft Investor Relations",
+      "title": "Fiscal2026 fourth-quarter earnings release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+      "locator": "Twelve Months Ended June30: revenue, reported GAAP; FY2026 and FY2025 columns",
+      "version": "FY2025 and FY2026",
+      "publishedAt": "2026-07-29",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+        "attribution": "Microsoft Investor Relations; Fiscal2026 fourth-quarter earnings release",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "wdi-gdp",
+      "publisher": "World Bank / original WDI indicator provider",
+      "title": "GDP (current US$)",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000",
+      "locator": "NY.GDP.MKTP.CD API result; data[1] records indexed by countryiso3code/date",
+      "version": "API lastupdated2026-10-08",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "World Bank open datasets, CC BY4.0 with additional dataset terms",
+        "termsUrl": "https://datacatalog.worldbank.org/public-licenses#cc-by",
+        "attribution": "World Bank, World Development Indicators; original providers credited in indicator metadata.",
+        "verified": true,
+        "notes": "Metadata and country aggregation filters retained; World Bank does not endorse this transformation."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Two unlike absolute annual flow measures; no shared output denominator",
+    "included": "6 records: 6 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. Fiscal-year corporate revenue and calendar-year GDP have different periods and accounting definitions. Microsoft sells many non-AI products; no AI-only revenue claim. Four countries selected for scale illustration, not a global ranking.",
+  "limitations": [
+    "Fiscal-year corporate revenue and calendar-year GDP have different periods and accounting definitions.",
+    "Microsoft sells many non-AI products; no AI-only revenue claim.",
+    "Four countries selected for scale illustration, not a global ranking."
+  ],
+  "aiRelationship": "context",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+      "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "microsoft-fy2025",
+      "microsoft-fy2026",
+      "gdp-GRC",
+      "gdp-NZL",
+      "gdp-FIN",
+      "gdp-PRT"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

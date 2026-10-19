@@ -1,0 +1,257 @@
+{
+  "datasetId": "physical-energy-chokepoints",
+  "id": "physical-energy-chokepoints",
+  "schemaVersion": "1.0",
+  "title": "The sea routes beneath electricity and industry",
+  "conceptIds": [
+    "428"
+  ],
+  "metric": "Selected energy-transit bottleneck volumes",
+  "unit": "million barrels/day",
+  "denominator": "Oil and petroleum-product transit; overlapping routes, not additive world share",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Global energy supply-chain context relevant to industrial computation, not an AI supply-chain measurement.",
+  "geographyMode": "network",
+  "geography": {
+    "mode": "network",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2025-H1",
+    "observationEnd": "FY2025:2024-10-01/2025-09-30",
+    "publishedAt": "2026-03-03",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "eia26",
+      "publisher": "U.S. Energy Information Administration",
+      "title": "World Oil Transit Chokepoints",
+      "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+      "locator": "Tables1–7; oil-flow estimates; Panama fiscal-year note",
+      "version": "2026-03-03",
+      "publishedAt": "2026-03-03",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+        "attribution": "U.S. Energy Information Administration — World Oil Transit Chokepoints",
+        "verified": true,
+        "notes": "Limited factual totals restated from EIA public analysis; underlying Vortexa commercial tanker microdata and EIA charts are not copied or redistributed. No open licence to Vortexa data is asserted."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "eia26",
+    "publisher": "U.S. Energy Information Administration",
+    "title": "World Oil Transit Chokepoints",
+    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+    "locator": "Tables1–7; oil-flow estimates; Panama fiscal-year note",
+    "version": "2026-03-03",
+    "publishedAt": "2026-03-03",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+      "attribution": "U.S. Energy Information Administration — World Oil Transit Chokepoints",
+      "verified": true,
+      "notes": "Limited factual totals restated from EIA public analysis; underlying Vortexa commercial tanker microdata and EIA charts are not copied or redistributed. No open licence to Vortexa data is asserted."
+    }
+  },
+  "rows": [
+    {
+      "id": "malacca",
+      "entityId": "waterway:Malacca",
+      "name": "Strait of Malacca",
+      "value": 23.2,
+      "unit": "million barrels/day",
+      "period": "2025-H1",
+      "sourceId": "eia26",
+      "sourceLocator": "Table1/Table2",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "waterway:Malacca",
+      "lat": null,
+      "lon": null,
+      "notes": "Estimated oil transit; not chips or AI-attributed cargo."
+    },
+    {
+      "id": "hormuz",
+      "entityId": "waterway:Hormuz",
+      "name": "Strait of Hormuz",
+      "value": 20.9,
+      "unit": "million barrels/day",
+      "period": "2025-H1",
+      "sourceId": "eia26",
+      "sourceLocator": "Table1/Table3",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "waterway:Hormuz",
+      "lat": null,
+      "lon": null,
+      "notes": "Some cargo also crosses other passages; no global summation."
+    },
+    {
+      "id": "suez",
+      "entityId": "waterway:Suez-SUMED",
+      "name": "Suez Canal and SUMED pipeline",
+      "value": 4.9,
+      "unit": "million barrels/day",
+      "period": "2025-H1",
+      "sourceId": "eia26",
+      "sourceLocator": "Table1/Table4",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "waterway:Suez-SUMED",
+      "lat": null,
+      "lon": null,
+      "notes": "Combined canal and pipeline measure; not a single marine passage."
+    },
+    {
+      "id": "bab",
+      "entityId": "waterway:Bab-el-Mandeb",
+      "name": "Bab el-Mandeb",
+      "value": 4.2,
+      "unit": "million barrels/day",
+      "period": "2025-H1",
+      "sourceId": "eia26",
+      "sourceLocator": "Table1/Table4",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "waterway:Bab-el-Mandeb",
+      "lat": null,
+      "lon": null,
+      "notes": "Overlaps flows through other chokepoints."
+    },
+    {
+      "id": "danish",
+      "entityId": "waterway:Danish-Straits",
+      "name": "Danish Straits",
+      "value": 4.9,
+      "unit": "million barrels/day",
+      "period": "2025-H1",
+      "sourceId": "eia26",
+      "sourceLocator": "Table1/Table5",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "waterway:Danish-Straits",
+      "lat": null,
+      "lon": null,
+      "notes": "Excludes KielCanal."
+    },
+    {
+      "id": "turkish",
+      "entityId": "waterway:Turkish-Straits",
+      "name": "Turkish Straits",
+      "value": 3.7,
+      "unit": "million barrels/day",
+      "period": "2025-H1",
+      "sourceId": "eia26",
+      "sourceLocator": "Table1/TurkishStraits narrative",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "waterway:Turkish-Straits",
+      "lat": null,
+      "lon": null,
+      "notes": "Source regional choke-point total, not Bosporus-only value."
+    },
+    {
+      "id": "panama",
+      "entityId": "waterway:Panama",
+      "name": "Panama Canal",
+      "value": 2.3,
+      "unit": "million barrels/day",
+      "period": "FY2025:2024-10-01/2025-09-30",
+      "sourceId": "eia26",
+      "sourceLocator": "Table7",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "waterway:Panama",
+      "lat": null,
+      "lon": null,
+      "notes": "Fiscal-year timing differs from first-half calendar observations."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Global energy supply-chain context relevant to industrial computation, not an AI supply-chain measurement.",
+    "included": "7 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "No semiconductor shipping manifests or AI-specific cargo volumes. No probability of closure, interruption loss or causal AI effect quantified. Panama uses fiscal year; other rows use first half2025.",
+  "limitations": [
+    "No semiconductor shipping manifests or AI-specific cargo volumes.",
+    "No probability of closure, interruption loss or causal AI effect quantified.",
+    "Panama uses fiscal year; other rows use first half2025."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "malacca",
+      "hormuz",
+      "suez",
+      "bab",
+      "danish",
+      "turkish",
+      "panama"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "Which energy transit bottlenecks have documented flows, without inventing AI cargo shares?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

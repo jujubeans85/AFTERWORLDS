@@ -1,0 +1,4391 @@
+[
+  {
+    "conceptId": "430",
+    "sourceConceptId": "430",
+    "sourceUrl": "https://world-processor.com/430/",
+    "originalQuestion": "How much does AI's carbon cost change with where and when a computation runs?",
+    "proposedTitle": "The Carbon Clock",
+    "proposedQuestion": "How different were annual grid emission factors across one cloud provider’s regions?",
+    "sourceConnection": "Move from the global carbon budget to the timing and location of AI electricity demand.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-cloud-grid-carbon"
+    ],
+    "designId": "design-430",
+    "exactScope": "Annual2025 grid factors across44 GoogleCloud regions; no hourly AI-task footprint.",
+    "exactClaim": "Annual2025 grid factors across44 GoogleCloud regions; no hourly AI-task footprint.",
+    "rationale": "Annual regional variation is populated; timing and task-energy joins are unavailable.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "44 Google Cloud region entries, as published for2025.",
+      "sourceIds": [
+        "google-regions"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://cloud.google.com/sustainability/region-carbon",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Hourly carbon signals, measured workload energy and a schedulability/latency model needed to answer original time-of-day question."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/430/",
+    "claim": "Annual2025 grid factors across44 GoogleCloud regions; no hourly AI-task footprint.",
+    "reframeReason": "Annual regional variation is populated; timing and task-energy joins are unavailable.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Hourly carbon signals, measured workload energy and a schedulability/latency model needed to answer original time-of-day question.",
+      "Annual grid average is not hourly marginal emissions or a specific AI task footprint.",
+      "CFE includes attributed procurement; it is not identical to local grid carbon intensity.",
+      "No user-location-to-hosting flow or embodied hardware emissions are available.",
+      "Two Iowa cloud regions and other repeated grid values are distinct cloud regions, not independent grids."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-cloud-grid-carbon.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-cloud-grid-carbon": "1878fd571972c43918ef24a11e2ccee053f772dc68ece9f2afacb728d14922e1"
+      }
+    }
+  },
+  {
+    "conceptId": "428",
+    "sourceConceptId": "428",
+    "sourceUrl": "https://world-processor.com/428/",
+    "originalQuestion": "Which sea passages could interrupt the physical supply chain behind an apparently weightless AI service?",
+    "proposedTitle": "The Narrow Sea",
+    "proposedQuestion": "Which energy transit bottlenecks have documented flows, without inventing AI cargo shares?",
+    "sourceConnection": "Trace the shipping dependencies of chips, server equipment and energy supplies.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-energy-chokepoints"
+    ],
+    "designId": "design-428",
+    "exactScope": "Seven selected energy transit bottlenecks with source-defined periods.",
+    "exactClaim": "Seven selected energy transit bottlenecks with source-defined periods.",
+    "rationale": "Energy transport is documented; AI-specific chip/server manifests are not.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Global energy supply-chain context relevant to industrial computation, not an AI supply-chain measurement.",
+      "sourceIds": [
+        "eia26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "AI equipment routing and supplier-origin/destination manifests needed for original supply-chain interruption estimate."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/428/",
+    "claim": "Seven selected energy transit bottlenecks with source-defined periods.",
+    "reframeReason": "Energy transport is documented; AI-specific chip/server manifests are not.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "AI equipment routing and supplier-origin/destination manifests needed for original supply-chain interruption estimate.",
+      "No semiconductor shipping manifests or AI-specific cargo volumes.",
+      "No probability of closure, interruption loss or causal AI effect quantified.",
+      "Panama uses fiscal year; other rows use first half2025."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-energy-chokepoints.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-energy-chokepoints": "851768856b1d57846f0d544cf6b22f91afe0b43b8add558a97922cf94257b5fa"
+      }
+    }
+  },
+  {
+    "conceptId": "406",
+    "sourceConceptId": "406",
+    "sourceUrl": "https://world-processor.com/406/",
+    "originalQuestion": "Which climates make data-centre cooling easier, and where do heat and humidity complicate it?",
+    "proposedTitle": "The Cooling Belt",
+    "proposedQuestion": "Four Microsoft climate examples of evaporative-cooling operating time.",
+    "sourceConnection": "Study climate-sensitive cooling requirements while separating weather from actual facility performance.",
+    "verdict": "hold",
+    "proposedVerdict": "context-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-weather-cooling"
+    ],
+    "designId": "design-406",
+    "exactScope": "Four Microsoft climate examples of evaporative-cooling operating time.",
+    "exactClaim": "Four Microsoft climate examples of evaporative-cooling operating time.",
+    "rationale": "The observed claim is company-specific cooling behavior, not global climate efficiency.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Four company-reported climate examples; observation averaging period not specified.",
+      "sourceIds": [
+        "ms26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Humidity-specific effects and comparable facility designs not published."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "context-ready",
+    "originalSourceUrl": "https://world-processor.com/406/",
+    "claim": "Four Microsoft climate examples of evaporative-cooling operating time.",
+    "reframeReason": null,
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Humidity-specific effects and comparable facility designs not published.",
+      "Self-reported and not independently measured.",
+      "Not a map of all facilities; climate alone does not determine water demand.",
+      "No facility volumes, humidity effect size or cooling efficiency ranking is inferred."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-weather-cooling.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-weather-cooling": "8922a67469c023e2b420ee1212805812d77618246c80a56553c30d37312a3c5b"
+      }
+    }
+  },
+  {
+    "conceptId": "396",
+    "sourceConceptId": "396",
+    "sourceUrl": "https://world-processor.com/396/",
+    "originalQuestion": "Which publicly located data centres face coastal flooding, and under which scenario?",
+    "proposedTitle": "Servers at the Waterline",
+    "proposedQuestion": "No measured coastal exposure layer.",
+    "sourceConnection": "Overlay disclosed facility locations with explicit flood scenarios and elevation uncertainty.",
+    "verdict": "hold",
+    "proposedVerdict": "hold",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [],
+    "designId": "design-396",
+    "exactScope": "No measured coastal exposure layer.",
+    "exactClaim": "No measured coastal exposure layer.",
+    "rationale": "NOAA provides screening scenarios but a defensible facility-risk assessment requires elevation, tidal datum, defence and parcel joins.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "NOAA provides screening scenarios but a defensible facility-risk assessment requires elevation, tidal datum, defence and parcel joins.",
+      "sourceIds": []
+    },
+    "searchedSources": [
+      {
+        "url": "https://coast.noaa.gov/slr/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://coast.noaa.gov/data/digitalcoast/pdf/slr-faq.pdf",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.datacenters.google/locations/hamina-finland/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Verify facility parcels and AI scope; join local DEM and flood-defence data; select NOAA scenario/horizon/tidal reference; quantify vertical uncertainty; validate site-by-site inundation results."
+    ],
+    "blockingNextSteps": [
+      "Verify facility parcels and AI scope; join local DEM and flood-defence data; select NOAA scenario/horizon/tidal reference; quantify vertical uncertainty; validate site-by-site inundation results."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "hold",
+    "originalSourceUrl": "https://world-processor.com/396/",
+    "claim": "No measured coastal exposure layer.",
+    "reframeReason": null,
+    "partialEvidenceDatasetIds": [],
+    "blockers": [
+      "Verify facility parcels and AI scope; join local DEM and flood-defence data; select NOAA scenario/horizon/tidal reference; quantify vertical uncertainty; validate site-by-site inundation results.",
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Verify facility parcels and AI scope; join local DEM and flood-defence data; select NOAA scenario/horizon/tidal reference; quantify vertical uncertainty; validate site-by-site inundation results."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    }
+  },
+  {
+    "conceptId": "394",
+    "sourceConceptId": "394",
+    "sourceUrl": "https://world-processor.com/394/",
+    "originalQuestion": "Where is proposed AI infrastructure growing faster than the local grid can connect it?",
+    "proposedTitle": "The Compute Sprawl",
+    "proposedQuestion": "What documented grid-entry conditions accompany growing metered data-centre demand in Ireland?",
+    "sourceConnection": "Compare dated data-centre proposals, construction and grid-connection evidence.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-irish-electricity-series",
+      "physical-grid-connection-rules"
+    ],
+    "designId": "design-394",
+    "exactScope": "Irish2015–25 metered demand alongside dated2026 connection conditions.",
+    "exactClaim": "Irish2015–25 metered demand alongside dated2026 connection conditions.",
+    "rationale": "No global proposal-to-grid queue is available; national demand and actual entry rules form a defensible narrower view.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Annual Irish data-centre consumption2015–2025, revised2026 release. Documented grid-entry conditions in Ireland.",
+      "sourceIds": [
+        "cso25",
+        "eirgrid26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www-cloud.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Comparable proposed/connectedMW and connection dates needed to rank where projects outgrow grids."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/394/",
+    "claim": "Irish2015–25 metered demand alongside dated2026 connection conditions.",
+    "reframeReason": "No global proposal-to-grid queue is available; national demand and actual entry rules form a defensible narrower view.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Comparable proposed/connectedMW and connection dates needed to rank where projects outgrow grids.",
+      "Not AI-only; meter classification is inferred from business/consumption information.",
+      "Latest table says2026 publication in statistician statement but page masthead has a2025 typo; release index confirms7July2026.",
+      "Consumption trend does not quantify a grid queue or causally establish connection delays.",
+      "No global backlog, local proposedMW or project-level waiting time is measured.",
+      "A policy snapshot is not legal advice or a current eligibility determination."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-irish-electricity-series.json",
+            "research/datasets/physical-grid-connection-rules.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-irish-electricity-series": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e",
+        "physical-grid-connection-rules": "10ba6b71f0aaf33a171d8d568376672d6c98e73ffcc70f7efe282a659530c36c"
+      }
+    }
+  },
+  {
+    "conceptId": "386",
+    "sourceConceptId": "386",
+    "sourceUrl": "https://world-processor.com/386/",
+    "originalQuestion": "Which old trade corridors still carry the materials and equipment needed for advanced computation?",
+    "proposedTitle": "The New Silk Thread",
+    "proposedQuestion": "Which cross-border engineering roles are documented in an EUV lithography system?",
+    "sourceConnection": "Compare historical corridor logic with independently documented semiconductor supply chains.",
+    "verdict": "hold",
+    "proposedVerdict": "hold",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [],
+    "designId": "design-386",
+    "exactScope": "Documented EUV supplier roles are partial evidence, not historical corridor continuity.",
+    "exactClaim": "Documented EUV supplier roles are partial evidence, not historical corridor continuity.",
+    "rationale": "Modern cross-border manufacturing does not demonstrate continued use of a specific pre-rail trade route.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Advanced semiconductor manufacturing inputs; not exclusively AI chips.",
+      "sourceIds": [
+        "asml-euv"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.asml.com/en/company/about-asml",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Primary shipping manifests or route records with commodity codes, time window and documented historical corridor geometry; then reproducible spatial route comparison."
+    ],
+    "blockingNextSteps": [
+      "Primary shipping manifests or route records with commodity codes, time window and documented historical corridor geometry; then reproducible spatial route comparison."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "hold",
+    "originalSourceUrl": "https://world-processor.com/386/",
+    "claim": "Documented EUV supplier roles are partial evidence, not historical corridor continuity.",
+    "reframeReason": null,
+    "partialEvidenceDatasetIds": [
+      "physical-euv-dependencies"
+    ],
+    "blockers": [
+      "Primary shipping manifests or route records with commodity codes, time window and documented historical corridor geometry; then reproducible spatial route comparison.",
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Primary shipping manifests or route records with commodity codes, time window and documented historical corridor geometry; then reproducible spatial route comparison.",
+      "Historical engineering network, not a 2026 complete bill of materials.",
+      "Edges express a supplier relationship, not transport route, flow volume, national dependency score or old trade-route continuity."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    }
+  },
+  {
+    "conceptId": "382",
+    "sourceConceptId": "382",
+    "sourceUrl": "https://world-processor.com/382/",
+    "originalQuestion": "How much physical land does large-scale computation require, and what else competes for it?",
+    "proposedTitle": "The Land of Compute",
+    "proposedQuestion": "What is the difference between announced land area and floorspace for a large AI campus?",
+    "sourceConnection": "Compare verified facility footprints and land-use trade-offs with scale made explicit.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-announced-land"
+    ],
+    "designId": "design-382",
+    "exactScope": "Two different physical footprint definitions in the original2024 RichlandAI-campus announcement.",
+    "exactClaim": "Two different physical footprint definitions in the original2024 RichlandAI-campus announcement.",
+    "rationale": "One dated plan supports scale literacy; no present-day global land-use total is established.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "State-government disclosure of Meta’s AI-optimized campus.",
+      "sourceIds": [
+        "meta-land"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "2026 revised parcel boundary, actual built area and competing land-use evidence required for current impact comparison."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/382/",
+    "claim": "Two different physical footprint definitions in the original2024 RichlandAI-campus announcement.",
+    "reframeReason": "One dated plan supports scale literacy; no present-day global land-use total is established.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "2026 revised parcel boundary, actual built area and competing land-use evidence required for current impact comparison.",
+      "Historical2024 announcement; project expanded in2026 and this is not a current site-area estimate.",
+      "No parcel boundary, ecological displacement or quantified competing land use is inferred."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-announced-land.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-announced-land": "961fe8b274c3ae3f0afc036d89c76b84d77f2e88cef1ea966caeee223ca0f529"
+      }
+    }
+  },
+  {
+    "conceptId": "368",
+    "sourceConceptId": "368",
+    "sourceUrl": "https://world-processor.com/368/",
+    "originalQuestion": "Which advanced-compute transfers are restricted, from when, and under whose rules?",
+    "proposedTitle": "Chips Behind the Line",
+    "proposedQuestion": "What changed in one dated advanced-chip licence-review announcement, and what conditions remained?",
+    "sourceConnection": "Track dated advanced-chip controls and legal exceptions separately from military embargoes.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-chip-rule-events"
+    ],
+    "designId": "design-368",
+    "exactScope": "HistoricalJan2026 BIS announcement for two named advanced chips and one condition.",
+    "exactClaim": "HistoricalJan2026 BIS announcement for two named advanced chips and one condition.",
+    "rationale": "A dated event is verifiable; a global current binary embargo map would erase conditions and later changes.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Controls explicitly concern advanced computing semiconductors.",
+      "sourceIds": [
+        "bis26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Current codifiedEAR effective dates, end-user rules and each other jurisdiction needed before current compliance map."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/368/",
+    "claim": "HistoricalJan2026 BIS announcement for two named advanced chips and one condition.",
+    "reframeReason": "A dated event is verifiable; a global current binary embargo map would erase conditions and later changes.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Current codifiedEAR effective dates, end-user rules and each other jurisdiction needed before current compliance map.",
+      "Nonexhaustive event record, not a current global embargo map or compliance determination.",
+      "Announcement date differs from Federal Register effective date; do not infer effective date from this file.",
+      "Subsequent regulations, end-user restrictions, exceptions and other jurisdictions require separate review."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-chip-rule-events.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-chip-rule-events": "443ded25249b4ba4e34cbbcbf7053b04254777a44b8c392ec572e5be2de722ea"
+      }
+    }
+  },
+  {
+    "conceptId": "358",
+    "sourceConceptId": "358",
+    "sourceUrl": "https://world-processor.com/358/",
+    "originalQuestion": "Where have autonomous vessels completed independently documented voyages, and under what supervision?",
+    "proposedTitle": "The Uncrewed Crossing",
+    "proposedQuestion": "Which documented vessel milestones were uncrewed, and which retained people onboard?",
+    "sourceConnection": "Contrast verified autonomous-vessel trials with the continuing role of human oversight.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-autonomous-voyages"
+    ],
+    "designId": "design-358",
+    "exactScope": "Two project-reported autonomous-vessel milestones with onboard supervision made explicit.",
+    "exactClaim": "Two project-reported autonomous-vessel milestones with onboard supervision made explicit.",
+    "rationale": "Participant primary reports do not meet original independent-voyage-audit requirement.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Both projects explicitly describe autonomous ship control.",
+      "sourceIds": [
+        "ibm-mas",
+        "yara"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Independent regulator voyage logs and exact current supervision states would strengthen original claim."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/358/",
+    "claim": "Two project-reported autonomous-vessel milestones with onboard supervision made explicit.",
+    "reframeReason": "Participant primary reports do not meet original independent-voyage-audit requirement.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Independent regulator voyage logs and exact current supervision states would strengthen original claim.",
+      "Source participants have promotional interests; independent voyage audit not established.",
+      "Do not treat these records as accident rates, uninterrupted voyages, autonomy levels or 2026 operating status."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-autonomous-voyages.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-autonomous-voyages": "4925ebb060e855447392eb24cad9b06ff0d065ce1c77b4721c8f82b6c9cfca9e"
+      }
+    }
+  },
+  {
+    "conceptId": "331",
+    "sourceConceptId": "331",
+    "sourceUrl": "https://world-processor.com/331/",
+    "originalQuestion": "Where does additional computing demand produce measurable value, and how is that value counted?",
+    "proposedTitle": "Value per Watt",
+    "proposedQuestion": "Available observations measure resource cost, not economic/social value.",
+    "sourceConnection": "Examine AI-energy productivity using explicit boundaries rather than a single unsupported efficiency score.",
+    "verdict": "hold",
+    "proposedVerdict": "hold",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [],
+    "designId": "design-331",
+    "exactScope": "Available observations measure resource cost, not economic/social value.",
+    "exactClaim": "Available observations measure resource cost, not economic/social value.",
+    "rationale": "Per-prompt energy cannot establish value per watt, output quality or causal productivity.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Self-reported measurements and derived estimates for one provider/product.",
+      "sourceIds": [
+        "google-inference"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "A predeclared value metric; matched task quality/output; measured system energy; counterfactual non-AI baseline; representative task sample and uncertainty."
+    ],
+    "blockingNextSteps": [
+      "A predeclared value metric; matched task quality/output; measured system energy; counterfactual non-AI baseline; representative task sample and uncertainty."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "hold",
+    "originalSourceUrl": "https://world-processor.com/331/",
+    "claim": "Available observations measure resource cost, not economic/social value.",
+    "reframeReason": null,
+    "partialEvidenceDatasetIds": [
+      "physical-inference-boundaries"
+    ],
+    "blockers": [
+      "A predeclared value metric; matched task quality/output; measured system energy; counterfactual non-AI baseline; representative task sample and uncertainty.",
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "A predeclared value metric; matched task quality/output; measured system energy; counterfactual non-AI baseline; representative task sample and uncertainty.",
+      "Not independently verified by the publisher’s own footnote.",
+      "Not universal inference cost; no economic value, output quality or region-specific benefit measured.",
+      "Do not multiply by guessed global prompt counts or infer economy-wide rebound."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    }
+  },
+  {
+    "conceptId": "325",
+    "sourceConceptId": "325",
+    "sourceUrl": "https://world-processor.com/325/",
+    "originalQuestion": "Could AI-supported transport improve access where private car ownership is low?",
+    "proposedTitle": "Mobility Without Ownership",
+    "proposedQuestion": "What did a public autonomous-shuttle pilot reveal about use and unmet travel needs?",
+    "sourceConnection": "Evaluate accessible transport pilots and local needs without assuming private autonomy is the answer.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-public-shuttle-pilot"
+    ],
+    "designId": "design-325",
+    "exactScope": "Singapore pilot uptake, selected survey feedback and documented unmet routing needs.",
+    "exactClaim": "Singapore pilot uptake, selected survey feedback and documented unmet routing needs.",
+    "rationale": "Service evidence is populated; causal access gains in low-car-ownership settings are not measured.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Transport regulator reports pilot utilization and unmet convenience needs.",
+      "sourceIds": [
+        "lta-jul"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Pre/post accessibility travel-time distribution, disability outcomes, comparable nonusers and local car-ownership denominator needed."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/325/",
+    "claim": "Singapore pilot uptake, selected survey feedback and documented unmet routing needs.",
+    "reframeReason": "Service evidence is populated; causal access gains in low-car-ownership settings are not measured.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Pre/post accessibility travel-time distribution, disability outcomes, comparable nonusers and local car-ownership denominator needed.",
+      "No causal accessibility improvement, disability access result or low-car-ownership comparison measured.",
+      "Survey satisfaction is not a safety rate; around900 is not an exact sample size.",
+      "Not a world survey or evidence that private autonomy should replace transit."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-public-shuttle-pilot.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-public-shuttle-pilot": "a5c708eb4941e51de2acda2e95e3f0a0d26d1b854dbc3447432adea1d424077d"
+      }
+    }
+  },
+  {
+    "conceptId": "324",
+    "sourceConceptId": "324",
+    "sourceUrl": "https://world-processor.com/324/",
+    "originalQuestion": "How much purchasing power do large AI operators have over future electricity supply?",
+    "proposedTitle": "The Grid's New Customer",
+    "proposedQuestion": "Five announced corporate power-contract quantities with differing capacity types separated.",
+    "sourceConnection": "Examine disclosed power contracts and capacity commitments while distinguishing corporate and national accounts.",
+    "verdict": "hold",
+    "proposedVerdict": "context-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-power-contracts"
+    ],
+    "designId": "design-324",
+    "exactScope": "Five announced corporate power-contract quantities with differing capacity types separated.",
+    "exactClaim": "Five announced corporate power-contract quantities with differing capacity types separated.",
+    "rationale": "Contract commitments are directly recorded but are not electricity delivered or AI-only demand.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Five primary-source contract disclosures relevant to data-centre electricity.",
+      "sourceIds": [
+        "crane",
+        "talen",
+        "calvert",
+        "google-nuclear"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://ir.talenenergy.com/node/8676/html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.constellationenergy.com/news/2026/09/constellation-and-amazon-announce-20-year-power-purchase-agreement-at-calvert-cliffs.html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://investors.constellationenergy.com/node/10271/pdf",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "No exhaustive corporate or national comparison; completion dates remain plans."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "context-ready",
+    "originalSourceUrl": "https://world-processor.com/324/",
+    "claim": "Five announced corporate power-contract quantities with differing capacity types separated.",
+    "reframeReason": null,
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "No exhaustive corporate or national comparison; completion dates remain plans.",
+      "Contracts are not measured delivered electricity, AI load, generation output or global market share.",
+      "Do not sum capacities across differing contract types as net new supply.",
+      "Future dates are disclosed plans, not independently modelled forecasts; no probability of completion assigned."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-power-contracts.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-power-contracts": "84b8d4be8f8e6a8ffcc5ef34a1c69a37c50de4e27d161e82aa17d616b8b230b5"
+      }
+    }
+  },
+  {
+    "conceptId": "323",
+    "sourceConceptId": "323",
+    "sourceUrl": "https://world-processor.com/323/",
+    "originalQuestion": "Where does forecast computing demand intersect with existing fossil-fuel generation?",
+    "proposedTitle": "Old Fuel, New Demand",
+    "proposedQuestion": "Selected2024 physical fuel shares serving U.S./Chinese data centres.",
+    "sourceConnection": "Compare AI-related electricity projections with actual generation mixes and planned supply changes.",
+    "verdict": "hold",
+    "proposedVerdict": "context-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-electricity-fuels"
+    ],
+    "designId": "design-323",
+    "exactScope": "Selected2024 physical fuel shares serving U.S./Chinese data centres.",
+    "exactClaim": "Selected2024 physical fuel shares serving U.S./Chinese data centres.",
+    "rationale": "Historical physical mix is distinct from contractual renewable accounting and AI-only load.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Selected U.S. and Chinese supply mixes, not AI-specific generation.",
+      "sourceIds": [
+        "iea25s"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Compatible2026 regional physical-supply update and regional forecasts needed for current forecast-overlay claim."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "context-ready",
+    "originalSourceUrl": "https://world-processor.com/323/",
+    "claim": "Selected2024 physical fuel shares serving U.S./Chinese data centres.",
+    "reframeReason": null,
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Compatible2026 regional physical-supply update and regional forecasts needed for current forecast-overlay claim.",
+      "Rounded components need not total 100%. Unreported residual is unknown.",
+      "2024 baseline retained because 2026 update does not publish equivalent regional fuel shares.",
+      "This historical mix cannot locate a specific inference or establish its emissions."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-fuels.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-electricity-fuels": "441126d5e98790732d3e8d8b5b92605fa84c64cf3cfa0db2179007e57b88e878"
+      }
+    }
+  },
+  {
+    "conceptId": "321",
+    "sourceConceptId": "321",
+    "sourceUrl": "https://world-processor.com/321/",
+    "originalQuestion": "Could movable AI workloads follow low-carbon electricity without exceeding latency and grid constraints?",
+    "proposedTitle": "Follow the Sun",
+    "proposedQuestion": "Where has a provider documented delaying nonurgent computation to support its electricity system?",
+    "sourceConnection": "Test geographically flexible computing scenarios rather than assume all work can migrate.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-flexible-workloads"
+    ],
+    "designId": "design-321",
+    "exactScope": "Seven dated demand-response program locations for flexible computation.",
+    "exactClaim": "Seven dated demand-response program locations for flexible computation.",
+    "rationale": "Actual case records support delayed nonurgent tasks; cannot assume arbitrary AI inference migrates.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Company and utility quotations document flexible computation, not all AI inference.",
+      "sourceIds": [
+        "google-flex"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Dispatch-time workload and carbon telemetry plus latency/data-residency constraints needed for routing optimizer."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/321/",
+    "claim": "Seven dated demand-response program locations for flexible computation.",
+    "reframeReason": "Actual case records support delayed nonurgent tasks; cannot assume arbitrary AI inference migrates.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Dispatch-time workload and carbon telemetry plus latency/data-residency constraints needed for routing optimizer.",
+      "Historical programs, not proof of current live dispatch.",
+      "No latency, interregional transfer, avoided emissions or MWh measurements supplied.",
+      "This is a nonexhaustive case registry, not a feasible routing optimizer."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-flexible-workloads.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-flexible-workloads": "fee51b865252958da0bc30ef35059464a16dddd12ea988992e6e93a0b88aea02"
+      }
+    }
+  },
+  {
+    "conceptId": "314",
+    "sourceConceptId": "314",
+    "sourceUrl": "https://world-processor.com/314/",
+    "originalQuestion": "Where do AI infrastructure proposals overlap arid land, and which cooling claims can be verified?",
+    "proposedTitle": "Waterless Compute",
+    "proposedQuestion": "What exactly do disclosed zero-evaporation cooling designs promise, and what remains unmeasured?",
+    "sourceConnection": "Research aridity and disclosed cooling methods without equating every desert facility with high water use.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-zero-evaporation-design"
+    ],
+    "designId": "design-314",
+    "exactScope": "Two announcedAI-cooling pilot sites and a disclosed energy trade-off.",
+    "exactClaim": "Two announcedAI-cooling pilot sites and a disclosed energy trade-off.",
+    "rationale": "The design addresses evaporative cooling only and has not established a water-free lifecycle.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "AI-optimized cooling pilots named by Microsoft.",
+      "sourceIds": [
+        "ms24"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Commissioning confirmation, measured siteWUE/PUE, aridity boundary and upstream water accounting required."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/314/",
+    "claim": "Two announcedAI-cooling pilot sites and a disclosed energy trade-off.",
+    "reframeReason": "The design addresses evaporative cooling only and has not established a water-free lifecycle.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Commissioning confirmation, measured siteWUE/PUE, aridity boundary and upstream water accounting required.",
+      "No water-free lifecycle claim: electricity, manufacturing and non-cooling water are outside the design claim.",
+      "No completion claim is made for either pilot.",
+      "No aridity overlay or quantitative drought exposure has been calculated."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-zero-evaporation-design.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-zero-evaporation-design": "9a84ec6ef3f25b05ec216a5b0bca9e04e4e050e3104fa03e60dd1fb0d5c30d10"
+      }
+    }
+  },
+  {
+    "conceptId": "305",
+    "sourceConceptId": "305",
+    "sourceUrl": "https://world-processor.com/305/",
+    "originalQuestion": "How much of one country's AI capability depends on suppliers spread across other continents?",
+    "proposedTitle": "The Compute Continent",
+    "proposedQuestion": "Which cross-border engineering roles are documented in an EUV lithography system?",
+    "sourceConnection": "Trace documented semiconductor and compute dependencies as an economic rather than territorial footprint.",
+    "verdict": "hold",
+    "proposedVerdict": "context-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-euv-dependencies"
+    ],
+    "designId": "design-305",
+    "exactScope": "Three country roles in one documented semiconductor-equipment network.",
+    "exactClaim": "Three country roles in one documented semiconductor-equipment network.",
+    "rationale": "Concrete supplier roles show cross-border dependence without invented monetary weights.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Advanced semiconductor manufacturing inputs; not exclusively AI chips.",
+      "sourceIds": [
+        "asml-euv"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "No complete bill-of-materials, market share or2026 production-volume allocation."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "context-ready",
+    "originalSourceUrl": "https://world-processor.com/305/",
+    "claim": "Three country roles in one documented semiconductor-equipment network.",
+    "reframeReason": null,
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "No complete bill-of-materials, market share or2026 production-volume allocation.",
+      "Historical engineering network, not a 2026 complete bill of materials.",
+      "Edges express a supplier relationship, not transport route, flow volume, national dependency score or old trade-route continuity."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-euv-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-euv-dependencies": "fdc38112c680ced459d942333c6ed32bdc9c89a2d8c6bb19830e7b8228a6d88a"
+      }
+    }
+  },
+  {
+    "conceptId": "293",
+    "sourceConceptId": "293",
+    "sourceUrl": "https://world-processor.com/293/",
+    "originalQuestion": "Which regions bear computing emissions that serve users somewhere else?",
+    "proposedTitle": "The Carbon Shadow",
+    "proposedQuestion": "How different were annual grid emission factors across one cloud provider’s regions?",
+    "sourceConnection": "Compare production-based and consumption-based accounting for computing with attribution limits exposed.",
+    "verdict": "hold",
+    "proposedVerdict": "hold",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [],
+    "designId": "design-293",
+    "exactScope": "Hosting-region electricity factors are known; remote beneficiary emissions transfers are not.",
+    "exactClaim": "Hosting-region electricity factors are known; remote beneficiary emissions transfers are not.",
+    "rationale": "A location intensity map cannot identify where users live or allocate their consumption-based footprint.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "44 Google Cloud region entries, as published for2025.",
+      "sourceIds": [
+        "google-regions"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://cloud.google.com/sustainability/region-carbon",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://docs.cloud.google.com/carbon-footprint/docs/view-carbon-data",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://cloud.google.com/blog/topics/sustainability/sharing-carbon-free-energy-percentage-for-google-cloud-regions",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Provider host-region×user-region workload matrix; measured energy allocation; embodied/network boundaries; privacy-preserving aggregation; reconciliation to production inventory."
+    ],
+    "blockingNextSteps": [
+      "Provider host-region×user-region workload matrix; measured energy allocation; embodied/network boundaries; privacy-preserving aggregation; reconciliation to production inventory."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "hold",
+    "originalSourceUrl": "https://world-processor.com/293/",
+    "claim": "Hosting-region electricity factors are known; remote beneficiary emissions transfers are not.",
+    "reframeReason": null,
+    "partialEvidenceDatasetIds": [
+      "physical-cloud-grid-carbon"
+    ],
+    "blockers": [
+      "Provider host-region×user-region workload matrix; measured energy allocation; embodied/network boundaries; privacy-preserving aggregation; reconciliation to production inventory.",
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Provider host-region×user-region workload matrix; measured energy allocation; embodied/network boundaries; privacy-preserving aggregation; reconciliation to production inventory.",
+      "Annual grid average is not hourly marginal emissions or a specific AI task footprint.",
+      "CFE includes attributed procurement; it is not identical to local grid carbon intensity.",
+      "No user-location-to-hosting flow or embodied hardware emissions are available.",
+      "Two Iowa cloud regions and other repeated grid values are distinct cloud regions, not independent grids."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    }
+  },
+  {
+    "conceptId": "266-2",
+    "sourceConceptId": "266-2",
+    "sourceUrl": "https://world-processor.com/2662-one-taiwan-policy-2018/",
+    "originalQuestion": "Which documented semiconductor production stages make Taiwan central to advanced AI supply chains?",
+    "proposedTitle": "One Island, Many Dependencies",
+    "proposedQuestion": "Four dated manufacturing milestones and separately displayed global revenue mix.",
+    "sourceConnection": "Shift from contested naming to verifiable manufacturing dependencies without treating sovereignty as settled by the map.",
+    "verdict": "hold",
+    "proposedVerdict": "context-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-tsmc-manufacturing"
+    ],
+    "designId": "design-266-2",
+    "exactScope": "Four dated manufacturing milestones and separately displayed global revenue mix.",
+    "exactClaim": "Four dated manufacturing milestones and separately displayed global revenue mix.",
+    "rationale": "Report verifies Taiwan process expansion alongside overseas differences; no national share inferred.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Foundry production relevant to AI supply chains but includes many non-AI products.",
+      "sourceIds": [
+        "tsmc25"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "AI-specific wafers and advanced-packaging site volumes absent."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "context-ready",
+    "originalSourceUrl": "https://world-processor.com/2662-one-taiwan-policy-2018/",
+    "claim": "Four dated manufacturing milestones and separately displayed global revenue mix.",
+    "reframeReason": null,
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "AI-specific wafers and advanced-packaging site volumes absent.",
+      "No national market share or AI-specific wafer allocation inferred.",
+      "Technology nodes, packaging and output capacity are distinct; not interchangeable units.",
+      "2025 company report is the latest audited annual period reviewed."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-tsmc-manufacturing.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-tsmc-manufacturing": "b4bb5a4b57428cd397676cd750ac70c1e02ac8d0f70dd0579ca41b549e590ef3"
+      }
+    }
+  },
+  {
+    "conceptId": "255",
+    "sourceConceptId": "255",
+    "sourceUrl": "https://world-processor.com/255/",
+    "originalQuestion": "Where does computing demand share stressed water systems with communities lacking reliable drinking water?",
+    "proposedTitle": "Whose Water First?",
+    "proposedQuestion": "At selected compute locations, what portion of water comes from disclosed alternative sources?",
+    "sourceConnection": "Compare local water catchments and disclosed facility use rather than infer conflict from national averages.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-water-source-substitution"
+    ],
+    "designId": "design-255",
+    "exactScope": "Three alternative-water supply percentages from one provider.",
+    "exactClaim": "Three alternative-water supply percentages from one provider.",
+    "rationale": "Water sourcing can be shown; no local household deprivation or causal water competition established.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Three selected corporate disclosures about water sourcing.",
+      "sourceIds": [
+        "ms26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Facility withdrawals by season/source joined to catchments, municipal drinking-water reliability and competing allocations needed."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/255/",
+    "claim": "Three alternative-water supply percentages from one provider.",
+    "reframeReason": "Water sourcing can be shown; no local household deprivation or causal water competition established.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Facility withdrawals by season/source joined to catchments, municipal drinking-water reliability and competing allocations needed.",
+      "Does not establish drinking-water deprivation, catchment stress, additionality or causal competition.",
+      "No total local water volumes or comparable municipal baseline supplied."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-water-source-substitution.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-water-source-substitution": "a17447025e25b1cddda1a9ba99977dcf958f032b87ba641abc35eab236b9f1b1"
+      }
+    }
+  },
+  {
+    "conceptId": "233-2",
+    "sourceConceptId": "233-2",
+    "sourceUrl": "https://world-processor.com/233/",
+    "originalQuestion": "Where do AI weather forecasts outperform baselines for extreme rainfall, and where are gauges too sparse to know?",
+    "proposedTitle": "Rain Before It Falls",
+    "proposedQuestion": "How widely did one machine-learning correction improve a specific precipitation benchmark?",
+    "sourceConnection": "Compare out-of-sample extreme-rainfall skill and observing coverage region by region.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-rainfall-benchmark"
+    ],
+    "designId": "design-233-2",
+    "exactScope": "Two global aggregate machine-learning precipitation benchmark results.",
+    "exactClaim": "Two global aggregate machine-learning precipitation benchmark results.",
+    "rationale": "Current peer-reviewed benchmark is directAI evidence; no unlicensed gridded forecast asset or guessed country skill map.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Peer-reviewed machine-learning postprocessing benchmark, published14Oct2026.",
+      "sourceIds": [
+        "pbc"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.nature.com/articles/s41586-026-11126-x",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-023-06184-4",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.nature.com/articles/s43247-025-02823-y",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Evaluation skill raster plus gauge-density/uncertainty join required to answer where observational coverage fails."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/233/",
+    "claim": "Two global aggregate machine-learning precipitation benchmark results.",
+    "reframeReason": "Current peer-reviewed benchmark is directAI evidence; no unlicensed gridded forecast asset or guessed country skill map.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Evaluation skill raster plus gauge-density/uncertainty join required to answer where observational coverage fails.",
+      "No local skill raster is packaged; these are global aggregate findings.",
+      "Skill-gain coverage is not rainfall probability, skill magnitude or fraction of correctly forecast events.",
+      "ERA5 is reanalysis, not direct gauge truth everywhere; this dataset cannot identify gauge-sparse countries.",
+      "No source figures or model output assets copied; no live weather forecast generated."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-rainfall-benchmark.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-rainfall-benchmark": "a79a1146b3147d27b53e4eb8d1c45b9c99fd487f60483e2f6f7e7e669e43f668"
+      }
+    }
+  },
+  {
+    "conceptId": "217",
+    "sourceConceptId": "217",
+    "sourceUrl": "https://world-processor.com/217/",
+    "originalQuestion": "Could efficiency gains be overwhelmed by growth in total AI use?",
+    "proposedTitle": "The Inference Traffic Jam",
+    "proposedQuestion": "Separate per-prompt efficiency and aggregate data-centre/AI-focused growth facts.",
+    "sourceConnection": "Investigate total inference demand and rebound scenarios with assumptions shown explicitly.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-inference-boundaries",
+      "physical-electricity-demand"
+    ],
+    "designId": "design-217",
+    "exactScope": "Separate per-prompt efficiency and aggregate data-centre/AI-focused growth facts.",
+    "exactClaim": "Separate per-prompt efficiency and aggregate data-centre/AI-focused growth facts.",
+    "rationale": "These coexist but have different populations; causal rebound is not established.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Self-reported measurements and derived estimates for one provider/product. IEA estimates of data-centre electricity; direct AI subset is only the growth row.",
+      "sourceIds": [
+        "google-inference",
+        "iea26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Matched model/service time series of requests, token/task composition and total energy needed for causal or quantitative rebound estimation."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/217/",
+    "claim": "Separate per-prompt efficiency and aggregate data-centre/AI-focused growth facts.",
+    "reframeReason": "These coexist but have different populations; causal rebound is not established.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Matched model/service time series of requests, token/task composition and total energy needed for causal or quantitative rebound estimation.",
+      "Not independently verified by the publisher’s own footnote.",
+      "Not universal inference cost; no economic value, output quality or region-specific benefit measured.",
+      "Do not multiply by guessed global prompt counts or infer economy-wide rebound.",
+      "AI electricity level and share are not provided by these three records.",
+      "Growth rates have distinct denominators and must not be subtracted or displayed as a stack."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-inference-boundaries.json",
+            "research/datasets/physical-electricity-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-inference-boundaries": "76f36914d69f666af3acc69d9706aa2e7ee155574e4a30fc8598e9e7b618c1c0",
+        "physical-electricity-demand": "aa577c85b31ea2d9747940563928a6f51ae9ae56aea23eddc39314b988b99589"
+      }
+    }
+  },
+  {
+    "conceptId": "214",
+    "sourceConceptId": "214",
+    "sourceUrl": "https://world-processor.com/214/",
+    "originalQuestion": "Which countries manufacture AI-enabled robots, and which mainly import finished systems?",
+    "proposedTitle": "Where Robots Are Made",
+    "proposedQuestion": "How do production, domestic shipments and exports differ in one robotics manufacturing economy?",
+    "sourceConnection": "Compare verified robotics production and imports with clear definitions of AI-enabled capability.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-japan-robot-production"
+    ],
+    "designId": "design-214",
+    "exactScope": "Japanese robot production and shipment definitions,2024–25.",
+    "exactClaim": "Japanese robot production and shipment definitions,2024–25.",
+    "rationale": "Robotics production is real enabling context; source does not classifyAI capability or global imports.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Industrial robot manufacture as enabling context; machine-learning capability not classified.",
+      "sourceIds": [
+        "jara25"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "HarmonizedAI-enabled definition, country manufacturing/import records and origin tracing needed for original global claim."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/214/",
+    "claim": "Japanese robot production and shipment definitions,2024–25.",
+    "reframeReason": "Robotics production is real enabling context; source does not classifyAI capability or global imports.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "HarmonizedAI-enabled definition, country manufacturing/import records and origin tracing needed for original global claim.",
+      "Not a count of AI-enabled robots; no global manufacturing ranking.",
+      "Stocks, installations, production and shipments are distinct quantities.",
+      "Production differs from shipments because of inventory and scope timing."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-japan-robot-production.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-japan-robot-production": "7a87d41ac5bd2f097e433640824f262cd509d383539b8fdb52ad5bf6bab68710"
+      }
+    }
+  },
+  {
+    "conceptId": "211-4",
+    "sourceConceptId": "211-4",
+    "sourceUrl": "https://world-processor.com/2114-bad-carma-2005/",
+    "originalQuestion": "Where do automated-driving systems work reliably, and where do roads and conditions expose their limits?",
+    "proposedTitle": "Autonomy's Uneven Road",
+    "proposedQuestion": "How do reported injury crash rates compare within one provider’s operating domains?",
+    "sourceConnection": "Compare documented operational domains and safety evidence rather than country-level automation promises.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-waymo-injury-rates"
+    ],
+    "designId": "design-211-4",
+    "exactScope": "CorrectedOct2,2026 providerCSV injury-involvement rates for five service areas with95%CIs.",
+    "exactClaim": "CorrectedOct2,2026 providerCSV injury-involvement rates for five service areas with95%CIs.",
+    "rationale": "Source supports operating-domain comparisons, not universal autonomous-driving safety rankings.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Selected autonomous-driving safety evidence within operational domains.",
+      "sourceIds": [
+        "waymo-csv",
+        "waymo-notes",
+        "waymo26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/CSV3%20-%20Collision%20Counts%20and%20Comparison%20to%20Benchmarks%20202009-202606-2022benchmark.csv",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/Waymo_Safety_Impact_Data_Hub_Release_Notes_20261002.pdf",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.waymo.com/safety/impact/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Independent crash reconciliation and conditions outside current domains remain limitations."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/2114-bad-carma-2005/",
+    "claim": "CorrectedOct2,2026 providerCSV injury-involvement rates for five service areas with95%CIs.",
+    "reframeReason": "Source supports operating-domain comparisons, not universal autonomous-driving safety rankings.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Independent crash reconciliation and conditions outside current domains remain limitations.",
+      "Current linked CSV values differ from some dashboard HTML point estimates; use this Oct2 corrected CSV consistently.",
+      "95% source Poisson intervals are preserved; estimates are observational, provider-reported and geographically weighted.",
+      "2022 human benchmark is not contemporaneous with all Waymo exposure; 32% injury underreporting correction is source applied.",
+      "Cannot generalize to other systems, all roads or snow; source notes residual time-of-day confounding."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-injury-rates.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-waymo-injury-rates": "be61f9a7db28fc250a6bff215e24612609d90edd5bff473aa4d6287438bcee34"
+      }
+    }
+  },
+  {
+    "conceptId": "202",
+    "sourceConceptId": "202",
+    "sourceUrl": "https://world-processor.com/202/",
+    "originalQuestion": "How many vehicles have deployed perception systems, and what distinguishes assistance from autonomy?",
+    "proposedTitle": "Cars With Eyes",
+    "proposedQuestion": "Where has one autonomous ride-hailing provider accumulated documented driverless operating exposure?",
+    "sourceConnection": "Count documented driver-assistance and autonomous systems separately with operational definitions.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-waymo-exposure"
+    ],
+    "designId": "design-202",
+    "exactScope": "Five provider operating regions and cumulative rider-only miles throughJune2026.",
+    "exactClaim": "Five provider operating regions and cumulative rider-only miles throughJune2026.",
+    "rationale": "Exposure proves deployments distinct from driver assistance but does not count vehicles.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "One provider’s deployment exposure; unlike assisted driving, no human driver is onboard.",
+      "sourceIds": [
+        "waymo26"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.waymo.com/safety/impact/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Comparable fleet counts, system capabilities, geography and active service dates needed for global perceived-vehicle stock."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/202/",
+    "claim": "Five provider operating regions and cumulative rider-only miles throughJune2026.",
+    "reframeReason": "Exposure proves deployments distinct from driver assistance but does not count vehicles.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Comparable fleet counts, system capabilities, geography and active service dates needed for global perceived-vehicle stock.",
+      "Not a count of vehicles or perception systems.",
+      "Named city areas are provider domains, not entire administrative boundaries.",
+      "Rounded city totals differ from rounded headline total."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waymo-exposure.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-waymo-exposure": "f626a788aaaa1e2c0435faa5e659263daea3524afcb4bf3c079e9905a3b66896"
+      }
+    }
+  },
+  {
+    "conceptId": "30-8",
+    "sourceConceptId": "30-8",
+    "sourceUrl": "https://world-processor.com/030/",
+    "originalQuestion": "How is the balance between model training and everyday inference changing over time?",
+    "proposedTitle": "The Inference Spiral",
+    "proposedQuestion": "Which lifecycle stages and denominators appear in published AI footprint disclosures?",
+    "sourceConnection": "Plot dated lifecycle estimates without treating training figures as the whole AI footprint.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-lifecycle-disclosures"
+    ],
+    "designId": "design-30-8",
+    "exactScope": "Disclosed lifecycle totals versus marginal400-token inference impacts, separate panels.",
+    "exactClaim": "Disclosed lifecycle totals versus marginal400-token inference impacts, separate panels.",
+    "rationale": "No training/inference ratio or comparable changing balance can be derived from source summary.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Mistral’s published lifecycle assessment summary.",
+      "sourceIds": [
+        "mistral-lca"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Separate training and inference totals for same model, region, lifecycle boundary and repeated periods."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/030/",
+    "claim": "Disclosed lifecycle totals versus marginal400-token inference impacts, separate panels.",
+    "reframeReason": "No training/inference ratio or comparable changing balance can be derived from source summary.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Separate training and inference totals for same model, region, lifecycle boundary and repeated periods.",
+      "No training-to-inference ratio or comparable time series is disclosed here.",
+      "The source uses approximations for embodied GPU impacts.",
+      "Do not compare these response numbers directly to another model without harmonizing response length, hardware, electricity and boundary."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-lifecycle-disclosures.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-lifecycle-disclosures": "b32efbe19a838c80d6f1274aeee14d65fac7e770c7e014dffe794fb6d1e27831"
+      }
+    }
+  },
+  {
+    "conceptId": "41-4",
+    "sourceConceptId": "41-4",
+    "sourceUrl": "https://world-processor.com/041/",
+    "originalQuestion": "Which new lights reveal computing infrastructure, and which tell a completely different human story?",
+    "proposedTitle": "Night of the Machines",
+    "proposedQuestion": "Nightlights are observable; compute attribution has not been validated.",
+    "sourceConnection": "Test satellite-light proxies against verified facilities instead of treating brightness as AI capacity.",
+    "verdict": "hold",
+    "proposedVerdict": "hold",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [],
+    "designId": "design-41-4",
+    "exactScope": "Nightlights are observable; compute attribution has not been validated.",
+    "exactClaim": "Nightlights are observable; compute attribution has not been validated.",
+    "rationale": "NASA500m radiance is affected by human lighting, viewing geometry and environmental correction; brighter pixels cannot identifyAI capacity.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "NASA500m radiance is affected by human lighting, viewing geometry and environmental correction; brighter pixels cannot identifyAI capacity.",
+      "sourceIds": []
+    },
+    "searchedSources": [
+      {
+        "url": "https://viirsland.gsfc.nasa.gov/Products/NASA/BlackMarble.html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://viirsland.gsfc.nasa.gov/Val/BM_Val.html",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://science.data.nasa.gov/disasters/data-gallery/black-marble-hd",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Acquire quality-screenedVNP46A2 time series, verified facility commissioning/land boundaries and matched noncompute controls; validate predictive performance and confounders beforeAI attribution."
+    ],
+    "blockingNextSteps": [
+      "Acquire quality-screenedVNP46A2 time series, verified facility commissioning/land boundaries and matched noncompute controls; validate predictive performance and confounders beforeAI attribution."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "hold",
+    "originalSourceUrl": "https://world-processor.com/041/",
+    "claim": "Nightlights are observable; compute attribution has not been validated.",
+    "reframeReason": null,
+    "partialEvidenceDatasetIds": [],
+    "blockers": [
+      "Acquire quality-screenedVNP46A2 time series, verified facility commissioning/land boundaries and matched noncompute controls; validate predictive performance and confounders beforeAI attribution.",
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Acquire quality-screenedVNP46A2 time series, verified facility commissioning/land boundaries and matched noncompute controls; validate predictive performance and confounders beforeAI attribution."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/sources/physical-hold-investigations.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    }
+  },
+  {
+    "conceptId": "56-5",
+    "sourceConceptId": "56-5",
+    "sourceUrl": "https://world-processor.com/56-5/",
+    "originalQuestion": "What fraction of electricity demand is attributable to data centres, and how much is demonstrably AI?",
+    "proposedTitle": "The Growing Slice",
+    "proposedQuestion": "Global2025 demand/growth and a separate national metered-share timeseries.",
+    "sourceConnection": "Separate measured data-centre demand, AI estimates and future projections with compatible units.",
+    "verdict": "hold",
+    "proposedVerdict": "context-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-electricity-demand",
+      "physical-irish-electricity-series"
+    ],
+    "designId": "design-56-5",
+    "exactScope": "Global2025 demand/growth and a separate national metered-share timeseries.",
+    "exactClaim": "Global2025 demand/growth and a separate national metered-share timeseries.",
+    "rationale": "All-data-centre context andAI-focused growth are explicitly distinguished.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "IEA estimates of data-centre electricity; direct AI subset is only the growth row. Annual Irish data-centre consumption2015–2025, revised2026 release.",
+      "sourceIds": [
+        "iea26",
+        "cso25"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www-cloud.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "No comprehensive observedAI share of world electricity; cannot turn growth rate into market share."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "context-ready",
+    "originalSourceUrl": "https://world-processor.com/56-5/",
+    "claim": "Global2025 demand/growth and a separate national metered-share timeseries.",
+    "reframeReason": null,
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "No comprehensive observedAI share of world electricity; cannot turn growth rate into market share.",
+      "AI electricity level and share are not provided by these three records.",
+      "Growth rates have distinct denominators and must not be subtracted or displayed as a stack.",
+      "Not AI-only; meter classification is inferred from business/consumption information.",
+      "Latest table says2026 publication in statistician statement but page masthead has a2025 typo; release index confirms7July2026.",
+      "Consumption trend does not quantify a grid queue or causally establish connection delays."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-electricity-demand.json",
+            "research/datasets/physical-irish-electricity-series.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-electricity-demand": "aa577c85b31ea2d9747940563928a6f51ae9ae56aea23eddc39314b988b99589",
+        "physical-irish-electricity-series": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e"
+      }
+    }
+  },
+  {
+    "conceptId": "111-3",
+    "sourceConceptId": "111-3",
+    "sourceUrl": "https://world-processor.com/1113-major-rivers-1996/",
+    "originalQuestion": "Which rivers supply cooling or electricity to compute centres, and who else depends on those waters?",
+    "proposedTitle": "A River Runs Through It",
+    "proposedQuestion": "Named shared water infrastructure and two regional company water totals.",
+    "sourceConnection": "Study catchment-level dependencies using disclosed facility information and seasonal water conditions.",
+    "verdict": "hold",
+    "proposedVerdict": "context-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-waterway-dependencies"
+    ],
+    "designId": "design-111-3",
+    "exactScope": "Named shared water infrastructure and two regional company water totals.",
+    "exactClaim": "Named shared water infrastructure and two regional company water totals.",
+    "rationale": "Demonstrates specific dependencies without assigning all usage to one river or estimating ecosystem harm.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Selected disclosed data-centre water-system connections, nonexhaustive.",
+      "sourceIds": [
+        "amazon-oregon",
+        "google-belgium"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      },
+      {
+        "url": "https://www.datacenters.google/locations/belgium/",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Seasonal actual abstraction, discharge temperature, catchment allocation and ecological data needed."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "context-ready",
+    "originalSourceUrl": "https://world-processor.com/1113-major-rivers-1996/",
+    "claim": "Named shared water infrastructure and two regional company water totals.",
+    "reframeReason": null,
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Seasonal actual abstraction, discharge temperature, catchment allocation and ecological data needed.",
+      "Company self-reporting; independent catchment water balance not supplied.",
+      "No causal claim about drinking-water deprivation, ecosystem damage or river availability.",
+      "2024–25 Oregon total includes multiple water sources; do not allocate it all to the proposed Columbia intake."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-waterway-dependencies.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-waterway-dependencies": "d7de70dc9380c1fe20a2fedb53b00945d60c94357588da534b3336595f608f5b"
+      }
+    }
+  },
+  {
+    "conceptId": "150-5",
+    "sourceConceptId": "150-5",
+    "sourceUrl": "https://world-processor.com/150-5/",
+    "originalQuestion": "Which aviation automation incidents actually involved machine learning, and which involved other systems?",
+    "proposedTitle": "When Autopilot Is Not AI",
+    "proposedQuestion": "Which automation mechanisms were actually described in these two investigation records?",
+    "sourceConnection": "Separate conventional automation from machine learning and document causal findings rather than speculate.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-aviation-automation"
+    ],
+    "designId": "design-150-5",
+    "exactScope": "Two investigation-record examples of documentedMCAS mechanisms withoutML attribution.",
+    "exactClaim": "Two investigation-record examples of documentedMCAS mechanisms withoutML attribution.",
+    "rationale": "Source distinguishes automated trim from autopilot engagement; do not recast accidents as measuredAI failures.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Contextual distinction between documented flight-control automation and unsupported AI attribution.",
+      "sourceIds": [
+        "ntsb19"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "System-specific certification evidence and full updated investigation corpus needed to classify all aviation incidents."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/150-5/",
+    "claim": "Two investigation-record examples of documentedMCAS mechanisms withoutML attribution.",
+    "reframeReason": "Source distinguishes automated trim from autopilot engagement; do not recast accidents as measuredAI failures.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "System-specific certification evidence and full updated investigation corpus needed to classify all aviation incidents.",
+      "NTSB2019 report contains preliminary investigation context; not a substitute for later national final reports.",
+      "Absence of ML attribution in this record does not prove no machine learning anywhere in aviation.",
+      "No casualty ranking, AI accident total or definitive causal finding beyond source scope."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-aviation-automation.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-aviation-automation": "84a7b014a79fa53a1368e0ce36f0f3ef42b471f86b6ba5e728c7ad38c39353dc"
+      }
+    }
+  },
+  {
+    "conceptId": "193-5",
+    "sourceConceptId": "193-5",
+    "sourceUrl": "https://world-processor.com/193/",
+    "originalQuestion": "How different is the AI-energy map when total consumption is shown beside a per-person measure?",
+    "proposedTitle": "Compute per Person",
+    "proposedQuestion": "How far apart are two published host-region data-centre electricity estimates per resident?",
+    "sourceConnection": "Compare total and population-normalised compute energy while marking AI-specific estimates as estimates.",
+    "verdict": "hold",
+    "proposedVerdict": "reframe-ready",
+    "reviewStatus": "Researcher proposal; independent gates, score and design review pending.",
+    "datasetIds": [
+      "physical-per-capita-demand"
+    ],
+    "designId": "design-193-5",
+    "exactScope": "IEA-published2024 per-resident contrast between U.S. andAfrica.",
+    "exactClaim": "IEA-published2024 per-resident contrast between U.S. andAfrica.",
+    "rationale": "Honest geography preserves a country/continent distinction; noAI-specific or country-ranking claim.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Two source-published contrasts with clearly different geographic aggregation levels.",
+      "sourceIds": [
+        "iea25d"
+      ]
+    },
+    "searchedSources": [
+      {
+        "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+        "result": "Primary source inspected or targeted primary-source investigation; specific supported records are linked by dataset locators."
+      }
+    ],
+    "missingEvidence": [
+      "Compatible per-countryAI-only energy and same-year population denominators required for original global map."
+    ],
+    "blockingNextSteps": [
+      "Independent reviewer checks and linked design acceptance required."
+    ],
+    "researchReadinessScore": null,
+    "scoring": {
+      "method": "none",
+      "type": "none"
+    },
+    "forecast": {
+      "method": "none",
+      "type": "none"
+    },
+    "reviewedAt": null,
+    "candidateVerdict": "reframe-ready",
+    "originalSourceUrl": "https://world-processor.com/193/",
+    "claim": "IEA-published2024 per-resident contrast between U.S. andAfrica.",
+    "reframeReason": "Honest geography preserves a country/continent distinction; noAI-specific or country-ranking claim.",
+    "blockers": [
+      "Independent evidence gates, readiness score and linked design review remain pending."
+    ],
+    "limitations": [
+      "Compatible per-countryAI-only energy and same-year population denominators required for original global map.",
+      "All data centres, not AI-only; no unobserved AI allocation.",
+      "Country versus continent is a deliberate scale contrast and cannot support country ranks.",
+      "No population denominator or total reconstructed; source published normalisation retained."
+    ],
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [
+            "research/datasets/physical-per-capita-demand.json"
+          ],
+          "reason": "Author-supplied evidence awaits independent review; no gate acceptance is claimed."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {
+        "physical-per-capita-demand": "a6973816d68a2f0901c30408f9fe37a5081482ebd6f105bfd971278e96dea155"
+      }
+    }
+  }
+]

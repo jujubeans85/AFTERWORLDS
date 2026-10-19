@@ -1,0 +1,172 @@
+{
+  "datasetId": "physical-per-capita-demand",
+  "id": "physical-per-capita-demand",
+  "schemaVersion": "1.0",
+  "title": "One person, a very different denominator",
+  "conceptIds": [
+    "193-5"
+  ],
+  "metric": "Published population-normalised data-centre electricity estimates",
+  "unit": "kWh/person/year",
+  "denominator": "Host-region population, not number of AI users or people whose workloads are hosted",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Two source-published contrasts with clearly different geographic aggregation levels.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024",
+    "observationEnd": "2024",
+    "publishedAt": "2025-04-10",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "iea25d",
+      "publisher": "International Energy Agency",
+      "title": "Energy and AI: Energy demand from AI",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "locator": "Regional outlook per-capita demand paragraph",
+      "version": "2025-04-10",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "International Energy Agency — Energy and AI: Energy demand from AI",
+        "verified": true,
+        "notes": "Report explicitly identifies CC BY 4.0."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "iea25d",
+    "publisher": "International Energy Agency",
+    "title": "Energy and AI: Energy demand from AI",
+    "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+    "locator": "Regional outlook per-capita demand paragraph",
+    "version": "2025-04-10",
+    "publishedAt": "2025-04-10",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "International Energy Agency — Energy and AI: Energy demand from AI",
+      "verified": true,
+      "notes": "Report explicitly identifies CC BY 4.0."
+    }
+  },
+  "rows": [
+    {
+      "id": "us-percap",
+      "entityId": "USA",
+      "name": "United States",
+      "value": 540,
+      "unit": "kWh/person/year",
+      "period": "2024",
+      "sourceId": "iea25d",
+      "sourceLocator": "Regional outlook per-capita paragraph",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "IEA approximate all-data-centre electricity divided by population."
+    },
+    {
+      "id": "africa-percap",
+      "entityId": "IEA-Africa",
+      "name": "Africa",
+      "value": 1,
+      "unit": "kWh/person/year",
+      "period": "2024",
+      "sourceId": "iea25d",
+      "sourceLocator": "Regional outlook per-capita paragraph",
+      "status": "estimated",
+      "qualifier": "<",
+      "geographicId": "IEA-Africa",
+      "lat": null,
+      "lon": null,
+      "notes": "Less than1; continental aggregate, not every country or person."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Two source-published contrasts with clearly different geographic aggregation levels.",
+    "included": "2 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "All data centres, not AI-only; no unobserved AI allocation. Country versus continent is a deliberate scale contrast and cannot support country ranks. No population denominator or total reconstructed; source published normalisation retained.",
+  "limitations": [
+    "All data centres, not AI-only; no unobserved AI allocation.",
+    "Country versus continent is a deliberate scale contrast and cannot support country ranks.",
+    "No population denominator or total reconstructed; source published normalisation retained."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "us-percap",
+      "africa-percap"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "How far apart are two published host-region data-centre electricity estimates per resident?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

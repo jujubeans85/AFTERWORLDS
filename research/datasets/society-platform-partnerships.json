@@ -1,0 +1,163 @@
+{
+  "datasetId": "society-platform-partnerships",
+  "id": "society-platform-partnerships",
+  "title": "The platform underneath the platform",
+  "conceptIds": [
+    "155-17"
+  ],
+  "metric": "The platform underneath the platform",
+  "unit": "documented organisational relationship",
+  "denominator": "Three named partnerships selected by the FTC study",
+  "rows": [
+    {
+      "id": "partnership-1",
+      "entityId": "partnership-1",
+      "name": "Microsoft / OpenAI",
+      "value": "studied partnership",
+      "unit": "documented organisational relationship",
+      "period": "2025-01 report snapshot",
+      "sourceId": "ftc-partnerships-2025",
+      "sourceLocator": "Opening paragraph: three partnerships",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Study inclusion only; no country usage, ownership share, market share or current exclusivity implied.",
+      "fromEntity": "Microsoft",
+      "toEntity": "OpenAI"
+    },
+    {
+      "id": "partnership-2",
+      "entityId": "partnership-2",
+      "name": "Amazon / Anthropic",
+      "value": "studied partnership",
+      "unit": "documented organisational relationship",
+      "period": "2025-01 report snapshot",
+      "sourceId": "ftc-partnerships-2025",
+      "sourceLocator": "Opening paragraph: three partnerships",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Study inclusion only; no country usage, ownership share, market share or current exclusivity implied.",
+      "fromEntity": "Amazon",
+      "toEntity": "Anthropic"
+    },
+    {
+      "id": "partnership-3",
+      "entityId": "partnership-3",
+      "name": "Google / Anthropic",
+      "value": "studied partnership",
+      "unit": "documented organisational relationship",
+      "period": "2025-01 report snapshot",
+      "sourceId": "ftc-partnerships-2025",
+      "sourceLocator": "Opening paragraph: three partnerships",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Study inclusion only; no country usage, ownership share, market share or current exclusivity implied.",
+      "fromEntity": "Google",
+      "toEntity": "Anthropic"
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "fromEntity": "Named cloud provider",
+    "toEntity": "Named AI developer"
+  },
+  "geography": {
+    "mode": "network",
+    "unit": "organisations",
+    "definition": "Artificial layout around a sphere; no geographic country attribution.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2025-01 report snapshot",
+    "observationEnd": "2025-01 report snapshot",
+    "publishedAt": "2025-01-17",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "ftc-partnerships-2025",
+      "publisher": "US Federal Trade Commission",
+      "title": "Behind the FTC’s6(b) Report on Large AI Partnerships and Investments",
+      "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments",
+      "locator": "Opening paragraph identifies three studied partnerships; limitations in note12",
+      "version": "2023–2024 partnerships studied; publishedJanuary2025",
+      "publishedAt": "2025-01-17",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments",
+        "attribution": "US Federal Trade Commission; Behind the FTC’s6(b) Report on Large AI Partnerships and Investments",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Three named partnerships selected by the FTC study",
+    "included": "3 records: 3 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. Historical, nonexhaustive study scope; additional partnerships exist and terms change. FTC study findings are not a legal finding of anticompetitive conduct. A company partnership is not proof that a country depends on that company.",
+  "limitations": [
+    "Historical, nonexhaustive study scope; additional partnerships exist and terms change.",
+    "FTC study findings are not a legal finding of anticompetitive conduct.",
+    "A company partnership is not proof that a country depends on that company."
+  ],
+  "aiRelationship": "direct",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-build.py",
+    "inputReferences": [
+      "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "partnership-1",
+      "partnership-2",
+      "partnership-3"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

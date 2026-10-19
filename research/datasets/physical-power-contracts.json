@@ -1,0 +1,294 @@
+{
+  "datasetId": "physical-power-contracts",
+  "id": "physical-power-contracts",
+  "schemaVersion": "1.0",
+  "title": "Megawatts promised, megawatts delivered",
+  "conceptIds": [
+    "324"
+  ],
+  "metric": "Dated announced power-contract quantities by agreement type",
+  "unit": "MW, type-specific",
+  "denominator": "Selected contracts of cloud/AI operators; existing supply, restart and incremental capacity must remain distinct",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Five primary-source contract disclosures relevant to data-centre electricity.",
+  "geographyMode": "network",
+  "geography": {
+    "mode": "network",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024-09-20",
+    "observationEnd": "2026-10-06",
+    "publishedAt": "2026-10-06",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "crane",
+      "publisher": "Constellation Energy",
+      "title": "Constellation to Launch Crane Clean Energy Center",
+      "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "locator": "Microsoft PPA announcement; restart scope",
+      "version": "2024-09-20",
+      "publishedAt": "2024-09-20",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+        "attribution": "Constellation Energy — Constellation to Launch Crane Clean Energy Center",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "talen",
+      "publisher": "Talen Energy",
+      "title": "Amazon and Talen expand nuclear energy relationship",
+      "url": "https://ir.talenenergy.com/node/8676/html",
+      "locator": "Exhibit99.1 paragraphs1–4, full contract quantity",
+      "version": "2025-06-11",
+      "publishedAt": "2025-06-11",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://ir.talenenergy.com/node/8676/html",
+        "attribution": "Talen Energy — Amazon and Talen expand nuclear energy relationship",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "calvert",
+      "publisher": "Constellation Energy",
+      "title": "Constellation and Amazon Announce20-Year Power Purchase Agreement at Calvert Cliffs",
+      "url": "https://www.constellationenergy.com/news/2026/09/constellation-and-amazon-announce-20-year-power-purchase-agreement-at-calvert-cliffs.html",
+      "locator": "Announcement paragraphs1–4;690MW includes190MW uprate",
+      "version": "2026-09-30",
+      "publishedAt": "2026-09-30",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.constellationenergy.com/news/2026/09/constellation-and-amazon-announce-20-year-power-purchase-agreement-at-calvert-cliffs.html",
+        "attribution": "Constellation Energy — Constellation and Amazon Announce20-Year Power Purchase Agreement at Calvert Cliffs",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "google-nuclear",
+      "publisher": "Constellation Energy",
+      "title": "Google and Constellation agreement for890MW of new nuclear capacity",
+      "url": "https://investors.constellationenergy.com/node/10271/pdf",
+      "locator": "Page1:20-year uprate PPA and separate15-year supply agreement",
+      "version": "2026-10-06",
+      "publishedAt": "2026-10-06",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://investors.constellationenergy.com/node/10271/pdf",
+        "attribution": "Constellation Energy — Google and Constellation agreement for890MW of new nuclear capacity",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "crane",
+    "publisher": "Constellation Energy",
+    "title": "Constellation to Launch Crane Clean Energy Center",
+    "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+    "locator": "Microsoft PPA announcement; restart scope",
+    "version": "2024-09-20",
+    "publishedAt": "2024-09-20",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "attribution": "Constellation Energy — Constellation to Launch Crane Clean Energy Center",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "crane-ppa",
+      "entityId": "US-PA",
+      "name": "Microsoft / Crane Clean Energy Center",
+      "value": 835,
+      "unit": "MW announced restart capacity",
+      "period": "2024-09-20",
+      "sourceId": "crane",
+      "sourceLocator": "PPA headline and restart paragraphs",
+      "status": "observed",
+      "qualifier": "approximately",
+      "geographicId": "US-PA",
+      "lat": null,
+      "lon": null,
+      "notes": "20-year agreement; originally expected2028 restart subject to approvals.",
+      "buyer": "Microsoft",
+      "kind": "restart"
+    },
+    {
+      "id": "aws-talen",
+      "entityId": "US-PA",
+      "name": "AWS / Susquehanna",
+      "value": 1920,
+      "unit": "MW full contract quantity",
+      "period": "2025-06-11",
+      "sourceId": "talen",
+      "sourceLocator": "Exhibit99.1 full-quantity paragraph",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-PA",
+      "lat": null,
+      "lon": null,
+      "notes": "Full quantity through2042; ramp expected no later than2032, not current delivered load.",
+      "buyer": "Amazon",
+      "kind": "existing supply"
+    },
+    {
+      "id": "aws-calvert",
+      "entityId": "US-MD",
+      "name": "Amazon / Calvert Cliffs",
+      "value": 690,
+      "unit": "MW contracted power",
+      "period": "2026-09-30",
+      "sourceId": "calvert",
+      "sourceLocator": "Paragraph3",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-MD",
+      "lat": null,
+      "lon": null,
+      "notes": "Includes190MW uprate, so do not add that component again;20-year agreement.",
+      "buyer": "Amazon",
+      "kind": "existing supply plus uprate",
+      "incrementalMW": 190
+    },
+    {
+      "id": "google-uprate",
+      "entityId": "USA-PJM",
+      "name": "Google / PJM nuclear uprates",
+      "value": 890,
+      "unit": "MW contracted incremental capacity",
+      "period": "2026-10-06",
+      "sourceId": "google-nuclear",
+      "sourceLocator": "p1 paragraphs1–2",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "USA-PJM",
+      "lat": null,
+      "lon": null,
+      "notes": "20-year PPA across11units inIllinois,Pennsylvania,NewJersey; first delivery expected2028.",
+      "buyer": "Google",
+      "kind": "uprate"
+    },
+    {
+      "id": "google-existing",
+      "entityId": "USA-PJM",
+      "name": "Google / PJM supply agreement",
+      "value": 2700,
+      "unit": "MW contracted supply",
+      "period": "2026-10-06",
+      "sourceId": "google-nuclear",
+      "sourceLocator": "p1 paragraph3",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "USA-PJM",
+      "lat": null,
+      "lon": null,
+      "notes": "Separate15-year financial/supply arrangement; not new generating capacity.",
+      "buyer": "Google",
+      "kind": "existing supply"
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "buyer": "Named corporate contract counterparty",
+    "kind": "Contract category; categories cannot be summed as net new generation",
+    "incrementalMW": "Included incremental capacity, not additional to row value"
+  },
+  "coverage": {
+    "population": "Five primary-source contract disclosures relevant to data-centre electricity.",
+    "included": "5 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Contracts are not measured delivered electricity, AI load, generation output or global market share. Do not sum capacities across differing contract types as net new supply. Future dates are disclosed plans, not independently modelled forecasts; no probability of completion assigned.",
+  "limitations": [
+    "Contracts are not measured delivered electricity, AI load, generation output or global market share.",
+    "Do not sum capacities across differing contract types as net new supply.",
+    "Future dates are disclosed plans, not independently modelled forecasts; no probability of completion assigned."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "https://ir.talenenergy.com/node/8676/html",
+      "https://www.constellationenergy.com/news/2026/09/constellation-and-amazon-announce-20-year-power-purchase-agreement-at-calvert-cliffs.html",
+      "https://investors.constellationenergy.com/node/10271/pdf"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "crane-ppa",
+      "aws-talen",
+      "aws-calvert",
+      "google-uprate",
+      "google-existing"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": null,
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "buyer": "Named corporate contract counterparty",
+    "kind": "Contract category; categories cannot be summed as net new generation",
+    "incrementalMW": "Included incremental capacity, not additional to row value"
+  }
+}

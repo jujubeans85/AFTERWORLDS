@@ -1,0 +1,70 @@
+{
+  "contractId": "afterworld-design-contract-v1",
+  "status": "implementation specification; runtime not tested",
+  "visualSystem": {
+    "background": "#06090f",
+    "surface": "#111a24",
+    "text": "#edf4fa",
+    "secondaryText": "#b5c3d0",
+    "selection": "#ffffff",
+    "missing": "#66717e with diagonal hatching and explicit No observation label",
+    "quantitativePalette": "Single-hue, perceptually ordered lightness ramp with fixed published domain; validate contrast. Colour is redundant with shape/length and text.",
+    "categoricalPalette": "Teal #57d5c4, amber #f2ba68, blue #88bdf4, violet #beacf3; labels and pattern distinguish categories. Never use red-green alone.",
+    "materials": "Opaque MeshStandardMaterial for globe/country surfaces; emissive MeshBasicMaterial for marks. Roughness 0.9, metalness 0.0. No chrome reflections, bloom or atmospheric scatter that changes apparent data magnitude.",
+    "shaders": "Simple depth-tested instanced mark shader; static screen-space hatch for missing or uncertain observations. Decorative motion uses a separate neutral scaffold with one elapsed-time uniform and never mutates data geometry, quantitative colour, intervals or labels. No particle field is presented as data.",
+    "lighting": "One hemisphere light and one soft key; mark colour is unlit so geographic lighting cannot distort a quantitative colour scale. No moving lights."
+  },
+  "geometryContract": {
+    "geographic": "Join source-defined geographicId to audited polygon geometry. No random city allocation. Display anchors, if used, derive from polygon interior points and are labelled country display anchors, not observed sites. Unsupported geographic codes remain available in the table and stop any claim of a complete map.",
+    "categorical": "No coastlines or latitude labels. Equal slots are deterministic category positions, not coordinates. Display Abstract data globe — not a geographic map persistently.",
+    "global": "No spatial allocation of a global total. Label the globe Global statistic — not a geographic map. Rotation can reveal another real period, scenario or evidence facet, never invented regions.",
+    "scales": "All quantitative lengths start at zero unless a fully labelled nonzero axis is explicitly justified. Circle area, never radius, encodes count if area marks are used. Avoid volume encodings. Native source units remain visible; source percentages are not a constructed 1–100 rating."
+  },
+  "interaction": {
+    "entry": "Title, one-sentence evidence-matched question, observation period, direct/context label and concise unit legend appear before interaction. One globe per route.",
+    "spin": "Drag in the globe viewport; pointer capture begins only after 8px movement. Rotation is direct manipulation, not measured motion. No inertial spin by default; an optional Spin button is explicit, pausable and disabled in reduced-motion mode.",
+    "selection": "Tap or click selects a mark without navigation. Keep the selected row/card visible and camera stable; optional Focus action rotates to it. Use 44px minimum targets through screen-space hit proxies, not inflated data marks.",
+    "touch": "Browser vertical scroll owns gestures outside the viewport. Within viewport, one finger rotates and two fingers zoom within constrained bounds. A visible Move/Read toggle permits one-finger scrolling without trapping the page. No hover-only information.",
+    "keyboard": "Tab reaches named controls and the data table. Arrow keys rotate only when the globe control is focused; Escape clears selection. Next/Previous observation buttons traverse deterministic data order. No focus steal on selection.",
+    "reducedMotion": "prefers-reduced-motion disables autorotation, inertia, animated camera moves, pulses and transitions. User input updates the frame immediately; an accessible static frame and table remain persistent.",
+    "motion": "Each matched design names a bounded gentle decorative loop on a separate scaffold, with constant data magnitudes and a visible Ambient frame motion — not measured change label. No flashing, pulsating quantities, growing values or unsourced traffic. Pause is always available; manual interaction pauses the loop until explicit Play. Comparable dated observations permit user-selected historical states only; none of these designs invents measured motion.",
+    "engagement": "Use one evidence-backed comparison prompt and a Next observation cue. Never hide essential caveats behind interaction or promise more data on an empty hemisphere."
+  },
+  "accessibility": {
+    "equivalentView": "A semantic HTML table exposes every observation, value, unit, period, status, qualifier and source locator. Sorting and filters apply identically to globe and table; include omitted/missing rows. A plain-language summary states the precise claim and limits.",
+    "screenReaders": "Canvas is an optional visual supplement, labelled by the question and summary; the table is the authoritative accessible equivalent. Announce user-triggered selection politely, never every animation frame.",
+    "mobile": "At 320px viewport width use globe above a single-column selection card and horizontally scrollable table with sticky row labels. Controls wrap without clipping. Do not require pinch or drag to access any observation.",
+    "fallback": "On WebGL failure, low-memory mode or explicit Table view, replace canvas with a static SVG chart and the identical table. Do not load a second data copy."
+  },
+  "performanceBudget": {
+    "purpose": "Targets for later runtime validation, not claimed achieved performance",
+    "mobileCanvasDprMax": 1.5,
+    "desktopCanvasDprMax": 2,
+    "mobileTrianglesMax": 60000,
+    "desktopTrianglesMax": 120000,
+    "mobileDrawCallsMax": 35,
+    "visibleLabelsMax": 12,
+    "mobileFpsTargetDuringDrag": 30,
+    "desktopFpsTargetDuringDrag": 60,
+    "idlePolicy": "Render on demand when motion is paused. A bounded decorative loop may run only for the selected visible globe while animation is enabled and reduced-motion is off. Stop requestAnimationFrame when paused, offscreen, tab hidden or route exited. Pause on interaction; resume only with explicit Play. Drop decorative motion before dropping any data marks if a device budget is missed.",
+    "loading": "Lazy-load only the chosen globe and dataset. No 132 WebGL contexts or thumbnail canvases. Reuse one geometry/material pool and dispose on route changes.",
+    "marks": "Instance repeated marks; use event-time raycasting, not per-frame CPU scans. Densities beyond the stated budget require audited aggregation or table fallback, never arbitrary sampling hidden from the user.",
+    "memory": "One live WebGL context; resource counts must return to baseline after 20 route changes."
+  },
+  "validationTests": [
+    "Dataset SHA-256 matches the reviewed binding before rendering.",
+    "Every bound field exists; every selected row reaches the table and exactly one intended mark or explicit omission.",
+    "Minimum, maximum, zero, null and threshold-qualified values render distinctly and match labels.",
+    "Geographic joins preserve source definitions and never allocate a country aggregate to random cities.",
+    "Categorical/global spheres have no geographic claims or fabricated coordinates.",
+    "Scale endpoints and legend reproduce source values; no 1–100 impact score is manufactured.",
+    "Future controls are absent unless forecast bindings passed independent review; retrieval dates never masquerade as observation dates.",
+    "Keyboard, touch, screen-reader table, 320px layout and reduced-motion behavior work with equivalent content.",
+    "Camera rotation preserves marks, values and source meaning; backside discoverability claims match actual rows.",
+    "Measured motion and decorative transition logic remain separate; no motion implies unsourced traffic or change.",
+    "Target budgets are measured on a named mobile device before release; failure activates the declared fallback.",
+    "20 route changes leave one context, no retained listeners and no growing GPU allocation.",
+    "At phases 0, 0.25, 0.5 and 0.75 of every decorative loop, verify identical data geometry, material scales, interval endpoints and labels.",
+    "Every active loop has a visible Pause control and persistent motion-meaning label. Paused and reduced-motion frames retain all evidence."
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "datasetId": "physical-rainfall-benchmark",
+  "id": "physical-rainfall-benchmark",
+  "schemaVersion": "1.0",
+  "title": "What does better rain prediction mean?",
+  "conceptIds": [
+    "233-2"
+  ],
+  "metric": "Coverage of source-reported skill improvement over a named baseline",
+  "unit": "% of evaluated grid cells",
+  "denominator": "Global1.5degree evaluation grid with source masks; ERA5 verification, not independent dense rain gauges",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "Peer-reviewed machine-learning postprocessing benchmark, published14Oct2026.",
+  "geographyMode": "global",
+  "geography": {
+    "mode": "global",
+    "unit": "Nongeographic observation",
+    "definition": "Company, category or global aggregate; not a geographic map.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2016/2024 test years",
+    "observationEnd": "2016/2024 test years",
+    "publishedAt": "2026-10-14",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "pbc",
+      "publisher": "Guan et al. / Nature",
+      "title": "Advancing subseasonal forecasting with machine learning",
+      "url": "https://www.nature.com/articles/s41586-026-11126-x",
+      "locator": "Figures2b and5b; Methods; Data availability; Rights",
+      "version": "2026-10-14",
+      "publishedAt": "2026-10-14",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.nature.com/articles/s41586-026-11126-x",
+        "attribution": "Guan et al. / Nature — Advancing subseasonal forecasting with machine learning",
+        "verified": true,
+        "notes": "Article is CC BY-NC-ND4.0. No article, figure, figure derivative, model weights or code is packaged under that licence. Only two factual aggregate findings are independently restated; this does not assert commercial licence to article assets."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "pbc",
+    "publisher": "Guan et al. / Nature",
+    "title": "Advancing subseasonal forecasting with machine learning",
+    "url": "https://www.nature.com/articles/s41586-026-11126-x",
+    "locator": "Figures2b and5b; Methods; Data availability; Rights",
+    "version": "2026-10-14",
+    "publishedAt": "2026-10-14",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.nature.com/articles/s41586-026-11126-x",
+      "attribution": "Guan et al. / Nature — Advancing subseasonal forecasting with machine learning",
+      "verified": true,
+      "notes": "Article is CC BY-NC-ND4.0. No article, figure, figure derivative, model weights or code is packaged under that licence. Only two factual aggregate findings are independently restated; this does not assert commercial licence to article assets."
+    }
+  },
+  "rows": [
+    {
+      "id": "rain-extreme",
+      "entityId": "rain-extreme",
+      "name": "Week3 extreme precipitation",
+      "value": 96,
+      "unit": "% of evaluated grid cells with skill gains",
+      "period": "2016/2024 test years",
+      "sourceId": "pbc",
+      "sourceLocator": "Figure5b and associated paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "PBC-ECMWF versus operationally debiasedECMWF; Brier skill for extremes; excludes aridzero-precipitation cells.",
+      "target": "extreme precipitation"
+    },
+    {
+      "id": "rain-quintile",
+      "entityId": "rain-quintile",
+      "name": "Subseasonal precipitation",
+      "value": 98,
+      "unit": "% of evaluated grid cells with skill gains",
+      "period": "2016/2024 test years",
+      "sourceId": "pbc",
+      "sourceLocator": "Figure2b and associated paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Ranked probability skill for precipitation quintiles; not probability a forecast is correct.",
+      "target": "precipitation quintiles"
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "target": "Exact forecast target, not interchangeable score definitions"
+  },
+  "coverage": {
+    "population": "Peer-reviewed machine-learning postprocessing benchmark, published14Oct2026.",
+    "included": "2 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "No local skill raster is packaged; these are global aggregate findings. Skill-gain coverage is not rainfall probability, skill magnitude or fraction of correctly forecast events. ERA5 is reanalysis, not direct gauge truth everywhere; this dataset cannot identify gauge-sparse countries. No source figures or model output assets copied; no live weather forecast generated.",
+  "limitations": [
+    "No local skill raster is packaged; these are global aggregate findings.",
+    "Skill-gain coverage is not rainfall probability, skill magnitude or fraction of correctly forecast events.",
+    "ERA5 is reanalysis, not direct gauge truth everywhere; this dataset cannot identify gauge-sparse countries.",
+    "No source figures or model output assets copied; no live weather forecast generated."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.nature.com/articles/s41586-026-11126-x"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "rain-extreme",
+      "rain-quintile"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "How widely did one machine-learning correction improve a specific precipitation benchmark?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "target": "Exact forecast target, not interchangeable score definitions"
+  }
+}

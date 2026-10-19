@@ -1,0 +1,138 @@
+{
+  "datasetId": "governance-cyber-observed-accounts",
+  "id": "governance-cyber-observed-accounts",
+  "title": "Two observed AI-use categories in a vendor’s banned-account sample",
+  "conceptIds": [
+    "138-8"
+  ],
+  "rows": [
+    {
+      "id": "cyber-malware",
+      "entityId": "cyber-malware",
+      "name": "Accounts using AI for malware-writing",
+      "value": 560,
+      "unit": "accounts",
+      "period": "2025-03/2026-03",
+      "sourceId": "anthropic-cyber2026",
+      "sourceLocator": "How AI makes attackers more dangerous, paragraph1",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Vendor-reported classification; activities overlap.",
+      "denominatorAccounts": 832,
+      "publishedPercent": 67.3
+    },
+    {
+      "id": "cyber-lateral",
+      "entityId": "cyber-lateral",
+      "name": "Accounts using AI for lateral movement",
+      "value": 54,
+      "unit": "accounts",
+      "period": "2025-03/2026-03",
+      "sourceId": "anthropic-cyber2026",
+      "sourceLocator": "How AI makes attackers more dangerous, paragraph1",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Vendor-reported classification; not54 distinct confirmed intrusions.",
+      "denominatorAccounts": 832,
+      "publishedPercent": 6.5
+    }
+  ],
+  "columns": {
+    "id": "id field; see row notes",
+    "entityId": "entityId field; see row notes",
+    "name": "name field; see row notes",
+    "value": "Measured value or explicit category; never visual magnitude unless numeric and appropriate",
+    "unit": "unit field; see row notes",
+    "period": "Observation/event period; not retrieval date",
+    "sourceId": "sourceId field; see row notes",
+    "sourceLocator": "Exact section/table/row in cited primary source",
+    "status": "status field; see row notes",
+    "qualifier": "qualifier field; see row notes",
+    "geographicId": "ISO 3166 alpha-3 or explicit named area; null for non-geographic records",
+    "lat": "Null: no invented point location",
+    "lon": "Null: no invented point location",
+    "notes": "notes field; see row notes",
+    "denominatorAccounts": "denominatorAccounts field; see row notes",
+    "publishedPercent": "publishedPercent field; see row notes"
+  },
+  "unit": "accounts",
+  "denominator": "832 sufficiently documented banned accounts; categories may overlap",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Abstract categorical sphere",
+    "definition": "Records are not geographically allocated.",
+    "anchorRule": "Abstract sphere cells only. Do not place records on country boundaries."
+  },
+  "time": {
+    "observationStart": "2025-03",
+    "observationEnd": "2026-03",
+    "publishedAt": "2026-06-03",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual revalidation before implementation and after source updates"
+  },
+  "sources": [
+    {
+      "sourceId": "anthropic-cyber2026",
+      "publisher": "Anthropic",
+      "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "locator": "Opening and How AI makes attackers more dangerous",
+      "version": null,
+      "publishedAt": "2026-06-03",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Facts-only extraction; source prose and graphics are not republished",
+        "termsUrl": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+        "attribution": "Anthropic. What we learned mapping a year’s worth of AI-enabled cyber threats. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "832 accounts banned for malicious cyber activity with enough detail for the vendor assessment",
+    "included": "2 populated records; 832 accounts banned for malicious cyber activity with enough detail for the vendor assessment",
+    "omitted": "Other banned accounts, undetected activity, other vendors, exact victim locations and independently confirmed intrusion counts",
+    "missingness": "Unlisted entities are missing, not zero."
+  },
+  "uncertainty": "Provider self-report and selected observed accounts; no random sample or independent incident verification. These are account behaviours, not country attack rates.",
+  "transform": {
+    "type": "manual",
+    "description": "Manual transcription of factual values/categories; no interpolation, imputation or causal inference.",
+    "codePath": "research/scripts/governance_build.py",
+    "inputReferences": [
+      "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+    ],
+    "validation": "Each row carries a source locator; categorical values separately label plans, policies and observed events."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary source and compare each extracted record to its named source location.",
+    "checkedRows": [
+      "cyber-malware",
+      "cyber-lateral"
+    ],
+    "evidencePaths": [
+      "research/sources/governance-source-index.json"
+    ],
+    "reviewer": "governance_research",
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No universal extremity or impact score is supported by these data."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated forecast was supplied. Policy intentions and planned installations are not predictions."
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "datasetId": "society-ai-growth-zones",
+  "id": "society-ai-growth-zones",
+  "title": "Exceptional machines: announced UK zones",
+  "conceptIds": [
+    "415"
+  ],
+  "metric": "Exceptional machines: announced UK zones",
+  "unit": "announcement status",
+  "denominator": "Five regional announcements listed in this official collection at retrieval",
+  "rows": [
+    {
+      "id": "zone-1",
+      "entityId": "zone-1",
+      "name": "Scotland",
+      "value": "announced",
+      "unit": "announcement status",
+      "period": "2026-01-29",
+      "sourceId": "uk-aigz-collection",
+      "sourceLocator": "AI Growth Zones announcements (press releases)",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Named region in official collection; not a verified operational site, precise zone boundary or delivered economic benefit.",
+      "country": "GBR",
+      "announcementDate": "2026-01-29"
+    },
+    {
+      "id": "zone-2",
+      "entityId": "zone-2",
+      "name": "South Wales",
+      "value": "announced",
+      "unit": "announcement status",
+      "period": "2025-11-20",
+      "sourceId": "uk-aigz-collection",
+      "sourceLocator": "AI Growth Zones announcements (press releases)",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Named region in official collection; not a verified operational site, precise zone boundary or delivered economic benefit.",
+      "country": "GBR",
+      "announcementDate": "2025-11-20"
+    },
+    {
+      "id": "zone-3",
+      "entityId": "zone-3",
+      "name": "North Wales",
+      "value": "announced",
+      "unit": "announcement status",
+      "period": "2025-11-13",
+      "sourceId": "uk-aigz-collection",
+      "sourceLocator": "AI Growth Zones announcements (press releases)",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Named region in official collection; not a verified operational site, precise zone boundary or delivered economic benefit.",
+      "country": "GBR",
+      "announcementDate": "2025-11-13"
+    },
+    {
+      "id": "zone-4",
+      "entityId": "zone-4",
+      "name": "North East England",
+      "value": "announced",
+      "unit": "announcement status",
+      "period": "2025-09-16",
+      "sourceId": "uk-aigz-collection",
+      "sourceLocator": "AI Growth Zones announcements (press releases)",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Named region in official collection; not a verified operational site, precise zone boundary or delivered economic benefit.",
+      "country": "GBR",
+      "announcementDate": "2025-09-16"
+    },
+    {
+      "id": "zone-5",
+      "entityId": "zone-5",
+      "name": "Oxfordshire",
+      "value": "announced",
+      "unit": "announcement status",
+      "period": "2025-04-30",
+      "sourceId": "uk-aigz-collection",
+      "sourceLocator": "AI Growth Zones announcements (press releases)",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Named region in official collection; not a verified operational site, precise zone boundary or delivered economic benefit.",
+      "country": "GBR",
+      "announcementDate": "2025-04-30"
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "country": "Country containing the named regions, GBR; this is not exact point geometry",
+    "announcementDate": "Date listed in official regional announcement collection"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Named UK regions shown as abstract labelled categories; no point or boundary coordinates validated.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2025-04-30",
+    "observationEnd": "2026-01-29",
+    "publishedAt": "2025-11-13",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "uk-aigz-collection",
+      "publisher": "UK Department for Science, Innovation and Technology",
+      "title": "AI Growth Zones: official collection",
+      "url": "https://www.gov.uk/government/collections/ai-growth-zones",
+      "locator": "AI Growth Zones announcements list; five regional announcements dated2025–2026",
+      "version": "2025–2026",
+      "publishedAt": "2025-11-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Open Government Licence v3.0",
+        "termsUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "Contains public sector information licensed under the Open Government Licence v3.0; UK DSIT.",
+        "verified": true,
+        "notes": "Names and announcement dates only; no third-party imagery."
+      }
+    },
+    {
+      "sourceId": "uk-aigz-policy",
+      "publisher": "UK Department for Science, Innovation and Technology",
+      "title": "Delivering AI Growth Zones",
+      "url": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+      "locator": "Sections3 and5: proposed price support, local adoption funds and retained business-rate growth",
+      "version": "2025 policy statement",
+      "publishedAt": "2025-11-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Open Government Licence v3.0",
+        "termsUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "Contains public sector information licensed under the Open Government Licence v3.0; UK DSIT.",
+        "verified": true,
+        "notes": "Names and announcement dates only; no third-party imagery."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Five regional announcements listed in this official collection at retrieval",
+    "included": "5 records: 5 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. The collection lists Scotland29January2026 and a linked Lanarkshire press release3February2026; preserve dates as labelled, not as construction dates. Local-benefit provisions are policy intentions; do not display projected jobs, savings or tax receipts as outcomes.",
+  "limitations": [
+    "The collection lists Scotland29January2026 and a linked Lanarkshire press release3February2026; preserve dates as labelled, not as construction dates.",
+    "Local-benefit provisions are policy intentions; do not display projected jobs, savings or tax receipts as outcomes."
+  ],
+  "aiRelationship": "direct",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.gov.uk/government/collections/ai-growth-zones",
+      "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "zone-1",
+      "zone-2",
+      "zone-3",
+      "zone-4",
+      "zone-5"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-10-19",
+  "generator": "research/scripts/planet-complete.py",
+  "independentAcceptance": "Pending final reviewer; research candidates only",
+  "datasets": [
+    {
+      "datasetId": "planet-access-screening-trial",
+      "conceptIds": [
+        "8-6"
+      ],
+      "rowCount": 2,
+      "sha256": "410af3cb6635331df5257b335ed984813b6a5547563895671ffa0058d99896c1"
+    },
+    {
+      "datasetId": "planet-ai-planets",
+      "conceptIds": [
+        "170-3"
+      ],
+      "rowCount": 2,
+      "sha256": "9ad0b2e35acc81c08d77e746dae5470a8630cc92f07ef8087ee4daa066a4e81a"
+    },
+    {
+      "datasetId": "planet-ai-science-comparisons",
+      "conceptIds": [
+        "348"
+      ],
+      "rowCount": 5,
+      "sha256": "005daad12f688d1ca5aaebf9800463e892bf93590de0e93598985ba43db161ae"
+    },
+    {
+      "datasetId": "planet-bird-weekly-detections",
+      "conceptIds": [
+        "378"
+      ],
+      "rowCount": 1587,
+      "sha256": "0bb91ffa890a27c9558f314463677b663ff091522d6eda4f47e6dfc476a8eabf"
+    },
+    {
+      "datasetId": "planet-dark-vessels",
+      "conceptIds": [
+        "388"
+      ],
+      "rowCount": 8,
+      "sha256": "ad94486e86476f9910f1a73ad07094a54fda71e968a5ef4d98824e64df806036"
+    },
+    {
+      "datasetId": "planet-ecg-mortality-trial",
+      "conceptIds": [
+        "8-17"
+      ],
+      "rowCount": 3,
+      "sha256": "b0b1fc7df7293a56d61ddaf4a8b02a661febda6a4386bbf8f7d01214f56b3318"
+    },
+    {
+      "datasetId": "planet-ewaste-traceability",
+      "conceptIds": [
+        "390"
+      ],
+      "rowCount": 7,
+      "sha256": "a2f38d5c093ada4ef3d77c70a2c23d10c2e868d9f40f3569e861cbb5754cc5fb"
+    },
+    {
+      "datasetId": "planet-gwas-representation",
+      "conceptIds": [
+        "232"
+      ],
+      "rowCount": 6,
+      "sha256": "b1f62399ba6fdb205988961609ca5858c5bbde05bb9713c52d8cf8cbcd823e70"
+    },
+    {
+      "datasetId": "planet-hypoxia-observation-test",
+      "conceptIds": [
+        "392"
+      ],
+      "rowCount": 28,
+      "sha256": "af68a329c630121c16c57edbbb2e81db41d0bd95784bae24887c4785bbe32e96"
+    },
+    {
+      "datasetId": "planet-icenet-comparison",
+      "conceptIds": [
+        "364"
+      ],
+      "rowCount": 2,
+      "sha256": "d25ed03fa50e001134d40bd3f82c4e61a8e05bb669e1a1f9acfcc48df82c6bb6"
+    },
+    {
+      "datasetId": "planet-irrigation-field-comparison",
+      "conceptIds": [
+        "398"
+      ],
+      "rowCount": 8,
+      "sha256": "ddef3555e3557f2087816da4d4d85bf84d4c09a5702841bb2da3147615d8a1fd"
+    },
+    {
+      "datasetId": "planet-marida-benchmark",
+      "conceptIds": [
+        "402"
+      ],
+      "rowCount": 12,
+      "sha256": "359047235e62d77ea016ce979e31ff476e0f93c85963a6c3dfe855a5c26d3e55"
+    },
+    {
+      "datasetId": "planet-ocean-data-policies",
+      "conceptIds": [
+        "107"
+      ],
+      "rowCount": 3,
+      "sha256": "b7876f0c159d935e8f8076aef308b0e1ec6004367d3bd6a8e6ced32a430c7ac3"
+    },
+    {
+      "datasetId": "planet-seabed-coverage",
+      "conceptIds": [
+        "5-6"
+      ],
+      "rowCount": 2,
+      "sha256": "bd8d9e60a92d9bce53fa889efd3c6218bb0efb6b602b61bfb25ee4740e3df4d2"
+    },
+    {
+      "datasetId": "planet-wetland-class-accuracy",
+      "conceptIds": [
+        "115-2"
+      ],
+      "rowCount": 18,
+      "sha256": "bb2fc82e339d1229d47216812888d28f3de6d6a3b83f609aebc33f4bc6339691"
+    },
+    {
+      "datasetId": "planet-wine-quality-distribution",
+      "conceptIds": [
+        "365"
+      ],
+      "rowCount": 22,
+      "sha256": "2457a08fd117d3efe72f592fa1362e092602a503af66b45ffe51592edcfa193d"
+    }
+  ]
+}

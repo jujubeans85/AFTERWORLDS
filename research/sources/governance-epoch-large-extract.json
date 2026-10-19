@@ -1,0 +1,222 @@
+[
+  {
+    "Model": "GPT-6 Astra",
+    "Organization": "OpenAI",
+    "Publication date": "2026-09-03",
+    "Training compute (FLOP)": "9.4e+26",
+    "Confidence": "Likely",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in \"Hardware quantity\" is a lower bound/underestimate).\n\nThis suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.\nhttps://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",
+    "Link": "",
+    "Reference": "GPT-6 Astra"
+  },
+  {
+    "Model": "Kimi K3",
+    "Organization": "Moonshot",
+    "Publication date": "2026-07-16",
+    "Training compute (FLOP)": "2.0001e+25",
+    "Confidence": "Speculative",
+    "Country (of organization)": "China",
+    "Training compute notes": "Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).\n\nK3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",
+    "Link": "https://huggingface.co/moonshotai/Kimi-K3",
+    "Reference": "Kimi K3"
+  },
+  {
+    "Model": "Inkling",
+    "Organization": "Thinking Machines",
+    "Publication date": "2026-07-15",
+    "Training compute (FLOP)": "1.1e+25",
+    "Confidence": "Likely",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "6ND = 6 * 41e9 active parameters * 45e12 tokens = 1.1e25 FLOP",
+    "Link": "https://thinkingmachines.ai/news/introducing-inkling/",
+    "Reference": "Inkling: Our open-weights model"
+  },
+  {
+    "Model": "LongCat-2.0",
+    "Organization": "Meituan Inc",
+    "Publication date": "2026-06-29",
+    "Training compute (FLOP)": "1.008e+25",
+    "Confidence": "Likely",
+    "Country (of organization)": "China",
+    "Training compute notes": "6 * 48e9 active parameters * 35e12 tokens = 1.008e25 FLOP. \n\nConfidence between Likely and Speculative because the 35T is a lower bound and 48B is an aggregate metric since expert size isn't consistently 48B.\n\nHardware quantity of 50k is also a lower bound - \"LongCat-2.0 is pre-trained on over 50K AI ASICs, \"",
+    "Link": "https://longcat.chat/blog/longcat-2.0/",
+    "Reference": "Introducing LongCat-2.0\n"
+  },
+  {
+    "Model": "Composer 2.5",
+    "Organization": "Cursor",
+    "Publication date": "2026-05-18",
+    "Training compute (FLOP)": "3.87e+25",
+    "Confidence": "Likely",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Said by Cursor that 85% of the total compute was performed by their team (from figure following \"Composer 2.5 is built on the same open-source checkpoint as Composer 2, Moonshot's Kimi K2.5.\" here https://cursor.com/blog/composer-2-5) - 5.8e24 / 0.15 = 3.8666666667E25 FLOP",
+    "Link": "https://cursor.com/blog/composer-2-5",
+    "Reference": "Introducing Composer 2.5"
+  },
+  {
+    "Model": "Composer 2",
+    "Organization": "Cursor",
+    "Publication date": "2026-03-19",
+    "Training compute (FLOP)": "2.32e+25",
+    "Confidence": "Confident",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Said by Lee Robinson on X - https://x.com/leerob/status/2035035355364081694 - to be 4x the training compute of the base model, Kimi K2.5; 4 x 5.8e24 = 2.32e25.\n\nB300 speculated based on Colossus 2 confirmation (https://x.com/elonmusk/status/2056422097237283295).",
+    "Link": "https://arxiv.org/abs/2603.24477",
+    "Reference": "Composer 2 Technical Report"
+  },
+  {
+    "Model": "Qwen3-Max",
+    "Organization": "Alibaba",
+    "Publication date": "2025-09-05",
+    "Training compute (FLOP)": "1.512e+25",
+    "Confidence": "Speculative",
+    "Country (of organization)": "China",
+    "Training compute notes": "6ND with:\n36T tokens is taken from the qwen3 technical report\n70B active params is based on it having >1T params, and the architectures of Qwen3-235B-A22B and Qwen3-Coder-480B-A35B",
+    "Link": "https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=2840914_2&modelId=qwen3-max-preview\n\nhttps://qwen.ai/blog?id=87dc93fc8a590dc718c77e1f6e84c07b474f6c5a&from=home.latest-research-list",
+    "Reference": "Introducing Qwen3-Max-Preview (Instruct) — our biggest model yet, with over 1 trillion parameters! "
+  },
+  {
+    "Model": "GPT-5",
+    "Organization": "OpenAI",
+    "Publication date": "2025-08-07",
+    "Training compute (FLOP)": "6.6e+25",
+    "Confidence": "Speculative",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Fairly speculative, possibly around 6e25 [CI: 2e25 to 2e26] FLOP. See document below for details\n\nhttps://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",
+    "Link": "https://cdn.openai.com/gpt-5-system-card.pdf\nhttps://openai.com/index/introducing-gpt-5/ ",
+    "Reference": "GPT-5 System Card"
+  },
+  {
+    "Model": "Grok 4",
+    "Organization": "xAI",
+    "Publication date": "2025-07-09",
+    "Training compute (FLOP)": "5.0000000000001e+26",
+    "Confidence": "Speculative",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "We think that RL relative to pre-compute is between our estimate for o3 (10% of pre-training) and the 100% implied by this slide in the launch ( https://archive.is/f0vJU ). Assuming the same pre-training as Grok 3 (also implied by that slide, and much more consistent) and that Grok 3 used a tenth as much RL, we get:\n\n2 * (grok3/1.1) in the high case (rl is 10% of grok 3, so grok3/1.1 is grok3 precompute, and in this case twice that is grok 4)\n1.1 * (grok3/1.01) in the low case\nThe geometric mean is (rounded to one sig fig): 5e26\n",
+    "Link": "https://x.ai/news/grok-4",
+    "Reference": "Grok 4"
+  },
+  {
+    "Model": "Pangu Ultra",
+    "Organization": "Huawei",
+    "Publication date": "2025-04-10",
+    "Training compute (FLOP)": "1.0692e+25",
+    "Confidence": "Confident",
+    "Country (of organization)": "China",
+    "Training compute notes": "When compared to Llama 3.1 405B, Pangu Ultra achieves better scores on most of the challenging benchmarks, while utilizing only about 29% of the training FLOPs required by Llama 405B.\n\nCompute = 6 FLOP/token/param *  135e9 params *13.2e12 tokens = 1.069200e+25 FLOP\nThis is consistent with 29% of Llama 405B's compute: 3.8e25*0.29=1.1e25.",
+    "Link": "https://arxiv.org/abs/2504.07866",
+    "Reference": "Pangu Ultra: Pushing the Limits of Dense Large Language Models on Ascend NPUs"
+  },
+  {
+    "Model": "Llama 4 Behemoth (preview)",
+    "Organization": "Meta AI",
+    "Publication date": "2025-04-05",
+    "Training compute (FLOP)": "5.18400000000001e+25",
+    "Confidence": "Likely",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Behemoth's training dataset is at least 30T tokens:\nhttps://ai.meta.com/blog/llama-4-multimodal-intelligence/ \n\n6 FLOP / parameter / token * 288 * 10^9 activated parameters * 30 * 10^12 tokens = 5.184e+25 FLOP",
+    "Link": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+    "Reference": "The Llama 4 herd: The beginning of a new era of natively multimodal AI innovation"
+  },
+  {
+    "Model": "GPT-4.5",
+    "Organization": "OpenAI",
+    "Publication date": "2025-02-27",
+    "Training compute (FLOP)": "3.8e+26",
+    "Confidence": "Likely",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Analysis of GPT-4.5's training cluster yields a median estimate of 187M H100-hours of training. The utilization assumptions we used for the Grok 3 estimate (maybe worth revisiting) were 20 to 40% under the H100 FP8 spec of 2000 teraflop/s. This leads to an estimate of 2.7e26 to 5.4e26 FLOP, or a geomean of 3.8e26\n\nAlternatively, using a plausible range of 20 to 50% utilization, given the possibility of FP8 training, yields a median estimate of ~2e25 FLOP. See notebook below for details.\n\nhttps://colab.research.google.com/drive/1QBmVPm64Ti0xucN0EsZTgSz_I7Mj9hAZ#scrollTo=NYH1ABJuLJlw \n\nThis is consistent with OpenAI's statement that GPT-4.5 was a “new order of magnitude in compute” compared to previous models (e.g. GPT-4, which was ~2e25), suggesting around 2e26 FLOP. But they could have meant this somewhat loosely. \n\nIn the \"Pretraining GPT-4.5\" interview, they state they used multi-cluster training: https://youtu.be/6nJZopACRuQ?si=FFJC-gEmGPZjvoPM&t=617 ",
+    "Link": "https://openai.com/index/introducing-gpt-4-5/",
+    "Reference": "Introducing GPT-4.5"
+  },
+  {
+    "Model": "Claude 3.7 Sonnet",
+    "Organization": "Anthropic",
+    "Publication date": "2025-02-24",
+    "Training compute (FLOP)": "3.35e+25",
+    "Confidence": "Likely",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "https://docs.google.com/spreadsheets/d/10bhwdVrfHI8tysVIz62ZxtvQ30L-HojYvmU18_b-WIM/edit?gid=0#gid=0",
+    "Link": "https://www.anthropic.com/news/claude-3-7-sonnet",
+    "Reference": "Claude 3.7 Sonnet"
+  },
+  {
+    "Model": "Grok 3",
+    "Organization": "xAI",
+    "Publication date": "2025-02-17",
+    "Training compute (FLOP)": "3.5e+26",
+    "Confidence": "Likely",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Estimate based on a cluster of 80,000 H100s per the xai website and an estimated training time of approximately three months.\n\nFull estimate here: https://docs.google.com/document/d/1MIUFviULJ3YI_XjyzL8cwG0cBRANKNxVEB4DrUcFiNs/edit?usp=sharing",
+    "Link": "https://x.ai/blog/grok-3",
+    "Reference": "Grok 3 Beta — The Age of Reasoning Agents"
+  },
+  {
+    "Model": "Doubao-pro",
+    "Organization": "ByteDance",
+    "Publication date": "2024-10-28",
+    "Training compute (FLOP)": "2.505e+25",
+    "Confidence": "Likely",
+    "Country (of organization)": "China",
+    "Training compute notes": "6ND = 6 * 500*10^9 * 8350*10^9 = 2.505e+25",
+    "Link": "https://www.volcengine.com/docs/6360/1264663",
+    "Reference": "Doubao General Model Pro (Doubao-pro)"
+  },
+  {
+    "Model": "Grok-2",
+    "Organization": "xAI",
+    "Publication date": "2024-08-13",
+    "Training compute (FLOP)": "2.96e+25",
+    "Confidence": "Confident",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Estimate based on xAI statements comparing Grok-2 compute to GPT-4 and Grok-3. Full estimate here: https://docs.google.com/document/d/1C_dABuZrAqYE_ui4_GZ4bRLtq3TBjIGoBSktaPElhEU/edit?usp=sharing",
+    "Link": "https://x.ai/blog/grok-2",
+    "Reference": "Grok-2 Beta Release"
+  },
+  {
+    "Model": "Llama 3.1-405B",
+    "Organization": "Meta AI",
+    "Publication date": "2024-07-23",
+    "Training compute (FLOP)": "3.8e+25",
+    "Confidence": "Confident",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Stated in paper.\n\nAlso, 6 * 405B * 15.6T training tokens = 3.8e25",
+    "Link": "https://ai.meta.com/research/publications/the-llama-3-herd-of-models/",
+    "Reference": "The Llama 3 Herd of Models"
+  },
+  {
+    "Model": "Claude 3.5 Sonnet",
+    "Organization": "Anthropic",
+    "Publication date": "2024-06-20",
+    "Training compute (FLOP)": "2.700000000000001e+25",
+    "Confidence": "Speculative",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "Blog post by Dario Amodei includes some info on 3.5 Sonnet compute: https://darioamodei.com/on-deepseek-and-export-controls\n\"Claude 3.5 Sonnet is a mid-sized model that cost a few $10M's to train (I won't give an exact number). Also, 3.5 Sonnet was not trained in any way that involved a larger or more expensive model (contrary to some rumors).\"\n\nUsing assumptions about GPU pricing, this lets us estimate compute. https://docs.google.com/spreadsheets/d/1-p-ab6t6dkUM6T7GwnFp85ePTMpZMW7LFY7fW2t8POs/",
+    "Link": "https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf",
+    "Reference": "Claude 3.5 Sonnet"
+  },
+  {
+    "Model": "Nemotron-4 340B",
+    "Organization": "Nvidia",
+    "Publication date": "2024-06-14",
+    "Training compute (FLOP)": "1.8e+25",
+    "Confidence": "Confident",
+    "Country (of organization)": "United States of America",
+    "Training compute notes": "9 trillion tokens for training\n6 * 340B * 9T = 1.8E25\n\nalternatively, can do a hardware estimate with a few extra steps:\n\nAccording to the technical report, Nemotron-4 340B was trained using up to 6144 H100 GPUs. Helpfully, they also report the model FLOP utilization (MFU), which was 41-42% (Table 2). This is the ratio of the actual output of their GPUs, in FLOP used for training, relative to their theoretical max of 989 teraFLOP/s per GPU. \nUnfortunately, the report omits the last ingredient, which is the duration of the training run. However, in Table 2 they report some relevant data that we can use to infer the training time. \nNemotron-4 was trained in several stages, but the largest stage used all 6144 GPUs with a batch size of 2304 and an iteration time (time per batch) of 8.0 seconds. This stage involved 7.6T tokens, so it makes up the majority of training. \nA batch size of 2304 means that each batch consists of 2304 sequences, and they report that the sequence length used for training was 4096 tokens. This means that each batch contained 4096 * 2304 = 9,437,184 tokens. \nSo, during this stage, it took 8 seconds to train the model on 9.4m tokens. Extrapolating to the entire 9T token dataset, this implies the training run would have taken 7,659,574 seconds, or 89 days. (it actually took longer because they didn't use all their GPUs for the whole run) \nMultiplying 7,659,574 seconds by 41% MFU, 989 peak teraFLOP/s for each H100, and 6144 H100s, we get ~1.9e25 FLOP. This is very close to our first estimate. \n",
+    "Link": "https://blogs.nvidia.com/blog/nemotron-4-synthetic-data-generation-llm-training/ ",
+    "Reference": "NVIDIA Releases Open Synthetic Data Generation Pipeline for Training Large Language Models"
+  },
+  {
+    "Model": "Aramco Metabrain AI",
+    "Organization": "Saudi Aramco",
+    "Publication date": "2024-03-04",
+    "Training compute (FLOP)": "1.05e+25",
+    "Confidence": "Likely",
+    "Country (of organization)": "Saudi Arabia",
+    "Training compute notes": "6*250B*7T=1.05e+25",
+    "Link": "https://www.offshore-technology.com/news/saudi-aramco-unveils-industry-first-generative-ai-model/",
+    "Reference": "Saudi Aramco unveils industry’s first generative AI model"
+  }
+]

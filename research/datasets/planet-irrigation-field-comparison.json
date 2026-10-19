@@ -1,0 +1,261 @@
+{
+  "datasetId": "planet-irrigation-field-comparison",
+  "id": "planet-irrigation-field-comparison",
+  "conceptIds": [
+    "398"
+  ],
+  "title": "A field trial with an exception",
+  "rows": [
+    {
+      "id": "irrigation-2021-V8–V11-A",
+      "entityId": "irrigation-2021-V8–V11-A",
+      "name": "AI-Radar",
+      "value": 0.16,
+      "unit": "water deficit index",
+      "period": "2021",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2021,V8–V11,Field A",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "V8–V11",
+      "field": "A",
+      "standardDeviation": 0.15
+    },
+    {
+      "id": "irrigation-2021-V8–V11-B",
+      "entityId": "irrigation-2021-V8–V11-B",
+      "name": "Subsurface drip",
+      "value": 0.28,
+      "unit": "water deficit index",
+      "period": "2021",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2021,V8–V11,Field B",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "V8–V11",
+      "field": "B",
+      "standardDeviation": 0.13
+    },
+    {
+      "id": "irrigation-2021-VT–R4-A",
+      "entityId": "irrigation-2021-VT–R4-A",
+      "name": "AI-Radar",
+      "value": 0.15,
+      "unit": "water deficit index",
+      "period": "2021",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2021,VT–R4,Field A",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "VT–R4",
+      "field": "A",
+      "standardDeviation": 0.05
+    },
+    {
+      "id": "irrigation-2021-VT–R4-B",
+      "entityId": "irrigation-2021-VT–R4-B",
+      "name": "Subsurface drip",
+      "value": 0.2,
+      "unit": "water deficit index",
+      "period": "2021",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2021,VT–R4,Field B",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "VT–R4",
+      "field": "B",
+      "standardDeviation": 0.06
+    },
+    {
+      "id": "irrigation-2023-V8–V11-A",
+      "entityId": "irrigation-2023-V8–V11-A",
+      "name": "AI-Radar",
+      "value": 0.11,
+      "unit": "water deficit index",
+      "period": "2023",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2023,V8–V11,Field A",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "V8–V11",
+      "field": "A",
+      "standardDeviation": 0.03
+    },
+    {
+      "id": "irrigation-2023-V8–V11-B",
+      "entityId": "irrigation-2023-V8–V11-B",
+      "name": "Subsurface drip",
+      "value": 0.09,
+      "unit": "water deficit index",
+      "period": "2023",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2023,V8–V11,Field B",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "V8–V11",
+      "field": "B",
+      "standardDeviation": 0.05
+    },
+    {
+      "id": "irrigation-2023-VT–R4-A",
+      "entityId": "irrigation-2023-VT–R4-A",
+      "name": "AI-Radar",
+      "value": 0.16,
+      "unit": "water deficit index",
+      "period": "2023",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2023,VT–R4,Field A",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "VT–R4",
+      "field": "A",
+      "standardDeviation": 0.09
+    },
+    {
+      "id": "irrigation-2023-VT–R4-B",
+      "entityId": "irrigation-2023-VT–R4-B",
+      "name": "Subsurface drip",
+      "value": 0.24,
+      "unit": "water deficit index",
+      "period": "2023",
+      "sourceId": "planet-irrigation",
+      "sourceLocator": "Table 1,2023,VT–R4,Field B",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Kansas fields, no randomized treatment assignment. Satellite-derived water deficit index; lower means lower inferred water stress. Source-reported descriptive SD; aggregation over pixels, dates or both and sample count are not specified in the extracted table. Not a confidence interval or independent field replication.",
+      "growthStage": "VT–R4",
+      "field": "B",
+      "standardDeviation": 0.13
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint",
+    "growthStage": "Source-defined growthStage; interpretation and denominator specified in row notes and dataset metadata",
+    "field": "Source-defined field; interpretation and denominator specified in row notes and dataset metadata",
+    "standardDeviation": "Source-reported descriptive standard deviation; aggregation unclear; not a confidence interval"
+  },
+  "unit": "water deficit index",
+  "denominator": "Source-derived spatial mean WDI for each field × growth stage × growing season; two fields and two seasons, not eight independent trials",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Two corn fields at a central Kansas farm; no national extrapolation",
+    "definition": "Two corn fields at a central Kansas farm; no national extrapolation",
+    "anchorRule": "Use an explicitly non-geographic sphere or global band. No national fill, fake city locations, or inferred unobserved distribution."
+  },
+  "time": {
+    "observationStart": "2021",
+    "observationEnd": "2023",
+    "publishedAt": "2025-12-14",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-irrigation",
+      "publisher": "Debangshi et al., Agricultural & Environmental Letters",
+      "title": "Precision irrigation with artificial intelligence–integrated ground-penetrating radar reduces water stress in corn",
+      "url": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.70047",
+      "locator": "Table 1; Methods field comparison; Results limitations",
+      "version": "2025-12-14",
+      "publishedAt": "2025-12-14",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.70047",
+        "attribution": "Precision irrigation with artificial intelligence–integrated ground-penetrating radar reduces water stress in corn — Debangshi et al., Agricultural & Environmental Letters",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Two corn fields at a central Kansas farm; no national extrapolation",
+    "included": "8 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "No global water savings, randomized causal estimate, measured crop-yield gain, fertilizer reduction or cross-climate transfer test",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Different irrigation hardware and management co-vary with AI use. WDI relies on satellite NDVI and evapotranspiration modelling, not direct field evapotranspiration measurements. In 2023 vegetative-stage WDI is higher in the AI field; retain this exception. Published p threshold 0.1 and descriptive SDs do not cure lack of field replication; the SD aggregation and sample count are not specified in the extracted table.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.70047"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "irrigation-2021-V8–V11-A",
+      "irrigation-2021-V8–V11-B",
+      "irrigation-2021-VT–R4-A",
+      "irrigation-2021-VT–R4-B",
+      "irrigation-2023-V8–V11-A",
+      "irrigation-2023-V8–V11-B",
+      "irrigation-2023-VT–R4-A",
+      "irrigation-2023-VT–R4-B"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

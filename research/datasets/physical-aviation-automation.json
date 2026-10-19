@@ -1,0 +1,189 @@
+{
+  "datasetId": "physical-aviation-automation",
+  "id": "physical-aviation-automation",
+  "schemaVersion": "1.0",
+  "title": "What the accident record actually names",
+  "conceptIds": [
+    "150-5"
+  ],
+  "metric": "Nonexhaustive investigation-record descriptions of automation mechanisms",
+  "unit": "category",
+  "denominator": "Two accidents and one explicitly described control function",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Contextual distinction between documented flight-control automation and unsupported AI attribution.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2018-10-29",
+    "observationEnd": "2019-03-10",
+    "publishedAt": "2019-09",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "ntsb19",
+      "publisher": "National Transportation Safety Board",
+      "title": "ASR-19-01: Assumptions Used in the Safety Assessment Process and Effects of Multiple Alerts",
+      "url": "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf",
+      "locator": "Page1 accident header; pp2–4 factual information and MCAS design",
+      "version": "2019-09",
+      "publishedAt": "2019-09",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf",
+        "attribution": "National Transportation Safety Board — ASR-19-01: Assumptions Used in the Safety Assessment Process and Effects of Multiple Alerts",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "ntsb19",
+    "publisher": "National Transportation Safety Board",
+    "title": "ASR-19-01: Assumptions Used in the Safety Assessment Process and Effects of Multiple Alerts",
+    "url": "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf",
+    "locator": "Page1 accident header; pp2–4 factual information and MCAS design",
+    "version": "2019-09",
+    "publishedAt": "2019-09",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf",
+      "attribution": "National Transportation Safety Board — ASR-19-01: Assumptions Used in the Safety Assessment Process and Effects of Multiple Alerts",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "lion610",
+      "entityId": "IDN-JavaSea",
+      "name": "Lion Air610",
+      "value": "MCAS operation examined",
+      "unit": "category",
+      "period": "2018-10-29",
+      "sourceId": "ntsb19",
+      "sourceLocator": "Reportp1 header andpp2–4",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "IDN-JavaSea",
+      "lat": null,
+      "lon": null,
+      "notes": "JavaSea accident; source discusses sensor input and pilot-response assumptions, without attributing machine learning."
+    },
+    {
+      "id": "et302",
+      "entityId": "ETH-Ejere",
+      "name": "Ethiopian Airlines302",
+      "value": "MCAS operation examined",
+      "unit": "category",
+      "period": "2019-03-10",
+      "sourceId": "ntsb19",
+      "sourceLocator": "Reportp1 header andp3",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "ETH-Ejere",
+      "lat": null,
+      "lon": null,
+      "notes": "Ejere accident; report says automatic trim occurred during manual flight with no autopilot."
+    },
+    {
+      "id": "mcas-trigger",
+      "entityId": "mcas-trigger",
+      "name": "Original MCAS logic",
+      "value": "Threshold-based stability augmentation described",
+      "unit": "category",
+      "period": "2019 report",
+      "sourceId": "ntsb19",
+      "sourceLocator": "p4 MCAS design",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "AOA andMach conditions trigger stabilizer commands; no claim that all aviation automation shares this design."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Contextual distinction between documented flight-control automation and unsupported AI attribution.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "NTSB2019 report contains preliminary investigation context; not a substitute for later national final reports. Absence of ML attribution in this record does not prove no machine learning anywhere in aviation. No casualty ranking, AI accident total or definitive causal finding beyond source scope.",
+  "limitations": [
+    "NTSB2019 report contains preliminary investigation context; not a substitute for later national final reports.",
+    "Absence of ML attribution in this record does not prove no machine learning anywhere in aviation.",
+    "No casualty ranking, AI accident total or definitive causal finding beyond source scope."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "lion610",
+      "et302",
+      "mcas-trigger"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "Which automation mechanisms were actually described in these two investigation records?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

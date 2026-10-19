@@ -1,0 +1,63 @@
+{
+  "asOf": "2026-10-19",
+  "gender": {
+    "source": "https://www.ilo.org/sites/default/files/2026-03/Research%20Brief%20GenAI_final0403_0.pdf",
+    "facts": {
+      "anyExposureFemaleOccupationsPercent": 29,
+      "anyExposureMaleOccupationsPercent": 16,
+      "highExposureGradients3And4FemalePercent": 16,
+      "highExposureGradients3And4MalePercent": 3
+    },
+    "note": "Operationalgenderdominance definitions and overlappingexposure subsets documented in dataset."
+  },
+  "platformSurvey": {
+    "source": "https://www.ilo.org/sites/default/files/2025-04/Informe%20Plataformas%20Digitales_EN_web.pdf",
+    "fieldwork": [
+      "2023-12-15",
+      "2024-03-31"
+    ],
+    "responses": 1407,
+    "excluded": 254,
+    "retained": 1153,
+    "location": "Annex2 PDFp65;payFigure14 PDFp35",
+    "paidOnly": {
+      "median": 4,
+      "mean": 8.35
+    },
+    "paidAndUnpaid": {
+      "median": 2.57,
+      "mean": 5.48
+    }
+  },
+  "nigeriaTrial": {
+    "source": "https://thedocs.worldbank.org/en/doc/0c08ef70ff0e1d81997f116923c0e2c7-0140022025/related/EDU-WP-18-Evaluating-the-Impact-of-Generative-AI-on-Learning-Outcomes-in-Nigeria.pdf",
+    "pdfSha256": "f7ecdc282f7686214b2ccd506bfb0c0d810a3444335a63f0140ce88445af60c0",
+    "table2": {
+      "outcome": "weightedcomposite",
+      "coefficient": 0.31,
+      "robustSE": 0.068,
+      "N": 654,
+      "printedPage": 30
+    },
+    "table3": {
+      "outcome": "English",
+      "coefficient": 0.238,
+      "robustSE": 0.068,
+      "N": 654,
+      "printedPage": 31
+    },
+    "randomized": {
+      "treatment": 657,
+      "control": 671
+    },
+    "endlineAssessment": {
+      "treatment": 422,
+      "control": 337
+    },
+    "note": "Small factual extraction only; no sourcePDF or protectedpresentation copied torepository."
+  },
+  "ituRelease": {
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx",
+    "date": "2025-11-17"
+  }
+}

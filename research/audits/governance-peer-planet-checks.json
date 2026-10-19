@@ -1,0 +1,280 @@
+{
+  "reviewer": "governance_research",
+  "independence": "Reviewer authored none of the four planet datasets. Final hard gates and readiness ratings remain with quality_challenger.",
+  "checkedAt": "2026-10-19",
+  "scope": "All22 rows across four new planet packs: primary-value/category, denominator, dates, uncertainty, geography, AI relationship and factual-extraction reuse checks. No product or research-readiness score assigned.",
+  "datasets": [
+    {
+      "datasetId": "planet-gwas-representation",
+      "datasetPath": "research/datasets/planet-gwas-representation.json",
+      "datasetSha256": "b1f62399ba6fdb205988961609ca5858c5bbde05bb9713c52d8cf8cbcd823e70",
+      "checkedRowIds": [
+        "gwas-0",
+        "gwas-1",
+        "gwas-2",
+        "gwas-3",
+        "gwas-4",
+        "gwas-5"
+      ],
+      "checkedRowCount": 6,
+      "verificationMethod": "Independently reopened primary sources, checked every value/category, unit and relevant definition; then reread the corrected dataset. No dataset files edited by this reviewer.",
+      "primarySources": [
+        {
+          "url": "https://gwasdiversitymonitor.com/",
+          "locator": "Headline Total GWAS participants diversity; last-check timestamp"
+        },
+        {
+          "url": "https://gwasdiversitymonitor.com/qandas",
+          "locator": "Q3,4,6,7,13,14"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/about/terms-of-use/",
+          "locator": "Last revised14October2026; General1,2,9; Data1–4"
+        }
+      ],
+      "verifiedFacts": {
+        "valuesByCategory": {
+          "European": 88.4,
+          "Asian": 6.05,
+          "African": 0.28,
+          "African American or Afro-Caribbean": 2.7,
+          "Hispanic or Latin American": 1.26,
+          "Other/Mixed": 1.31
+        },
+        "sumPercent": 100,
+        "sourceSnapshot": "2026-10-06 00:06:16",
+        "denominator": "Cumulative participant entries across both discovery and replication stages, dropping any Catalog row with at least one unreported ancestry; not a count of unique people.",
+        "geography": "Ancestry categories are not countries or biological racial categories; abstract sphere appropriate.",
+        "aiRelationship": "context; does not establish what any AI model trained on",
+        "reuse": "Q&A4 encourages graph/data reuse and points to EMBL-EBI terms; those terms require attribution and preserve original data-owner restrictions. No blanket raw-data licence asserted."
+      },
+      "findings": [
+        {
+          "id": "gwas-date",
+          "status": "resolved",
+          "finding": "Future source.version dates corrected to2026-10-19."
+        },
+        {
+          "id": "gwas-reuse",
+          "status": "resolved",
+          "finding": "Reuse URL now points to EBI terms explicitly linked by source Q&A4; no general raw-data licence inferred."
+        }
+      ],
+      "remainingLimitations": [
+        "Repeated participants and excluded unreported ancestry limit population interpretation.",
+        "Broad source categories obscure within-group diversity."
+      ],
+      "status": "source-verified"
+    },
+    {
+      "datasetId": "planet-ai-science-comparisons",
+      "datasetPath": "research/datasets/planet-ai-science-comparisons.json",
+      "datasetSha256": "005daad12f688d1ca5aaebf9800463e892bf93590de0e93598985ba43db161ae",
+      "checkedRowIds": [
+        "science-papers",
+        "science-citations",
+        "science-leadership",
+        "science-breadth",
+        "science-engagement"
+      ],
+      "checkedRowCount": 5,
+      "verificationMethod": "Independently reopened primary sources, checked every value/category, unit and relevant definition; then reread the corrected dataset. No dataset files edited by this reviewer.",
+      "primarySources": [
+        {
+          "url": "https://www.nature.com/articles/s41586-025-09922-y",
+          "locator": "Abstract; publisher page redirected during direct retrieval, independently indexed abstract matched"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/s41586-025-09922-y&format=json&resultType=core",
+          "locator": "MED41535462; abstractText, firstPublicationDate, isOpenAccess"
+        },
+        {
+          "url": "https://fi.ee.tsinghua.edu.cn/public/publications/35f947be-f27c-11f0-b382-2aaffa21d846.pdf",
+          "locator": "Author-hosted Nature DOI-matched full article; opening corpus paragraph; AI enhances individual scientists; AI contracts science focus; AI reduces scientific engagement; Methods role transition, KE Eq8, EG Eq11"
+        }
+      ],
+      "verifiedFacts": {
+        "values": [
+          3.02,
+          4.84,
+          1.37,
+          4.63,
+          22
+        ],
+        "publishedAt": "2026-01-14",
+        "corpusPeriod": [
+          "1980",
+          "2025"
+        ],
+        "corpusPapers": 41298433,
+        "classifiedAiPapers": 310957,
+        "AIClassifierF1": 0.875,
+        "fields": [
+          "biology",
+          "medicine",
+          "chemistry",
+          "physics",
+          "materials science",
+          "geology"
+        ],
+        "language": "English",
+        "definitions": {
+          "papers": "Average annual publication count per AI-adopting researcher relative to non-AI group",
+          "citations": "Average annual citations per AI-adopting researcher relative to non-AI group",
+          "leadership": "Birth–death-model expected transition difference7.33 versus8.70 years; project leadership proxied by last authorship",
+          "knowledgeExtent": "4.63% lower median of source-defined maximum embedding distance from sample centroid, in768dimensions, not topic count",
+          "engagement": "22% lower follow-on citation engagement among papers that cite a shared focal paper; EG=2k/[n(n−1)]"
+        },
+        "sourcePayloadHashes": {
+          "EuropePMC_core_response": "af4d56d843092a9f554df415ff60e62fe9bb5a9453eed69ab3dfdba151e94cb7",
+          "author_hosted_full_paper_pdf": "ecd82fc756eb8bc741a84d9af849b04a052f36e9496c4df9bbb23c60e711e9c8"
+        },
+        "reuse": "EuropePMC marks publisher article not open access; only original factual summaries and numeric findings are in the dataset. Author PDF not redistributed."
+      },
+      "findings": [
+        {
+          "id": "science-metric-definitions",
+          "status": "resolved",
+          "finding": "Annual per-researcher ratios, last-author/modelled leadership proxy, embedding-space knowledge extent, and citation-engagement definitions now explicit in every row."
+        },
+        {
+          "id": "science-time",
+          "status": "resolved",
+          "finding": "Observation dates now1980–2025, separate from2026publication; English corpus and6fields explicit."
+        },
+        {
+          "id": "science-model-status",
+          "status": "resolved",
+          "finding": "Leadership difference now status=modelled; observational association language retained."
+        }
+      ],
+      "remainingLimitations": [
+        "Headline point estimates are not causal effects.",
+        "Numerical uncertainty bounds for these five headline summaries are not packaged; do not invent confidence intervals or render precision as certainty.",
+        "No individual paper records or geographic network edges are provided."
+      ],
+      "status": "source-verified"
+    },
+    {
+      "datasetId": "planet-irrigation-field-comparison",
+      "datasetPath": "research/datasets/planet-irrigation-field-comparison.json",
+      "datasetSha256": "ddef3555e3557f2087816da4d4d85bf84d4c09a5702841bb2da3147615d8a1fd",
+      "checkedRowIds": [
+        "irrigation-2021-V8–V11-A",
+        "irrigation-2021-V8–V11-B",
+        "irrigation-2021-VT–R4-A",
+        "irrigation-2021-VT–R4-B",
+        "irrigation-2023-V8–V11-A",
+        "irrigation-2023-V8–V11-B",
+        "irrigation-2023-VT–R4-A",
+        "irrigation-2023-VT–R4-B"
+      ],
+      "checkedRowCount": 8,
+      "verificationMethod": "Independently reopened primary sources, checked every value/category, unit and relevant definition; then reread the corrected dataset. No dataset files edited by this reviewer.",
+      "primarySources": [
+        {
+          "url": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.70047",
+          "locator": "First published14December2025; Methods2.1–2.4; Eq3; Table1 WDI and WDI_sd columns; Results and conclusions"
+        }
+      ],
+      "verifiedFacts": {
+        "table1WdiMeans": [
+          0.16,
+          0.28,
+          0.15,
+          0.2,
+          0.11,
+          0.09,
+          0.16,
+          0.24
+        ],
+        "table1WdiSd": [
+          0.15,
+          0.13,
+          0.05,
+          0.06,
+          0.03,
+          0.05,
+          0.09,
+          0.13
+        ],
+        "years": [
+          2021,
+          2023
+        ],
+        "growthStages": [
+          "V8–V11",
+          "VT–R4"
+        ],
+        "fieldA": "AI-integrated ground-penetrating-radar scheduling on a center pivot, approximately11ha",
+        "fieldB": "Subsurface drip, approximately7ha",
+        "location": "Two adjacent fields in central Kansas, USA",
+        "publishedAt": "2025-12-14",
+        "metric": "WDI = 1 − (Kc-act × ETo)/PET; modeled using satellite NDVI and evapotranspiration inputs; source range0–1, lower means less inferred stress.",
+        "exception": "2023 V8–V11: AI field0.11 versus comparison0.09; source reports p=.3 for this contrast.",
+        "sampling": "One field per irrigation system, two growing seasons; hardware and management co-vary with AI; source table SD is descriptive, not an effect CI.",
+        "reuse": "Open-access label observed, but no precise CC licence inferred from retrieved article text. Limited numeric facts and original summaries only."
+      },
+      "findings": [
+        {
+          "id": "irrigation-sd-definition",
+          "status": "resolved",
+          "finding": "Table1 labels WDI_sd, but exact pixel/time aggregation and sample count are underspecified in extracted methods.",
+          "requestedFix": "Use source-reported descriptive SD rather than claiming purely spatial dispersion; say exact aggregation/sample count unspecified."
+        }
+      ],
+      "remainingLimitations": [
+        "No randomized field assignment or independent field replication.",
+        "SD is not a confidence interval or evidence of replicated treatment effects.",
+        "WDI is model-based; no AI-only causal water-saving or national crop benefit claim."
+      ],
+      "status": "source-verified"
+    },
+    {
+      "datasetId": "planet-ocean-data-policies",
+      "datasetPath": "research/datasets/planet-ocean-data-policies.json",
+      "datasetSha256": "b7876f0c159d935e8f8076aef308b0e1ec6004367d3bd6a8e6ced32a430c7ac3",
+      "checkedRowIds": [
+        "ocean-rights-gebco",
+        "ocean-rights-argo",
+        "ocean-rights-cchdo"
+      ],
+      "checkedRowCount": 3,
+      "verificationMethod": "Independently reopened primary sources, checked every value/category, unit and relevant definition; then reread the corrected dataset. No dataset files edited by this reviewer.",
+      "primarySources": [
+        {
+          "url": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+          "locator": "Scope; Terms of use; Users must; Disclaimer"
+        },
+        {
+          "url": "https://argo.ucsd.edu/data/acknowledging-argo/",
+          "locator": "How to cite Argo data and Argo dataset DOIs"
+        },
+        {
+          "url": "https://cchdo.ucsd.edu/submit",
+          "locator": "Submission paragraph linking Data License and DOI Policy"
+        }
+      ],
+      "verifiedFacts": {
+        "gebco": "Grid information product placed in public domain; free copying, adaptation and commercial exploitation with source acknowledgement, no endorsement and no misrepresentation. Underlying measured bathymetry is not supplied. Not for navigation.",
+        "argo": "Data freely available without restriction; acknowledgement requested. Monthly archived snapshots have DOI keys.",
+        "cchdo": "Submitted data CC0 by default; CC BY can be requested before submission. Record-level licence still needs checking.",
+        "observedAt": "2026-10-19",
+        "scope": "Three selected repository policy cases; no geographic jurisdiction, maritime sovereignty or comprehensive licence census.",
+        "reuse": "The pack paraphrases policy facts; it does not redistribute repository data or provide legal clearance for an unspecified AI-training use."
+      },
+      "findings": [
+        {
+          "id": "ocean-observation-date",
+          "status": "resolved",
+          "finding": "ObservationEnd and source.version corrected from tomorrow to2026-10-19."
+        }
+      ],
+      "remainingLimitations": [
+        "Policy page versions lack publication dates and may change.",
+        "Specific datasets may have distinct restrictions; repository default is not universal legal clearance."
+      ],
+      "status": "source-verified"
+    }
+  ]
+}

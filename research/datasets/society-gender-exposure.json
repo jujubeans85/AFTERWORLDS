@@ -1,0 +1,202 @@
+{
+  "datasetId": "society-gender-exposure",
+  "id": "society-gender-exposure",
+  "title": "Gender segregation and GenAI task exposure",
+  "conceptIds": [
+    "422-2"
+  ],
+  "metric": "Gender segregation and GenAI task exposure",
+  "unit": "percent of occupations",
+  "denominator": "Occupations classified as female-dominated (>=75%women) or male-dominated (<25%women) in at least25% of84countries; any exposure versus high exposure gradients3+4.",
+  "rows": [
+    {
+      "id": "gender-female-any exposure",
+      "entityId": "gender-female-any exposure",
+      "name": "Female-dominated occupations; any exposure",
+      "value": 29,
+      "unit": "percent of occupations",
+      "period": "2026 analysis",
+      "sourceId": "ilo-gender-brief-2026",
+      "sourceLocator": "Printed pages5–6, Figure5 and adjacent text; dominance definition on printed page3",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Share of classified occupations, not employment or observed jobloss. High-exposure subset is included within any-exposure total; never sum them.",
+      "sex": "female",
+      "exposureCategory": "any exposure"
+    },
+    {
+      "id": "gender-male-any exposure",
+      "entityId": "gender-male-any exposure",
+      "name": "Male-dominated occupations; any exposure",
+      "value": 16,
+      "unit": "percent of occupations",
+      "period": "2026 analysis",
+      "sourceId": "ilo-gender-brief-2026",
+      "sourceLocator": "Printed pages5–6, Figure5 and adjacent text; dominance definition on printed page3",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Share of classified occupations, not employment or observed jobloss. High-exposure subset is included within any-exposure total; never sum them.",
+      "sex": "male",
+      "exposureCategory": "any exposure"
+    },
+    {
+      "id": "gender-female-highest exposure",
+      "entityId": "gender-female-highest exposure",
+      "name": "Female-dominated occupations; high exposure (gradients3–4)",
+      "value": 16,
+      "unit": "percent of occupations",
+      "period": "2026 analysis",
+      "sourceId": "ilo-gender-brief-2026",
+      "sourceLocator": "Printed pages5–6, Figure5 and adjacent text; dominance definition on printed page3",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Share of classified occupations, not employment or observed jobloss. High-exposure subset is included within any-exposure total; never sum them.",
+      "sex": "female",
+      "exposureCategory": "high exposure (gradients3–4)"
+    },
+    {
+      "id": "gender-male-highest exposure",
+      "entityId": "gender-male-highest exposure",
+      "name": "Male-dominated occupations; high exposure (gradients3–4)",
+      "value": 3,
+      "unit": "percent of occupations",
+      "period": "2026 analysis",
+      "sourceId": "ilo-gender-brief-2026",
+      "sourceLocator": "Printed pages5–6, Figure5 and adjacent text; dominance definition on printed page3",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Share of classified occupations, not employment or observed jobloss. High-exposure subset is included within any-exposure total; never sum them.",
+      "sex": "male",
+      "exposureCategory": "high exposure (gradients3–4)"
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "sex": "Source occupation-dominance category, female or male; not individual sex data",
+    "exposureCategory": "Any exposure (gradients1–4) or nested high exposure (gradients3–4)"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "Mixed source employment-survey years; not specified in brief",
+    "observationEnd": "Mixed source employment-survey years; not specified in brief",
+    "publishedAt": "2026-03-05",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed.",
+    "analysisPublishedAt": "2026-03-05"
+  },
+  "sources": [
+    {
+      "sourceId": "ilo-gender-2026",
+      "publisher": "International Labour Organization",
+      "title": "New ILO data confirm women face higher workplace risks from generative AI than men",
+      "url": "https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men",
+      "locator": "Women concentrated in high-risk jobs; percentages of female/male-dominated occupations",
+      "version": "2026 analysis",
+      "publishedAt": "2026-03-05",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men",
+        "attribution": "International Labour Organization; New ILO data confirm women face higher workplace risks from generative AI than men",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "ilo-gender-brief-2026",
+      "publisher": "ILO",
+      "title": "Gen AI, occupational segregation and gender equality in the world of work",
+      "url": "https://www.ilo.org/sites/default/files/2026-03/Research%20Brief%20GenAI_final0403_0.pdf",
+      "locator": "Printed page3 definitions; printed pages5–6, Figure5 and adjacent text",
+      "version": "2026-03 researchbrief",
+      "publishedAt": "2026-03-05",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.ilo.org/sites/default/files/2026-03/Research%20Brief%20GenAI_final0403_0.pdf",
+        "attribution": "ILO; Gen AI, occupational segregation and gender equality in the world of work",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Female- or male-dominated occupations in the ILO country sample, separately by category",
+    "included": "4 records: 4 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. 2026 harmonized microdata analysis covers 84 countries; it does not establish effects on wages, hiring or layoffs. Do not compare with 2025 employment-denominator estimates as a trend.",
+  "limitations": [
+    "2026 harmonized microdata analysis covers 84 countries; it does not establish effects on wages, hiring or layoffs.",
+    "Do not compare with 2025 employment-denominator estimates as a trend.",
+    "Brief count text has an internal occupation-count inconsistency; no occupation counts derived. Female/male dominance is an operational sample classification, not biological attribution.",
+    "2026 is the analysis publication year, not a common fieldwork year for84countries. No temporal change estimate is supported."
+  ],
+  "aiRelationship": "direct",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "gender-female-any exposure",
+      "gender-male-any exposure",
+      "gender-female-highest exposure",
+      "gender-male-highest exposure"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AFTERWORLD populated research dataset",
+  "description": "Structural validation only; passing does not verify source truth or confer acceptance.",
+  "type": "object",
+  "required": [
+    "datasetId",
+    "title",
+    "rows",
+    "columns",
+    "unit",
+    "denominator",
+    "geography",
+    "time",
+    "sources",
+    "coverage",
+    "uncertainty",
+    "transform",
+    "verification"
+  ],
+  "properties": {
+    "datasetId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "entityId",
+          "name",
+          "value",
+          "unit",
+          "period",
+          "sourceId",
+          "sourceLocator",
+          "status",
+          "qualifier",
+          "geographicId",
+          "lat",
+          "lon",
+          "notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "entityId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": [
+              "number",
+              "string",
+              "boolean",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "period": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceLocator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "observed",
+              "estimated",
+              "modelled",
+              "projected",
+              "scenario",
+              "categorical",
+              "missing"
+            ]
+          },
+          "qualifier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "geographicId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lat": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": -90,
+            "maximum": 90
+          },
+          "lon": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": -180,
+            "maximum": 180
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "columns": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "denominator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "geography": {
+      "type": "object",
+      "required": [
+        "mode",
+        "unit",
+        "definition",
+        "anchorRule"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "geographic",
+            "categorical",
+            "global",
+            "network"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "anchorRule": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "time": {
+      "type": "object",
+      "required": [
+        "observationStart",
+        "observationEnd",
+        "publishedAt",
+        "retrievedAt",
+        "updateCadence"
+      ],
+      "properties": {
+        "observationStart": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observationEnd": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publishedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "updateCadence": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceId",
+          "publisher",
+          "title",
+          "url",
+          "locator",
+          "version",
+          "publishedAt",
+          "retrievedAt",
+          "reuse"
+        ],
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publishedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retrievedAt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reuse": {
+            "type": "object",
+            "required": [
+              "basis",
+              "termsUrl",
+              "attribution",
+              "verified",
+              "notes"
+            ],
+            "properties": {
+              "basis": {
+                "type": "string",
+                "minLength": 1
+              },
+              "termsUrl": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "attribution": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verified": {
+                "type": "boolean"
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "population",
+        "included",
+        "omitted",
+        "missingness"
+      ],
+      "properties": {
+        "population": {
+          "type": "string",
+          "minLength": 1
+        },
+        "included": {
+          "type": "string",
+          "minLength": 1
+        },
+        "omitted": {
+          "type": "string",
+          "minLength": 1
+        },
+        "missingness": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "uncertainty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transform": {
+      "type": "object",
+      "required": [
+        "type",
+        "description",
+        "codePath",
+        "inputReferences",
+        "validation"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "none",
+            "manual",
+            "scripted"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "codePath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "inputReferences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "validation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "status",
+        "method",
+        "checkedRows",
+        "evidencePaths",
+        "reviewer",
+        "checkedAt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unchecked",
+            "researcher-checked",
+            "independently-checked"
+          ]
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checkedRows": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidencePaths": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checkedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,822 @@
+[
+  {
+    "id": "430",
+    "title": "CO2 Carbon Budget",
+    "url": "https://world-processor.com/430/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Carbon Clock",
+    "lens": "energy",
+    "question": "How much does AI's carbon cost change with where and when a computation runs?",
+    "sourceConcept": "Atmospheric carbon accumulation is framed against finite warming budgets.",
+    "connection": "Move from the global carbon budget to the timing and location of AI electricity demand.",
+    "slug": "the-carbon-clock",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "430",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "428",
+    "title": "OCEAN CHOKE POINTS",
+    "url": "https://world-processor.com/428/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Narrow Sea",
+    "lens": "chips",
+    "question": "Which sea passages could interrupt the physical supply chain behind an apparently weightless AI service?",
+    "sourceConcept": "Maritime bottlenecks concentrate oil and container transport.",
+    "connection": "Trace the shipping dependencies of chips, server equipment and energy supplies.",
+    "slug": "the-narrow-sea",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "428",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "406",
+    "title": "Climate Zones",
+    "url": "https://world-processor.com/406/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Cooling Belt",
+    "lens": "energy",
+    "question": "Which climates make data-centre cooling easier, and where do heat and humidity complicate it?",
+    "sourceConcept": "Temperature and humidity classes divide the planet into sharply different climatic conditions.",
+    "connection": "Study climate-sensitive cooling requirements while separating weather from actual facility performance.",
+    "slug": "the-cooling-belt",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "406",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "396",
+    "title": "Sea Level Rise",
+    "url": "https://world-processor.com/396/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Servers at the Waterline",
+    "lens": "water",
+    "question": "Which publicly located data centres face coastal flooding, and under which scenario?",
+    "sourceConcept": "A hypothetical sea-level increase reveals exposed coastal land rather than a dated prediction.",
+    "connection": "Overlay disclosed facility locations with explicit flood scenarios and elevation uncertainty.",
+    "slug": "servers-at-the-waterline",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "396",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "394",
+    "title": "Urban Expansion",
+    "url": "https://world-processor.com/394/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Compute Sprawl",
+    "lens": "energy",
+    "question": "Where is proposed AI infrastructure growing faster than the local grid can connect it?",
+    "sourceConcept": "City growth is shown relative to regional population and urban expansion rates.",
+    "connection": "Compare dated data-centre proposals, construction and grid-connection evidence.",
+    "slug": "the-compute-sprawl",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "394",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "386",
+    "title": "Pre-Rail Trade Routes",
+    "url": "https://world-processor.com/386/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The New Silk Thread",
+    "lens": "chips",
+    "question": "Which old trade corridors still carry the materials and equipment needed for advanced computation?",
+    "sourceConcept": "Sea and overland trade routes precede the transport revolution of steam power.",
+    "connection": "Compare historical corridor logic with independently documented semiconductor supply chains.",
+    "slug": "the-new-silk-thread",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "386-2",
+        "year": null
+      },
+      {
+        "label": "386",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "382",
+    "title": "Country = Country(s); Landmass",
+    "url": "https://world-processor.com/382/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Land of Compute",
+    "lens": "energy",
+    "question": "How much physical land does large-scale computation require, and what else competes for it?",
+    "sourceConcept": "Equivalent land areas are transplanted across the globe to challenge familiar geographic scale.",
+    "connection": "Compare verified facility footprints and land-use trade-offs with scale made explicit.",
+    "slug": "the-land-of-compute",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "382",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "368",
+    "title": "Arms Embargoes",
+    "url": "https://world-processor.com/368/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Chips Behind the Line",
+    "lens": "chips",
+    "question": "Which advanced-compute transfers are restricted, from when, and under whose rules?",
+    "sourceConcept": "Current and former arms embargoes are distinguished alongside conflict zones.",
+    "connection": "Track dated advanced-chip controls and legal exceptions separately from military embargoes.",
+    "slug": "chips-behind-the-line",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "368",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "358",
+    "title": "Sailing and Shipwrecks",
+    "url": "https://world-processor.com/358/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Uncrewed Crossing",
+    "lens": "mobility",
+    "question": "Where have autonomous vessels completed independently documented voyages, and under what supervision?",
+    "sourceConcept": "Sailing routes, competitions and catastrophic shipwrecks share a maritime surface.",
+    "connection": "Contrast verified autonomous-vessel trials with the continuing role of human oversight.",
+    "slug": "the-uncrewed-crossing",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "358",
+        "year": 2011
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "331",
+    "title": "Regional Energy Consumption vs. GDP",
+    "url": "https://world-processor.com/331/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Value per Watt",
+    "lens": "energy",
+    "question": "Where does additional computing demand produce measurable value, and how is that value counted?",
+    "sourceConcept": "Regional energy consumption is juxtaposed with economic production.",
+    "connection": "Examine AI-energy productivity using explicit boundaries rather than a single unsupported efficiency score.",
+    "slug": "value-per-watt",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "331-3",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "325",
+    "title": "Car-Free Countries",
+    "url": "https://world-processor.com/325/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Mobility Without Ownership",
+    "lens": "mobility",
+    "question": "Could AI-supported transport improve access where private car ownership is low?",
+    "sourceConcept": "Countries with very few cars per person are highlighted against industrialised ownership patterns.",
+    "connection": "Evaluate accessible transport pilots and local needs without assuming private autonomy is the answer.",
+    "slug": "mobility-without-ownership",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "325-2",
+        "year": 2008
+      },
+      {
+        "label": "325",
+        "year": 2008
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "324",
+    "title": "Chemical and Energy Companies vs. Country",
+    "url": "https://world-processor.com/324/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Grid's New Customer",
+    "lens": "energy",
+    "question": "How much purchasing power do large AI operators have over future electricity supply?",
+    "sourceConcept": "Large industrial corporations are compared with the economic scale of countries.",
+    "connection": "Examine disclosed power contracts and capacity commitments while distinguishing corporate and national accounts.",
+    "slug": "the-grid-s-new-customer",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "324",
+        "year": 2008
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "323",
+    "title": "Oil and Coal Deposits and Reserves",
+    "url": "https://world-processor.com/323/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Old Fuel, New Demand",
+    "lens": "energy",
+    "question": "Where does forecast computing demand intersect with existing fossil-fuel generation?",
+    "sourceConcept": "Fossil-fuel reserves and deposits reveal the geography of stored energy.",
+    "connection": "Compare AI-related electricity projections with actual generation mixes and planned supply changes.",
+    "slug": "old-fuel-new-demand",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "323",
+        "year": 2009
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "321",
+    "title": "Solar Exposure",
+    "url": "https://world-processor.com/321/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Follow the Sun",
+    "lens": "energy",
+    "question": "Could movable AI workloads follow low-carbon electricity without exceeding latency and grid constraints?",
+    "sourceConcept": "Solar exposure and illustrative generation areas make renewable potential tangible.",
+    "connection": "Test geographically flexible computing scenarios rather than assume all work can migrate.",
+    "slug": "follow-the-sun",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "321",
+        "year": null
+      },
+      {
+        "label": "321-3",
+        "year": 2016
+      },
+      {
+        "label": "321-2",
+        "year": 2010
+      },
+      {
+        "label": "321",
+        "year": 2008
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "314",
+    "title": "Deserts",
+    "url": "https://world-processor.com/314/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Waterless Compute",
+    "lens": "water",
+    "question": "Where do AI infrastructure proposals overlap arid land, and which cooling claims can be verified?",
+    "sourceConcept": "Deserts are defined through low precipitation, including places beyond familiar hot sandy landscapes.",
+    "connection": "Research aridity and disclosed cooling methods without equating every desert facility with high water use.",
+    "slug": "waterless-compute",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "314",
+        "year": 2009
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "305",
+    "title": "Japanese Economic Continent",
+    "url": "https://world-processor.com/305/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Compute Continent",
+    "lens": "chips",
+    "question": "How much of one country's AI capability depends on suppliers spread across other continents?",
+    "sourceConcept": "The source title imagines an economic continent extending beyond physical national territory.",
+    "connection": "Trace documented semiconductor and compute dependencies as an economic rather than territorial footprint.",
+    "slug": "the-compute-continent",
+    "sourceRead": true,
+    "sourceEvidence": "title-only",
+    "sourceVersions": [
+      {
+        "label": "305",
+        "year": 2004
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The public page provides titles or version headings but no explanatory caption. The connection uses that limited evidence."
+  },
+  {
+    "id": "293",
+    "title": "Global Warming - Greenhouse Contributors",
+    "url": "https://world-processor.com/293/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "The Carbon Shadow",
+    "lens": "energy",
+    "question": "Which regions bear computing emissions that serve users somewhere else?",
+    "sourceConcept": "Country silhouettes expand or contract to reflect their greenhouse contribution.",
+    "connection": "Compare production-based and consumption-based accounting for computing with attribution limits exposed.",
+    "slug": "the-carbon-shadow",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "293",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "266-2",
+    "title": "One Taiwan Policy",
+    "url": "https://world-processor.com/2662-one-taiwan-policy-2018/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "One Island, Many Dependencies",
+    "lens": "chips",
+    "question": "Which documented semiconductor production stages make Taiwan central to advanced AI supply chains?",
+    "sourceConcept": "A conceptual statement about Taiwan deliberately questions political naming conventions.",
+    "connection": "Shift from contested naming to verifiable manufacturing dependencies without treating sovereignty as settled by the map.",
+    "slug": "one-island-many-dependencies",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "266-2",
+        "year": 2018
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "255",
+    "title": "Access to Drinking Water, 2011",
+    "url": "https://world-processor.com/255/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Whose Water First?",
+    "lens": "water",
+    "question": "Where does computing demand share stressed water systems with communities lacking reliable drinking water?",
+    "sourceConcept": "Access to improved drinking water is divided into country-level coverage bands.",
+    "connection": "Compare local water catchments and disclosed facility use rather than infer conflict from national averages.",
+    "slug": "whose-water-first",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "255-4",
+        "year": 2011
+      },
+      {
+        "label": "255-2",
+        "year": 2006
+      },
+      {
+        "label": "255",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "233-2",
+    "title": "Rainfall",
+    "url": "https://world-processor.com/233/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Rain Before It Falls",
+    "lens": "water",
+    "question": "Where do AI weather forecasts outperform baselines for extreme rainfall, and where are gauges too sparse to know?",
+    "sourceConcept": "Rainfall contours cross political and continental boundaries with uneven precipitation totals.",
+    "connection": "Compare out-of-sample extreme-rainfall skill and observing coverage region by region.",
+    "slug": "rain-before-it-falls",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "233-2",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "217",
+    "title": "Car Jam",
+    "url": "https://world-processor.com/217/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "The Inference Traffic Jam",
+    "lens": "energy",
+    "question": "Could efficiency gains be overwhelmed by growth in total AI use?",
+    "sourceConcept": "A spiralling line turns the cumulative global vehicle stock into a physical-scale comparison.",
+    "connection": "Investigate total inference demand and rebound scenarios with assumptions shown explicitly.",
+    "slug": "the-inference-traffic-jam",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "217-8",
+        "year": 2021
+      },
+      {
+        "label": "217-6",
+        "year": 2015
+      },
+      {
+        "label": "217-5",
+        "year": 2012
+      },
+      {
+        "label": "217-3",
+        "year": 2000
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "214",
+    "title": "Car Producing Countries",
+    "url": "https://world-processor.com/214/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Where Robots Are Made",
+    "lens": "chips",
+    "question": "Which countries manufacture AI-enabled robots, and which mainly import finished systems?",
+    "sourceConcept": "Car-producing nations and production volumes reveal the geography of manufacturing capacity.",
+    "connection": "Compare verified robotics production and imports with clear definitions of AI-enabled capability.",
+    "slug": "where-robots-are-made",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "214-2",
+        "year": 2010
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "211-4",
+    "title": "Bad Carma",
+    "url": "https://world-processor.com/2114-bad-carma-2005/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Autonomy's Uneven Road",
+    "lens": "mobility",
+    "question": "Where do automated-driving systems work reliably, and where do roads and conditions expose their limits?",
+    "sourceConcept": "Road danger is expressed through differently sized symbols over countries.",
+    "connection": "Compare documented operational domains and safety evidence rather than country-level automation promises.",
+    "slug": "autonomy-s-uneven-road",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "211-4",
+        "year": 2005
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "202",
+    "title": "Car Populations",
+    "url": "https://world-processor.com/202/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Cars With Eyes",
+    "lens": "mobility",
+    "question": "How many vehicles have deployed perception systems, and what distinguishes assistance from autonomy?",
+    "sourceConcept": "Vehicle populations are represented through markers of differing numerical magnitude.",
+    "connection": "Count documented driver-assistance and autonomous systems separately with operational definitions.",
+    "slug": "cars-with-eyes",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "202-2",
+        "year": 2009
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "30-8",
+    "title": "CO2 Spiral",
+    "url": "https://world-processor.com/030/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Inference Spiral",
+    "lens": "energy",
+    "question": "How is the balance between model training and everyday inference changing over time?",
+    "sourceConcept": "A historical spiral turns accumulating carbon emissions into a temporal physical form.",
+    "connection": "Plot dated lifecycle estimates without treating training figures as the whole AI footprint.",
+    "slug": "the-inference-spiral",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "30-8",
+        "year": 2016
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "41-4",
+    "title": "Night",
+    "url": "https://world-processor.com/041/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Night of the Machines",
+    "lens": "energy",
+    "question": "Which new lights reveal computing infrastructure, and which tell a completely different human story?",
+    "sourceConcept": "Night-time illumination makes human activity visible while also revealing observation costs.",
+    "connection": "Test satellite-light proxies against verified facilities instead of treating brightness as AI capacity.",
+    "slug": "night-of-the-machines",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "41-4",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "56-5",
+    "title": "Percentage of World Energy Consumption / 全球能源消耗量佔有率",
+    "url": "https://world-processor.com/56-5/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Growing Slice",
+    "lens": "energy",
+    "question": "What fraction of electricity demand is attributable to data centres, and how much is demonstrably AI?",
+    "sourceConcept": "Regional energy shares and growth direction are shown together.",
+    "connection": "Separate measured data-centre demand, AI estimates and future projections with compatible units.",
+    "slug": "the-growing-slice",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "56-5",
+        "year": 2016
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "111-3",
+    "title": "Major Rivers",
+    "url": "https://world-processor.com/1113-major-rivers-1996/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "A River Runs Through It",
+    "lens": "water",
+    "question": "Which rivers supply cooling or electricity to compute centres, and who else depends on those waters?",
+    "sourceConcept": "Rivers connect transport, food, energy, settlement and waste disposal.",
+    "connection": "Study catchment-level dependencies using disclosed facility information and seasonal water conditions.",
+    "slug": "a-river-runs-through-it",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "111-3",
+        "year": 1996
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "150-5",
+    "title": "Airplane Disasters",
+    "url": "https://world-processor.com/150-5/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "When Autopilot Is Not AI",
+    "lens": "mobility",
+    "question": "Which aviation automation incidents actually involved machine learning, and which involved other systems?",
+    "sourceConcept": "Flight routes distinguish completed and unrealised journeys in major aviation disasters.",
+    "connection": "Separate conventional automation from machine learning and document causal findings rather than speculate.",
+    "slug": "when-autopilot-is-not-ai",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "150-5",
+        "year": 2019
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "193-5",
+    "title": "Fuel Consumers",
+    "url": "https://world-processor.com/193/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Compute per Person",
+    "lens": "energy",
+    "question": "How different is the AI-energy map when total consumption is shown beside a per-person measure?",
+    "sourceConcept": "Total fuel use and use per person are deliberately placed on separate scales.",
+    "connection": "Compare total and population-normalised compute energy while marking AI-specific estimates as estimates.",
+    "slug": "compute-per-person",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "193-5",
+        "year": 2023
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  }
+]

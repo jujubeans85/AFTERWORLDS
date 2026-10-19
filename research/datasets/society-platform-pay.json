@@ -1,0 +1,182 @@
+{
+  "datasetId": "society-platform-pay",
+  "id": "society-platform-pay",
+  "title": "Pay beneath the platform",
+  "conceptIds": [
+    "320"
+  ],
+  "metric": "Pay beneath the platform",
+  "unit": "USD per hour",
+  "denominator": "Hourly earnings divided by paid-plus-unpaid or paid-only hours, separately; survey trims1st/99th percentiles for Figure14.",
+  "rows": [
+    {
+      "id": "lac-pay-median",
+      "entityId": "lac-pay-median",
+      "name": "Median hourly income",
+      "value": 2.57,
+      "unit": "USD per hour",
+      "period": "2023-12-15/2024-03-31",
+      "sourceId": "ilo-lac-platform-2025",
+      "sourceLocator": "Section4.1 Figure14, printedp31/PDFp35",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Includes unpaid job search/admin time;Figure14 data trimmed1st/99thpercentiles. Selected webplatform sample, not AI-only labour.",
+      "statistic": "median",
+      "timeBasis": "paid and unpaid hours"
+    },
+    {
+      "id": "lac-pay-mean",
+      "entityId": "lac-pay-mean",
+      "name": "Mean hourly income",
+      "value": 5.48,
+      "unit": "USD per hour",
+      "period": "2023-12-15/2024-03-31",
+      "sourceId": "ilo-lac-platform-2025",
+      "sourceLocator": "Section4.1 Figure14, printedp31/PDFp35",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Includes unpaid job search/admin time;Figure14 data trimmed1st/99thpercentiles. Selected webplatform sample, not AI-only labour.",
+      "statistic": "mean",
+      "timeBasis": "paid and unpaid hours"
+    },
+    {
+      "id": "lac-pay-paid-median",
+      "entityId": "lac-pay-paid-median",
+      "name": "Median hourly income, paid hours only",
+      "value": 4.0,
+      "unit": "USD per hour",
+      "period": "2023-12-15/2024-03-31",
+      "sourceId": "ilo-lac-platform-2025",
+      "sourceLocator": "Section4.1 Figure14, printedp31/PDFp35",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Paid-hour denominator only;Figure14 data trimmed1st/99thpercentiles. Not AI-only labour.",
+      "statistic": "median",
+      "timeBasis": "paid hours only"
+    },
+    {
+      "id": "lac-pay-paid-mean",
+      "entityId": "lac-pay-paid-mean",
+      "name": "Mean hourly income, paid hours only",
+      "value": 8.35,
+      "unit": "USD per hour",
+      "period": "2023-12-15/2024-03-31",
+      "sourceId": "ilo-lac-platform-2025",
+      "sourceLocator": "Section4.1 Figure14, printedp31/PDFp35",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Paid-hour denominator only;Figure14 data trimmed1st/99thpercentiles. Not AI-only labour.",
+      "statistic": "mean",
+      "timeBasis": "paid hours only"
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "timeBasis": "Denominator of hourly pay: paid only versus paid and unpaid hours",
+    "statistic": "Source sample mean or median"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2023-12-15",
+    "observationEnd": "2024-03-31",
+    "publishedAt": "2025-04-10",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "ilo-lac-platform-2025",
+      "publisher": "ILO",
+      "title": "Survey on workers on web-based digital platforms: new data for Latin America and the Caribbean",
+      "url": "https://www.ilo.org/sites/default/files/2025-04/Informe%20Plataformas%20Digitales_EN_web.pdf",
+      "locator": "Executive summary; section2.5; section4.1 Figure14; Annex2 PDFp65 fieldwork",
+      "version": "Englishreport; DOI10.54394/NDVQ0600; fieldwork2023-12-15/2024-03-31",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY4.0; primary English report PDFp3",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Cravo,T. (2025), Survey of workers on web-based digital platforms. New data for the Latin American and Caribbean region, Lima: International Labour Office. ©ILO. AFTERWORLDS extracts selected aggregate facts.",
+        "verified": true,
+        "notes": "This is an adaptation of a copyrighted work of the International Labour Organization (ILO). This adaptation has not been prepared, reviewed or endorsed by the ILO and should not be considered an official ILO adaptation. The ILO disclaims all responsibility for its content and accuracy. Responsibility rests solely with the author(s) of the adaptation. No ILO emblem or logo used."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Selected web-platform worker sample in21 LAC countries;1407 respondents,254 excluded,1153 retained.",
+    "included": "4 reported summary statistics; same selected survey, different time denominators",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation.",
+    "sampling": "Survey available through selected platforms, not a probability sample of all workers; individual item denominators can vary."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. Includes programming and design as well as microtasks; AI-labour subset not isolated. No fraction of final AI product value can be calculated.",
+  "limitations": [
+    "Includes programming and design as well as microtasks; AI-labour subset not isolated.",
+    "No fraction of final AI product value can be calculated.",
+    "Hourly-pay distributions were trimmed at1st/99thpercentiles; no standard errors supplied for these summaries."
+  ],
+  "aiRelationship": "context",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "lac-pay-median",
+      "lac-pay-mean"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

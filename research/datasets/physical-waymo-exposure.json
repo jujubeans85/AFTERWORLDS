@@ -1,0 +1,223 @@
+{
+  "datasetId": "physical-waymo-exposure",
+  "id": "physical-waymo-exposure",
+  "schemaVersion": "1.0",
+  "title": "Where rider-only miles accumulated",
+  "conceptIds": [
+    "202"
+  ],
+  "metric": "Cumulative rider-only operating exposure",
+  "unit": "million rider-only miles",
+  "denominator": "Waymo passenger service without a human driver; five reported operating regions",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "One provider’s deployment exposure; unlike assisted driving, no human driver is onboard.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "Through 2026-06",
+    "observationEnd": "Through 2026-06",
+    "publishedAt": "2026-09-24",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "waymo26",
+      "publisher": "Waymo",
+      "title": "Safety Impact",
+      "url": "https://www.waymo.com/safety/impact/",
+      "locator": "Rider-only miles through June 2026; Any-Injury-Reported Crash Rates",
+      "version": "2026-09-24",
+      "publishedAt": "2026-09-24",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.waymo.com/safety/impact/",
+        "attribution": "Waymo — Safety Impact",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "waymo26",
+    "publisher": "Waymo",
+    "title": "Safety Impact",
+    "url": "https://www.waymo.com/safety/impact/",
+    "locator": "Rider-only miles through June 2026; Any-Injury-Reported Crash Rates",
+    "version": "2026-09-24",
+    "publishedAt": "2026-09-24",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.waymo.com/safety/impact/",
+      "attribution": "Waymo — Safety Impact",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "waymo-LA",
+      "entityId": "US-CA-LosAngeles",
+      "name": "Los Angeles",
+      "value": 67.098,
+      "unit": "million rider-only miles",
+      "period": "Through 2026-06",
+      "sourceId": "waymo26",
+      "sourceLocator": "Rider-only miles by location",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-CA-LosAngeles",
+      "lat": null,
+      "lon": null,
+      "notes": "Cumulative within provider operating domains; not fleet size, all-road coverage or global deployment."
+    },
+    {
+      "id": "waymo-SF",
+      "entityId": "US-CA-SFBay",
+      "name": "San Francisco Bay Area",
+      "value": 82.421,
+      "unit": "million rider-only miles",
+      "period": "Through 2026-06",
+      "sourceId": "waymo26",
+      "sourceLocator": "Rider-only miles by location",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-CA-SFBay",
+      "lat": null,
+      "lon": null,
+      "notes": "Cumulative within provider operating domains; not fleet size, all-road coverage or global deployment."
+    },
+    {
+      "id": "waymo-PHX",
+      "entityId": "US-AZ-Phoenix",
+      "name": "Phoenix",
+      "value": 92.121,
+      "unit": "million rider-only miles",
+      "period": "Through 2026-06",
+      "sourceId": "waymo26",
+      "sourceLocator": "Rider-only miles by location",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-AZ-Phoenix",
+      "lat": null,
+      "lon": null,
+      "notes": "Cumulative within provider operating domains; not fleet size, all-road coverage or global deployment."
+    },
+    {
+      "id": "waymo-AUS",
+      "entityId": "US-TX-Austin",
+      "name": "Austin",
+      "value": 21.064,
+      "unit": "million rider-only miles",
+      "period": "Through 2026-06",
+      "sourceId": "waymo26",
+      "sourceLocator": "Rider-only miles by location",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-TX-Austin",
+      "lat": null,
+      "lon": null,
+      "notes": "Cumulative within provider operating domains; not fleet size, all-road coverage or global deployment."
+    },
+    {
+      "id": "waymo-ATL",
+      "entityId": "US-GA-Atlanta",
+      "name": "Atlanta",
+      "value": 8.624,
+      "unit": "million rider-only miles",
+      "period": "Through 2026-06",
+      "sourceId": "waymo26",
+      "sourceLocator": "Rider-only miles by location",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-GA-Atlanta",
+      "lat": null,
+      "lon": null,
+      "notes": "Cumulative within provider operating domains; not fleet size, all-road coverage or global deployment."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "One provider’s deployment exposure; unlike assisted driving, no human driver is onboard.",
+    "included": "5 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Not a count of vehicles or perception systems. Named city areas are provider domains, not entire administrative boundaries. Rounded city totals differ from rounded headline total.",
+  "limitations": [
+    "Not a count of vehicles or perception systems.",
+    "Named city areas are provider domains, not entire administrative boundaries.",
+    "Rounded city totals differ from rounded headline total."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.waymo.com/safety/impact/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "waymo-LA",
+      "waymo-SF",
+      "waymo-PHX",
+      "waymo-AUS",
+      "waymo-ATL"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "Where has one autonomous ride-hailing provider accumulated documented driverless operating exposure?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

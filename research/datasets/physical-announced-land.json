@@ -1,0 +1,175 @@
+{
+  "datasetId": "physical-announced-land",
+  "id": "physical-announced-land",
+  "schemaVersion": "1.0",
+  "title": "Land and floor area are different footprints",
+  "conceptIds": [
+    "382"
+  ],
+  "metric": "Two footprint definitions in one original AI-campus announcement",
+  "unit": "mixed, row-specific",
+  "denominator": "Land parcel versus campus floorspace; one historical project proposal",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "State-government disclosure of Meta’s AI-optimized campus.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024-12-04 announcement",
+    "observationEnd": "2024-12-04 announcement",
+    "publishedAt": "2024-12-04",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "meta-land",
+      "publisher": "Louisiana Economic Development",
+      "title": "Meta Selects Northeast Louisiana as Site of AI Optimized Data Center",
+      "url": "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+      "locator": "Opening project facts and former Franklin Farm site description",
+      "version": "2024-12-04",
+      "publishedAt": "2024-12-04",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+        "attribution": "Louisiana Economic Development — Meta Selects Northeast Louisiana as Site of AI Optimized Data Center",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "meta-land",
+    "publisher": "Louisiana Economic Development",
+    "title": "Meta Selects Northeast Louisiana as Site of AI Optimized Data Center",
+    "url": "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+    "locator": "Opening project facts and former Franklin Farm site description",
+    "version": "2024-12-04",
+    "publishedAt": "2024-12-04",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+      "attribution": "Louisiana Economic Development — Meta Selects Northeast Louisiana as Site of AI Optimized Data Center",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "richland-site",
+      "entityId": "US-LA-Richland",
+      "name": "Richland Parish campus announced site",
+      "value": 2250,
+      "unit": "acres",
+      "period": "2024-12-04 announcement",
+      "sourceId": "meta-land",
+      "sourceLocator": "Opening project facts",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-LA-Richland",
+      "lat": null,
+      "lon": null,
+      "notes": "Former Franklin Farm megasite; announced land area, not surveyed2026 footprint.",
+      "measurement": "announced land"
+    },
+    {
+      "id": "richland-floor",
+      "entityId": "US-LA-Richland",
+      "name": "Richland Parish announced campus floorspace",
+      "value": 4000000,
+      "unit": "square feet",
+      "period": "2024-12-04 announcement",
+      "sourceId": "meta-land",
+      "sourceLocator": "Opening project facts",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "US-LA-Richland",
+      "lat": null,
+      "lon": null,
+      "notes": "Floorspace and land area have different geometries and must not be equated.",
+      "measurement": "announced floorspace"
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "measurement": "What the announced figure measures"
+  },
+  "coverage": {
+    "population": "State-government disclosure of Meta’s AI-optimized campus.",
+    "included": "2 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Historical2024 announcement; project expanded in2026 and this is not a current site-area estimate. No parcel boundary, ecological displacement or quantified competing land use is inferred.",
+  "limitations": [
+    "Historical2024 announcement; project expanded in2026 and this is not a current site-area estimate.",
+    "No parcel boundary, ecological displacement or quantified competing land use is inferred."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "richland-site",
+      "richland-floor"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "What is the difference between announced land area and floorspace for a large AI campus?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "measurement": "What the announced figure measures"
+  }
+}

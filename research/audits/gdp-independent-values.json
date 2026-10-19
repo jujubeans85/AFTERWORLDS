@@ -1,0 +1,48 @@
+{
+  "reviewer": "quality_challenger",
+  "metadata": {
+    "page": 1,
+    "pages": 1,
+    "per_page": 20000,
+    "total": 266,
+    "sourceid": "2",
+    "lastupdated": "2026-10-08"
+  },
+  "checks": [
+    {
+      "datasetId": "society-stargate-scale",
+      "rowId": "stargate-gdp-CZE",
+      "match": true
+    },
+    {
+      "datasetId": "society-stargate-scale",
+      "rowId": "stargate-gdp-PRT",
+      "match": true
+    },
+    {
+      "datasetId": "society-stargate-scale",
+      "rowId": "stargate-gdp-FIN",
+      "match": true
+    },
+    {
+      "datasetId": "society-company-gdp",
+      "rowId": "gdp-GRC",
+      "match": true
+    },
+    {
+      "datasetId": "society-company-gdp",
+      "rowId": "gdp-NZL",
+      "match": true
+    },
+    {
+      "datasetId": "society-company-gdp",
+      "rowId": "gdp-FIN",
+      "match": true
+    },
+    {
+      "datasetId": "society-company-gdp",
+      "rowId": "gdp-PRT",
+      "match": true
+    }
+  ]
+}

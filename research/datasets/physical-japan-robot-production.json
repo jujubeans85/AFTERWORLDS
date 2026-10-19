@@ -1,0 +1,223 @@
+{
+  "datasetId": "physical-japan-robot-production",
+  "id": "physical-japan-robot-production",
+  "schemaVersion": "1.0",
+  "title": "Robots produced, robots exported",
+  "conceptIds": [
+    "214"
+  ],
+  "metric": "Japan Robot Association production and shipment statistics",
+  "unit": "units/year",
+  "denominator": "Manipulators and robots in JARA members+nonmembers statistics",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Industrial robot manufacture as enabling context; machine-learning capability not classified.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024",
+    "observationEnd": "2025",
+    "publishedAt": "2026",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "jara25",
+      "publisher": "Japan Robot Association",
+      "title": "2025 Results: Orders, Production and Shipments of Manipulators and Robots by Applications",
+      "url": "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf",
+      "locator": "Page1:production heading, Total Units row, Semiconductor row",
+      "version": "2026",
+      "publishedAt": "2026",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf",
+        "attribution": "Japan Robot Association — 2025 Results: Orders, Production and Shipments of Manipulators and Robots by Applications",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "jara25",
+    "publisher": "Japan Robot Association",
+    "title": "2025 Results: Orders, Production and Shipments of Manipulators and Robots by Applications",
+    "url": "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf",
+    "locator": "Page1:production heading, Total Units row, Semiconductor row",
+    "version": "2026",
+    "publishedAt": "2026",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf",
+      "attribution": "Japan Robot Association — 2025 Results: Orders, Production and Shipments of Manipulators and Robots by Applications",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "jara-prod24",
+      "entityId": "JPN",
+      "name": "Japan robot production",
+      "value": 176215,
+      "unit": "units/year",
+      "period": "2024",
+      "sourceId": "jara25",
+      "sourceLocator": "p1 Production",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "JPN",
+      "lat": null,
+      "lon": null,
+      "notes": "JARA members+nonmembers; includes manipulators and dedicated types."
+    },
+    {
+      "id": "jara-prod25",
+      "entityId": "JPN",
+      "name": "Japan robot production",
+      "value": 207004,
+      "unit": "units/year",
+      "period": "2025",
+      "sourceId": "jara25",
+      "sourceLocator": "p1 Production",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "JPN",
+      "lat": null,
+      "lon": null,
+      "notes": "Production is not installation or shipment volume."
+    },
+    {
+      "id": "jara-dom25",
+      "entityId": "JPN",
+      "name": "Domestic shipments",
+      "value": 37816,
+      "unit": "units/year",
+      "period": "2025",
+      "sourceId": "jara25",
+      "sourceLocator": "p1 Total Units, domestic shipments",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "JPN",
+      "lat": null,
+      "lon": null,
+      "notes": "Within JARA reporting scope; not Japan imports."
+    },
+    {
+      "id": "jara-exp25",
+      "entityId": "JPN",
+      "name": "Exports",
+      "value": 173323,
+      "unit": "units/year",
+      "period": "2025",
+      "sourceId": "jara25",
+      "sourceLocator": "p1 Total Units, exports",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "JPN",
+      "lat": null,
+      "lon": null,
+      "notes": "Export destinations not identified in this table."
+    },
+    {
+      "id": "jara-total25",
+      "entityId": "JPN",
+      "name": "Total shipments",
+      "value": 211139,
+      "unit": "units/year",
+      "period": "2025",
+      "sourceId": "jara25",
+      "sourceLocator": "p1 Total Units, total",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "JPN",
+      "lat": null,
+      "lon": null,
+      "notes": "Equals domestic plus exports; never add total to its components."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Industrial robot manufacture as enabling context; machine-learning capability not classified.",
+    "included": "5 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Not a count of AI-enabled robots; no global manufacturing ranking. Stocks, installations, production and shipments are distinct quantities. Production differs from shipments because of inventory and scope timing.",
+  "limitations": [
+    "Not a count of AI-enabled robots; no global manufacturing ranking.",
+    "Stocks, installations, production and shipments are distinct quantities.",
+    "Production differs from shipments because of inventory and scope timing."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "jara-prod24",
+      "jara-prod25",
+      "jara-dom25",
+      "jara-exp25",
+      "jara-total25"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "How do production, domestic shipments and exports differ in one robotics manufacturing economy?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

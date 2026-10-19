@@ -1,0 +1,2063 @@
+{
+  "reviewer": "quality_challenger",
+  "reviewedAt": "2026-10-19",
+  "scope": "Independent review of exact field-bound design specifications and motion semantics; no rendered visual, mobile performance, accessibility or engagement rating.",
+  "manualReview": "All 73 proposed geometry, scale, source-connection, backside and interaction contracts inspected; all motion subjects/purposes and all nine unique recipes inspected. Binding/hash checks are additional mechanical safeguards, not substitutes for this judgment.",
+  "benchmarkEvidence": "research/audits/DESIGN_BENCHMARKS.md",
+  "canonicalHashMethod": "SHA256 of JSON sorted keys, compact separators, default ASCII escape encoding. Covers each complete registry design record at review time.",
+  "designs": [
+    {
+      "conceptId": "430",
+      "designId": "design-430",
+      "designRecordSha256": "80c6f80538b3036f9a073be3bba14e6b5944c0b1672ffa574f823da524c35726",
+      "datasetDigests": {
+        "physical-cloud-grid-carbon": "1878fd571972c43918ef24a11e2ccee053f772dc68ece9f2afacb728d14922e1"
+      },
+      "status": "contract-accepted",
+      "primitive": "annual-carbon-region-lantern",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "428",
+      "designId": "design-428",
+      "designRecordSha256": "2718846a1b15893bccaf77ad45be96b4e0cf9bd0c076a5265e20f88033b6e1ad",
+      "datasetDigests": {
+        "physical-energy-chokepoints": "851768856b1d57846f0d544cf6b22f91afe0b43b8add558a97922cf94257b5fa"
+      },
+      "status": "contract-accepted",
+      "primitive": "seven-throughput-gates",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "422-2",
+      "designId": "design-422-2",
+      "designRecordSha256": "177aaeb64606a4653264f3b9e57513aa12d0a646475dd9529eaacd38f0753630",
+      "datasetDigests": {
+        "society-gender-exposure": "62af6d20aef93ba49214b6621056070d9bcd3a3e9038598eb6419f38019fb5a7"
+      },
+      "status": "contract-accepted",
+      "primitive": "paired-occupation-exposure-meridians",
+      "motionRecipe": "paired-outline-scan",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "417",
+      "designId": "design-417",
+      "designRecordSha256": "65b73c0ff9540375f69be43ec95c57f65d5cdefd2d5d4b01b4826d34ae901c8d",
+      "datasetDigests": {
+        "governance-eurohpc-cooperation": "632a9dc118e1d8d327e214f0cbed00639a50a01c1049715e29755402fe81b331"
+      },
+      "status": "contract-accepted",
+      "primitive": "consortium-membership-facets",
+      "motionRecipe": "cage-precession",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "415",
+      "designId": "design-415",
+      "designRecordSha256": "87156efef5c464e55af4b6023afa7b11a9c89feaa1c52601e47bcf60f3bc1ce0",
+      "datasetDigests": {
+        "society-ai-growth-zones": "d56884c5dc00ca6c274fc2b7752febbdc626531627d9bada4194eb2d1acfa116"
+      },
+      "status": "contract-accepted",
+      "primitive": "announced-zone-date-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "409",
+      "designId": "design-409",
+      "designRecordSha256": "c58a80d8ab0c7c19ee1a47fec5f6038578bcf61247b4ca0abe449c4ff9de4f90",
+      "datasetDigests": {
+        "governance-borderlines-consistency": "45135c0dc6c9cc497bc41b40a845cc0a12cb1f15e57162f1bc9b47ee83f2da55"
+      },
+      "status": "contract-accepted",
+      "primitive": "cross-language-consistency-sextant",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "408",
+      "designId": "design-408",
+      "designRecordSha256": "c7a12d9ee5092ec048bfb64b6bb56588c920240edec0000a5272e0ea255f8fc1",
+      "datasetDigests": {
+        "society-electricity-access": "b1648fb3836c873a1d1cbeb303c209d2704b599eddbd98d26d0ceca79c66bce4"
+      },
+      "status": "contract-accepted",
+      "primitive": "country-access-surface-and-dial",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "407",
+      "designId": "design-407",
+      "designRecordSha256": "24555e6a6dc5668bf886a3e20fd8e8590a9fbdce2eff76822b13ac32a0704560",
+      "datasetDigests": {
+        "governance-ipsos-nervousness": "b72f652400456d9b31b6de7d75f896a90c1245b53b6e175f7a0d852b08f43c26"
+      },
+      "status": "contract-accepted",
+      "primitive": "sample-market-meridian-bars",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "406",
+      "designId": "design-406",
+      "designRecordSha256": "0bf953e2f48b6deb5ed87214e0382abfc050eb9c6edfda0b08380af3baee14ca",
+      "datasetDigests": {
+        "physical-weather-cooling": "8922a67469c023e2b420ee1212805812d77618246c80a56553c30d37312a3c5b"
+      },
+      "status": "contract-accepted",
+      "primitive": "qualified-cooling-time-arcs",
+      "motionRecipe": "closed-return-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "402",
+      "designId": "design-402",
+      "designRecordSha256": "cb166a577fc9e20c1e16ad95b5b79b05c8356b1f8b7095f599fac2f0b9baef06",
+      "datasetDigests": {
+        "planet-marida-benchmark": "359047235e62d77ea016ce979e31ff476e0f93c85963a6c3dfe855a5c26d3e55"
+      },
+      "status": "contract-accepted",
+      "primitive": "segmentation-metric-prism",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "398",
+      "designId": "design-398",
+      "designRecordSha256": "bb1418ab1c0a5398760e7f2899d90f0381f741846d283fa56a47899fb0e46371",
+      "datasetDigests": {
+        "planet-irrigation-field-comparison": "ddef3555e3557f2087816da4d4d85bf84d4c09a5702841bb2da3147615d8a1fd"
+      },
+      "status": "contract-accepted",
+      "primitive": "field-stage-water-deficit-pairs",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "397",
+      "designId": "design-397",
+      "designRecordSha256": "232d2d2f13d06915ced0ef56cfaefde2799271bc75b0781c03300265fe6bd9b6",
+      "datasetDigests": {
+        "governance-canada-immigration": "6764180ef3425db86c0c9e12c0b775c83fe4d5cbac4c980b905560d74b1d3e7f"
+      },
+      "status": "contract-accepted",
+      "primitive": "jurisdiction-workflow-double-facet",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "394",
+      "designId": "design-394",
+      "designRecordSha256": "f2ae1670355499018aa1f106913be9c3dc6628d3c229de54baedb8b40c4042f0",
+      "datasetDigests": {
+        "physical-irish-electricity-series": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e",
+        "physical-grid-connection-rules": "10ba6b71f0aaf33a171d8d568376672d6c98e73ffcc70f7efe282a659530c36c"
+      },
+      "status": "contract-accepted",
+      "primitive": "metered-history-and-policy-hinge",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "392",
+      "designId": "design-392",
+      "designRecordSha256": "53ac8db935b46b7b2f623ff5d09b8bda7ad4fb213af558daa19ee2a15856a647",
+      "datasetDigests": {
+        "planet-hypoxia-observation-test": "af68a329c630121c16c57edbbb2e81db41d0bd95784bae24887c4785bbe32e96"
+      },
+      "status": "contract-accepted",
+      "primitive": "hypoxia-configuration-metric-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "390",
+      "designId": "design-390",
+      "designRecordSha256": "05dc6262f10c789411c72e2b5bc11f12e5668e29a346ddebfd1d299eb4f2d5f7",
+      "datasetDigests": {
+        "planet-ewaste-traceability": "a2f38d5c093ada4ef3d77c70a2c23d10c2e868d9f40f3569e861cbb5754cc5fb"
+      },
+      "status": "contract-accepted",
+      "primitive": "waste-generation-collection-ledger",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "388",
+      "designId": "design-388",
+      "designRecordSha256": "e64f079599e14f1c4c40c6994f44e4119a11154a90e6319fbc30951ef12b9b30",
+      "datasetDigests": {
+        "planet-dark-vessels": "ad94486e86476f9910f1a73ad07094a54fda71e968a5ef4d98824e64df806036"
+      },
+      "status": "contract-accepted",
+      "primitive": "range-first-ocean-observatory",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "385",
+      "designId": "design-385",
+      "designRecordSha256": "618279fc18ffeb3be7443230ea78a285e1b7bbcf2fa7e31800567e5f196a0d97",
+      "datasetDigests": {
+        "society-stargate-scale": "375aba92c478c3e99c8e43ba3532ff2273bc8f6e8ce8a8bc8cefbb4d10614ca4"
+      },
+      "status": "contract-accepted",
+      "primitive": "commitment-versus-annual-flow-panels",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "382",
+      "designId": "design-382",
+      "designRecordSha256": "594aa790f964e794b281e2db92c5a7fb002736d376b637af3c3d5dc0fe093003",
+      "datasetDigests": {
+        "physical-announced-land": "961fe8b274c3ae3f0afc036d89c76b84d77f2e88cef1ea966caeee223ca0f529"
+      },
+      "status": "contract-accepted",
+      "primitive": "footprint-definition-double-facet",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "378",
+      "designId": "design-378",
+      "designRecordSha256": "644746bd36fb58a4dd2c57be7f0b4a70999340249c9d9fd9c49022b645085ebd",
+      "datasetDigests": {
+        "planet-bird-weekly-detections": "0bb91ffa890a27c9558f314463677b663ff091522d6eda4f47e6dfc476a8eabf"
+      },
+      "status": "contract-accepted",
+      "primitive": "recorder-detection-and-effort-map",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "375",
+      "designId": "design-375",
+      "designRecordSha256": "d57cad8602370399ec96909392f77c8c5e62f21c09c630e3f3379f6a07e8fc93",
+      "datasetDigests": {
+        "society-patent-inventors": "f29ee04a278ffbdd9312c4515bf52ea90f54d4a32927038eee687f98831b3a88"
+      },
+      "status": "contract-accepted",
+      "primitive": "five-location-count-stems",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "372",
+      "designId": "design-372",
+      "designRecordSha256": "895071bed88eed79df681f4a02e75e80a9d37018c1fcdc6f9f581ecbd45af8c2",
+      "datasetDigests": {
+        "governance-reporting-channels": "67ea54d390106c32e4667d62a34c72ec42e1b9a35954470ec8e11bc710f4a109"
+      },
+      "status": "contract-accepted",
+      "primitive": "report-channel-counter-rails",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "371",
+      "designId": "design-371",
+      "designRecordSha256": "1791366507a352e88f98a333a4652ad076b0f3fe7c9fe9a2e681c98b0cf089b0",
+      "datasetDigests": {
+        "governance-deepfake-fraud-cases": "961e05e7060b20f0db61ff7307074f8c5cced0169fd0b4a396e9e42dec96df55"
+      },
+      "status": "contract-accepted",
+      "primitive": "fraud-amount-meaning-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "369",
+      "designId": "design-369",
+      "designRecordSha256": "417b86bb8dba1d50ec2a507b42edc382861be202f2d7a9c9e3269b15c02466d1",
+      "datasetDigests": {
+        "society-company-gdp": "c61b06c86f33fe9641a245c4a0e1b2aac3878a002c9cec8fc0f8647447039c02"
+      },
+      "status": "contract-accepted",
+      "primitive": "unlike-accounts-scale-rails",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "368",
+      "designId": "design-368",
+      "designRecordSha256": "8512116cea32c3185ad86be4c090e198b353076cd240cd6c21608473e87111c8",
+      "datasetDigests": {
+        "physical-chip-rule-events": "443ded25249b4ba4e34cbbcbf7053b04254777a44b8c392ec572e5be2de722ea"
+      },
+      "status": "contract-accepted",
+      "primitive": "licence-rule-product-gates",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "365",
+      "designId": "design-365",
+      "designRecordSha256": "5da11e39a9f0c46f6e61c2f2be8711268c9dd98548e7d263dfd95fa5713a9aee",
+      "datasetDigests": {
+        "planet-wine-quality-distribution": "2457a08fd117d3efe72f592fa1362e092602a503af66b45ffe51592edcfa193d"
+      },
+      "status": "contract-accepted",
+      "primitive": "double-wine-histogram-corona",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "364",
+      "designId": "design-364",
+      "designRecordSha256": "83ffb538ef04a510676c8d517e0e662e99992b75e5a944d3f29539296b67e665",
+      "datasetDigests": {
+        "planet-icenet-comparison": "d25ed03fa50e001134d40bd3f82c4e61a8e05bb669e1a1f9acfcc48df82c6bb6"
+      },
+      "status": "contract-accepted",
+      "primitive": "nine-year-comparison-counters",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "358",
+      "designId": "design-358",
+      "designRecordSha256": "ba8eb21a790460b14cab5df490312bce77530a8f159e9a1ad95d24268aa5ea24",
+      "datasetDigests": {
+        "physical-autonomous-voyages": "4925ebb060e855447392eb24cad9b06ff0d065ce1c77b4721c8f82b6c9cfca9e"
+      },
+      "status": "contract-accepted",
+      "primitive": "voyage-supervision-ledger",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "356",
+      "designId": "design-356",
+      "designRecordSha256": "88e226a302f4bf2cf001dd62752108096072eee12c6510e55470e7ac06f0fe84",
+      "datasetDigests": {
+        "governance-uk-asylum-roles": "b7e03872161de1bdde4a3e5d5b8e5c68c3ff5a2684923bc70bdd5859a4aa6ca2"
+      },
+      "status": "contract-accepted",
+      "primitive": "assistance-and-oversight-four-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "348",
+      "designId": "design-348",
+      "designRecordSha256": "8d0c5cc615952d9931776351a26226067d822e5984f33f7e61ff79ede86ad7f9",
+      "datasetDigests": {
+        "planet-ai-science-comparisons": "005daad12f688d1ca5aaebf9800463e892bf93590de0e93598985ba43db161ae"
+      },
+      "status": "contract-accepted",
+      "primitive": "bibliometric-definition-five-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "333",
+      "designId": "design-333",
+      "designRecordSha256": "ca4bc75cd2a30ce00c5ccbf9cc4095b9661c60a2830b1c906e52f0f370e9190c",
+      "datasetDigests": {
+        "governance-un-panel-vote": "1e2a931305de1ab19208cce6148e449eeb0b38afcc57ceac610b936546114984"
+      },
+      "status": "contract-accepted",
+      "primitive": "recorded-vote-mosaic",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "330",
+      "designId": "design-330",
+      "designRecordSha256": "0d077a7a074b870bf98ed91d051d04de92ffc9bc24c4960c1270ec384c20e0d0",
+      "datasetDigests": {
+        "society-nigeria-tutoring": "8e316991ef8a2a557606a4cefbf03427fc3ba638137c135d172f41b1feed0c3b"
+      },
+      "status": "contract-accepted",
+      "primitive": "trial-outcome-meridian-gauges",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "325",
+      "designId": "design-325",
+      "designRecordSha256": "caf95c582f85fdea944e34bf9c1b0337cf85dda86985332a24084cdf742c2bb6",
+      "datasetDigests": {
+        "physical-public-shuttle-pilot": "a5c708eb4941e51de2acda2e95e3f0a0d26d1b854dbc3447432adea1d424077d"
+      },
+      "status": "contract-accepted",
+      "primitive": "pilot-uptake-feedback-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "324",
+      "designId": "design-324",
+      "designRecordSha256": "658ea4d5e4c2c6a384f054842f94bc61210ad35675e54414de014e47d493fd25",
+      "datasetDigests": {
+        "physical-power-contracts": "84b8d4be8f8e6a8ffcc5ef34a1c69a37c50de4e27d161e82aa17d616b8b230b5"
+      },
+      "status": "contract-accepted",
+      "primitive": "contract-capacity-faceted-ledger",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "323",
+      "designId": "design-323",
+      "designRecordSha256": "86fa39de454ef4d4f816f8c66eb3986e7a6b7c4abe7e885a67d77cf98cb84ca5",
+      "datasetDigests": {
+        "physical-electricity-fuels": "441126d5e98790732d3e8d8b5b92605fa84c64cf3cfa0db2179007e57b88e878"
+      },
+      "status": "contract-accepted",
+      "primitive": "non-normalised-fuel-comparison",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "321",
+      "designId": "design-321",
+      "designRecordSha256": "d271babc709bce3c89a79664fcfbd9f8e6b3cae75f4cc8a491b3d72b6dcc0d1b",
+      "datasetDigests": {
+        "physical-flexible-workloads": "fee51b865252958da0bc30ef35059464a16dddd12ea988992e6e93a0b88aea02"
+      },
+      "status": "contract-accepted",
+      "primitive": "demand-response-schedule-facets",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "320",
+      "designId": "design-320",
+      "designRecordSha256": "c594689ebf82a9ea4dd642f5e7478496b3b1d28b000b8f9eaa2918f56c3eac14",
+      "datasetDigests": {
+        "society-platform-pay": "bff31cf3fed44ce069378696a6469bc6d0f9cd4e46683647531b9c71b66b900d"
+      },
+      "status": "contract-accepted",
+      "primitive": "mean-median-counterweights",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "314",
+      "designId": "design-314",
+      "designRecordSha256": "71d2b3ec52cf58dac71ae66ce67390340da32bf4898a91b6fb35d2eb9fd1095a",
+      "datasetDigests": {
+        "physical-zero-evaporation-design": "9a84ec6ef3f25b05ec216a5b0bca9e04e4e050e3104fa03e60dd1fb0d5c30d10"
+      },
+      "status": "contract-accepted",
+      "primitive": "cooling-design-tradeoff-triptych",
+      "motionRecipe": "closed-return-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "305",
+      "designId": "design-305",
+      "designRecordSha256": "8492c7c10342760cce0aca3d90dcf207fc6361b3a95f0bb60a5a94b1bc8fb50f",
+      "datasetDigests": {
+        "physical-euv-dependencies": "fdc38112c680ced459d942333c6ed32bdc9c89a2d8c6bb19830e7b8228a6d88a"
+      },
+      "status": "contract-accepted",
+      "primitive": "euv-role-three-way-assembly",
+      "motionRecipe": "cage-precession",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "284",
+      "designId": "design-284",
+      "designRecordSha256": "55ef35332dadf7105d4d81dd2daea173afdad7c5daf3f18e7e44613013a78b5c",
+      "datasetDigests": {
+        "society-patent-applicants": "3e79239c6f8254236f6c7fee77c5825132dee03a48ecd38a02d7d437454d45f5"
+      },
+      "status": "contract-accepted",
+      "primitive": "applicant-count-radial-books",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "276",
+      "designId": "design-276",
+      "designRecordSha256": "223732f3f90a021bbe4f12ea98fcf3a45e08e2e93f5326c360ec9aebdb6dca14",
+      "datasetDigests": {
+        "society-broadband-affordability": "a45ed9cd6319ccd8695fabf2b9cbf225d1429a2df07f3e927874ab2f94ff6053"
+      },
+      "status": "contract-accepted",
+      "primitive": "connection-cost-calipers",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "266-2",
+      "designId": "design-266-2",
+      "designRecordSha256": "153981564d0d91dd53cc28bcfad5582b09a49b24a752ca7b7b821b79dd1434e6",
+      "datasetDigests": {
+        "physical-tsmc-manufacturing": "b4bb5a4b57428cd397676cd750ac70c1e02ac8d0f70dd0579ca41b549e590ef3"
+      },
+      "status": "contract-accepted",
+      "primitive": "manufacturing-milestone-and-revenue-ring",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "259",
+      "designId": "design-259",
+      "designRecordSha256": "61e0d86e21fc154a2c23bf69bb39a6995ee5767bda3189149ba3f36e50af69af",
+      "datasetDigests": {
+        "governance-un-mandate-handoff": "b40102fecb10f1ef36b39cca08292279ae195d203cf5ad09ee708150eb74a0e0"
+      },
+      "status": "contract-accepted",
+      "primitive": "mandate-handoff-double-node",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "256",
+      "designId": "design-256",
+      "designRecordSha256": "bdb1bb7583865377d25d6d111da1397f2093734abab251294b92eafe0bf39ed2",
+      "datasetDigests": {
+        "governance-orbital-app-ledger": "21af5470540060f5d8f03654dd722f2e51f8cdf5eb35d72b7e8a542710fcf6b3"
+      },
+      "status": "contract-accepted",
+      "primitive": "onboard-app-status-shell",
+      "motionRecipe": "cage-precession",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "255",
+      "designId": "design-255",
+      "designRecordSha256": "cee3db105b32e0c6a6ffede9b3c7cea14a8287d2d3c21b81e409191ebd4460ce",
+      "datasetDigests": {
+        "physical-water-source-substitution": "a17447025e25b1cddda1a9ba99977dcf958f032b87ba641abc35eab236b9f1b1"
+      },
+      "status": "contract-accepted",
+      "primitive": "alternative-water-three-rings",
+      "motionRecipe": "closed-return-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "250",
+      "designId": "design-250",
+      "designRecordSha256": "ec85b8543d9ebb6d9ddec325af1dd8fa35e77b5448cd2b62090035b43902acb6",
+      "datasetDigests": {
+        "governance-newsroom-disclosure": "35356e37f06b1d7581300880ccb16eaccc68d59b553523dc63908aff1ed80641"
+      },
+      "status": "contract-accepted",
+      "primitive": "editorial-rule-pages",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "247",
+      "designId": "design-247",
+      "designRecordSha256": "a5b985bdd76bdb91a9347ef91447f579a11c62803cd0ed97832cddb36d98b1bd",
+      "datasetDigests": {
+        "society-ai-development-partners": "e6b13e0515d733bf9495cde5c585242fdcb51db2e85f1308a3c29bc22ac4c161"
+      },
+      "status": "contract-accepted",
+      "primitive": "programme-membership-country-outlines",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "233-2",
+      "designId": "design-233-2",
+      "designRecordSha256": "395ad9e1c4d6c40717636e735e4ea462d51a4b2cc6f0c3f9265c04fbfdc8a7f9",
+      "datasetDigests": {
+        "physical-rainfall-benchmark": "a79a1146b3147d27b53e4eb8d1c45b9c99fd487f60483e2f6f7e7e669e43f668"
+      },
+      "status": "contract-accepted",
+      "primitive": "benchmark-coverage-double-discs",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "232",
+      "designId": "design-232",
+      "designRecordSha256": "934c63f6aaef0ee43651aabd4ec72f6c4ff0bb47ef313c88425fb2a8775020c8",
+      "datasetDigests": {
+        "planet-gwas-representation": "b1f62399ba6fdb205988961609ca5858c5bbde05bb9713c52d8cf8cbcd823e70"
+      },
+      "status": "contract-accepted",
+      "primitive": "ancestry-entry-share-meridians",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "218",
+      "designId": "design-218",
+      "designRecordSha256": "4c410085089d44fd468f3a542305a6c83bfaa58b219cbe36f6d6cc4529547910",
+      "datasetDigests": {
+        "governance-gemma-task-comparison": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c"
+      },
+      "status": "contract-accepted",
+      "primitive": "six-task-model-dumbbells",
+      "motionRecipe": "paired-outline-scan",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "217",
+      "designId": "design-217",
+      "designRecordSha256": "47734babab59e91889ccbff1aa478272acf556d5ba5fe6f2865233793ec7eb60",
+      "datasetDigests": {
+        "physical-inference-boundaries": "76f36914d69f666af3acc69d9706aa2e7ee155574e4a30fc8598e9e7b618c1c0",
+        "physical-electricity-demand": "aa577c85b31ea2d9747940563928a6f51ae9ae56aea23eddc39314b988b99589"
+      },
+      "status": "contract-accepted",
+      "primitive": "incompatible-scale-reading-panels",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "214",
+      "designId": "design-214",
+      "designRecordSha256": "a08ac9ce9ab1f700244e5df6ce35136ce6114a07965a67f563a373e5c8c52110",
+      "datasetDigests": {
+        "physical-japan-robot-production": "7a87d41ac5bd2f097e433640824f262cd509d383539b8fdb52ad5bf6bab68710"
+      },
+      "status": "contract-accepted",
+      "primitive": "production-versus-shipments-hinge",
+      "motionRecipe": "counterframe-slide",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "211-4",
+      "designId": "design-211-4",
+      "designRecordSha256": "d71d82bd7856eb56f1f9451ee4bde0dd4f43b628f6c0bf33d9ef32a620303abb",
+      "datasetDigests": {
+        "physical-waymo-injury-rates": "be61f9a7db28fc250a6bff215e24612609d90edd5bff473aa4d6287438bcee34"
+      },
+      "status": "contract-accepted",
+      "primitive": "injury-rate-confidence-pairs",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "202",
+      "designId": "design-202",
+      "designRecordSha256": "5004b04c80ec91fd9ffeeb487c207d0eacb29f2c7c6ed9b59c360431e0376f2b",
+      "datasetDigests": {
+        "physical-waymo-exposure": "f626a788aaaa1e2c0435faa5e659263daea3524afcb4bf3c079e9905a3b66896"
+      },
+      "status": "contract-accepted",
+      "primitive": "operating-exposure-five-spools",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "5-6",
+      "designId": "design-5-6",
+      "designRecordSha256": "a98697f766fbc069482767651c367ac90292b32296375e43cfab7b4df43f108b",
+      "datasetDigests": {
+        "planet-seabed-coverage": "bd8d9e60a92d9bce53fa889efd3c6218bb0efb6b602b61bfb25ee4740e3df4d2"
+      },
+      "status": "contract-accepted",
+      "primitive": "mapped-fraction-year-duet",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "8-17",
+      "designId": "design-8-17",
+      "designRecordSha256": "7542d0f7bed05a0d98c5cb37e278758edf0f4a2aeb2b23f8a440b594496eea0f",
+      "datasetDigests": {
+        "planet-ecg-mortality-trial": "b0b1fc7df7293a56d61ddaf4a8b02a661febda6a4386bbf8f7d01214f56b3318"
+      },
+      "status": "contract-accepted",
+      "primitive": "mortality-arms-and-hazard-rail",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "8-6",
+      "designId": "design-8-6",
+      "designRecordSha256": "1c4abacd114791fa61e0baa118c616a0f7e1a94a91cf7edb378c7e3da7252659",
+      "datasetDigests": {
+        "planet-access-screening-trial": "410af3cb6635331df5257b335ed984813b6a5547563895671ffa0058d99896c1"
+      },
+      "status": "contract-accepted",
+      "primitive": "screening-completion-arms",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "30-8",
+      "designId": "design-30-8",
+      "designRecordSha256": "b9214052ffe31f1e69523ad7d8cdf5238b55711cf23e471a22f4291262dfd945",
+      "datasetDigests": {
+        "physical-lifecycle-disclosures": "b32efbe19a838c80d6f1274aeee14d65fac7e770c7e014dffe794fb6d1e27831"
+      },
+      "status": "contract-accepted",
+      "primitive": "footprint-boundary-four-panels",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "56-5",
+      "designId": "design-56-5",
+      "designRecordSha256": "b5e8f764d50a38e37f0501ff3e5f9cd745ac644b63a644b92982155051e89f8d",
+      "datasetDigests": {
+        "physical-electricity-demand": "aa577c85b31ea2d9747940563928a6f51ae9ae56aea23eddc39314b988b99589",
+        "physical-irish-electricity-series": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e"
+      },
+      "status": "contract-accepted",
+      "primitive": "national-share-history-with-global-context",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "63-8",
+      "designId": "design-63-8",
+      "designRecordSha256": "31735247a68118d7dfc23cb064c9cd88405e73cf50fd302f6710fc1ef8713042",
+      "datasetDigests": {
+        "governance-globalmmlu-translation": "0ccdad3caf2fcdc49b3e96f452d91a4086b3a4d6dc1d4d17cacaeb5366ef8d9f"
+      },
+      "status": "contract-accepted",
+      "primitive": "translation-preparation-count-mosaic",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "63",
+      "designId": "design-63",
+      "designRecordSha256": "7a0ac0265b0069085aa897660bb65256358064da57c201877516d41f2c805b50",
+      "datasetDigests": {
+        "society-rural-internet": "eaa1ecd9bc5fe0c622886ec4575097bd0b9b62999d6be0961cfc9c9cb7066c57"
+      },
+      "status": "contract-accepted",
+      "primitive": "urban-rural-open-rings",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "74",
+      "designId": "design-74",
+      "designRecordSha256": "15d189d2d273c17edf1eef416ecb3ad655c4fb45d4fb2f6297483cf016001711",
+      "datasetDigests": {
+        "governance-gemma-task-comparison": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c"
+      },
+      "status": "contract-accepted",
+      "primitive": "two-task-crossing-order-ribbons",
+      "motionRecipe": "cage-precession",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "78-4",
+      "designId": "design-78-4",
+      "designRecordSha256": "598b9b4582059e118068abf7d02280ef69846426efb180e307e24dcd01d6658a",
+      "datasetDigests": {
+        "society-population-connectivity": "36f0f24a3a21541d98cb2e9f63eacbda19c7bfdd7cda50cc780bc75a8c7b4655"
+      },
+      "status": "contract-accepted",
+      "primitive": "country-count-percentage-switch",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "107",
+      "designId": "design-107",
+      "designRecordSha256": "00f406004fff8553210a0f1d2e946dc8855b36ddb198255c109c8250d93fc203",
+      "datasetDigests": {
+        "planet-ocean-data-policies": "b7876f0c159d935e8f8076aef308b0e1ec6004367d3bd6a8e6ced32a430c7ac3"
+      },
+      "status": "contract-accepted",
+      "primitive": "repository-rule-three-portfolios",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "111-3",
+      "designId": "design-111-3",
+      "designRecordSha256": "af4faf3db6da308cba49edcecff35c4d1c1a54a1056f34ea261c1cf0fbe9df16",
+      "datasetDigests": {
+        "physical-waterway-dependencies": "d7de70dc9380c1fe20a2fedb53b00945d60c94357588da534b3336595f608f5b"
+      },
+      "status": "contract-accepted",
+      "primitive": "water-ledger-and-dependency-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "115-2",
+      "designId": "design-115-2",
+      "designRecordSha256": "f4984b3661fbc3a8f060da143a01a6817999e5a4f3ff81aa7046d4e4e6e33af8",
+      "datasetDigests": {
+        "planet-wetland-class-accuracy": "bb2fc82e339d1229d47216812888d28f3de6d6a3b83f609aebc33f4bc6339691"
+      },
+      "status": "contract-accepted",
+      "primitive": "class-error-paired-reeds",
+      "motionRecipe": "paired-outline-scan",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "117",
+      "designId": "design-117",
+      "designRecordSha256": "fb360cac83a22edfdf8cdad094f42c741f5f5004ea3312a49d5958fedab3d840",
+      "datasetDigests": {
+        "governance-large-training": "831895eb4f8d22d6dc30f513f0d4dc118573744c2c862d7334d2e3afe8334ae6"
+      },
+      "status": "contract-accepted",
+      "primitive": "log-compute-lantern",
+      "motionRecipe": "outer-gimbal",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "138-8",
+      "designId": "design-138-8",
+      "designRecordSha256": "0d3477370d6f49afc320cedbc81e0a16e66a3c9c19fb79ccfd520aedb7c9d5a0",
+      "datasetDigests": {
+        "governance-cyber-observed-accounts": "705504f105faed04b5a71baff09be50ec529e941b0735b88bb833e8316d16284"
+      },
+      "status": "contract-accepted",
+      "primitive": "overlapping-activity-rings",
+      "motionRecipe": "reference-ring-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "150-5",
+      "designId": "design-150-5",
+      "designRecordSha256": "8dd035f4836b38a3fe3fc349c2df9387429b449aab9a8876ca2cfa8d4f0b2412",
+      "datasetDigests": {
+        "physical-aviation-automation": "84a7b014a79fa53a1368e0ce36f0f3ef42b471f86b6ba5e728c7ad38c39353dc"
+      },
+      "status": "contract-accepted",
+      "primitive": "investigation-mechanism-three-facets",
+      "motionRecipe": "cage-precession",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "155-17",
+      "designId": "design-155-17",
+      "designRecordSha256": "55bbc3ffa6411eeb1a8d5f261801d50df9c21f0208cc4d11ebe715451247322f",
+      "datasetDigests": {
+        "society-platform-partnerships": "eb1343ea747bfb52f1113477ea07f8b33dc0b6c055e810fb8559a3ab4e917d14"
+      },
+      "status": "contract-accepted",
+      "primitive": "partnership-knot",
+      "motionRecipe": "cage-precession",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "156-8",
+      "designId": "design-156-8",
+      "designRecordSha256": "783a5aba9f2fde15372cb3c196bd54536cf8e6eee85e715c788e1004825ac4bf",
+      "datasetDigests": {
+        "society-platform-crossborder": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3"
+      },
+      "status": "contract-accepted",
+      "primitive": "conditional-denominator-facets",
+      "motionRecipe": "facet-seam-trace",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "170-3",
+      "designId": "design-170-3",
+      "designRecordSha256": "51f31c41bcc61a23361c7b3834f879c86f347132019d3c633eebfe81a8eb18b9",
+      "datasetDigests": {
+        "planet-ai-planets": "9ad0b2e35acc81c08d77e746dae5470a8630cc92f07ef8087ee4daa066a4e81a"
+      },
+      "status": "contract-accepted",
+      "primitive": "confirmed-discovery-two-sided-orb",
+      "motionRecipe": "cage-precession",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "178",
+      "designId": "design-178",
+      "designRecordSha256": "53115b150ef6f390aa9ec6340d88ffaef4138935bc9919f63048309bc9472af1",
+      "datasetDigests": {
+        "governance-monitoring-mechanisms": "192e5273f2dec5156d7e6678a50887ef1060a4152c39e5dd775c36c0138a58ec"
+      },
+      "status": "contract-accepted",
+      "primitive": "legal-mechanism-double-shell",
+      "motionRecipe": "page-edge-parallax",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    },
+    {
+      "conceptId": "193-5",
+      "designId": "design-193-5",
+      "designRecordSha256": "fe48a4defab4501b32cbb561d9dfd06f4238b3d9ac81f913f396833cefe1876e",
+      "datasetDigests": {
+        "physical-per-capita-demand": "a6973816d68a2f0901c30408f9fe37a5081482ebd6f105bfd971278e96dea155"
+      },
+      "status": "contract-accepted",
+      "primitive": "per-resident-bound-contrast",
+      "motionRecipe": "tangent-bracket",
+      "motionMeaning": "Decorative non-data scaffold only. Measured mark geometry, materials, labels, units, source period and intervals remain invariant. User-driven historical filtering is separate.",
+      "checks": {
+        "fieldAndSubsetBindings": "pass",
+        "scaleAndNativeUnits": "pass",
+        "geographyAndMissingness": "pass",
+        "uncertaintyAndClaimBoundary": "pass",
+        "distinctEvidenceAndDiscovery": "pass",
+        "pauseAndReducedMotionContract": "pass",
+        "keyboardAndMobileEquivalentContract": "pass",
+        "boundedSceneContract": "pass"
+      },
+      "executionStatus": "not implemented or runtime-tested by this review",
+      "evidence": [
+        "research/designs/design-registry.json",
+        "research/designs/shared-contract.json",
+        "research/audits/final-review.json"
+      ]
+    }
+  ],
+  "frozenArtifactDigests": {
+    "research/designs/design-registry.json": "22a88fbd83d1d20b32bcfcfae64e1f02c561a0c3475d5a52852800535f358faa",
+    "research/designs/shared-contract.json": "9c5b3dd9b41b1422741b929ce4b0610bf6bbd41cf5dc8505dfa54790e951077c",
+    "research/audits/final-review.json": "cc7362e66d1f858e7bfa33db4f1252cff147030b9670338b64b1e95d7f164c1e"
+  },
+  "finalMetadataInspection": "Registry acceptance metadata agrees with all 73 independent ready verdicts; 59 provisional designs remain held. The science motion wording was corrected to embedding extent. No field selection, numeric scale or measured-data geometry changed during acceptance synchronization."
+}

@@ -1,0 +1,185 @@
+{
+  "datasetId": "planet-ocean-data-policies",
+  "id": "planet-ocean-data-policies",
+  "conceptIds": [
+    "107"
+  ],
+  "title": "An ocean of data, three different reuse rules",
+  "rows": [
+    {
+      "id": "ocean-rights-gebco",
+      "entityId": "ocean-rights-gebco",
+      "name": "GEBCO Grid",
+      "value": "public domain with attribution and use conditions",
+      "unit": "policy case",
+      "period": "Terms observed 2026-10-19",
+      "sourceId": "planet-gebco-terms",
+      "sourceLocator": "Terms of use and disclaimer",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Derived grid may be copied and adapted commercially; acknowledge source, avoid endorsement/misrepresentation. Underlying measured bathymetry is not supplied. Not for navigation."
+    },
+    {
+      "id": "ocean-rights-argo",
+      "entityId": "ocean-rights-argo",
+      "name": "Argo GDAC",
+      "value": "freely available without restriction; acknowledgement requested",
+      "unit": "policy case",
+      "period": "Policy observed 2026-10-19",
+      "sourceId": "planet-argo-terms",
+      "sourceLocator": "How to cite Argo data",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Cite program and dataset DOI; monthly snapshot DOI supports reproducibility. No specific Creative Commons licence is invented."
+    },
+    {
+      "id": "ocean-rights-cchdo",
+      "entityId": "ocean-rights-cchdo",
+      "name": "CCHDO submissions",
+      "value": "CC0 by default; CC BY available by prior request",
+      "unit": "policy case",
+      "period": "Policy observed 2026-10-19",
+      "sourceId": "planet-cchdo-terms",
+      "sourceLocator": "Submission licence paragraph",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Repository default policy does not prove every individual cruise file is CC0; inspect record-level licence before training reuse."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint"
+  },
+  "unit": "policy case",
+  "denominator": "Three deliberately selected public ocean-data programs; categories are not a count of all ocean data or a legal completeness score",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Repository policies, not national jurisdictions",
+    "definition": "Repository policies, not national jurisdictions",
+    "anchorRule": "Use an explicitly non-geographic sphere or global band. No national fill, fake city locations, or inferred unobserved distribution."
+  },
+  "time": {
+    "observationStart": "Policy versions not dated",
+    "observationEnd": "2026-10-19",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-gebco-terms",
+      "publisher": "GEBCO",
+      "title": "GEBCO Grid terms of use",
+      "url": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+      "locator": "Scope, terms and disclaimer",
+      "version": "page accessed 2026-10-19",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+        "attribution": "GEBCO Grid terms of use — GEBCO",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    },
+    {
+      "sourceId": "planet-argo-terms",
+      "publisher": "International Argo Program",
+      "title": "Acknowledging Argo",
+      "url": "https://argo.ucsd.edu/data/acknowledging-argo/",
+      "locator": "How to cite Argo data; monthly dataset DOIs",
+      "version": "page accessed 2026-10-19",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://argo.ucsd.edu/data/acknowledging-argo/",
+        "attribution": "Acknowledging Argo — International Argo Program",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    },
+    {
+      "sourceId": "planet-cchdo-terms",
+      "publisher": "CCHDO, Scripps Institution of Oceanography",
+      "title": "CCHDO data submission and licensing policy",
+      "url": "https://cchdo.ucsd.edu/submit",
+      "locator": "Data licence and DOI policy summary",
+      "version": "page accessed 2026-10-19",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://cchdo.ucsd.edu/submit",
+        "attribution": "CCHDO data submission and licensing policy — CCHDO, Scripps Institution of Oceanography",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Repository policies, not national jurisdictions",
+    "included": "3 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "Private or restricted datasets, comprehensive training provenance, legal advice or any equation of licensing with maritime sovereignty",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Policies may change; record-specific terms still control. This is a small factual comparison of published access rules, not a declaration that an unspecified AI training use is lawful.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+      "https://argo.ucsd.edu/data/acknowledging-argo/",
+      "https://cchdo.ucsd.edu/submit"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "ocean-rights-gebco",
+      "ocean-rights-argo",
+      "ocean-rights-cchdo"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "context",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

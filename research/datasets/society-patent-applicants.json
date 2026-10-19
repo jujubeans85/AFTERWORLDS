@@ -1,0 +1,285 @@
+{
+  "datasetId": "society-patent-applicants",
+  "id": "society-patent-applicants",
+  "title": "GenAI patent applicants",
+  "conceptIds": [
+    "284"
+  ],
+  "metric": "GenAI patent applicants",
+  "unit": "simple patent families",
+  "denominator": "Simple patent families attributed to each named applicant",
+  "rows": [
+    {
+      "id": "applicant-1",
+      "entityId": "applicant-1",
+      "name": "Tencent",
+      "value": 2074,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 1
+    },
+    {
+      "id": "applicant-2",
+      "entityId": "applicant-2",
+      "name": "Ping An Insurance",
+      "value": 1564,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 2
+    },
+    {
+      "id": "applicant-3",
+      "entityId": "applicant-3",
+      "name": "Baidu",
+      "value": 1234,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 3
+    },
+    {
+      "id": "applicant-4",
+      "entityId": "applicant-4",
+      "name": "Chinese Academy of Sciences",
+      "value": 607,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 4
+    },
+    {
+      "id": "applicant-5",
+      "entityId": "applicant-5",
+      "name": "IBM",
+      "value": 601,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 5
+    },
+    {
+      "id": "applicant-6",
+      "entityId": "applicant-6",
+      "name": "Alibaba Group",
+      "value": 571,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 6
+    },
+    {
+      "id": "applicant-7",
+      "entityId": "applicant-7",
+      "name": "Samsung Electronics",
+      "value": 468,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 7
+    },
+    {
+      "id": "applicant-8",
+      "entityId": "applicant-8",
+      "name": "Alphabet",
+      "value": 443,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 8
+    },
+    {
+      "id": "applicant-9",
+      "entityId": "applicant-9",
+      "name": "ByteDance",
+      "value": 418,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 9
+    },
+    {
+      "id": "applicant-10",
+      "entityId": "applicant-10",
+      "name": "Microsoft",
+      "value": 377,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top ten GenAI patent applicants",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Applicant category; no headquarters coordinate or nation is imputed.",
+      "rank": 10
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "rank": "Rank in the published top-ten applicant list"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2014",
+    "observationEnd": "2023",
+    "publishedAt": "2024-07-03",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "wipo-genai-2024",
+      "publisher": "WIPO",
+      "title": "Patent Landscape Report: Generative Artificial Intelligence",
+      "url": "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+      "locator": "Key findings, top five inventor locations and top ten applicants; simple-patent-family definition",
+      "version": "2014–2023",
+      "publishedAt": "2024-07-03",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0 for the report; factual extraction from its official release",
+        "termsUrl": "https://www.wipo.int/web-publications/patent-landscape-report-generative-artificial-intelligence-genai/en/copyright-notice.html",
+        "attribution": "WIPO (2024), Patent Landscape Report: Generative Artificial Intelligence. Adaptation: AFTERWORLDS.",
+        "verified": true,
+        "notes": "Original factual data only; no report visuals or third-party illustrations reproduced. The Secretariat of WIPO assumes no liability or responsibility with regard to the transformation or translation of the original content."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Simple patent families attributed to each named applicant",
+    "included": "10 records: 10 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. Applicant list does not resolve ultimate beneficial ownership or individual inventors. No inventor-to-owner flow can be inferred by joining unrelated top-five and top-ten totals.",
+  "limitations": [
+    "Applicant list does not resolve ultimate beneficial ownership or individual inventors.",
+    "No inventor-to-owner flow can be inferred by joining unrelated top-five and top-ten totals."
+  ],
+  "aiRelationship": "direct",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "applicant-1",
+      "applicant-2",
+      "applicant-3",
+      "applicant-4",
+      "applicant-5",
+      "applicant-6",
+      "applicant-7",
+      "applicant-8",
+      "applicant-9",
+      "applicant-10"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

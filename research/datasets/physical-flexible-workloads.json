@@ -1,0 +1,257 @@
+{
+  "datasetId": "physical-flexible-workloads",
+  "id": "physical-flexible-workloads",
+  "schemaVersion": "1.0",
+  "title": "Computation can wait",
+  "conceptIds": [
+    "321"
+  ],
+  "metric": "Documented nonurgent-workload demand-response participation",
+  "unit": "category",
+  "denominator": "Selected Google demand-response programs",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Company and utility quotations document flexible computation, not all AI inference.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2022-12/2023-03",
+    "observationEnd": "2023-10 disclosure",
+    "publishedAt": "2023-10-04",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "google-flex",
+      "publisher": "Google Cloud",
+      "title": "Supporting power grids with demand response at Google data centers",
+      "url": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+      "locator": "Where we are reducing demand and working with utilities",
+      "version": "2023-10-04",
+      "publishedAt": "2023-10-04",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+        "attribution": "Google Cloud — Supporting power grids with demand response at Google data centers",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "google-flex",
+    "publisher": "Google Cloud",
+    "title": "Supporting power grids with demand response at Google data centers",
+    "url": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+    "locator": "Where we are reducing demand and working with utilities",
+    "version": "2023-10-04",
+    "publishedAt": "2023-10-04",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+      "attribution": "Google Cloud — Supporting power grids with demand response at Google data centers",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "flex-nld",
+      "entityId": "NLD",
+      "name": "Netherlands",
+      "value": "Daily 17:00–21:00 reductions",
+      "unit": "category",
+      "period": "2022-12/2023-03",
+      "sourceId": "google-flex",
+      "sourceLocator": "European energy-crisis response",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "NLD",
+      "lat": null,
+      "lon": null,
+      "notes": "Nonurgent tasks delayed; no published site MWh in this source."
+    },
+    {
+      "id": "flex-bel",
+      "entityId": "BEL",
+      "name": "Belgium",
+      "value": "Daily 17:00–21:00 reductions",
+      "unit": "category",
+      "period": "2022-12/2023-03",
+      "sourceId": "google-flex",
+      "sourceLocator": "European energy-crisis response",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "BEL",
+      "lat": null,
+      "lon": null,
+      "notes": "Nonurgent tasks delayed; no published site MWh in this source."
+    },
+    {
+      "id": "flex-irl",
+      "entityId": "IRL",
+      "name": "Ireland",
+      "value": "Daily 17:00–21:00 reductions",
+      "unit": "category",
+      "period": "2022-12/2023-03",
+      "sourceId": "google-flex",
+      "sourceLocator": "European energy-crisis response",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "IRL",
+      "lat": null,
+      "lon": null,
+      "notes": "Nonurgent tasks delayed; no published site MWh in this source."
+    },
+    {
+      "id": "flex-fin",
+      "entityId": "FIN",
+      "name": "Finland",
+      "value": "Daily 17:00–21:00 reductions",
+      "unit": "category",
+      "period": "2022-12/2023-03",
+      "sourceId": "google-flex",
+      "sourceLocator": "European energy-crisis response",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "FIN",
+      "lat": null,
+      "lon": null,
+      "notes": "Nonurgent tasks delayed; no published site MWh in this source."
+    },
+    {
+      "id": "flex-dnk",
+      "entityId": "DNK",
+      "name": "Denmark",
+      "value": "Daily 17:00–21:00 reductions",
+      "unit": "category",
+      "period": "2022-12/2023-03",
+      "sourceId": "google-flex",
+      "sourceLocator": "European energy-crisis response",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "DNK",
+      "lat": null,
+      "lon": null,
+      "notes": "Nonurgent tasks delayed; no published site MWh in this source."
+    },
+    {
+      "id": "flex-taiwan",
+      "entityId": "TWN",
+      "name": "Taiwan",
+      "value": "Summer peak-demand reductions",
+      "unit": "category",
+      "period": "2022/2023 summers",
+      "sourceId": "google-flex",
+      "sourceLocator": "Taiwan Power Company partnership",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "TWN",
+      "lat": null,
+      "lon": null,
+      "notes": "Demand-response participation; not a measured global AI migration route."
+    },
+    {
+      "id": "flex-oregon",
+      "entityId": "US-OR-TheDalles",
+      "name": "The Dalles, Oregon",
+      "value": "Utility demand-response pilot",
+      "unit": "category",
+      "period": "2023-10 disclosure",
+      "sourceId": "google-flex",
+      "sourceLocator": "Northern Wasco County PUD partnership",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "US-OR-TheDalles",
+      "lat": null,
+      "lon": null,
+      "notes": "Selected flexible workloads; no displacement volume disclosed."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Company and utility quotations document flexible computation, not all AI inference.",
+    "included": "7 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Historical programs, not proof of current live dispatch. No latency, interregional transfer, avoided emissions or MWh measurements supplied. This is a nonexhaustive case registry, not a feasible routing optimizer.",
+  "limitations": [
+    "Historical programs, not proof of current live dispatch.",
+    "No latency, interregional transfer, avoided emissions or MWh measurements supplied.",
+    "This is a nonexhaustive case registry, not a feasible routing optimizer."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "flex-nld",
+      "flex-bel",
+      "flex-irl",
+      "flex-fin",
+      "flex-dnk",
+      "flex-taiwan",
+      "flex-oregon"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "Where has a provider documented delaying nonurgent computation to support its electricity system?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

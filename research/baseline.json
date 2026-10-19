@@ -1,0 +1,9 @@
+{
+  "source_commit": "95f6f75765e4657418382301cc0d88a816cdf153",
+  "source_project": "appgprj_6ad67b0da294819193fd1987db291d6f",
+  "research_as_of": "2026-10-19",
+  "scope": "132 unfinished current-gallery concepts; research-only implementation pack, no automatic promotion into live app",
+  "dateConvention": "Retrieval, research and review dates use actual UTC date 2026-10-19. Source observation and publication periods retain their original meanings.",
+  "application_source_commit": "c1d3de4daa010a4a05e5a95a93c04390ddad4805",
+  "application_merge_note": "Preserved the newer existing Sites reader and typography revision in the GitHub handoff. The 132-concept inventory and research scope remain frozen at source_commit; no new researched globe was deployed."
+}

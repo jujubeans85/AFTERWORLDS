@@ -1,0 +1,188 @@
+{
+  "datasetId": "physical-water-source-substitution",
+  "id": "physical-water-source-substitution",
+  "schemaVersion": "1.0",
+  "title": "Which water enters the cooling loop?",
+  "conceptIds": [
+    "255"
+  ],
+  "metric": "Microsoft-reported use of alternative water sources",
+  "unit": "%",
+  "denominator": "Water supplied at selected Microsoft locations; mixed recycled/reused/non-potable category",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Three selected corporate disclosures about water sourcing.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2026-06",
+    "observationEnd": "2026-06",
+    "publishedAt": "2026-06-24",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "ms26",
+      "publisher": "Microsoft",
+      "title": "Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+      "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Water efficiency and climate; alternative water sources",
+      "version": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "attribution": "Microsoft — Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "ms26",
+    "publisher": "Microsoft",
+    "title": "Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+    "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+    "locator": "Water efficiency and climate; alternative water sources",
+    "version": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "attribution": "Microsoft — Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "quincy",
+      "entityId": "US-WA-Quincy",
+      "name": "Quincy, Washington",
+      "value": 74,
+      "unit": "% of water",
+      "period": "2026-06",
+      "sourceId": "ms26",
+      "sourceLocator": "Alternatives to drinking water",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "US-WA-Quincy",
+      "lat": null,
+      "lon": null,
+      "notes": "Reported recycled, reused or non-potable contribution; volume and averaging period unspecified."
+    },
+    {
+      "id": "singapore",
+      "entityId": "SGP",
+      "name": "Singapore",
+      "value": 99,
+      "unit": "% of water",
+      "period": "2026-06",
+      "sourceId": "ms26",
+      "sourceLocator": "Alternatives to drinking water",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "SGP",
+      "lat": null,
+      "lon": null,
+      "notes": "Mixed alternative-water category; not an avoided local household withdrawal estimate."
+    },
+    {
+      "id": "sanantonio",
+      "entityId": "US-TX-SanAntonio",
+      "name": "San Antonio, Texas",
+      "value": 79,
+      "unit": "% of water",
+      "period": "2026-06",
+      "sourceId": "ms26",
+      "sourceLocator": "Alternatives to drinking water",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "US-TX-SanAntonio",
+      "lat": null,
+      "lon": null,
+      "notes": "Company-selected site example."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Three selected corporate disclosures about water sourcing.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Does not establish drinking-water deprivation, catchment stress, additionality or causal competition. No total local water volumes or comparable municipal baseline supplied.",
+  "limitations": [
+    "Does not establish drinking-water deprivation, catchment stress, additionality or causal competition.",
+    "No total local water volumes or comparable municipal baseline supplied."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "quincy",
+      "singapore",
+      "sanantonio"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "At selected compute locations, what portion of water comes from disclosed alternative sources?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

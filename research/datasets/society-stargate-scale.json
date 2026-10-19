@@ -1,0 +1,196 @@
+{
+  "datasetId": "society-stargate-scale",
+  "id": "society-stargate-scale",
+  "title": "An intention the size of an economy",
+  "conceptIds": [
+    "385"
+  ],
+  "metric": "An intention the size of an economy",
+  "unit": "mixed; each row is explicitly labelled",
+  "denominator": "Unlike dollar amounts: one announced multi-year plan versus one-year national value added",
+  "rows": [
+    {
+      "id": "stargate-intention",
+      "entityId": "stargate-intention",
+      "name": "Stargate announced four-year investment intention",
+      "value": 500000000000,
+      "unit": "USD announced intention",
+      "period": "2025-01-21 announcement; next four years",
+      "sourceId": "openai-stargate-announcement",
+      "sourceLocator": "Opening paragraph",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Historical statement of intended spending; not money spent, committed financing, current forecast or equal annual flow.",
+      "measureType": "multi-year announced intention"
+    },
+    {
+      "id": "stargate-gdp-CZE",
+      "entityId": "stargate-gdp-CZE",
+      "name": "Czechia2025 GDP",
+      "value": 391026962800.475,
+      "unit": "current USD annual GDP",
+      "period": "2025",
+      "sourceId": "wdi-gdp",
+      "sourceLocator": "NY.GDP.MKTP.CD/CZE/2025",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "CZE",
+      "lat": null,
+      "lon": null,
+      "notes": "Calendar-year GDP is a separate annual-flow scale reference, never an economic-equivalence claim.",
+      "measureType": "annual national GDP"
+    },
+    {
+      "id": "stargate-gdp-PRT",
+      "entityId": "stargate-gdp-PRT",
+      "name": "Portugal2025 GDP",
+      "value": 346639825141.821,
+      "unit": "current USD annual GDP",
+      "period": "2025",
+      "sourceId": "wdi-gdp",
+      "sourceLocator": "NY.GDP.MKTP.CD/PRT/2025",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "PRT",
+      "lat": null,
+      "lon": null,
+      "notes": "Calendar-year GDP is a separate annual-flow scale reference, never an economic-equivalence claim.",
+      "measureType": "annual national GDP"
+    },
+    {
+      "id": "stargate-gdp-FIN",
+      "entityId": "stargate-gdp-FIN",
+      "name": "Finland2025 GDP",
+      "value": 317039368819.607,
+      "unit": "current USD annual GDP",
+      "period": "2025",
+      "sourceId": "wdi-gdp",
+      "sourceLocator": "NY.GDP.MKTP.CD/FIN/2025",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "FIN",
+      "lat": null,
+      "lon": null,
+      "notes": "Calendar-year GDP is a separate annual-flow scale reference, never an economic-equivalence claim.",
+      "measureType": "annual national GDP"
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "measureType": "Multi-year announced intention or annual national GDP; different time bases must remain explicit"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2025-01-21",
+    "observationEnd": "2025",
+    "publishedAt": "2025-01-21",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "openai-stargate-announcement",
+      "publisher": "OpenAI",
+      "title": "Announcing The Stargate Project",
+      "url": "https://openai.com/index/announcing-the-stargate-project/",
+      "locator": "Opening paragraph: intent to invest500billion over nextfour years; initial100billion deployment",
+      "version": "2025-01-21 announcement",
+      "publishedAt": "2025-01-21",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://openai.com/index/announcing-the-stargate-project/",
+        "attribution": "OpenAI; Announcing The Stargate Project",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "wdi-gdp",
+      "publisher": "World Bank / original WDI indicator provider",
+      "title": "GDP (current US$)",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000",
+      "locator": "NY.GDP.MKTP.CD API result; data[1] records indexed by countryiso3code/date",
+      "version": "API lastupdated2026-10-08",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "World Bank open datasets, CC BY4.0 with additional dataset terms",
+        "termsUrl": "https://datacatalog.worldbank.org/public-licenses#cc-by",
+        "attribution": "World Bank, World Development Indicators; original providers credited in indicator metadata.",
+        "verified": true,
+        "notes": "Metadata and country aggregation filters retained; World Bank does not endorse this transformation."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Unlike dollar amounts: one announced multi-year plan versus one-year national value added",
+    "included": "4 records: 4 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. Do not divide byfour and claim annual actual expenditure. This is the21January2025 announcement, not an assessment of current financing or build completion. No country is displaced or bought by the plan.",
+  "limitations": [
+    "Do not divide byfour and claim annual actual expenditure.",
+    "This is the21January2025 announcement, not an assessment of current financing or build completion.",
+    "No country is displaced or bought by the plan."
+  ],
+  "aiRelationship": "direct",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://openai.com/index/announcing-the-stargate-project/",
+      "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "stargate-intention",
+      "stargate-gdp-CZE",
+      "stargate-gdp-PRT",
+      "stargate-gdp-FIN"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

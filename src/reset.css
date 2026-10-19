@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 280px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  font-family: inherit;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
+[hidden] {
+  display: none !important;
+}

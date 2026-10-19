@@ -1,0 +1,878 @@
+{
+  "asOf": "2026-10-19",
+  "researcher": "/root/society_research",
+  "scope": "31 assigned work/access/language/capital concepts",
+  "method": "Primary-source search, source-page reading, actual WDI API extraction and null-preserving joins. Ready proposals remain holds pending independent review. No simulated data or unsupported causal impacts.",
+  "publishedSources": [
+    {
+      "sourceId": "wdi-electricity",
+      "publisher": "World Bank / ESMAP TrackingSDG7",
+      "title": "Access to electricity (% of population)",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/EG.ELC.ACCS.ZS?date=2024&format=json&per_page=20000",
+      "locator": "EG.ELC.ACCS.ZS API result; data[1] records indexed by countryiso3code/date",
+      "version": "API lastupdated2026-10-08",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "World Bank open datasets, CC BY4.0 with additional dataset terms",
+        "termsUrl": "https://datacatalog.worldbank.org/public-licenses#cc-by",
+        "attribution": "World Bank/ESMAP, SDG7.1.1 Electrification Dataset, accessed viaWDI.",
+        "verified": true,
+        "notes": "Metadata and country aggregation filters retained; World Bank does not endorse this transformation."
+      },
+      "providerUrl": "https://trackingsdg7.esmap.org/downloads"
+    },
+    {
+      "sourceId": "wdi-internet",
+      "publisher": "International Telecommunication Union, distributed through World BankWDI",
+      "title": "Individuals using the Internet (% of population)",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/IT.NET.USER.ZS?date=2024&format=json&per_page=20000",
+      "locator": "IT.NET.USER.ZS API result; data[1] records indexed by countryiso3code/date",
+      "version": "API lastupdated2026-10-08",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "World Bank open datasets, CC BY4.0 with additional dataset terms",
+        "termsUrl": "https://datacatalog.worldbank.org/public-licenses#cc-by",
+        "attribution": "ITU, World Telecommunication/ICT Indicators Database, accessed viaWorld BankWDI.",
+        "verified": true,
+        "notes": "Metadata and country aggregation filters retained; World Bank does not endorse this transformation."
+      },
+      "providerUrl": "https://datahub.itu.int/"
+    },
+    {
+      "sourceId": "wdi-population",
+      "publisher": "UN Population Division, national statistical offices and Eurostat, distributed through World BankWDI",
+      "title": "Population, total",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2024&format=json&per_page=20000",
+      "locator": "SP.POP.TOTL API result; data[1] records indexed by countryiso3code/date",
+      "version": "API lastupdated2026-10-08",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "World Bank open datasets, CC BY4.0 with additional dataset terms",
+        "termsUrl": "https://datacatalog.worldbank.org/public-licenses#cc-by",
+        "attribution": "World BankWDI population series; UN Population Division, national statistical offices and Eurostat.",
+        "verified": true,
+        "notes": "Metadata and country aggregation filters retained; World Bank does not endorse this transformation."
+      },
+      "providerUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+    },
+    {
+      "sourceId": "wipo-genai-2024",
+      "publisher": "WIPO",
+      "title": "Patent Landscape Report: Generative Artificial Intelligence",
+      "url": "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+      "locator": "Key findings, top five inventor locations and top ten applicants; simple-patent-family definition",
+      "version": "2014–2023",
+      "publishedAt": "2024-07-03",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0 for the report; factual extraction from its official release",
+        "termsUrl": "https://www.wipo.int/web-publications/patent-landscape-report-generative-artificial-intelligence-genai/en/copyright-notice.html",
+        "attribution": "WIPO (2024), Patent Landscape Report: Generative Artificial Intelligence. Adaptation: AFTERWORLDS.",
+        "verified": true,
+        "notes": "Original factual data only; no report visuals or third-party illustrations reproduced. The Secretariat of WIPO assumes no liability or responsibility with regard to the transformation or translation of the original content."
+      }
+    },
+    {
+      "sourceId": "itu-rural-2025",
+      "publisher": "ITU",
+      "title": "Facts and Figures 2025: Internet use in urban and rural areas",
+      "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/",
+      "locator": "First paragraph, global urban85% rural58%",
+      "version": "2025",
+      "publishedAt": "2025-11-17",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/",
+        "attribution": "ITU; Facts and Figures 2025: Internet use in urban and rural areas",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      },
+      "publicationDateEvidence": "https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx",
+      "publicationDateNote": "Report release17November2025 verified in official mediarelease; October15 inpageURL is not publicationdate."
+    },
+    {
+      "sourceId": "ilo-lac-platform-2025",
+      "publisher": "ILO",
+      "title": "Survey on workers on web-based digital platforms: new data for Latin America and the Caribbean",
+      "url": "https://www.ilo.org/sites/default/files/2025-04/Informe%20Plataformas%20Digitales_EN_web.pdf",
+      "locator": "Executive summary; section2.5; section4.1 Figure14; Annex2 PDFp65 fieldwork",
+      "version": "Englishreport; DOI10.54394/NDVQ0600; fieldwork2023-12-15/2024-03-31",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY4.0; primary English report PDFp3",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Cravo,T. (2025), Survey of workers on web-based digital platforms. New data for the Latin American and Caribbean region, Lima: International Labour Office. ©ILO. AFTERWORLDS extracts selected aggregate facts.",
+        "verified": true,
+        "notes": "This is an adaptation of a copyrighted work of the International Labour Organization (ILO). This adaptation has not been prepared, reviewed or endorsed by the ILO and should not be considered an official ILO adaptation. The ILO disclaims all responsibility for its content and accuracy. Responsibility rests solely with the author(s) of the adaptation. No ILO emblem or logo used."
+      }
+    },
+    {
+      "sourceId": "undp-hub-2025",
+      "publisher": "UNDP",
+      "title": "G7-endorsed AI Hub for Sustainable Development launch",
+      "url": "https://www.undp.org/romecentre/press-releases/g7-endorsed-ai-hub-sustainable-development-launches-rome-forging-25-new-partnerships-catalyze-transformative-potential",
+      "locator": "Paragraph listing14 African partner countries",
+      "version": "Launch2025-06-20",
+      "publishedAt": "2025-06-20",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.undp.org/romecentre/press-releases/g7-endorsed-ai-hub-sustainable-development-launches-rome-forging-25-new-partnerships-catalyze-transformative-potential",
+        "attribution": "UNDP; G7-endorsed AI Hub for Sustainable Development launch",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "ftc-partnerships-2025",
+      "publisher": "US Federal Trade Commission",
+      "title": "Behind the FTC’s6(b) Report on Large AI Partnerships and Investments",
+      "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments",
+      "locator": "Opening paragraph identifies three studied partnerships; limitations in note12",
+      "version": "2023–2024 partnerships studied; publishedJanuary2025",
+      "publishedAt": "2025-01-17",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments",
+        "attribution": "US Federal Trade Commission; Behind the FTC’s6(b) Report on Large AI Partnerships and Investments",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "uk-aigz-collection",
+      "publisher": "UK Department for Science, Innovation and Technology",
+      "title": "AI Growth Zones: official collection",
+      "url": "https://www.gov.uk/government/collections/ai-growth-zones",
+      "locator": "AI Growth Zones announcements list; five regional announcements dated2025–2026",
+      "version": "2025–2026",
+      "publishedAt": "2025-11-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Open Government Licence v3.0",
+        "termsUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "Contains public sector information licensed under the Open Government Licence v3.0; UK DSIT.",
+        "verified": true,
+        "notes": "Names and announcement dates only; no third-party imagery."
+      }
+    },
+    {
+      "sourceId": "uk-aigz-policy",
+      "publisher": "UK Department for Science, Innovation and Technology",
+      "title": "Delivering AI Growth Zones",
+      "url": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+      "locator": "Sections3 and5: proposed price support, local adoption funds and retained business-rate growth",
+      "version": "2025 policy statement",
+      "publishedAt": "2025-11-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Open Government Licence v3.0",
+        "termsUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "Contains public sector information licensed under the Open Government Licence v3.0; UK DSIT.",
+        "verified": true,
+        "notes": "Names and announcement dates only; no third-party imagery."
+      }
+    },
+    {
+      "sourceId": "wb-nigeria-rct",
+      "publisher": "World Bank",
+      "title": "From Chalkboards to Chatbots: Evaluating the Impact of Generative AI on Learning Outcomes in Nigeria",
+      "url": "https://reproducibility.worldbank.org/index.php/catalog/419",
+      "locator": "Overview abstract; Data paragraph; metadata licence and revision date",
+      "version": "Cataloguecreated2025-12-11; lastmodified2026-10-16; paperpublished2025-05-19",
+      "publishedAt": "2025-12-11",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 3.0 IGO for working paper; only reported aggregate effects repackaged",
+        "termsUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+        "attribution": "De Simone, Tiberti, Barron Rodriguez, Manolio, Mosuro and Dikoru (2025), World Bank PRWP11125.",
+        "verified": true,
+        "notes": "Reproducibility catalogue confirms paper licence. Microdata is forthcoming and not redistributed."
+      }
+    },
+    {
+      "sourceId": "wb-nigeria-paper-tables",
+      "publisher": "World Bank / DeSimone etal.",
+      "title": "Policy Research Working Paper11125: From Chalkboards to Chatbots",
+      "url": "https://thedocs.worldbank.org/en/doc/0c08ef70ff0e1d81997f116923c0e2c7-0140022025/related/EDU-WP-18-Evaluating-the-Impact-of-Generative-AI-on-Learning-Outcomes-in-Nigeria.pdf",
+      "locator": "Table2 printedp30/PDFp34;Table3 printedp31/PDFp35; section2.2 printedp9; intervention printedp6",
+      "version": "May2025paper, PDFmetadata modified2025-06-11",
+      "publishedAt": "2025-05-19",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 3.0 IGO for working paper; only reported aggregate effects repackaged",
+        "termsUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+        "attribution": "De Simone, Tiberti, Barron Rodriguez, Manolio, Mosuro and Dikoru (2025), World Bank PRWP11125.",
+        "verified": true,
+        "notes": "Reproducibility catalogue confirms paper licence. Microdata is forthcoming and not redistributed."
+      }
+    },
+    {
+      "sourceId": "itu-price-2025",
+      "publisher": "ITU",
+      "title": "Facts and Figures 2025: Affordability of ICT services",
+      "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/",
+      "locator": "First paragraph, global median prices in GNI per capita; affordability-target paragraph",
+      "version": "2025",
+      "publishedAt": "2025-11-17",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/",
+        "attribution": "ITU; Facts and Figures 2025: Affordability of ICT services",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      },
+      "publicationDateEvidence": "https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx",
+      "publicationDateNote": "Report release17November2025 verified in official mediarelease; October15 inpageURL is not publicationdate."
+    },
+    {
+      "sourceId": "microsoft-fy2026",
+      "publisher": "Microsoft Investor Relations",
+      "title": "Fiscal2026 fourth-quarter earnings release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+      "locator": "Twelve Months Ended June30: revenue, reported GAAP; FY2026 and FY2025 columns",
+      "version": "FY2025 and FY2026",
+      "publishedAt": "2026-07-29",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+        "attribution": "Microsoft Investor Relations; Fiscal2026 fourth-quarter earnings release",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "wdi-gdp",
+      "publisher": "World Bank / original WDI indicator provider",
+      "title": "GDP (current US$)",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000",
+      "locator": "NY.GDP.MKTP.CD API result; data[1] records indexed by countryiso3code/date",
+      "version": "API lastupdated2026-10-08",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "World Bank open datasets, CC BY4.0 with additional dataset terms",
+        "termsUrl": "https://datacatalog.worldbank.org/public-licenses#cc-by",
+        "attribution": "World Bank, World Development Indicators; original providers credited in indicator metadata.",
+        "verified": true,
+        "notes": "Metadata and country aggregation filters retained; World Bank does not endorse this transformation."
+      }
+    },
+    {
+      "sourceId": "openai-stargate-announcement",
+      "publisher": "OpenAI",
+      "title": "Announcing The Stargate Project",
+      "url": "https://openai.com/index/announcing-the-stargate-project/",
+      "locator": "Opening paragraph: intent to invest500billion over nextfour years; initial100billion deployment",
+      "version": "2025-01-21 announcement",
+      "publishedAt": "2025-01-21",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://openai.com/index/announcing-the-stargate-project/",
+        "attribution": "OpenAI; Announcing The Stargate Project",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "ilo-gender-2026",
+      "publisher": "International Labour Organization",
+      "title": "New ILO data confirm women face higher workplace risks from generative AI than men",
+      "url": "https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men",
+      "locator": "Women concentrated in high-risk jobs; percentages of female/male-dominated occupations",
+      "version": "2026 analysis",
+      "publishedAt": "2026-03-05",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men",
+        "attribution": "International Labour Organization; New ILO data confirm women face higher workplace risks from generative AI than men",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    },
+    {
+      "sourceId": "ilo-gender-brief-2026",
+      "publisher": "ILO",
+      "title": "Gen AI, occupational segregation and gender equality in the world of work",
+      "url": "https://www.ilo.org/sites/default/files/2026-03/Research%20Brief%20GenAI_final0403_0.pdf",
+      "locator": "Printed page3 definitions; printed pages5–6, Figure5 and adjacent text",
+      "version": "2026-03 researchbrief",
+      "publishedAt": "2026-03-05",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.ilo.org/sites/default/files/2026-03/Research%20Brief%20GenAI_final0403_0.pdf",
+        "attribution": "ILO; Gen AI, occupational segregation and gender equality in the world of work",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      }
+    }
+  ],
+  "conceptInvestigations": [
+    {
+      "conceptId": "422-2",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men",
+          "finding": "Women concentrated in high-risk jobs; percentages of female/male-dominated occupations"
+        }
+      ],
+      "result": "Female-dominated occupations have higher potential GenAI exposure in the 2026 ILO analysis.",
+      "unblock": [
+        "No observed wage or training-access causal effects; no national breakdown in this small extract."
+      ]
+    },
+    {
+      "conceptId": "415",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.gov.uk/government/collections/ai-growth-zones",
+          "finding": "AI Growth Zones announcements list; five regional announcements dated2025–2026"
+        },
+        {
+          "url": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+          "finding": "Sections3 and5: proposed price support, local adoption funds and retained business-rate growth"
+        }
+      ],
+      "result": "A programme-specific announcement map is supportable; a global tax-incentive/local-return causal map is not.",
+      "unblock": [
+        "No verified operating status, cadastral boundary, tax-benefit outturn or causal community-impact measure."
+      ]
+    },
+    {
+      "conceptId": "408",
+      "candidateVerdict": "context-ready",
+      "investigated": [
+        {
+          "url": "https://api.worldbank.org/v2/country/all/indicator/EG.ELC.ACCS.ZS?date=2024&format=json&per_page=20000",
+          "finding": "EG.ELC.ACCS.ZS API result; data[1] records indexed by countryiso3code/date"
+        }
+      ],
+      "result": "Original reliable-electricity wording is narrowed: binary access does not measure reliability.",
+      "unblock": [
+        "No service quality, outages, device ownership or direct AI-use data."
+      ]
+    },
+    {
+      "conceptId": "395",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://macropolo.org/digital-projects/the-global-ai-talent-tracker/",
+          "finding": "Tracker follows selected elite conference researchers; undergraduate origin is not nationality or annual migration."
+        },
+        {
+          "url": "https://www.oecd.org/en/data/datasets/oecd-databases-on-migration.html",
+          "finding": "General migration data uses flows, stocks and birthplace/nationality definitions; incompatible with elite AI researcher sample."
+        }
+      ],
+      "result": "A comparable migration contrast requires two compatible origin–destination panels, not a snapshot of undergraduate origins.",
+      "unblock": [
+        "Obtain licensed person-level tracker release with sample rules and affiliation dates.",
+        "Construct both matrices for the same time interval and geography; publish unmatched origins and coverage."
+      ]
+    },
+    {
+      "conceptId": "387",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://privacy.anthropic.com/en/collections/10672414-policies-terms-of-service",
+          "finding": "Commercial/consumer policies have different scopes; current effective versions need clause-level archival review."
+        },
+        {
+          "url": "https://www.ftc.gov/reports/ftc-staff-report-ai-partnerships-investments-6b-study",
+          "finding": "Partnership clauses describe company relationships, not consumer rule coverage by country."
+        }
+      ],
+      "result": "Platform contract terms can be audited, but territorial division and global reach cannot be inferred from a handful of policies.",
+      "unblock": [
+        "Freeze effective versions for specified product, customer type and jurisdiction.",
+        "Independently code clause categories and verify use/reach denominator; do not turn platform terms into national sovereignty borders."
+      ]
+    },
+    {
+      "conceptId": "385",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://openai.com/index/announcing-the-stargate-project/",
+          "finding": "Opening paragraph: intent to invest500billion over nextfour years; initial100billion deployment"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000",
+          "finding": "NY.GDP.MKTP.CD API result; data[1] records indexed by countryiso3code/date"
+        }
+      ],
+      "result": "The original matched-units/time comparison cannot be satisfied by a multi-year intention. Reframe to transparent unlike-measure juxtaposition with no ratio or equivalence.",
+      "unblock": [
+        "No realized investment series, financing certainty or comparable annual expenditure."
+      ]
+    },
+    {
+      "conceptId": "384",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+          "finding": "Task exposure classification is available but needs local occupation-employment weights."
+        },
+        {
+          "url": "https://www.oecd.org/en/topics/sub-issues/ai-and-work.html",
+          "finding": "OECD capability/task measures are not interchangeable with ILO GenAI gradients."
+        }
+      ],
+      "result": "Exposure peer groups need a harmonized multidimensional region table, not visual similarity or income-group averages.",
+      "unblock": [
+        "Acquire a common occupation crosswalk and country/subnational employment weights.",
+        "Predefine peer-distance variables and normalization; test sensitivity and missing data before pairing."
+      ]
+    },
+    {
+      "conceptId": "383",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.oecd.org/en/publications/measuring-domestic-public-cloud-compute-availability-for-artificial-intelligence_8602a322-en.html",
+          "finding": "Method counts and categorises cloud regions with AI capabilities, not FLOP/s or accelerator inventories."
+        },
+        {
+          "url": "https://www.oecd.org/en/publications/securing-ai-compute_7f96dc99-en/full-report.html",
+          "finding": "October2026 policy cases discuss capacity access and procurement; no comprehensive compatible per-capita inventory."
+        }
+      ],
+      "result": "Public-cloud region presence is not compute capacity per person; mixing them would fabricate a hardware denominator.",
+      "unblock": [
+        "Choose accelerator model-equivalent capacity or explicitly rename to availability zones.",
+        "Retrieve verified country capacity with observation dates and shared/private distinctions, then join same-year population."
+      ]
+    },
+    {
+      "conceptId": "375",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+          "finding": "Key findings, top five inventor locations and top ten applicants; simple-patent-family definition"
+        }
+      ],
+      "result": "Public summary measures inventor location, not access to protected inventions.",
+      "unblock": [
+        "Complete patent-level legal status and licensing rights are absent."
+      ]
+    },
+    {
+      "conceptId": "369",
+      "candidateVerdict": "context-ready",
+      "investigated": [
+        {
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+          "finding": "Twelve Months Ended June30: revenue, reported GAAP; FY2026 and FY2025 columns"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000",
+          "finding": "NY.GDP.MKTP.CD API result; data[1] records indexed by countryiso3code/date"
+        }
+      ],
+      "result": "Corporate sales do not equal national value added, and fiscal years do not equal calendar years; preserve both labels.",
+      "unblock": [
+        "No AI-only revenue segmentation or same-period calendarized corporate comparison."
+      ]
+    },
+    {
+      "conceptId": "367",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://oecd.ai/en/linkedin",
+          "finding": "AI talent migration per10000 LinkedIn members uses profile moves and inferred AI skills; platform selection bias applies."
+        },
+        {
+          "url": "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en/full-report/mapping-mobility-in-research-and-innovation-careers_54676672.html",
+          "finding": "Bibliometric affiliation changes can measure researcher mobility, but require field/date disambiguation."
+        }
+      ],
+      "result": "Affiliation mobility and self-reported AI-skills migration are different measures; no populated AI-only affiliation panel was verified.",
+      "unblock": [
+        "Obtain researcher-level DOI/ORCID affiliation history with AI-field definition and licence.",
+        "Resolve simultaneous affiliations and disambiguation errors; calculate dated net flows with observed coverage only."
+      ]
+    },
+    {
+      "conceptId": "330",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://reproducibility.worldbank.org/index.php/catalog/419",
+          "finding": "Overview abstract; Data paragraph; metadata licence and revision date"
+        }
+      ],
+      "result": "A trial is evidence for a defined intervention, not global literacy gains or all languages.",
+      "unblock": [
+        "Cannot generalize to adult literacy, other languages or national outcomes."
+      ]
+    },
+    {
+      "conceptId": "320",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+          "finding": "Key findings, income and overseas-client bullets; original survey n1153 across21 countries"
+        }
+      ],
+      "result": "AI annotation supply-chain compensation and final value shares are unavailable; broader platform pay is context.",
+      "unblock": [
+        "No buyer chain, AI-only subset, or final value denominator."
+      ]
+    },
+    {
+      "conceptId": "312",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.ilo.org/sites/default/files/2024-06/24004-ILO-Digital-Labour-Kenya-v6%20Final%20May%2031%202024.pdf",
+          "finding": "2022 sector samples report schedules; some night-work values belong to personal services, not AI annotation."
+        },
+        {
+          "url": "https://live.ilo.org/event/particulars-data-work-ais-supply-chain-2026-09-11",
+          "finding": "Current research discusses invisible labour; event summary is not timestamped shift dataset."
+        }
+      ],
+      "result": "Work-hours studies do not identify whose night supports a particular AI-service response.",
+      "unblock": [
+        "Secure consented annotation-worker schedule diary data with worker timezone and task/customer type.",
+        "Compute paid/unpaid night hours using local definitions; never infer a night shift from longitude."
+      ]
+    },
+    {
+      "conceptId": "294",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://unctad.org/publication/world-investment-report-2025",
+          "finding": "Greenfield digital project concentration spans all digital sectors; is not AI-only realised FDI."
+        },
+        {
+          "url": "https://unctad.org/news/ai-investment-boom-risks-widening-global-development-divide",
+          "finding": "2026 analysis links AI and digital infrastructure investment; lacks accessible matched ultimate-owner transaction rows."
+        }
+      ],
+      "result": "Digital investment concentration is measured, but ultimate-owner AI flows and consistent South–South classification were not verified.",
+      "unblock": [
+        "Obtain transaction records with announced/realised flag, currency/date, ultimate owner and recipient.",
+        "Deduplicate rounds and intermediary jurisdictions; separate AI from broader digital infrastructure."
+      ]
+    },
+    {
+      "conceptId": "284",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+          "finding": "Key findings, top five inventor locations and top ten applicants; simple-patent-family definition"
+        }
+      ],
+      "result": "Full inventor-owner-residence joins are unavailable; applicants are a distinct supported unit.",
+      "unblock": [
+        "Applicant-to-inventor and beneficial-owner linkages are absent."
+      ]
+    },
+    {
+      "conceptId": "279",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.un.org/en/ai-advisory-body/about",
+          "finding": "2023–2024 body had39 members from33 countries; personal capacity, not elected national representation."
+        },
+        {
+          "url": "https://www.un.org/independent-international-scientific-panel-ai/en/panel-members",
+          "finding": "2026 panel lists40 members; fullpage access returned403; do not infer demographic attributes from names."
+        }
+      ],
+      "result": "Two UN bodies establish membership milestones, but no longitudinal global AI-leadership representation dataset was verified.",
+      "unblock": [
+        "Retrieve official member list and role dates, plus self-described representation attributes where relevant.",
+        "Define leadership universe and time periods; avoid treating changed institutional mandates as representation trend."
+      ]
+    },
+    {
+      "conceptId": "276",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/",
+          "finding": "First paragraph, global median prices in GNI per capita; affordability-target paragraph"
+        }
+      ],
+      "result": "Disposable income and harmonized tax-inclusive AI prices are not available; GNI-based broadband affordability is a different labelled measure.",
+      "unblock": [
+        "Original AI subscription/disposable-income comparison remains unsupported."
+      ]
+    },
+    {
+      "conceptId": "251",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.oecd.org/en/publications/a-potential-boost-from-ai-in-ageing-societies_be002e40-en.html",
+          "finding": "July2026 PIAAC analysis reports age-exposure pattern with education/occupation controls; OECD coverage only."
+        },
+        {
+          "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+          "finding": "Employment task exposure not population fertility; compatible age/occupation weights needed."
+        }
+      ],
+      "result": "Age-related task exposure evidence exists, but a fertility/age-structure-to-exposure country join is not yet populated and validated.",
+      "unblock": [
+        "Extract age-specific exposure estimates and standard errors under one method.",
+        "Join a fixed-year age structure with occupation weights; distinguish association from demographic or AI causality."
+      ]
+    },
+    {
+      "conceptId": "247",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.undp.org/romecentre/press-releases/g7-endorsed-ai-hub-sustainable-development-launches-rome-forging-25-new-partnerships-catalyze-transformative-potential",
+          "finding": "Paragraph listing14 African partner countries"
+        }
+      ],
+      "result": "Programme footprint is verifiable; local capacity outcomes and dependency conditions are not yet comparable.",
+      "unblock": [
+        "No evaluated capability gains or contract-dependency measure."
+      ]
+    },
+    {
+      "conceptId": "215",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+          "finding": "Official document provides six language versions; institutional translations do not prove native everyday usage."
+        },
+        {
+          "url": "https://www.undp.org/digital/blog/building-safer-ai-all-languages-collective-pathway-inclusive-human-development",
+          "finding": "2026 programme identifies multilingual safety gaps; no causal terminology/comprehension dataset."
+        }
+      ],
+      "result": "Official multilingual terminology exists, but80-language coverage and effects on public understanding are untested.",
+      "unblock": [
+        "Build term records with ISO639 codes, script, native reviewer and source date.",
+        "Commission blinded comprehension evaluation if claiming framing effects; otherwise publish a small labelled lexicon only."
+      ]
+    },
+    {
+      "conceptId": "19-4",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.unhcr.org/news/stories/explainer-how-unhcr-using-ai-support-refugees-and-improve-operations",
+          "finding": "2026 explainer describes multilingual information assistance; adoption is not validated interpretation accuracy."
+        },
+        {
+          "url": "https://www.undp.org/digital/blog/building-safer-ai-all-languages-collective-pathway-inclusive-human-development",
+          "finding": "Describes harms and in-language safety evaluation needs, not a certified benchmark for asylum interviews."
+        }
+      ],
+      "result": "Humanitarian AI tools are documented, but no comparable public high-stakes interpretation accuracy table was verified.",
+      "unblock": [
+        "Acquire consented, deidentified evaluation corpus with language pair, setting and severity rubric.",
+        "Compare trained human reviewers and model versions with uncertainty; never infer safety from generic translation benchmarks."
+      ]
+    },
+    {
+      "conceptId": "63",
+      "candidateVerdict": "context-ready",
+      "investigated": [
+        {
+          "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/",
+          "finding": "First paragraph, global urban85% rural58%"
+        }
+      ],
+      "result": "AI use by settlement is not measured; show connectivity context explicitly.",
+      "unblock": [
+        "No direct AI-adoption or local settlement observations."
+      ]
+    },
+    {
+      "conceptId": "78-4",
+      "candidateVerdict": "context-ready",
+      "investigated": [
+        {
+          "url": "https://api.worldbank.org/v2/country/all/indicator/IT.NET.USER.ZS?date=2024&format=json&per_page=20000",
+          "finding": "IT.NET.USER.ZS API result; data[1] records indexed by countryiso3code/date"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2024&format=json&per_page=20000",
+          "finding": "SP.POP.TOTL API result; data[1] records indexed by countryiso3code/date"
+        }
+      ],
+      "result": "Direct AI-adoption denominators are not harmonized; this is openly labelled connectivity context.",
+      "unblock": [
+        "No direct AI use, affordability, skills or household quality measure."
+      ]
+    },
+    {
+      "conceptId": "83",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://ungegn.un.org/dashboard/countries/index",
+          "finding": "Reference includes multilingual names and ISO/M49 codes; it does not report AI choices."
+        },
+        {
+          "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/",
+          "finding": "AI standardization sessions discuss Arabic names and scraping; no common prompt/model choice benchmark."
+        }
+      ],
+      "result": "Authoritative plural place names can supply a reference, but an audit needs observed versioned model outputs.",
+      "unblock": [
+        "Select documented plural-name cases with local authority and community references.",
+        "Run preregistered multilingual prompts across fixed model versions; record exact outputs, locale and sampling uncertainty."
+      ]
+    },
+    {
+      "conceptId": "100",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.wto.org/english/res_e/statis_e/gstdh_digital_services_e.htm",
+          "finding": "July2026 metadata describes2005–2025 mode1 services; directpage returned402 in this environment."
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/all/indicator/BX.GSR.CCIS.CD?date=2024&format=json&per_page=20000",
+          "finding": "Actual export rows retrieved; not AI-only and no comparable import counterpart under guessed BM.GSR.CCIS.CD code."
+        }
+      ],
+      "result": "AI-service exports cannot be separated from available broad service categories, and a matched import series was not retrieved.",
+      "unblock": [
+        "Download official WTO export and import workbook with dataset licence and exact EBOPS scope.",
+        "Rename to digitally delivered service trade context, or obtain AI-specific survey classification; never relabel ICT totals as AI."
+      ]
+    },
+    {
+      "conceptId": "154-7",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.unhcr.org/digitalstrategy/ai-approach",
+          "finding": "Framework includes community participation and data protection; does not establish community ownership/control."
+        },
+        {
+          "url": "https://data.unhcr.org/en/situations/repository-organisations-led-by-forcibly-displaced-and-stateless",
+          "finding": "Repository identifies refugee-led organisations; AI capability, data governance and consent are not common fields."
+        }
+      ],
+      "result": "Community-controlled refugee AI is a governance proposal; institutional AI use is not evidence of a community-owned global network.",
+      "unblock": [
+        "Define what community control means: governance votes, data rights, hosting and exit rights.",
+        "Obtain organisation consent and verified cases before mapping any network; use an explicitly illustrative design if no empirical cases."
+      ]
+    },
+    {
+      "conceptId": "155-17",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments",
+          "finding": "Opening paragraph identifies three studied partnerships; limitations in note12"
+        }
+      ],
+      "result": "Country-level dependency is not observed; a precisely scoped organisational network is supportable.",
+      "unblock": [
+        "No customer-country matrix, market share or present-day complete partnership graph."
+      ]
+    },
+    {
+      "conceptId": "156-8",
+      "candidateVerdict": "reframe-ready",
+      "investigated": [
+        {
+          "url": "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+          "finding": "Key findings, income and overseas-client bullets; original survey n1153 across21 countries"
+        }
+      ],
+      "result": "A respondent share can describe remote-work links, but cannot measure AI-service trade volume.",
+      "unblock": [
+        "No exhaustive trade matrix or AI-attributable value."
+      ]
+    },
+    {
+      "conceptId": "166-2",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+          "finding": "Eight percent identify as migrants;53percentoverseasclients are different variables, not a causal substitution estimate."
+        },
+        {
+          "url": "https://www.oecd.org/en/data/datasets/overview-data-on-migration-flows-and-migrant-populations.html",
+          "finding": "General migration flows omit individual AI-assisted remote-work treatment histories."
+        }
+      ],
+      "result": "A survey can identify remote workers and migrants, but cannot establish remote AI work substituted for physical migration.",
+      "unblock": [
+        "Use a panel observing remote work, AI use and migration decisions before/after uptake.",
+        "Predefine counterfactual and controls; without that, reframe to separate descriptive measures, not substitution."
+      ]
+    },
+    {
+      "conceptId": "167",
+      "candidateVerdict": "hold",
+      "investigated": [
+        {
+          "url": "https://www.itu.int/itu-d/reports/statistics/facts-figures-for-sids/",
+          "finding": "Latest dedicated2024 report covers penetration/connectivity; these are not applicationlatency measurements."
+        },
+        {
+          "url": "https://www.itu.int/hub/2026/07/itu-kaleidoscope-ai-lessons-from-small-islands-take-first-prize/",
+          "finding": "July2026 research highlights sovereignty constraints; no island-to-model endpoint latency dataset."
+        }
+      ],
+      "result": "Island connectivity context is available; comparable AI endpoint latency and resilience measurements are not.",
+      "unblock": [
+        "Measure fixed endpoints from consented probes with country, ISP, time, RTT, time-to-first-token and outage definitions.",
+        "Control model load, cache and route variability; distinguish cable distance from measured latency."
+      ]
+    }
+  ],
+  "accessFailures": [
+    {
+      "url": "https://www.wto.org/english/res_e/statis_e/gstdh_digital_services_e.htm",
+      "result": "HTTP402 in bothweb and urllib; metadata visible insearch; no bulkdataset acquired."
+    },
+    {
+      "url": "https://www.un.org/independent-international-scientific-panel-ai/en/panel-members",
+      "result": "HTTP403; public indexed excerpts insufficient for fullroster."
+    },
+    {
+      "url": "https://api.worldbank.org/v2/country/all/indicator/BM.GSR.CCIS.CD?date=2024&format=json&per_page=20000",
+      "result": "Invalid indicator response; no importdataset; never imputedzero."
+    }
+  ],
+  "retrievalArtifacts": {
+    "research/sources/society-wdi-urls.json": "478e25b7956cde84bbfbbf470dbac79a7f4375c8a5d5e4bcc6ac6af5ca569ec2",
+    "research/sources/society-wdi-exports.json": "7a12ee94efbfa38735712390b8ae2bcb905e529ea2ed5c4203b2ed5baee468be",
+    "research/sources/society-wdi-electricity.json": "ea5aebe15c40268039f914059573d5b52feef97bcb22ced28f1965f8e1e1779c",
+    "research/sources/society-wdi-internet.json": "c06f5a8a20b9916e667f3291a7f1d7b29264fe711c63330f9b0049b5684f552c",
+    "research/sources/society-wdi-imports.json": "f230e5b6d8f652aa544aec29624faa117c27571ce309a7a474584e1cfeb45c1b",
+    "research/sources/society-wdi-population.json": "f94206d368a77e8f757b0a7a5d7e9d098e24e51f0efe056c40f47786f87ae57a",
+    "research/sources/society-wdi-gdp.json": "ae29bd8a6c0073019d269d749361c5b24608021a869e5d7c1833db8f8a59d0ac",
+    "research/sources/society-wdi-countries.json": "99c199efc2fc2880c169eb611f5a32ba69adc0e225b83f54fe384a5d66ba2448"
+  },
+  "corrections": "Independentreview requested exactgendergradientdefinition, reportfieldworkdates, requiredlicence notices and trialtable uncertainty; applied."
+}

@@ -1,0 +1,232 @@
+{
+  "datasetId": "physical-inference-boundaries",
+  "id": "physical-inference-boundaries",
+  "schemaVersion": "1.0",
+  "title": "One prompt, two accounting boundaries",
+  "conceptIds": [
+    "331",
+    "430",
+    "217"
+  ],
+  "metric": "Google Gemini Apps median text-prompt serving impacts",
+  "unit": "mixed, row-specific",
+  "denominator": "One median Gemini Apps text prompt; prompt distribution is product- and period-specific",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "Self-reported measurements and derived estimates for one provider/product.",
+  "geographyMode": "categorical",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Nongeographic observation",
+    "definition": "Company, category or global aggregate; not a geographic map.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024-05/2025-05",
+    "observationEnd": "2025-05",
+    "publishedAt": "2025-08-22",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "google-inference",
+      "publisher": "Google Cloud",
+      "title": "How much energy does Google’s AI use? We did the math",
+      "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+      "locator": "Median text prompt; Table 1; year-over-year improvement; footnotes",
+      "version": "2025-08-22",
+      "publishedAt": "2025-08-22",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+        "attribution": "Google Cloud — How much energy does Google’s AI use? We did the math",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "google-inference",
+    "publisher": "Google Cloud",
+    "title": "How much energy does Google’s AI use? We did the math",
+    "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+    "locator": "Median text prompt; Table 1; year-over-year improvement; footnotes",
+    "version": "2025-08-22",
+    "publishedAt": "2025-08-22",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+      "attribution": "Google Cloud — How much energy does Google’s AI use? We did the math",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "fullenergy",
+      "entityId": "fullenergy",
+      "name": "Comprehensive serving",
+      "value": 0.24,
+      "unit": "Wh/prompt",
+      "period": "2025-05",
+      "sourceId": "google-inference",
+      "sourceLocator": "Median text prompt headline metrics",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Includes idle capacity, CPU/RAM and facility overhead.",
+      "boundary": "comprehensive"
+    },
+    {
+      "id": "chipenergy",
+      "entityId": "chipenergy",
+      "name": "Active accelerator only",
+      "value": 0.1,
+      "unit": "Wh/prompt",
+      "period": "2025-05",
+      "sourceId": "google-inference",
+      "sourceLocator": "Comparison of comprehensive and active-chip-only measurement",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Excludes components included in comprehensive boundary.",
+      "boundary": "active-chip"
+    },
+    {
+      "id": "fullcarbon",
+      "entityId": "fullcarbon",
+      "name": "Comprehensive serving",
+      "value": 0.03,
+      "unit": "g CO2e/prompt",
+      "period": "2025-05",
+      "sourceId": "google-inference",
+      "sourceLocator": "Median prompt metrics and methodology footnotes",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Uses 2024 fleetwide electricity carbon intensity, not local hourly intensity.",
+      "boundary": "comprehensive"
+    },
+    {
+      "id": "fullwater",
+      "entityId": "fullwater",
+      "name": "Comprehensive serving",
+      "value": 0.26,
+      "unit": "mL/prompt",
+      "period": "2025-05",
+      "sourceId": "google-inference",
+      "sourceLocator": "Median prompt metrics and methodology footnotes",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Uses 2024 fleetwide WUE; not a site measurement.",
+      "boundary": "comprehensive"
+    },
+    {
+      "id": "energychange",
+      "entityId": "energychange",
+      "name": "Median text prompt efficiency",
+      "value": 33,
+      "unit": "fold reduction",
+      "period": "2024-05/2025-05",
+      "sourceId": "google-inference",
+      "sourceLocator": "Year-over-year improvement",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Company-reported reduction in energy per median text prompt.",
+      "boundary": "comprehensive"
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "boundary": "Explicit accounting boundary"
+  },
+  "coverage": {
+    "population": "Self-reported measurements and derived estimates for one provider/product.",
+    "included": "5 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Not independently verified by the publisher’s own footnote. Not universal inference cost; no economic value, output quality or region-specific benefit measured. Do not multiply by guessed global prompt counts or infer economy-wide rebound.",
+  "limitations": [
+    "Not independently verified by the publisher’s own footnote.",
+    "Not universal inference cost; no economic value, output quality or region-specific benefit measured.",
+    "Do not multiply by guessed global prompt counts or infer economy-wide rebound."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "fullenergy",
+      "chipenergy",
+      "fullcarbon",
+      "fullwater",
+      "energychange"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": null,
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "boundary": "Explicit accounting boundary"
+  }
+}

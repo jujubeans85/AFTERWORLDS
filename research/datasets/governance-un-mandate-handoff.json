@@ -1,0 +1,139 @@
+{
+  "datasetId": "governance-un-mandate-handoff",
+  "id": "governance-un-mandate-handoff",
+  "title": "The handoff from AI evidence to international dialogue",
+  "conceptIds": [
+    "259"
+  ],
+  "rows": [
+    {
+      "id": "un-scientific-panel",
+      "entityId": "un-scientific-panel",
+      "name": "Independent International Scientific Panel on AI",
+      "value": "Scientific synthesis; annual non-prescriptive report",
+      "unit": "institutional mandate",
+      "period": "2025-08-26",
+      "sourceId": "un-ares79325",
+      "sourceLocator": "Operative paragraphs 1(a), 1(e)",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Mandate, not a claim about completed annual reports; members serve in personal capacity.",
+      "feedsInto": "Global Dialogue on AI Governance",
+      "mechanism": "Evidence assessment"
+    },
+    {
+      "id": "un-global-dialogue",
+      "entityId": "un-global-dialogue",
+      "name": "Global Dialogue on AI Governance",
+      "value": "Government and stakeholder discussion; annual meeting and co-chair summary",
+      "unit": "institutional mandate",
+      "period": "2025-08-26",
+      "sourceId": "un-ares79325",
+      "sourceLocator": "Operative paragraphs 4, 5 and 7",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "A discussion forum, not a legislature or a binding AI regulator.",
+      "receivesFrom": "Independent International Scientific Panel on AI",
+      "mechanism": "Governance coordination"
+    }
+  ],
+  "columns": {
+    "id": "id field; see row notes",
+    "entityId": "entityId field; see row notes",
+    "name": "name field; see row notes",
+    "value": "Measured value or explicit category; never visual magnitude unless numeric and appropriate",
+    "unit": "unit field; see row notes",
+    "period": "Observation/event period; not retrieval date",
+    "sourceId": "sourceId field; see row notes",
+    "sourceLocator": "Exact section/table/row in cited primary source",
+    "status": "status field; see row notes",
+    "qualifier": "qualifier field; see row notes",
+    "geographicId": "ISO 3166 alpha-3 or explicit named area; null for non-geographic records",
+    "lat": "Null: no invented point location",
+    "lon": "Null: no invented point location",
+    "notes": "notes field; see row notes",
+    "feedsInto": "feedsInto field; see row notes",
+    "mechanism": "mechanism field; see row notes",
+    "receivesFrom": "receivesFrom field; see row notes"
+  },
+  "unit": "institutional mandate",
+  "denominator": "Not applicable: categorical records, not a rate",
+  "geography": {
+    "mode": "network",
+    "unit": "Abstract categorical sphere",
+    "definition": "Records are not geographically allocated.",
+    "anchorRule": "Abstract sphere cells only. Do not place records on country boundaries."
+  },
+  "time": {
+    "observationStart": "2025-08-26",
+    "observationEnd": "2025-08-26",
+    "publishedAt": "2025-08-26",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual revalidation before implementation and after source updates"
+  },
+  "sources": [
+    {
+      "sourceId": "un-ares79325",
+      "publisher": "United Nations General Assembly",
+      "title": "A/RES/79/325: terms of reference for the AI Scientific Panel and Global Dialogue",
+      "url": "https://mandates.un.org/mandate/A/RES/79/325?subject=Artificial+Intelligence",
+      "locator": "Operative paragraphs 1(a), 1(e), 4, 5 and 7",
+      "version": null,
+      "publishedAt": "2025-08-26",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Facts-only extraction; source prose and graphics are not republished",
+        "termsUrl": "https://www.un.org/en/about-us/terms-of-use",
+        "attribution": "United Nations General Assembly. A/RES/79/325: terms of reference for the AI Scientific Panel and Global Dialogue. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Two complementary mechanisms established in UN General Assembly resolution 79/325",
+    "included": "2 populated records; Two complementary mechanisms established in UN General Assembly resolution 79/325",
+    "omitted": "All other AI institutions, quantified influence, compliance outcomes and a complete analysis of governance gaps",
+    "missingness": "Unlisted entities are missing, not zero."
+  },
+  "uncertainty": "Two formal mandates and their stated report handoff; no claim that the coordination is effective or that the two bodies cover every governance gap.",
+  "transform": {
+    "type": "manual",
+    "description": "Manual transcription of factual values/categories; no interpolation, imputation or causal inference.",
+    "codePath": "research/scripts/governance_build.py",
+    "inputReferences": [
+      "https://mandates.un.org/mandate/A/RES/79/325?subject=Artificial+Intelligence"
+    ],
+    "validation": "Each row carries a source locator; categorical values separately label plans, policies and observed events."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary source and compare each extracted record to its named source location.",
+    "checkedRows": [
+      "un-scientific-panel",
+      "un-global-dialogue"
+    ],
+    "evidencePaths": [
+      "research/sources/governance-source-index.json"
+    ],
+    "reviewer": "governance_research",
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No universal extremity or impact score is supported by these data."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated forecast was supplied. Policy intentions and planned installations are not predictions."
+  }
+}

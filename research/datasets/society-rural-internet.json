@@ -1,0 +1,143 @@
+{
+  "datasetId": "society-rural-internet",
+  "id": "society-rural-internet",
+  "title": "Global urban–rural Internet use gap",
+  "conceptIds": [
+    "63"
+  ],
+  "metric": "Global urban–rural Internet use gap",
+  "unit": "percent of residents",
+  "denominator": "Residents of urban and rural areas respectively",
+  "rows": [
+    {
+      "id": "internet-urban",
+      "entityId": "internet-urban",
+      "name": "Urban residents",
+      "value": 85,
+      "unit": "percent of residents",
+      "period": "2025",
+      "sourceId": "itu-rural-2025",
+      "sourceLocator": "First paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Global estimate; Internet use is prerequisite context, not AI adoption.",
+      "settlement": "urban"
+    },
+    {
+      "id": "internet-rural",
+      "entityId": "internet-rural",
+      "name": "Rural residents",
+      "value": 58,
+      "unit": "percent of residents",
+      "period": "2025",
+      "sourceId": "itu-rural-2025",
+      "sourceLocator": "First paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Global estimate; Internet use is prerequisite context, not AI adoption.",
+      "settlement": "rural"
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "settlement": "Global urban/rural classification from ITU"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2025",
+    "observationEnd": "2025",
+    "publishedAt": "2025-11-17",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "itu-rural-2025",
+      "publisher": "ITU",
+      "title": "Facts and Figures 2025: Internet use in urban and rural areas",
+      "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/",
+      "locator": "First paragraph, global urban85% rural58%",
+      "version": "2025",
+      "publishedAt": "2025-11-17",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/",
+        "attribution": "ITU; Facts and Figures 2025: Internet use in urban and rural areas",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      },
+      "publicationDateEvidence": "https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx",
+      "publicationDateNote": "Report release17November2025 verified in official mediarelease; October15 inpageURL is not publicationdate."
+    }
+  ],
+  "coverage": {
+    "population": "Residents of urban and rural areas respectively",
+    "included": "2 records: 2 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. National averages and global categories cannot support a local village map. Internet use is not AI access, electricity reliability or digital skill.",
+  "limitations": [
+    "National averages and global categories cannot support a local village map.",
+    "Internet use is not AI access, electricity reliability or digital skill."
+  ],
+  "aiRelationship": "context",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "internet-urban",
+      "internet-rural"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

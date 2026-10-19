@@ -1,0 +1,158 @@
+{
+  "datasetId": "governance-un-panel-vote",
+  "id": "governance-un-panel-vote",
+  "title": "A recorded vote on the UN AI scientific panel",
+  "conceptIds": [
+    "333"
+  ],
+  "rows": [
+    {
+      "id": "un-panel-for",
+      "entityId": "un-panel-for",
+      "name": "In favour",
+      "value": 117,
+      "unit": "recorded votes",
+      "period": "2026-02-12",
+      "sourceId": "un-panel-vote2026",
+      "sourceLocator": "Call for Fair Inclusion of Developing Countries in AI Governance; paragraph beginning Following that, the Assembly appointed",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Recorded vote totals only; no population weighting or inferred position for other UN members."
+    },
+    {
+      "id": "un-panel-against",
+      "entityId": "un-panel-against",
+      "name": "Against",
+      "value": 2,
+      "unit": "recorded votes",
+      "period": "2026-02-12",
+      "sourceId": "un-panel-vote2026",
+      "sourceLocator": "Call for Fair Inclusion of Developing Countries in AI Governance; paragraph beginning Following that, the Assembly appointed",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Countries named by source: Paraguay and United States.",
+      "namedCountries": [
+        "Paraguay",
+        "United States"
+      ]
+    },
+    {
+      "id": "un-panel-abstain",
+      "entityId": "un-panel-abstain",
+      "name": "Abstaining",
+      "value": 2,
+      "unit": "recorded votes",
+      "period": "2026-02-12",
+      "sourceId": "un-panel-vote2026",
+      "sourceLocator": "Call for Fair Inclusion of Developing Countries in AI Governance; paragraph beginning Following that, the Assembly appointed",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Countries named by source: Tunisia and Ukraine.",
+      "namedCountries": [
+        "Tunisia",
+        "Ukraine"
+      ]
+    }
+  ],
+  "columns": {
+    "id": "id field; see row notes",
+    "entityId": "entityId field; see row notes",
+    "name": "name field; see row notes",
+    "value": "Measured value or explicit category; never visual magnitude unless numeric and appropriate",
+    "unit": "unit field; see row notes",
+    "period": "Observation/event period; not retrieval date",
+    "sourceId": "sourceId field; see row notes",
+    "sourceLocator": "Exact section/table/row in cited primary source",
+    "status": "status field; see row notes",
+    "qualifier": "qualifier field; see row notes",
+    "geographicId": "ISO 3166 alpha-3 or explicit named area; null for non-geographic records",
+    "lat": "Null: no invented point location",
+    "lon": "Null: no invented point location",
+    "notes": "notes field; see row notes",
+    "namedCountries": "namedCountries field; see row notes"
+  },
+  "unit": "recorded votes",
+  "denominator": "121 recorded votes: 117 + 2 + 2; not all UN members or world population",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Abstract categorical sphere",
+    "definition": "Records are not geographically allocated.",
+    "anchorRule": "Abstract sphere cells only. Do not place records on country boundaries."
+  },
+  "time": {
+    "observationStart": "2026-02-12",
+    "observationEnd": "2026-02-12",
+    "publishedAt": "2026-02-13",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual revalidation before implementation and after source updates"
+  },
+  "sources": [
+    {
+      "sourceId": "un-panel-vote2026",
+      "publisher": "United Nations Regional Information Centre",
+      "title": "General Assembly Appoints Artificial Intelligence Panel",
+      "url": "https://unric.org/en/general-assembly-appoints-artificial-intelligence-panel/",
+      "locator": "Opening paragraphs and How will the Panel work? section",
+      "version": null,
+      "publishedAt": "2026-02-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Facts-only extraction; source prose and graphics are not republished",
+        "termsUrl": "https://www.un.org/en/about-us/terms-of-use",
+        "attribution": "United Nations Regional Information Centre. General Assembly Appoints Artificial Intelligence Panel. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Three recorded-vote categories for appointment of 40 Independent International Scientific Panel on AI members on 12 February 2026",
+    "included": "3 populated records; Three recorded-vote categories for appointment of 40 Independent International Scientific Panel on AI members on 12 February 2026",
+    "omitted": "Population represented, country-by-country affirmative list, unrecorded members, regulatory power and current panel outputs",
+    "missingness": "Unlisted entities are missing, not zero."
+  },
+  "uncertainty": "A single procedural vote is not a measure of influence in international AI rulemaking. Panel members act in individual capacity; the panel synthesises science and is not a world regulator.",
+  "transform": {
+    "type": "manual",
+    "description": "Manual transcription of factual values/categories; no interpolation, imputation or causal inference.",
+    "codePath": "research/scripts/governance_build.py",
+    "inputReferences": [
+      "https://unric.org/en/general-assembly-appoints-artificial-intelligence-panel/"
+    ],
+    "validation": "Each row carries a source locator; categorical values separately label plans, policies and observed events."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary source and compare each extracted record to its named source location.",
+    "checkedRows": [
+      "un-panel-for",
+      "un-panel-against",
+      "un-panel-abstain"
+    ],
+    "evidencePaths": [
+      "research/sources/governance-source-index.json"
+    ],
+    "reviewer": "governance_research",
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No universal extremity or impact score is supported by these data."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated forecast was supplied. Policy intentions and planned installations are not predictions."
+  }
+}

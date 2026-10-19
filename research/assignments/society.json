@@ -1,0 +1,872 @@
+[
+  {
+    "id": "422-2",
+    "title": "Gender Equality",
+    "url": "https://world-processor.com/422/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Parity, Deferred",
+    "lens": "work",
+    "question": "Who benefits from AI at work, and whose existing disadvantage could deepen?",
+    "sourceConcept": "Regional progress toward gender equality is expressed as projected time to parity.",
+    "connection": "Compare gendered task exposure and access to AI training without treating exposure as job loss.",
+    "slug": "parity-deferred",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "422",
+        "year": 2023
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "415",
+    "title": "Special Economic Zones Network",
+    "url": "https://world-processor.com/415/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Exceptional Machines",
+    "lens": "capital",
+    "question": "Where do tax zones and special rules attract AI infrastructure, and what do local communities receive?",
+    "sourceConcept": "Special economic zones form an often overlooked geography of exceptional commercial rules.",
+    "connection": "Investigate AI infrastructure incentives, ownership and local returns inside exceptional jurisdictions.",
+    "slug": "exceptional-machines",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "415",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "408",
+    "title": "Access to Electricity",
+    "url": "https://world-processor.com/408/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Before the Prompt",
+    "lens": "access",
+    "question": "Who cannot reliably use AI because dependable electricity is still out of reach?",
+    "sourceConcept": "Country-level electricity access is encoded through the orientation of power symbols.",
+    "connection": "Place AI access claims against the prerequisite of reliable electrical service.",
+    "slug": "before-the-prompt",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "408",
+        "year": 2021
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "395",
+    "title": "Continental Migration",
+    "url": "https://world-processor.com/395/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Moving Minds",
+    "lens": "work",
+    "question": "Where do AI researchers move, and how different is that map from migration overall?",
+    "sourceConcept": "Continental migration connects origins and destinations while acknowledging measurement gaps.",
+    "connection": "Compare research-talent movements with broader migration rather than conflating the two.",
+    "slug": "moving-minds",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "395",
+        "year": 2016
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "387",
+    "title": "Papal Globalism",
+    "url": "https://world-processor.com/387/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The World, Licensed",
+    "lens": "capital",
+    "question": "Who gets to set the terms when a handful of model platforms serve much of the world?",
+    "sourceConcept": "Colonial demarcation treaties divide distant territory between competing imperial powers.",
+    "connection": "Use partition as a historical analogy for platform rule-setting, not an assertion of equivalence.",
+    "slug": "the-world-licensed",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "387",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "385",
+    "title": "Territorial Projection: USA GDP",
+    "url": "https://world-processor.com/385/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Compute-Sized Countries",
+    "lens": "capital",
+    "question": "How large are AI infrastructure commitments beside national economic output when the units and years match?",
+    "sourceConcept": "National economies are regrouped into territories equivalent to United States GDP.",
+    "connection": "Build transparent scale comparisons while keeping investment commitments distinct from annual output.",
+    "slug": "compute-sized-countries",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "385",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "384",
+    "title": "US States and Countries",
+    "url": "https://world-processor.com/384/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Unexpected Twins",
+    "lens": "work",
+    "question": "Which regions resemble one another in AI exposure despite very different incomes or geography?",
+    "sourceConcept": "United States states are paired with countries using social and economic measures.",
+    "connection": "Find evidence-based peer regions across task exposure, education and digital access.",
+    "slug": "unexpected-twins",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "384",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "383",
+    "title": "Country = Country(s); Population",
+    "url": "https://world-processor.com/383/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "People per Processor",
+    "lens": "access",
+    "question": "How unevenly is computing capacity distributed relative to the number of people it could serve?",
+    "sourceConcept": "New territorial groupings compare equivalent populations while retaining local density.",
+    "connection": "Contrast population with disclosed compute capacity without pretending missing capacity is zero.",
+    "slug": "people-per-processor",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "383",
+        "year": 2023
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "375",
+    "title": "Intellectual Property",
+    "url": "https://world-processor.com/375/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Who Owns the Idea?",
+    "lens": "capital",
+    "question": "Where are AI-related patents concentrated, and who can actually use the protected inventions?",
+    "sourceConcept": "Patent holdings and educational measures are placed together on a global surface.",
+    "connection": "Separate patent counts, inventorship and legal ownership from demonstrated innovation impact.",
+    "slug": "who-owns-the-idea",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "375-2",
+        "year": 2012
+      },
+      {
+        "label": "375",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "369",
+    "title": "Country Vs. Arms Company",
+    "url": "https://world-processor.com/369/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "A Company-Sized State",
+    "lens": "capital",
+    "question": "How do AI companies' revenues compare with national production when unlike measures remain clearly labelled?",
+    "sourceConcept": "Arms-company revenues are juxtaposed with the scale of national economies.",
+    "connection": "Expose corporate scale through carefully labelled comparisons, avoiding revenue-equals-GDP claims.",
+    "slug": "a-company-sized-state",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "369",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "367",
+    "title": "Migration Flows",
+    "url": "https://world-processor.com/367/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Talent Current",
+    "lens": "work",
+    "question": "Which countries gain or lose AI research talent according to documented affiliation changes?",
+    "sourceConcept": "Directional migration flows distinguish origin, destination and magnitude across periods.",
+    "connection": "Use dated research-affiliation changes as a limited proxy, not a census of all workers.",
+    "slug": "the-talent-current",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "367-3",
+        "year": 2016
+      },
+      {
+        "label": "367-2",
+        "year": 2012
+      },
+      {
+        "label": "367",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "330",
+    "title": "Literacy",
+    "url": "https://world-processor.com/330/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Reading Machine",
+    "lens": "access",
+    "question": "Who can benefit from AI-mediated reading, and whose language or literacy needs remain unsupported?",
+    "sourceConcept": "Literacy gaps are rendered as missing portions of national territory.",
+    "connection": "Compare accessible AI literacy tools with independently evaluated learning outcomes.",
+    "slug": "the-reading-machine",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "330-2",
+        "year": 2010
+      },
+      {
+        "label": "330",
+        "year": 2010
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "320",
+    "title": "Coffee Trade and Consumption",
+    "url": "https://world-processor.com/320/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Coffee and Clickwork",
+    "lens": "work",
+    "question": "Who performs the annotation work behind AI, and how much of the final value reaches them?",
+    "sourceConcept": "Coffee-producing and importing countries are compared with per-person consumption.",
+    "connection": "Compare documented AI data-labour supply chains with the distribution of compensation and value.",
+    "slug": "coffee-and-clickwork",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "320",
+        "year": 2008
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "312",
+    "title": "Time Zone Conflicts",
+    "url": "https://world-processor.com/312/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Sleepless Shift",
+    "lens": "work",
+    "question": "Whose working night supports the apparent instant response of global AI services?",
+    "sourceConcept": "Time-zone boundaries expose administrative, cultural and political disagreements over shared time.",
+    "connection": "Investigate documented data-work schedules and cross-time-zone human support.",
+    "slug": "the-sleepless-shift",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "312-3",
+        "year": 2012
+      },
+      {
+        "label": "312-2",
+        "year": 2009
+      },
+      {
+        "label": "312",
+        "year": 2007
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "294",
+    "title": "South - North & South - South Investment Flows",
+    "url": "https://world-processor.com/294/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Money Changes Hemisphere",
+    "lens": "capital",
+    "question": "Is AI investment becoming less geographically concentrated, or only taking new routes through familiar owners?",
+    "sourceConcept": "Trade and investment between emerging economies challenge a simple North-to-South flow model.",
+    "connection": "Track disclosed AI investment by investor, recipient and ultimate ownership rather than destination alone.",
+    "slug": "money-changes-hemisphere",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "294",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "284",
+    "title": "US Patent Holders",
+    "url": "https://world-processor.com/284/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "The Patent Passport",
+    "lens": "capital",
+    "question": "Who invents AI technologies, who registers the patents, and where do the owners reside?",
+    "sourceConcept": "Foreign holders of United States patents are scaled by the number of patents held.",
+    "connection": "Separate inventor location, filing jurisdiction and assignee location in AI patent records.",
+    "slug": "the-patent-passport",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "284-5",
+        "year": 2011
+      },
+      {
+        "label": "284-2",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "279",
+    "title": "First Female Parliamentarian",
+    "url": "https://world-processor.com/279/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Who Gets to Decide?",
+    "lens": "work",
+    "question": "Who reaches leadership in AI research and governance, and how is representation changing?",
+    "sourceConcept": "A chronological path follows early female parliamentary representation across countries.",
+    "connection": "Trace documented representation milestones in AI institutions without reducing inclusion to first appointments.",
+    "slug": "who-gets-to-decide",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "279-7",
+        "year": 2012
+      },
+      {
+        "label": "279-6",
+        "year": 2012
+      },
+      {
+        "label": "279-5",
+        "year": 2011
+      },
+      {
+        "label": "279-4",
+        "year": 2011
+      },
+      {
+        "label": "279-2",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "276",
+    "title": "Population Below Poverty Line",
+    "url": "https://world-processor.com/276/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "The Price of a Prompt",
+    "lens": "access",
+    "question": "What share of disposable income would meaningful access to AI tools consume in different countries?",
+    "sourceConcept": "Countries with high poverty shares reveal the unequal geography of material deprivation.",
+    "connection": "Compare dated prices and income measures without implying a subscription alone provides useful access.",
+    "slug": "the-price-of-a-prompt",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "276",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "251",
+    "title": "Birth Rates",
+    "url": "https://world-processor.com/251/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "A Younger Future, Older Models",
+    "lens": "work",
+    "question": "How does AI task exposure differ between countries with growing young workforces and ageing populations?",
+    "sourceConcept": "Fertility levels are rendered through numbers that grow with their measured magnitude.",
+    "connection": "Compare demographic structure with task exposure without claiming AI determines fertility.",
+    "slug": "a-younger-future-older-models",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "251-7",
+        "year": 2011
+      },
+      {
+        "label": "251-5",
+        "year": 2008
+      },
+      {
+        "label": "251-2, 3, 4",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "247",
+    "title": "Foreign Aid",
+    "url": "https://world-processor.com/247/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Aid With Conditions",
+    "lens": "capital",
+    "question": "Which AI development programmes build local capability, and which depend on continuing foreign services?",
+    "sourceConcept": "Donor-recipient aid flows are weighted and grouped across needy regions.",
+    "connection": "Compare disclosed AI assistance, contract terms and local capacity outcomes.",
+    "slug": "aid-with-conditions",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "247-3",
+        "year": 2012
+      },
+      {
+        "label": "247-2",
+        "year": 2012
+      },
+      {
+        "label": "247",
+        "year": 2004
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "215",
+    "title": "Car in 80 Languages",
+    "url": "https://world-processor.com/215/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Intelligence in 80 Words",
+    "lens": "language",
+    "question": "Do languages describe AI in different ways, and do imported terms shape public understanding?",
+    "sourceConcept": "Many languages supply their own names for a widely shared modern invention.",
+    "connection": "Research native terminology and translation choices without treating languages as single uniform communities.",
+    "slug": "intelligence-in-80-words",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "215",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "19-4",
+    "title": "Refugee Currents",
+    "url": "https://world-processor.com/19-4/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "A Voice Across the Border",
+    "lens": "language",
+    "question": "Can AI interpretation help displaced people be understood accurately in high-stakes settings?",
+    "sourceConcept": "Historical refugee movements connect major places of departure and reception.",
+    "connection": "Evaluate language-support quality and human review in documented humanitarian settings.",
+    "slug": "a-voice-across-the-border",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "19-4",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "63",
+    "title": "Population Distribution",
+    "url": "https://world-processor.com/0063/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Rural Intelligence Gap",
+    "lens": "access",
+    "question": "How does practical AI access differ between densely populated cities and remote communities?",
+    "sourceConcept": "An earlier population-distribution globe lets settlements define the visible world.",
+    "connection": "Study subnational infrastructure and access differences hidden by national averages.",
+    "slug": "the-rural-intelligence-gap",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "63",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "78-4",
+    "title": "People Power",
+    "url": "https://world-processor.com/078/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "One Person, One Weight",
+    "lens": "access",
+    "question": "What does the AI-access map look like when every person has equal statistical weight?",
+    "sourceConcept": "Regions expand or shrink according to population rather than physical area.",
+    "connection": "Build population-weighted views alongside national averages to expose whose experience dominates.",
+    "slug": "one-person-one-weight",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "78-4",
+        "year": 2004
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "83",
+    "title": "Oceans and Continents",
+    "url": "https://world-processor.com/083/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Naming the World",
+    "lens": "language",
+    "question": "Whose place names do AI systems choose when several communities describe the same landscape?",
+    "sourceConcept": "Geographic names and relative positions reveal that mapping itself involves abstraction.",
+    "connection": "Audit naming choices with multilingual references and explicit recognition of disputed or plural names.",
+    "slug": "naming-the-world",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "83",
+        "year": 2002
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "100",
+    "title": "Balance of Trade",
+    "url": "https://world-processor.com/100-balance-of-trade-2003/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Compute Trade Balance",
+    "lens": "capital",
+    "question": "Which countries sell AI services abroad, and which import capabilities they cannot yet build locally?",
+    "sourceConcept": "Trade-surplus and trade-deficit countries are given contrasting visual treatment.",
+    "connection": "Investigate available digital-trade measures while acknowledging the difficulty of isolating AI services.",
+    "slug": "the-compute-trade-balance",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "100",
+        "year": 2003
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "154-7",
+    "title": "Refugee (Republic) Network, 2016",
+    "url": "https://world-processor.com/154/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "A Network Without a State",
+    "lens": "access",
+    "question": "Could displaced communities control shared AI tools without surrendering identity or data ownership?",
+    "sourceConcept": "A proposed network of refugee camps imagines representation beyond territorial statehood.",
+    "connection": "Explore community-governed AI as a design proposal, not an existing measured global network.",
+    "slug": "a-network-without-a-state",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "154-7",
+        "year": 2016
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "155-17",
+    "title": "Corporatocracy",
+    "url": "https://world-processor.com/155/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Platform Atlas",
+    "lens": "capital",
+    "question": "How dependent are countries on a small set of foreign AI platforms for everyday digital services?",
+    "sourceConcept": "Company names replace countries to provoke comparisons of corporate and national economic scale.",
+    "connection": "Examine documented platform dependencies without presenting revenue and national output as identical measures.",
+    "slug": "the-platform-atlas",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "155-17",
+        "year": 2016
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "156-8",
+    "title": "Global Trade Currents",
+    "url": "https://world-processor.com/156/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Trade in Invisible Work",
+    "lens": "work",
+    "question": "Where does AI-enabled digital work cross borders, and how much is missing from conventional trade statistics?",
+    "sourceConcept": "Regional trade relationships are encoded as differently weighted directional currents.",
+    "connection": "Investigate cross-border digital services with explicit gaps in AI attribution and measurement.",
+    "slug": "trade-in-invisible-work",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "156-8",
+        "year": null
+      },
+      {
+        "label": "156-7",
+        "year": 2015
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "166-2",
+    "title": "Labor Migration",
+    "url": "https://world-processor.com/1662-labor-migration-2005/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Job That Migrates",
+    "lens": "work",
+    "question": "When work can move through an AI-assisted platform, who still needs to migrate physically?",
+    "sourceConcept": "Labour migration links income differences with imperfectly observed cross-border movements.",
+    "connection": "Compare documented remote-work change and physical migration without claiming one replaces the other.",
+    "slug": "the-job-that-migrates",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "166-2",
+        "year": 2005
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "167",
+    "title": "Island Nations",
+    "url": "https://world-processor.com/167/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Small Islands, Long Latency",
+    "lens": "access",
+    "question": "What does reliable AI access require for island communities far from major compute centres?",
+    "sourceConcept": "Island nations are considered as a distinctive geographic category.",
+    "connection": "Compare cable connectivity, service latency, resilience and local-language needs across distinct islands.",
+    "slug": "small-islands-long-latency",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "167",
+        "year": 2002
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  }
+]

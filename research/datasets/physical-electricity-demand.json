@@ -1,0 +1,189 @@
+{
+  "datasetId": "physical-electricity-demand",
+  "id": "physical-electricity-demand",
+  "schemaVersion": "1.0",
+  "title": "Electricity: total data centres and AI growth",
+  "conceptIds": [
+    "56-5",
+    "217"
+  ],
+  "metric": "Global demand level and category-specific growth; unlike units must remain separate",
+  "unit": "mixed, row-specific",
+  "denominator": "All data centres or AI-focused data centres, explicitly identified per row",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "IEA estimates of data-centre electricity; direct AI subset is only the growth row.",
+  "geographyMode": "global",
+  "geography": {
+    "mode": "global",
+    "unit": "Nongeographic observation",
+    "definition": "Company, category or global aggregate; not a geographic map.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2025",
+    "observationEnd": "2025",
+    "publishedAt": "2026-04-16",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "iea26",
+      "publisher": "International Energy Agency",
+      "title": "Key Questions on Energy and AI: Executive summary",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "locator": "Energy consumption; outlook for electricity demand",
+      "version": "2026-04-16",
+      "publishedAt": "2026-04-16",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "International Energy Agency — Key Questions on Energy and AI: Executive summary",
+        "verified": true,
+        "notes": "Report explicitly identifies CC BY 4.0."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "iea26",
+    "publisher": "International Energy Agency",
+    "title": "Key Questions on Energy and AI: Executive summary",
+    "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+    "locator": "Energy consumption; outlook for electricity demand",
+    "version": "2026-04-16",
+    "publishedAt": "2026-04-16",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "International Energy Agency — Key Questions on Energy and AI: Executive summary",
+      "verified": true,
+      "notes": "Report explicitly identifies CC BY 4.0."
+    }
+  },
+  "rows": [
+    {
+      "id": "dc2025",
+      "entityId": "dc2025",
+      "name": "All data centres",
+      "value": 485,
+      "unit": "TWh/year",
+      "period": "2025",
+      "sourceId": "iea26",
+      "sourceLocator": "Outlook for electricity demand",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Global estimate; includes non-AI workloads."
+    },
+    {
+      "id": "dcgrowth",
+      "entityId": "dcgrowth",
+      "name": "All data centres: annual growth",
+      "value": 17,
+      "unit": "% year-on-year",
+      "period": "2025",
+      "sourceId": "iea26",
+      "sourceLocator": "Energy consumption paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Growth in electricity demand, not the AI share."
+    },
+    {
+      "id": "aigrowth",
+      "entityId": "aigrowth",
+      "name": "AI-focused data centres: annual growth",
+      "value": 50,
+      "unit": "% year-on-year",
+      "period": "2025",
+      "sourceId": "iea26",
+      "sourceLocator": "Energy consumption paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "AI-focused facility category; not all AI or all data centres."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "IEA estimates of data-centre electricity; direct AI subset is only the growth row.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "AI electricity level and share are not provided by these three records. Growth rates have distinct denominators and must not be subtracted or displayed as a stack.",
+  "limitations": [
+    "AI electricity level and share are not provided by these three records.",
+    "Growth rates have distinct denominators and must not be subtracted or displayed as a stack."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "dc2025",
+      "dcgrowth",
+      "aigrowth"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": null,
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

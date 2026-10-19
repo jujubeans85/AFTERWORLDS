@@ -1,0 +1,1601 @@
+[
+  {
+    "id": "power",
+    "title": "The Machine Is Hungry",
+    "summary": "Electricity demand has a geography. The cloud does not float.",
+    "metric": "Share of global data-centre electricity use",
+    "unit": "%",
+    "dataYear": "2024",
+    "published": "2025-04-10",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "IEA · Energy and AI (2025)",
+        "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"
+      },
+      {
+        "label": "IEA · Key Questions on Energy and AI (2026)",
+        "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.iea.org/reports/energy-and-ai/executive-summary",
+      "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    ],
+    "scope": "Selected regions; all data centres, including non-AI workloads.",
+    "limitations": "Regional shares are 2024 estimates, not 2026 measurements. AI-only consumption is not isolated. The separate 2030 value is a model projection.",
+    "status": "estimate",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "United States",
+        "lat": 39,
+        "lon": -98,
+        "value": 45,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "45",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "China",
+        "lat": 35,
+        "lon": 104,
+        "value": 25,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "25",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Europe",
+        "lat": 51,
+        "lon": 15,
+        "value": 15,
+        "note": "Regional aggregate; representative anchor, not a German national value.",
+        "displayValue": "15",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 485,
+      "unit": "TWh",
+      "label": "Global data-centre electricity, 2025",
+      "dataYear": "2025",
+      "status": "estimate",
+      "sourceUrl": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "published": "2026-04-16"
+    },
+    "forecast": {
+      "year": 2030,
+      "value": 950,
+      "unit": "TWh",
+      "status": "forecast",
+      "label": "IEA central projection; global data centres",
+      "sourceUrl": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    },
+    "visual": {
+      "effect": "arcs",
+      "name": "Electric weather",
+      "ceiling": 100,
+      "unit": "%",
+      "encoding": "More electricity share creates taller electrical branches, more sparks and faster travelling charge.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "The cloud has a power geography. The United States, China and Europe account for large shares of data-centre electricity use; these are shares of all data centres, not an AI-only electricity bill.",
+        "Regional shares are 2024 estimates, not 2026 measurements. AI-only consumption is not isolated. The separate 2030 value is a model projection."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "Global data-centre electricity consumption",
+        "unit": "TWh",
+        "past": {
+          "year": 2024,
+          "value": 415,
+          "status": "estimate"
+        },
+        "latest": {
+          "year": 2025,
+          "value": 485,
+          "status": "estimate"
+        },
+        "assumption": "Continue the 2024–2025 absolute increase of 70 TWh/year for two years. All data centres; not an AI-only prediction. The IEA’s separate model projects 950 TWh in 2030.",
+        "sourceUrls": [
+          "https://www.iea.org/reports/energy-and-ai/executive-summary",
+          "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+        ],
+        "projection": {
+          "targetYear": 2027,
+          "method": "linear",
+          "ceiling": null
+        }
+      }
+    }
+  },
+  {
+    "id": "capital",
+    "title": "Gravity Has a Price",
+    "summary": "Capital bends the map before the technology reaches everyone.",
+    "metric": "Private AI investment",
+    "unit": "US$ billion",
+    "dataYear": "2025",
+    "published": "2026",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "Stanford HAI · AI Index 2026, Economy",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy"
+      },
+      {
+        "label": "Global private AI investment · historical comparison source",
+        "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf"
+      }
+    ],
+    "sourceUrls": [
+      "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+      "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf"
+    ],
+    "scope": "Selected countries and Europe.",
+    "limitations": "Private investment excludes much state-directed funding. Europe is a regional total. Dollars are not capability, access, or social benefit.",
+    "status": "observed",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "United States",
+        "lat": 39,
+        "lon": -98,
+        "value": 285.88,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "285.88",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Europe",
+        "lat": 51,
+        "lon": 15,
+        "value": 20.92,
+        "note": "Regional total; representative anchor.",
+        "displayValue": "20.92",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "China",
+        "lat": 35,
+        "lon": 104,
+        "value": 12.41,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "12.41",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 285.88,
+      "unit": "US$ billion",
+      "label": "United States private AI investment, 2025"
+    },
+    "visual": {
+      "effect": "coins",
+      "name": "The money well",
+      "ceiling": 300,
+      "unit": "US$ billion",
+      "encoding": "Larger investment raises the coin tower and increases the number and speed of orbiting tokens.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "Private AI investment pools unevenly. These selected country and regional totals describe funding flows during one year, not profit, public spending, or the ownership of every AI company.",
+        "Private investment excludes much state-directed funding. Europe is a regional total. Dollars are not capability, access, or social benefit."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "Global private AI investment",
+        "unit": "US$ billion",
+        "past": {
+          "year": 2024,
+          "value": 151.48,
+          "status": "estimate"
+        },
+        "latest": {
+          "year": 2025,
+          "value": 344.66,
+          "status": "estimate"
+        },
+        "assumption": "Continue the 2024–2025 increase of US$193.18bn/year. A volatile one-year trend, sensitive to exceptional deals; this is a mechanical scenario, not an investment forecast. The map remains country/region totals for 2025.",
+        "sourceUrls": [
+          "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf"
+        ],
+        "projection": {
+          "targetYear": 2027,
+          "method": "linear",
+          "ceiling": null
+        }
+      }
+    }
+  },
+  {
+    "id": "models",
+    "title": "Two Suns",
+    "summary": "The most visible model factories occupy very little of the planet.",
+    "metric": "Notable AI models released",
+    "unit": "models",
+    "dataYear": "2025",
+    "published": "2026",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "Stanford HAI · AI Index 2026, Research and Development",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development"
+      }
+    ],
+    "sourceUrls": [
+      "https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development"
+    ],
+    "scope": "United States and China; selected leading producers.",
+    "limitations": "Notable-model selection is curated. Counts are not a census of all models and do not measure model quality. Unshown countries are not zero.",
+    "status": "observed",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "United States",
+        "lat": 39,
+        "lon": -98,
+        "value": 59,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "59",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "China",
+        "lat": 35,
+        "lon": 104,
+        "value": 35,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "35",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 59,
+      "unit": "models",
+      "label": "United States notable releases, 2025"
+    },
+    "visual": {
+      "effect": "neurons",
+      "name": "Branching intelligence",
+      "ceiling": 60,
+      "unit": "models",
+      "encoding": "More notable releases create more branches, taller neural structures and quicker signals.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "A handful of places produce much of the tracked frontier. A notable-model count is an editorially selected production measure, not a league table of intelligence or model quality.",
+        "Notable-model selection is curated. Counts are not a census of all models and do not measure model quality. Unshown countries are not zero."
+      ],
+      "pastNote": "Historical notable-model counts were revised between report editions; no comparable prior count is confirmed here.",
+      "futureNote": "Not extrapolated: release selection and historical revisions make a cross-edition trend misleading."
+    }
+  },
+  {
+    "id": "robots",
+    "title": "Hands Without Bodies",
+    "summary": "A new industrial workforce arrives unevenly.",
+    "metric": "New industrial robot installations",
+    "unit": "robots",
+    "dataYear": "2025",
+    "published": "2026-09-24",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "IFR · World Robotics 2026 release",
+        "url": "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally"
+      },
+      {
+        "label": "China · annual industrial robot installations · historical comparison source",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy"
+      }
+    ],
+    "sourceUrls": [
+      "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally",
+      "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy"
+    ],
+    "scope": "Selected national industrial-robot markets.",
+    "limitations": "Industrial robots are not all AI-controlled. These are installations, not displaced workers. Several national figures are rounded by IFR; qualifiers are preserved below.",
+    "status": "observed",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "China",
+        "lat": 35,
+        "lon": 104,
+        "value": 354000,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "354,000",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "United States",
+        "lat": 39,
+        "lon": -98,
+        "value": 38500,
+        "note": "Almost 38,500; rounded source figure. Representative country anchor.",
+        "displayValue": "≈38,500",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Japan",
+        "lat": 36,
+        "lon": 138,
+        "value": 36219,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "36,219",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "South Korea",
+        "lat": 36,
+        "lon": 128,
+        "value": 30000,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "30,000",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "India",
+        "lat": 22,
+        "lon": 79,
+        "value": 10500,
+        "note": "Almost 10,500; rounded source figure.",
+        "displayValue": "≈10,500",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Germany",
+        "lat": 51,
+        "lon": 10,
+        "value": 25000,
+        "note": "Fewer than 25,000; displayed as a rounded upper threshold.",
+        "displayValue": "<25,000",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Brazil",
+        "lat": -10,
+        "lon": -52,
+        "value": 4300,
+        "note": "Almost 4,300; rounded source figure.",
+        "displayValue": "≈4,300",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Canada",
+        "lat": 57,
+        "lon": -106,
+        "value": 4000,
+        "note": "Almost 4,000; rounded source figure.",
+        "displayValue": "≈4,000",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "France",
+        "lat": 47,
+        "lon": 2,
+        "value": 4500,
+        "note": "Almost 4,500; rounded source figure.",
+        "displayValue": "≈4,500",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Italy",
+        "lat": 43,
+        "lon": 12,
+        "value": 7800,
+        "note": "About 7,800; rounded source figure.",
+        "displayValue": "≈7,800",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 59,
+      "unit": "%",
+      "label": "China share of global installations, 2025"
+    },
+    "visual": {
+      "effect": "gears",
+      "name": "Mechanical gardens",
+      "ceiling": 400000,
+      "unit": "robots",
+      "encoding": "More installations create larger cogwheels, more teeth and faster mechanical movement.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "Factories grow a mechanical layer. The map counts newly installed industrial robots, not the stock already operating, jobs replaced, or the number of machines with modern generative AI.",
+        "Industrial robots are not all AI-controlled. These are installations, not displaced workers. Several national figures are rounded by IFR; qualifiers are preserved below."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "China · annual industrial robot installations",
+        "unit": "robots",
+        "past": {
+          "year": 2024,
+          "value": 295000,
+          "status": "estimate",
+          "label": "2024 · approximately"
+        },
+        "latest": {
+          "year": 2025,
+          "value": 354000,
+          "status": "estimate",
+          "label": "2025 · approximately"
+        },
+        "assumption": "Continue China’s roughly 59,000 additional installations/year from 2024–2025. Rounded source values; not the global total or existing robot stock.",
+        "sourceUrls": [
+          "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally",
+          "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy"
+        ],
+        "projection": {
+          "targetYear": 2027,
+          "method": "linear",
+          "ceiling": null
+        }
+      }
+    }
+  },
+  {
+    "id": "access",
+    "title": "Outside the Conversation",
+    "summary": "An AI future still meets a disconnected present.",
+    "metric": "People using the Internet",
+    "unit": "% of population",
+    "dataYear": "2025",
+    "published": "2025",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "ITU · Facts and Figures 2025, Internet use",
+        "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use/"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use/"
+    ],
+    "scope": "Selected ITU regions; Internet access context, not an AI-use measure.",
+    "limitations": "Regions follow ITU definitions. No individual country can inherit its regional rate. Internet use is neither a measure nor a result of AI adoption.",
+    "status": "estimate",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "Africa",
+        "lat": 1,
+        "lon": 20,
+        "value": 36,
+        "note": "ITU region average; representative regional anchor.",
+        "displayValue": "36",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Arab States",
+        "lat": 25,
+        "lon": 40,
+        "value": 70,
+        "note": "ITU region average; representative regional anchor.",
+        "displayValue": "70",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Asia–Pacific",
+        "lat": 15,
+        "lon": 120,
+        "value": 77,
+        "note": "ITU region average; representative regional anchor.",
+        "displayValue": "77",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 74,
+      "unit": "%",
+      "label": "World population online, 2025"
+    },
+    "visual": {
+      "effect": "gates",
+      "name": "Open doors",
+      "ceiling": 100,
+      "unit": "% of population",
+      "encoding": "Higher Internet use opens more illuminated gates; the dark grid shows the unused part of the scale.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "Participation starts with a connection. Internet use is a condition for many AI services, but it does not tell us whether people can afford those services, trust them, or benefit from them.",
+        "Regions follow ITU definitions. No individual country can inherit its regional rate. Internet use is neither a measure nor a result of AI adoption."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "Global population using the Internet",
+        "unit": "%",
+        "past": {
+          "year": 2024,
+          "value": 71,
+          "status": "estimate",
+          "label": "2024 · revised"
+        },
+        "latest": {
+          "year": 2025,
+          "value": 74,
+          "status": "estimate"
+        },
+        "assumption": "Continue +3 percentage points/year to 2027, capped at 100%. Uses the revised 2024 value from the 2025 edition. Regional map values are not projected.",
+        "sourceUrls": [
+          "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use/"
+        ],
+        "projection": {
+          "targetYear": 2027,
+          "method": "linear",
+          "ceiling": 100
+        }
+      }
+    }
+  },
+  {
+    "id": "network",
+    "title": "The Uneven Nervous System",
+    "summary": "Fast networks spread; the gaps remain enormous.",
+    "metric": "Population covered by a 5G network",
+    "unit": "% of population",
+    "dataYear": "2025",
+    "published": "2025",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "ITU · Facts and Figures 2025, Mobile network coverage",
+        "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-mobile-network-coverage/"
+      },
+      {
+        "label": "Global population covered by 5G · historical comparison source",
+        "url": "https://www.itu.int/itu-d/reports/statistics/2024/11/10/ff24-mobile-network-coverage/"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-mobile-network-coverage/",
+      "https://www.itu.int/itu-d/reports/statistics/2024/11/10/ff24-mobile-network-coverage/"
+    ],
+    "scope": "Six ITU regions; connectivity context for AI.",
+    "limitations": "Coverage does not mean subscription, affordability, actual use or AI access. 5G is not required to use AI. Each pin represents an entire ITU region.",
+    "status": "estimate",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "Europe",
+        "lat": 53,
+        "lon": 17,
+        "value": 74,
+        "note": "ITU regional aggregate.",
+        "displayValue": "74",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Asia–Pacific",
+        "lat": 15,
+        "lon": 120,
+        "value": 70,
+        "note": "ITU regional aggregate.",
+        "displayValue": "70",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Americas",
+        "lat": 10,
+        "lon": -80,
+        "value": 60,
+        "note": "ITU regional aggregate.",
+        "displayValue": "60",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Arab States",
+        "lat": 25,
+        "lon": 40,
+        "value": 13,
+        "note": "ITU regional aggregate.",
+        "displayValue": "13",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Africa",
+        "lat": 1,
+        "lon": 20,
+        "value": 12,
+        "note": "ITU regional aggregate.",
+        "displayValue": "12",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "CIS",
+        "lat": 50,
+        "lon": 70,
+        "value": 8,
+        "note": "ITU Commonwealth of Independent States aggregate.",
+        "displayValue": "8",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 55,
+      "unit": "%",
+      "label": "World population covered by 5G, 2025"
+    },
+    "visual": {
+      "effect": "signals",
+      "name": "Signal tides",
+      "ceiling": 100,
+      "unit": "% of population",
+      "encoding": "Higher coverage widens signal halos and increases their number and outward speed.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "Fast networks extend unevenly across the world. A person can live under a 5G footprint without having a compatible device, an affordable plan, or a reason to use AI.",
+        "Coverage does not mean subscription, affordability, actual use or AI access. 5G is not required to use AI. Each pin represents an entire ITU region."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "Global population covered by 5G",
+        "unit": "%",
+        "past": {
+          "year": 2024,
+          "value": 51,
+          "status": "estimate"
+        },
+        "latest": {
+          "year": 2025,
+          "value": 55,
+          "status": "estimate"
+        },
+        "assumption": "Continue +4 percentage points/year to 2027, capped at 100%. Cross-edition estimates can be revised. The global trend is not assigned to regions.",
+        "sourceUrls": [
+          "https://www.itu.int/itu-d/reports/statistics/2024/11/10/ff24-mobile-network-coverage/",
+          "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-mobile-network-coverage/"
+        ],
+        "projection": {
+          "targetYear": 2027,
+          "method": "linear",
+          "ceiling": 100
+        }
+      }
+    }
+  },
+  {
+    "id": "adoption",
+    "title": "The New Habit",
+    "summary": "Where AI is built and where people use it are different maps.",
+    "metric": "Estimated generative-AI users aged 15–64",
+    "unit": "% of working-age population",
+    "dataYear": "2026 Q2",
+    "published": "2026-09-21",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "Microsoft · Global AI Diffusion, Q2 2026",
+        "url": "https://aka.ms/AIDiffusionReport2026Q2"
+      },
+      {
+        "label": "Misra et al. · Measuring AI Diffusion",
+        "url": "https://arxiv.org/abs/2511.02781"
+      },
+      {
+        "label": "Microsoft · AI Diffusion Q2 2026 dataset",
+        "url": "https://github.com/microsoft/ai-diffusion-report/blob/main/data/AI_Diffusion_Q22026_Update.csv"
+      },
+      {
+        "label": "Global estimated GenAI use · ages 15–64 · historical comparison source",
+        "url": "https://news.microsoft.com/source/emea/2026/09/microsoft-ai-diffusion-report-evolucion-uso-ia/?lang=es"
+      }
+    ],
+    "sourceUrls": [
+      "https://aka.ms/AIDiffusionReport2026Q2",
+      "https://arxiv.org/abs/2511.02781",
+      "https://github.com/microsoft/ai-diffusion-report/blob/main/data/AI_Diffusion_Q22026_Update.csv",
+      "https://news.microsoft.com/source/emea/2026/09/microsoft-ai-diffusion-report-evolucion-uso-ia/?lang=es"
+    ],
+    "scope": "Selected economies; reported-period use of covered generative AI products.",
+    "limitations": "Microsoft telemetry model adjusted for devices, connectivity and population. It misses some tools, particularly domestic Chinese products. Not a direct census; not all AI use.",
+    "status": "estimate",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "United Arab Emirates",
+        "lat": 24,
+        "lon": 54,
+        "value": 73.3,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "73.3",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Singapore",
+        "lat": 1.35,
+        "lon": 103.8,
+        "value": 64.3,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "64.3",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Ireland",
+        "lat": 53,
+        "lon": -8,
+        "value": 49.9,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "49.9",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "France",
+        "lat": 47,
+        "lon": 2,
+        "value": 49.6,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "49.6",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "New Zealand",
+        "lat": -41,
+        "lon": 173,
+        "value": 44.1,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "44.1",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Australia",
+        "lat": -25,
+        "lon": 134,
+        "value": 40.7,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "40.7",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "South Korea",
+        "lat": 36,
+        "lon": 128,
+        "value": 40.6,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "40.6",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "United States",
+        "lat": 39,
+        "lon": -98,
+        "value": 33.0,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "33.0",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Japan",
+        "lat": 36,
+        "lon": 138,
+        "value": 24.7,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "24.7",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "South Africa",
+        "lat": -29,
+        "lon": 25,
+        "value": 23.9,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "23.9",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Brazil",
+        "lat": -10,
+        "lon": -52,
+        "value": 20.2,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "20.2",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "India",
+        "lat": 22,
+        "lon": 79,
+        "value": 18.5,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "18.5",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "China",
+        "lat": 35,
+        "lon": 104,
+        "value": 17.5,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "17.5",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Nigeria",
+        "lat": 9,
+        "lon": 8,
+        "value": 10.4,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "10.4",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Kenya",
+        "lat": 0,
+        "lon": 38,
+        "value": 8.9,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "8.9",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 18.8,
+      "unit": "%",
+      "label": "Estimated global working-age AI use, Q2 2026"
+    },
+    "visual": {
+      "effect": "binary",
+      "name": "Binary weather",
+      "ceiling": 100,
+      "unit": "% of working-age population",
+      "encoding": "Higher estimated use creates denser clouds of flickering 1s and 0s, a wider cloud and faster gentle shimmer. This is AI adoption, not data traffic.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "The machine age arrives at different speeds. These working-age estimates describe use of generative-AI tools; the binary weather makes that uptake visible without claiming to measure bytes or data-centre traffic.",
+        "Microsoft telemetry model adjusted for devices, connectivity and population. It misses some tools, particularly domestic Chinese products. Not a direct census; not all AI use."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "Global estimated GenAI use · ages 15–64",
+        "unit": "%",
+        "past": {
+          "year": 2026.25,
+          "value": 17.8,
+          "status": "estimate",
+          "label": "Q1 2026"
+        },
+        "latest": {
+          "year": 2026.5,
+          "value": 18.8,
+          "status": "estimate",
+          "label": "Q2 2026"
+        },
+        "assumption": "Continue +1 percentage point/quarter to Q2 2027, capped at 100%. The next Microsoft edition will broaden tool coverage; measurement changes can shift estimates independently of behaviour.",
+        "sourceUrls": [
+          "https://news.microsoft.com/source/emea/2026/09/microsoft-ai-diffusion-report-evolucion-uso-ia/?lang=es"
+        ],
+        "projection": {
+          "targetYear": 2027.5,
+          "method": "linear",
+          "ceiling": 100,
+          "label": "Q2 2027"
+        }
+      }
+    }
+  },
+  {
+    "id": "work",
+    "title": "The Shape of Work",
+    "summary": "Tasks can change long before job titles disappear.",
+    "metric": "Employment in occupations potentially exposed to GenAI",
+    "unit": "% of employment",
+    "dataYear": "2025 index",
+    "published": "2025-05-20",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "ILO–NASK · Refined Global Index of Occupational Exposure",
+        "url": "https://www.ilo.org/resource/news/one-four-jobs-risk-being-transformed-genai-new-ilo%E2%80%93nask-global-index-shows"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.ilo.org/resource/news/one-four-jobs-risk-being-transformed-genai-new-ilo%E2%80%93nask-global-index-shows"
+    ],
+    "scope": "Global estimate and high-income-country aggregate.",
+    "limitations": "Exposure is a task-based model, not unemployment, a prediction of job losses, or proof that AI has caused them. Aggregates overlap and must not be added.",
+    "status": "estimate",
+    "geographyMode": "categorical",
+    "coordinateMeaning": "Non-geographic categories. Globe patterns are conceptual; do not assign these values to individual countries.",
+    "points": [
+      {
+        "name": "Worldwide",
+        "lat": null,
+        "lon": null,
+        "value": 25,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "25",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "High-income economies",
+        "lat": null,
+        "lon": null,
+        "value": 34,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "34",
+        "coordinateType": "not-geographic"
+      }
+    ],
+    "headline": {
+      "value": 25,
+      "unit": "%",
+      "label": "Global employment potentially exposed"
+    },
+    "visual": {
+      "effect": "tiles",
+      "name": "Rearranging work",
+      "ceiling": 100,
+      "unit": "% of employment",
+      "encoding": "Higher exposure activates more task tiles and increases their displacement and movement. Categories occupy abstract sectors.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "Work changes task by task. The ILO index models potential exposure to generative AI, not actual job losses. Worldwide and high-income aggregates overlap and must not be added together.",
+        "Exposure is a task-based model, not unemployment, a prediction of job losses, or proof that AI has caused them. Aggregates overlap and must not be added."
+      ],
+      "pastNote": "The 2025 index revised its task scoring and framework; earlier estimates are not treated as a matching baseline.",
+      "futureNote": "No job-loss or exposure forecast is implied by this snapshot."
+    }
+  },
+  {
+    "id": "languages",
+    "title": "The Languages It Hears",
+    "summary": "A sampled web is not the world speaking equally.",
+    "metric": "Primary language of crawled HTML documents",
+    "unit": "% of crawl pages",
+    "dataYear": "CC-MAIN-2026-39",
+    "published": "2026",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "Common Crawl · CC-MAIN-2026-39 language statistics",
+        "url": "https://commoncrawl.github.io/cc-crawl-statistics/plots/languages.html"
+      }
+    ],
+    "sourceUrls": [
+      "https://commoncrawl.github.io/cc-crawl-statistics/plots/languages.html"
+    ],
+    "scope": "Selected languages in one Common Crawl snapshot.",
+    "limitations": "CLD2 language detection; HTML only. This is not the entire Internet, actual model training data, language quality, or speaker share. Languages have no single geographic home.",
+    "status": "observed",
+    "geographyMode": "categorical",
+    "coordinateMeaning": "Non-geographic language categories; any globe sectors are an abstract diagram, not a map of speakers or server locations.",
+    "points": [
+      {
+        "name": "English",
+        "lat": null,
+        "lon": null,
+        "value": 41.862,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "41.862",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "Russian",
+        "lat": null,
+        "lon": null,
+        "value": 6.6954,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "6.6954",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "German",
+        "lat": null,
+        "lon": null,
+        "value": 5.7252,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "5.7252",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "Japanese",
+        "lat": null,
+        "lon": null,
+        "value": 5.1668,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "5.1668",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "Spanish",
+        "lat": null,
+        "lon": null,
+        "value": 4.7448,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "4.7448",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "French",
+        "lat": null,
+        "lon": null,
+        "value": 4.6769,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "4.6769",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "Chinese",
+        "lat": null,
+        "lon": null,
+        "value": 4.2255,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "4.2255",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "Arabic",
+        "lat": null,
+        "lon": null,
+        "value": 0.6679,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "0.6679",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "Hindi",
+        "lat": null,
+        "lon": null,
+        "value": 0.2147,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "0.2147",
+        "coordinateType": "not-geographic"
+      },
+      {
+        "name": "Swahili",
+        "lat": null,
+        "lon": null,
+        "value": 0.0109,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "0.0109",
+        "coordinateType": "not-geographic"
+      }
+    ],
+    "headline": {
+      "value": 41.862,
+      "unit": "%",
+      "label": "English share of sampled HTML pages"
+    },
+    "visual": {
+      "effect": "letters",
+      "name": "A chorus with gaps",
+      "ceiling": 100,
+      "unit": "% of crawl pages",
+      "encoding": "Larger crawl share creates denser flowing letterform ribbons. Letters are illustrative symbols, not language samples; ribbon positions are not countries.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "A machine trained on the web does not hear every language equally. These figures describe languages detected in one Common Crawl snapshot, not every model’s actual training mix or the number of people speaking each language.",
+        "CLD2 language detection; HTML only. This is not the entire Internet, actual model training data, language quality, or speaker share. Languages have no single geographic home."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "Not extrapolated: changing web samples do not establish a stable trend.",
+      "timeline": {
+        "label": "English share of sampled HTML pages",
+        "unit": "%",
+        "past": {
+          "year": null,
+          "value": 40.4526,
+          "status": "observed",
+          "label": "CC-MAIN-2026-34"
+        },
+        "latest": {
+          "year": null,
+          "value": 41.862,
+          "status": "observed",
+          "label": "CC-MAIN-2026-39"
+        },
+        "assumption": "Two changing crawl samples cannot establish a stable trend for future language representation. No numeric extrapolation is made.",
+        "sourceUrls": [
+          "https://commoncrawl.github.io/cc-crawl-statistics/plots/languages.html"
+        ]
+      }
+    }
+  },
+  {
+    "id": "water",
+    "title": "The Cloud Is Thirsty",
+    "summary": "Computing leaves a physical trace in the water cycle.",
+    "metric": "Direct annual data-centre water consumption",
+    "unit": "billion litres",
+    "dataYear": "2023",
+    "published": "2024-12",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "Berkeley Lab · US Data Center Energy Usage Report, pp. 55–56",
+        "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf"
+      }
+    ],
+    "sourceUrls": [
+      "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf"
+    ],
+    "scope": "United States case study; all data centres, not AI alone.",
+    "limitations": "Historical model estimate, not a current meter reading or AI-only footprint. Excludes indirect electricity water use. No worldwide allocation is asserted.",
+    "status": "estimate",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "United States",
+        "lat": 39,
+        "lon": -98,
+        "value": 66,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "66",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 66,
+      "unit": "billion litres",
+      "label": "US direct data-centre water consumption, 2023"
+    },
+    "history": [
+      {
+        "year": 2014,
+        "value": 21.2,
+        "unit": "billion litres"
+      },
+      {
+        "year": 2023,
+        "value": 66,
+        "unit": "billion litres"
+      }
+    ],
+    "visual": {
+      "effect": "flood",
+      "name": "The rising city",
+      "ceiling": 100,
+      "unit": "billion litres",
+      "encoding": "Water depth, wave speed and darker blue rise together. The miniature city marks the US aggregate; it is not a measured city or a flood forecast.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "A submerged miniature skyline turns an invisible resource footprint into something physical. The water represents consumption, not inundation: this is a visual metaphor for water used by all US data centres.",
+        "Historical model estimate, not a current meter reading or AI-only footprint. Excludes indirect electricity water use. No worldwide allocation is asserted."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "US direct data-centre water consumption",
+        "unit": "billion litres",
+        "past": {
+          "year": 2014,
+          "value": 21.2,
+          "status": "estimate"
+        },
+        "latest": {
+          "year": 2023,
+          "value": 66,
+          "status": "estimate"
+        },
+        "projection": {
+          "targetYear": 2028,
+          "method": "linear"
+        },
+        "assumption": "Continue the 2014–2023 average increase (+4.98 billion litres/year) to 2028. A simple scenario, not a hydrological model or the Berkeley Lab forecast. Cooling technology, workloads and efficiency can change the path.",
+        "sourceUrls": [
+          "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf"
+        ]
+      }
+    }
+  },
+  {
+    "id": "sovereignty",
+    "title": "Whose Intelligence?",
+    "summary": "Public compute becomes a form of national agency.",
+    "metric": "Public or public–private AI supercomputers",
+    "unit": "systems",
+    "dataYear": "2025",
+    "published": "2026",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "Stanford HAI · AI Index 2026, Policy and Governance",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/policy-and-governance"
+      },
+      {
+        "label": "Stanford AI Index 2026 · Figure 8.3.1, p.333",
+        "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_8_policy_and_governance.pdf"
+      }
+    ],
+    "sourceUrls": [
+      "https://hai.stanford.edu/ai-index/2026-ai-index-report/policy-and-governance",
+      "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_8_policy_and_governance.pdf"
+    ],
+    "scope": "Selected source-defined regions; China listed separately.",
+    "limitations": "Counts track selected large GPU clusters; they are not total computing capacity. China is excluded from the East Asia and Pacific group. Planned systems are excluded.",
+    "status": "observed",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "China",
+        "lat": 35,
+        "lon": 104,
+        "value": 85,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "85",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Europe and Central Asia",
+        "lat": 50,
+        "lon": 30,
+        "value": 44,
+        "note": "Source-defined region; representative anchor.",
+        "displayValue": "44",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "North America",
+        "lat": 45,
+        "lon": -100,
+        "value": 41,
+        "note": "Regional aggregate.",
+        "displayValue": "41",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "East Asia and Pacific (excluding China)",
+        "lat": -5,
+        "lon": 135,
+        "value": 27,
+        "note": "Regional aggregate excluding China; representative anchor.",
+        "displayValue": "27",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Latin America and Caribbean",
+        "lat": -12,
+        "lon": -65,
+        "value": 8,
+        "note": "Regional aggregate.",
+        "displayValue": "8",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Middle East and North Africa",
+        "lat": 27,
+        "lon": 30,
+        "value": 3,
+        "note": "Regional aggregate.",
+        "displayValue": "3",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "South Asia",
+        "lat": 20,
+        "lon": 77,
+        "value": 2,
+        "note": "Regional aggregate.",
+        "displayValue": "2",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 85,
+      "unit": "systems",
+      "label": "China public or public–private AI supercomputers"
+    },
+    "visual": {
+      "effect": "citadels",
+      "name": "Compute citadels",
+      "ceiling": 100,
+      "unit": "systems",
+      "encoding": "More tracked systems build taller citadels with more illuminated floors and faster scanning rings.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "Public computing can be a form of national agency. These selected public and public–private supercomputer counts describe systems, not equal amounts of computing power; one large cluster can dwarf many smaller ones.",
+        "Counts track selected large GPU clusters; they are not total computing capacity. China is excluded from the East Asia and Pacific group. Planned systems are excluded."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change.",
+      "timeline": {
+        "label": "Europe & Central Asia · public/public–private AI clusters",
+        "unit": "systems",
+        "past": {
+          "year": 2018,
+          "value": 3,
+          "status": "observed"
+        },
+        "latest": {
+          "year": 2025,
+          "value": 44,
+          "status": "observed"
+        },
+        "assumption": "Continue the 2018–2025 average increase of 5.86 clusters/year. Counts do not measure compute capacity. This is Europe & Central Asia only; the map still shows all selected 2025 regions.",
+        "sourceUrls": [
+          "https://hai.stanford.edu/ai-index/2026-ai-index-report/policy-and-governance",
+          "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_8_policy_and_governance.pdf"
+        ],
+        "projection": {
+          "targetYear": 2027,
+          "method": "linear",
+          "ceiling": null
+        }
+      }
+    }
+  },
+  {
+    "id": "borders",
+    "title": "Borders Inside the Cloud",
+    "summary": "Data travels through a growing geography of rules.",
+    "metric": "Cumulative data-localisation measures",
+    "unit": "measures",
+    "dataYear": "through 2024",
+    "published": "2026",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "Stanford HAI · AI Index 2026, Policy and Governance",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/policy-and-governance"
+      },
+      {
+        "label": "Stanford AI Index 2026 · Figure 8.3.3, p.335",
+        "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_8_policy_and_governance.pdf"
+      }
+    ],
+    "sourceUrls": [
+      "https://hai.stanford.edu/ai-index/2026-ai-index-report/policy-and-governance",
+      "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_8_policy_and_governance.pdf"
+    ],
+    "scope": "Seven source-defined regions.",
+    "limitations": "Measures differ in scope and force; counts do not measure restrictiveness or compliance. These policies concern data broadly, not AI alone.",
+    "status": "observed",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "East Asia and Pacific",
+        "lat": 15,
+        "lon": 120,
+        "value": 77,
+        "note": "Regional aggregate.",
+        "displayValue": "77",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Sub-Saharan Africa",
+        "lat": -5,
+        "lon": 20,
+        "value": 71,
+        "note": "Regional aggregate.",
+        "displayValue": "71",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Europe and Central Asia",
+        "lat": 50,
+        "lon": 30,
+        "value": 66,
+        "note": "Regional aggregate.",
+        "displayValue": "66",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "North America",
+        "lat": 45,
+        "lon": -100,
+        "value": 3,
+        "note": "Regional aggregate.",
+        "displayValue": "3",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Middle East and North Africa",
+        "lat": 27,
+        "lon": 30,
+        "value": 44,
+        "note": "Regional aggregate.",
+        "displayValue": "44",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "Latin America and Caribbean",
+        "lat": -12,
+        "lon": -65,
+        "value": 36,
+        "note": "Regional aggregate.",
+        "displayValue": "36",
+        "coordinateType": "representative-anchor"
+      },
+      {
+        "name": "South Asia",
+        "lat": 20,
+        "lon": 77,
+        "value": 24,
+        "note": "Regional aggregate.",
+        "displayValue": "24",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 77,
+      "unit": "measures",
+      "label": "East Asia and Pacific, cumulative through 2024"
+    },
+    "visual": {
+      "effect": "fences",
+      "name": "Digital enclosures",
+      "ceiling": 100,
+      "unit": "measures",
+      "encoding": "More measures create taller enclosures with more bars and faster moving checkpoints.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "Data encounters borders even when a network appears seamless. Localisation rules differ enormously: a larger count does not establish greater legal severity, enforcement, or an AI-specific restriction.",
+        "Measures differ in scope and force; counts do not measure restrictiveness or compliance. These policies concern data broadly, not AI alone."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change."
+    }
+  },
+  {
+    "id": "proteins",
+    "title": "A Second Nature",
+    "summary": "The map of possible protein shapes has expanded into the hundreds of millions.",
+    "metric": "Protein structure predictions in AlphaFold DB v6",
+    "unit": "predictions",
+    "dataYear": "v6 (2025)",
+    "published": "2025-10-21",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "EMBL-EBI · AlphaFold DB v6 release notes",
+        "url": "https://www.ebi.ac.uk/pdbe/news/alphafold-database-release-notes"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.ebi.ac.uk/pdbe/news/alphafold-database-release-notes"
+    ],
+    "scope": "Global open scientific database; versioned snapshot.",
+    "limitations": "Predictions are not experimental confirmations, drug discoveries, species counts, or country achievements. This is the v6 release total, not a live total of all later contributed datasets.",
+    "status": "observed",
+    "geographyMode": "global",
+    "coordinateMeaning": "A global scientific resource; abstract strands are illustrative, not geographic measurements.",
+    "points": [
+      {
+        "name": "AlphaFold DB v6",
+        "lat": null,
+        "lon": null,
+        "value": 241070489,
+        "note": "Non-geographic category; no location is implied.",
+        "displayValue": "241,070,489",
+        "coordinateType": "not-geographic"
+      }
+    ],
+    "headline": {
+      "value": 241070489,
+      "unit": "predictions",
+      "label": "Protein structure predictions, v6 release"
+    },
+    "visual": {
+      "effect": "folds",
+      "name": "Folding possibilities",
+      "ceiling": 300000000,
+      "unit": "predictions",
+      "encoding": "More predictions increase strand count, folded complexity and breathing speed. This is an abstract global sculpture.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "AI has expanded the public catalogue of possible protein shapes. AlphaFold predictions can help research, but a predicted structure is not an experimental confirmation, a new medicine, or a guarantee of biological function.",
+        "Predictions are not experimental confirmations, drug discoveries, species counts, or country achievements. This is the v6 release total, not a live total of all later contributed datasets."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "Not extrapolated: bulk releases add and remove structures; release cadence is not continuous growth.",
+      "timeline": {
+        "label": "AlphaFold database release size",
+        "unit": "predictions",
+        "past": {
+          "year": null,
+          "value": 214683829,
+          "status": "observed",
+          "label": "v4 release"
+        },
+        "latest": {
+          "year": null,
+          "value": 241070489,
+          "status": "observed",
+          "label": "v6 · October 2025"
+        },
+        "assumption": "Release sizes change through bulk additions and removals. Version comparisons do not establish a steady annual growth rate; no numeric future is asserted.",
+        "sourceUrls": [
+          "https://www.ebi.ac.uk/pdbe/news/alphafold-database-release-notes"
+        ]
+      }
+    }
+  },
+  {
+    "id": "chokepoints",
+    "title": "The Narrowest Neck",
+    "summary": "A planetary industry depends on a few material bottlenecks.",
+    "metric": "Share of global refined gallium supply",
+    "unit": "%",
+    "dataYear": "2025 report estimate",
+    "published": "2025-04-10",
+    "retrieved": "2026-10-20",
+    "sources": [
+      {
+        "label": "IEA · Energy and AI (2025)",
+        "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.iea.org/reports/energy-and-ai/executive-summary"
+    ],
+    "scope": "Refined gallium supply concentration; one upstream input into some chips and power electronics.",
+    "limitations": "Not the share of AI chips, all semiconductors, or AI compute. Gallium has many uses beyond AI. This is the IEA report estimate, not a live trade measure.",
+    "status": "estimate",
+    "geographyMode": "geographic",
+    "coordinateMeaning": "Representative anchors for country or regional aggregates; not facility locations.",
+    "points": [
+      {
+        "name": "China",
+        "lat": 35,
+        "lon": 104,
+        "value": 99,
+        "note": "Country total/average; marker is a representative anchor, not a measurement site.",
+        "displayValue": "99",
+        "coordinateType": "representative-anchor"
+      }
+    ],
+    "headline": {
+      "value": 99,
+      "unit": "%",
+      "label": "China share of global refined gallium supply"
+    },
+    "visual": {
+      "effect": "throat",
+      "name": "The narrowing throat",
+      "ceiling": 100,
+      "unit": "%",
+      "encoding": "Greater concentration narrows the supply funnel, packs more particles into it and accelerates their passage.",
+      "scoreMeaning": "Magnitude on this story’s fixed scale, not danger or a score comparable across stories."
+    },
+    "brief": {
+      "paragraphs": [
+        "The global machine age depends on concentrated physical inputs. Refined gallium is used across electronics and other industries; its supply concentration is not the share of AI chips or of all semiconductor manufacturing.",
+        "Not the share of AI chips, all semiconductors, or AI compute. Gallium has many uses beyond AI. This is the IEA report estimate, not a live trade measure."
+      ],
+      "pastNote": "No comparable historical observation has been verified for this edition.",
+      "futureNote": "No defensible trend projection from the verified points in this edition. A single snapshot does not establish a rate of change."
+    }
+  }
+]

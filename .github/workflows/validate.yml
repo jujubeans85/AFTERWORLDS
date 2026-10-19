@@ -1,0 +1,24 @@
+name: Validate application and reviewed research
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified 2026-10-19
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4, verified 2026-10-19
+        with:
+          node-version: '22'
+      - run: npm run build
+      - run: npm test
+      - run: npm run research:validate
+      - run: npm run research:build
+      - name: Generated research manifests are current
+        run: git diff --exit-code -- research/manifest.json research/CONCEPT_RESULTS.md

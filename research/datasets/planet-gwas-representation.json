@@ -1,0 +1,218 @@
+{
+  "datasetId": "planet-gwas-representation",
+  "id": "planet-gwas-representation",
+  "conceptIds": [
+    "232"
+  ],
+  "title": "Before a genome model: whose data are represented?",
+  "rows": [
+    {
+      "id": "gwas-0",
+      "entityId": "gwas-0",
+      "name": "European",
+      "value": 88.4,
+      "unit": "percent of recorded participant entries",
+      "period": "Cumulative dashboard snapshot checked 2026-10-06",
+      "sourceId": "planet-gwas",
+      "sourceLocator": "Headline Total GWAS participants diversity",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Both discovery and replication stages; excludes Catalog rows with any unreported ancestry. Counts can repeat people across studies. Curated broad ancestry label, not nationality or fixed biological race."
+    },
+    {
+      "id": "gwas-1",
+      "entityId": "gwas-1",
+      "name": "Asian",
+      "value": 6.05,
+      "unit": "percent of recorded participant entries",
+      "period": "Cumulative dashboard snapshot checked 2026-10-06",
+      "sourceId": "planet-gwas",
+      "sourceLocator": "Headline Total GWAS participants diversity",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Both discovery and replication stages; excludes Catalog rows with any unreported ancestry. Counts can repeat people across studies. Curated broad ancestry label, not nationality or fixed biological race."
+    },
+    {
+      "id": "gwas-2",
+      "entityId": "gwas-2",
+      "name": "African",
+      "value": 0.28,
+      "unit": "percent of recorded participant entries",
+      "period": "Cumulative dashboard snapshot checked 2026-10-06",
+      "sourceId": "planet-gwas",
+      "sourceLocator": "Headline Total GWAS participants diversity",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Both discovery and replication stages; excludes Catalog rows with any unreported ancestry. Counts can repeat people across studies. Curated broad ancestry label, not nationality or fixed biological race."
+    },
+    {
+      "id": "gwas-3",
+      "entityId": "gwas-3",
+      "name": "African American or Afro-Caribbean",
+      "value": 2.7,
+      "unit": "percent of recorded participant entries",
+      "period": "Cumulative dashboard snapshot checked 2026-10-06",
+      "sourceId": "planet-gwas",
+      "sourceLocator": "Headline Total GWAS participants diversity",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Both discovery and replication stages; excludes Catalog rows with any unreported ancestry. Counts can repeat people across studies. Curated broad ancestry label, not nationality or fixed biological race."
+    },
+    {
+      "id": "gwas-4",
+      "entityId": "gwas-4",
+      "name": "Hispanic or Latin American",
+      "value": 1.26,
+      "unit": "percent of recorded participant entries",
+      "period": "Cumulative dashboard snapshot checked 2026-10-06",
+      "sourceId": "planet-gwas",
+      "sourceLocator": "Headline Total GWAS participants diversity",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Both discovery and replication stages; excludes Catalog rows with any unreported ancestry. Counts can repeat people across studies. Curated broad ancestry label, not nationality or fixed biological race."
+    },
+    {
+      "id": "gwas-5",
+      "entityId": "gwas-5",
+      "name": "Other/Mixed",
+      "value": 1.31,
+      "unit": "percent of recorded participant entries",
+      "period": "Cumulative dashboard snapshot checked 2026-10-06",
+      "sourceId": "planet-gwas",
+      "sourceLocator": "Headline Total GWAS participants diversity",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Both discovery and replication stages; excludes Catalog rows with any unreported ancestry. Counts can repeat people across studies. Curated broad ancestry label, not nationality or fixed biological race."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint"
+  },
+  "unit": "percent",
+  "denominator": "Cumulative participant entries in included GWAS Catalog studies across discovery and replication; rows with unreported ancestry excluded; not distinct people",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Six dashboard-curated ancestry categories; non-geographic comparison",
+    "definition": "Six dashboard-curated ancestry categories; non-geographic comparison",
+    "anchorRule": "Use an explicitly non-geographic sphere or global band. No national fill, fake city locations, or inferred unobserved distribution."
+  },
+  "time": {
+    "observationStart": "Cumulative studies through dashboard snapshot",
+    "observationEnd": "2026-10-06",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-gwas",
+      "publisher": "Leverhulme Centre for Demographic Science, University of Oxford; NHGRI-EBI GWAS Catalog",
+      "title": "GWAS Diversity Monitor: total participant diversity",
+      "url": "https://gwasdiversitymonitor.com/",
+      "locator": "Headline summary; last checked 2026-10-06 00:06:16; Q&A 14 defines cumulative both-stage denominator",
+      "version": "page accessed 2026-10-19",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://www.ebi.ac.uk/about/terms-of-use/",
+        "attribution": "GWAS Diversity Monitor: total participant diversity — Leverhulme Centre for Demographic Science, University of Oxford; NHGRI-EBI GWAS Catalog",
+        "verified": true,
+        "notes": "GWAS Monitor Q&A4 directs reuse to EMBL-EBI terms, revised 2026-10-14. Attribution is expected; EBI does not remove third-party rights. This pack extracts six aggregate factual shares only and claims no blanket licence over underlying study or participant data."
+      }
+    },
+    {
+      "sourceId": "planet-gwas-methods",
+      "publisher": "GWAS Diversity Monitor",
+      "title": "GWAS Diversity Monitor questions and answers",
+      "url": "https://gwasdiversitymonitor.com/qandas",
+      "locator": "Questions 3, 4, 6, 7 and 14: curation, reuse, categories and denominator",
+      "version": "page accessed 2026-10-19",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://www.ebi.ac.uk/about/terms-of-use/",
+        "attribution": "GWAS Diversity Monitor questions and answers — GWAS Diversity Monitor",
+        "verified": true,
+        "notes": "GWAS Monitor Q&A4 directs reuse to EMBL-EBI terms, revised 2026-10-14. Attribution is expected; EBI does not remove third-party rights. This pack extracts six aggregate factual shares only and claims no blanket licence over underlying study or participant data."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Six dashboard-curated ancestry categories; non-geographic comparison",
+    "included": "6 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "No inventory of AI training sets, model transfer performance, nationality allocation or participant-level records",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Broad categories obscure within-group diversity and depend on reporting. Excluded ancestry records and repeat participants limit population interpretation. Rounded percentages sum 100%.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://gwasdiversitymonitor.com/",
+      "https://gwasdiversitymonitor.com/qandas"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "gwas-0",
+      "gwas-1",
+      "gwas-2",
+      "gwas-3",
+      "gwas-4",
+      "gwas-5"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "context",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

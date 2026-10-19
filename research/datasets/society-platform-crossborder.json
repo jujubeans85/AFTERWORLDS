@@ -1,0 +1,139 @@
+{
+  "datasetId": "society-platform-crossborder",
+  "id": "society-platform-crossborder",
+  "title": "Work crossing the screen",
+  "conceptIds": [
+    "156-8"
+  ],
+  "metric": "Work crossing the screen",
+  "unit": "mixed; each row is explicitly labelled",
+  "denominator": "Different denominators by row: all surveyed workers versus respondents knowing client location",
+  "rows": [
+    {
+      "id": "lac-client-foreign",
+      "entityId": "lac-client-foreign",
+      "name": "Workers with clients outside their country",
+      "value": 53,
+      "unit": "percent of surveyed workers",
+      "period": "2023-12-15/2024-03-31",
+      "sourceId": "ilo-lac-platform-2025",
+      "sourceLocator": "Section2.5, printedp23/PDFp27",
+      "status": "estimated",
+      "qualifier": "rounded source percentage",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Primary report prints53percent, described as just over half; pressrelease says over53. Use report-rounded value, not a strict lower bound."
+    },
+    {
+      "id": "lac-client-outside-region",
+      "entityId": "lac-client-outside-region",
+      "name": "Clients outside Latin America and Caribbean",
+      "value": 90,
+      "unit": "percent of respondents who know client location",
+      "period": "2023-12-15/2024-03-31",
+      "sourceId": "ilo-lac-platform-2025",
+      "sourceLocator": "Executive summary printedp3/PDFp7; section2.5",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Conditional denominator. Do not multiply by53% without microdata."
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2023-12-15",
+    "observationEnd": "2024-03-31",
+    "publishedAt": "2025-04-10",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "ilo-lac-platform-2025",
+      "publisher": "ILO",
+      "title": "Survey on workers on web-based digital platforms: new data for Latin America and the Caribbean",
+      "url": "https://www.ilo.org/sites/default/files/2025-04/Informe%20Plataformas%20Digitales_EN_web.pdf",
+      "locator": "Executive summary; section2.5; section4.1 Figure14; Annex2 PDFp65 fieldwork",
+      "version": "Englishreport; DOI10.54394/NDVQ0600; fieldwork2023-12-15/2024-03-31",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY4.0; primary English report PDFp3",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Cravo,T. (2025), Survey of workers on web-based digital platforms. New data for the Latin American and Caribbean region, Lima: International Labour Office. ©ILO. AFTERWORLDS extracts selected aggregate facts.",
+        "verified": true,
+        "notes": "This is an adaptation of a copyrighted work of the International Labour Organization (ILO). This adaptation has not been prepared, reviewed or endorsed by the ILO and should not be considered an official ILO adaptation. The ILO disclaims all responsibility for its content and accuracy. Responsibility rests solely with the author(s) of the adaptation. No ILO emblem or logo used."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Selected web-platform worker sample in21 LAC countries;1407 respondents,254 excluded,1153 retained.",
+    "included": "2 records: 2 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation.",
+    "sampling": "Survey available through selected platforms, not a probability sample of all workers; individual item denominators can vary."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. Survey is not a trade-volume census and has no AI-only subset. No origin-destination flow weights or total dollars are supplied.",
+  "limitations": [
+    "Survey is not a trade-volume census and has no AI-only subset.",
+    "No origin-destination flow weights or total dollars are supplied."
+  ],
+  "aiRelationship": "context",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "lac-client-foreign",
+      "lac-client-outside-region"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

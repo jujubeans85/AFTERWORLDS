@@ -1,0 +1,188 @@
+{
+  "datasetId": "physical-grid-connection-rules",
+  "id": "physical-grid-connection-rules",
+  "schemaVersion": "1.0",
+  "title": "Before a connection offer",
+  "conceptIds": [
+    "394"
+  ],
+  "metric": "Selected dated connection-policy requirements",
+  "unit": "category",
+  "denominator": "One transmission-system operator’s new data-centre connections",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Documented grid-entry conditions in Ireland.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2026-05-20 policy",
+    "observationEnd": "2026-05-20 policy",
+    "publishedAt": "2026-05-20",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "eirgrid26",
+      "publisher": "EirGrid",
+      "title": "Data Centre Connection Offer Process and Policy V3",
+      "url": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
+      "locator": "Executive summary pp3–4; applies to new applications from12Dec2025",
+      "version": "2026-05-20",
+      "publishedAt": "2026-05-20",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
+        "attribution": "EirGrid — Data Centre Connection Offer Process and Policy V3",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "eirgrid26",
+    "publisher": "EirGrid",
+    "title": "Data Centre Connection Offer Process and Policy V3",
+    "url": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
+    "locator": "Executive summary pp3–4; applies to new applications from12Dec2025",
+    "version": "2026-05-20",
+    "publishedAt": "2026-05-20",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
+      "attribution": "EirGrid — Data Centre Connection Offer Process and Policy V3",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "generation",
+      "entityId": "IRL",
+      "name": "Ireland",
+      "value": "Dispatchable generation or storage nomination required",
+      "unit": "category",
+      "period": "2026-05-20 policy",
+      "sourceId": "eirgrid26",
+      "sourceLocator": "Executive summary p3",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "IRL",
+      "lat": null,
+      "lon": null,
+      "notes": "Applies to new transmission data-centre applications at least1MVA received from12Dec2025."
+    },
+    {
+      "id": "renewables",
+      "entityId": "IRL",
+      "name": "Ireland",
+      "value": "Renewable supply pathway required",
+      "unit": "category",
+      "period": "2026-05-20 policy",
+      "sourceId": "eirgrid26",
+      "sourceLocator": "Executive summary p3",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "IRL",
+      "lat": null,
+      "lon": null,
+      "notes": "80% renewable requirement with six-year glide path from energisation; policy obligation, not observed attainment."
+    },
+    {
+      "id": "dependent",
+      "entityId": "IRL",
+      "name": "Ireland",
+      "value": "Offer processing depends on associated generation",
+      "unit": "category",
+      "period": "2026-05-20 policy",
+      "sourceId": "eirgrid26",
+      "sourceLocator": "Executive summary pp3–4",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "IRL",
+      "lat": null,
+      "lon": null,
+      "notes": "Separate but linked applications; not a guarantee of energisation date."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Documented grid-entry conditions in Ireland.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "No global backlog, local proposedMW or project-level waiting time is measured. A policy snapshot is not legal advice or a current eligibility determination.",
+  "limitations": [
+    "No global backlog, local proposedMW or project-level waiting time is measured.",
+    "A policy snapshot is not legal advice or a current eligibility determination."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "generation",
+      "renewables",
+      "dependent"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "What documented grid-entry conditions accompany growing metered data-centre demand in Ireland?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "sourceId": "planet-marida",
+    "publisher": "Kikaki et al., PLOS ONE",
+    "title": "MARIDA: A benchmark for Marine Debris detection from Sentinel-2 remote sensing data",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0262247",
+    "locator": "Tables 1 and 4; Dataset specifications; annotation protocol",
+    "version": "2022-01-07",
+    "publishedAt": "2022-01-07",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "MARIDA: A benchmark for Marine Debris detection from Sentinel-2 remote sensing data — Kikaki et al., PLOS ONE",
+      "verified": true,
+      "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+    }
+  },
+  {
+    "sourceId": "planet-wine",
+    "publisher": "Cortez, Cerdeira, Almeida, Matos and Reis / UCI",
+    "title": "Wine Quality dataset, UCI Machine Learning Repository",
+    "url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+    "locator": "winequality-red.csv and winequality-white.csv; quality column; repository licence",
+    "version": "2009-10-07",
+    "publishedAt": "2009-10-07",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Wine Quality dataset, UCI Machine Learning Repository — Cortez, Cerdeira, Almeida, Matos and Reis / UCI",
+      "verified": true,
+      "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+    }
+  },
+  {
+    "sourceId": "planet-seabed-2026",
+    "publisher": "GEBCO",
+    "title": "Release of the GEBCO_2026 Grid",
+    "url": "https://www.gebco.net/news/release-gebco2026-grid",
+    "locator": "Release announcement; modern-standard coverage comparison",
+    "version": "2026-04-27",
+    "publishedAt": "2026-04-27",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.gebco.net/news/release-gebco2026-grid",
+      "attribution": "Release of the GEBCO_2026 Grid — GEBCO",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-seabed-2025",
+    "publisher": "Nippon Foundation-GEBCO Seabed 2030",
+    "title": "Seabed 2030 announces millions of square kilometers of new seafloor data",
+    "url": "https://seabed2030.org/2025/06/21/seabed-2030-announces-millions-of-square-kilometers-of-new-seafloor-data-on-world-hydrography-day/",
+    "locator": "Opening release paragraph",
+    "version": "2025-06-21",
+    "publishedAt": "2025-06-21",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://seabed2030.org/2025/06/21/seabed-2030-announces-millions-of-square-kilometers-of-new-seafloor-data-on-world-hydrography-day/",
+      "attribution": "Seabed 2030 announces millions of square kilometers of new seafloor data — Nippon Foundation-GEBCO Seabed 2030",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-gfw",
+    "publisher": "Paolo et al., Nature",
+    "title": "Satellite mapping reveals extensive industrial activity at sea",
+    "url": "https://www.nature.com/articles/s41586-023-06825-8",
+    "locator": "Abstract; Fishing and non-fishing vessels; Figure 1; author correction February 2024",
+    "version": "2024-01-03",
+    "publishedAt": "2024-01-03",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Satellite mapping reveals extensive industrial activity at sea — Paolo et al., Nature",
+      "verified": true,
+      "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+    }
+  },
+  {
+    "sourceId": "planet-access",
+    "publisher": "Wolf et al., Nature Communications",
+    "title": "Autonomous artificial intelligence increases screening and follow-up for diabetic retinopathy in youth: the ACCESS randomized control trial",
+    "url": "https://www.nature.com/articles/s41467-023-44676-z",
+    "locator": "Table 3 and footnote; Methods study design; official fulltext https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10784572/fullTextXML",
+    "version": "2024-01-11",
+    "publishedAt": "2024-01-11",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Autonomous artificial intelligence increases screening and follow-up for diabetic retinopathy in youth: the ACCESS randomized control trial — Wolf et al., Nature Communications",
+      "verified": true,
+      "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+    }
+  },
+  {
+    "sourceId": "planet-ecg",
+    "publisher": "Lin et al., Nature Medicine",
+    "title": "AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial",
+    "url": "https://www.nature.com/articles/s41591-024-02961-4",
+    "locator": "Primary abstract, DOI 10.1038/s41591-024-02961-4; EBI EuropePMC core metadata",
+    "version": "2024-04-29",
+    "publishedAt": "2024-04-29",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.nature.com/articles/s41591-024-02961-4",
+      "attribution": "AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial — Lin et al., Nature Medicine",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-ecg-economic",
+    "publisher": "Trial authors, npj Digital Medicine",
+    "title": "Economic analysis of an AI-enabled ECG alert system: impact on mortality outcomes from a pragmatic randomized trial",
+    "url": "https://www.nature.com/articles/s41746-025-01735-7",
+    "locator": "Study participants and setting; original trial enrollment counts and dates",
+    "version": "2025-06-11",
+    "publishedAt": "2025-06-11",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of numerical facts; source article is CC BY-NC-ND 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "attribution": "Economic analysis of an AI-enabled ECG alert system: impact on mortality outcomes from a pragmatic randomized trial — Trial authors, npj Digital Medicine",
+      "verified": true,
+      "notes": "The article licence restricts commercial use and distribution of adaptations. This pack contains only a small independent structured transcription of factual findings, without article prose, figures or adapted article content. No CC BY licence is claimed for the source; reuse outside this narrow factual extraction requires separate assessment."
+    }
+  },
+  {
+    "sourceId": "planet-wetland",
+    "publisher": "Zhang et al., Scientific Data",
+    "title": "Global annual wetland dataset at 30 m with a fine classification system from 2000 to 2022",
+    "url": "https://www.nature.com/articles/s41597-024-03143-0",
+    "locator": "Table 2: global 2020 validation matrix; random-forest methods; official XML PMC10960823",
+    "version": "2024-03-23",
+    "publishedAt": "2024-03-23",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Global annual wetland dataset at 30 m with a fine classification system from 2000 to 2022 — Zhang et al., Scientific Data",
+      "verified": true,
+      "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+    }
+  },
+  {
+    "sourceId": "planet-icenet",
+    "publisher": "Andersson et al., Nature Communications",
+    "title": "Seasonal Arctic sea ice forecasting with probabilistic deep learning",
+    "url": "https://www.nature.com/articles/s41467-021-25257-4",
+    "locator": "Evaluation of IceNet performance; three-month September held-out-year comparison",
+    "version": "2021-08-26",
+    "publishedAt": "2021-08-26",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Seasonal Arctic sea ice forecasting with probabilistic deep learning — Andersson et al., Nature Communications",
+      "verified": true,
+      "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+    }
+  },
+  {
+    "sourceId": "planet-ewaste",
+    "publisher": "ITU/UNITAR",
+    "title": "The Global E-waste Monitor 2024: Key Findings and Statistics",
+    "url": "https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-Waste-Monitor-2024.aspx",
+    "locator": "Key Findings and Statistics: global 2010/2022 mass and formal collection",
+    "version": "2024-03-20",
+    "publishedAt": "2024-03-20",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-Waste-Monitor-2024.aspx",
+      "attribution": "The Global E-waste Monitor 2024: Key Findings and Statistics — ITU/UNITAR",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-ewaste-release",
+    "publisher": "ITU/UNITAR",
+    "title": "Electronic waste rising five times faster than documented e-waste recycling",
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2024-03-20-e-waste-recycling.aspx",
+    "locator": "By the numbers; cross-border flow and smallITcategory",
+    "version": "2024-03-20",
+    "publishedAt": "2024-03-20",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.itu.int/en/mediacentre/Pages/PR-2024-03-20-e-waste-recycling.aspx",
+      "attribution": "Electronic waste rising five times faster than documented e-waste recycling — ITU/UNITAR",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-hypoxia",
+    "publisher": "Ou et al., Scientific Reports",
+    "title": "Forecasting coastal hypoxia using a blend of mechanistic and artificial intelligence models",
+    "url": "https://www.nature.com/articles/s41598-025-17053-7",
+    "locator": "Tables 1 and 3; official full text XML PMC12381083",
+    "version": "2025-08-26",
+    "publishedAt": "2025-08-26",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of numerical facts; source article is CC BY-NC-ND 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "attribution": "Forecasting coastal hypoxia using a blend of mechanistic and artificial intelligence models — Ou et al., Scientific Reports",
+      "verified": true,
+      "notes": "The article licence restricts commercial use and distribution of adaptations. This pack contains only a small independent structured transcription of factual findings, without article prose, figures or adapted article content. No CC BY licence is claimed for the source; reuse outside this narrow factual extraction requires separate assessment."
+    }
+  },
+  {
+    "sourceId": "planet-nasa-discoveries",
+    "publisher": "NASA",
+    "title": "Artificial Intelligence, NASA Data Used to Discover Eighth Planet Circling Distant Star",
+    "url": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+    "locator": "Discovery announcement: Kepler-90i and Kepler-80g",
+    "version": "2017-12-14",
+    "publishedAt": "2017-12-14",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+      "attribution": "Artificial Intelligence, NASA Data Used to Discover Eighth Planet Circling Distant Star — NASA",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-nasa-archive",
+    "publisher": "NASAExoplanetArchive",
+    "title": "NASA Exoplanet Archive: Planetary Systems",
+    "url": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+    "locator": "PS confirmed-planet table, default_flag=1; exact two-object query preserved in research/sources/planet-nasa-confirmation.json",
+    "version": "page accessed 2026-10-19",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+      "attribution": "NASA Exoplanet Archive: Planetary Systems — NASAExoplanetArchive",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-bird-study",
+    "publisher": "Bick et al., Communications Biology",
+    "title": "National-scale acoustic monitoring of avian biodiversity and migration",
+    "url": "https://www.nature.com/articles/s42003-026-10389-4",
+    "locator": "Methods: sound recording, species validation and migration arrival; XML PMC13328752",
+    "version": "2026-05-30",
+    "publishedAt": "2026-05-30",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.nature.com/articles/s42003-026-10389-4",
+      "attribution": "National-scale acoustic monitoring of avian biodiversity and migration — Bick et al., Communications Biology",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-bird-archive",
+    "publisher": "Study authors / Zenodo",
+    "title": "National PAM of Biodiversity: Bick et al. 2026 release",
+    "url": "https://zenodo.org/records/19778881",
+    "locator": "Data/Detections/weekly, Data/Sites and Data/Validation; archive version 19778881",
+    "version": "2026-04-25",
+    "publishedAt": "2026-04-25",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "National PAM of Biodiversity: Bick et al. 2026 release — Study authors / Zenodo",
+      "verified": true,
+      "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+    }
+  },
+  {
+    "sourceId": "planet-gwas",
+    "publisher": "Leverhulme Centre for Demographic Science, University of Oxford; NHGRI-EBI GWAS Catalog",
+    "title": "GWAS Diversity Monitor: total participant diversity",
+    "url": "https://gwasdiversitymonitor.com/",
+    "locator": "Headline summary; last checked 2026-10-06 00:06:16; Q&A 14 defines cumulative both-stage denominator",
+    "version": "page accessed 2026-10-19",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.ebi.ac.uk/about/terms-of-use/",
+      "attribution": "GWAS Diversity Monitor: total participant diversity — Leverhulme Centre for Demographic Science, University of Oxford; NHGRI-EBI GWAS Catalog",
+      "verified": true,
+      "notes": "GWAS Monitor Q&A4 directs reuse to EMBL-EBI terms, revised 2026-10-14. Attribution is expected; EBI does not remove third-party rights. This pack extracts six aggregate factual shares only and claims no blanket licence over underlying study or participant data."
+    }
+  },
+  {
+    "sourceId": "planet-gwas-methods",
+    "publisher": "GWAS Diversity Monitor",
+    "title": "GWAS Diversity Monitor questions and answers",
+    "url": "https://gwasdiversitymonitor.com/qandas",
+    "locator": "Questions 3, 4, 6, 7 and 14: curation, reuse, categories and denominator",
+    "version": "page accessed 2026-10-19",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.ebi.ac.uk/about/terms-of-use/",
+      "attribution": "GWAS Diversity Monitor questions and answers — GWAS Diversity Monitor",
+      "verified": true,
+      "notes": "GWAS Monitor Q&A4 directs reuse to EMBL-EBI terms, revised 2026-10-14. Attribution is expected; EBI does not remove third-party rights. This pack extracts six aggregate factual shares only and claims no blanket licence over underlying study or participant data."
+    }
+  },
+  {
+    "sourceId": "planet-science",
+    "publisher": "Hao, Xu, Li and Evans / Nature",
+    "title": "Artificial intelligence tools expand scientists’ impact but contract science’s focus",
+    "url": "https://www.nature.com/articles/s41586-025-09922-y",
+    "locator": "Primary abstract and Methods: Determine project leader, birth–death model, knowledge extent and follow-on engagement; author-hosted final paper https://fi.ee.tsinghua.edu.cn/public/publications/35f947be-f27c-11f0-b382-2aaffa21d846.pdf",
+    "version": "2026-01-14",
+    "publishedAt": "2026-01-14",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.nature.com/articles/s41586-025-09922-y",
+      "attribution": "Artificial intelligence tools expand scientists’ impact but contract science’s focus — Hao, Xu, Li and Evans / Nature",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-irrigation",
+    "publisher": "Debangshi et al., Agricultural & Environmental Letters",
+    "title": "Precision irrigation with artificial intelligence–integrated ground-penetrating radar reduces water stress in corn",
+    "url": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.70047",
+    "locator": "Table 1; Methods field comparison; Results limitations",
+    "version": "2025-12-14",
+    "publishedAt": "2025-12-14",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.70047",
+      "attribution": "Precision irrigation with artificial intelligence–integrated ground-penetrating radar reduces water stress in corn — Debangshi et al., Agricultural & Environmental Letters",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-gebco-terms",
+    "publisher": "GEBCO",
+    "title": "GEBCO Grid terms of use",
+    "url": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+    "locator": "Scope, terms and disclaimer",
+    "version": "page accessed 2026-10-19",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+      "attribution": "GEBCO Grid terms of use — GEBCO",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-argo-terms",
+    "publisher": "International Argo Program",
+    "title": "Acknowledging Argo",
+    "url": "https://argo.ucsd.edu/data/acknowledging-argo/",
+    "locator": "How to cite Argo data; monthly dataset DOIs",
+    "version": "page accessed 2026-10-19",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://argo.ucsd.edu/data/acknowledging-argo/",
+      "attribution": "Acknowledging Argo — International Argo Program",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  },
+  {
+    "sourceId": "planet-cchdo-terms",
+    "publisher": "CCHDO, Scripps Institution of Oceanography",
+    "title": "CCHDO data submission and licensing policy",
+    "url": "https://cchdo.ucsd.edu/submit",
+    "locator": "Data licence and DOI policy summary",
+    "version": "page accessed 2026-10-19",
+    "publishedAt": null,
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+      "termsUrl": "https://cchdo.ucsd.edu/submit",
+      "attribution": "CCHDO data submission and licensing policy — CCHDO, Scripps Institution of Oceanography",
+      "verified": true,
+      "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+    }
+  }
+]

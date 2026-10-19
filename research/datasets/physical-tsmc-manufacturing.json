@@ -1,0 +1,223 @@
+{
+  "datasetId": "physical-tsmc-manufacturing",
+  "id": "physical-tsmc-manufacturing",
+  "schemaVersion": "1.0",
+  "title": "A foundry’s unequal geographies",
+  "conceptIds": [
+    "266-2"
+  ],
+  "metric": "Dated foundry manufacturing milestones plus one explicitly global revenue share",
+  "unit": "mixed, row-specific",
+  "denominator": "TSMC facilities and global wafer revenue",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Foundry production relevant to AI supply chains but includes many non-AI products.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024-Q4",
+    "observationEnd": "2025 report",
+    "publishedAt": "2026",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "tsmc25",
+      "publisher": "TSMC",
+      "title": "2025 Annual Report: Letter to shareholders",
+      "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+      "locator": "Technology and overseas manufacturing progress",
+      "version": "2026",
+      "publishedAt": "2026",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+        "attribution": "TSMC — 2025 Annual Report: Letter to shareholders",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "tsmc25",
+    "publisher": "TSMC",
+    "title": "2025 Annual Report: Letter to shareholders",
+    "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+    "locator": "Technology and overseas manufacturing progress",
+    "version": "2026",
+    "publishedAt": "2026",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+      "attribution": "TSMC — 2025 Annual Report: Letter to shareholders",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "tsmc-tw",
+      "entityId": "TWN",
+      "name": "Taiwan",
+      "value": "2 nm expansion in Hsinchu and Kaohsiung",
+      "unit": "category",
+      "period": "2025",
+      "sourceId": "tsmc25",
+      "sourceLocator": "Technology development and Taiwan expansion",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "TWN",
+      "lat": null,
+      "lon": null,
+      "notes": "2 nm high-volume manufacturing began in fourth quarter 2025."
+    },
+    {
+      "id": "tsmc-az",
+      "entityId": "US-AZ",
+      "name": "Arizona",
+      "value": "First fab in volume production",
+      "unit": "category",
+      "period": "2024-Q4",
+      "sourceId": "tsmc25",
+      "sourceLocator": "Overseas manufacturing",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "US-AZ",
+      "lat": null,
+      "lon": null,
+      "notes": "First fab milestone; second fab target 2027 remains a plan."
+    },
+    {
+      "id": "tsmc-jp",
+      "entityId": "JPN-Kumamoto",
+      "name": "Kumamoto",
+      "value": "First fab in volume production",
+      "unit": "category",
+      "period": "2024-end",
+      "sourceId": "tsmc25",
+      "sourceLocator": "Overseas manufacturing",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "JPN-Kumamoto",
+      "lat": null,
+      "lon": null,
+      "notes": "First fab milestone; second fab is a separate construction plan."
+    },
+    {
+      "id": "tsmc-de",
+      "entityId": "DEU-Dresden",
+      "name": "Dresden",
+      "value": "Specialty fab under construction",
+      "unit": "category",
+      "period": "2025 report",
+      "sourceId": "tsmc25",
+      "sourceLocator": "Overseas manufacturing",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "DEU-Dresden",
+      "lat": null,
+      "lon": null,
+      "notes": "Automotive and industrial technology focus; not a leading-edge AI capacity measure."
+    },
+    {
+      "id": "tsmc-advanced",
+      "entityId": "tsmc-advanced",
+      "name": "TSMC worldwide advanced nodes",
+      "value": 74,
+      "unit": "% of wafer revenue",
+      "period": "2025",
+      "sourceId": "tsmc25",
+      "sourceLocator": "2025 financial and operating performance",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "7 nm and below; global company revenue, not Taiwan output share."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Foundry production relevant to AI supply chains but includes many non-AI products.",
+    "included": "5 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "No national market share or AI-specific wafer allocation inferred. Technology nodes, packaging and output capacity are distinct; not interchangeable units. 2025 company report is the latest audited annual period reviewed.",
+  "limitations": [
+    "No national market share or AI-specific wafer allocation inferred.",
+    "Technology nodes, packaging and output capacity are distinct; not interchangeable units.",
+    "2025 company report is the latest audited annual period reviewed."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://investor.tsmc.com/static/annualReports/2025/english/index.html"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "tsmc-tw",
+      "tsmc-az",
+      "tsmc-jp",
+      "tsmc-de",
+      "tsmc-advanced"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": null,
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

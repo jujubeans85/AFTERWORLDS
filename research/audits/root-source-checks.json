@@ -1,0 +1,660 @@
+[
+  {
+    "datasetId": "physical-electricity-demand",
+    "path": "research/datasets/physical-electricity-demand.json",
+    "sha256": "aa577c85b31ea2d9747940563928a6f51ae9ae56aea23eddc39314b988b99589",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "dc2025",
+      "dcgrowth",
+      "aigrowth"
+    ],
+    "sourceUrls": [
+      "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    ],
+    "sourceLocations": "Executive summary: energy-consumption paragraph and demand outlook; report citation/licence block",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All three values and units match. Global data-centre total remains broader than AI-only usage. Report explicitly CC BY 4.0.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-electricity-fuels",
+    "path": "research/datasets/physical-electricity-fuels.json",
+    "sha256": "441126d5e98790732d3e8d8b5b92605fa84c64cf3cfa0db2179007e57b88e878",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "usgas",
+      "usrenew",
+      "usnuclear",
+      "uscoal",
+      "cncoal",
+      "cnrenew",
+      "cnnuclear"
+    ],
+    "sourceUrls": [
+      "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai"
+    ],
+    "sourceLocations": "Regional outlook: United States and China paragraphs; report citation/licence block",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All seven shares match with approximation/threshold qualifiers retained. Physical electricity mix is not procurement certificates. Explicit CC BY 4.0.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-weather-cooling",
+    "path": "research/datasets/physical-weather-cooling.json",
+    "sha256": "8922a67469c023e2b420ee1212805812d77618246c80a56553c30d37312a3c5b",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "dublin",
+      "amsterdam",
+      "virginia",
+      "phoenix"
+    ],
+    "sourceUrls": [
+      "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+    ],
+    "sourceLocations": "Microsoft2026: Early water stewardship by design",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "Four climate-dependent operating-time shares match; these are reported selected-design examples, not water-volume shares.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-water-source-substitution",
+    "path": "research/datasets/physical-water-source-substitution.json",
+    "sha256": "a17447025e25b1cddda1a9ba99977dcf958f032b87ba641abc35eab236b9f1b1",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "quincy",
+      "singapore",
+      "sanantonio"
+    ],
+    "sourceUrls": [
+      "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+    ],
+    "sourceLocations": "Microsoft2026: Leveraging recycled, reused and non-potable water",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All three site shares match. Retain mixed alternative-water category and unspecified averaging interval.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-waymo-exposure",
+    "path": "research/datasets/physical-waymo-exposure.json",
+    "sha256": "f626a788aaaa1e2c0435faa5e659263daea3524afcb4bf3c079e9905a3b66896",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "waymo-LA",
+      "waymo-SF",
+      "waymo-PHX",
+      "waymo-AUS",
+      "waymo-ATL"
+    ],
+    "sourceUrls": [
+      "https://www.waymo.com/safety/impact/"
+    ],
+    "sourceLocations": "Safety Impact: Rider-only miles through June2026 table",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All five published rounded mileage values match. Source names San Francisco Bay Area in mileage table; provider-domain exposure only.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-waymo-injury-rates",
+    "path": "research/datasets/physical-waymo-injury-rates.json",
+    "sha256": "be61f9a7db28fc250a6bff215e24612609d90edd5bff473aa4d6287438bcee34",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "injury-ATL-Waymo",
+      "injury-ATL-human benchmark",
+      "injury-LA-Waymo",
+      "injury-LA-human benchmark",
+      "injury-PHX-Waymo",
+      "injury-PHX-human benchmark",
+      "injury-SF-Waymo",
+      "injury-SF-human benchmark",
+      "injury-AUS-Waymo",
+      "injury-AUS-human benchmark"
+    ],
+    "sourceUrls": [
+      "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/CSV3%20-%20Collision%20Counts%20and%20Comparison%20to%20Benchmarks%20202009-202606-2022benchmark.csv",
+      "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/Waymo_Safety_Impact_Data_Hub_Release_Notes_20261002.pdf",
+      "https://www.waymo.com/safety/impact/"
+    ],
+    "sourceLocations": "Corrected CSV3 through2026-06, benchmark2022; exact Any Injury / Any-injury-reported / All Crashes, five nonoverlapping areas",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "Fresh independent download of1804-row source CSV; all10 values and20 CI bounds exactly match. Excluded non-Dynamic benchmark variant. Historical2022 comparison and provider limitations preserved; differing dashboard estimates not mixed.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-inference-boundaries",
+    "path": "research/datasets/physical-inference-boundaries.json",
+    "sha256": "76f36914d69f666af3acc69d9706aa2e7ee155574e4a30fc8598e9e7b618c1c0",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "fullenergy",
+      "chipenergy",
+      "fullcarbon",
+      "fullwater",
+      "energychange"
+    ],
+    "sourceUrls": [
+      "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/"
+    ],
+    "sourceLocations": "Google2025: opening findings, Calculating environmental footprint paragraphs, footnotes1/2",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All five values match and May2025 measurement/May2024 comparison are documented. Provider self-report and varying system boundaries must remain clear. Correction verified: publication2025-08-22 and visible title/paragraph locators now match.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-flexible-workloads",
+    "path": "research/datasets/physical-flexible-workloads.json",
+    "sha256": "fee51b865252958da0bc30ef35059464a16dddd12ea988992e6e93a0b88aea02",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "flex-nld",
+      "flex-bel",
+      "flex-irl",
+      "flex-fin",
+      "flex-dnk",
+      "flex-taiwan",
+      "flex-oregon"
+    ],
+    "sourceUrls": [
+      "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption"
+    ],
+    "sourceLocations": "Google2023: Our work in action; Northern Wasco County PUD quotation",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All seven selected historical programme records match; no measured MWh, workload-migration route, or AI-specific share supplied.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-zero-evaporation-design",
+    "path": "research/datasets/physical-zero-evaporation-design.json",
+    "sha256": "9a84ec6ef3f25b05ec216a5b0bca9e04e4e050e3104fa03e60dd1fb0d5c30d10",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "phoenix-pilot",
+      "mountpleasant-pilot",
+      "tradeoff"
+    ],
+    "sourceUrls": [
+      "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+    ],
+    "sourceLocations": "Microsoft2024: Mitigating energy impacts; Pilot projects and implementation",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "Both planned pilot locations and2026 target match; PUE tradeoff explicit. These remain plans disclosed in2024, not2026 completion.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-euv-dependencies",
+    "path": "research/datasets/physical-euv-dependencies.json",
+    "sha256": "fdc38112c680ced459d942333c6ed32bdc9c89a2d8c6bb19830e7b8228a6d88a",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "euv-nl",
+      "euv-us",
+      "euv-de"
+    ],
+    "sourceUrls": [
+      "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab"
+    ],
+    "sourceLocations": "ASML2022: Achieving first light; Overcoming challenges through collaboration",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "Three named manufacturing-role records match. Qualitative dependency network, not shipment or revenue volumes.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-tsmc-manufacturing",
+    "path": "research/datasets/physical-tsmc-manufacturing.json",
+    "sha256": "b4bb5a4b57428cd397676cd750ac70c1e02ac8d0f70dd0579ca41b549e590ef3",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "tsmc-tw",
+      "tsmc-az",
+      "tsmc-jp",
+      "tsmc-de",
+      "tsmc-advanced"
+    ],
+    "sourceUrls": [
+      "https://investor.tsmc.com/static/annualReports/2025/english/index.html"
+    ],
+    "sourceLocations": "TSMC2025 Letter to Shareholders: technology, overseas fabs, Taiwan phases, accomplishment bullets",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All five milestone/revenue rows match. Source has both2024 and2025 observation dates; 74% is company wafer revenue, not country output.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-chip-rule-events",
+    "path": "research/datasets/physical-chip-rule-events.json",
+    "sha256": "443ded25249b4ba4e34cbbcbf7053b04254777a44b8c392ec572e5be2de722ea",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "h200",
+      "mi325x",
+      "testcondition"
+    ],
+    "sourceUrls": [
+      "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
+    ],
+    "sourceLocations": "BIS2026-01-13: announcement paragraphs1/3",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "Three categorical announcement facts match. Historical event extract; not legal advice or complete current-rule inventory.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-autonomous-voyages",
+    "path": "research/datasets/physical-autonomous-voyages.json",
+    "sha256": "4925ebb060e855447392eb24cad9b06ff0d065ce1c77b4721c8f82b6c9cfca9e",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "mas",
+      "yara-first",
+      "yara-crew"
+    ],
+    "sourceUrls": [
+      "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+      "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/"
+    ],
+    "sourceLocations": "IBM2022 opening completion paragraphs; Yara Autonomous functions",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "All three disclosed status records match. Yara page header dated2024-04-28 but later text references2026; crew snapshot uncertainty already retained.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-lifecycle-disclosures",
+    "path": "research/datasets/physical-lifecycle-disclosures.json",
+    "sha256": "b32efbe19a838c80d6f1274aeee14d65fac7e770c7e014dffe794fb6d1e27831",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "mistralcarbon",
+      "mistralwater",
+      "lechatcarbon",
+      "lechatwater"
+    ],
+    "sourceUrls": [
+      "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/"
+    ],
+    "sourceLocations": "Mistral2025: lifecycle findings; marginal inference; study limitations",
+    "method": "Reopened each primary webpage independently through web retrieval; reconciled every packaged row with source numbers/category disclosures and inspected qualifications. No numerical inference added.",
+    "findings": "Four numbers match. Source lifecycle wording combines training and usage context; preserve its ambiguity, upstream approximation and different response denominator.",
+    "requiredFixes": [],
+    "reuseCheck": "Inspected packaged scope: selected factual values and original paraphrases only, no source charts/photos or substantial source prose. Explicit IEA CC BY confirmed where used; otherwise no open licence asserted.",
+    "scope": "Row/source check only; concept semantics, full reuse gate, final readiness score and design review remain with quality_challenger.",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-announced-land",
+    "path": "research/datasets/physical-announced-land.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "richland-site",
+      "richland-floor"
+    ],
+    "sourceUrls": [
+      "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state"
+    ],
+    "sourceLocations": "Louisiana Economic Development, 2024-12-04 announcement paragraphs 1–4",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "Both announced areas verified. Land and floor area have different units; 2024 scope is historical and not the expanded 2026 project footprint.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "961fe8b274c3ae3f0afc036d89c76b84d77f2e88cef1ea966caeee223ca0f529",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-aviation-automation",
+    "path": "research/datasets/physical-aviation-automation.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "lion610",
+      "et302",
+      "mcas-trigger"
+    ],
+    "sourceUrls": [
+      "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf"
+    ],
+    "sourceLocations": "NTSB ASR-19-01, PDF pp1–4",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All three categorical rows reconciled with dated preliminary safety report. MCAS is described as threshold-based augmentation; no AI casualty attribution.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "84a7b014a79fa53a1368e0ce36f0f3ef42b471f86b6ba5e728c7ad38c39353dc",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-cloud-grid-carbon",
+    "path": "research/datasets/physical-cloud-grid-carbon.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "africa-south1",
+      "asia-east1",
+      "asia-east2",
+      "asia-northeast1",
+      "asia-northeast2",
+      "asia-northeast3",
+      "asia-south1",
+      "asia-south2",
+      "asia-southeast1",
+      "asia-southeast2",
+      "australia-southeast1",
+      "australia-southeast2",
+      "europe-central2",
+      "europe-north1",
+      "europe-north2",
+      "europe-southwest1",
+      "europe-west1",
+      "europe-west2",
+      "europe-west3",
+      "europe-west4",
+      "europe-west6",
+      "europe-west8",
+      "europe-west9",
+      "europe-west10",
+      "europe-west12",
+      "me-central1",
+      "me-central2",
+      "me-west1",
+      "northamerica-northeast1",
+      "northamerica-northeast2",
+      "northamerica-south1",
+      "southamerica-east1",
+      "southamerica-west1",
+      "us-central1",
+      "us-central2",
+      "us-east1",
+      "us-east2",
+      "us-east4",
+      "us-east5",
+      "us-south1",
+      "us-west1",
+      "us-west2",
+      "us-west3",
+      "us-west4"
+    ],
+    "sourceUrls": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ],
+    "sourceLocations": "Google Cloud region-carbon 2025 table, all 44 rows; Understanding the data; licence footer",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All 44 grid intensity values and 44 companion CFE percentages programmatically reconciled with independently reopened primary table. Gross operational grid emissions and attributed CFE are distinct. CC BY 4.0 page terms explicit.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "1878fd571972c43918ef24a11e2ccee053f772dc68ece9f2afacb728d14922e1",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-energy-chokepoints",
+    "path": "research/datasets/physical-energy-chokepoints.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "malacca",
+      "hormuz",
+      "suez",
+      "bab",
+      "danish",
+      "turkish",
+      "panama"
+    ],
+    "sourceUrls": [
+      "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/"
+    ],
+    "sourceLocations": "EIA World Oil Transit Chokepoints, 2026-03-03 Table 1 and fiscal-year footnote",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All seven 2025 oil-flow values verified. Panama is fiscal-year 2025; other selected rows first-half 2025. Danish Straits excludes Kiel Canal. No AI allocation.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "851768856b1d57846f0d544cf6b22f91afe0b43b8add558a97922cf94257b5fa",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-grid-connection-rules",
+    "path": "research/datasets/physical-grid-connection-rules.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "generation",
+      "renewables",
+      "dependent"
+    ],
+    "sourceUrls": [
+      "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf"
+    ],
+    "sourceLocations": "EirGrid DCCOPP V3, 2026-05-20, pp3 and10, sections2.2/3.1",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All three policy categories verified. >=1 MVA new transmission applications, linked dispatchable generation/storage and renewable applications; 80% renewable six-year glide path is an obligation, not attainment.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "10ba6b71f0aaf33a171d8d568376672d6c98e73ffcc70f7efe282a659530c36c",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-irish-electricity-series",
+    "path": "research/datasets/physical-irish-electricity-series.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "irl-2015",
+      "irl-2016",
+      "irl-2017",
+      "irl-2018",
+      "irl-2019",
+      "irl-2020",
+      "irl-2021",
+      "irl-2022",
+      "irl-2023",
+      "irl-2024",
+      "irl-2025"
+    ],
+    "sourceUrls": [
+      "https://www-cloud.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/"
+    ],
+    "sourceLocations": "CSO Data Centres Metered Electricity Consumption 2025, Table1 and statistician publication statement",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All 11 GWh/year observations and national shares match. Source masthead typo is acknowledged: statistician statement says 7 July 2026. Data centres are not AI-only.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-japan-robot-production",
+    "path": "research/datasets/physical-japan-robot-production.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "jara-prod24",
+      "jara-prod25",
+      "jara-dom25",
+      "jara-exp25",
+      "jara-total25"
+    ],
+    "sourceUrls": [
+      "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf"
+    ],
+    "sourceLocations": "JARA IR_CY2025_e.pdf, second-page CY2025 members-plus-nonmembers table",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All five counts verified visually against original PDF table, including production versus shipments and component-versus-total distinction. First page members-only values must not be substituted.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "7a87d41ac5bd2f097e433640824f262cd509d383539b8fdb52ad5bf6bab68710",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-per-capita-demand",
+    "path": "research/datasets/physical-per-capita-demand.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "us-percap",
+      "africa-percap"
+    ],
+    "sourceUrls": [
+      "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai"
+    ],
+    "sourceLocations": "IEA Energy and AI, Energy demand from AI, per-capita paragraph",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "Both 2024 figures verified: United States around540 kWh/person and Africa less than1. Threshold and approximation retained; all data-centre context, not AI-only.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "a6973816d68a2f0901c30408f9fe37a5081482ebd6f105bfd971278e96dea155",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-power-contracts",
+    "path": "research/datasets/physical-power-contracts.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "crane-ppa",
+      "aws-talen",
+      "aws-calvert",
+      "google-uprate",
+      "google-existing"
+    ],
+    "sourceUrls": [
+      "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "https://ir.talenenergy.com/node/8676/html",
+      "https://www.constellationenergy.com/news/2026/09/constellation-and-amazon-announce-20-year-power-purchase-agreement-at-calvert-cliffs.html",
+      "https://investors.constellationenergy.com/node/10271/pdf"
+    ],
+    "sourceLocations": "Constellation Crane 2024 announcement; Talen June2025 8-K Exhibit99.1; Constellation Calvert September2026; Google October2026 PDF p1",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All five MW contract values and kinds verified. 690MW includes190MW uprate; 890MW uprate and2700MW existing-supply arrangement differ. Planned delivery and contracts are not observed consumption or net-new capacity to sum indiscriminately.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "84b8d4be8f8e6a8ffcc5ef34a1c69a37c50de4e27d161e82aa17d616b8b230b5",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-public-shuttle-pilot",
+    "path": "research/datasets/physical-public-shuttle-pilot.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "punggol-riders",
+      "punggol-feedback",
+      "punggol-routing"
+    ],
+    "sourceUrls": [
+      "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html"
+    ],
+    "sourceLocations": "Singapore LTA, 2026-07-29, paragraphs1–6",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All three records verified: >11500 unique riders as ofJuly12; 99% of around900 July respondents felt safe and would recommend; routing feedback. Satisfaction is not a collision or population-accessibility rate.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "a5c708eb4941e51de2acda2e95e3f0a0d26d1b854dbc3447432adea1d424077d",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-rainfall-benchmark",
+    "path": "research/datasets/physical-rainfall-benchmark.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "rain-extreme",
+      "rain-quintile"
+    ],
+    "sourceUrls": [
+      "https://www.nature.com/articles/s41586-026-11126-x"
+    ],
+    "sourceLocations": "Nature s41586-026-11126-x, 2026-10-14, Figures2b/5b associated prose, Methods and Rights",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "Both 2016–2024 global aggregate skill-gain percentages verified: 98% precipitation quintile cells and96% week3 extreme precipitation cells. Not local skill rasters or event prediction accuracy. Source article CC BY-NC-ND; package contains only two factual values and original paraphrases, no adapted article assets.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "a79a1146b3147d27b53e4eb8d1c45b9c99fd487f60483e2f6f7e7e669e43f668",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  },
+  {
+    "datasetId": "physical-waterway-dependencies",
+    "path": "research/datasets/physical-waterway-dependencies.json",
+    "reviewer": "/root — independent of physical dataset author",
+    "checkedAt": "2026-10-19",
+    "checkedRowIds": [
+      "oregon2024",
+      "oregon2025",
+      "umatilla-intake",
+      "morrow",
+      "belgium-canal"
+    ],
+    "sourceUrls": [
+      "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+      "https://www.datacenters.google/locations/belgium/"
+    ],
+    "sourceLocations": "Amazon September2026 eastern Oregon disclosure water totals and project paragraphs; Google St Ghislain site opening paragraph",
+    "method": "Independently reopened primary sources; reconciled all packaged rows and qualifications. PDF table visually checked where applicable. Google grid table additionally checked by exact row matching.",
+    "findings": "All five records verified: 284/242 million gallons in2024/25, Umatilla intake and Port of Morrow treatment funding, Belgian industrial-canal cooling. Company self-report, project completion not observed, regional totals not assigned to one waterway.",
+    "requiredFixes": [],
+    "reuseCheck": "Selected factual values and independently written paraphrases only; no original source prose, charts or photographs. Explicit licence recorded where stated; no open licence inferred from public access.",
+    "scope": "Source and row check; final concept/readiness/design verdict belongs to quality_challenger.",
+    "sha256": "d7de70dc9380c1fe20a2fedb53b00945d60c94357588da534b3336595f608f5b",
+    "dateMetadataCorrection": "Retrieval/review dates normalized to actual UTC date. Numeric and categorical observation values unchanged."
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cdisc_year%2Cdiscoverymethod+from+ps+where+default_flag%3D1+and+pl_name+in+%28%27Kepler-90+i%27%2C%27Kepler-80+g%27%29&format=json",
+  "retrievedAt": "2026-10-19",
+  "rows": [
+    {
+      "pl_name": "Kepler-90 i",
+      "hostname": "KOI-351",
+      "disc_year": 2017,
+      "discoverymethod": "Transit"
+    },
+    {
+      "pl_name": "Kepler-80 g",
+      "hostname": "Kepler-80",
+      "disc_year": 2017,
+      "discoverymethod": "Transit"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "datasetId": "society-broadband-affordability",
+  "id": "society-broadband-affordability",
+  "title": "The cost before the prompt",
+  "conceptIds": [
+    "276"
+  ],
+  "metric": "The cost before the prompt",
+  "unit": "percent of GNI per capita",
+  "denominator": "ITU country price baskets expressed as shares of GNI per capita; global median",
+  "rows": [
+    {
+      "id": "cost-mobile",
+      "entityId": "cost-mobile",
+      "name": "Data-only mobile broadband",
+      "value": 1.4,
+      "unit": "percent of GNI per capita",
+      "period": "2025",
+      "sourceId": "itu-price-2025",
+      "sourceLocator": "First paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Median country price basket / GNI per capita; NOT disposable income or AI subscription price."
+    },
+    {
+      "id": "cost-fixed",
+      "entityId": "cost-fixed",
+      "name": "Fixed broadband",
+      "value": 2.5,
+      "unit": "percent of GNI per capita",
+      "period": "2025",
+      "sourceId": "itu-price-2025",
+      "sourceLocator": "First paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Median country price basket / GNI per capita; NOT disposable income or AI subscription price."
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2025",
+    "observationEnd": "2025",
+    "publishedAt": "2025-11-17",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "itu-price-2025",
+      "publisher": "ITU",
+      "title": "Facts and Figures 2025: Affordability of ICT services",
+      "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/",
+      "locator": "First paragraph, global median prices in GNI per capita; affordability-target paragraph",
+      "version": "2025",
+      "publishedAt": "2025-11-17",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual transcription only; no prose, image, chart or protected presentation reproduced",
+        "termsUrl": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/",
+        "attribution": "ITU; Facts and Figures 2025: Affordability of ICT services",
+        "verified": true,
+        "notes": "No open licence is claimed. This pack contains a small number of numerical facts and original explanatory text."
+      },
+      "publicationDateEvidence": "https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx",
+      "publicationDateNote": "Report release17November2025 verified in official mediarelease; October15 inpageURL is not publicationdate."
+    }
+  ],
+  "coverage": {
+    "population": "ITU country price baskets expressed as shares of GNI per capita; global median",
+    "included": "2 records: 2 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. No claim that a broadband subscription alone provides effective AI access. Median country measure is not a population-weighted household burden.",
+  "limitations": [
+    "No claim that a broadband subscription alone provides effective AI access.",
+    "Median country measure is not a population-weighted household burden."
+  ],
+  "aiRelationship": "context",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "cost-mobile",
+      "cost-fixed"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

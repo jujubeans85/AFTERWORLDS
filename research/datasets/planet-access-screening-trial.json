@@ -1,0 +1,153 @@
+{
+  "datasetId": "planet-access-screening-trial",
+  "id": "planet-access-screening-trial",
+  "conceptIds": [
+    "8-6"
+  ],
+  "title": "An eye exam within reach: ACCESS randomized trial",
+  "rows": [
+    {
+      "id": "access-81",
+      "entityId": "access-81",
+      "name": "Autonomous AI",
+      "value": 100,
+      "unit": "percent completing eye exam",
+      "period": "Enrollment 2021-11-24 to 2022-06-06; follow-up through 2022-12-06",
+      "sourceId": "planet-access",
+      "sourceLocator": "Table 3 and footnote; Results, primary outcome",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Baltimore pediatric diabetes sites; 164 youth randomized. AI screening occurred at enrollment; control completion was assessed within six months. One control was excluded after inadvertent enrollment in another study. Three unreachable controls counted incomplete. Completion is not a vision-improvement outcome. Results-section rounded 95% confidence intervals retained.",
+      "numerator": 81,
+      "analyzedN": 81,
+      "randomizedN": 81,
+      "ci95": [
+        96,
+        100
+      ],
+      "followupMonths": 6
+    },
+    {
+      "id": "access-83",
+      "entityId": "access-83",
+      "name": "Standard referral",
+      "value": 22,
+      "unit": "percent completing eye exam",
+      "period": "Enrollment 2021-11-24 to 2022-06-06; follow-up through 2022-12-06",
+      "sourceId": "planet-access",
+      "sourceLocator": "Table 3 and footnote; Results, primary outcome",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Baltimore pediatric diabetes sites; 164 youth randomized. AI screening occurred at enrollment; control completion was assessed within six months. One control was excluded after inadvertent enrollment in another study. Three unreachable controls counted incomplete. Completion is not a vision-improvement outcome. Results-section rounded 95% confidence intervals retained.",
+      "numerator": 18,
+      "analyzedN": 82,
+      "randomizedN": 83,
+      "ci95": [
+        14,
+        32
+      ],
+      "followupMonths": 6
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint",
+    "numerator": "Participants completing the specified outcome",
+    "analyzedN": "Participants included in this outcome analysis",
+    "randomizedN": "Participants randomly assigned to this arm",
+    "ci95": "Published 95% confidence interval, rounded as in Results",
+    "followupMonths": "Source-defined followupMonths; interpretation and denominator specified in row notes and dataset metadata"
+  },
+  "unit": "percent",
+  "denominator": "Completed screening / analyzed participants: AI 81/81, control 18/82; randomized 81/83. Published percentages rounded.",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Two Johns Hopkins Pediatric Diabetes Center sites in Baltimore, United States; site-level RCT, not USA population estimate",
+    "definition": "Two Johns Hopkins Pediatric Diabetes Center sites in Baltimore, United States; site-level RCT, not USA population estimate",
+    "anchorRule": "Use only published lat/lon when present. A country ID denotes study location, never national representativeness; do not create city anchors."
+  },
+  "time": {
+    "observationStart": "2021-11-24",
+    "observationEnd": "2022-12-06",
+    "publishedAt": "2024-01-11",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-access",
+      "publisher": "Wolf et al., Nature Communications",
+      "title": "Autonomous artificial intelligence increases screening and follow-up for diabetic retinopathy in youth: the ACCESS randomized control trial",
+      "url": "https://www.nature.com/articles/s41467-023-44676-z",
+      "locator": "Table 3 and footnote; Methods study design; official fulltext https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10784572/fullTextXML",
+      "version": "2024-01-11",
+      "publishedAt": "2024-01-11",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Autonomous artificial intelligence increases screening and follow-up for diabetic retinopathy in youth: the ACCESS randomized control trial — Wolf et al., Nature Communications",
+        "verified": true,
+        "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Two Johns Hopkins Pediatric Diabetes Center sites in Baltimore, United States; site-level RCT, not USA population estimate",
+    "included": "2 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "Other health systems, adults, comparative vision preservation, disease incidence, all underserved populations",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Unmasked after randomization; two-site trial. Screening timing differs by arm: immediate AI versus referral within six months. Three unreachable controls counted incomplete; source sensitivity analysis reported unchanged significance. Results confidence intervals rounded; abstract gives 95.5–100 and 14.2–32.4. Source discloses sponsor-linked author conflicts.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://www.nature.com/articles/s41467-023-44676-z"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "access-81",
+      "access-83"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

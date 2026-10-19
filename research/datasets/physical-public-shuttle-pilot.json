@@ -1,0 +1,192 @@
+{
+  "datasetId": "physical-public-shuttle-pilot",
+  "id": "physical-public-shuttle-pilot",
+  "schemaVersion": "1.0",
+  "title": "Access is more than a driverless ride",
+  "conceptIds": [
+    "325"
+  ],
+  "metric": "Pilot uptake, self-selected feedback and documented service limitations",
+  "unit": "mixed, row-specific",
+  "denominator": "One Singapore autonomous-shuttle pilot; respondents and riders are different populations",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "Transport regulator reports pilot utilization and unmet convenience needs.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2026-07",
+    "observationEnd": "2026-07-29",
+    "publishedAt": "2026-07-29",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "lta-jul",
+      "publisher": "Singapore Land Transport Authority",
+      "title": "Service Enhancements to Autonomous Shuttle Services in Punggol",
+      "url": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html",
+      "locator": "Paragraphs1–6",
+      "version": "2026-07-29",
+      "publishedAt": "2026-07-29",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html",
+        "attribution": "Singapore Land Transport Authority — Service Enhancements to Autonomous Shuttle Services in Punggol",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "lta-jul",
+    "publisher": "Singapore Land Transport Authority",
+    "title": "Service Enhancements to Autonomous Shuttle Services in Punggol",
+    "url": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html",
+    "locator": "Paragraphs1–6",
+    "version": "2026-07-29",
+    "publishedAt": "2026-07-29",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html",
+      "attribution": "Singapore Land Transport Authority — Service Enhancements to Autonomous Shuttle Services in Punggol",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "punggol-riders",
+      "entityId": "SGP-Punggol",
+      "name": "Punggol autonomous shuttles",
+      "value": 11500,
+      "unit": "unique riders",
+      "period": "2026-07-12",
+      "sourceId": "lta-jul",
+      "sourceLocator": "Paragraph1",
+      "status": "observed",
+      "qualifier": ">",
+      "geographicId": "SGP-Punggol",
+      "lat": null,
+      "lon": null,
+      "notes": "Since launch; not rides, vehicles, unique residents or people gaining new access."
+    },
+    {
+      "id": "punggol-feedback",
+      "entityId": "SGP-Punggol",
+      "name": "Punggol surveyed riders",
+      "value": 99,
+      "unit": "% of survey respondents",
+      "period": "2026-07",
+      "sourceId": "lta-jul",
+      "sourceLocator": "Paragraph1",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "SGP-Punggol",
+      "lat": null,
+      "lon": null,
+      "notes": "Around900 post-ride respondents said they felt safe and would recommend; selected riders, no population denominator.",
+      "sampleSizeApprox": 900
+    },
+    {
+      "id": "punggol-routing",
+      "entityId": "SGP-Punggol",
+      "name": "Punggol fixed-route service",
+      "value": "Residents requested more direct routes and flexible stops",
+      "unit": "category",
+      "period": "2026-07-29",
+      "sourceId": "lta-jul",
+      "sourceLocator": "Paragraphs2–5",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "SGP-Punggol",
+      "lat": null,
+      "lon": null,
+      "notes": "Enhanced on-demand pilot announced; free fixed-route service continuing."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "sampleSizeApprox": "Approximate selected survey sample size; not exact n"
+  },
+  "coverage": {
+    "population": "Transport regulator reports pilot utilization and unmet convenience needs.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "No causal accessibility improvement, disability access result or low-car-ownership comparison measured. Survey satisfaction is not a safety rate; around900 is not an exact sample size. Not a world survey or evidence that private autonomy should replace transit.",
+  "limitations": [
+    "No causal accessibility improvement, disability access result or low-car-ownership comparison measured.",
+    "Survey satisfaction is not a safety rate; around900 is not an exact sample size.",
+    "Not a world survey or evidence that private autonomy should replace transit."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "punggol-riders",
+      "punggol-feedback",
+      "punggol-routing"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "What did a public autonomous-shuttle pilot reveal about use and unmet travel needs?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation",
+    "sampleSizeApprox": "Approximate selected survey sample size; not exact n"
+  }
+}

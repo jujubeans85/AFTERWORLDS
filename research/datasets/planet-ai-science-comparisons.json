@@ -1,0 +1,184 @@
+{
+  "datasetId": "planet-ai-science-comparisons",
+  "id": "planet-ai-science-comparisons",
+  "conceptIds": [
+    "348"
+  ],
+  "title": "More impact, narrower science?",
+  "rows": [
+    {
+      "id": "science-papers",
+      "entityId": "science-papers",
+      "name": "Average annual publication ratio",
+      "value": 3.02,
+      "unit": "ratio of average annual papers per researcher",
+      "period": "1980–2025 corpus",
+      "sourceId": "planet-science",
+      "sourceLocator": "Results, individual productivity comparison",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Average yearly papers per researcher in AI-augmented versus non-AI research; observational association. AI-paper classification validation F1=.875; association is not causation."
+    },
+    {
+      "id": "science-citations",
+      "entityId": "science-citations",
+      "name": "Average annual citation ratio",
+      "value": 4.84,
+      "unit": "ratio of average annual citations per researcher",
+      "period": "1980–2025 corpus",
+      "sourceId": "planet-science",
+      "sourceLocator": "Results, individual citation comparison",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Average yearly citations per researcher in AI-augmented versus non-AI research; observational association. AI-paper classification validation F1=.875; association is not causation."
+    },
+    {
+      "id": "science-leadership",
+      "entityId": "science-leadership",
+      "name": "Earlier modelled leadership transition",
+      "value": 1.37,
+      "unit": "years earlier in modelled transition",
+      "period": "1980–2025 corpus",
+      "sourceId": "planet-science",
+      "sourceLocator": "Methods: Determine project leader; birth–death model",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Modelled transition 7.33 versus 8.70 years; project leadership is proxied by last authorship, not a directly observed promotion or randomized outcome. AI-paper classification validation F1=.875; association is not causation."
+    },
+    {
+      "id": "science-breadth",
+      "entityId": "science-breadth",
+      "name": "Lower median knowledge extent",
+      "value": 4.63,
+      "unit": "percent lower median knowledge extent",
+      "period": "1980–2025 corpus",
+      "sourceId": "planet-science",
+      "sourceLocator": "Methods: Knowledge extent (KE); collective reach comparison",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Knowledge extent is maximum distance from the centroid in a 768-dimensional paper-embedding space; 4.63% lower median is not a count of scientific topics. AI-paper classification validation F1=.875; association is not causation."
+    },
+    {
+      "id": "science-engagement",
+      "entityId": "science-engagement",
+      "name": "Lower follow-on citation engagement",
+      "value": 22,
+      "unit": "percent lower follow-on citation engagement",
+      "period": "1980–2025 corpus",
+      "sourceId": "planet-science",
+      "sourceLocator": "Methods: follow-on engagement; collective engagement comparison",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Measures how often papers citing a shared focal paper cite one another; 22% lower is not a measurement of personal interaction or collaboration frequency. AI-paper classification validation F1=.875; association is not causation."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint"
+  },
+  "unit": "mixed comparative metrics",
+  "denominator": "Study-defined AI-augmented and non-AI comparisons across English-language papers in six natural-science disciplines. Annual per-researcher publication/citation ratios, modelled career transition, embedding-space knowledge extent and citation-network engagement have different denominators and cannot be added.",
+  "geography": {
+    "mode": "categorical",
+    "unit": "English-language papers in six natural-science disciplines, 1980–2025; bibliometric corpus without national allocation",
+    "definition": "English-language papers in six natural-science disciplines, 1980–2025; bibliometric corpus without national allocation",
+    "anchorRule": "Use an explicitly non-geographic sphere or global band. No national fill, fake city locations, or inferred unobserved distribution."
+  },
+  "time": {
+    "observationStart": "1980",
+    "observationEnd": "2025",
+    "publishedAt": "2026-01-14",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-science",
+      "publisher": "Hao, Xu, Li and Evans / Nature",
+      "title": "Artificial intelligence tools expand scientists’ impact but contract science’s focus",
+      "url": "https://www.nature.com/articles/s41586-025-09922-y",
+      "locator": "Primary abstract and Methods: Determine project leader, birth–death model, knowledge extent and follow-on engagement; author-hosted final paper https://fi.ee.tsinghua.edu.cn/public/publications/35f947be-f27c-11f0-b382-2aaffa21d846.pdf",
+      "version": "2026-01-14",
+      "publishedAt": "2026-01-14",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://www.nature.com/articles/s41586-025-09922-y",
+        "attribution": "Artificial intelligence tools expand scientists’ impact but contract science’s focus — Hao, Xu, Li and Evans / Nature",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "English-language papers in six natural-science disciplines, 1980–2025; bibliometric corpus without national allocation",
+    "included": "5 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "No national ranking, field-level citation network, underlying paper records or causal intervention",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Observational bibliometrics with selection and field confounding. AI-paper classification validation F1=.875 is imperfect. Last authorship is a leadership proxy; transition time is modelled. Knowledge extent depends on the chosen embedding representation. No causal claim, social-contact measure, common score or future extrapolation is supported.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://www.nature.com/articles/s41586-025-09922-y"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "science-papers",
+      "science-citations",
+      "science-leadership",
+      "science-breadth",
+      "science-engagement"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json",
+      "research/audits/governance-peer-planet-checks.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

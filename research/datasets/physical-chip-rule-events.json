@@ -1,0 +1,189 @@
+{
+  "datasetId": "physical-chip-rule-events",
+  "id": "physical-chip-rule-events",
+  "schemaVersion": "1.0",
+  "title": "A licence is not a blanket permission",
+  "conceptIds": [
+    "368"
+  ],
+  "metric": "Selected dated U.S. advanced-computing export-policy announcement",
+  "unit": "category",
+  "denominator": "Named products and conditions in one BIS announcement",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "Controls explicitly concern advanced computing semiconductors.",
+  "geographyMode": "network",
+  "geography": {
+    "mode": "network",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2026-01-13 announcement",
+    "observationEnd": "2026-01-13 announcement",
+    "publishedAt": "2026-01-13",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "bis26",
+      "publisher": "U.S. Bureau of Industry and Security",
+      "title": "Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+      "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "locator": "Announcement paragraphs 1–4",
+      "version": "2026-01-13",
+      "publishedAt": "2026-01-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+        "attribution": "U.S. Bureau of Industry and Security — Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "bis26",
+    "publisher": "U.S. Bureau of Industry and Security",
+    "title": "Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+    "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+    "locator": "Announcement paragraphs 1–4",
+    "version": "2026-01-13",
+    "publishedAt": "2026-01-13",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "attribution": "U.S. Bureau of Industry and Security — Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "h200",
+      "entityId": "CHN",
+      "name": "NVIDIA H200",
+      "value": "Case-by-case export licence review",
+      "unit": "category",
+      "period": "2026-01-13 announcement",
+      "sourceId": "bis26",
+      "sourceLocator": "Paragraphs 1–4",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "CHN",
+      "lat": null,
+      "lon": null,
+      "notes": "China destination; stated security and capacity conditions apply."
+    },
+    {
+      "id": "mi325x",
+      "entityId": "CHN",
+      "name": "AMD MI325X",
+      "value": "Case-by-case export licence review",
+      "unit": "category",
+      "period": "2026-01-13 announcement",
+      "sourceId": "bis26",
+      "sourceLocator": "Paragraphs 1–4",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "CHN",
+      "lat": null,
+      "lon": null,
+      "notes": "China destination; approval is not automatic."
+    },
+    {
+      "id": "testcondition",
+      "entityId": "USA",
+      "name": "Independent U.S. testing",
+      "value": "A stated qualifying condition",
+      "unit": "category",
+      "period": "2026-01-13 announcement",
+      "sourceId": "bis26",
+      "sourceLocator": "Paragraph 3",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Historical announcement extract; effective rule text controls legal application."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Controls explicitly concern advanced computing semiconductors.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Nonexhaustive event record, not a current global embargo map or compliance determination. Announcement date differs from Federal Register effective date; do not infer effective date from this file. Subsequent regulations, end-user restrictions, exceptions and other jurisdictions require separate review.",
+  "limitations": [
+    "Nonexhaustive event record, not a current global embargo map or compliance determination.",
+    "Announcement date differs from Federal Register effective date; do not infer effective date from this file.",
+    "Subsequent regulations, end-user restrictions, exceptions and other jurisdictions require separate review."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "h200",
+      "mi325x",
+      "testcondition"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "What changed in one dated advanced-chip licence-review announcement, and what conditions remained?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

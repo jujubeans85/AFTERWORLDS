@@ -1,0 +1,200 @@
+{
+  "datasetId": "governance-orbital-app-ledger",
+  "id": "governance-orbital-app-ledger",
+  "title": "PhiSat2 at launch: installed versus planned AI apps",
+  "conceptIds": [
+    "256"
+  ],
+  "rows": [
+    {
+      "id": "phisat-0",
+      "entityId": "phisat-0",
+      "name": "Cloud detection",
+      "value": "reported onboard at launch",
+      "unit": "onboard-app status",
+      "period": "2024-08-17",
+      "sourceId": "esa-phisat2",
+      "sourceLocator": "At launch list",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Status reported at launch; not a current orbital position or an independently measured performance claim."
+    },
+    {
+      "id": "phisat-1",
+      "entityId": "phisat-1",
+      "name": "Street mapping",
+      "value": "reported onboard at launch",
+      "unit": "onboard-app status",
+      "period": "2024-08-17",
+      "sourceId": "esa-phisat2",
+      "sourceLocator": "At launch list",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Status reported at launch; not a current orbital position or an independently measured performance claim."
+    },
+    {
+      "id": "phisat-2",
+      "entityId": "phisat-2",
+      "name": "Vessel detection",
+      "value": "reported onboard at launch",
+      "unit": "onboard-app status",
+      "period": "2024-08-17",
+      "sourceId": "esa-phisat2",
+      "sourceLocator": "At launch list",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Status reported at launch; not a current orbital position or an independently measured performance claim."
+    },
+    {
+      "id": "phisat-3",
+      "entityId": "phisat-3",
+      "name": "Image compression",
+      "value": "reported onboard at launch",
+      "unit": "onboard-app status",
+      "period": "2024-08-17",
+      "sourceId": "esa-phisat2",
+      "sourceLocator": "At launch list",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Status reported at launch; not a current orbital position or an independently measured performance claim."
+    },
+    {
+      "id": "phisat-4",
+      "entityId": "phisat-4",
+      "name": "Marine anomaly detection",
+      "value": "planned later upload",
+      "unit": "onboard-app status",
+      "period": "2024-08-17",
+      "sourceId": "esa-phisat2",
+      "sourceLocator": "Two additional apps section",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Status reported at launch; not a current orbital position or an independently measured performance claim."
+    },
+    {
+      "id": "phisat-5",
+      "entityId": "phisat-5",
+      "name": "Wildfire detection",
+      "value": "planned later upload",
+      "unit": "onboard-app status",
+      "period": "2024-08-17",
+      "sourceId": "esa-phisat2",
+      "sourceLocator": "Two additional apps section",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Status reported at launch; not a current orbital position or an independently measured performance claim."
+    }
+  ],
+  "columns": {
+    "id": "id field; see row notes",
+    "entityId": "entityId field; see row notes",
+    "name": "name field; see row notes",
+    "value": "Measured value or explicit category; never visual magnitude unless numeric and appropriate",
+    "unit": "unit field; see row notes",
+    "period": "Observation/event period; not retrieval date",
+    "sourceId": "sourceId field; see row notes",
+    "sourceLocator": "Exact section/table/row in cited primary source",
+    "status": "status field; see row notes",
+    "qualifier": "qualifier field; see row notes",
+    "geographicId": "ISO 3166 alpha-3 or explicit named area; null for non-geographic records",
+    "lat": "Null: no invented point location",
+    "lon": "Null: no invented point location",
+    "notes": "notes field; see row notes"
+  },
+  "unit": "onboard-app status",
+  "denominator": "Not applicable: categorical records, not a rate",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Abstract categorical sphere",
+    "definition": "Records are not geographically allocated.",
+    "anchorRule": "Abstract sphere cells only. Do not place records on country boundaries."
+  },
+  "time": {
+    "observationStart": "2024-08-17",
+    "observationEnd": "2024-08-17",
+    "publishedAt": "2024-08-17",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual revalidation before implementation and after source updates"
+  },
+  "sources": [
+    {
+      "sourceId": "esa-phisat2",
+      "publisher": "European Space Agency",
+      "title": "New satellite demonstrates the power of AI for Earth observation",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Phsat-2/New_satellite_demonstrates_the_power_of_AI_for_Earth_observation",
+      "locator": "Opening, onboard apps and two additional apps sections",
+      "version": null,
+      "publishedAt": "2024-08-17",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Facts-only extraction; source prose and graphics are not republished",
+        "termsUrl": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Phsat-2/New_satellite_demonstrates_the_power_of_AI_for_Earth_observation",
+        "attribution": "European Space Agency. New satellite demonstrates the power of AI for Earth observation. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Six app descriptions in ESA’s dated launch report",
+    "included": "6 populated records; Six app descriptions in ESA’s dated launch report",
+    "omitted": "Subsequent uploads, demonstrated accuracy, mission live status and precise orbit tracks",
+    "missingness": "Unlisted entities are missing, not zero."
+  },
+  "uncertainty": "Selected primary-source records are not an exhaustive census; absence of a record does not mean absence of activity.",
+  "transform": {
+    "type": "manual",
+    "description": "Manual transcription of factual values/categories; no interpolation, imputation or causal inference.",
+    "codePath": "research/scripts/governance_build.py",
+    "inputReferences": [
+      "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Phsat-2/New_satellite_demonstrates_the_power_of_AI_for_Earth_observation"
+    ],
+    "validation": "Each row carries a source locator; categorical values separately label plans, policies and observed events."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary source and compare each extracted record to its named source location.",
+    "checkedRows": [
+      "phisat-0",
+      "phisat-1",
+      "phisat-2",
+      "phisat-3",
+      "phisat-4",
+      "phisat-5"
+    ],
+    "evidencePaths": [
+      "research/sources/governance-source-index.json"
+    ],
+    "reviewer": "governance_research",
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No universal extremity or impact score is supported by these data."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated forecast was supplied. Policy intentions and planned installations are not predictions."
+  }
+}

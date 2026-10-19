@@ -1,0 +1,240 @@
+{
+  "datasetId": "planet-dark-vessels",
+  "id": "planet-dark-vessels",
+  "conceptIds": [
+    "388"
+  ],
+  "title": "Machine vision reveals fishing activity missing from public tracking",
+  "rows": [
+    {
+      "id": "gfw-fishing-untracked",
+      "entityId": "gfw-fishing-untracked",
+      "name": "Industrial fishing not publicly tracked",
+      "value": null,
+      "unit": "percent",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Abstract and Figure 1",
+      "status": "estimated",
+      "qualifier": "published range; no point estimate supplied",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Not publicly tracked does not mean illegal. Missing public AIS can reflect rules, reception, equipment or deliberate non-broadcasting.",
+      "lower": 72,
+      "upper": 76
+    },
+    {
+      "id": "gfw-other-untracked",
+      "entityId": "gfw-other-untracked",
+      "name": "Transport and energy activity not publicly tracked",
+      "value": null,
+      "unit": "percent",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Abstract and Figure 1",
+      "status": "estimated",
+      "qualifier": "published range; no point estimate supplied",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Different vessel categories and detection limitations; no count of illegal vessels or wildlife-protection effect.",
+      "lower": 21,
+      "upper": 30
+    },
+    {
+      "id": "gfw-asia",
+      "entityId": "gfw-asia",
+      "name": "Asia",
+      "value": 67,
+      "unit": "percent of detected vessel activity",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Fishing and non-fishing vessels, paragraph beginning Activity is also unevenly distributed",
+      "status": "estimated",
+      "qualifier": "approximate published continental share; rounded shares total 99%",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "All detected vessel activity, not just fishing. Continents refer to study coastal waters; no land choropleth or country disaggregation."
+    },
+    {
+      "id": "gfw-europe",
+      "entityId": "gfw-europe",
+      "name": "Europe",
+      "value": 12,
+      "unit": "percent of detected vessel activity",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Fishing and non-fishing vessels, paragraph beginning Activity is also unevenly distributed",
+      "status": "estimated",
+      "qualifier": "approximate published continental share; rounded shares total 99%",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "All detected vessel activity, not just fishing. Continents refer to study coastal waters; no land choropleth or country disaggregation."
+    },
+    {
+      "id": "gfw-north-america",
+      "entityId": "gfw-north-america",
+      "name": "North America",
+      "value": 7,
+      "unit": "percent of detected vessel activity",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Fishing and non-fishing vessels, paragraph beginning Activity is also unevenly distributed",
+      "status": "estimated",
+      "qualifier": "approximate published continental share; rounded shares total 99%",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "All detected vessel activity, not just fishing. Continents refer to study coastal waters; no land choropleth or country disaggregation."
+    },
+    {
+      "id": "gfw-africa",
+      "entityId": "gfw-africa",
+      "name": "Africa",
+      "value": 7,
+      "unit": "percent of detected vessel activity",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Fishing and non-fishing vessels, paragraph beginning Activity is also unevenly distributed",
+      "status": "estimated",
+      "qualifier": "approximate published continental share; rounded shares total 99%",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "All detected vessel activity, not just fishing. Continents refer to study coastal waters; no land choropleth or country disaggregation."
+    },
+    {
+      "id": "gfw-south-america",
+      "entityId": "gfw-south-america",
+      "name": "South America",
+      "value": 4,
+      "unit": "percent of detected vessel activity",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Fishing and non-fishing vessels, paragraph beginning Activity is also unevenly distributed",
+      "status": "estimated",
+      "qualifier": "approximate published continental share; rounded shares total 99%",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "All detected vessel activity, not just fishing. Continents refer to study coastal waters; no land choropleth or country disaggregation."
+    },
+    {
+      "id": "gfw-australia",
+      "entityId": "gfw-australia",
+      "name": "Australia",
+      "value": 2,
+      "unit": "percent of detected vessel activity",
+      "period": "2017–2021",
+      "sourceId": "planet-gfw",
+      "sourceLocator": "Fishing and non-fishing vessels, paragraph beginning Activity is also unevenly distributed",
+      "status": "estimated",
+      "qualifier": "approximate published continental share; rounded shares total 99%",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "All detected vessel activity, not just fishing. Continents refer to study coastal waters; no land choropleth or country disaggregation."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint",
+    "lower": "Published lower range or confidence bound; qualifier defines its meaning",
+    "upper": "Published upper range or confidence bound; qualifier defines its meaning"
+  },
+  "unit": "mixed percentages, each row explicit",
+  "denominator": "Untracked range uses mapped industrial vessel activity by category; continental percentages use all detected vessel activity. Never combine these denominators.",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Surveyed coastal ocean waters 2017–2021; study covers >15% of ocean where >75% of industrial activity is concentrated",
+    "definition": "Surveyed coastal ocean waters 2017–2021; study covers >15% of ocean where >75% of industrial activity is concentrated",
+    "anchorRule": "Use an explicitly non-geographic sphere or global band. No national fill, fake city locations, or inferred unobserved distribution."
+  },
+  "time": {
+    "observationStart": "2017",
+    "observationEnd": "2021",
+    "publishedAt": "2024-01-03",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-gfw",
+      "publisher": "Paolo et al., Nature",
+      "title": "Satellite mapping reveals extensive industrial activity at sea",
+      "url": "https://www.nature.com/articles/s41586-023-06825-8",
+      "locator": "Abstract; Fishing and non-fishing vessels; Figure 1; author correction February 2024",
+      "version": "2024-01-03",
+      "publishedAt": "2024-01-03",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Satellite mapping reveals extensive industrial activity at sea — Paolo et al., Nature",
+        "verified": true,
+        "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Surveyed coastal ocean waters 2017–2021; study covers >15% of ocean where >75% of industrial activity is concentrated",
+    "included": "8 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "Small/artisanal vessels beyond detection limits, areas outside imagery, direct conservation or shark outcomes",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Detection depends on vessel size, acquisition density and model classification. Geographic totals rounded. Source correction checked in publication version; range endpoints are not a standard confidence interval.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://www.nature.com/articles/s41586-023-06825-8"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "gfw-fishing-untracked",
+      "gfw-other-untracked",
+      "gfw-asia",
+      "gfw-europe",
+      "gfw-north-america",
+      "gfw-africa",
+      "gfw-south-america",
+      "gfw-australia"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

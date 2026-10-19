@@ -1,0 +1,61 @@
+{
+  "asOf": "2026-10-19",
+  "researcher": "evidence_editor",
+  "status": "Investigated evidence gaps; no missing values have been replaced with synthetic observations",
+  "investigations": [
+    {
+      "conceptId": "396",
+      "question": "Which publicly located data centres face coastal flooding, under which scenario?",
+      "sources": [
+        {"url": "https://coast.noaa.gov/slr/", "verification": "Opened primary documentation", "locator": "Sea Level Rise, Scenarios, Mapping Confidence", "finding": "U.S. screening layers use local MHHW; elevations, drainage and defences affect interpretation. These are scenarios, not facility damage predictions."},
+        {"url": "https://coast.noaa.gov/data/digitalcoast/pdf/slr-faq.pdf", "verification": "Primary FAQ located; not used for numeric observation", "locator": "Levee/elevation limitations", "finding": "Flood-defence representation needs specific local verification."},
+        {"url": "https://www.datacenters.google/locations/hamina-finland/", "verification": "Opened provider location page", "locator": "Hamina site and seawater cooling description", "finding": "Coastal location is documented. U.S. NOAA layers cannot be applied to Finland and proximity alone is not exposure."}
+      ],
+      "decision": "Hold facility exposure. A geographic location and a flood viewer are not a validated spatial join.",
+      "nextExecutableWork": ["Restrict a first study to one supported national flood dataset; record scenario, horizon, datum and DEM version.", "Obtain authoritative facility parcel/floor elevations and defence status; verify location independently.", "Run a reproducible polygon or point-elevation overlay, propagate vertical uncertainty and distinguish inundation from operational damage."]
+    },
+    {
+      "conceptId": "386",
+      "question": "Which pre-rail trade corridors still carry advanced-computing materials?",
+      "sources": [
+        {"url": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab", "verification": "Opened primary manufacturer account", "locator": "Overcoming challenges through collaboration", "finding": "Supplier countries and component roles are identified, but routing mode, ports and shipment volumes are not."},
+        {"url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html", "verification": "Opened annual report", "locator": "Overseas manufacturing", "finding": "Manufacturing geography is documented; it does not establish use of any historic trade corridor."},
+        {"url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/", "verification": "Opened primary report and oil-flow tables", "locator": "Tables 1–7", "finding": "Energy maritime flows cannot stand in for semiconductor or server shipments."}
+      ],
+      "decision": "Hold original continuity claim; supplier-network facts are retained as partial evidence and are used by concept305 without pretending to be historical shipping routes.",
+      "nextExecutableWork": ["Obtain commodity-specific shipping manifests with mode, origin, destination and dates.", "Define and source historical corridor geometry and a distance or overlap rule before analysis.", "Separate air freight, ocean freight and supplier relationships; measure only routes actually observed."]
+    },
+    {
+      "conceptId": "331",
+      "question": "Where does extra AI electricity create measurable value?",
+      "sources": [
+        {"url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/", "verification": "Opened measured-provider methodology summary", "locator": "Median prompt metrics and footnotes", "finding": "Per-prompt resource costs exist, but no matched economic value or counterfactual is provided."},
+        {"url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/", "verification": "Opened lifecycle assessment disclosure", "locator": "Lifecycle versus marginal inference", "finding": "Different cost denominators cannot establish comparable value per unit energy."},
+        {"url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary", "verification": "Opened primary outlook", "locator": "Economy-wide impacts and uncertainty", "finding": "Macroeconomic scenarios are not observed location-specific AI value creation."}
+      ],
+      "decision": "Hold value-per-watt ranking. Retain engineering cost data without assigning an economic or social-value score.",
+      "nextExecutableWork": ["Pre-register a value measure such as validated task completion or bounded economic output.", "Measure whole-system energy and task quality for AI and a relevant baseline on the same sample.", "Report uncertainty and geographic scope; do not combine provider marketing productivity claims with unrelated grid estimates."]
+    },
+    {
+      "conceptId": "293",
+      "question": "Which hosts bear emissions for users elsewhere?",
+      "sources": [
+        {"url": "https://cloud.google.com/sustainability/region-carbon", "verification": "Opened complete 2025 region table and licence", "locator": "Grid carbon intensity and CFE definitions", "finding": "Region electricity factors exist; workloads and beneficiary locations are not in this public dataset."},
+        {"url": "https://docs.cloud.google.com/carbon-footprint/docs/view-carbon-data", "verification": "Opened primary documentation", "locator": "Billing-account permissions and regional charts", "finding": "Account-level emissions are permissioned and reported by service/project/region. This does not supply a public worldwide host-to-user matrix."}
+      ],
+      "decision": "Hold emissions-transfer map. Hosting electricity intensity alone cannot locate remote beneficiaries.",
+      "nextExecutableWork": ["Acquire authorized privacy-preserving aggregate workloads by host region and user region.", "Define production versus consumption boundaries including electricity, embodied hardware and networking.", "Reconcile allocated emissions to the provider inventory and report unallocated mass; never infer user geography from company headquarters."]
+    },
+    {
+      "conceptId": "41-4",
+      "question": "Can nightlights identify computing infrastructure?",
+      "sources": [
+        {"url": "https://viirsland.gsfc.nasa.gov/Products/NASA/BlackMarble.html", "verification": "Opened primary product documentation", "locator": "VNP46A2 daily corrected product", "finding": "Nighttime radiance observations are available; the product is not an AI-capacity measure."},
+        {"url": "https://viirsland.gsfc.nasa.gov/Val/BM_Val.html", "verification": "Opened primary validation statement, reviewed February2024", "locator": "Validation and uncertainty paragraphs", "finding": "Illumination geometry, snow, aerosols, clouds, vegetation and ephemeral light affect the record."},
+        {"url": "https://science.data.nasa.gov/disasters/data-gallery/black-marble-hd", "verification": "Opened primary Suggested Use and Terms", "locator": "Suggested Use", "finding": "The 30m HD rendering is a downscaled visual estimate and explicitly unsuitable for quantitative analysis."}
+      ],
+      "decision": "Hold AI-light attribution and reject using visually sharp HD pixels as measured facility-scale AI intensity.",
+      "nextExecutableWork": ["Use native quality-screened radiance rather than HD visualization.", "Join independently verified facility opening dates and footprints with matched noncompute controls.", "Test out-of-sample detection accuracy and confounding by roads, warehouses, settlement and lighting changes; publish false-positive rates before presenting an AI map."]
+    }
+  ]
+}

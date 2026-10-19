@@ -1,0 +1,206 @@
+{
+  "datasetId": "physical-autonomous-voyages",
+  "id": "physical-autonomous-voyages",
+  "schemaVersion": "1.0",
+  "title": "Uncrewed and supervised are different",
+  "conceptIds": [
+    "358"
+  ],
+  "metric": "Nonexhaustive documented autonomous-vessel milestones and supervision states",
+  "unit": "category",
+  "denominator": "Two selected projects; provider reports, not independent global voyage census",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "Both projects explicitly describe autonomous ship control.",
+  "geographyMode": "network",
+  "geography": {
+    "mode": "network",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2022-06-05 arrival",
+    "observationEnd": "Undated current article snapshot",
+    "publishedAt": "2022-06-06",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "ibm-mas",
+      "publisher": "IBM",
+      "title": "The Mayflower Autonomous Ship Has Reached North America",
+      "url": "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+      "locator": "Voyage completion and onboard crew",
+      "version": "2022-06-06",
+      "publishedAt": "2022-06-06",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+        "attribution": "IBM — The Mayflower Autonomous Ship Has Reached North America",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "yara",
+      "publisher": "Yara",
+      "title": "Yara Birkeland: two years on",
+      "url": "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/",
+      "locator": "Voyage and crew supervision; current page includes later trial update",
+      "version": null,
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/",
+        "attribution": "Yara — Yara Birkeland: two years on",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "ibm-mas",
+    "publisher": "IBM",
+    "title": "The Mayflower Autonomous Ship Has Reached North America",
+    "url": "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+    "locator": "Voyage completion and onboard crew",
+    "version": "2022-06-06",
+    "publishedAt": "2022-06-06",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+      "attribution": "IBM — The Mayflower Autonomous Ship Has Reached North America",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "mas",
+      "entityId": "CAN-Halifax",
+      "name": "Mayflower Autonomous Ship",
+      "value": "No onboard captain or crew",
+      "unit": "category",
+      "period": "2022-06-05 arrival",
+      "sourceId": "ibm-mas",
+      "sourceLocator": "Completion announcement",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "CAN-Halifax",
+      "lat": null,
+      "lon": null,
+      "notes": "Plymouth–Halifax crossing reported by project participant; approximately 3,500 nautical miles over 40 days."
+    },
+    {
+      "id": "yara-first",
+      "entityId": "NOR-Porsgrunn-Brevik",
+      "name": "Yara Birkeland",
+      "value": "Autonomous voyage under human supervision",
+      "unit": "category",
+      "period": "2023-03",
+      "sourceId": "yara",
+      "sourceLocator": "First fully autonomous voyage",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "NOR-Porsgrunn-Brevik",
+      "lat": null,
+      "lon": null,
+      "notes": "Porsgrunn–Brevik; autonomy does not imply absence of crew."
+    },
+    {
+      "id": "yara-crew",
+      "entityId": "NOR-Porsgrunn-Brevik",
+      "name": "Yara Birkeland",
+      "value": "Three supervising crew reported onboard",
+      "unit": "category",
+      "period": "Undated current article snapshot",
+      "sourceId": "yara",
+      "sourceLocator": "Current operations and crew",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "NOR-Porsgrunn-Brevik",
+      "lat": null,
+      "lon": null,
+      "notes": "Article has been updated and describes later trial delays; not a verified crew count on retrieval day."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Both projects explicitly describe autonomous ship control.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Source participants have promotional interests; independent voyage audit not established. Do not treat these records as accident rates, uninterrupted voyages, autonomy levels or 2026 operating status.",
+  "limitations": [
+    "Source participants have promotional interests; independent voyage audit not established.",
+    "Do not treat these records as accident rates, uninterrupted voyages, autonomy levels or 2026 operating status."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+      "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "mas",
+      "yara-first",
+      "yara-crew"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "Which documented vessel milestones were uncrewed, and which retained people onboard?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

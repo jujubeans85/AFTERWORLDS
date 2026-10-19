@@ -1,0 +1,3618 @@
+[
+  {
+    "conceptId": "402",
+    "originalSourceUrl": "https://world-processor.com/402/",
+    "originalQuestion": "Can AI find ocean plastic that conventional observations miss, and who verifies the detections?",
+    "proposedTitle": "Plastic Intelligence",
+    "proposedQuestion": "What changes when four algorithms inspect the same marine-debris benchmark?",
+    "claim": "MARIDA shows markedly different marine-debris segmentation performance across four algorithms on the same benchmark.",
+    "sourceConnection": "Plastic production, river transport and dispersed marine pollution connect land to oceans. Contrast machine-detected marine litter with validated observations and monitoring blind spots. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The original worldwide discovery question is narrowed to a reproducible comparison; it cannot establish how much ocean plastic AI finds globally.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "MARIDA shows markedly different marine-debris segmentation performance across four algorithms on the same benchmark.",
+      "sourceIds": [
+        "planet-marida"
+      ]
+    },
+    "datasetIds": [
+      "planet-marida-benchmark"
+    ],
+    "designId": "design-402",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "What changes when four algorithms inspect the same marine-debris benchmark?",
+    "rationale": "The original worldwide discovery question is narrowed to a reproducible comparison; it cannot establish how much ocean plastic AI finds globally.",
+    "searchedSources": [
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0262247",
+      "https://www.nature.com/articles/s41467-024-48674-7"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "365",
+    "originalSourceUrl": "https://world-processor.com/365/",
+    "originalQuestion": "Can AI's predictions of wine quality travel beyond the vineyards and panels that trained them?",
+    "proposedTitle": "A Machine's Taste",
+    "proposedQuestion": "What does a wine model learn when its world is one region?",
+    "claim": "A common wine-quality ML benchmark represents one Portuguese wine region, with uneven expert-rating classes.",
+    "sourceConnection": "Wine production and consumption are compared across world regions. Investigate transferability and cultural bias in sensory prediction and agricultural AI. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Coverage can be demonstrated from the primary training benchmark. Cross-region prediction validity is not measured here.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "A common wine-quality ML benchmark represents one Portuguese wine region, with uneven expert-rating classes.",
+      "sourceIds": [
+        "planet-wine"
+      ]
+    },
+    "datasetIds": [
+      "planet-wine-quality-distribution"
+    ],
+    "designId": "design-365",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "2009 benchmark remains historically important but is not a 2026 wine-quality census.",
+      "No model performance or consumer-preference claim."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "What does a wine model learn when its world is one region?",
+    "rationale": "Coverage can be demonstrated from the primary training benchmark. Cross-region prediction validity is not measured here.",
+    "searchedSources": [
+      "https://archive.ics.uci.edu/dataset/186/wine+quality"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "5-6",
+    "originalSourceUrl": "https://world-processor.com/5-6-1/",
+    "originalQuestion": "Where does AI help interpret real seafloor surveys, and where does it merely fill gaps?",
+    "proposedTitle": "The Unseen Seabed",
+    "proposedQuestion": "How much of the seabed is surveyed before a model fills the gaps?",
+    "claim": "Modern-standard mapped coverage rose from 27.3% in the 2025 release to 28.7% in 2026; this does not quantify AI’s contribution.",
+    "sourceConnection": "Seafloor mapping is linked to new extraction frontiers and competing economic claims. Distinguish observed bathymetry from modelled seabed estimates and commercial interpretation. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "A global measured-coverage context is supportable; separating AI-specific bathymetry interpretations requires further project-level validation.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Modern-standard mapped coverage rose from 27.3% in the 2025 release to 28.7% in 2026; this does not quantify AI’s contribution.",
+      "sourceIds": [
+        "planet-seabed-2026",
+        "planet-seabed-2025"
+      ]
+    },
+    "datasetIds": [
+      "planet-seabed-coverage"
+    ],
+    "designId": "design-5-6",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How much of the seabed is surveyed before a model fills the gaps?",
+    "rationale": "A global measured-coverage context is supportable; separating AI-specific bathymetry interpretations requires further project-level validation.",
+    "searchedSources": [
+      "https://www.gebco.net/news/release-gebco2026-grid",
+      "https://seabed2030.org/2025/06/21/seabed-2030-announces-millions-of-square-kilometers-of-new-seafloor-data-on-world-hydrography-day/"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "388",
+    "originalSourceUrl": "https://world-processor.com/388/",
+    "originalQuestion": "Can automated fishing surveillance improve protection without making wildlife easier to exploit?",
+    "proposedTitle": "Who Is the Predator?",
+    "proposedQuestion": "What becomes visible when a fishing vessel stops appearing in public tracking?",
+    "claim": "Deep learning and satellite imagery reveal substantial industrial fishing activity absent from public AIS tracking; absence is not evidence of illegality.",
+    "sourceConnection": "Human harm to sharks is set against the much more visible story of shark attacks. Examine the competing conservation and extraction uses of AI-enabled ocean observation. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Detection coverage is measurable; the net conservation-versus-exploitation effect is not established by these data.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Deep learning and satellite imagery reveal substantial industrial fishing activity absent from public AIS tracking; absence is not evidence of illegality.",
+      "sourceIds": [
+        "planet-gfw"
+      ]
+    },
+    "datasetIds": [
+      "planet-dark-vessels"
+    ],
+    "designId": "design-388",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "What becomes visible when a fishing vessel stops appearing in public tracking?",
+    "rationale": "Detection coverage is measurable; the net conservation-versus-exploitation effect is not established by these data.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41586-023-06825-8"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "8-6",
+    "originalSourceUrl": "https://world-processor.com/008/",
+    "originalQuestion": "Where do AI health tools reach underserved patients, and who verifies that care improves?",
+    "proposedTitle": "The Clinic Out of Reach",
+    "proposedQuestion": "Can a same-visit AI eye exam close a care gap?",
+    "claim": "A two-site randomized trial found higher diabetic eye-exam completion with point-of-care autonomous AI; this measures access, not improved vision.",
+    "sourceConnection": "An earlier life-expectancy globe compares national values with broader regional averages. Focus on access and external evaluation rather than assume geographic deployment equals health benefit. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Bounded to a named randomized trial; no inference about all countries or all underserved groups.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "A two-site randomized trial found higher diabetic eye-exam completion with point-of-care autonomous AI; this measures access, not improved vision.",
+      "sourceIds": [
+        "planet-access"
+      ]
+    },
+    "datasetIds": [
+      "planet-access-screening-trial"
+    ],
+    "designId": "design-8-6",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Can a same-visit AI eye exam close a care gap?",
+    "rationale": "Bounded to a named randomized trial; no inference about all countries or all underserved groups.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41467-023-44676-z",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10784572/fullTextXML"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "8-17",
+    "originalSourceUrl": "https://world-processor.com/810-life-expectancy-2013/",
+    "originalQuestion": "Which AI health interventions have improved patient outcomes in real-world trials?",
+    "proposedTitle": "Years We Cannot Promise",
+    "proposedQuestion": "When did an AI alert change a patient outcome in a randomized trial?",
+    "claim": "One Taiwan randomized trial reported 90-day mortality of 3.6% with an AI-alert workflow versus 4.3% with usual care; hazard ratio 0.83, 95% CI 0.70–0.99.",
+    "sourceConnection": "Regional and national life-expectancy values reveal unequal lengths of life. Separate clinical outcome evidence from diagnostic benchmarks and speculative longevity claims. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "A bounded patient-outcome trial answers the evidence question without implying a global longevity gain.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "One Taiwan randomized trial reported 90-day mortality of 3.6% with an AI-alert workflow versus 4.3% with usual care; hazard ratio 0.83, 95% CI 0.70–0.99.",
+      "sourceIds": [
+        "planet-ecg",
+        "planet-ecg-economic"
+      ]
+    },
+    "datasetIds": [
+      "planet-ecg-mortality-trial"
+    ],
+    "designId": "design-8-17",
+    "verdict": "hold",
+    "candidateVerdict": "direct-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "When did an AI alert change a patient outcome in a randomized trial?",
+    "rationale": "A bounded patient-outcome trial answers the evidence question without implying a global longevity gain.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41591-024-02961-4",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/s41591-024-02961-4&format=json&resultType=core",
+      "https://www.nature.com/articles/s41746-025-01735-7"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "115-2",
+    "originalSourceUrl": "https://world-processor.com/115/",
+    "originalQuestion": "Can AI identify wetland loss early enough to protect places that conventional maps overlook?",
+    "proposedTitle": "The Wetland Witness",
+    "proposedQuestion": "Which wetlands does a global classifier overlook?",
+    "claim": "A global random-forest wetland product recovers salt marshes, flooded flats and marshes less reliably than permanent water in its 2020 validation sample.",
+    "sourceConnection": "Wetlands are presented as ecologically significant environments with diverse forms. Evaluate wetland classification against field validation and changing water conditions. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Classification-error evidence is available; timely protection or successful intervention is not established.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "A global random-forest wetland product recovers salt marshes, flooded flats and marshes less reliably than permanent water in its 2020 validation sample.",
+      "sourceIds": [
+        "planet-wetland"
+      ]
+    },
+    "datasetIds": [
+      "planet-wetland-class-accuracy"
+    ],
+    "designId": "design-115-2",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which wetlands does a global classifier overlook?",
+    "rationale": "Classification-error evidence is available; timely protection or successful intervention is not established.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41597-024-03143-0",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10960823/fullTextXML"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "364",
+    "originalSourceUrl": "https://world-processor.com/364/",
+    "originalQuestion": "Where can AI improve sea-ice forecasts, and where do drifting observations still constrain certainty?",
+    "proposedTitle": "Drift Intelligence",
+    "proposedQuestion": "How often did IceNet beat its benchmarks before September?",
+    "claim": "At three-month lead, IceNet exceeded SEAS5 binary accuracy in 7 of 9 reported September comparison years and a linear trend in 8 of 9; six validation years and three test years are distinguished.",
+    "sourceConnection": "Historical ice-station trajectories show how polar knowledge is gathered while moving. Compare polar prediction systems with the sparse moving observations used to validate them. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "A retrospective Arctic benchmark comparison is available; it does not quantify how drifting observations caused improvement.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "At three-month lead, IceNet exceeded SEAS5 binary accuracy in 7 of 9 reported September comparison years and a linear trend in 8 of 9; six validation years and three test years are distinguished.",
+      "sourceIds": [
+        "planet-icenet"
+      ]
+    },
+    "datasetIds": [
+      "planet-icenet-comparison"
+    ],
+    "designId": "design-364",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How often did IceNet beat its benchmarks before September?",
+    "rationale": "A retrospective Arctic benchmark comparison is available; it does not quantify how drifting observations caused improvement.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41467-021-25257-4",
+      "https://www.nature.com/articles/s41467-026-74220-8"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "390",
+    "originalSourceUrl": "https://world-processor.com/390/",
+    "originalQuestion": "Where does obsolete computing hardware go, and how much of that flow can be traced?",
+    "proposedTitle": "Toxic Afterlife",
+    "proposedQuestion": "How much of computing’s material afterlife can the waste ledger trace?",
+    "claim": "The global waste ledger records 62 billion kilograms of e-waste in 2022, with 13.8 billion kilograms formally collected and recycled; the AI-hardware share is not identified.",
+    "sourceConnection": "Mercury contamination sites reveal persistent industrial pollution and human costs. Investigate verified electronics-waste pathways without assigning all waste to AI. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Broad e-waste and small IT context are available; global AI-specific destination flows are not.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "The global waste ledger records 62 billion kilograms of e-waste in 2022, with 13.8 billion kilograms formally collected and recycled; the AI-hardware share is not identified.",
+      "sourceIds": [
+        "planet-ewaste",
+        "planet-ewaste-release"
+      ]
+    },
+    "datasetIds": [
+      "planet-ewaste-traceability"
+    ],
+    "designId": "design-390",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How much of computing’s material afterlife can the waste ledger trace?",
+    "rationale": "Broad e-waste and small IT context are available; global AI-specific destination flows are not.",
+    "searchedSources": [
+      "https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-Waste-Monitor-2024.aspx",
+      "https://www.itu.int/en/mediacentre/Pages/PR-2024-03-20-e-waste-recycling.aspx",
+      "https://www.who.int/news-room/questions-and-answers/item/children-and-digital-dumpsites-e-waste-and-health"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "392",
+    "originalSourceUrl": "https://world-processor.com/392/",
+    "originalQuestion": "Can AI help warn of aquatic oxygen loss where observations are sparse?",
+    "proposedTitle": "Oxygen, Unseen",
+    "proposedQuestion": "Does an oxygen forecast survive contact with real water samples?",
+    "claim": "Seven regional hypoxia model configurations are compared against 12 unshuffled observational samples, with date inconsistency and potential training/test overlap disclosed.",
+    "sourceConnection": "Low-oxygen waters expose ecological damage associated with nutrient pollution. Evaluate hypoxia models against sensor coverage and observed events, not decorative risk maps. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "A bounded observation-based metric table is available. It cannot establish global warning success or independent unseen-year performance.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Seven regional hypoxia model configurations are compared against 12 unshuffled observational samples, with date inconsistency and potential training/test overlap disclosed.",
+      "sourceIds": [
+        "planet-hypoxia"
+      ]
+    },
+    "datasetIds": [
+      "planet-hypoxia-observation-test"
+    ],
+    "designId": "design-392",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Methods/Table 4 give 2007–2019, excluding 2016; Table 3 caption gives 2007–2020.",
+      "Spatial augmentation appears to include test-era observations; no independent unseen-year validation claim.",
+      "Source article is CC BY-NC-ND 4.0; only a small factual transcription is included."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Does an oxygen forecast survive contact with real water samples?",
+    "rationale": "A bounded observation-based metric table is available. It cannot establish global warning success or independent unseen-year performance.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41598-025-17053-7",
+      "https://www.nature.com/articles/s41598-024-54476-0"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "170-3",
+    "originalSourceUrl": "https://world-processor.com/1703-solar-system-2009/",
+    "originalQuestion": "Which astronomical discoveries credited to AI have been independently confirmed?",
+    "proposedTitle": "Worlds Found by Machines",
+    "proposedQuestion": "Which machine-found worlds became confirmed planets?",
+    "claim": "NASA documents Kepler-90i and Kepler-80g as ML-assisted discoveries; both are present in the current confirmed-planet archive.",
+    "sourceConnection": "Planetary scale leads outward from the solar system to the search for other worlds. Distinguish machine-ranked candidates from confirmed discoveries and preserve the role of follow-up observation. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Curated named cases preserve confirmation status; this is not an Earth map or complete discovery census.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "NASA documents Kepler-90i and Kepler-80g as ML-assisted discoveries; both are present in the current confirmed-planet archive.",
+      "sourceIds": [
+        "planet-nasa-discoveries",
+        "planet-nasa-archive"
+      ]
+    },
+    "datasetIds": [
+      "planet-ai-planets"
+    ],
+    "designId": "design-170-3",
+    "verdict": "hold",
+    "candidateVerdict": "direct-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which machine-found worlds became confirmed planets?",
+    "rationale": "Curated named cases preserve confirmation status; this is not an Earth map or complete discovery census.",
+    "searchedSources": [
+      "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+      "https://science.nasa.gov/mission/kepler/in-depth/"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "378",
+    "originalSourceUrl": "https://world-processor.com/378/",
+    "originalQuestion": "Where can acoustic AI follow migrating species, and where is there nobody listening?",
+    "proposedTitle": "Migration, Heard",
+    "proposedQuestion": "Where did a Norwegian acoustic network hear spring migrants, and where is recording effort missing?",
+    "claim": "A public 2026 study archive supports site-week acoustic detections and recorder gaps for three migratory species in Norway in 2022.",
+    "sourceConnection": "Major bird flyways and species-specific migration paths cross national boundaries. Compare acoustic-monitoring coverage with migration corridors and validated species detection. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Bounded to the actual monitoring network; absence outside the network is unknown, and detected birds do not define migration paths.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "A public 2026 study archive supports site-week acoustic detections and recorder gaps for three migratory species in Norway in 2022.",
+      "sourceIds": [
+        "planet-bird-archive",
+        "planet-bird-study"
+      ]
+    },
+    "datasetIds": [
+      "planet-bird-weekly-detections"
+    ],
+    "designId": "design-378",
+    "verdict": "hold",
+    "candidateVerdict": "direct-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Where did a Norwegian acoustic network hear spring migrants, and where is recording effort missing?",
+    "rationale": "Bounded to the actual monitoring network; absence outside the network is unknown, and detected birds do not define migration paths.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s42003-026-10389-4",
+      "https://zenodo.org/records/19778881",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13328752/fullTextXML"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "232",
+    "originalSourceUrl": "https://world-processor.com/232/",
+    "originalQuestion": "Which populations are absent from genomic AI datasets, and how does that affect external validation?",
+    "proposedTitle": "Ancestry Is Not Destiny",
+    "proposedQuestion": "Whose genomes are represented before a model is built?",
+    "claim": "The 2026 GWAS Diversity Monitor headline remains heavily concentrated in European-labelled participant entries; it is context for model development, not a census of genomic AI training.",
+    "sourceConnection": "The source title layers genetic traces, refugee populations and migration routes. Investigate representation in genomic datasets without treating ancestry as a fixed national or biological destiny. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The original question requires unavailable model-by-cohort provenance. A carefully labelled baseline shows the source-data representation problem without claiming measured AI bias.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "The 2026 GWAS Diversity Monitor headline remains heavily concentrated in European-labelled participant entries; it is context for model development, not a census of genomic AI training.",
+      "sourceIds": [
+        "planet-gwas",
+        "planet-gwas-methods"
+      ]
+    },
+    "datasetIds": [
+      "planet-gwas-representation"
+    ],
+    "designId": "design-232",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Whose genomes are represented before a model is built?",
+    "rationale": "The original question requires unavailable model-by-cohort provenance. A carefully labelled baseline shows the source-data representation problem without claiming measured AI bias.",
+    "searchedSources": [
+      "https://gwasdiversitymonitor.com/",
+      "https://gwasdiversitymonitor.com/qandas",
+      "https://www.ebi.ac.uk/gwas/docs/ancestry-data/"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "348",
+    "originalSourceUrl": "https://world-processor.com/348/",
+    "originalQuestion": "Which research fields are being connected by AI, and which apparent links are merely citation fashion?",
+    "proposedTitle": "Science Rewired",
+    "proposedQuestion": "Can AI-assisted scientists gain impact while science becomes less broad?",
+    "claim": "One 2026 observational study links AI-augmented research to higher average annual publication/citation measures, earlier modelled last-author transition, lower median embedding-space knowledge extent and lower follow-on citation engagement.",
+    "sourceConnection": "Scientific fields form a sphere of relationships derived from citation networks. Use transparent bibliometric methods to study AI-related links across research disciplines. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "A selected-study comparison is supported. A globe of field-to-field knowledge flows would require the underlying citation edges and field classification.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "One 2026 observational study links AI-augmented research to higher average annual publication/citation measures, earlier modelled last-author transition, lower median embedding-space knowledge extent and lower follow-on citation engagement.",
+      "sourceIds": [
+        "planet-science"
+      ]
+    },
+    "datasetIds": [
+      "planet-ai-science-comparisons"
+    ],
+    "designId": "design-348",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Can AI-assisted scientists gain impact while science becomes less broad?",
+    "rationale": "A selected-study comparison is supported. A globe of field-to-field knowledge flows would require the underlying citation edges and field classification.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41586-025-09922-y",
+      "https://github.com/tsinghua-fib-lab/AI-Impacts-Science",
+      "https://www.nature.com/articles/s41562-024-02020-5"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "398",
+    "originalSourceUrl": "https://world-processor.com/398/",
+    "originalQuestion": "Where do AI-guided farming trials save water or fertiliser, and where do results fail to transfer?",
+    "proposedTitle": "Fields Under Instruction",
+    "proposedQuestion": "When does an AI-guided field look less water-stressed, and when does it not?",
+    "claim": "A two-field Kansas comparison reports lower satellite-derived crop water stress under AI-Radar during reproductive stages, but an opposite numerical result in 2023 vegetative growth.",
+    "sourceConnection": "Agricultural land serves competing food, feed and fuel uses with management trade-offs. Compare independently evaluated precision-agriculture outcomes across crops and places. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "Use a bounded observational field comparison; AI, hardware and management effects cannot be separated, and transferability remains untested.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "A two-field Kansas comparison reports lower satellite-derived crop water stress under AI-Radar during reproductive stages, but an opposite numerical result in 2023 vegetative growth.",
+      "sourceIds": [
+        "planet-irrigation"
+      ]
+    },
+    "datasetIds": [
+      "planet-irrigation-field-comparison"
+    ],
+    "designId": "design-398",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "When does an AI-guided field look less water-stressed, and when does it not?",
+    "rationale": "Use a bounded observational field comparison; AI, hardware and management effects cannot be separated, and transferability remains untested.",
+    "searchedSources": [
+      "https://acsess.onlinelibrary.wiley.com/doi/10.1002/ael2.70047",
+      "https://www.sciencedirect.com/science/article/pii/S277237552600479X",
+      "https://www.nature.com/articles/s41598-024-76915-8"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "107",
+    "originalSourceUrl": "https://world-processor.com/107-1/",
+    "originalQuestion": "Who controls the ocean data used to train AI, including information collected beyond national jurisdiction?",
+    "proposedTitle": "Waters Without a Dataset",
+    "proposedQuestion": "Which ocean data can a model reuse, and what must follow it?",
+    "claim": "GEBCO, Argo and CCHDO publish different reuse and citation conditions; data permission does not establish maritime ownership.",
+    "sourceConnection": "Maritime economic zones extend resource rights beyond the coastline. Investigate ocean-data access, licensing and provenance without equating data rights with maritime sovereignty. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The original control question is narrowed to three explicit repository policies, without claiming to inventory actual AI training sources.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "GEBCO, Argo and CCHDO publish different reuse and citation conditions; data permission does not establish maritime ownership.",
+      "sourceIds": [
+        "planet-gebco-terms",
+        "planet-argo-terms",
+        "planet-cchdo-terms"
+      ]
+    },
+    "datasetIds": [
+      "planet-ocean-data-policies"
+    ],
+    "designId": "design-107",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent source/reuse review and design-semantic review pending; candidate verdict is not acceptance."
+    ],
+    "limitations": [
+      "Selected evidence, not a comprehensive global census."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which ocean data can a model reuse, and what must follow it?",
+    "rationale": "The original control question is narrowed to three explicit repository policies, without claiming to inventory actual AI training sources.",
+    "searchedSources": [
+      "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+      "https://argo.ucsd.edu/data/acknowledging-argo/",
+      "https://cchdo.ucsd.edu/submit"
+    ],
+    "missingEvidence": [
+      "Independent acceptance of source, scope, reuse and field-linked design remains pending."
+    ]
+  },
+  {
+    "conceptId": "399",
+    "originalSourceUrl": "https://world-processor.com/399/",
+    "originalQuestion": "Which power-generation emissions associated with computing travel beyond the places that consume it?",
+    "proposedTitle": "Acid Beyond the Cloud",
+    "proposedQuestion": "Which power-generation emissions associated with computing travel beyond the places that consume it?",
+    "claim": "AI-computing emissions can be studied, but a verified source-to-receptor acidification dataset has not been established.",
+    "sourceConnection": "Airborne pollution and ocean chemistry show environmental effects crossing political boundaries. Examine power-sector externalities associated with computing without attributing all pollution to AI. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "AI-computing emissions can be studied, but a verified source-to-receptor acidification dataset has not been established.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Obtain dated data-centre electricity demand with an explicit AI workload allocation and uncertainty.",
+      "Join generator-hour SO2/NOx emissions to the relevant electricity dispatch assumptions.",
+      "Run or retrieve a validated atmospheric transport model, with receptor locations, meteorology, baseline and uncertainty; do not map total acidification as AI-caused."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which power-generation emissions associated with computing travel beyond the places that consume it?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41893-025-01681-y",
+      "https://www.nature.com/articles/s41586-025-08832-3",
+      "https://hsph.harvard.edu/news/analyzing-air-pollution-health-economic-risks-from-ai-data-centers/"
+    ],
+    "missingEvidence": [
+      "Obtain dated data-centre electricity demand with an explicit AI workload allocation and uncertainty.",
+      "Join generator-hour SO2/NOx emissions to the relevant electricity dispatch assumptions.",
+      "Run or retrieve a validated atmospheric transport model, with receptor locations, meteorology, baseline and uncertainty; do not map total acidification as AI-caused."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.nature.com/articles/s41893-025-01681-y",
+        "finding": "US AI-server environmental scenarios quantify modeled resource impacts; they do not by themselves identify observed cross-border acid deposition from AI demand.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-025-08832-3",
+        "finding": "Cloud-service environmental analysis is relevant to infrastructure accounting, but the required SO2/NOx transport attribution is a different measurement problem.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://hsph.harvard.edu/news/analyzing-air-pollution-health-economic-risks-from-ai-data-centers/",
+        "finding": "Institutional research summary identifies air-pollution impacts as an active research route; an implementable facility-hour and receptor table was not obtained.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Obtain dated data-centre electricity demand with an explicit AI workload allocation and uncertainty.",
+      "Join generator-hour SO2/NOx emissions to the relevant electricity dispatch assumptions.",
+      "Run or retrieve a validated atmospheric transport model, with receptor locations, meteorology, baseline and uncertainty; do not map total acidification as AI-caused."
+    ]
+  },
+  {
+    "conceptId": "377",
+    "originalSourceUrl": "https://world-processor.com/377/",
+    "originalQuestion": "Do medical AI systems perform equally across sexes and places in external validation?",
+    "proposedTitle": "A Different Diagnosis",
+    "proposedQuestion": "Do medical AI systems perform equally across sexes and places in external validation?",
+    "claim": "Subgroup performance disparities are documented, but a comparable external-validation table with sex-specific denominators has not been assembled.",
+    "sourceConnection": "Male and female life expectancy are compared by country and disparity. Study independently validated diagnostic performance rather than infer health outcomes from deployment. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Subgroup performance disparities are documented, but a comparable external-validation table with sex-specific denominators has not been assembled.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Extract a single disease/model/operating-threshold external-validation table with sites, sex labels, sample counts and case prevalence.",
+      "Preserve sensitivity and false-positive rates with uncertainty; do not compare AUCs as patient outcomes.",
+      "Verify dataset reuse terms and the source’s handling of missing or nonbinary demographic records."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Do medical AI systems perform equally across sexes and places in external validation?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41591-021-01595-0",
+      "https://www.nature.com/articles/s41591-024-03113-4",
+      "https://www.nature.com/articles/s41467-024-52003-3"
+    ],
+    "missingEvidence": [
+      "Extract a single disease/model/operating-threshold external-validation table with sites, sex labels, sample counts and case prevalence.",
+      "Preserve sensitivity and false-positive rates with uncertainty; do not compare AUCs as patient outcomes.",
+      "Verify dataset reuse terms and the source’s handling of missing or nonbinary demographic records."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.nature.com/articles/s41591-021-01595-0",
+        "finding": "Chest-radiograph underdiagnosis study compares multiple clinical datasets and demographic groups; model/site/threshold definitions are essential.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41591-024-03113-4",
+        "finding": "Generalization limits for fair medical imaging show that an internal fairness result cannot be assumed to transfer; full publisher text access was unreliable.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41467-024-52003-3",
+        "finding": "Acquisition and demographic confounding complicate interpretation of apparent diagnostic disparities.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Extract a single disease/model/operating-threshold external-validation table with sites, sex labels, sample counts and case prevalence.",
+      "Preserve sensitivity and false-positive rates with uncertainty; do not compare AUCs as patient outcomes.",
+      "Verify dataset reuse terms and the source’s handling of missing or nonbinary demographic records."
+    ]
+  },
+  {
+    "conceptId": "373",
+    "originalSourceUrl": "https://world-processor.com/373/",
+    "originalQuestion": "Whose consent matters when AI-enabled exploration reaches seabeds and exclusive economic zones?",
+    "proposedTitle": "The Seabed Has Owners",
+    "proposedQuestion": "Whose consent matters when AI-enabled exploration reaches seabeds and exclusive economic zones?",
+    "claim": "A named AI-controlled seabed test has a public consultation record, but consultation is not evidence of consent or completed authorization.",
+    "sourceConnection": "Maritime economic jurisdictions make ocean resources and boundaries visible. Investigate documented AI-assisted marine exploration within explicitly labelled jurisdictions. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "A named AI-controlled seabed test has a public consultation record, but consultation is not evidence of consent or completed authorization.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Retrieve the final BGR EIS, consultation response table and any subsequent ISA decision or test report.",
+      "Record project status, responsible authority and specific legal instrument separately; distinguish international Area from EEZ rights.",
+      "Use published project geometry with verified reuse; do not infer blanket ownership, consent or mining approval from a consultation notice."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Whose consent matters when AI-enabled exploration reaches seabeds and exclusive economic zones?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.isa.org.jm/news/bgr-plans-stakeholder-consultations-for-environmental-impact-statement-on-ai-controlled-nodule-harvester-testing-in-the-eastern-bgr-contract-area/",
+      "https://isa.org.jm/protection-of-the-marine-environment/environmental-impact-assessments/",
+      "https://isa.org.jm/news/from-the-31st-to-the-32nd-session-advancing-the-mining-code-and-strengthening-the-common-heritage-of-humankind/"
+    ],
+    "missingEvidence": [
+      "Retrieve the final BGR EIS, consultation response table and any subsequent ISA decision or test report.",
+      "Record project status, responsible authority and specific legal instrument separately; distinguish international Area from EEZ rights.",
+      "Use published project geometry with verified reuse; do not infer blanket ownership, consent or mining approval from a consultation notice."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.isa.org.jm/news/bgr-plans-stakeholder-consultations-for-environmental-impact-statement-on-ai-controlled-nodule-harvester-testing-in-the-eastern-bgr-contract-area/",
+        "finding": "ISA announcement of 17 January 2025 describes BGR’s Eureka III image-controlled harvester, consultation from 20 January to 2 March 2025, and a planned January–February 2026 test. These are planned events, not proof the test occurred.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://isa.org.jm/protection-of-the-marine-environment/environmental-impact-assessments/",
+        "finding": "ISA distinguishes EIA requirements, environmental impact statements and contractor obligations for the international Area.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://isa.org.jm/news/from-the-31st-to-the-32nd-session-advancing-the-mining-code-and-strengthening-the-common-heritage-of-humankind/",
+        "finding": "September 2026 institutional update demonstrates that governance status needs a dated record, not a static jurisdiction assumption.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Retrieve the final BGR EIS, consultation response table and any subsequent ISA decision or test report.",
+      "Record project status, responsible authority and specific legal instrument separately; distinguish international Area from EEZ rights.",
+      "Use published project geometry with verified reuse; do not infer blanket ownership, consent or mining approval from a consultation notice."
+    ]
+  },
+  {
+    "conceptId": "366",
+    "originalSourceUrl": "https://world-processor.com/366/",
+    "originalQuestion": "Which subsea connections support access to AI services, and where are the publicly visible bottlenecks?",
+    "proposedTitle": "The Wet Internet",
+    "proposedQuestion": "Which subsea connections support access to AI services, and where are the publicly visible bottlenecks?",
+    "claim": "Cable infrastructure is observable, but a licensed current route table joined to AI-service access and bottleneck measurements is absent.",
+    "sourceConnection": "Submarine fibre routes are contrasted with high-volume voice-traffic corridors. Connect physical cable infrastructure to access and resilience without inventing AI traffic volumes. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Cable infrastructure is observable, but a licensed current route table joined to AI-service access and bottleneck measurements is absent.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Obtain an explicitly reusable dated route/landing-point dataset, or curate a bounded set of operator-confirmed routes with sourced geometry.",
+      "Verify active versus planned status and join dated outage/capacity observations.",
+      "Label connections as infrastructure context; only add AI access or bottleneck claims with independently measured service endpoints."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which subsea connections support access to AI services, and where are the publicly visible bottlenecks?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+      "https://www2.telegeography.com/license-geocoded-map-data",
+      "https://blog.google/intl/en-africa/company-news/inside-google/the-equiano-subsea-cable-has-arrived-in/"
+    ],
+    "missingEvidence": [
+      "Obtain an explicitly reusable dated route/landing-point dataset, or curate a bounded set of operator-confirmed routes with sourced geometry.",
+      "Verify active versus planned status and join dated outage/capacity observations.",
+      "Label connections as infrastructure context; only add AI access or bottleneck claims with independently measured service endpoints."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+        "finding": "Provider FAQ describes the active/planned cable inventory and explains that older public GitHub data are no longer maintained.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www2.telegeography.com/license-geocoded-map-data",
+        "finding": "Provider offers a geocoded-data licence; public map display rights must not be silently applied to the underlying route dataset.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://blog.google/intl/en-africa/company-news/inside-google/the-equiano-subsea-cable-has-arrived-in/",
+        "finding": "Operator announcements identify particular landing projects but do not reveal the amount of AI traffic or current congestion.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Obtain an explicitly reusable dated route/landing-point dataset, or curate a bounded set of operator-confirmed routes with sourced geometry.",
+      "Verify active versus planned status and join dated outage/capacity observations.",
+      "Label connections as infrastructure context; only add AI access or bottleneck claims with independently measured service endpoints."
+    ]
+  },
+  {
+    "conceptId": "359",
+    "originalSourceUrl": "https://world-processor.com/359/",
+    "originalQuestion": "Can shipboard outbreak models give useful warning before passengers become ill?",
+    "proposedTitle": "Outbreak at Sea",
+    "proposedQuestion": "Can shipboard outbreak models give useful warning before passengers become ill?",
+    "claim": "Automated cruise-outbreak forecasting has retrospective evidence, but the located study uses mechanistic transmission models rather than an established AI intervention.",
+    "sourceConnection": "Cruise routes are overlaid with outbreaks and differing numbers of affected passengers. Compare evaluated outbreak-warning systems with observed maritime health events. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Automated cruise-outbreak forecasting has retrospective evidence, but the located study uses mechanistic transmission models rather than an established AI intervention.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Identify a genuinely ML-based shipboard model and extract prospective or strictly out-of-time forecast dates, horizon, observed cases and baseline scores.",
+      "Preserve voyage-level denominators, underreporting and uncertainty.",
+      "Alternatively explicitly commission a non-AI automated-modelling reframe; do not relabel the existing mechanistic study as AI."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Can shipboard outbreak models give useful warning before passengers become ill?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://pubmed.ncbi.nlm.nih.gov/40194583/",
+      "https://academic.oup.com/jtm/article/32/7/taaf059/8174851",
+      "https://www.cdc.gov/vessel-sanitation/cruise-ship-outbreaks/earlier-outbreaks.html"
+    ],
+    "missingEvidence": [
+      "Identify a genuinely ML-based shipboard model and extract prospective or strictly out-of-time forecast dates, horizon, observed cases and baseline scores.",
+      "Preserve voyage-level denominators, underreporting and uncertainty.",
+      "Alternatively explicitly commission a non-AI automated-modelling reframe; do not relabel the existing mechanistic study as AI."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40194583/",
+        "finding": "Primary 2025 abstract evaluates seven historical 2011–2013 norovirus outbreaks totaling 359 cases, using superspreading/isolation models and probabilistic forecast scores; it does not establish prospective AI alerts or prevented illness.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://academic.oup.com/jtm/article/32/7/taaf059/8174851",
+        "finding": "A separate 2025 ship-outbreak analysis concerns transmission and isolation; it is not evidence that a machine-learning warning system improves outcomes.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.cdc.gov/vessel-sanitation/cruise-ship-outbreaks/earlier-outbreaks.html",
+        "finding": "CDC event counts offer outcome context but do not contain model alert timestamps or counterfactual warning performance.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Identify a genuinely ML-based shipboard model and extract prospective or strictly out-of-time forecast dates, horizon, observed cases and baseline scores.",
+      "Preserve voyage-level denominators, underreporting and uncertainty.",
+      "Alternatively explicitly commission a non-AI automated-modelling reframe; do not relabel the existing mechanistic study as AI."
+    ]
+  },
+  {
+    "conceptId": "355",
+    "originalSourceUrl": "https://world-processor.com/355/",
+    "originalQuestion": "How reliably can AI detect sharks across changing water, light and species conditions?",
+    "proposedTitle": "A Camera in the Surf",
+    "proposedQuestion": "How reliably can AI detect sharks across changing water, light and species conditions?",
+    "claim": "Drone surveillance is deployed, but vendor detection claims and human observer trials do not provide a validated AI shark-safety performance table.",
+    "sourceConnection": "Historical shark-attack counts and concentrations are rendered through different regional encodings. Compare validated detection performance with the conditions of actual coastal deployment. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Drone surveillance is deployed, but vendor detection claims and human observer trials do not provide a validated AI shark-safety performance table.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Extract identified model/version, sea conditions, shark species, true-event counts, misses and false alarms from an evaluated AI trial.",
+      "Separate human-assisted drone spotting from autonomous detection.",
+      "Do not turn detection accuracy into an estimate of swimmer safety without an outcome study."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How reliably can AI detect sharks across changing water, light and species conditions?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.dpi.qld.gov.au/initiatives/sharksmart/equipment/drones",
+      "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/c9cbd6dc-95ec-4c85-9657-4a739280b382/queensland-sharksmart-drone-trial-final-report.pdf",
+      "https://doi.org/10.1071/WR18119"
+    ],
+    "missingEvidence": [
+      "Extract identified model/version, sea conditions, shark species, true-event counts, misses and false alarms from an evaluated AI trial.",
+      "Separate human-assisted drone spotting from autonomous detection.",
+      "Do not turn detection accuracy into an estimate of swimmer safety without an outcome study."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.dpi.qld.gov.au/initiatives/sharksmart/equipment/drones",
+        "finding": "Queensland program describes drone operations; deployment is not a model confusion matrix.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.publications.qld.gov.au/ckan-publications-attachments-prod/resources/c9cbd6dc-95ec-4c85-9657-4a739280b382/queensland-sharksmart-drone-trial-final-report.pdf",
+        "finding": "Final 2020–2024 trial report is the relevant primary evaluation route; location-specific AI training and visibility constraints require careful extraction.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://doi.org/10.1071/WR18119",
+        "finding": "Controlled shark-detection research concerns observer/visibility performance and must not be misrepresented as modern AI performance.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Extract identified model/version, sea conditions, shark species, true-event counts, misses and false alarms from an evaluated AI trial.",
+      "Separate human-assisted drone spotting from autonomous detection.",
+      "Do not turn detection accuracy into an estimate of swimmer safety without an outcome study."
+    ]
+  },
+  {
+    "conceptId": "346",
+    "originalSourceUrl": "https://world-processor.com/346/",
+    "originalQuestion": "Where do AI earthquake detectors improve catalogue completeness, and where are sensors still absent?",
+    "proposedTitle": "The Listening Earth",
+    "proposedQuestion": "Where do AI earthquake detectors improve catalogue completeness, and where are sensors still absent?",
+    "claim": "Public expanded earthquake catalogs exist, but catalog growth cannot automatically be attributed to AI or compared as changing seismic activity.",
+    "sourceConnection": "Plate boundaries and movement directions turn slow geological motion into a visible pattern. Compare validated seismic detection gains against instrument coverage and local geological conditions. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Public expanded earthquake catalogs exist, but catalog growth cannot automatically be attributed to AI or compared as changing seismic activity.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Retrieve the Cahuilla catalog with documented ML stage and source citation/reuse conditions.",
+      "Join a fixed-footprint conventional catalog over identical time and magnitude-completeness limits; preserve location errors.",
+      "If using raw events only, reframe as one reconstructed swarm and omit claims about worldwide detection improvement or seismic hazard."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Where do AI earthquake detectors improve catalogue completeness, and where are sensors still absent?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://scedc.caltech.edu/data/qtm-catalog.html",
+      "https://scedc.caltech.edu/data/cahuilla-swarm.html",
+      "https://scedc.caltech.edu/data/deeplearning.html"
+    ],
+    "missingEvidence": [
+      "Retrieve the Cahuilla catalog with documented ML stage and source citation/reuse conditions.",
+      "Join a fixed-footprint conventional catalog over identical time and magnitude-completeness limits; preserve location errors.",
+      "If using raw events only, reframe as one reconstructed swarm and omit claims about worldwide detection improvement or seismic hazard."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://scedc.caltech.edu/data/qtm-catalog.html",
+        "finding": "The major 2008–2017 QTM catalog uses template matching; its headline expansion is not proof of machine-learning detection.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://scedc.caltech.edu/data/cahuilla-swarm.html",
+        "finding": "The 2016–2019 Cahuilla catalog publishes event times, relocated positions and errors; magnitudes were explicitly not calculated for this study.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://scedc.caltech.edu/data/deeplearning.html",
+        "finding": "Deep-learning training waveforms provide a research input, not a directly comparable count of independently verified earthquakes.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Retrieve the Cahuilla catalog with documented ML stage and source citation/reuse conditions.",
+      "Join a fixed-footprint conventional catalog over identical time and magnitude-completeness limits; preserve location errors.",
+      "If using raw events only, reframe as one reconstructed swarm and omit claims about worldwide detection improvement or seismic hazard."
+    ]
+  },
+  {
+    "conceptId": "319",
+    "originalSourceUrl": "https://world-processor.com/319/",
+    "originalQuestion": "How do submarine route length and landing access shape the delay of distant AI services?",
+    "proposedTitle": "Latency Has an Ocean",
+    "proposedQuestion": "How do submarine route length and landing access shape the delay of distant AI services?",
+    "claim": "Latency measurements and cable routes can each be sourced, but a trustworthy join from a given AI request to a subsea route is not established.",
+    "sourceConnection": "Submarine cable routes are weighted by capacity while their physical vulnerabilities are described. Study measured latency alongside documented cables without claiming a cable carries specific AI traffic. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Latency measurements and cable routes can each be sourced, but a trustworthy join from a given AI request to a subsea route is not established.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Freeze a public measurement ID set with probe coordinates, target identity, timestamp and RTT distribution.",
+      "Distinguish propagation, network routing and server/inference latency; retain unknown physical path.",
+      "Only infer cable route with independent path evidence; otherwise present measured network latency as context with no cable attribution."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How do submarine route length and landing access shape the delay of distant AI services?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://atlas.ripe.net/",
+      "https://atlas.ripe.net/docs/getting-started/well-known-measurements",
+      "https://labs.ripe.net/author/rehan_noordally/using-ripe-atlas-to-measure-latency-to-reunion-island/"
+    ],
+    "missingEvidence": [
+      "Freeze a public measurement ID set with probe coordinates, target identity, timestamp and RTT distribution.",
+      "Distinguish propagation, network routing and server/inference latency; retain unknown physical path.",
+      "Only infer cable route with independent path evidence; otherwise present measured network latency as context with no cable attribution."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://atlas.ripe.net/",
+        "finding": "RIPE Atlas provides public network measurements; an explicitly dated measurement/probe/target selection is still required.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://atlas.ripe.net/docs/getting-started/well-known-measurements",
+        "finding": "Built-in and well-known measurements help define a reproducible latency extraction, but do not identify AI processing delay.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://labs.ripe.net/author/rehan_noordally/using-ripe-atlas-to-measure-latency-to-reunion-island/",
+        "finding": "Reunion case study demonstrates route/latency investigation, but historical traceroutes are not current global cable-to-AI traffic observations.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Freeze a public measurement ID set with probe coordinates, target identity, timestamp and RTT distribution.",
+      "Distinguish propagation, network routing and server/inference latency; retain unknown physical path.",
+      "Only infer cable route with independent path evidence; otherwise present measured network latency as context with no cable attribution."
+    ]
+  },
+  {
+    "conceptId": "291",
+    "originalSourceUrl": "https://world-processor.com/291/",
+    "originalQuestion": "Can AI distinguish aerosol sources from satellite observations when different sources overlap?",
+    "proposedTitle": "Atmosphere, Inferred",
+    "proposedQuestion": "Can AI distinguish aerosol sources from satellite observations when different sources overlap?",
+    "claim": "AI aerosol-property retrieval exists, but source attribution under overlapping aerosol mixtures needs different ground truth.",
+    "sourceConnection": "Desertification, volcanic activity and impacts represent different atmospheric particle sources. Evaluate source-attribution models against ground observations and explicit uncertainty. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "AI aerosol-property retrieval exists, but source attribution under overlapping aerosol mixtures needs different ground truth.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Choose a named source-attribution model with held-out sites/times and independently measured aerosol composition labels.",
+      "Extract class-specific confusion matrices, sample counts, mixed-source treatment and uncertainty.",
+      "Keep satellite retrieval uncertainty separate from confidence in causal source attribution; do not infer sources from colour alone."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Can AI distinguish aerosol sources from satellite observations when different sources overlap?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41467-024-52747-y",
+      "https://www.nature.com/articles/s41561-024-01427-z"
+    ],
+    "missingEvidence": [
+      "Choose a named source-attribution model with held-out sites/times and independently measured aerosol composition labels.",
+      "Extract class-specific confusion matrices, sample counts, mixed-source treatment and uncertainty.",
+      "Keep satellite retrieval uncertainty separate from confidence in causal source attribution; do not infer sources from colour alone."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.nature.com/articles/s41467-024-52747-y",
+        "finding": "Airborne/ML aerosol optical-property retrieval predicts properties; this is not automatically a validated classification of industrial, dust and volcanic sources.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41561-024-01427-z",
+        "finding": "Machine-learning analysis of volcanic cloud effects is a bounded physical study, not a global multi-source aerosol classifier.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Choose a named source-attribution model with held-out sites/times and independently measured aerosol composition labels.",
+      "Extract class-specific confusion matrices, sample counts, mixed-source treatment and uncertainty.",
+      "Keep satellite retrieval uncertainty separate from confidence in causal source attribution; do not infer sources from colour alone."
+    ]
+  },
+  {
+    "conceptId": "278",
+    "originalSourceUrl": "https://world-processor.com/278/",
+    "originalQuestion": "Where can AI assist treaty-monitoring analysis, and how are automated detections independently checked?",
+    "proposedTitle": "Signals Before Certainty",
+    "proposedQuestion": "Where can AI assist treaty-monitoring analysis, and how are automated detections independently checked?",
+    "claim": "Treaty-monitoring organizations discuss ML assistance, but a public independently checked event-detection benchmark has not been obtained.",
+    "sourceConnection": "Different sensing technologies form an international network for monitoring nuclear tests. Study published monitoring research while preserving the distinction between a signal and a verified event. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Treaty-monitoring organizations discuss ML assistance, but a public independently checked event-detection benchmark has not been obtained.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Obtain an openly reusable benchmark with waveform/source provenance, analyst labels, train/test separation and false-alarm/miss rates.",
+      "Document human review and corroborating sensor modalities.",
+      "Represent uncertain signals as uncertain; do not infer a nuclear test, responsible state or treaty violation from an automated detector."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Where can AI assist treaty-monitoring analysis, and how are automated detections independently checked?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://conferences.ctbto.org/event/30/contributions/6222/",
+      "https://www.ctbto.org/news-and-events/news/verification-today-tomorrow-together-highlights-snt2025",
+      "https://www.ctbto.org/node/9345"
+    ],
+    "missingEvidence": [
+      "Obtain an openly reusable benchmark with waveform/source provenance, analyst labels, train/test separation and false-alarm/miss rates.",
+      "Document human review and corroborating sensor modalities.",
+      "Represent uncertain signals as uncertain; do not infer a nuclear test, responsible state or treaty violation from an automated detector."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://conferences.ctbto.org/event/30/contributions/6222/",
+        "finding": "CTBTO scientific conference contribution identifies a research direction; a conference abstract alone is not a validated operational event dataset.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.ctbto.org/news-and-events/news/verification-today-tomorrow-together-highlights-snt2025",
+        "finding": "Institutional meeting account describes technologies and verification research, not false-alarm rates for a deployed AI system.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.ctbto.org/node/9345",
+        "finding": "HPC/ML workshop provides a current research route; event access and analyst review remain separate evidence requirements.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Obtain an openly reusable benchmark with waveform/source provenance, analyst labels, train/test separation and false-alarm/miss rates.",
+      "Document human review and corroborating sensor modalities.",
+      "Represent uncertain signals as uncertain; do not infer a nuclear test, responsible state or treaty violation from an automated detector."
+    ]
+  },
+  {
+    "conceptId": "262",
+    "originalSourceUrl": "https://world-processor.com/262/",
+    "originalQuestion": "Which wild crop relatives appear in AI breeding datasets, and which disappear before being represented?",
+    "proposedTitle": "Seeds the Model Missed",
+    "proposedQuestion": "Which wild crop relatives appear in AI breeding datasets, and which disappear before being represented?",
+    "claim": "Crop wild-relative collections are documented, but they cannot yet be joined to named AI breeding training sets with accession-level provenance.",
+    "sourceConnection": "Remaining wild ancestors of cultivated crops reveal the geography of agricultural biodiversity. Study training-data coverage and conservation needs while keeping prediction distinct from field success. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Crop wild-relative collections are documented, but they cannot yet be joined to named AI breeding training sets with accession-level provenance.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Select one public breeding model with a versioned training accession list and explicit reuse.",
+      "Join taxon/accession identifiers to Crop Trust or genebank holdings; preserve unmatched IDs.",
+      "Add conservation status with observation dates; do not equate absence from a training release with species extinction."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which wild crop relatives appear in AI breeding datasets, and which disappear before being represented?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.nature.com/articles/s41467-025-56330-x",
+      "https://www.nature.com/articles/s41467-022-33703-0",
+      "https://cwr.croptrust.org/resources/databases/"
+    ],
+    "missingEvidence": [
+      "Select one public breeding model with a versioned training accession list and explicit reuse.",
+      "Join taxon/accession identifiers to Crop Trust or genebank holdings; preserve unmatched IDs.",
+      "Add conservation status with observation dates; do not equate absence from a training release with species extinction."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.nature.com/articles/s41467-025-56330-x",
+        "finding": "Orphan-crop ML research highlights datasets and gaps but does not enumerate every model’s wild-relative training accessions.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41467-022-33703-0",
+        "finding": "Wild-relative distribution/conservation modelling addresses geographic conservation needs, not genomic AI breeding inclusion.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://cwr.croptrust.org/resources/databases/",
+        "finding": "Crop Trust collection databases provide accession context; collection presence is not evidence an accession trained a particular AI model.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Select one public breeding model with a versioned training accession list and explicit reuse.",
+      "Join taxon/accession identifiers to Crop Trust or genebank holdings; preserve unmatched IDs.",
+      "Add conservation status with observation dates; do not equate absence from a training release with species extinction."
+    ]
+  },
+  {
+    "conceptId": "6-2",
+    "originalSourceUrl": "https://world-processor.com/6-2-1/",
+    "originalQuestion": "How connected are ocean-monitoring systems that feed AI, and which waters remain unobserved?",
+    "proposedTitle": "One Ocean, Many Sensors",
+    "proposedQuestion": "How connected are ocean-monitoring systems that feed AI, and which waters remain unobserved?",
+    "claim": "Argo offers reproducible open ocean profiles and ML-derived products, but a frozen current observing-coverage extraction has not been validated.",
+    "sourceConnection": "The ocean is treated as one continuous planetary body supporting life and transport. Map verified observing coverage and data sharing rather than divide the ocean only by nations. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Argo offers reproducible open ocean profiles and ML-derived products, but a frozen current observing-coverage extraction has not been validated.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Download a specific monthly GDAC index/snapshot and retain DOI, profile date, position, sensor type and QC flags.",
+      "Define active observing coverage with a transparent time window and depth rule; distinguish unobserved from invalid or delayed data.",
+      "For a direct AI claim, join a named model’s documented training/validation profile list; otherwise label the map observing-system context."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How connected are ocean-monitoring systems that feed AI, and which waters remain unobserved?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://argo.ucsd.edu/about/",
+      "https://argo.ucsd.edu/data/argo-data-products/",
+      "https://sio-argo.ucsd.edu/",
+      "https://argo.ucsd.edu/data/acknowledging-argo/"
+    ],
+    "missingEvidence": [
+      "Download a specific monthly GDAC index/snapshot and retain DOI, profile date, position, sensor type and QC flags.",
+      "Define active observing coverage with a transparent time window and depth rule; distinguish unobserved from invalid or delayed data.",
+      "For a direct AI claim, join a named model’s documented training/validation profile list; otherwise label the map observing-system context."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://argo.ucsd.edu/about/",
+        "finding": "Program counts and sampling cadence describe a global observing system; rounded headline values are not a present-day coverage map.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://argo.ucsd.edu/data/argo-data-products/",
+        "finding": "Program catalog links derived products including ML analyses, but does not identify which exact float profiles trained each model.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://sio-argo.ucsd.edu/",
+        "finding": "Live float status is a useful acquisition route; a rendered current map alone is not a versioned latitude/longitude/QC dataset.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://argo.ucsd.edu/data/acknowledging-argo/",
+        "finding": "Monthly GDAC snapshot DOIs provide the appropriate reproducibility mechanism and explicit unrestricted data access.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Download a specific monthly GDAC index/snapshot and retain DOI, profile date, position, sensor type and QC flags.",
+      "Define active observing coverage with a transparent time window and depth rule; distinguish unobserved from invalid or delayed data.",
+      "For a direct AI claim, join a named model’s documented training/validation profile list; otherwise label the map observing-system context."
+    ]
+  },
+  {
+    "conceptId": "59-5",
+    "originalSourceUrl": "https://world-processor.com/059/",
+    "originalQuestion": "Where do AI forest-loss alerts lead to independently confirmed detections and useful action?",
+    "proposedTitle": "Forest, Pixel, Proof",
+    "proposedQuestion": "Where do AI forest-loss alerts lead to independently confirmed detections and useful action?",
+    "claim": "Forest alerts can support useful action, but the located intervention evidence bundles algorithms, training, incentives and enforcement.",
+    "sourceConnection": "Surviving and depleted rainforest areas are contrasted spatially. Compare validated forest-monitoring alerts with observation gaps and documented response outcomes. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Forest alerts can support useful action, but the located intervention evidence bundles algorithms, training, incentives and enforcement.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Retrieve the Peru trial’s complete effect estimates, uncertainty, randomized units and outcome definitions from primary tables.",
+      "Package the alert-plus-community intervention as the treatment, not AI alone.",
+      "Add alert validation and intervention follow-up separately before proposing a globe about both confirmed detections and successful action."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Where do AI forest-loss alerts lead to independently confirmed detections and useful action?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://doi.org/10.1073/pnas.2015171118",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8307376/",
+      "https://www.nature.com/articles/s41558-021-01195-3"
+    ],
+    "missingEvidence": [
+      "Retrieve the Peru trial’s complete effect estimates, uncertainty, randomized units and outcome definitions from primary tables.",
+      "Package the alert-plus-community intervention as the treatment, not AI alone.",
+      "Add alert validation and intervention follow-up separately before proposing a globe about both confirmed detections and successful action."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://doi.org/10.1073/pnas.2015171118",
+        "finding": "Peru community-monitoring randomized trial combines satellite alerts, training and incentives; estimates are imprecise and cannot isolate AI. Full primary table retrieval was unsuccessful in this pass.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8307376/",
+        "finding": "Open repository route for the same trial was investigated; official full-text XML returned a server error, so effect-size/interval transcription is not accepted.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41558-021-01195-3",
+        "finding": "Authors’ policy brief reports that subscriptions help in some African enforcement contexts; it does not provide a standalone AI causal effect or all required estimates.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Retrieve the Peru trial’s complete effect estimates, uncertainty, randomized units and outcome definitions from primary tables.",
+      "Package the alert-plus-community intervention as the treatment, not AI alone.",
+      "Add alert validation and intervention follow-up separately before proposing a globe about both confirmed detections and successful action."
+    ]
+  },
+  {
+    "conceptId": "87-2",
+    "originalSourceUrl": "https://world-processor.com/872-ring-of-fire-2005/",
+    "originalQuestion": "Can AI improve earthquake warning without promising predictions that evidence cannot support?",
+    "proposedTitle": "Faults in the Forecast",
+    "proposedQuestion": "Can AI improve earthquake warning without promising predictions that evidence cannot support?",
+    "claim": "Earthquake early warning begins after rupture; no packaged prospective AI comparison supports a broader prediction claim.",
+    "sourceConnection": "Fault lines and substantial earthquake epicentres expose an active planetary belt. Keep earthquake detection, early warning and long-range prediction as distinct scientific claims. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Earthquake early warning begins after rupture; no packaged prospective AI comparison supports a broader prediction claim.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Choose one AI detector and obtain prospective alert logs with event IDs, alert timestamps, shaking arrival, false alerts and missed events.",
+      "Compare against an operational baseline under the same geography, threshold and sensor availability.",
+      "Use warning lead time after rupture, not a claimed time before the earthquake begins."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Can AI improve earthquake warning without promising predictions that evidence cannot support?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.usgs.gov/faqs/can-you-predict-earthquakes",
+      "https://www.usgs.gov/faqs/what-difference-between-earthquake-early-warning-earthquake-forecasts-earthquake-probabilities",
+      "https://pubs.usgs.gov/publication/70237095",
+      "https://earthquake.usgs.gov/data/products/"
+    ],
+    "missingEvidence": [
+      "Choose one AI detector and obtain prospective alert logs with event IDs, alert timestamps, shaking arrival, false alerts and missed events.",
+      "Compare against an operational baseline under the same geography, threshold and sensor availability.",
+      "Use warning lead time after rupture, not a claimed time before the earthquake begins."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.usgs.gov/faqs/can-you-predict-earthquakes",
+        "finding": "USGS distinguishes unsupported short-term prediction from operational risk and warning work.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://www.usgs.gov/faqs/what-difference-between-earthquake-early-warning-earthquake-forecasts-earthquake-probabilities",
+        "finding": "Definitions separate event detection, warning, probabilities and prediction; these cannot share a single accuracy score.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://pubs.usgs.gov/publication/70237095",
+        "finding": "Peer-reviewed warning-strategy work explains performance/alerting trade-offs; it does not itself establish an AI improvement across real events.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://earthquake.usgs.gov/data/products/",
+        "finding": "Public ShakeAlert notification data are a promising event-level outcome source, but require timestamps and algorithm-version linkage.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Choose one AI detector and obtain prospective alert logs with event IDs, alert timestamps, shaking arrival, false alerts and missed events.",
+      "Compare against an operational baseline under the same geography, threshold and sensor availability.",
+      "Use warning lead time after rupture, not a claimed time before the earthquake begins."
+    ]
+  },
+  {
+    "conceptId": "175",
+    "originalSourceUrl": "https://world-processor.com/175/",
+    "originalQuestion": "How much does AI improve near-Earth-object discovery, and which sky regions remain weakly surveyed?",
+    "proposedTitle": "The Rock We Almost Missed",
+    "proposedQuestion": "How much does AI improve near-Earth-object discovery, and which sky regions remain weakly surveyed?",
+    "claim": "Automated asteroid discoveries are real, but the prominent HelioLinc3D example is an orbit-linking algorithm and cannot be labelled ML without evidence.",
+    "sourceConnection": "Impact records highlight the difference between events occurring and events being observed. Evaluate validated discovery performance against telescope coverage and detection limits. The proposed evidence retains this connection through the explicitly stated question and scope.",
+    "reframeReason": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Automated asteroid discoveries are real, but the prominent HelioLinc3D example is an orbit-linking algorithm and cannot be labelled ML without evidence.",
+      "sourceIds": []
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Identify a confirmed ML-based NEO detection pipeline and a fixed survey test set with independent Minor Planet Center confirmations.",
+      "Extract completeness and false-positive rates by magnitude, sky region and observing cadence.",
+      "Keep orbital linking, machine-learning image detection and impact-risk assessment separate; no AI discovery-yield claim from an unlabelled algorithm."
+    ],
+    "limitations": [
+      "A source URL or plausible mechanism is not a populated, independently validated dataset."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "Display source quantities; no unsupported extremity score."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No forward model validated for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How much does AI improve near-Earth-object discovery, and which sky regions remain weakly surveyed?",
+    "rationale": "The available sources are relevant but do not yet support the original question at the required measurement and provenance standard.",
+    "searchedSources": [
+      "https://www.washington.edu/news/2023/07/31/heliolinc3d/",
+      "https://dirac.astro.washington.edu/new-algorithm-and-first-potentially-hazardous-asteroid-discovery/"
+    ],
+    "missingEvidence": [
+      "Identify a confirmed ML-based NEO detection pipeline and a fixed survey test set with independent Minor Planet Center confirmations.",
+      "Extract completeness and false-positive rates by magnitude, sky region and observing cadence.",
+      "Keep orbital linking, machine-learning image detection and impact-risk assessment separate; no AI discovery-yield claim from an unlabelled algorithm."
+    ],
+    "investigationFindings": [
+      {
+        "url": "https://www.washington.edu/news/2023/07/31/heliolinc3d/",
+        "finding": "University discovery account identifies 2022 SF289 and HelioLinc3D; algorithmic discovery alone does not prove AI assistance.",
+        "checkedAt": "2026-10-19"
+      },
+      {
+        "url": "https://dirac.astro.washington.edu/new-algorithm-and-first-potentially-hazardous-asteroid-discovery/",
+        "finding": "Research group explains orbital linking and follow-up; potentially hazardous classification is not an imminent-impact prediction.",
+        "checkedAt": "2026-10-19"
+      }
+    ],
+    "nextSteps": [
+      "Identify a confirmed ML-based NEO detection pipeline and a fixed survey test set with independent Minor Planet Center confirmations.",
+      "Extract completeness and false-positive rates by magnitude, sky region and observing cadence.",
+      "Keep orbital linking, machine-learning image detection and impact-risk assessment separate; no AI discovery-yield claim from an unlabelled algorithm."
+    ]
+  }
+]

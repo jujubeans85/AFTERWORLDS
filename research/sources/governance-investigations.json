@@ -1,0 +1,280 @@
+[
+  {
+    "conceptId":"420",
+    "sources":[
+      {"url":"https://www.europol.europa.eu/publications-events/main-reports/european-union-serious-and-organised-crime-threat-assessment","publisher":"Europol","reviewLevel":"primary report landing and indexed findings screened","finding":"SOCTA discusses criminal adaptation to AI; its strategic threat framing is not a transaction or AI-attributed illicit-market case census."},
+      {"url":"https://www.europol.europa.eu/publications-events/main-reports/internet-organised-crime-threat-assessment","publisher":"Europol","reviewLevel":"primary report catalogue screened","finding":"IOCTA provides a second cybercrime reporting channel; the inspected material does not supply a deduplicated country-level denominator for AI-enabled illicit markets."}
+    ],
+    "finding":"AI-assisted criminal activity and AI-assisted detection are different processes. Neither strategic report establishes where AI changed the volume of drug activity or separates reporting intensity from incidence.",
+    "missingEvidence":["Case-level public primary records identifying the AI function, event date and evidentiary status","A defensible comparison period or denominator if change is claimed","A deduplication method for incidents cited in multiple reports"],
+    "unblockSteps":["Build a selected, non-exhaustive case ledger from court judgments and agency case releases, preserving allegations versus findings.","Store reporting jurisdiction separately from confirmed activity jurisdiction; omit operational trafficking routes.","Promote only a qualitative case-existence question unless a consistent before/after or controlled measurement exists."],
+    "proposedDataContract":"case_id, agency, event_period, AI_function, evidence_status, reporting_jurisdiction, source_locator; no prevalence or criminal-origin inference",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"411",
+    "sources":[
+      {"url":"https://epoch.ai/data/ai-models-documentation","publisher":"Epoch AI","reviewLevel":"primary documentation read","finding":"Organization-country fields describe affiliations, not metropolitan research output or compute location."},
+      {"url":"https://www.eurohpc-ju.europa.eu/selection-first-seven-ai-factories-drive-europes-leadership-ai-2024-12-10_en","publisher":"EuroHPC JU","reviewLevel":"primary selection release read","finding":"Named hosts and consortia document selected infrastructure; their existence does not measure surrounding population access or regional research concentration."}
+    ],
+    "finding":"The concept requires three different spatial units to be harmonised: model-building affiliations, physical compute facilities and adjacent resident connectivity. A country affiliation cannot stand in for any metropolitan polygon.",
+    "missingEvidence":["Dated facility coordinates with operating status","Research affiliation records geocoded to a consistent metropolitan boundary version","Comparable nearby-region internet or compute access measures for the same period"],
+    "unblockSteps":["Select a fixed city boundary standard and year, then geocode deduplicated research affiliations from ROR/OpenAlex with uncertainty retained.","Validate named compute facilities against operator commissioning records.","Join a subnational connectivity dataset; display missing hinterland data openly instead of dark zero regions."],
+    "proposedDataContract":"metro_id, boundary_version, year, model_affiliations, facility_status, connectivity_metric, denominator, spatial_join_method",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"400",
+    "sources":[
+      {"url":"https://www.gao.gov/products/gao-27-107837","publisher":"US Government Accountability Office","reviewLevel":"primary 2026 product search result screened","finding":"A current GAO oversight entry is a candidate for documented military AI programme scope; source-level financial extraction has not been verified."},
+      {"url":"https://files.gao.gov/reports/GAO-26-107859/index.html","publisher":"US Government Accountability Office","reviewLevel":"primary report and indexed findings screened","finding":"GAO discusses a classified set of AI activities and a sample of 44 contracts from September2018–February2025. A sampled contract set is not national AI annual spending."}
+    ],
+    "finding":"Countries do not share a harmonised public military-AI budget category. Contract ceiling, obligation, expenditure and programme count cannot be pooled into a financial ranking.",
+    "missingEvidence":["Common AI procurement inclusion rules","Separate annual obligations and expenditure by currency and fiscal year","Coverage of classified or omitted programmes and comparable disclosure across countries"],
+    "unblockSteps":["Start with one country's public procurement ledger and label obligation/ceiling/outlay explicitly.","Audit a sample against award documents and remove duplicate amendments.","Allow a disclosure-completeness dossier; do not generalise sampled contracts to a cross-country spending total."],
+    "proposedDataContract":"award_id, fiscal_year, AI_scope_basis, financial_measure_type, value, currency, amendment_id, disclosure_gap",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"389",
+    "sources":[
+      {"url":"https://zenodo.org/records/18862237","publisher":"Zenodo research deposit","reviewLevel":"deposit metadata and description read","finding":"The March2026 deposit describes 1,000 curated Stable Diffusion silhouettes, 111 false silhouettes and a 32-item truth set. Its failure-rate language leaves the generation/curation denominator ambiguous."},
+      {"url":"https://aclanthology.org/2024.naacl-long.213/","publisher":"ACL / BorderLines authors","reviewLevel":"paper read","finding":"BorderLines tests territorial answers across languages, not generated coastline geometry; it cannot substitute for an image-map error rate."}
+    ],
+    "finding":"A promising map-image dataset exists, but curated correct images and separated failures are not automatically an unbiased generated-output sample. The deposit's stated percentage cannot be adopted without reconstructing the denominator and exclusion process.",
+    "missingEvidence":["Deposit reuse licence and complete versioned file manifest","Original prompt/model/seed and full unfiltered output count","Explicit coastline error definition and human or geometric validation procedure"],
+    "unblockSteps":["Resolve whether 111 failures are additional to or inside the 1,000 curated outputs; obtain the generation log.","Verify the licence for every image component and ground-truth map.","Freeze one model/version and prompt set, score all retained outputs against a licensed reference under a predeclared geometric rubric."],
+    "proposedDataContract":"output_id, model_version, prompt_id, seed, generation_date, inclusion_status, reference_projection, error_type, measured_distance, adjudicator",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"370",
+    "sources":[
+      {"url":"https://www.sipri.org/databases/armstransfers","publisher":"SIPRI","reviewLevel":"primary database documentation screened","finding":"Conventional arms-transfer records and TIV measure a different construct from autonomous-function capability or monetary price."},
+      {"url":"https://www.sipri.org/research/armament-and-disarmament/emerging-military-and-security-technologies/autonomy-weapon-systems","publisher":"SIPRI","reviewLevel":"primary research programme screened","finding":"Autonomy research distinguishes functions; a drone label alone does not establish autonomous target selection or engagement."}
+    ],
+    "finding":"The export ledger and autonomy-function taxonomy have not been linked at the platform/version level. An announced sale, delivered system and demonstrated autonomous function are three separate facts.",
+    "missingEvidence":["Platform/version-specific primary documentation of autonomous functions","Export and delivery status tied to that exact configuration","Rights to redistribute any platform dataset and a non-operational geography policy"],
+    "unblockSteps":["Limit the initial dossier to public capability categories and confirmed procurement notices.","Record human authorisation, navigation and targeting functions separately without operational employment detail.","Use country-level selected procurement records only after confirming delivered configuration; keep proposed systems separate."],
+    "proposedDataContract":"platform_version, function_category, human_control_statement, export_notice_date, delivery_status, source_locator; no capability score",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"363",
+    "sources":[
+      {"url":"https://crimesolutions.ojp.gov/ratedprograms/predictive-policing-model-los-angeles-calif","publisher":"US National Institute of Justice / CrimeSolutions","reviewLevel":"primary evaluation summary screened","finding":"A historical Los Angeles experiment is relevant to measured outcomes, but not a current deployment census or subgroup-error audit."},
+      {"url":"https://crimesolutions.ojp.gov/ratedprograms/philadelphia-pa-predictive-policing-experiment-3pe","publisher":"US National Institute of Justice / CrimeSolutions","reviewLevel":"primary evaluation summary screened","finding":"The Philadelphia experiment has a different design and intervention; its effectiveness label cannot be pooled with model-score distributions."},
+      {"url":"https://www.ojp.gov/library/publications/evaluation-shreveport-predictive-policing-experiment","publisher":"US Office of Justice Programs","reviewLevel":"primary study catalogue screened","finding":"A third evaluated site confirms that intervention and study design must remain explicit; it does not identify present operational uses."}
+    ],
+    "finding":"Historical evaluations can support a dated experiment dossier. The proposed map additionally needs current deployment verification and unequal-error denominators, which these catalogue summaries do not supply.",
+    "missingEvidence":["Current agency confirmation of use or retirement and model version","False-positive/false-negative definitions with subgroup denominators","External audit data and routes by which affected communities challenged the system"],
+    "unblockSteps":["Extract each full evaluation protocol and outcome table as a separate experiment.","Obtain contemporary procurement or retirement records before assigning a present-use status.","Retain uncertainty and avoid coding recorded crime as ground-truth crime incidence."],
+    "proposedDataContract":"agency, city, model_version, deployment_start_end, study_design, outcome, subgroup, denominator, uncertainty, challenge_record",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"357",
+    "sources":[
+      {"url":"https://www.defense.gov/News/Speeches/Speech/Article/3578046/remarks-by-deputy-secretary-of-defense-kathleen-h-hicks-on-the-state-of-ai-in-t/","publisher":"US Department of Defense","reviewLevel":"primary policy speech screened","finding":"The stated policy retains human responsibility for nuclear employment; this is not proof of operational AI early-warning performance."},
+      {"url":"https://questions-statements.parliament.uk/written-questions/detail/2025-05-07/50541","publisher":"UK Parliament","reviewLevel":"primary parliamentary answer screened","finding":"The UK answer addresses human political control of nuclear decisions, not measured AI warning false alarms."}
+    ],
+    "finding":"Human-control commitments and tested warning capability are different evidence categories. Public statements do not establish deployed early-warning algorithms, false-alarm rates or decision latency.",
+    "missingEvidence":["Publicly declassified deployment or test report with a defined AI warning function","Test denominator and false-alarm/missed-detection uncertainty","Clear distinction between proposal, prototype, exercise and operational use"],
+    "unblockSteps":["Prepare a non-operational policy ledger if a reframe is accepted, keeping state commitments distinct from capabilities.","Promote performance claims only from an official declassified evaluation with denominators.","Omit asset positions, targets and tactical reaction-time simulations."],
+    "proposedDataContract":"jurisdiction, document_date, decision_role, test_or_policy_status, public_evidence_class; no invented warning intensity",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"352",
+    "sources":[
+      {"url":"https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf","publisher":"Ipsos","reviewLevel":"primary report and methodology read","finding":"The survey covers 32 markets with varying age and population coverage. Equal tiles would not make the markets equally representative."},
+      {"url":"https://epoch.ai/data/ai-models-documentation","publisher":"Epoch AI","reviewLevel":"primary documentation read","finding":"Model organization-country affiliations are selected public records, not a complete observation of every country."}
+    ],
+    "finding":"Equal visual space is a design experiment, not an independent AI measurement. A defensible comparison first requires a declared country universe, metric, date and missing-data treatment; none has been selected for this distinct concept.",
+    "missingEvidence":["A single clearly defined AI metric with a known sampled universe","An explicit visual weighting comparison and testable interpretation question","A missing-data tile state that cannot be mistaken for zero"],
+    "unblockSteps":["Choose one audited metric and preserve its exact geographic universe.","Implement equal-area and value-area modes from the same rows without changing the underlying values.","Report the change in visual representation as a design comparison, not a measured world trend; require a distinct user question before reusing another concept's data."],
+    "proposedDataContract":"entity_id, same_period_metric, sample_status, geographic_extent, equal_tile_weight=1, optional_population_weight with separate source",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"350",
+    "sources":[
+      {"url":"https://www.scotusblog.com/wp-content/uploads/2017/02/16-6387-op-bel-wis.pdf","publisher":"Wisconsin Supreme Court opinion, third-party hosted copy","reviewLevel":"primary judicial-document candidate located","finding":"State v. Loomis provides a historical judicial treatment of COMPAS; the mirror is not a current instrument deployment inventory."},
+      {"url":"https://bja.ojp.gov/program/psrac/validation/risk-validation","publisher":"US Bureau of Justice Assistance","reviewLevel":"primary validation guidance screened","finding":"Validation guidance distinguishes technical validation questions, but does not supply every deployed risk instrument's local error data."}
+    ],
+    "finding":"An opinion describing sentencing use cannot stand in for all detention decisions or show that an instrument remains active. External validation must match the jurisdiction, population and instrument version.",
+    "missingEvidence":["Verified primary court text with exact procedural holding","Current local use records and tool version","External validation by protected subgroup with outcome/recidivism definition and follow-up period"],
+    "unblockSteps":["Acquire the official court-hosted or authenticated opinion and code its scope without general legal advice.","Link each selected agency's dated adoption/retirement record to a public independent validation report.","Keep pretrial detention, sentencing and parole separate; never label risk scores as guilt."],
+    "proposedDataContract":"jurisdiction, decision_stage, instrument_version, use_status, validation_population, outcome_window, subgroup_error, audit_source",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"349",
+    "sources":[
+      {"url":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679","publisher":"European Union / EUR-Lex","reviewLevel":"official legal text indexed Article22 screened","finding":"GDPR Article22 addresses solely automated decisions with legal or similarly significant effects, with exceptions and safeguards. It is not a universal ban on all irreversible public decisions."},
+      {"url":"https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/advanced-analytics-overseas-family-class-spousal-partner-applications.html","publisher":"IRCC","reviewLevel":"primary implementation notice read","finding":"The selected Canadian systems retain officers' final decisions, but this programme-specific fact does not establish a national or global legal prohibition based on irreversibility."}
+    ],
+    "finding":"The proposed concept mixes legal restrictions, agency practice and a moral category of irreversibility. Those need separate operational definitions and jurisdiction-specific legal dates.",
+    "missingEvidence":["Defined decision categories and meaning of irreversible","Current consolidated law, exceptions, commencement and territorial application","Implementation evidence showing which rule applies to the documented system"],
+    "unblockSteps":["Reframe to a selected safeguards ledger with legal restrictions and operational policies in separate fields.","Verify the consolidated text and commencement for every legal provision immediately before publication.","Use qualified legal review for a claim that a final decision is prohibited; do not infer universal exclusion from one programme."],
+    "proposedDataContract":"jurisdiction, instrument, article, effective_date, decision_scope, exception, safeguard, implementation_case, reviewed_as_of",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"313",
+    "sources":[
+      {"url":"https://www.nist.gov/itl/ai-risk-management-framework","publisher":"NIST","reviewLevel":"primary framework screened","finding":"The risk framework supplies concepts and governance guidance, not scored people or a threshold-response distribution."},
+      {"url":"https://pages.nist.gov/frvt/html/frvt_demographics.html","publisher":"NIST FRTE","reviewLevel":"primary benchmark documentation screened","finding":"Demographic error reports show threshold-specific error analysis; rates depend on task, dataset and selected operating point."}
+    ],
+    "finding":"An interactive threshold globe could teach a real trade-off, but a smooth synthetic score distribution would invent evidence about people. No licensed score-level sample with ground truth and a defined threshold has been extracted.",
+    "missingEvidence":["Public model scores with labelled outcomes and benchmark version","Operating-point definition and class/subgroup denominators","Threshold curve computed from real records or directly published tables"],
+    "unblockSteps":["Choose one public benchmark task and extract its actual threshold/error table.","Expose false positives and false negatives separately with denominators and uncertainty.","Label the demonstration as benchmark behaviour; do not infer individual rights outcomes from a laboratory dataset."],
+    "proposedDataContract":"benchmark_version, model_id, threshold, false_positive_count, false_negative_count, positive_n, negative_n, subgroup, uncertainty",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"304",
+    "sources":[
+      {"url":"https://news.microsoft.com/source/2024/05/22/microsoft-and-g42-announce-1-billion-comprehensive-digital-ecosystem-initiative-for-kenya/","publisher":"Microsoft","reviewLevel":"primary announcement screened","finding":"The 2024 announcement describes a planned investment and partnership; it does not establish money spent, binding dependency clauses or current completed infrastructure."},
+      {"url":"https://www.kenyanews.go.ke/kenya-g42-microsoft-sign-letter-of-intent/","publisher":"Kenya News Agency","reviewLevel":"primary government announcement screened","finding":"The government-side source describes a letter of intent. A letter of intent cannot be treated as a fully delivered infrastructure contract."}
+    ],
+    "finding":"Both initial parties' announcements support that a proposal existed. Long-term dependency requires contractual terms and observed operation; amount announced is not delivered capacity or geopolitical control.",
+    "missingEvidence":["Executed contract/offtake terms and duration","Current commissioning or cancellation status confirmed by a primary party","Data governance, procurement alternatives and exit/portability conditions"],
+    "unblockSteps":["Obtain later primary status updates and distinguish memorandum, finance commitment, construction and operation.","Create a contract-feature ledger only for disclosed clauses, leaving confidential provisions unknown.","Do not assign recipient countries a dependency score from investment announcements."],
+    "proposedDataContract":"agreement_id, parties, instrument_type, date, status_as_of, disclosed_term, duration, exit_clause, evidence_gap",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"263",
+    "sources":[
+      {"url":"https://www.gsb.stanford.edu/faculty-research/publications/how-do-social-media-feed-algorithms-affect-attitudes-behavior","publisher":"Stanford GSB / study authors","reviewLevel":"first-party research abstract screened","finding":"The 2020 US election experiment changed feeds and measured engagement and attitudes. Reduced engagement and no significant effect on selected attitudes are different findings; one cannot be relabelled harm."},
+      {"url":"https://doi.org/10.1126/science.abp9364","publisher":"Study authors / Science","reviewLevel":"primary paper identifier and abstract screened","finding":"A specific randomized feed intervention can support causal inference within its sample and window; the numerical outcome tables and reuse-ready data have not been extracted."}
+    ],
+    "finding":"Time spent is not itself a validated harm measure, and a three-month US experiment is not a worldwide current AI-personalisation effect. The necessary treatment/outcome definitions and numerical intervals must travel with any claim.",
+    "missingEvidence":["Full experiment outcome estimates, confidence intervals and preregistration","Sample, attrition and treatment-compliance information","Accessible reusable data or published table values for an explicitly defined harm outcome"],
+    "unblockSteps":["Select one preregistered outcome rather than an omnibus engagement-harm score.","Extract the full treatment effect and interval, preserving null results and comparison group.","Represent the experiment on an abstract sphere; do not spread a US sample effect over all countries."],
+    "proposedDataContract":"experiment_id, population, treatment, comparator, outcome_definition, estimate, confidence_interval, observation_window, attrition",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"241",
+    "sources":[
+      {"url":"https://www.ripe.net/analyse/internet-measurements/ripe-atlas/how-ripe-atlas-works/","publisher":"RIPE NCC","reviewLevel":"primary measurement documentation screened","finding":"RIPE Atlas documents distributed network measurements. Network round-trip latency is not AI service end-to-end generation latency."},
+      {"url":"https://atlas.ripe.net/docs/getting-started/well-known-measurements/","publisher":"RIPE NCC","reviewLevel":"primary measurement catalogue screened","finding":"Known targets include major service infrastructure, but measurements do not identify model, input tokens, queuing or output generation."}
+    ],
+    "finding":"A global ping map would overclaim AI reach. The concept requires repeated measurements of an authorised, fixed AI endpoint from known clients with network, queue and generation time separated.",
+    "missingEvidence":["Fixed endpoint/model version and permitted measurement protocol","Timestamped client regions and request/response metadata","Repeated distribution of time-to-first-token and total latency with payload control"],
+    "unblockSteps":["Choose a non-sensitive public benchmark or authorised endpoint and record model/service region and sampling policy.","Measure identical inputs with input/output token counts and separate network baseline.","Publish p50/p95, failures and client sampling gaps; define the task's latency threshold before drawing reach bands."],
+    "proposedDataContract":"measurement_id, timestamp, client_region, endpoint_region, model_version, input_tokens, output_tokens, network_rtt_ms, ttft_ms, total_ms, status",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"227",
+    "sources":[
+      {"url":"https://docs.fcc.gov/public/attachments/DOC-405811A1.pdf","publisher":"US Federal Communications Commission","reviewLevel":"official release indexed; direct retrieval blocked","finding":"The September2024 release identifies an enforcement action concerning AI voice impersonation in New Hampshire. Search evidence is insufficient to extract precise call reach and adjudicated wording."},
+      {"url":"https://docs.fcc.gov/public/attachments/FCC-24-104A1.pdf","publisher":"US Federal Communications Commission","reviewLevel":"official order located; direct fetch returned403","finding":"The underlying order is the preferable evidence for the fine and record, but a full checked extraction is still required."}
+    ],
+    "finding":"A verified synthetic-voice election case is a strong candidate, but it is not a thousand-persona census. Dialled numbers, answered calls, unique recipients, exposure and persuasion are distinct denominators.",
+    "missingEvidence":["Retrievable authenticated full enforcement order","Exact reach unit and uncertainty, including duplicate recipients","A clear distinction between impersonated voice, synthetic persona network and electoral effect"],
+    "unblockSteps":["Retrieve an official accessible mirror or government archive of FCC24-104 and extract exact findings with page references.","Publish a selected case dossier if reach is unavailable; never infer electoral effect from a fine.","Keep allegations, commission findings and subsequent litigation status separate."],
+    "proposedDataContract":"case_id, event_date, AI_medium, jurisdiction, adjudicative_status, reach_value, reach_unit, uncertainty, source_page",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"225",
+    "sources":[
+      {"url":"https://www.europol.europa.eu/publications-events/main-reports/tesat-report","publisher":"Europol","reviewLevel":"primary report series screened","finding":"TE-SAT covers terrorism trends and emerging technology use but attack counts are not a denominator for AI-generated propaganda."},
+      {"url":"https://www.europol.europa.eu/cms/sites/default/files/documents/TE-SAT%202025%20-%20Summary%20-%20EN.pdf","publisher":"Europol","reviewLevel":"primary report summary screened","finding":"AI-related extremist-content discussion is qualitative; the inspected summary does not provide a time-matched diffusion network or measured audience reach."}
+    ],
+    "finding":"Offline incidents and online synthetic media do not form a causal pair simply because they occur in the same country or year. The missing evidence is item-level timing and propagation, not a total terrorism count.",
+    "missingEvidence":["Verified synthetic-content classification and safe metadata-only corpus","Timestamped redistribution/reach observations with platform sampling rules","Documented link to the referenced event, separated from a causal influence claim"],
+    "unblockSteps":["Use a vetted research dataset with content hashes and neutral labels rather than republishing propaganda.","Record first observation, reposts and measurement coverage; remove direct recruitment content and personal data.","Restrict animation to documented observation paths; label unknown reach explicitly."],
+    "proposedDataContract":"content_hash, AI_evidence, neutral_content_category, first_observed, referenced_event_id, platform_sample, reach_measure, measurement_limit",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"11",
+    "sources":[
+      {"url":"https://epoch.ai/data/notable_ai_models.csv","publisher":"Epoch AI","reviewLevel":"full1078-row primary CSV inspected and selected extract built","finding":"Multi-country organization affiliations make full counting versus fractional counting a viable denominator experiment; raw model counts are not per-person capability."},
+      {"url":"https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf","publisher":"Ipsos","reviewLevel":"primary report and methodology read","finding":"Changing country survey age ranges and connected-population samples means superficially similar percentages may have different denominators."}
+    ],
+    "finding":"There are concrete routes to a denominator audit, but no separately validated transform currently powers this concept. Reusing a ready ranking without implementing both declared denominator choices would add no new evidence.",
+    "missingEvidence":["Two explicit comparison formulas using the same rows and observation window","Treatment of multi-country affiliations and missing country metadata","Resulting populated ranks with tied-rank and uncertainty rules"],
+    "unblockSteps":["Freeze one year of Epoch model records and retain every named country affiliation.","Implement full-count and fractional-count transforms, disclosing that total attribution differs between methods.","Independently verify rank reversals and avoid calling organization nationality physical compute geography."],
+    "proposedDataContract":"year, country_affiliation, full_count, fractional_count, eligible_n, omitted_n, rank_method, fractional_formula=1/number_of_affiliations",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"37-3",
+    "sources":[
+      {"url":"https://aclanthology.org/2024.naacl-long.213/","publisher":"BorderLines authors / ACL","reviewLevel":"primary paper and tables read","finding":"Published aggregate cross-language consistency does not expose the paired per-prompt model responses needed for cross-model disagreement."},
+      {"url":"https://github.com/manestay/borderlines","publisher":"BorderLines research authors","reviewLevel":"repository candidate and tree screened","finding":"A research repository was located, but a complete reusable response table and explicit dataset licence were not confirmed in this audit."},
+      {"url":"https://arxiv.org/abs/2605.29025","publisher":"Research preprint authors","reviewLevel":"candidate metadata screened","finding":"A current model-disagreement study is a follow-up candidate; no frozen item-level response extraction has been accepted."}
+    ],
+    "finding":"Different aggregate scores do not show incompatible answers to the same question. The unit must be one precisely matched prompt and multiple versioned responses, with factual truth separated from legitimate interpretation.",
+    "missingEvidence":["Reusable paired prompts and outputs with model versions and collection dates","Sampling and retry settings","A reproducible disagreement taxonomy with ambiguity and contested-answer states"],
+    "unblockSteps":["Acquire licensed response records or run an authorised fixed prompt benchmark.","Blind-code disagreement types and allow multiple defensible answers where appropriate.","Use abstract paired response cells; never encode contested territorial claims as sovereign truth."],
+    "proposedDataContract":"prompt_id, exact_prompt, language, model_version, sampling_config, response, response_date, disagreement_type, adjudication_status",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"43-8",
+    "sources":[
+      {"url":"https://radar.cloudflare.com/ai-insights","publisher":"Cloudflare Radar","reviewLevel":"primary interactive dashboard screened","finding":"AI crawler and bot observations concern network traffic categories, not a census of unique human users or disclosed agents."},
+      {"url":"https://radar.cloudflare.com/year-in-review/2025","publisher":"Cloudflare Radar","reviewLevel":"primary annual report screened","finding":"Annual traffic summaries provide dated network context, but request share cannot be converted to population share."}
+    ],
+    "finding":"One person can create many requests and many accounts; a bot can create millions. A user/population globe needs unique-entity definitions and validated classification, which the inspected request-level dashboards do not supply.",
+    "missingEvidence":["Precisely defined entity universe: accounts, sessions, requests or unique people","Classifier version and error rates, especially unidentified automation","Fixed export window and transparent network sampling coverage"],
+    "unblockSteps":["Reframe explicitly to share of observed requests if a licensed fixed Radar export is obtained.","Keep verified bots, suspected automation and unknown traffic separate.","Do not compare request totals with human population or imply all automated traffic is generative AI."],
+    "proposedDataContract":"window_start_end, network_sample, request_class, request_count, classifier_version, classification_uncertainty; no unique-human inference",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"45",
+    "sources":[
+      {"url":"https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2022cv01461/575368/54/","publisher":"US District Court SDNY opinion, Justia mirror","reviewLevel":"primary judicial-text candidate screened","finding":"Mata v. Avianca is a documented generated-citation failure; a mirror alone still needs exact item/page verification for a populated citation ledger."},
+      {"url":"https://www.vawb.uscourts.gov/sites/default/files/conf%20materials/2024/02%20-%20Ethics%20Panel%20-%20AI.pdf","publisher":"US Bankruptcy Court Western District of Virginia","reviewLevel":"official-hosted judicial educational compilation located","finding":"The compilation contains the Mata example but is a secondary packaging of the underlying order, not a fresh measured model error-rate study."}
+    ],
+    "finding":"A fluent false-citation dossier is implementable in principle, but six citation strings and the court's exact findings must be checked before publishing. This would demonstrate one failure mode, not a current hallucination probability.",
+    "missingEvidence":["Authenticated order text and exact false-citation findings","Each citation's status and source-page locator","A question distinct from the related propagation concept53-2"],
+    "unblockSteps":["Extract the court-identified fabricated citations from the order into a selected case ledger, without recreating fake judgments.","Record the order date and finding; label the historical model and circumstances as limited evidence.","If current error frequency is desired, acquire a separately sampled, versioned fact-check benchmark with denominators."],
+    "proposedDataContract":"case_id, cited_authority_label, court_finding, order_date, page_locator, verification_state; no worldwide hallucination rate",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"53-2",
+    "sources":[
+      {"url":"https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2022cv01461/575368/54/","publisher":"US District Court SDNY opinion, Justia mirror","reviewLevel":"judicial timeline candidate screened","finding":"Procedural filings can establish a local sequence of false citations and correction, not the geographic propagation or audience reach of the underlying claims."},
+      {"url":"https://www.ap.org/the-definitive-source/announcements/ap-updates-newsroom-standards-for-artificial-intelligence/","publisher":"Associated Press","reviewLevel":"primary policy read","finding":"A correction/disclosure standard is governance evidence, not a measured diffusion graph or correction latency dataset."}
+    ],
+    "finding":"A claim's appearance in multiple documents is not enough to infer transmission, causal influence or global spread. The initial statement, reposts and correction observations need time and source identity, plus a known collection boundary.",
+    "missingEvidence":["Versioned statement identifier and evidence of AI origin","Timestamped observed retransmission edges","Correction timestamps, audience coverage and observation censoring"],
+    "unblockSteps":["Choose a public claim with licensed archival observations and trace only observed links.","Keep first publication, first observation and correction separate.","Represent unobserved spread as unknown; avoid animated continental waves invented from a single case."],
+    "proposedDataContract":"claim_id, AI_provenance, source_post_id, observed_at, published_at, parent_link_evidence, correction_at, capture_boundary",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"65-5",
+    "sources":[
+      {"url":"https://www.un.org/en/unpdf/peace-and-security-2023-03","publisher":"United Nations Peace and Development Trust Fund","reviewLevel":"official project indexed; direct page fetch blocked","finding":"The Unite Aware project mentions mission information platforms in Cyprus, Central African Republic and South Sudan. Digital situational awareness is not by itself documented AI deployment."},
+      {"url":"https://peacekeeping.un.org/en/strategy-for-the-digital-transformation-of-un-peacekeeping","publisher":"UN Peacekeeping","reviewLevel":"primary digital-transformation strategy screened","finding":"The strategy supplies institutional intentions and oversight context; it cannot establish which AI function has operated in each mission."}
+    ],
+    "finding":"The available UN material is a credible starting point for digital peacekeeping context, but the proposed concept requires verified AI function, operational status and civilian oversight. Generic digital platforms must not be relabelled AI.",
+    "missingEvidence":["Mission-specific official AI deployment description and version/date","Oversight mandate, data protection and civilian complaint process","Evidence distinguishing pilot, planned capacity and operational tool"],
+    "unblockSteps":["Retrieve the full project evaluation and confirm whether the installed modules use AI.","Request or locate public mission technology and oversight documents.","If no AI evidence emerges, keep the concept on hold or reframe openly as digital context without claiming AI-attributed outcomes."],
+    "proposedDataContract":"mission, country, function, AI_evidence, pilot_or_operational, status_date, civilian_oversight_source; no troop or tactical locations",
+    "verdict":"hold"
+  },
+  {
+    "conceptId":"118",
+    "sources":[
+      {"url":"https://atlas.ripe.net/docs/getting-started/well-known-measurements/","publisher":"RIPE NCC","reviewLevel":"primary measurement catalogue screened","finding":"Network timing data can show delay, but does not establish application clocks, agent event order or information staleness."},
+      {"url":"https://arxiv.org/abs/2601.10560","publisher":"Research preprint authors","reviewLevel":"latency-aware multi-agent study candidate screened","finding":"A multi-agent latency research candidate was located; no reusable clock-offset and information-age trace has been verified for this globe."}
+    ],
+    "finding":"Timezone differences are not clock errors. Distributed agents' disagreement about order or freshness must be measured from synchronized traces with an explicit clock model, not inferred from geographic longitude.",
+    "missingEvidence":["Versioned agent traces with wall-clock and monotonic timestamps","Clock-synchronisation method, measured offsets and network delay","Defined stale-information or coordination-failure outcomes"],
+    "unblockSteps":["Acquire a public reproducible multi-agent experiment or generate a labelled synthetic educational demonstration clearly separated from research data.","For empirical status, retain send/receive times, clock uncertainty, model version and observation age.","Render an abstract event-order sphere; use no country map unless actual deployment locations are evidenced."],
+    "proposedDataContract":"trace_id, agent_id, event_id, send_time, receive_time, monotonic_time, clock_offset_uncertainty, information_timestamp, coordination_outcome",
+    "verdict":"hold"
+  }
+]

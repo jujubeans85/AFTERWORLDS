@@ -1,0 +1,916 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AFTERWORLD per-concept independent research review",
+  "description": "Structural validation only; passing does not verify source truth or confer acceptance.",
+  "type": "object",
+  "required": [
+    "conceptId",
+    "originalSourceUrl",
+    "originalQuestion",
+    "proposedTitle",
+    "proposedQuestion",
+    "claim",
+    "sourceConnection",
+    "reframeReason",
+    "aiRelationship",
+    "datasetIds",
+    "designId",
+    "verdict",
+    "blockers",
+    "limitations",
+    "scoring",
+    "forecast",
+    "review"
+  ],
+  "properties": {
+    "conceptId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "originalSourceUrl": {
+      "type": "string",
+      "minLength": 1
+    },
+    "originalQuestion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "proposedTitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "proposedQuestion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceConnection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reframeReason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aiRelationship": {
+      "type": "object",
+      "required": [
+        "class",
+        "justification",
+        "sourceIds"
+      ],
+      "properties": {
+        "class": {
+          "enum": [
+            "direct",
+            "context",
+            "illustrative"
+          ]
+        },
+        "justification": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "datasetIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "designId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verdict": {
+      "enum": [
+        "direct-ready",
+        "context-ready",
+        "reframe-ready",
+        "hold",
+        "reject"
+      ]
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "scoring": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "const": "none"
+            }
+          },
+          "additionalProperties": true
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "label",
+            "formula",
+            "inputs",
+            "weights",
+            "domain",
+            "direction",
+            "baseline",
+            "normalization",
+            "temporalComparability",
+            "clipping",
+            "missingData",
+            "uncertainty",
+            "validation"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "source-index",
+                "constructed-index"
+              ]
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "formula": {
+              "type": "string",
+              "minLength": 1
+            },
+            "inputs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "weights": {
+              "type": [
+                "object",
+                "array",
+                "null"
+              ]
+            },
+            "domain": {
+              "type": "string",
+              "minLength": 1
+            },
+            "direction": {
+              "type": "string",
+              "minLength": 1
+            },
+            "baseline": {
+              "type": "string",
+              "minLength": 1
+            },
+            "normalization": {
+              "type": "string",
+              "minLength": 1
+            },
+            "temporalComparability": {
+              "type": "string",
+              "minLength": 1
+            },
+            "clipping": {
+              "type": "string",
+              "minLength": 1
+            },
+            "missingData": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uncertainty": {
+              "type": "string",
+              "minLength": 1
+            },
+            "validation": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    "forecast": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "const": "none"
+            }
+          },
+          "additionalProperties": true
+        },
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "sourceIds",
+            "methodology",
+            "horizon",
+            "scenario",
+            "assumptions",
+            "uncertainty",
+            "validation",
+            "codePath"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "published-forecast",
+                "published-scenario",
+                "original-model"
+              ]
+            },
+            "sourceIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "methodology": {
+              "type": "string",
+              "minLength": 1
+            },
+            "horizon": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scenario": {
+              "type": "string",
+              "minLength": 1
+            },
+            "assumptions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "uncertainty": {
+              "type": "string",
+              "minLength": 1
+            },
+            "validation": {
+              "type": "string",
+              "minLength": 1
+            },
+            "codePath": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "gates",
+        "score",
+        "scoreBreakdown",
+        "reviewer",
+        "reviewedAt",
+        "datasetDigests"
+      ],
+      "properties": {
+        "gates": {
+          "type": "object",
+          "required": [
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5",
+            "G6",
+            "G7",
+            "G8",
+            "G9",
+            "G10"
+          ],
+          "properties": {
+            "G1": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G2": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G3": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G4": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G5": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G6": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G7": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G8": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G9": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            },
+            "G10": {
+              "type": "object",
+              "required": [
+                "status",
+                "evidence",
+                "reason"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unchecked"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "score": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "scoreBreakdown": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "category",
+              "earned",
+              "possible",
+              "reason",
+              "evidence"
+            ],
+            "properties": {
+              "category": {
+                "type": "string",
+                "minLength": 1
+              },
+              "earned": {
+                "type": "number",
+                "minimum": 0
+              },
+              "possible": {
+                "type": "number",
+                "minimum": 0
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "datasetDigests": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "direct-ready",
+              "context-ready",
+              "reframe-ready"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "datasetIds": {
+            "minItems": 1
+          },
+          "designId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "blockers": {
+            "maxItems": 0
+          },
+          "review": {
+            "properties": {
+              "score": {
+                "type": "number",
+                "minimum": 92
+              },
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewedAt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "datasetDigests": {
+                "minProperties": 1
+              },
+              "gates": {
+                "properties": {
+                  "G1": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G2": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G3": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G4": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G5": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G6": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G7": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G8": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G9": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "G10": {
+                    "properties": {
+                      "status": {
+                        "const": "pass"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "direct-ready"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "aiRelationship": {
+            "properties": {
+              "class": {
+                "const": "direct"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "context-ready"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "aiRelationship": {
+            "properties": {
+              "class": {
+                "const": "context"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "reframe-ready"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "reframeReason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aiRelationship": {
+            "properties": {
+              "class": {
+                "enum": [
+                  "direct",
+                  "context"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

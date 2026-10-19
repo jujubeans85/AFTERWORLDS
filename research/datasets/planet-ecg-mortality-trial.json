@@ -1,0 +1,174 @@
+{
+  "datasetId": "planet-ecg-mortality-trial",
+  "id": "planet-ecg-mortality-trial",
+  "conceptIds": [
+    "8-17"
+  ],
+  "title": "A measured patient outcome: AI-ECG alerts",
+  "rows": [
+    {
+      "id": "ecg-ai",
+      "entityId": "ecg-ai",
+      "name": "AI alert",
+      "value": 3.6,
+      "unit": "percent all-cause mortality within 90 days",
+      "period": "Enrollment 2021-12-15 to 2022-04-30; 90-day follow-up",
+      "sourceId": "planet-ecg",
+      "sourceLocator": "Abstract primary outcome",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "TWN",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Taiwan hospitals; not a national mortality estimate. Rates are rounded; no death counts inferred. Arm sample sizes and follow-up are documented in the same-trial economic analysis. Hazard ratio is not an absolute percentage-point difference or life-expectancy gain.",
+      "randomizedN": 8001
+    },
+    {
+      "id": "ecg-control",
+      "entityId": "ecg-control",
+      "name": "Usual care",
+      "value": 4.3,
+      "unit": "percent all-cause mortality within 90 days",
+      "period": "Enrollment 2021-12-15 to 2022-04-30; 90-day follow-up",
+      "sourceId": "planet-ecg",
+      "sourceLocator": "Abstract primary outcome",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "TWN",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Taiwan hospitals; not a national mortality estimate. Rates are rounded; no death counts inferred. Arm sample sizes and follow-up are documented in the same-trial economic analysis. Hazard ratio is not an absolute percentage-point difference or life-expectancy gain.",
+      "randomizedN": 7964
+    },
+    {
+      "id": "ecg-hr",
+      "entityId": "ecg-hr",
+      "name": "AI alert versus usual care",
+      "value": 0.83,
+      "unit": "hazard ratio",
+      "period": "Enrollment 2021-12-15 to 2022-04-30; 90-day follow-up",
+      "sourceId": "planet-ecg",
+      "sourceLocator": "Abstract primary outcome",
+      "status": "estimated",
+      "qualifier": "95% confidence interval",
+      "geographicId": "TWN",
+      "lat": null,
+      "lon": null,
+      "notes": "Two Taiwan hospitals; not a national mortality estimate. Rates are rounded; no death counts inferred. Arm sample sizes and follow-up are documented in the same-trial economic analysis. Hazard ratio is not an absolute percentage-point difference or life-expectancy gain.",
+      "lower": 0.7,
+      "upper": 0.99
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint",
+    "randomizedN": "Participants randomly assigned to this arm",
+    "lower": "Published lower range or confidence bound; qualifier defines its meaning",
+    "upper": "Published upper range or confidence bound; qualifier defines its meaning"
+  },
+  "unit": "mixed: percent and hazard ratio",
+  "denominator": "15,965 patients: 8,001 AI / 7,964 control; 90-day mortality and model-adjusted hazard ratio reported separately.",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Two hospitals in the Tri-Service General Hospital system, Taiwan; named trial not global effect",
+    "definition": "Two hospitals in the Tri-Service General Hospital system, Taiwan; named trial not global effect",
+    "anchorRule": "Use only published lat/lon when present. A country ID denotes study location, never national representativeness; do not create city anchors."
+  },
+  "time": {
+    "observationStart": "2021-12-15",
+    "observationEnd": "2022-07-31",
+    "publishedAt": "2024-04-29",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-ecg",
+      "publisher": "Lin et al., Nature Medicine",
+      "title": "AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial",
+      "url": "https://www.nature.com/articles/s41591-024-02961-4",
+      "locator": "Primary abstract, DOI 10.1038/s41591-024-02961-4; EBI EuropePMC core metadata",
+      "version": "2024-04-29",
+      "publishedAt": "2024-04-29",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://www.nature.com/articles/s41591-024-02961-4",
+        "attribution": "AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial — Lin et al., Nature Medicine",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    },
+    {
+      "sourceId": "planet-ecg-economic",
+      "publisher": "Trial authors, npj Digital Medicine",
+      "title": "Economic analysis of an AI-enabled ECG alert system: impact on mortality outcomes from a pragmatic randomized trial",
+      "url": "https://www.nature.com/articles/s41746-025-01735-7",
+      "locator": "Study participants and setting; original trial enrollment counts and dates",
+      "version": "2025-06-11",
+      "publishedAt": "2025-06-11",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of numerical facts; source article is CC BY-NC-ND 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "attribution": "Economic analysis of an AI-enabled ECG alert system: impact on mortality outcomes from a pragmatic randomized trial — Trial authors, npj Digital Medicine",
+        "verified": true,
+        "notes": "The article licence restricts commercial use and distribution of adaptations. This pack contains only a small independent structured transcription of factual findings, without article prose, figures or adapted article content. No CC BY licence is claimed for the source; reuse outside this narrow factual extraction requires separate assessment."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Two hospitals in the Tri-Service General Hospital system, Taiwan; named trial not global effect",
+    "included": "3 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "Long-term longevity, other interventions, replication across health systems; no patient-level data",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Mortality rates rounded; hazard ratio 95% CI 0.70–0.99. Intervention includes the clinical workflow, not an isolated model. Follow-up extended through 2022-07-31 according to the same-trial economic analysis. EHR ascertainment may miss deaths outside the hospital; censored patients were confirmed alive only through their most recent recorded visit.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://www.nature.com/articles/s41591-024-02961-4",
+      "https://www.nature.com/articles/s41746-025-01735-7"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "ecg-ai",
+      "ecg-control",
+      "ecg-hr"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

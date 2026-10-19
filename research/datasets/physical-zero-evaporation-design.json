@@ -1,0 +1,189 @@
+{
+  "datasetId": "physical-zero-evaporation-design",
+  "id": "physical-zero-evaporation-design",
+  "schemaVersion": "1.0",
+  "title": "A cooling design is not a water-free supply chain",
+  "conceptIds": [
+    "314"
+  ],
+  "metric": "Dated design and deployment disclosures",
+  "unit": "category",
+  "denominator": "Selected Microsoft design claims, not observed cooling consumption",
+  "aiRelationship": "direct",
+  "aiRelationshipJustification": "AI-optimized cooling pilots named by Microsoft.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024-12-09",
+    "observationEnd": "2024-12-09",
+    "publishedAt": "2024-12-09",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "ms24",
+      "publisher": "Microsoft",
+      "title": "Sustainable by design: next-generation datacenters consume zero water for cooling",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "locator": "Next-generation design; future deployments",
+      "version": "2024-12-09",
+      "publishedAt": "2024-12-09",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+        "attribution": "Microsoft — Sustainable by design: next-generation datacenters consume zero water for cooling",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "ms24",
+    "publisher": "Microsoft",
+    "title": "Sustainable by design: next-generation datacenters consume zero water for cooling",
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+    "locator": "Next-generation design; future deployments",
+    "version": "2024-12-09",
+    "publishedAt": "2024-12-09",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "attribution": "Microsoft — Sustainable by design: next-generation datacenters consume zero water for cooling",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "phoenix-pilot",
+      "entityId": "USA-Phoenix",
+      "name": "Phoenix",
+      "value": "Pilot planned for 2026",
+      "unit": "category",
+      "period": "2024-12-09",
+      "sourceId": "ms24",
+      "sourceLocator": "Deploying next-generation design",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "USA-Phoenix",
+      "lat": null,
+      "lon": null,
+      "notes": "AI-optimized closed-loop direct-to-chip design; announcement, not completion evidence."
+    },
+    {
+      "id": "mountpleasant-pilot",
+      "entityId": "US-WI-MountPleasant",
+      "name": "Mount Pleasant, Wisconsin",
+      "value": "Pilot planned for 2026",
+      "unit": "category",
+      "period": "2024-12-09",
+      "sourceId": "ms24",
+      "sourceLocator": "Deploying next-generation design",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "US-WI-MountPleasant",
+      "lat": null,
+      "lon": null,
+      "notes": "Second disclosed pilot location; future sites expected online from late 2027."
+    },
+    {
+      "id": "tradeoff",
+      "entityId": "tradeoff",
+      "name": "Mechanical cooling",
+      "value": "Potential increase in PUE",
+      "unit": "category",
+      "period": "2024-12-09",
+      "sourceId": "ms24",
+      "sourceLocator": "Reducing water and energy",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "The company acknowledges an energy trade-off when replacing evaporation."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "AI-optimized cooling pilots named by Microsoft.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "No water-free lifecycle claim: electricity, manufacturing and non-cooling water are outside the design claim. No completion claim is made for either pilot. No aridity overlay or quantitative drought exposure has been calculated.",
+  "limitations": [
+    "No water-free lifecycle claim: electricity, manufacturing and non-cooling water are outside the design claim.",
+    "No completion claim is made for either pilot.",
+    "No aridity overlay or quantitative drought exposure has been calculated."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "phoenix-pilot",
+      "mountpleasant-pilot",
+      "tradeoff"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "What exactly do disclosed zero-evaporation cooling designs promise, and what remains unmeasured?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

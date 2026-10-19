@@ -1,0 +1,208 @@
+{
+  "datasetId": "governance-uk-asylum-roles",
+  "id": "governance-uk-asylum-roles",
+  "title": "UK asylum AI: documented roles and disclosure limits",
+  "conceptIds": [
+    "356"
+  ],
+  "rows": [
+    {
+      "id": "acs-role",
+      "entityId": "acs-role",
+      "name": "Asylum Case Summarisation",
+      "value": "AI summarises interview transcripts for caseworkers",
+      "unit": "reported system role",
+      "period": "2024-05/2024-12",
+      "sourceId": "uk-asylum-eval",
+      "sourceLocator": "Executive summary; section 1.1",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "GBR",
+      "lat": null,
+      "lon": null,
+      "notes": "Role in a small-scale pilot, not automated grant or refusal. Later ministerial correspondence says both tools operational.",
+      "laterStatusSourceId": "uk-asylum-letter-aug"
+    },
+    {
+      "id": "aps-role",
+      "entityId": "aps-role",
+      "name": "Asylum Policy Search",
+      "value": "AI finds and summarises country policy information",
+      "unit": "reported system role",
+      "period": "2024-05/2024-12",
+      "sourceId": "uk-asylum-eval",
+      "sourceLocator": "Executive summary; section 1.2",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "GBR",
+      "lat": null,
+      "lon": null,
+      "notes": "Role in a pilot; policy-search assistance is not itself an eligibility decision.",
+      "laterStatusSourceId": "uk-asylum-letter-aug"
+    },
+    {
+      "id": "asylum-notification",
+      "entityId": "asylum-notification",
+      "name": "Applicant notification",
+      "value": "Applicants not specifically told AI was used in their claim",
+      "unit": "reported oversight category",
+      "period": "2026-08-07",
+      "sourceId": "uk-asylum-letter-aug",
+      "sourceLocator": "Page 3, response 6",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "GBR",
+      "lat": null,
+      "lon": null,
+      "notes": "Ministerial statement at a specific date. Does not establish absence of every route of appeal."
+    },
+    {
+      "id": "asylum-audit",
+      "entityId": "asylum-audit",
+      "name": "Independent audit",
+      "value": "No independent audit planned at that stage",
+      "unit": "reported oversight category",
+      "period": "2026-06-22",
+      "sourceId": "uk-asylum-letter-june",
+      "sourceLocator": "Page 2, first paragraph under continued Oversight and Audit",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "GBR",
+      "lat": null,
+      "lon": null,
+      "notes": "Dated ministerial statement, not a claim that audits can never occur. Internal testing is distinct from independent audit."
+    }
+  ],
+  "columns": {
+    "id": "id field; see row notes",
+    "entityId": "entityId field; see row notes",
+    "name": "name field; see row notes",
+    "value": "Measured value or explicit category; never visual magnitude unless numeric and appropriate",
+    "unit": "unit field; see row notes",
+    "period": "Observation/event period; not retrieval date",
+    "sourceId": "sourceId field; see row notes",
+    "sourceLocator": "Exact section/table/row in cited primary source",
+    "status": "status field; see row notes",
+    "qualifier": "qualifier field; see row notes",
+    "geographicId": "ISO 3166 alpha-3 or explicit named area; null for non-geographic records",
+    "lat": "Null: no invented point location",
+    "lon": "Null: no invented point location",
+    "notes": "notes field; see row notes",
+    "laterStatusSourceId": "laterStatusSourceId field; see row notes"
+  },
+  "unit": "reported system role",
+  "denominator": "Not applicable: categorical records, not a rate",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Source-defined jurisdiction",
+    "definition": "Country means jurisdiction or organisation affiliation, never exposure or event origin.",
+    "anchorRule": "Country polygon or explicitly labelled jurisdiction; null coordinates must remain null."
+  },
+  "time": {
+    "observationStart": "2024-05",
+    "observationEnd": "2026-08-07",
+    "publishedAt": "2026-10-12",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual revalidation before implementation and after source updates",
+    "publicationNote": "Latest public disclosure date for ministerial letters; each underlying document date is retained in sources and rows."
+  },
+  "sources": [
+    {
+      "sourceId": "uk-asylum-eval",
+      "publisher": "UK Home Office",
+      "title": "Evaluation of AI trials in the asylum decision making process",
+      "url": "https://www.gov.uk/government/publications/evaluation-of-ai-trials-in-the-asylum-decision-making-process/evaluation-of-ai-trials-in-the-asylum-decision-making-process",
+      "locator": "Executive summary; sections 1.1 and 1.2",
+      "version": null,
+      "publishedAt": "2025-04-29",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Open Government Licence v3.0 stated on publication; factual role descriptions only",
+        "termsUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "attribution": "UK Home Office. Evaluation of AI trials in the asylum decision making process. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    },
+    {
+      "sourceId": "uk-asylum-letter-aug",
+      "publisher": "UK Minister for Border Security and Asylum; disclosed copy hosted by Open Rights Group",
+      "title": "Ministerial reply to Bell Ribeiro-Addy MP, MPAM/1539410/26",
+      "url": "https://www.openrightsgroup.org/app/uploads/2026/10/Letter-to-Bell-Rebeiro-Addy-from-Anna-Turley.pdf",
+      "locator": "7 August 2026 letter, pages 1–3, responses 1, 4 and 6",
+      "version": "Letter dated 7 August 2026; disclosed with 12 October 2026 investigation",
+      "publishedAt": "2026-10-12",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Facts-only original summaries of official correspondence disclosed by an NGO; no document text, imagery or broad licence asserted",
+        "termsUrl": "https://www.openrightsgroup.org/publications/the-use-of-chatgpt-in-asylum-decisions/",
+        "attribution": "UK Minister for Border Security and Asylum; disclosed copy hosted by Open Rights Group. Ministerial reply to Bell Ribeiro-Addy MP, MPAM/1539410/26. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Original factual summary only. Official letter document date is separate from public disclosure by Open Rights Group on 12 October 2026; no broad redistribution licence for the PDF is asserted."
+      },
+      "documentDate": "2026-08-07"
+    },
+    {
+      "sourceId": "uk-asylum-letter-june",
+      "publisher": "UK Minister for Border Security and Asylum; disclosed copy hosted by Open Rights Group",
+      "title": "Ministerial reply to Bell Ribeiro-Addy MP, MPAM/1514142/26",
+      "url": "https://www.openrightsgroup.org/app/uploads/2026/10/Letter-to-Bell-Ribeiro-Addy-MP-from-Alex-Norris.pdf",
+      "locator": "22 June 2026 letter, pages 1–2, Oversight and Audit",
+      "version": "Letter dated 22 June 2026; disclosed with 12 October 2026 investigation",
+      "publishedAt": "2026-10-12",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Facts-only original summary of official correspondence; no document prose or graphics redistributed",
+        "termsUrl": "https://www.openrightsgroup.org/publications/the-use-of-chatgpt-in-asylum-decisions/",
+        "attribution": "UK Minister for Border Security and Asylum; disclosed copy hosted by Open Rights Group. Ministerial reply to Bell Ribeiro-Addy MP, MPAM/1514142/26. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Original factual summary only. Official letter document date is separate from public disclosure by Open Rights Group on 12 October 2026; no broad redistribution licence for the PDF is asserted."
+      },
+      "documentDate": "2026-06-22"
+    }
+  ],
+  "coverage": {
+    "population": "Two Home Office AI tool roles and two dated official oversight statements, 2024–2026",
+    "included": "4 populated records; Two Home Office AI tool roles and two dated official oversight statements, 2024–2026",
+    "omitted": "All asylum systems globally, final eligibility automation, individual case accuracy, legal conclusions and complete appeal routes",
+    "missingness": "Unlisted entities are missing, not zero."
+  },
+  "uncertainty": "Government descriptions and disclosed ministerial correspondence, not an independent system audit. NGO investigation disputes aspects of quality assurance. The source states humans decide cases; AI assistance can still affect the information they see. June and August statements must not be collapsed into an undated current policy.",
+  "transform": {
+    "type": "manual",
+    "description": "Manual transcription of factual values/categories; no interpolation, imputation or causal inference.",
+    "codePath": "research/scripts/governance_build.py",
+    "inputReferences": [
+      "https://www.gov.uk/government/publications/evaluation-of-ai-trials-in-the-asylum-decision-making-process/evaluation-of-ai-trials-in-the-asylum-decision-making-process",
+      "https://www.openrightsgroup.org/app/uploads/2026/10/Letter-to-Bell-Rebeiro-Addy-from-Anna-Turley.pdf",
+      "https://www.openrightsgroup.org/app/uploads/2026/10/Letter-to-Bell-Ribeiro-Addy-MP-from-Alex-Norris.pdf"
+    ],
+    "validation": "Each row carries a source locator; categorical values separately label plans, policies and observed events."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary source and compare each extracted record to its named source location.",
+    "checkedRows": [
+      "acs-role",
+      "aps-role",
+      "asylum-notification",
+      "asylum-audit"
+    ],
+    "evidencePaths": [
+      "research/sources/governance-source-index.json"
+    ],
+    "reviewer": "governance_research",
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No universal extremity or impact score is supported by these data."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated forecast was supplied. Policy intentions and planned installations are not predictions."
+  }
+}

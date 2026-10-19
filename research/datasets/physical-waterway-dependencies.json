@@ -1,0 +1,241 @@
+{
+  "datasetId": "physical-waterway-dependencies",
+  "id": "physical-waterway-dependencies",
+  "schemaVersion": "1.0",
+  "title": "Cooling joins a shared water system",
+  "conceptIds": [
+    "111-3"
+  ],
+  "metric": "Selected provider water-use observations and water-system relationships",
+  "unit": "mixed, row-specific",
+  "denominator": "Regional annual use and named infrastructure cases; no common quantitative denominator",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Selected disclosed data-centre water-system connections, nonexhaustive.",
+  "geographyMode": "network",
+  "geography": {
+    "mode": "network",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024",
+    "observationEnd": "Undated site description; retrieved2026-10-19",
+    "publishedAt": "2026-09",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "amazon-oregon",
+      "publisher": "Amazon",
+      "title": "How Amazon is helping protect water resources in Eastern Oregon",
+      "url": "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+      "locator": "Oregon annual water use; Columbia River Intake; Port of Morrow",
+      "version": "2026-09",
+      "publishedAt": "2026-09",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+        "attribution": "Amazon — How Amazon is helping protect water resources in Eastern Oregon",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "google-belgium",
+      "publisher": "Google Data Centers",
+      "title": "St.Ghislain, Belgium",
+      "url": "https://www.datacenters.google/locations/belgium/",
+      "locator": "Industrial canal cooling description",
+      "version": null,
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.datacenters.google/locations/belgium/",
+        "attribution": "Google Data Centers — St.Ghislain, Belgium",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "amazon-oregon",
+    "publisher": "Amazon",
+    "title": "How Amazon is helping protect water resources in Eastern Oregon",
+    "url": "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+    "locator": "Oregon annual water use; Columbia River Intake; Port of Morrow",
+    "version": "2026-09",
+    "publishedAt": "2026-09",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+      "attribution": "Amazon — How Amazon is helping protect water resources in Eastern Oregon",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "oregon2024",
+      "entityId": "US-OR",
+      "name": "Amazon Oregon data centres",
+      "value": 284,
+      "unit": "million U.S.gallons/year",
+      "period": "2024",
+      "sourceId": "amazon-oregon",
+      "sourceLocator": "Annual Oregon water-use paragraph",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "US-OR",
+      "lat": null,
+      "lon": null,
+      "notes": "Company-reported total water used; no AI workload allocation."
+    },
+    {
+      "id": "oregon2025",
+      "entityId": "US-OR",
+      "name": "Amazon Oregon data centres",
+      "value": 242,
+      "unit": "million U.S.gallons/year",
+      "period": "2025",
+      "sourceId": "amazon-oregon",
+      "sourceLocator": "Annual Oregon water-use paragraph",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "US-OR",
+      "lat": null,
+      "lon": null,
+      "notes": "Company-reported total; same paragraph compares prior year."
+    },
+    {
+      "id": "umatilla-intake",
+      "entityId": "US-OR-Umatilla",
+      "name": "Umatilla Columbia River intake",
+      "value": "Funded shared surface-water project",
+      "unit": "category",
+      "period": "2026-09 disclosure",
+      "sourceId": "amazon-oregon",
+      "sourceLocator": "Project Spotlight: Columbia River Intake",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "US-OR-Umatilla",
+      "lat": null,
+      "lon": null,
+      "notes": "Completion expected2028; serves residents, industry, irrigation andwetlands; not yet an observed water benefit."
+    },
+    {
+      "id": "morrow",
+      "entityId": "US-OR-Morrow",
+      "name": "Port of Morrow",
+      "value": "Columbia River treatment plants funded",
+      "unit": "category",
+      "period": "2026-09 disclosure",
+      "sourceId": "amazon-oregon",
+      "sourceLocator": "Port of Morrow spotlight",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "US-OR-Morrow",
+      "lat": null,
+      "lon": null,
+      "notes": "Industrial water infrastructure; future capacity is not current withdrawal."
+    },
+    {
+      "id": "belgium-canal",
+      "entityId": "BEL-SaintGhislain",
+      "name": "Saint-Ghislain",
+      "value": "Industrial canal water cooling",
+      "unit": "category",
+      "period": "Undated site description; retrieved2026-10-19",
+      "sourceId": "google-belgium",
+      "sourceLocator": "Site cooling description",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "BEL-SaintGhislain",
+      "lat": null,
+      "lon": null,
+      "notes": "Canal dependency documented; seasonal hydrology and local withdrawals not published here."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Selected disclosed data-centre water-system connections, nonexhaustive.",
+    "included": "5 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Company self-reporting; independent catchment water balance not supplied. No causal claim about drinking-water deprivation, ecosystem damage or river availability. 2024–25 Oregon total includes multiple water sources; do not allocate it all to the proposed Columbia intake.",
+  "limitations": [
+    "Company self-reporting; independent catchment water balance not supplied.",
+    "No causal claim about drinking-water deprivation, ecosystem damage or river availability.",
+    "2024–25 Oregon total includes multiple water sources; do not allocate it all to the proposed Columbia intake."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+      "https://www.datacenters.google/locations/belgium/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "oregon2024",
+      "oregon2025",
+      "umatilla-intake",
+      "morrow",
+      "belgium-canal"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": null,
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

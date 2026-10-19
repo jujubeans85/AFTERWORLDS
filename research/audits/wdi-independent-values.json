@@ -1,0 +1,68 @@
+{
+  "method": "Fresh independent API retrieval, full raw field comparison and independent normalized transformation checks.",
+  "sources": [
+    {
+      "name": "countries",
+      "url": "https://api.worldbank.org/v2/country?format=json&per_page=1000",
+      "rows": 296,
+      "metadata": {
+        "page": 1,
+        "pages": 1,
+        "per_page": "1000",
+        "total": 296
+      },
+      "matchesSavedPayload": true
+    },
+    {
+      "name": "electricity",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/EG.ELC.ACCS.ZS?date=2024&format=json&per_page=20000",
+      "rows": 266,
+      "metadata": {
+        "page": 1,
+        "pages": 1,
+        "per_page": 20000,
+        "total": 266,
+        "sourceid": "2",
+        "lastupdated": "2026-10-08"
+      },
+      "matchesSavedPayload": true
+    },
+    {
+      "name": "internet",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/IT.NET.USER.ZS?date=2024&format=json&per_page=20000",
+      "rows": 266,
+      "metadata": {
+        "page": 1,
+        "pages": 1,
+        "per_page": 20000,
+        "total": 266,
+        "sourceid": "2",
+        "lastupdated": "2026-10-08"
+      },
+      "matchesSavedPayload": true
+    },
+    {
+      "name": "population",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2024&format=json&per_page=20000",
+      "rows": 266,
+      "metadata": {
+        "page": 1,
+        "pages": 1,
+        "per_page": 20000,
+        "total": 266,
+        "sourceid": "2",
+        "lastupdated": "2026-10-08"
+      },
+      "matchesSavedPayload": true
+    }
+  ],
+  "errors": [],
+  "normalizedChecks": {
+    "allElectricityRowsMatch": true,
+    "allPopulationConnectivityRowsMatch": true,
+    "countryCount": 217,
+    "electricityNulls": 2,
+    "connectivityNulls": 35,
+    "countryAggregatesExcluded": true
+  }
+}

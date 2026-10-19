@@ -1,0 +1,171 @@
+{
+  "datasetId": "governance-globalmmlu-translation",
+  "id": "governance-globalmmlu-translation",
+  "title": "How 42 Global-MMLU language versions were prepared",
+  "conceptIds": [
+    "63-8"
+  ],
+  "rows": [
+    {
+      "id": "globalmmlu-0",
+      "entityId": "globalmmlu-0",
+      "name": "Original English",
+      "value": 1,
+      "unit": "language versions",
+      "period": "2025 archival dataset description",
+      "sourceId": "globalmmlu-acl2025",
+      "sourceLocator": "Printed p.18762, Introducing Global-MMLU paragraph",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Count of language versions, not population representation or number of evaluation questions.",
+      "definition": "Original language; 42 total including English minus 41 listed translations"
+    },
+    {
+      "id": "globalmmlu-1",
+      "entityId": "globalmmlu-1",
+      "name": "Professional translation and post-editing",
+      "value": 14,
+      "unit": "language versions",
+      "period": "2025 archival dataset description",
+      "sourceId": "globalmmlu-acl2025",
+      "sourceLocator": "Printed p.18762, Introducing Global-MMLU paragraph",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Count of language versions, not population representation or number of evaluation questions.",
+      "definition": "Source-defined professional category"
+    },
+    {
+      "id": "globalmmlu-2",
+      "entityId": "globalmmlu-2",
+      "name": "Crowdsourced translation",
+      "value": 11,
+      "unit": "language versions",
+      "period": "2025 archival dataset description",
+      "sourceId": "globalmmlu-acl2025",
+      "sourceLocator": "Printed p.18762, Introducing Global-MMLU paragraph",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Count of language versions, not population representation or number of evaluation questions.",
+      "definition": "Source-defined community category"
+    },
+    {
+      "id": "globalmmlu-3",
+      "entityId": "globalmmlu-3",
+      "name": "Machine translation",
+      "value": 16,
+      "unit": "language versions",
+      "period": "2025 archival dataset description",
+      "sourceId": "globalmmlu-acl2025",
+      "sourceLocator": "Printed p.18762, Introducing Global-MMLU paragraph",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Count of language versions, not population representation or number of evaluation questions.",
+      "definition": "Source-defined machine category"
+    }
+  ],
+  "columns": {
+    "id": "id field; see row notes",
+    "entityId": "entityId field; see row notes",
+    "name": "name field; see row notes",
+    "value": "Measured value or explicit category; never visual magnitude unless numeric and appropriate",
+    "unit": "unit field; see row notes",
+    "period": "Observation/event period; not retrieval date",
+    "sourceId": "sourceId field; see row notes",
+    "sourceLocator": "Exact section/table/row in cited primary source",
+    "status": "status field; see row notes",
+    "qualifier": "qualifier field; see row notes",
+    "geographicId": "ISO 3166 alpha-3 or explicit named area; null for non-geographic records",
+    "lat": "Null: no invented point location",
+    "lon": "Null: no invented point location",
+    "notes": "notes field; see row notes",
+    "definition": "definition field; see row notes"
+  },
+  "unit": "language versions",
+  "denominator": "42 language versions including English; 14 + 11 + 16 translation versions plus original English",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Abstract categorical sphere",
+    "definition": "Records are not geographically allocated.",
+    "anchorRule": "Abstract sphere cells only. Do not place records on country boundaries."
+  },
+  "time": {
+    "observationStart": "not reported by source",
+    "observationEnd": "not reported by source",
+    "publishedAt": "2025-07",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen archival study; new models or benchmark revisions require a separately versioned dataset"
+  },
+  "sources": [
+    {
+      "sourceId": "globalmmlu-acl2025",
+      "publisher": "Singh et al.; Association for Computational Linguistics",
+      "title": "Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation",
+      "url": "https://aclanthology.org/2025.acl-long.919/",
+      "locator": "Paper PDF printed p.18762, Introducing Global-MMLU paragraph and Figure 1",
+      "version": "ACL 2025 archival paper",
+      "publishedAt": "2025-07",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "ACL Anthology page footer: CC BY 4.0; factual counts and original category descriptions only",
+        "termsUrl": "https://aclanthology.org/2025.acl-long.919/",
+        "attribution": "Singh et al.; Association for Computational Linguistics. Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Language-version preparation categories described in the Global-MMLU paper",
+    "included": "4 populated records; Language-version preparation categories described in the Global-MMLU paper",
+    "omitted": "Population-weighted coverage, language speaker counts, training-data coverage, question-level cultural adequacy and country-specific accuracy",
+    "missingness": "Unlisted entities are missing, not zero."
+  },
+  "uncertainty": "Translation method is a provenance attribute, not measured translation quality. Translating an English-centric item does not make it culturally representative. Categories count versions, not people, places or questions.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe three translation counts; derive original-English count as 42−14−11−16=1, consistent with source statement including English.",
+    "codePath": "research/scripts/governance_build.py",
+    "inputReferences": [
+      "https://aclanthology.org/2025.acl-long.919/"
+    ],
+    "validation": "Four mutually exclusive preparation categories sum to the stated 42 language versions; do not allocate versions to countries."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary source and compare each extracted record to its named source location.",
+    "checkedRows": [
+      "globalmmlu-0",
+      "globalmmlu-1",
+      "globalmmlu-2",
+      "globalmmlu-3"
+    ],
+    "evidencePaths": [
+      "research/sources/governance-source-index.json"
+    ],
+    "reviewer": "governance_research",
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No universal extremity or impact score is supported by these data."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated forecast was supplied. Policy intentions and planned installations are not predictions."
+  }
+}

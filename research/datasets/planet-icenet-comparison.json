@@ -1,0 +1,144 @@
+{
+  "datasetId": "planet-icenet-comparison",
+  "id": "planet-icenet-comparison",
+  "conceptIds": [
+    "364"
+  ],
+  "title": "Before the ice arrives: a retrospective IceNet comparison",
+  "rows": [
+    {
+      "id": "icenet-seas5",
+      "entityId": "icenet-seas5",
+      "name": "IceNet better than SEAS5",
+      "value": 7,
+      "unit": "comparison years out of 9",
+      "period": "2012–2020",
+      "sourceId": "planet-icenet",
+      "sourceLocator": "Evaluation of IceNet performance, paragraph referencing Figure 4",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Three-month lead to September. Six validation years used for tuning plus three test years. Win count does not quantify the margin or reconstruct an ice edge.",
+      "comparison": "SEAS5",
+      "denominator": 9,
+      "leadMonths": 3,
+      "targetMonth": "September"
+    },
+    {
+      "id": "icenet-linear",
+      "entityId": "icenet-linear",
+      "name": "IceNet better than linear trend",
+      "value": 8,
+      "unit": "comparison years out of 9",
+      "period": "2012–2020",
+      "sourceId": "planet-icenet",
+      "sourceLocator": "Evaluation of IceNet performance, paragraph referencing Figure 4",
+      "status": "modelled",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Three-month lead to September. Six validation years used for tuning plus three test years. Win count does not quantify the margin or reconstruct an ice edge.",
+      "comparison": "Linear trend",
+      "denominator": 9,
+      "leadMonths": 3,
+      "targetMonth": "September"
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint",
+    "comparison": "Source-defined comparison; interpretation and denominator specified in row notes and dataset metadata",
+    "denominator": "Source-defined denominator; interpretation and denominator specified in row notes and dataset metadata",
+    "leadMonths": "Source-defined leadMonths; interpretation and denominator specified in row notes and dataset metadata",
+    "targetMonth": "Source-defined targetMonth; interpretation and denominator specified in row notes and dataset metadata"
+  },
+  "unit": "comparison years out of 9",
+  "denominator": "Nine reported September comparison years, 2012–2020: six validation years (2012–2017) used for tuning and three test years (2018–2020). Binary ice-edge accuracy; each row is a comparator win count.",
+  "geography": {
+    "mode": "global",
+    "unit": "Arctic sea-ice edge benchmark, not a reconstructed map",
+    "definition": "Arctic sea-ice edge benchmark, not a reconstructed map",
+    "anchorRule": "Use an explicitly non-geographic sphere or global band. No national fill, fake city locations, or inferred unobserved distribution."
+  },
+  "time": {
+    "observationStart": "2012",
+    "observationEnd": "2020",
+    "publishedAt": "2021-08-26",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-icenet",
+      "publisher": "Andersson et al., Nature Communications",
+      "title": "Seasonal Arctic sea ice forecasting with probabilistic deep learning",
+      "url": "https://www.nature.com/articles/s41467-021-25257-4",
+      "locator": "Evaluation of IceNet performance; three-month September held-out-year comparison",
+      "version": "2021-08-26",
+      "publishedAt": "2021-08-26",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Seasonal Arctic sea ice forecasting with probabilistic deep learning — Andersson et al., Nature Communications",
+        "verified": true,
+        "notes": "Publisher explicitly identifies this article/dataset as CC BY 4.0; derived fact records, attribution retained."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Arctic sea-ice edge benchmark, not a reconstructed map",
+    "included": "2 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "Per-year results, ice-edge geometry, operational 2026 forecasts and station-level sensor effects.",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "The nine-year summary combines validation years used for tuning and separate test years; it is not nine independently held-out test years. Counts do not encode win margins, confidence intervals or current forecast skill.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://www.nature.com/articles/s41467-021-25257-4"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "icenet-seas5",
+      "icenet-linear"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

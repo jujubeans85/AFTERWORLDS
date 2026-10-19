@@ -1,0 +1,171 @@
+{
+  "datasetId": "society-nigeria-tutoring",
+  "id": "society-nigeria-tutoring",
+  "title": "A measured tutoring intervention",
+  "conceptIds": [
+    "330"
+  ],
+  "metric": "A measured tutoring intervention",
+  "unit": "standard deviations",
+  "denominator": "Treatment–control standardized difference among sampled first-year senior secondary students",
+  "rows": [
+    {
+      "id": "nigeria-composite",
+      "entityId": "nigeria-composite",
+      "name": "English, AI knowledge and digital skills assessment",
+      "value": 0.31,
+      "unit": "standard deviations",
+      "period": "June–July2024 intervention",
+      "sourceId": "wb-nigeria-paper-tables",
+      "sourceLocator": "Table2 column1; printedp30/PDFp34",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "ITT coefficient with heteroskedasticity-robustSE and school fixed effects. Teacher-supported six-week Copilot bundle. English abstract0.23 is less precise than table0.238; table value used.",
+      "trialLocation": "Edo State, Nigeria",
+      "outcome": "composite",
+      "standardError": 0.068,
+      "regressionN": 654
+    },
+    {
+      "id": "nigeria-english",
+      "entityId": "nigeria-english",
+      "name": "English assessment",
+      "value": 0.238,
+      "unit": "standard deviations",
+      "period": "June–July2024 intervention",
+      "sourceId": "wb-nigeria-paper-tables",
+      "sourceLocator": "Table3 column1; printedp31/PDFp35",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "ITT coefficient with heteroskedasticity-robustSE and school fixed effects. Teacher-supported six-week Copilot bundle. English abstract0.23 is less precise than table0.238; table value used.",
+      "trialLocation": "Edo State, Nigeria",
+      "outcome": "English",
+      "standardError": 0.068,
+      "regressionN": 654
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "standardError": "Published heteroskedasticity-robust standarderror of ITT coefficient; no constructed confidenceinterval",
+    "regressionN": "Complete-case regression observations in specified table",
+    "trialLocation": "Benin City, Edo State, Nigeria; a sampled trial, not national intensity",
+    "outcome": "Composite or English assessment"
+  },
+  "geography": {
+    "mode": "categorical",
+    "unit": "nongeographic categories",
+    "definition": "Categories are labels, not spatial observations.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2024-06",
+    "observationEnd": "2024-07",
+    "publishedAt": "2025-05-19",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed.",
+    "dataCollectionWindow": "May–July2024 including baseline; intervention June–July2024"
+  },
+  "sources": [
+    {
+      "sourceId": "wb-nigeria-rct",
+      "publisher": "World Bank",
+      "title": "From Chalkboards to Chatbots: Evaluating the Impact of Generative AI on Learning Outcomes in Nigeria",
+      "url": "https://reproducibility.worldbank.org/index.php/catalog/419",
+      "locator": "Overview abstract; Data paragraph; metadata licence and revision date",
+      "version": "Cataloguecreated2025-12-11; lastmodified2026-10-16; paperpublished2025-05-19",
+      "publishedAt": "2025-12-11",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 3.0 IGO for working paper; only reported aggregate effects repackaged",
+        "termsUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+        "attribution": "De Simone, Tiberti, Barron Rodriguez, Manolio, Mosuro and Dikoru (2025), World Bank PRWP11125.",
+        "verified": true,
+        "notes": "Reproducibility catalogue confirms paper licence. Microdata is forthcoming and not redistributed."
+      }
+    },
+    {
+      "sourceId": "wb-nigeria-paper-tables",
+      "publisher": "World Bank / DeSimone etal.",
+      "title": "Policy Research Working Paper11125: From Chalkboards to Chatbots",
+      "url": "https://thedocs.worldbank.org/en/doc/0c08ef70ff0e1d81997f116923c0e2c7-0140022025/related/EDU-WP-18-Evaluating-the-Impact-of-Generative-AI-on-Learning-Outcomes-in-Nigeria.pdf",
+      "locator": "Table2 printedp30/PDFp34;Table3 printedp31/PDFp35; section2.2 printedp9; intervention printedp6",
+      "version": "May2025paper, PDFmetadata modified2025-06-11",
+      "publishedAt": "2025-05-19",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 3.0 IGO for working paper; only reported aggregate effects repackaged",
+        "termsUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+        "attribution": "De Simone, Tiberti, Barron Rodriguez, Manolio, Mosuro and Dikoru (2025), World Bank PRWP11125.",
+        "verified": true,
+        "notes": "Reproducibility catalogue confirms paper licence. Microdata is forthcoming and not redistributed."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Interested first-year senior secondary students from9selected public schools in BeninCity,EdoState; schools required computerlabs.",
+    "included": "Initially657treatment+671control; finalassessment422+337=759; reportedregressionN654 peroutcome.",
+    "omitted": "Noninterested students, schools without computerlabs, endline nonrespondents and incomplete regressioncases.",
+    "missingness": "Substantial differential endline attrition; no student microdata inpack. Authors discuss Lee bounds and weighting checks."
+  },
+  "uncertainty": "Published robustSE0.068 for each coefficient. Randomized intervention among interested students; differential attrition and selected computer-equipped schools limit interpretation/generalizability. No countrywide effect or AI-alone treatment claim.",
+  "limitations": [
+    "Treatment bundles model access, teachers, curriculum and after-school time.",
+    "RegressionN654 differs from759assessment completers due to covariate completecases.",
+    "Initially1328randomized students; substantial differential endline attrition.",
+    "No longterm followup, otherlanguages, adultliteracy or national population estimate.",
+    "Microdata forthcoming; independent fulltrial reproduction unavailable."
+  ],
+  "aiRelationship": "direct",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://reproducibility.worldbank.org/index.php/catalog/419"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Extracted primaryPDF tables with pdftotext and visually inspected renderedPDFpage35; exact N,SE and coefficient preserved.",
+    "checkedRows": [
+      "nigeria-composite",
+      "nigeria-english"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

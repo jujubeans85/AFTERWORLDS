@@ -1,0 +1,160 @@
+{
+  "datasetId": "planet-ai-planets",
+  "id": "planet-ai-planets",
+  "conceptIds": [
+    "170-3"
+  ],
+  "title": "Worlds found by machines: two confirmed cases",
+  "rows": [
+    {
+      "id": "kepler-90i",
+      "entityId": "kepler-90i",
+      "name": "Kepler-90i",
+      "value": "confirmed ML-assisted discovery",
+      "unit": "categorical case",
+      "period": "2017 discovery announcement; archive confirmation checked 2026-10-19",
+      "sourceId": "planet-nasa-discoveries",
+      "sourceLocator": "Kepler-90i discoveryparagraph",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Selected ML-assisted discovery with astronomical follow-up. Confirmed in NASA PS table; Earth coordinates do not apply. Kepler-90 is the display alias of archive host KOI-351.",
+      "hostStar": "Kepler-90",
+      "archiveName": "Kepler-90 i",
+      "archiveHost": "KOI-351"
+    },
+    {
+      "id": "kepler-80g",
+      "entityId": "kepler-80g",
+      "name": "Kepler-80g",
+      "value": "confirmed ML-assisted discovery",
+      "unit": "categorical case",
+      "period": "2017 discovery announcement; archive confirmation checked 2026-10-19",
+      "sourceId": "planet-nasa-discoveries",
+      "sourceLocator": "Kepler-80g resonantchainparagraph",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Selected ML-assisted discovery with astronomical follow-up, confirmed in NASA PS table. No Earth coordinates, completeness count or inferred celestial position.",
+      "hostStar": "Kepler-80",
+      "archiveName": "Kepler-80 g",
+      "archiveHost": "Kepler-80"
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Entity identifier scoped to this dataset",
+    "name": "Display label",
+    "value": "Published quantity or explicit category; never impute null as zero",
+    "unit": "Unit of value",
+    "period": "Observation or study period, not retrieval date",
+    "sourceId": "Key into sources",
+    "sourceLocator": "Exact table/section/paragraph",
+    "status": "Evidence status enum",
+    "qualifier": "Uncertainty or scope qualifier",
+    "geographicId": "ISO code or named source geography; null for abstract observations",
+    "lat": "Published latitude only; null when unsupported",
+    "lon": "Published longitude only; null when unsupported",
+    "notes": "Interpretation constraint",
+    "hostStar": "Source-defined hostStar; interpretation and denominator specified in row notes and dataset metadata",
+    "archiveName": "Exact planet name in current NASA PS table",
+    "archiveHost": "Exact current NASA archive host identifier"
+  },
+  "unit": "categorical case",
+  "denominator": "Two selected confirmed ML-assisted discoveries; not all AI-found planets or a population rate.",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Celestial objects; Earth geography does not apply",
+    "definition": "Celestial objects; Earth geography does not apply",
+    "anchorRule": "Use an explicitly non-geographic sphere or global band. No national fill, fake city locations, or inferred unobserved distribution."
+  },
+  "time": {
+    "observationStart": "2017",
+    "observationEnd": "2017",
+    "publishedAt": "2017-12-14",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen research snapshot; recheck source before any update, not a live feed"
+  },
+  "sources": [
+    {
+      "sourceId": "planet-nasa-discoveries",
+      "publisher": "NASA",
+      "title": "Artificial Intelligence, NASA Data Used to Discover Eighth Planet Circling Distant Star",
+      "url": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+      "locator": "Discovery announcement: Kepler-90i and Kepler-80g",
+      "version": "2017-12-14",
+      "publishedAt": "2017-12-14",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+        "attribution": "Artificial Intelligence, NASA Data Used to Discover Eighth Planet Circling Distant Star — NASA",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    },
+    {
+      "sourceId": "planet-nasa-archive",
+      "publisher": "NASAExoplanetArchive",
+      "title": "NASA Exoplanet Archive: Planetary Systems",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+      "locator": "PS confirmed-planet table, default_flag=1; exact two-object query preserved in research/sources/planet-nasa-confirmation.json",
+      "version": "page accessed 2026-10-19",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited extraction of factual findings; source prose, figures, maps and raw restricted records are not redistributed",
+        "termsUrl": "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",
+        "attribution": "NASA Exoplanet Archive: Planetary Systems — NASAExoplanetArchive",
+        "verified": true,
+        "notes": "No open-data licence is asserted. Only a small, separately structured factual summary is included; full-source republication is outside this pack."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Celestial objects; Earth geography does not apply",
+    "included": "2 populated records; inclusion is defined by the exact source locator in every row",
+    "omitted": "Complete current planet inventory, candidate lists, sky coverage and discovery-yield comparisons.",
+    "missingness": "Unobserved or unpublished is not zero; omitted places/classes have no inferred values."
+  },
+  "uncertainty": "Historical non-exhaustive case collection. AI assistance is documented in NASA’s discovery report, not inferred from generic transit classification. Both objects remain in the current NASA Archive confirmed-planet table.",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribed selected published factual findings into a normalized long table; values retain source precision. No interpolation or score normalization.",
+    "codePath": "research/scripts/planet-complete.py",
+    "inputReferences": [
+      "https://www.nasa.gov/news-release/artificial-intelligence-nasa-data-used-to-discover-eighth-planet-circling-distant-star/",
+      "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html"
+    ],
+    "validation": "Row-level source locators; numerical bounds and schema checked locally; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary publication/table read and values transcribed, with comparison to source metadata; independent acceptance pending.",
+    "checkedRows": [
+      "kepler-90i",
+      "kepler-80g"
+    ],
+    "evidencePaths": [
+      "research/sources/planet-source-register.json",
+      "research/sources/planet-nasa-confirmation.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No defensible common 1–100 extremity construct. Display source metric and uncertainty in original units."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No original future extrapolation; any model evaluations are retrospective results only."
+  }
+}

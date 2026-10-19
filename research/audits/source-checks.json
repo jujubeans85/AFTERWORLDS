@@ -1,0 +1,1309 @@
+{
+  "reviewer": "quality_challenger",
+  "scope": "Independent row/source verification and final frozen metadata inspection. Historical fix requests retained in findings are resolved; openFindings is empty only after final inspection. Concept gate acceptance is recorded separately.",
+  "checks": [
+    {
+      "datasetId": "governance-canada-immigration",
+      "verification": "All2 categorical records compared with primary notice paragraphs1\u20134; component names, machine-learning/officer rules, no refusal, officer final decision match.",
+      "sourceUrls": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/advanced-analytics-overseas-family-class-spousal-partner-applications.html",
+        "https://www.canada.ca/en/transparency/terms.html"
+      ],
+      "sourceRefs": [
+        "turn86view0",
+        "turn89view0"
+      ],
+      "findings": [
+        "Fill known publication date at dataset level.",
+        "Facts-only original summaries are the recorded reuse basis; terms do not grant unrestricted commercial reproduction."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/governance-canada-immigration.json",
+      "checkedRowIds": [
+        "ircc-sponsor",
+        "ircc-applicant"
+      ],
+      "sha256": "6764180ef3425db86c0c9e12c0b775c83fe4d5cbac4c980b905560d74b1d3e7f",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "d722e13ebada63f2f19fff76c1056bd8f39a777b723a24f08de2071941bd363e",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-eurohpc-cooperation",
+      "verification": "All7 factory names, host countries and listed consortium countries compared with country subsections of10December2024 release. Matches selection events, not delivery/operating status.",
+      "sourceUrls": [
+        "https://www.eurohpc-ju.europa.eu/selection-first-seven-ai-factories-drive-europes-leadership-ai-2024-12-10_en",
+        "https://commission.europa.eu/legal-notice_en"
+      ],
+      "sourceRefs": [
+        "turn86view1",
+        "turn89view1"
+      ],
+      "findings": [
+        "Fill known publication date at dataset level.",
+        "EuroHPC footer links the inspected Commission reuse notice; no third-party illustration copied."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/governance-eurohpc-cooperation.json",
+      "checkedRowIds": [
+        "lumi",
+        "hammerhai",
+        "pharos",
+        "it4lia",
+        "l-ai",
+        "bsc-ai-factory",
+        "mimer"
+      ],
+      "sha256": "632a9dc118e1d8d327e214f0cbed00639a50a01c1049715e29755402fe81b331",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "c517459ae86ab133f8c23f4bba98d5190db27306dc7b5d446c7dfd99a6c3062d",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-ipsos-nervousness",
+      "verification": "All32 nervousness values compared in source order with printedp15. All age ranges and15 connected-segment sample flags checked against printedp48. Online survey is not a worldwide representative census.",
+      "sourceUrls": [
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf"
+      ],
+      "sourceRefs": [
+        "turn93view0",
+        "turn93view2"
+      ],
+      "findings": [
+        "Split observationStart/End into actual dates; fill June2026 publication.",
+        "Record inspected copyright/terms location supporting the explicitly limited factual-extraction basis."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/governance-ipsos-nervousness.json",
+      "checkedRowIds": [
+        "nervous-CAN",
+        "nervous-AUS",
+        "nervous-NZL",
+        "nervous-USA",
+        "nervous-IND",
+        "nervous-IRL",
+        "nervous-GBR-GBN",
+        "nervous-THA",
+        "nervous-SGP",
+        "nervous-SWE",
+        "nervous-MYS",
+        "nervous-ZAF",
+        "nervous-ESP",
+        "nervous-MEX",
+        "nervous-HUN",
+        "nervous-CHL",
+        "nervous-FRA",
+        "nervous-COL",
+        "nervous-TUR",
+        "nervous-PER",
+        "nervous-NLD",
+        "nervous-BEL",
+        "nervous-ITA",
+        "nervous-ARG",
+        "nervous-IDN",
+        "nervous-BRA",
+        "nervous-DEU",
+        "nervous-KOR",
+        "nervous-CHN-mainland",
+        "nervous-POL",
+        "nervous-JPN",
+        "nervous-ISR"
+      ],
+      "sha256": "b72f652400456d9b31b6de7d75f896a90c1245b53b6e175f7a0d852b08f43c26",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "fdc812a63d74ae13b7dd5fa524a3ca0b77e2da922a17bf351813a496e6987a38",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-gender-exposure",
+      "verification": "All four percentages match the ILO release and primary research brief. Denominator is occupation types, not employed people. High-exposure pair is gradients 3 and 4 combined.",
+      "sourceUrls": [
+        "https://www.ilo.org/sites/default/files/2026-03/Research%20Brief%20GenAI_final0403_0.pdf"
+      ],
+      "sourceRefs": [
+        "turn103view2",
+        "turn131view0"
+      ],
+      "findings": [
+        "Narrow benefits/harm question to modelled exposure.",
+        "Rename highest exposure to high exposure (gradients 3\u20134); define occupation dominance and overlap."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-gender-exposure.json",
+      "checkedRowIds": [
+        "gender-female-any exposure",
+        "gender-male-any exposure",
+        "gender-female-highest exposure",
+        "gender-male-highest exposure"
+      ],
+      "sha256": "62af6d20aef93ba49214b6621056070d9bcd3a3e9038598eb6419f38019fb5a7",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "57589b6aee82f73a771081651e61189c75c22f9eda7744a0cfa56ff16604cfc8",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-nigeria-tutoring",
+      "verification": "Both standardized effects match the current World Bank reproducibility catalogue. Collection dates and non-public microdata status checked.",
+      "sourceUrls": [
+        "https://reproducibility.worldbank.org/index.php/catalog/419"
+      ],
+      "sourceRefs": [
+        "turn103view3"
+      ],
+      "findings": [
+        "Primary paper independently read with pdftotext: Table2 coefficient0.310 robustSE0.068 N654; Table3 English0.238 robustSE0.068 N654. Differential attrition and selected schools explicit. Baseline May2024 distinct from June\u2013July intervention. No AI-alone or national inference."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-nigeria-tutoring.json",
+      "checkedRowIds": [
+        "nigeria-composite",
+        "nigeria-english"
+      ],
+      "sha256": "8e316991ef8a2a557606a4cefbf03427fc3ba638137c135d172f41b1feed0c3b",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "19f2cf727b82c6a0b21c0753c4de312eac9b5559842fb07ce5c36f751927f9a2",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-broadband-affordability",
+      "verification": "Both global median basket values match ITU 2025 text. GNI-per-capita denominator is preserved.",
+      "sourceUrls": [
+        "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/"
+      ],
+      "sourceRefs": [
+        "turn103view1"
+      ],
+      "findings": [
+        "Document evidence for report publication date; the page URL is not sufficient."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-broadband-affordability.json",
+      "checkedRowIds": [
+        "cost-mobile",
+        "cost-fixed"
+      ],
+      "sha256": "a45ed9cd6319ccd8695fabf2b9cbf225d1429a2df07f3e927874ab2f94ff6053",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "cdaf06ff4e97016401d0128c273ceaf5b8ab2e7648a8eeed9114db2f10f57082",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-rural-internet",
+      "verification": "Both global urban/rural Internet-use values match ITU 2025 text; not interpreted as local AI adoption.",
+      "sourceUrls": [
+        "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/"
+      ],
+      "sourceRefs": [
+        "turn106view3"
+      ],
+      "findings": [
+        "Document evidence for report publication date."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-rural-internet.json",
+      "checkedRowIds": [
+        "internet-urban",
+        "internet-rural"
+      ],
+      "sha256": "eaa1ecd9bc5fe0c622886ec4575097bd0b9b62999d6be0961cfc9c9cb7066c57",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "1f8788eb5d1632d71df090fb88af6d4f9aebb46595d3b9ba50402918ad617525",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-ai-development-partners",
+      "verification": "All 14 listed countries match the launch announcement and Republic of the Congo is correctly coded COG. These are named programme partners, not delivered capacity.",
+      "sourceUrls": [
+        "https://www.undp.org/romecentre/press-releases/g7-endorsed-ai-hub-sustainable-development-launches-rome-forging-25-new-partnerships-catalyze-transformative-potential"
+      ],
+      "sourceRefs": [
+        "turn103view0"
+      ],
+      "findings": [],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-ai-development-partners.json",
+      "checkedRowIds": [
+        "hub-DZA",
+        "hub-AGO",
+        "hub-EGY",
+        "hub-ETH",
+        "hub-GHA",
+        "hub-CIV",
+        "hub-KEN",
+        "hub-MRT",
+        "hub-MAR",
+        "hub-MOZ",
+        "hub-COG",
+        "hub-SEN",
+        "hub-TZA",
+        "hub-TUN"
+      ],
+      "sha256": "e6b13e0515d733bf9495cde5c585242fdcb51db2e85f1308a3c29bc22ac4c161",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "527fe0b97a9d80515187f91fa899aeea799a0a92a90ec20f9cef6f1d6ecc964c",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-patent-inventors",
+      "verification": "All five country values match WIPO key findings; simple patent family definition and historical window checked.",
+      "sourceUrls": [
+        "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+        "https://www.wipo.int/web-publications/patent-landscape-report-generative-artificial-intelligence-genai/en/copyright-notice.html"
+      ],
+      "sourceRefs": [
+        "turn111view3",
+        "turn106view1"
+      ],
+      "findings": [
+        "Split observation start/end years.",
+        "Include required WIPO derivative-work disclaimer."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-patent-inventors.json",
+      "checkedRowIds": [
+        "patent-CHN",
+        "patent-USA",
+        "patent-KOR",
+        "patent-JPN",
+        "patent-IND"
+      ],
+      "sha256": "f29ee04a278ffbdd9312c4515bf52ea90f54d4a32927038eee687f98831b3a88",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "b9d945c43d24fd153c277e1f30eae8c740f5e91e1e64d5856783372d9f84a986",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-patent-applicants",
+      "verification": "All ten applicant values match WIPO key findings; organisations are not assigned invented national locations.",
+      "sourceUrls": [
+        "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+        "https://www.wipo.int/web-publications/patent-landscape-report-generative-artificial-intelligence-genai/en/copyright-notice.html"
+      ],
+      "sourceRefs": [
+        "turn111view2",
+        "turn106view1"
+      ],
+      "findings": [
+        "Split observation start/end years.",
+        "Include required WIPO derivative-work disclaimer."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-patent-applicants.json",
+      "checkedRowIds": [
+        "applicant-1",
+        "applicant-2",
+        "applicant-3",
+        "applicant-4",
+        "applicant-5",
+        "applicant-6",
+        "applicant-7",
+        "applicant-8",
+        "applicant-9",
+        "applicant-10"
+      ],
+      "sha256": "3e79239c6f8254236f6c7fee77c5825132dee03a48ecd38a02d7d437454d45f5",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "4fb76b56a5f74e9e7470f007b10d0a15433504a3b794bf879012b5ca15481be7",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-platform-pay",
+      "verification": "Both earnings statistics match the ILO release. Report confirms case-study sampling and fieldwork dates.",
+      "sourceUrls": [
+        "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+        "https://www.ilo.org/sites/default/files/2025-04/Informe%20Plataformas%20Digitales_EN_web.pdf"
+      ],
+      "sourceRefs": [
+        "turn106view4",
+        "turn136view0",
+        "turn136view2"
+      ],
+      "findings": [
+        "Fresh primary report full PDF Figure14/printed31 independently checked all four values: paid-only median4/mean8.35, paid+unpaid median2.57/mean5.48; trimming and fieldwork retained. CC BY4 and adaptation notice inspected."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-platform-pay.json",
+      "checkedRowIds": [
+        "lac-pay-median",
+        "lac-pay-mean",
+        "lac-pay-paid-median",
+        "lac-pay-paid-mean"
+      ],
+      "sha256": "bff31cf3fed44ce069378696a6469bc6d0f9cd4e46683647531b9c71b66b900d",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "83eca4677bd3fecceb9b005e6cd923d2e844802eb3fce1d476f9cbbe8e9d0213",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-platform-crossborder",
+      "verification": "Both percentages and their different denominators match the ILO release; more-than qualifier preserved. Report confirms fieldwork dates.",
+      "sourceUrls": [
+        "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+        "https://www.ilo.org/sites/default/files/2025-04/Informe%20Plataformas%20Digitales_EN_web.pdf"
+      ],
+      "sourceRefs": [
+        "turn106view4",
+        "turn136view0",
+        "turn136view2"
+      ],
+      "findings": [
+        "Fresh primary report executive summary and section3.6 independently checked rounded53% and90%, with distinct denominators; no >53 qualifier. Fieldwork Dec15,2023\u2013Mar31,2024;1153 included sample; selected web-platform workforce only."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-platform-crossborder.json",
+      "checkedRowIds": [
+        "lac-client-foreign",
+        "lac-client-outside-region"
+      ],
+      "sha256": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "c2d676882821e17c334589f46a561ed3628044132141cc180aa4bca1c23b6719",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-electricity-access",
+      "verification": "Fresh independent retrieval of complete World Bank API payloads exactly matches preserved inputs. Independently recomputed all 217 normalized rows, country filter and null behavior. See wdi-independent-values.json. Indicator-specific CC-BY 4.0 notices checked.",
+      "sourceUrls": [
+        "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS",
+        "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+        "https://data.worldbank.org/indicator/SP.POP.TOTL"
+      ],
+      "sourceRefs": [
+        "turn116view0",
+        "turn116view1",
+        "turn116view2"
+      ],
+      "evidencePaths": [
+        "research/audits/wdi-independent-values.json"
+      ],
+      "findings": [
+        "Add original provider names/links to attribution."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-electricity-access.json",
+      "checkedRowIds": [
+        "electricity-AFG",
+        "electricity-ALB",
+        "electricity-DZA",
+        "electricity-ASM",
+        "electricity-AND",
+        "electricity-AGO",
+        "electricity-ATG",
+        "electricity-ARG",
+        "electricity-ARM",
+        "electricity-ABW",
+        "electricity-AUS",
+        "electricity-AUT",
+        "electricity-AZE",
+        "electricity-BHS",
+        "electricity-BHR",
+        "electricity-BGD",
+        "electricity-BRB",
+        "electricity-BLR",
+        "electricity-BEL",
+        "electricity-BLZ",
+        "electricity-BEN",
+        "electricity-BMU",
+        "electricity-BTN",
+        "electricity-BOL",
+        "electricity-BIH",
+        "electricity-BWA",
+        "electricity-BRA",
+        "electricity-VGB",
+        "electricity-BRN",
+        "electricity-BGR",
+        "electricity-BFA",
+        "electricity-BDI",
+        "electricity-CPV",
+        "electricity-KHM",
+        "electricity-CMR",
+        "electricity-CAN",
+        "electricity-CYM",
+        "electricity-CAF",
+        "electricity-TCD",
+        "electricity-CHI",
+        "electricity-CHL",
+        "electricity-CHN",
+        "electricity-COL",
+        "electricity-COM",
+        "electricity-COD",
+        "electricity-COG",
+        "electricity-CRI",
+        "electricity-CIV",
+        "electricity-HRV",
+        "electricity-CUB",
+        "electricity-CUW",
+        "electricity-CYP",
+        "electricity-CZE",
+        "electricity-DNK",
+        "electricity-DJI",
+        "electricity-DMA",
+        "electricity-DOM",
+        "electricity-ECU",
+        "electricity-EGY",
+        "electricity-SLV",
+        "electricity-GNQ",
+        "electricity-ERI",
+        "electricity-EST",
+        "electricity-SWZ",
+        "electricity-ETH",
+        "electricity-FRO",
+        "electricity-FJI",
+        "electricity-FIN",
+        "electricity-FRA",
+        "electricity-PYF",
+        "electricity-GAB",
+        "electricity-GMB",
+        "electricity-GEO",
+        "electricity-DEU",
+        "electricity-GHA",
+        "electricity-GIB",
+        "electricity-GRC",
+        "electricity-GRL",
+        "electricity-GRD",
+        "electricity-GUM",
+        "electricity-GTM",
+        "electricity-GIN",
+        "electricity-GNB",
+        "electricity-GUY",
+        "electricity-HTI",
+        "electricity-HND",
+        "electricity-HKG",
+        "electricity-HUN",
+        "electricity-ISL",
+        "electricity-IND",
+        "electricity-IDN",
+        "electricity-IRN",
+        "electricity-IRQ",
+        "electricity-IRL",
+        "electricity-IMN",
+        "electricity-ISR",
+        "electricity-ITA",
+        "electricity-JAM",
+        "electricity-JPN",
+        "electricity-JOR",
+        "electricity-KAZ",
+        "electricity-KEN",
+        "electricity-KIR",
+        "electricity-PRK",
+        "electricity-KOR",
+        "electricity-XKX",
+        "electricity-KWT",
+        "electricity-KGZ",
+        "electricity-LAO",
+        "electricity-LVA",
+        "electricity-LBN",
+        "electricity-LSO",
+        "electricity-LBR",
+        "electricity-LBY",
+        "electricity-LIE",
+        "electricity-LTU",
+        "electricity-LUX",
+        "electricity-MAC",
+        "electricity-MDG",
+        "electricity-MWI",
+        "electricity-MYS",
+        "electricity-MDV",
+        "electricity-MLI",
+        "electricity-MLT",
+        "electricity-MHL",
+        "electricity-MRT",
+        "electricity-MUS",
+        "electricity-MEX",
+        "electricity-FSM",
+        "electricity-MDA",
+        "electricity-MCO",
+        "electricity-MNG",
+        "electricity-MNE",
+        "electricity-MAR",
+        "electricity-MOZ",
+        "electricity-MMR",
+        "electricity-NAM",
+        "electricity-NRU",
+        "electricity-NPL",
+        "electricity-NLD",
+        "electricity-NCL",
+        "electricity-NZL",
+        "electricity-NIC",
+        "electricity-NER",
+        "electricity-NGA",
+        "electricity-MKD",
+        "electricity-MNP",
+        "electricity-NOR",
+        "electricity-OMN",
+        "electricity-PAK",
+        "electricity-PLW",
+        "electricity-PAN",
+        "electricity-PNG",
+        "electricity-PRY",
+        "electricity-PER",
+        "electricity-PHL",
+        "electricity-POL",
+        "electricity-PRT",
+        "electricity-PRI",
+        "electricity-QAT",
+        "electricity-ROU",
+        "electricity-RUS",
+        "electricity-RWA",
+        "electricity-WSM",
+        "electricity-SMR",
+        "electricity-STP",
+        "electricity-SAU",
+        "electricity-SEN",
+        "electricity-SRB",
+        "electricity-SYC",
+        "electricity-SLE",
+        "electricity-SGP",
+        "electricity-SXM",
+        "electricity-SVK",
+        "electricity-SVN",
+        "electricity-SLB",
+        "electricity-SOM",
+        "electricity-ZAF",
+        "electricity-SSD",
+        "electricity-ESP",
+        "electricity-LKA",
+        "electricity-KNA",
+        "electricity-LCA",
+        "electricity-MAF",
+        "electricity-VCT",
+        "electricity-SDN",
+        "electricity-SUR",
+        "electricity-SWE",
+        "electricity-CHE",
+        "electricity-SYR",
+        "electricity-TJK",
+        "electricity-TZA",
+        "electricity-THA",
+        "electricity-TLS",
+        "electricity-TGO",
+        "electricity-TON",
+        "electricity-TTO",
+        "electricity-TUN",
+        "electricity-TUR",
+        "electricity-TKM",
+        "electricity-TCA",
+        "electricity-TUV",
+        "electricity-UGA",
+        "electricity-UKR",
+        "electricity-ARE",
+        "electricity-GBR",
+        "electricity-USA",
+        "electricity-URY",
+        "electricity-UZB",
+        "electricity-VUT",
+        "electricity-VEN",
+        "electricity-VNM",
+        "electricity-VIR",
+        "electricity-PSE",
+        "electricity-YEM",
+        "electricity-ZMB",
+        "electricity-ZWE"
+      ],
+      "sha256": "b1648fb3836c873a1d1cbeb303c209d2704b599eddbd98d26d0ceca79c66bce4",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "970463304eee5555385f829a381e4e551e0f2ee76c20c238ad2f22cbfa83542f",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-population-connectivity",
+      "verification": "Fresh independent retrieval of complete World Bank API payloads exactly matches preserved inputs. Independently recomputed all 217 normalized rows, country filter and null behavior. See wdi-independent-values.json. Indicator-specific CC-BY 4.0 notices checked.",
+      "sourceUrls": [
+        "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS",
+        "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+        "https://data.worldbank.org/indicator/SP.POP.TOTL"
+      ],
+      "sourceRefs": [
+        "turn116view0",
+        "turn116view1",
+        "turn116view2"
+      ],
+      "evidencePaths": [
+        "research/audits/wdi-independent-values.json"
+      ],
+      "findings": [
+        "Add original provider names/links to attribution."
+      ],
+      "sourceCheckStatus": "verified",
+      "path": "research/datasets/society-population-connectivity.json",
+      "checkedRowIds": [
+        "connected-ABW",
+        "connected-AFG",
+        "connected-AGO",
+        "connected-ALB",
+        "connected-AND",
+        "connected-ARE",
+        "connected-ARG",
+        "connected-ARM",
+        "connected-ASM",
+        "connected-ATG",
+        "connected-AUS",
+        "connected-AUT",
+        "connected-AZE",
+        "connected-BDI",
+        "connected-BEL",
+        "connected-BEN",
+        "connected-BFA",
+        "connected-BGD",
+        "connected-BGR",
+        "connected-BHR",
+        "connected-BHS",
+        "connected-BIH",
+        "connected-BLR",
+        "connected-BLZ",
+        "connected-BMU",
+        "connected-BOL",
+        "connected-BRA",
+        "connected-BRB",
+        "connected-BRN",
+        "connected-BTN",
+        "connected-BWA",
+        "connected-CAF",
+        "connected-CAN",
+        "connected-CHE",
+        "connected-CHI",
+        "connected-CHL",
+        "connected-CHN",
+        "connected-CIV",
+        "connected-CMR",
+        "connected-COD",
+        "connected-COG",
+        "connected-COL",
+        "connected-COM",
+        "connected-CPV",
+        "connected-CRI",
+        "connected-CUB",
+        "connected-CUW",
+        "connected-CYM",
+        "connected-CYP",
+        "connected-CZE",
+        "connected-DEU",
+        "connected-DJI",
+        "connected-DMA",
+        "connected-DNK",
+        "connected-DOM",
+        "connected-DZA",
+        "connected-ECU",
+        "connected-EGY",
+        "connected-ERI",
+        "connected-ESP",
+        "connected-EST",
+        "connected-ETH",
+        "connected-FIN",
+        "connected-FJI",
+        "connected-FRA",
+        "connected-FRO",
+        "connected-FSM",
+        "connected-GAB",
+        "connected-GBR",
+        "connected-GEO",
+        "connected-GHA",
+        "connected-GIB",
+        "connected-GIN",
+        "connected-GMB",
+        "connected-GNB",
+        "connected-GNQ",
+        "connected-GRC",
+        "connected-GRD",
+        "connected-GRL",
+        "connected-GTM",
+        "connected-GUM",
+        "connected-GUY",
+        "connected-HKG",
+        "connected-HND",
+        "connected-HRV",
+        "connected-HTI",
+        "connected-HUN",
+        "connected-IDN",
+        "connected-IMN",
+        "connected-IND",
+        "connected-IRL",
+        "connected-IRN",
+        "connected-IRQ",
+        "connected-ISL",
+        "connected-ISR",
+        "connected-ITA",
+        "connected-JAM",
+        "connected-JOR",
+        "connected-JPN",
+        "connected-KAZ",
+        "connected-KEN",
+        "connected-KGZ",
+        "connected-KHM",
+        "connected-KIR",
+        "connected-KNA",
+        "connected-KOR",
+        "connected-KWT",
+        "connected-LAO",
+        "connected-LBN",
+        "connected-LBR",
+        "connected-LBY",
+        "connected-LCA",
+        "connected-LIE",
+        "connected-LKA",
+        "connected-LSO",
+        "connected-LTU",
+        "connected-LUX",
+        "connected-LVA",
+        "connected-MAC",
+        "connected-MAF",
+        "connected-MAR",
+        "connected-MCO",
+        "connected-MDA",
+        "connected-MDG",
+        "connected-MDV",
+        "connected-MEX",
+        "connected-MHL",
+        "connected-MKD",
+        "connected-MLI",
+        "connected-MLT",
+        "connected-MMR",
+        "connected-MNE",
+        "connected-MNG",
+        "connected-MNP",
+        "connected-MOZ",
+        "connected-MRT",
+        "connected-MUS",
+        "connected-MWI",
+        "connected-MYS",
+        "connected-NAM",
+        "connected-NCL",
+        "connected-NER",
+        "connected-NGA",
+        "connected-NIC",
+        "connected-NLD",
+        "connected-NOR",
+        "connected-NPL",
+        "connected-NRU",
+        "connected-NZL",
+        "connected-OMN",
+        "connected-PAK",
+        "connected-PAN",
+        "connected-PER",
+        "connected-PHL",
+        "connected-PLW",
+        "connected-PNG",
+        "connected-POL",
+        "connected-PRI",
+        "connected-PRK",
+        "connected-PRT",
+        "connected-PRY",
+        "connected-PSE",
+        "connected-PYF",
+        "connected-QAT",
+        "connected-ROU",
+        "connected-RUS",
+        "connected-RWA",
+        "connected-SAU",
+        "connected-SDN",
+        "connected-SEN",
+        "connected-SGP",
+        "connected-SLB",
+        "connected-SLE",
+        "connected-SLV",
+        "connected-SMR",
+        "connected-SOM",
+        "connected-SRB",
+        "connected-SSD",
+        "connected-STP",
+        "connected-SUR",
+        "connected-SVK",
+        "connected-SVN",
+        "connected-SWE",
+        "connected-SWZ",
+        "connected-SXM",
+        "connected-SYC",
+        "connected-SYR",
+        "connected-TCA",
+        "connected-TCD",
+        "connected-TGO",
+        "connected-THA",
+        "connected-TJK",
+        "connected-TKM",
+        "connected-TLS",
+        "connected-TON",
+        "connected-TTO",
+        "connected-TUN",
+        "connected-TUR",
+        "connected-TUV",
+        "connected-TZA",
+        "connected-UGA",
+        "connected-UKR",
+        "connected-URY",
+        "connected-USA",
+        "connected-UZB",
+        "connected-VCT",
+        "connected-VEN",
+        "connected-VGB",
+        "connected-VIR",
+        "connected-VNM",
+        "connected-VUT",
+        "connected-WSM",
+        "connected-XKX",
+        "connected-YEM",
+        "connected-ZAF",
+        "connected-ZMB",
+        "connected-ZWE"
+      ],
+      "sha256": "36f0f24a3a21541d98cb2e9f63eacbda19c7bfdd7cda50cc780bc75a8c7b4655",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "86bcade84085c5a470623476f42b3772d9cada8a15581cf5f66a5469f3c9ec19",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-cyber-observed-accounts",
+      "verification": "Anthropic MITRE ATT&CK article findings table",
+      "sourceUrls": [
+        "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+      ],
+      "findings": [
+        "560/832=67.3% and54/832=6.5% match source rounded values. Selected assessed banned accounts, overlapping techniques, not incidents or global prevalence."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-cyber-observed-accounts.json",
+      "checkedRowIds": [
+        "cyber-malware",
+        "cyber-lateral"
+      ],
+      "sha256": "705504f105faed04b5a71baff09be50ec529e941b0735b88bb833e8316d16284",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "bdc15698698c47f69e50582d1dc60c1ddfe054f931c764164f0e5628ff6267b3",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-deepfake-fraud-cases",
+      "verification": "HK Legislative Council answer26June2024 paragraphs3\u20135",
+      "sourceUrls": [
+        "https://www.info.gov.hk/gia/general/202406/26/P2024062600192.htm"
+      ],
+      "findings": [
+        "Three cases and200000,about200million,nearly4million HKD match. Loan value, reported loss and instructed transfer remain distinct; source does not establish global routes."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-deepfake-fraud-cases.json",
+      "checkedRowIds": [
+        "hk-loan-case",
+        "hk-video-jan",
+        "hk-video-may"
+      ],
+      "sha256": "961e05e7060b20f0db61ff7307074f8c5cced0169fd0b4a396e9e42dec96df55",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "e2d65eb879e7d5961165a71dbacb6cea7adcbe99a884e7b23cf7fed4de5940de",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-reporting-channels",
+      "verification": "HK Legislative Council answer26June2024 paragraph2",
+      "sourceUrls": [
+        "https://www.info.gov.hk/gia/general/202406/26/P2024062600192.htm"
+      ],
+      "findings": [
+        "2 proactively identified versus19 public-reported clips match. Nov2023\u2013May2024, separate observation channels, not fraud incidence."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-reporting-channels.json",
+      "checkedRowIds": [
+        "clips-proactive",
+        "clips-public"
+      ],
+      "sha256": "67ea54d390106c32e4667d62a34c72ec42e1b9a35954470ec8e11bc710f4a109",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "45b7f73d3909518e003ca2f419156b4602bba0b02b1fa2c49383daa081c0b2d7",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-gemma-task-comparison",
+      "verification": "Official model card Benchmark Results, updated30July2026; CC BY4 footer",
+      "sourceUrls": [
+        "https://ai.google.dev/gemma/docs/core/model_card_4"
+      ],
+      "findings": [
+        "All18 source scores rechecked. Model card overrides inconsistent marketing landing page: MMLU Pro and Tau2 average-over-three labels/values retained. Configuration confounding prevents parameter-count causal claim."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-gemma-task-comparison.json",
+      "checkedRowIds": [
+        "gemma-0-0",
+        "gemma-0-1",
+        "gemma-0-2",
+        "gemma-1-0",
+        "gemma-1-1",
+        "gemma-1-2",
+        "gemma-2-0",
+        "gemma-2-1",
+        "gemma-2-2",
+        "gemma-3-0",
+        "gemma-3-1",
+        "gemma-3-2",
+        "gemma-4-0",
+        "gemma-4-1",
+        "gemma-4-2",
+        "gemma-5-0",
+        "gemma-5-1",
+        "gemma-5-2"
+      ],
+      "sha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "e94a87ffbffbdd0915c1fdfb516a649cbde5300fb23a8a9921152db695213c70",
+      "finalFreezeInspection": "Reinspected all 18 scores, authoritative model-card licence and unknown benchmark testing windows; no value changes from independently checked authoritative card.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-large-training",
+      "verification": "Independent fresh1078-row CSV; audits/epoch-independent-values.json",
+      "sourceUrls": [
+        "https://epoch.ai/data/notable_ai_models.csv"
+      ],
+      "findings": [
+        "Reconstructed filter yields exactly20; all values, publication dates, organization fields, confidence labels and estimate notes match. Epoch documentation explicitly grants Creative Commons Attribution; affiliation is not training location."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-large-training.json",
+      "checkedRowIds": [
+        "epoch-0",
+        "epoch-1",
+        "epoch-2",
+        "epoch-3",
+        "epoch-4",
+        "epoch-5",
+        "epoch-6",
+        "epoch-7",
+        "epoch-8",
+        "epoch-9",
+        "epoch-10",
+        "epoch-11",
+        "epoch-12",
+        "epoch-13",
+        "epoch-14",
+        "epoch-15",
+        "epoch-16",
+        "epoch-17",
+        "epoch-18",
+        "epoch-19"
+      ],
+      "sha256": "831895eb4f8d22d6dc30f513f0d4dc118573744c2c862d7334d2e3afe8334ae6",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "ccb8fdfb6b193c6aa8b968db13ac3af241d2667b9c0f8fb454bd5a60b321613b",
+      "finalFreezeInspection": "Reinspected all 20 values against independent CSV selection; corrected per-run denominator, unknown CSV publication date and exact Attribution licence wording are retained.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-monitoring-mechanisms",
+      "verification": "CoE Framework Convention coverage/followup; OECD28May2026 HAIP v2 release",
+      "sourceUrls": [
+        "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+        "https://www.oecd.org/en/about/news/press-releases/2026/05/oecd-launches-streamlined-hiroshima-ai-process-reporting-framework-to-help-small-and-medium-sized-enterprises-participate.html"
+      ],
+      "findings": [
+        "Two mechanisms accurately distinguished. Treaty Conference of Parties and national-defence exclusion versus voluntary annual company report invitation; neither proves effectiveness."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-monitoring-mechanisms.json",
+      "checkedRowIds": [
+        "cets225",
+        "haip2"
+      ],
+      "sha256": "192e5273f2dec5156d7e6678a50887ef1060a4152c39e5dd775c36c0138a58ec",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "c672802c7ec00e7edda4299137b1714ffe73672551c9f41e5f6266e93e52d34e",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-newsroom-disclosure",
+      "verification": "AP23July2026 policy announcement paragraphs4\u20135",
+      "sourceUrls": [
+        "https://www.ap.org/the-definitive-source/announcements/ap-updates-newsroom-standards-for-artificial-intelligence/"
+      ],
+      "findings": [
+        "All four original categorical summaries match assisted tasks, review, photographic prohibition and disclosure/context distinctions. One newsroom policy, not worldwide freedom score."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-newsroom-disclosure.json",
+      "checkedRowIds": [
+        "ap-text",
+        "ap-photography",
+        "ap-material",
+        "ap-manipulated"
+      ],
+      "sha256": "35356e37f06b1d7581300880ccb16eaccc68d59b553523dc63908aff1ed80641",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "76f2a3860fb05b804aca2716b88f657bbbf29e98f8e77e7667b23a2a54d171e5",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-orbital-app-ledger",
+      "verification": "ESA17August2024 launch article app sections",
+      "sourceUrls": [
+        "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Phsat-2/New_satellite_demonstrates_the_power_of_AI_for_Earth_observation"
+      ],
+      "findings": [
+        "All six named apps/statuses match four onboard and two planned uploads. Source launch was16August2024, article17August. Does not certify present operation."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-orbital-app-ledger.json",
+      "checkedRowIds": [
+        "phisat-0",
+        "phisat-1",
+        "phisat-2",
+        "phisat-3",
+        "phisat-4",
+        "phisat-5"
+      ],
+      "sha256": "21af5470540060f5d8f03654dd722f2e51f8cdf5eb35d72b7e8a542710fcf6b3",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "30f03c592ce40805e4df77faf76eac768e7a08efe830ffd2e5d53c30726099d2",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-borderlines-consistency",
+      "verification": "Primary ACL PDF Table5 printed3860; metrics Table4; ACL CC BY4 footer",
+      "sourceUrls": [
+        "https://aclanthology.org/2024.naacl-long.213/"
+      ],
+      "findings": [
+        "All six Cst CS(all) values match50.7,53.9,53.5,59.3,58.3,63.3. Mean pairwise concurrence is consistency, not sovereignty/truth; archival versions retained."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-borderlines-consistency.json",
+      "checkedRowIds": [
+        "borderlines-0",
+        "borderlines-1",
+        "borderlines-2",
+        "borderlines-3",
+        "borderlines-4",
+        "borderlines-5"
+      ],
+      "sha256": "45135c0dc6c9cc497bc41b40a845cc0a12cb1f15e57162f1bc9b47ee83f2da55",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "4916d39b196ab8f0ea3feab9cbb05df21663738549da629263c8751a9cab8747",
+      "finalFreezeInspection": "Reinspected six values, metric definition and archival publication; testing dates explicitly unknown.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-globalmmlu-translation",
+      "verification": "Primary ACL PDF Introducing Global-MMLU printed18762; CC BY4 footer",
+      "sourceUrls": [
+        "https://aclanthology.org/2025.acl-long.919/"
+      ],
+      "findings": [
+        "14 professional/post-edited,11 crowdsourced,16 machine translated plus original English=42 match. Counts are language versions, not people or model-training provenance."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-globalmmlu-translation.json",
+      "checkedRowIds": [
+        "globalmmlu-0",
+        "globalmmlu-1",
+        "globalmmlu-2",
+        "globalmmlu-3"
+      ],
+      "sha256": "0ccdad3caf2fcdc49b3e96f452d91a4086b3a4d6dc1d4d17cacaeb5366ef8d9f",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "9117a0ed8fdadd7ec2f552ebb4475ac42e46a1fd8d9223bd0d4411beb302214a",
+      "finalFreezeInspection": "Reinspected all four counts, translation definitions and archival publication; testing dates explicitly unknown.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-un-panel-vote",
+      "verification": "UNRIC13February2026 report, appointment paragraph",
+      "sourceUrls": [
+        "https://unric.org/en/general-assembly-appoints-artificial-intelligence-panel/"
+      ],
+      "findings": [
+        "117 favourable,2 opposing,2 abstaining match12February vote.121 recorded votes is denominator;40 individual panel members not country representation."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-un-panel-vote.json",
+      "checkedRowIds": [
+        "un-panel-for",
+        "un-panel-against",
+        "un-panel-abstain"
+      ],
+      "sha256": "1e2a931305de1ab19208cce6148e449eeb0b38afcc57ceac610b936546114984",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "47547d0f742ad37c1218424e633142d53a75d9209a70faec34a2cc144828b796",
+      "finalFreezeInspection": "Reinspected three counts and primary vote/publication dates; source-specific factual extraction basis retained.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-ai-growth-zones",
+      "verification": "UK DSIT official collection five regional announcements; OGL footer",
+      "sourceUrls": [
+        "https://www.gov.uk/government/collections/ai-growth-zones",
+        "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones"
+      ],
+      "findings": [
+        "Five labels and dates match exactly. Scotland collection29January2026 differs linked Lanarkshire press release3February, explicitly preserved. Not operational sites."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/society-ai-growth-zones.json",
+      "checkedRowIds": [
+        "zone-1",
+        "zone-2",
+        "zone-3",
+        "zone-4",
+        "zone-5"
+      ],
+      "sha256": "d56884c5dc00ca6c274fc2b7752febbdc626531627d9bada4194eb2d1acfa116",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "7aa421271dd4b87d43e4db9f0c81ceefe5c34ec726764defa9ba7b01d15c152c",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-stargate-scale",
+      "verification": "OpenAI21January2025 opening announcement; independent WDI GDP API",
+      "sourceUrls": [
+        "https://openai.com/index/announcing-the-stargate-project/",
+        "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000"
+      ],
+      "findings": [
+        "500billion is a four-year intention, not spent money/current forecast. All three2025 GDP reference values match independent fresh API; audits/gdp-independent-values.json. Different temporal quantities kept separate."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/society-stargate-scale.json",
+      "checkedRowIds": [
+        "stargate-intention",
+        "stargate-gdp-CZE",
+        "stargate-gdp-PRT",
+        "stargate-gdp-FIN"
+      ],
+      "sha256": "375aba92c478c3e99c8e43ba3532ff2273bc8f6e8ce8a8bc8cefbb4d10614ca4",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "853add582017ea8a1f9678c2b30144a4d6a8f37e4fa7dded692102647b09b5e7",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-company-gdp",
+      "verification": "Microsoft FY2026 Q4 GAAP12-month revenue table; independent WDI GDP API",
+      "sourceUrls": [
+        "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+        "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000"
+      ],
+      "findings": [
+        "331839million FY2026 and281724million FY2025 match. All four2025 country GDP values match independently retrieved API. Fiscal sales and calendar GDP are distinct quantities, no AI-only allocation."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/society-company-gdp.json",
+      "checkedRowIds": [
+        "microsoft-fy2025",
+        "microsoft-fy2026",
+        "gdp-GRC",
+        "gdp-NZL",
+        "gdp-FIN",
+        "gdp-PRT"
+      ],
+      "sha256": "c61b06c86f33fe9641a245c4a0e1b2aac3878a002c9cec8fc0f8647447039c02",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "6426898fe25e1230c4a411eaf68176c5b8cfed7967a171310b930a0a14f09847",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "society-platform-partnerships",
+      "verification": "FTC17January2025 staff blog opening studied partnerships",
+      "sourceUrls": [
+        "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments"
+      ],
+      "findings": [
+        "All three named organizational pairs match. Inclusion in historical study does not establish current exclusivity, ownership or market share."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/society-platform-partnerships.json",
+      "checkedRowIds": [
+        "partnership-1",
+        "partnership-2",
+        "partnership-3"
+      ],
+      "sha256": "eb1343ea747bfb52f1113477ea07f8b33dc0b6c055e810fb8559a3ab4e917d14",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "5611c072981c6e3d930fa8590ca25a5c68bd0afbca2b5e8d61715f7630d4c38b",
+      "finalFreezeInspection": "Byte-for-byte equality verified after reversing only the UTC retrieval-date normalization; no numeric, categorical or source-publication value changed.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-uk-asylum-roles",
+      "verification": "HomeOffice pilot executive summary; original official ministerial correspondence7August response6 and22June audit section",
+      "sourceUrls": [
+        "https://www.gov.uk/government/publications/evaluation-of-ai-trials-in-the-asylum-decision-making-process/evaluation-of-ai-trials-in-the-asylum-decision-making-process",
+        "https://www.openrightsgroup.org/app/uploads/2026/10/Letter-to-Bell-Rebeiro-Addy-from-Anna-Turley.pdf",
+        "https://www.openrightsgroup.org/app/uploads/2026/10/Letter-to-Bell-Ribeiro-Addy-MP-from-Alex-Norris.pdf"
+      ],
+      "findings": [
+        "Four categories independently checked against original sources. Pilot roles May\u2013Dec2024 separate from dated2026 oversight statements. NGO-hosted original correspondence is primary document provenance, not an NGO opinion; no inference of universal appeal absence."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-uk-asylum-roles.json",
+      "checkedRowIds": [
+        "acs-role",
+        "aps-role",
+        "asylum-notification",
+        "asylum-audit"
+      ],
+      "sha256": "b7e03872161de1bdde4a3e5d5b8e5c68c3ff5a2684923bc70bdd5859a4aa6ca2",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "e3d642ff14010e3a8cf7050570a45ffe068ec8da7d2aa0ba77a455e3d45328e6",
+      "finalFreezeInspection": "Reinspected all four categories and ministerial document dates separately from October disclosure; primary correspondence provenance retained.",
+      "openFindings": []
+    },
+    {
+      "datasetId": "governance-un-mandate-handoff",
+      "verification": "UN resolution79/325 operative1(a),1(e),4,5,7",
+      "sourceUrls": [
+        "https://mandates.un.org/mandate/A/RES/79/325?subject=Artificial+Intelligence"
+      ],
+      "findings": [
+        "Two mandates and annual report handoff match official registry. Formal functions do not prove coordination effectiveness or complete worldwide governance."
+      ],
+      "sourceCheckStatus": "verified",
+      "reviewer": "quality_challenger",
+      "path": "research/datasets/governance-un-mandate-handoff.json",
+      "checkedRowIds": [
+        "un-scientific-panel",
+        "un-global-dialogue"
+      ],
+      "sha256": "b40102fecb10f1ef36b39cca08292279ae195d203cf5ad09ee708150eb74a0e0",
+      "checkedAt": "2026-10-19",
+      "previousReviewedSha256": "eff7d4b70fa3b96d6d53aaa577bc6b599500a042e1c773d5542c02f606c95f84",
+      "finalFreezeInspection": "Reinspected two original factual mandate summaries, resolution date and primary paragraph locators.",
+      "openFindings": []
+    }
+  ],
+  "freezeReviewedAt": "2026-10-19"
+}

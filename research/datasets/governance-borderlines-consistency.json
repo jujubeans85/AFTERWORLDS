@@ -1,0 +1,232 @@
+{
+  "datasetId": "governance-borderlines-consistency",
+  "id": "governance-borderlines-consistency",
+  "title": "Language consistency in six archived territorial-answer models",
+  "conceptIds": [
+    "409"
+  ],
+  "rows": [
+    {
+      "id": "borderlines-0",
+      "entityId": "borderlines-0",
+      "name": "BLOOM560M",
+      "value": 50.7,
+      "unit": "Consistency concurrence score (0–100)",
+      "period": "2024 archival study",
+      "sourceId": "borderlines-naacl2024",
+      "sourceLocator": "Printed p.3860, Table 5, BLOOM560M row × Cst CS (all)",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Published benchmark aggregate over 251 territories; consistency is not truth or a determination of sovereignty.",
+      "responseMethod": "rank classification",
+      "metricDefinition": "Mean pairwise cross-language concurrence, source-defined CS scoring; higher means more consistent",
+      "territoryCount": 251
+    },
+    {
+      "id": "borderlines-1",
+      "entityId": "borderlines-1",
+      "name": "BLOOM7.1B",
+      "value": 53.9,
+      "unit": "Consistency concurrence score (0–100)",
+      "period": "2024 archival study",
+      "sourceId": "borderlines-naacl2024",
+      "sourceLocator": "Printed p.3860, Table 5, BLOOM7.1B row × Cst CS (all)",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Published benchmark aggregate over 251 territories; consistency is not truth or a determination of sovereignty.",
+      "responseMethod": "rank classification",
+      "metricDefinition": "Mean pairwise cross-language concurrence, source-defined CS scoring; higher means more consistent",
+      "territoryCount": 251
+    },
+    {
+      "id": "borderlines-2",
+      "entityId": "borderlines-2",
+      "name": "BLOOMZ560M",
+      "value": 53.5,
+      "unit": "Consistency concurrence score (0–100)",
+      "period": "2024 archival study",
+      "sourceId": "borderlines-naacl2024",
+      "sourceLocator": "Printed p.3860, Table 5, BLOOMZ560M row × Cst CS (all)",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Published benchmark aggregate over 251 territories; consistency is not truth or a determination of sovereignty.",
+      "responseMethod": "rank classification",
+      "metricDefinition": "Mean pairwise cross-language concurrence, source-defined CS scoring; higher means more consistent",
+      "territoryCount": 251
+    },
+    {
+      "id": "borderlines-3",
+      "entityId": "borderlines-3",
+      "name": "BLOOMZ7.1B",
+      "value": 59.3,
+      "unit": "Consistency concurrence score (0–100)",
+      "period": "2024 archival study",
+      "sourceId": "borderlines-naacl2024",
+      "sourceLocator": "Printed p.3860, Table 5, BLOOMZ7.1B row × Cst CS (all)",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Published benchmark aggregate over 251 territories; consistency is not truth or a determination of sovereignty.",
+      "responseMethod": "rank classification",
+      "metricDefinition": "Mean pairwise cross-language concurrence, source-defined CS scoring; higher means more consistent",
+      "territoryCount": 251
+    },
+    {
+      "id": "borderlines-4",
+      "entityId": "borderlines-4",
+      "name": "GPT-3C",
+      "value": 58.3,
+      "unit": "Consistency concurrence score (0–100)",
+      "period": "2024 archival study",
+      "sourceId": "borderlines-naacl2024",
+      "sourceLocator": "Printed p.3860, Table 5, GPT-3C row × Cst CS (all)",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Published benchmark aggregate over 251 territories; consistency is not truth or a determination of sovereignty.",
+      "responseMethod": "rank classification",
+      "metricDefinition": "Mean pairwise cross-language concurrence, source-defined CS scoring; higher means more consistent",
+      "territoryCount": 251
+    },
+    {
+      "id": "borderlines-5",
+      "entityId": "borderlines-5",
+      "name": "GPT-3DV",
+      "value": 63.3,
+      "unit": "Consistency concurrence score (0–100)",
+      "period": "2024 archival study",
+      "sourceId": "borderlines-naacl2024",
+      "sourceLocator": "Printed p.3860, Table 5, GPT-3DV row × Cst CS (all)",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Published benchmark aggregate over 251 territories; consistency is not truth or a determination of sovereignty.",
+      "responseMethod": "rank classification",
+      "metricDefinition": "Mean pairwise cross-language concurrence, source-defined CS scoring; higher means more consistent",
+      "territoryCount": 251
+    }
+  ],
+  "columns": {
+    "id": "id field; see row notes",
+    "entityId": "entityId field; see row notes",
+    "name": "name field; see row notes",
+    "value": "Measured value or explicit category; never visual magnitude unless numeric and appropriate",
+    "unit": "unit field; see row notes",
+    "period": "Observation/event period; not retrieval date",
+    "sourceId": "sourceId field; see row notes",
+    "sourceLocator": "Exact section/table/row in cited primary source",
+    "status": "status field; see row notes",
+    "qualifier": "qualifier field; see row notes",
+    "geographicId": "ISO 3166 alpha-3 or explicit named area; null for non-geographic records",
+    "lat": "Null: no invented point location",
+    "lon": "Null: no invented point location",
+    "notes": "notes field; see row notes",
+    "responseMethod": "responseMethod field; see row notes",
+    "metricDefinition": "metricDefinition field; see row notes",
+    "territoryCount": "territoryCount field; see row notes"
+  },
+  "unit": "Consistency concurrence score (0–100)",
+  "denominator": "Source-defined mean pairwise cross-language concurrence, aggregated over 251 territories; not a population percentage",
+  "geography": {
+    "mode": "categorical",
+    "unit": "Abstract categorical sphere",
+    "definition": "Records are not geographically allocated.",
+    "anchorRule": "Abstract sphere cells only. Do not place records on country boundaries."
+  },
+  "time": {
+    "observationStart": "not reported by source",
+    "observationEnd": "not reported by source",
+    "publishedAt": "2024-06",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Frozen archival study; new models or benchmark revisions require a separately versioned dataset"
+  },
+  "sources": [
+    {
+      "sourceId": "borderlines-naacl2024",
+      "publisher": "Li et al.; Association for Computational Linguistics",
+      "title": "This Land is Your, My Land: Evaluating Geopolitical Bias in Language Models through Territorial Disputes",
+      "url": "https://aclanthology.org/2024.naacl-long.213/",
+      "locator": "Paper PDF printed p.3860, Table 5, Cst CS (all) column; methods section 4",
+      "version": "NAACL 2024 archival paper",
+      "publishedAt": "2024-06",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "ACL Anthology page footer: CC BY 4.0; factual numerical table extraction only",
+        "termsUrl": "https://aclanthology.org/2024.naacl-long.213/",
+        "attribution": "Li et al.; Association for Computational Linguistics. This Land is Your, My Land: Evaluating Geopolitical Bias in Language Models through Territorial Disputes. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Six model rows from BorderLines Table 5; rank-classification protocol; all 251 territories",
+    "included": "6 populated records; Six model rows from BorderLines Table 5; rank-classification protocol; all 251 territories",
+    "omitted": "Current 2026 models, per-territory outputs, response probabilities, language-specific sampling counts and any legal adjudication of sovereignty",
+    "missingness": "Unlisted entities are missing, not zero."
+  },
+  "uncertainty": "Historical model versions and source prompts only. The metric measures consistency, not whether an answer is correct; aggregated values conceal which territories or languages disagree. Source table reports no interval. Territorial claims must retain contested status.",
+  "transform": {
+    "type": "manual",
+    "description": "Manual transcription of factual values/categories; no interpolation, imputation or causal inference.",
+    "codePath": "research/scripts/governance_build.py",
+    "inputReferences": [
+      "https://aclanthology.org/2024.naacl-long.213/"
+    ],
+    "validation": "Each row carries a source locator; categorical values separately label plans, policies and observed events."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary source and compare each extracted record to its named source location.",
+    "checkedRows": [
+      "borderlines-0",
+      "borderlines-1",
+      "borderlines-2",
+      "borderlines-3",
+      "borderlines-4",
+      "borderlines-5"
+    ],
+    "evidencePaths": [
+      "research/sources/governance-source-index.json"
+    ],
+    "reviewer": "governance_research",
+    "checkedAt": "2026-10-19"
+  },
+  "aiRelationship": "direct",
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "No universal extremity or impact score is supported by these data."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated forecast was supplied. Policy intentions and planned installations are not predictions."
+  },
+  "sourceMetric": {
+    "name": "Consistency concurrence score, all territories",
+    "formula": "For each territory t with n language responses, CstCS(t)=sum(i!=j, 100*I(country_i=country_j))/(n*(n-1)); average across territories as reported by the paper.",
+    "domain": [
+      0,
+      100
+    ],
+    "direction": "Higher means more pairwise consistency, not more accuracy.",
+    "missingPolicy": "Only published aggregate rows retained; no imputed individual territory responses.",
+    "locator": "Printed pp.3859–3860, Table4 and Table5"
+  }
+}

@@ -1,0 +1,800 @@
+{
+  "retrievedAt": "2026-10-19",
+  "researcher": "evidence_editor",
+  "status": "researcher-checked; independent review pending",
+  "sourceCount": 32,
+  "sources": [
+    {
+      "sourceId": "iea26",
+      "publisher": "International Energy Agency",
+      "title": "Key Questions on Energy and AI: Executive summary",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "locator": "Energy consumption; outlook for electricity demand",
+      "version": "2026-04-16",
+      "publishedAt": "2026-04-16",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "International Energy Agency — Key Questions on Energy and AI: Executive summary",
+        "verified": true,
+        "notes": "Report explicitly identifies CC BY 4.0."
+      }
+    },
+    {
+      "sourceId": "iea25s",
+      "publisher": "International Energy Agency",
+      "title": "Energy and AI: Energy supply for AI",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
+      "locator": "Global electricity supply and Regional outlook",
+      "version": "2025-04-10",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "International Energy Agency — Energy and AI: Energy supply for AI",
+        "verified": true,
+        "notes": "Report explicitly identifies CC BY 4.0."
+      }
+    },
+    {
+      "sourceId": "ms26",
+      "publisher": "Microsoft",
+      "title": "Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+      "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Water efficiency and climate; alternative water sources",
+      "version": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "attribution": "Microsoft — Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "ms24",
+      "publisher": "Microsoft",
+      "title": "Sustainable by design: next-generation datacenters consume zero water for cooling",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "locator": "Next-generation design; future deployments",
+      "version": "2024-12-09",
+      "publishedAt": "2024-12-09",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+        "attribution": "Microsoft — Sustainable by design: next-generation datacenters consume zero water for cooling",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "google-inference",
+      "publisher": "Google Cloud",
+      "title": "How much energy does Google’s AI use? We did the math",
+      "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+      "locator": "Median text prompt; Table 1; year-over-year improvement; footnotes",
+      "version": "2025-08-22",
+      "publishedAt": "2025-08-22",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/",
+        "attribution": "Google Cloud — How much energy does Google’s AI use? We did the math",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "mistral-lca",
+      "publisher": "Mistral AI",
+      "title": "Our contribution to a global environmental standard for AI",
+      "url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+      "locator": "Key findings; lifecycle; marginal inference; optional disclosure",
+      "version": "2025-07-22",
+      "publishedAt": "2025-07-22",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/",
+        "attribution": "Mistral AI — Our contribution to a global environmental standard for AI",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "google-flex",
+      "publisher": "Google Cloud",
+      "title": "Supporting power grids with demand response at Google data centers",
+      "url": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+      "locator": "Where we are reducing demand and working with utilities",
+      "version": "2023-10-04",
+      "publishedAt": "2023-10-04",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+        "attribution": "Google Cloud — Supporting power grids with demand response at Google data centers",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "tsmc25",
+      "publisher": "TSMC",
+      "title": "2025 Annual Report: Letter to shareholders",
+      "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+      "locator": "Technology and overseas manufacturing progress",
+      "version": "2026",
+      "publishedAt": "2026",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://investor.tsmc.com/static/annualReports/2025/english/index.html",
+        "attribution": "TSMC — 2025 Annual Report: Letter to shareholders",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "asml-euv",
+      "publisher": "ASML",
+      "title": "Making EUV: from lab to fab",
+      "url": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+      "locator": "Overcoming challenges through collaboration; achieving first light",
+      "version": "2022",
+      "publishedAt": "2022",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+        "attribution": "ASML — Making EUV: from lab to fab",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "bis26",
+      "publisher": "U.S. Bureau of Industry and Security",
+      "title": "Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+      "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "locator": "Announcement paragraphs 1–4",
+      "version": "2026-01-13",
+      "publishedAt": "2026-01-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+        "attribution": "U.S. Bureau of Industry and Security — Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "ibm-mas",
+      "publisher": "IBM",
+      "title": "The Mayflower Autonomous Ship Has Reached North America",
+      "url": "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+      "locator": "Voyage completion and onboard crew",
+      "version": "2022-06-06",
+      "publishedAt": "2022-06-06",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://newsroom.ibm.com/The-Mayflower-Autonomous-Ship-Has-Reached-North-America",
+        "attribution": "IBM — The Mayflower Autonomous Ship Has Reached North America",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "yara",
+      "publisher": "Yara",
+      "title": "Yara Birkeland: two years on",
+      "url": "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/",
+      "locator": "Voyage and crew supervision; current page includes later trial update",
+      "version": null,
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.yara.com/knowledge-grows/yara-birkeland-two-years-on/",
+        "attribution": "Yara — Yara Birkeland: two years on",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "waymo26",
+      "publisher": "Waymo",
+      "title": "Safety Impact",
+      "url": "https://www.waymo.com/safety/impact/",
+      "locator": "Rider-only miles through June 2026; Any-Injury-Reported Crash Rates",
+      "version": "2026-09-24",
+      "publishedAt": "2026-09-24",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.waymo.com/safety/impact/",
+        "attribution": "Waymo — Safety Impact",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "waymo-csv",
+      "publisher": "Waymo",
+      "title": "CSV3 — Collision Counts and Comparison to Benchmarks, through June 2026",
+      "url": "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/CSV3%20-%20Collision%20Counts%20and%20Comparison%20to%20Benchmarks%20202009-202606-2022benchmark.csv",
+      "locator": "Outcome=Any Injury; Benchmark Comparison=Any-injury-reported; Grouping Type=All Crashes",
+      "version": "2026-10-02",
+      "publishedAt": "2026-10-02",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/CSV3%20-%20Collision%20Counts%20and%20Comparison%20to%20Benchmarks%20202009-202606-2022benchmark.csv",
+        "attribution": "Waymo — CSV3 — Collision Counts and Comparison to Benchmarks, through June 2026",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "waymo-notes",
+      "publisher": "Waymo",
+      "title": "Safety Impact Data Hub Release Notes",
+      "url": "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/Waymo_Safety_Impact_Data_Hub_Release_Notes_20261002.pdf",
+      "locator": "pp2–3 correction notice, benchmark year and county groupings; CSV3 data dictionary pp15–17",
+      "version": "2026-10-02",
+      "publishedAt": "2026-10-02",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://storage.googleapis.com/waymo-uploads/files/documents/safety/safety-impact-data/Waymo_Safety_Impact_Data_Hub_Release_Notes_20261002.pdf",
+        "attribution": "Waymo — Safety Impact Data Hub Release Notes",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "google-regions",
+      "publisher": "Google Cloud",
+      "title": "Carbon free energy for Google Cloud regions",
+      "url": "https://cloud.google.com/sustainability/region-carbon",
+      "locator": "2025 region table; Understanding the data; footer licence",
+      "version": "2026-10-13",
+      "publishedAt": "2026-10-13",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Google Cloud — Carbon free energy for Google Cloud regions",
+        "verified": true,
+        "notes": "Report explicitly identifies CC BY 4.0."
+      }
+    },
+    {
+      "sourceId": "cso25",
+      "publisher": "Central Statistics Office Ireland",
+      "title": "Data Centres Metered Electricity Consumption 2025",
+      "url": "https://www-cloud.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "locator": "Table1 Metered Electricity Consumption 2015–2025; statistician publication statement",
+      "version": "2026-07-07",
+      "publishedAt": "2026-07-07",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www-cloud.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+        "attribution": "Central Statistics Office Ireland — Data Centres Metered Electricity Consumption 2025",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "eirgrid26",
+      "publisher": "EirGrid",
+      "title": "Data Centre Connection Offer Process and Policy V3",
+      "url": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
+      "locator": "Executive summary pp3–4; applies to new applications from12Dec2025",
+      "version": "2026-05-20",
+      "publishedAt": "2026-05-20",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
+        "attribution": "EirGrid — Data Centre Connection Offer Process and Policy V3",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "meta-land",
+      "publisher": "Louisiana Economic Development",
+      "title": "Meta Selects Northeast Louisiana as Site of AI Optimized Data Center",
+      "url": "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+      "locator": "Opening project facts and former Franklin Farm site description",
+      "version": "2024-12-04",
+      "publishedAt": "2024-12-04",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+        "attribution": "Louisiana Economic Development — Meta Selects Northeast Louisiana as Site of AI Optimized Data Center",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "crane",
+      "publisher": "Constellation Energy",
+      "title": "Constellation to Launch Crane Clean Energy Center",
+      "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "locator": "Microsoft PPA announcement; restart scope",
+      "version": "2024-09-20",
+      "publishedAt": "2024-09-20",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+        "attribution": "Constellation Energy — Constellation to Launch Crane Clean Energy Center",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "talen",
+      "publisher": "Talen Energy",
+      "title": "Amazon and Talen expand nuclear energy relationship",
+      "url": "https://ir.talenenergy.com/node/8676/html",
+      "locator": "Exhibit99.1 paragraphs1–4, full contract quantity",
+      "version": "2025-06-11",
+      "publishedAt": "2025-06-11",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://ir.talenenergy.com/node/8676/html",
+        "attribution": "Talen Energy — Amazon and Talen expand nuclear energy relationship",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "calvert",
+      "publisher": "Constellation Energy",
+      "title": "Constellation and Amazon Announce20-Year Power Purchase Agreement at Calvert Cliffs",
+      "url": "https://www.constellationenergy.com/news/2026/09/constellation-and-amazon-announce-20-year-power-purchase-agreement-at-calvert-cliffs.html",
+      "locator": "Announcement paragraphs1–4;690MW includes190MW uprate",
+      "version": "2026-09-30",
+      "publishedAt": "2026-09-30",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.constellationenergy.com/news/2026/09/constellation-and-amazon-announce-20-year-power-purchase-agreement-at-calvert-cliffs.html",
+        "attribution": "Constellation Energy — Constellation and Amazon Announce20-Year Power Purchase Agreement at Calvert Cliffs",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "google-nuclear",
+      "publisher": "Constellation Energy",
+      "title": "Google and Constellation agreement for890MW of new nuclear capacity",
+      "url": "https://investors.constellationenergy.com/node/10271/pdf",
+      "locator": "Page1:20-year uprate PPA and separate15-year supply agreement",
+      "version": "2026-10-06",
+      "publishedAt": "2026-10-06",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://investors.constellationenergy.com/node/10271/pdf",
+        "attribution": "Constellation Energy — Google and Constellation agreement for890MW of new nuclear capacity",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "amazon-oregon",
+      "publisher": "Amazon",
+      "title": "How Amazon is helping protect water resources in Eastern Oregon",
+      "url": "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+      "locator": "Oregon annual water use; Columbia River Intake; Port of Morrow",
+      "version": "2026-09",
+      "publishedAt": "2026-09",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://press.aboutamazon.com/aws/2026/9/how-amazon-is-helping-protect-water-resources-in-eastern-oregon",
+        "attribution": "Amazon — How Amazon is helping protect water resources in Eastern Oregon",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "google-belgium",
+      "publisher": "Google Data Centers",
+      "title": "St.Ghislain, Belgium",
+      "url": "https://www.datacenters.google/locations/belgium/",
+      "locator": "Industrial canal cooling description",
+      "version": null,
+      "publishedAt": null,
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.datacenters.google/locations/belgium/",
+        "attribution": "Google Data Centers — St.Ghislain, Belgium",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "pbc",
+      "publisher": "Guan et al. / Nature",
+      "title": "Advancing subseasonal forecasting with machine learning",
+      "url": "https://www.nature.com/articles/s41586-026-11126-x",
+      "locator": "Figures2b and5b; Methods; Data availability; Rights",
+      "version": "2026-10-14",
+      "publishedAt": "2026-10-14",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.nature.com/articles/s41586-026-11126-x",
+        "attribution": "Guan et al. / Nature — Advancing subseasonal forecasting with machine learning",
+        "verified": true,
+        "notes": "Article is CC BY-NC-ND4.0. No article, figure, figure derivative, model weights or code is packaged under that licence. Only two factual aggregate findings are independently restated; this does not assert commercial licence to article assets."
+      }
+    },
+    {
+      "sourceId": "lta-jul",
+      "publisher": "Singapore Land Transport Authority",
+      "title": "Service Enhancements to Autonomous Shuttle Services in Punggol",
+      "url": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html",
+      "locator": "Paragraphs1–6",
+      "version": "2026-07-29",
+      "publishedAt": "2026-07-29",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/7/news-releases/service-enhancements-autonomous-shuttle-Punggol.html",
+        "attribution": "Singapore Land Transport Authority — Service Enhancements to Autonomous Shuttle Services in Punggol",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "lta-mar",
+      "publisher": "Singapore Land Transport Authority",
+      "title": "Autonomous Shuttle Services in Punggol Open for Public Rides from1April2026",
+      "url": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/3/news-releases/autonomous-shuttle-services-in-punggol-open-for-public-rides-fro.html",
+      "locator": "Paragraphs1–6; footnote asof27Feb2026",
+      "version": "2026-03-04",
+      "publishedAt": "2026-03-04",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/3/news-releases/autonomous-shuttle-services-in-punggol-open-for-public-rides-fro.html",
+        "attribution": "Singapore Land Transport Authority — Autonomous Shuttle Services in Punggol Open for Public Rides from1April2026",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "jara25",
+      "publisher": "Japan Robot Association",
+      "title": "2025 Results: Orders, Production and Shipments of Manipulators and Robots by Applications",
+      "url": "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf",
+      "locator": "Page1:production heading, Total Units row, Semiconductor row",
+      "version": "2026",
+      "publishedAt": "2026",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.jara.jp/e/data/dl/year/IR_CY2025_e.pdf",
+        "attribution": "Japan Robot Association — 2025 Results: Orders, Production and Shipments of Manipulators and Robots by Applications",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "ntsb19",
+      "publisher": "National Transportation Safety Board",
+      "title": "ASR-19-01: Assumptions Used in the Safety Assessment Process and Effects of Multiple Alerts",
+      "url": "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf",
+      "locator": "Page1 accident header; pp2–4 factual information and MCAS design",
+      "version": "2019-09",
+      "publishedAt": "2019-09",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.ntsb.gov/investigations/accidentreports/reports/asr1901.pdf",
+        "attribution": "National Transportation Safety Board — ASR-19-01: Assumptions Used in the Safety Assessment Process and Effects of Multiple Alerts",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    },
+    {
+      "sourceId": "iea25d",
+      "publisher": "International Energy Agency",
+      "title": "Energy and AI: Energy demand from AI",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "locator": "Regional outlook per-capita demand paragraph",
+      "version": "2025-04-10",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "International Energy Agency — Energy and AI: Energy demand from AI",
+        "verified": true,
+        "notes": "Report explicitly identifies CC BY 4.0."
+      }
+    },
+    {
+      "sourceId": "eia26",
+      "publisher": "U.S. Energy Information Administration",
+      "title": "World Oil Transit Chokepoints",
+      "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+      "locator": "Tables1–7; oil-flow estimates; Panama fiscal-year note",
+      "version": "2026-03-03",
+      "publishedAt": "2026-03-03",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+        "attribution": "U.S. Energy Information Administration — World Oil Transit Chokepoints",
+        "verified": true,
+        "notes": "Limited factual totals restated from EIA public analysis; underlying Vortexa commercial tanker microdata and EIA charts are not copied or redistributed. No open licence to Vortexa data is asserted."
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "datasetId": "physical-electricity-demand",
+      "path": "research/datasets/physical-electricity-demand.json",
+      "rows": 3,
+      "sha256": "9bb2b67b9b14279dff7966f4acfc534f9c11e98a0ad47ac31af6ef7846e7d234",
+      "conceptIds": [
+        "56-5",
+        "217"
+      ]
+    },
+    {
+      "datasetId": "physical-electricity-fuels",
+      "path": "research/datasets/physical-electricity-fuels.json",
+      "rows": 7,
+      "sha256": "4d130dacfa0fc2f76c9703043cc2d11ed4f8e8014c652be3c89896c958963bd2",
+      "conceptIds": [
+        "323"
+      ]
+    },
+    {
+      "datasetId": "physical-weather-cooling",
+      "path": "research/datasets/physical-weather-cooling.json",
+      "rows": 4,
+      "sha256": "770d45ede4106d67fe7a8ee424ee51ebf6f8323e142017e8058ba11fc7f54ec2",
+      "conceptIds": [
+        "406"
+      ]
+    },
+    {
+      "datasetId": "physical-zero-evaporation-design",
+      "path": "research/datasets/physical-zero-evaporation-design.json",
+      "rows": 3,
+      "sha256": "67f3d15355648dcb5a25f23a9cd6d269b6c9135f76f420b9199debb931a50fdf",
+      "conceptIds": [
+        "314"
+      ]
+    },
+    {
+      "datasetId": "physical-water-source-substitution",
+      "path": "research/datasets/physical-water-source-substitution.json",
+      "rows": 3,
+      "sha256": "3d5291e624ce15c0af063ff442d2f7df409a918d9689ff40aca494960fe01a87",
+      "conceptIds": [
+        "255"
+      ]
+    },
+    {
+      "datasetId": "physical-inference-boundaries",
+      "path": "research/datasets/physical-inference-boundaries.json",
+      "rows": 5,
+      "sha256": "c061641878de797041760cc4f646e921dcc8840d5a417e116a4759948b07fc85",
+      "conceptIds": [
+        "331",
+        "430",
+        "217"
+      ]
+    },
+    {
+      "datasetId": "physical-lifecycle-disclosures",
+      "path": "research/datasets/physical-lifecycle-disclosures.json",
+      "rows": 4,
+      "sha256": "2f905c98730de2692f42f5dd75d396fa38039fa532009316c43bee623db395d8",
+      "conceptIds": [
+        "30-8"
+      ]
+    },
+    {
+      "datasetId": "physical-flexible-workloads",
+      "path": "research/datasets/physical-flexible-workloads.json",
+      "rows": 7,
+      "sha256": "675025118ede66ee5fb47e7e47a715d361d5efce4b6eec5b317ba9545d6a4711",
+      "conceptIds": [
+        "321"
+      ]
+    },
+    {
+      "datasetId": "physical-euv-dependencies",
+      "path": "research/datasets/physical-euv-dependencies.json",
+      "rows": 3,
+      "sha256": "372416ff91cfcff92842e8f86ffe596988bd900e74c0bd70c6bd9d14ec9eedd5",
+      "conceptIds": [
+        "386",
+        "305"
+      ]
+    },
+    {
+      "datasetId": "physical-tsmc-manufacturing",
+      "path": "research/datasets/physical-tsmc-manufacturing.json",
+      "rows": 5,
+      "sha256": "c003aea6490b73012b43d2d47b81618fe523fd8eb6d497453149497f5da930db",
+      "conceptIds": [
+        "266-2"
+      ]
+    },
+    {
+      "datasetId": "physical-chip-rule-events",
+      "path": "research/datasets/physical-chip-rule-events.json",
+      "rows": 3,
+      "sha256": "7d75d3bbb13d2829344bd5a815e35e78f5978ce5da6490aaf8d57a9c654640f1",
+      "conceptIds": [
+        "368"
+      ]
+    },
+    {
+      "datasetId": "physical-autonomous-voyages",
+      "path": "research/datasets/physical-autonomous-voyages.json",
+      "rows": 3,
+      "sha256": "0f08e0bb6766f94789a377177f2b0ac893dd6c99de6a90e8403c6ef21d66b8e8",
+      "conceptIds": [
+        "358"
+      ]
+    },
+    {
+      "datasetId": "physical-waymo-exposure",
+      "path": "research/datasets/physical-waymo-exposure.json",
+      "rows": 5,
+      "sha256": "7687c72491d15d556de61d98be5fba008f1de6ece4cc29beb76db58cd9a86762",
+      "conceptIds": [
+        "202"
+      ]
+    },
+    {
+      "datasetId": "physical-waymo-injury-rates",
+      "path": "research/datasets/physical-waymo-injury-rates.json",
+      "rows": 10,
+      "sha256": "4fa2a8d856fb789b17dade18437719fc984e272d04ad12e130b5d08b8d133cbb",
+      "conceptIds": [
+        "211-4"
+      ]
+    },
+    {
+      "datasetId": "physical-cloud-grid-carbon",
+      "path": "research/datasets/physical-cloud-grid-carbon.json",
+      "rows": 44,
+      "sha256": "3bd6c7cd34c3ae412d6aef04aafbb467a5a2497cc5cb418e680d16a823a0f91a",
+      "conceptIds": [
+        "430",
+        "293"
+      ]
+    },
+    {
+      "datasetId": "physical-irish-electricity-series",
+      "path": "research/datasets/physical-irish-electricity-series.json",
+      "rows": 11,
+      "sha256": "5a9cb19a81500d8f95d5dbc6a0b3d447c1e301314f2807cd9430d3c32c6208d4",
+      "conceptIds": [
+        "394",
+        "56-5"
+      ]
+    },
+    {
+      "datasetId": "physical-grid-connection-rules",
+      "path": "research/datasets/physical-grid-connection-rules.json",
+      "rows": 3,
+      "sha256": "bb86e31a6941055a7517a343f1a205689fd3532c221baacdfb22a5d37a3a58c7",
+      "conceptIds": [
+        "394"
+      ]
+    },
+    {
+      "datasetId": "physical-announced-land",
+      "path": "research/datasets/physical-announced-land.json",
+      "rows": 2,
+      "sha256": "78bfba444f3070b6c4993dcda5477bb67077425a01dc45cf768834182612cd98",
+      "conceptIds": [
+        "382"
+      ]
+    },
+    {
+      "datasetId": "physical-power-contracts",
+      "path": "research/datasets/physical-power-contracts.json",
+      "rows": 5,
+      "sha256": "545d1da2881a46cf50d680047f2a9436dcded72335a3a69218d27a3f92a5de93",
+      "conceptIds": [
+        "324"
+      ]
+    },
+    {
+      "datasetId": "physical-waterway-dependencies",
+      "path": "research/datasets/physical-waterway-dependencies.json",
+      "rows": 5,
+      "sha256": "f38da4b2d8ec19e9f0cdeb9469c5ac65b14bde12a686ed96410a195cdd479860",
+      "conceptIds": [
+        "111-3"
+      ]
+    },
+    {
+      "datasetId": "physical-rainfall-benchmark",
+      "path": "research/datasets/physical-rainfall-benchmark.json",
+      "rows": 2,
+      "sha256": "c5db2323bcf56a5e077a9cf350a54a93259cf682452cea7b7e39336802ebff79",
+      "conceptIds": [
+        "233-2"
+      ]
+    },
+    {
+      "datasetId": "physical-public-shuttle-pilot",
+      "path": "research/datasets/physical-public-shuttle-pilot.json",
+      "rows": 3,
+      "sha256": "cc51c3be214baaa8094780fc1361e6d13bec6ccb52750ce2d4ec4a576441c21c",
+      "conceptIds": [
+        "325"
+      ]
+    },
+    {
+      "datasetId": "physical-japan-robot-production",
+      "path": "research/datasets/physical-japan-robot-production.json",
+      "rows": 5,
+      "sha256": "1acc7c4916d8f026ff05473975de0783de59bea75e305959ea5dc49f16360dda",
+      "conceptIds": [
+        "214"
+      ]
+    },
+    {
+      "datasetId": "physical-aviation-automation",
+      "path": "research/datasets/physical-aviation-automation.json",
+      "rows": 3,
+      "sha256": "27e2cc1182098d12f2d9a32cf64fdc6a3f92b9ade6761a9e17044fa9c60fc0cd",
+      "conceptIds": [
+        "150-5"
+      ]
+    },
+    {
+      "datasetId": "physical-per-capita-demand",
+      "path": "research/datasets/physical-per-capita-demand.json",
+      "rows": 2,
+      "sha256": "ecab45b593b3e5e2afd6814376ebc0315cf26d266501385be06f6a6ed4524d72",
+      "conceptIds": [
+        "193-5"
+      ]
+    },
+    {
+      "datasetId": "physical-energy-chokepoints",
+      "path": "research/datasets/physical-energy-chokepoints.json",
+      "rows": 7,
+      "sha256": "2f349fc6c2b30c9a12eadc3a8641abd78d1f543a7003420bbfc8cc653e9e2482",
+      "conceptIds": [
+        "428"
+      ]
+    }
+  ],
+  "checks": [
+    "Every numeric and categorical record reconciled against exact primary page/table locator.",
+    "Waymo uses correctedOct2CSV plus confidence intervals; dashboard-source discrepancy recorded.",
+    "No synthetic country allocation, composite score, original forecast or copied chart assets.",
+    "Five original questions remain holds with investigation-specific missing evidence; all proposals await independent review."
+  ]
+}

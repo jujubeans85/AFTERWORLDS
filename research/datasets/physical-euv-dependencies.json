@@ -1,0 +1,189 @@
+{
+  "datasetId": "physical-euv-dependencies",
+  "id": "physical-euv-dependencies",
+  "schemaVersion": "1.0",
+  "title": "The machine behind the chip",
+  "conceptIds": [
+    "386",
+    "305"
+  ],
+  "metric": "Supplier-country roles in a documented EUV production network",
+  "unit": "category",
+  "denominator": "Selected critical EUV components disclosed by ASML",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Advanced semiconductor manufacturing inputs; not exclusively AI chips.",
+  "geographyMode": "network",
+  "geography": {
+    "mode": "network",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2022 disclosure",
+    "observationEnd": "2022 disclosure",
+    "publishedAt": "2022",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "asml-euv",
+      "publisher": "ASML",
+      "title": "Making EUV: from lab to fab",
+      "url": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+      "locator": "Overcoming challenges through collaboration; achieving first light",
+      "version": "2022",
+      "publishedAt": "2022",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+        "attribution": "ASML — Making EUV: from lab to fab",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "asml-euv",
+    "publisher": "ASML",
+    "title": "Making EUV: from lab to fab",
+    "url": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+    "locator": "Overcoming challenges through collaboration; achieving first light",
+    "version": "2022",
+    "publishedAt": "2022",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+      "attribution": "ASML — Making EUV: from lab to fab",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "euv-nl",
+      "entityId": "NLD",
+      "name": "Netherlands",
+      "value": "EUV system integration",
+      "unit": "category",
+      "period": "2022 disclosure",
+      "sourceId": "asml-euv",
+      "sourceLocator": "Achieving first light; collaboration",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "NLD",
+      "lat": null,
+      "lon": null,
+      "notes": "Veldhoven integration and production described; not a shipping route."
+    },
+    {
+      "id": "euv-us",
+      "entityId": "USA",
+      "name": "United States",
+      "value": "Droplet generators, sensors and stages",
+      "unit": "category",
+      "period": "2022 disclosure",
+      "sourceId": "asml-euv",
+      "sourceLocator": "Overcoming challenges through collaboration",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Critical modules identified by ASML."
+    },
+    {
+      "id": "euv-de",
+      "entityId": "DEU",
+      "name": "Germany",
+      "value": "ZEISS optics and TRUMPF lasers",
+      "unit": "category",
+      "period": "2022 disclosure",
+      "sourceId": "asml-euv",
+      "sourceLocator": "Overcoming challenges through collaboration",
+      "status": "categorical",
+      "qualifier": null,
+      "geographicId": "DEU",
+      "lat": null,
+      "lon": null,
+      "notes": "Named suppliers; no market-share or dependency-weight estimate."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Advanced semiconductor manufacturing inputs; not exclusively AI chips.",
+    "included": "3 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Historical engineering network, not a 2026 complete bill of materials. Edges express a supplier relationship, not transport route, flow volume, national dependency score or old trade-route continuity.",
+  "limitations": [
+    "Historical engineering network, not a 2026 complete bill of materials.",
+    "Edges express a supplier relationship, not transport route, flow volume, national dependency score or old trade-route continuity."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "euv-nl",
+      "euv-us",
+      "euv-de"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": "Which cross-border engineering roles are documented in an EUV lithography system?",
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

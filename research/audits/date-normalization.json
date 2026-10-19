@@ -1,0 +1,272 @@
+{
+  "performedAt": "2026-10-19",
+  "reason": "Replace editorial UTC+11 date labels with actual UTC retrieval/review dates before acceptance. No source publication event or numeric measurement changed. Undated policy snapshots and retrieval-labeled periods use the actual access date.",
+  "scope": "Frozen researcher audits, data, source records and scripts; design binding and independent review hashes must be refreshed afterward.",
+  "changes": [
+    {
+      "path": "research/baseline.json",
+      "beforeSha256": "eaee1e8bd097a1cb8684273165e5c935ff41d7070b26f2349efcae6b5c58a0ba",
+      "afterSha256": "8a165936dfc0b33f613bb0f12795022296e57b1635b2215a059ab23f01c76043"
+    },
+    {
+      "path": "research/scripts/physical-build.py",
+      "beforeSha256": "d96710dc05b7d8cb7439d8cc518ad37ffdf37249b4958aebc04255b1a075fec6",
+      "afterSha256": "2a5344113d0e0ca16c48e38f5e7b4d3ec2d00790e57e409fd4e382c12d7c6851"
+    },
+    {
+      "path": "research/scripts/society-build.py",
+      "beforeSha256": "45d68b11275df11e7ebf2fcff614cb2d5408b8acbd8dd30d883582b6b3edc87c",
+      "afterSha256": "fc0af6653c40e4c80b4fe90076f43bc2b85ec3c0a35f4398acad717882249797"
+    },
+    {
+      "path": "research/scripts/physical-complete.py",
+      "beforeSha256": "762b17ca945f1183a0cad0243408296094ab5eb02fa2e2eace7321bf59d94cfa",
+      "afterSha256": "e7440c9ca6d2ddba1597f61328cf2719b767424c5b37e5a176b49b783b7146ae"
+    },
+    {
+      "path": "research/scripts/planet-complete.py",
+      "beforeSha256": "0e35bfa30c3341b878fda496706fc49dcc026865718afeac33b677d3aaa9e3fb",
+      "afterSha256": "38d82aa1746bde9d479fc5200cb9708059087493d3b16c570e7d2f06b688eebb"
+    },
+    {
+      "path": "research/scripts/society-finish.py",
+      "beforeSha256": "340d6223597b8bd704fd261922ef56bc98ceeeee5c03eae9308093abc5094911",
+      "afterSha256": "62114904e3c1c671c76f6e31f341eb9b6e41c19ba1fee40c1d47a40876c6fc53"
+    },
+    {
+      "path": "research/scripts/physical-fetch-waymo.py",
+      "beforeSha256": "bbd7cc402ba66a94394bb165217dc9a591b8e3e353b866b13ac47437b6c24710",
+      "afterSha256": "dba9c7b2bfb42cb1b9163e79966404cc41cebd6ff7ba8c73cabcad8e2396e360"
+    },
+    {
+      "path": "research/sources/physical-hold-investigations.json",
+      "beforeSha256": "918f6e0754e938232374b5cd438d06d3bfeadb18e77f62b2db6331f39d043109",
+      "afterSha256": "7b83d6b32d4d1dd9ff623ea29d79202aa13a5f2ade62c6f7cc82cd5ebc945404"
+    },
+    {
+      "path": "research/sources/physical-verification.json",
+      "beforeSha256": "58acbfd330283c2d1cbff7095d352d7fd67e1981e438a219349dd5ee75c8e1e5",
+      "afterSha256": "5a3b818a33041a070eecc4135c21a66fb348a1b5fa3bf150ea9deef1e5d1aa5e"
+    },
+    {
+      "path": "research/sources/society-verified-facts.json",
+      "beforeSha256": "bea29126c8d2990daeaf1a479d89b2ea3ce23d282daff504952deb5a8dd02023",
+      "afterSha256": "859d1aa71a33c071ee96a59d4f8ade3f25bd827a60ea84d66c072b12f159d580"
+    },
+    {
+      "path": "research/sources/society-research-log.json",
+      "beforeSha256": "9c52cc60a3a25ac9e536a13b83f2586a5b746c86b1c4a2dab961728b0407e5ff",
+      "afterSha256": "fd70981af51bf0bd456e2a4caad7b724d9d88b4a60aca97b66240c817cb04544"
+    },
+    {
+      "path": "research/sources/physical-waymo-selected.json",
+      "beforeSha256": "c82d7cd4f9124596e1883ae60433a9c6d36b3e2d6f8c2f093bc6da35efe70a45",
+      "afterSha256": "874ca7f87fc89f5fca87f3a44d046c4c376b89a90a13a5a060076ab926f2939e"
+    },
+    {
+      "path": "research/datasets/society-electricity-access.json",
+      "beforeSha256": "970463304eee5555385f829a381e4e551e0f2ee76c20c238ad2f22cbfa83542f",
+      "afterSha256": "b1648fb3836c873a1d1cbeb303c209d2704b599eddbd98d26d0ceca79c66bce4"
+    },
+    {
+      "path": "research/datasets/physical-cloud-grid-carbon.json",
+      "beforeSha256": "3bd6c7cd34c3ae412d6aef04aafbb467a5a2497cc5cb418e680d16a823a0f91a",
+      "afterSha256": "1878fd571972c43918ef24a11e2ccee053f772dc68ece9f2afacb728d14922e1"
+    },
+    {
+      "path": "research/datasets/physical-euv-dependencies.json",
+      "beforeSha256": "372416ff91cfcff92842e8f86ffe596988bd900e74c0bd70c6bd9d14ec9eedd5",
+      "afterSha256": "fdc38112c680ced459d942333c6ed32bdc9c89a2d8c6bb19830e7b8228a6d88a"
+    },
+    {
+      "path": "research/datasets/physical-inference-boundaries.json",
+      "beforeSha256": "c061641878de797041760cc4f646e921dcc8840d5a417e116a4759948b07fc85",
+      "afterSha256": "76f36914d69f666af3acc69d9706aa2e7ee155574e4a30fc8598e9e7b618c1c0"
+    },
+    {
+      "path": "research/datasets/physical-energy-chokepoints.json",
+      "beforeSha256": "2f349fc6c2b30c9a12eadc3a8641abd78d1f543a7003420bbfc8cc653e9e2482",
+      "afterSha256": "851768856b1d57846f0d544cf6b22f91afe0b43b8add558a97922cf94257b5fa"
+    },
+    {
+      "path": "research/datasets/society-population-connectivity.json",
+      "beforeSha256": "86bcade84085c5a470623476f42b3772d9cada8a15581cf5f66a5469f3c9ec19",
+      "afterSha256": "36f0f24a3a21541d98cb2e9f63eacbda19c7bfdd7cda50cc780bc75a8c7b4655"
+    },
+    {
+      "path": "research/datasets/society-patent-applicants.json",
+      "beforeSha256": "4fb76b56a5f74e9e7470f007b10d0a15433504a3b794bf879012b5ca15481be7",
+      "afterSha256": "3e79239c6f8254236f6c7fee77c5825132dee03a48ecd38a02d7d437454d45f5"
+    },
+    {
+      "path": "research/datasets/physical-grid-connection-rules.json",
+      "beforeSha256": "bb86e31a6941055a7517a343f1a205689fd3532c221baacdfb22a5d37a3a58c7",
+      "afterSha256": "10ba6b71f0aaf33a171d8d568376672d6c98e73ffcc70f7efe282a659530c36c"
+    },
+    {
+      "path": "research/datasets/physical-electricity-demand.json",
+      "beforeSha256": "9bb2b67b9b14279dff7966f4acfc534f9c11e98a0ad47ac31af6ef7846e7d234",
+      "afterSha256": "aa577c85b31ea2d9747940563928a6f51ae9ae56aea23eddc39314b988b99589"
+    },
+    {
+      "path": "research/datasets/physical-power-contracts.json",
+      "beforeSha256": "545d1da2881a46cf50d680047f2a9436dcded72335a3a69218d27a3f92a5de93",
+      "afterSha256": "84b8d4be8f8e6a8ffcc5ef34a1c69a37c50de4e27d161e82aa17d616b8b230b5"
+    },
+    {
+      "path": "research/datasets/society-patent-inventors.json",
+      "beforeSha256": "b9d945c43d24fd153c277e1f30eae8c740f5e91e1e64d5856783372d9f84a986",
+      "afterSha256": "f29ee04a278ffbdd9312c4515bf52ea90f54d4a32927038eee687f98831b3a88"
+    },
+    {
+      "path": "research/datasets/society-rural-internet.json",
+      "beforeSha256": "1f8788eb5d1632d71df090fb88af6d4f9aebb46595d3b9ba50402918ad617525",
+      "afterSha256": "eaa1ecd9bc5fe0c622886ec4575097bd0b9b62999d6be0961cfc9c9cb7066c57"
+    },
+    {
+      "path": "research/datasets/physical-per-capita-demand.json",
+      "beforeSha256": "ecab45b593b3e5e2afd6814376ebc0315cf26d266501385be06f6a6ed4524d72",
+      "afterSha256": "a6973816d68a2f0901c30408f9fe37a5081482ebd6f105bfd971278e96dea155"
+    },
+    {
+      "path": "research/datasets/physical-flexible-workloads.json",
+      "beforeSha256": "675025118ede66ee5fb47e7e47a715d361d5efce4b6eec5b317ba9545d6a4711",
+      "afterSha256": "fee51b865252958da0bc30ef35059464a16dddd12ea988992e6e93a0b88aea02"
+    },
+    {
+      "path": "research/datasets/physical-japan-robot-production.json",
+      "beforeSha256": "1acc7c4916d8f026ff05473975de0783de59bea75e305959ea5dc49f16360dda",
+      "afterSha256": "7a87d41ac5bd2f097e433640824f262cd509d383539b8fdb52ad5bf6bab68710"
+    },
+    {
+      "path": "research/datasets/physical-aviation-automation.json",
+      "beforeSha256": "27e2cc1182098d12f2d9a32cf64fdc6a3f92b9ade6761a9e17044fa9c60fc0cd",
+      "afterSha256": "84a7b014a79fa53a1368e0ce36f0f3ef42b471f86b6ba5e728c7ad38c39353dc"
+    },
+    {
+      "path": "research/datasets/physical-waymo-exposure.json",
+      "beforeSha256": "7687c72491d15d556de61d98be5fba008f1de6ece4cc29beb76db58cd9a86762",
+      "afterSha256": "f626a788aaaa1e2c0435faa5e659263daea3524afcb4bf3c079e9905a3b66896"
+    },
+    {
+      "path": "research/datasets/physical-waymo-injury-rates.json",
+      "beforeSha256": "4fa2a8d856fb789b17dade18437719fc984e272d04ad12e130b5d08b8d133cbb",
+      "afterSha256": "be61f9a7db28fc250a6bff215e24612609d90edd5bff473aa4d6287438bcee34"
+    },
+    {
+      "path": "research/datasets/society-platform-pay.json",
+      "beforeSha256": "83eca4677bd3fecceb9b005e6cd923d2e844802eb3fce1d476f9cbbe8e9d0213",
+      "afterSha256": "bff31cf3fed44ce069378696a6469bc6d0f9cd4e46683647531b9c71b66b900d"
+    },
+    {
+      "path": "research/datasets/society-ai-development-partners.json",
+      "beforeSha256": "527fe0b97a9d80515187f91fa899aeea799a0a92a90ec20f9cef6f1d6ecc964c",
+      "afterSha256": "e6b13e0515d733bf9495cde5c585242fdcb51db2e85f1308a3c29bc22ac4c161"
+    },
+    {
+      "path": "research/datasets/society-platform-partnerships.json",
+      "beforeSha256": "5611c072981c6e3d930fa8590ca25a5c68bd0afbca2b5e8d61715f7630d4c38b",
+      "afterSha256": "eb1343ea747bfb52f1113477ea07f8b33dc0b6c055e810fb8559a3ab4e917d14"
+    },
+    {
+      "path": "research/datasets/physical-zero-evaporation-design.json",
+      "beforeSha256": "67f3d15355648dcb5a25f23a9cd6d269b6c9135f76f420b9199debb931a50fdf",
+      "afterSha256": "9a84ec6ef3f25b05ec216a5b0bca9e04e4e050e3104fa03e60dd1fb0d5c30d10"
+    },
+    {
+      "path": "research/datasets/society-platform-crossborder.json",
+      "beforeSha256": "c2d676882821e17c334589f46a561ed3628044132141cc180aa4bca1c23b6719",
+      "afterSha256": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3"
+    },
+    {
+      "path": "research/datasets/society-ai-growth-zones.json",
+      "beforeSha256": "7aa421271dd4b87d43e4db9f0c81ceefe5c34ec726764defa9ba7b01d15c152c",
+      "afterSha256": "d56884c5dc00ca6c274fc2b7752febbdc626531627d9bada4194eb2d1acfa116"
+    },
+    {
+      "path": "research/datasets/society-nigeria-tutoring.json",
+      "beforeSha256": "19f2cf727b82c6a0b21c0753c4de312eac9b5559842fb07ce5c36f751927f9a2",
+      "afterSha256": "8e316991ef8a2a557606a4cefbf03427fc3ba638137c135d172f41b1feed0c3b"
+    },
+    {
+      "path": "research/datasets/physical-chip-rule-events.json",
+      "beforeSha256": "7d75d3bbb13d2829344bd5a815e35e78f5978ce5da6490aaf8d57a9c654640f1",
+      "afterSha256": "443ded25249b4ba4e34cbbcbf7053b04254777a44b8c392ec572e5be2de722ea"
+    },
+    {
+      "path": "research/datasets/physical-announced-land.json",
+      "beforeSha256": "78bfba444f3070b6c4993dcda5477bb67077425a01dc45cf768834182612cd98",
+      "afterSha256": "961fe8b274c3ae3f0afc036d89c76b84d77f2e88cef1ea966caeee223ca0f529"
+    },
+    {
+      "path": "research/datasets/society-broadband-affordability.json",
+      "beforeSha256": "cdaf06ff4e97016401d0128c273ceaf5b8ab2e7648a8eeed9114db2f10f57082",
+      "afterSha256": "a45ed9cd6319ccd8695fabf2b9cbf225d1429a2df07f3e927874ab2f94ff6053"
+    },
+    {
+      "path": "research/datasets/physical-waterway-dependencies.json",
+      "beforeSha256": "f38da4b2d8ec19e9f0cdeb9469c5ac65b14bde12a686ed96410a195cdd479860",
+      "afterSha256": "d7de70dc9380c1fe20a2fedb53b00945d60c94357588da534b3336595f608f5b"
+    },
+    {
+      "path": "research/datasets/physical-autonomous-voyages.json",
+      "beforeSha256": "0f08e0bb6766f94789a377177f2b0ac893dd6c99de6a90e8403c6ef21d66b8e8",
+      "afterSha256": "4925ebb060e855447392eb24cad9b06ff0d065ce1c77b4721c8f82b6c9cfca9e"
+    },
+    {
+      "path": "research/datasets/physical-weather-cooling.json",
+      "beforeSha256": "770d45ede4106d67fe7a8ee424ee51ebf6f8323e142017e8058ba11fc7f54ec2",
+      "afterSha256": "8922a67469c023e2b420ee1212805812d77618246c80a56553c30d37312a3c5b"
+    },
+    {
+      "path": "research/datasets/society-company-gdp.json",
+      "beforeSha256": "6426898fe25e1230c4a411eaf68176c5b8cfed7967a171310b930a0a14f09847",
+      "afterSha256": "c61b06c86f33fe9641a245c4a0e1b2aac3878a002c9cec8fc0f8647447039c02"
+    },
+    {
+      "path": "research/datasets/society-stargate-scale.json",
+      "beforeSha256": "853add582017ea8a1f9678c2b30144a4d6a8f37e4fa7dded692102647b09b5e7",
+      "afterSha256": "375aba92c478c3e99c8e43ba3532ff2273bc8f6e8ce8a8bc8cefbb4d10614ca4"
+    },
+    {
+      "path": "research/datasets/physical-water-source-substitution.json",
+      "beforeSha256": "3d5291e624ce15c0af063ff442d2f7df409a918d9689ff40aca494960fe01a87",
+      "afterSha256": "a17447025e25b1cddda1a9ba99977dcf958f032b87ba641abc35eab236b9f1b1"
+    },
+    {
+      "path": "research/datasets/physical-tsmc-manufacturing.json",
+      "beforeSha256": "c003aea6490b73012b43d2d47b81618fe523fd8eb6d497453149497f5da930db",
+      "afterSha256": "b4bb5a4b57428cd397676cd750ac70c1e02ac8d0f70dd0579ca41b549e590ef3"
+    },
+    {
+      "path": "research/datasets/physical-public-shuttle-pilot.json",
+      "beforeSha256": "cc51c3be214baaa8094780fc1361e6d13bec6ccb52750ce2d4ec4a576441c21c",
+      "afterSha256": "a5c708eb4941e51de2acda2e95e3f0a0d26d1b854dbc3447432adea1d424077d"
+    },
+    {
+      "path": "research/datasets/physical-irish-electricity-series.json",
+      "beforeSha256": "5a9cb19a81500d8f95d5dbc6a0b3d447c1e301314f2807cd9430d3c32c6208d4",
+      "afterSha256": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e"
+    },
+    {
+      "path": "research/datasets/society-gender-exposure.json",
+      "beforeSha256": "57589b6aee82f73a771081651e61189c75c22f9eda7744a0cfa56ff16604cfc8",
+      "afterSha256": "62af6d20aef93ba49214b6621056070d9bcd3a3e9038598eb6419f38019fb5a7"
+    },
+    {
+      "path": "research/datasets/physical-electricity-fuels.json",
+      "beforeSha256": "4d130dacfa0fc2f76c9703043cc2d11ed4f8e8014c652be3c89896c958963bd2",
+      "afterSha256": "441126d5e98790732d3e8d8b5b92605fa84c64cf3cfa0db2179007e57b88e878"
+    },
+    {
+      "path": "research/datasets/physical-lifecycle-disclosures.json",
+      "beforeSha256": "2f905c98730de2692f42f5dd75d396fa38039fa532009316c43bee623db395d8",
+      "afterSha256": "b32efbe19a838c80d6f1274aeee14d65fac7e770c7e014dffe794fb6d1e27831"
+    },
+    {
+      "path": "research/datasets/physical-rainfall-benchmark.json",
+      "beforeSha256": "c5db2323bcf56a5e077a9cf350a54a93259cf682452cea7b7e39336802ebff79",
+      "afterSha256": "a79a1146b3147d27b53e4eb8d1c45b9c99fd487f60483e2f6f7e7e669e43f668"
+    }
+  ]
+}

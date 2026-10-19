@@ -1,0 +1,3544 @@
+[
+  {
+    "conceptId": "422-2",
+    "originalSourceUrl": "https://world-processor.com/422/",
+    "originalQuestion": "Who benefits from AI at work, and whose existing disadvantage could deepen?",
+    "proposedTitle": "Exposed, Unequally",
+    "proposedQuestion": "How does modelled GenAI occupational exposure differ between female-dominated and male-dominated occupations?",
+    "claim": "Female-dominated occupations have higher potential GenAI exposure in the 2026 ILO analysis.",
+    "sourceConnection": "Compare gendered task exposure and access to AI training without treating exposure as job loss.",
+    "reframeReason": "Task exposure is not observed benefits, discrimination or job loss.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Female-dominated occupations have higher potential GenAI exposure in the 2026 ILO analysis.",
+      "sourceIds": [
+        "ilo-gender-2026"
+      ]
+    },
+    "datasetIds": [
+      "society-gender-exposure"
+    ],
+    "designId": "design-422-2",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No observed wage or training-access causal effects; no national breakdown in this small extract."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Female-dominated occupations have higher potential GenAI exposure in the 2026 ILO analysis.",
+    "rationale": "Female-dominated occupations have higher potential GenAI exposure in the 2026 ILO analysis.",
+    "searchedSources": [
+      {
+        "url": "https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men",
+        "finding": "Women concentrated in high-risk jobs; percentages of female/male-dominated occupations"
+      }
+    ],
+    "missingEvidence": [
+      "No observed wage or training-access causal effects; no national breakdown in this small extract."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "415",
+    "originalSourceUrl": "https://world-processor.com/415/",
+    "originalQuestion": "Where do tax zones and special rules attract AI infrastructure, and what do local communities receive?",
+    "proposedTitle": "Exceptional Machines",
+    "proposedQuestion": "Which UK regions were named in the AI Growth Zones programme, and which local benefits were promised?",
+    "claim": "Five UK regional announcements illustrate a specific AI-infrastructure zoning programme.",
+    "sourceConnection": "Investigate AI infrastructure incentives, ownership and local returns inside exceptional jurisdictions.",
+    "reframeReason": "A programme-specific announcement map is supportable; a global tax-incentive/local-return causal map is not.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Five UK regional announcements illustrate a specific AI-infrastructure zoning programme.",
+      "sourceIds": [
+        "uk-aigz-collection",
+        "uk-aigz-policy"
+      ]
+    },
+    "datasetIds": [
+      "society-ai-growth-zones"
+    ],
+    "designId": "design-415",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No verified operating status, cadastral boundary, tax-benefit outturn or causal community-impact measure."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which UK regions were named in the AI Growth Zones programme, and which local benefits were promised?",
+    "rationale": "A programme-specific announcement map is supportable; a global tax-incentive/local-return causal map is not.",
+    "searchedSources": [
+      {
+        "url": "https://www.gov.uk/government/collections/ai-growth-zones",
+        "finding": "AI Growth Zones announcements list; five regional announcements dated2025–2026"
+      },
+      {
+        "url": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+        "finding": "Sections3 and5: proposed price support, local adoption funds and retained business-rate growth"
+      }
+    ],
+    "missingEvidence": [
+      "No verified operating status, cadastral boundary, tax-benefit outturn or causal community-impact measure."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "408",
+    "originalSourceUrl": "https://world-processor.com/408/",
+    "originalQuestion": "Who cannot reliably use AI because dependable electricity is still out of reach?",
+    "proposedTitle": "Before the Prompt",
+    "proposedQuestion": "Who lacks basic electricity access, a prerequisite for many AI services?",
+    "claim": "Country basic electricity access provides a prerequisite map, not reliable-AI-access measurement.",
+    "sourceConnection": "Place AI access claims against the prerequisite of reliable electrical service.",
+    "reframeReason": "Original reliable-electricity wording is narrowed: binary access does not measure reliability.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Country basic electricity access provides a prerequisite map, not reliable-AI-access measurement.",
+      "sourceIds": [
+        "wdi-electricity"
+      ]
+    },
+    "datasetIds": [
+      "society-electricity-access"
+    ],
+    "designId": "design-408",
+    "verdict": "hold",
+    "candidateVerdict": "context-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No service quality, outages, device ownership or direct AI-use data."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Who lacks basic electricity access, a prerequisite for many AI services?",
+    "rationale": "Original reliable-electricity wording is narrowed: binary access does not measure reliability.",
+    "searchedSources": [
+      {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/EG.ELC.ACCS.ZS?date=2024&format=json&per_page=20000",
+        "finding": "EG.ELC.ACCS.ZS API result; data[1] records indexed by countryiso3code/date"
+      }
+    ],
+    "missingEvidence": [
+      "No service quality, outages, device ownership or direct AI-use data."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "395",
+    "originalSourceUrl": "https://world-processor.com/395/",
+    "originalQuestion": "Where do AI researchers move, and how different is that map from migration overall?",
+    "proposedTitle": "Moving Minds",
+    "proposedQuestion": "Where do AI researchers move, and how different is that map from migration overall?",
+    "claim": "A comparable migration contrast requires two compatible origin–destination panels, not a snapshot of undergraduate origins.",
+    "sourceConnection": "Compare research-talent movements with broader migration rather than conflating the two.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "A comparable migration contrast requires two compatible origin–destination panels, not a snapshot of undergraduate origins.",
+      "sourceIds": [
+        "macropolo",
+        "oecd-migration"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Obtain licensed person-level tracker release with sample rules and affiliation dates.",
+      "Construct both matrices for the same time interval and geography; publish unmatched origins and coverage."
+    ],
+    "limitations": [
+      "Obtain licensed person-level tracker release with sample rules and affiliation dates.",
+      "Construct both matrices for the same time interval and geography; publish unmatched origins and coverage."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "A comparable migration contrast requires two compatible origin–destination panels, not a snapshot of undergraduate origins.",
+    "rationale": "A comparable migration contrast requires two compatible origin–destination panels, not a snapshot of undergraduate origins.",
+    "searchedSources": [
+      {
+        "url": "https://macropolo.org/digital-projects/the-global-ai-talent-tracker/",
+        "finding": "Tracker follows selected elite conference researchers; undergraduate origin is not nationality or annual migration."
+      },
+      {
+        "url": "https://www.oecd.org/en/data/datasets/oecd-databases-on-migration.html",
+        "finding": "General migration data uses flows, stocks and birthplace/nationality definitions; incompatible with elite AI researcher sample."
+      }
+    ],
+    "missingEvidence": [
+      "Obtain licensed person-level tracker release with sample rules and affiliation dates.",
+      "Construct both matrices for the same time interval and geography; publish unmatched origins and coverage."
+    ],
+    "nextSteps": [
+      "Obtain licensed person-level tracker release with sample rules and affiliation dates.",
+      "Construct both matrices for the same time interval and geography; publish unmatched origins and coverage."
+    ]
+  },
+  {
+    "conceptId": "387",
+    "originalSourceUrl": "https://world-processor.com/387/",
+    "originalQuestion": "Who gets to set the terms when a handful of model platforms serve much of the world?",
+    "proposedTitle": "The World, Licensed",
+    "proposedQuestion": "Who gets to set the terms when a handful of model platforms serve much of the world?",
+    "claim": "Platform contract terms can be audited, but territorial division and global reach cannot be inferred from a handful of policies.",
+    "sourceConnection": "Use partition as a historical analogy for platform rule-setting, not an assertion of equivalence.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Platform contract terms can be audited, but territorial division and global reach cannot be inferred from a handful of policies.",
+      "sourceIds": [
+        "anthropic-terms",
+        "ftc-terms"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Freeze effective versions for specified product, customer type and jurisdiction.",
+      "Independently code clause categories and verify use/reach denominator; do not turn platform terms into national sovereignty borders."
+    ],
+    "limitations": [
+      "Freeze effective versions for specified product, customer type and jurisdiction.",
+      "Independently code clause categories and verify use/reach denominator; do not turn platform terms into national sovereignty borders."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Platform contract terms can be audited, but territorial division and global reach cannot be inferred from a handful of policies.",
+    "rationale": "Platform contract terms can be audited, but territorial division and global reach cannot be inferred from a handful of policies.",
+    "searchedSources": [
+      {
+        "url": "https://privacy.anthropic.com/en/collections/10672414-policies-terms-of-service",
+        "finding": "Commercial/consumer policies have different scopes; current effective versions need clause-level archival review."
+      },
+      {
+        "url": "https://www.ftc.gov/reports/ftc-staff-report-ai-partnerships-investments-6b-study",
+        "finding": "Partnership clauses describe company relationships, not consumer rule coverage by country."
+      }
+    ],
+    "missingEvidence": [
+      "Freeze effective versions for specified product, customer type and jurisdiction.",
+      "Independently code clause categories and verify use/reach denominator; do not turn platform terms into national sovereignty borders."
+    ],
+    "nextSteps": [
+      "Freeze effective versions for specified product, customer type and jurisdiction.",
+      "Independently code clause categories and verify use/reach denominator; do not turn platform terms into national sovereignty borders."
+    ]
+  },
+  {
+    "conceptId": "385",
+    "originalSourceUrl": "https://world-processor.com/385/",
+    "originalQuestion": "How large are AI infrastructure commitments beside national economic output when the units and years match?",
+    "proposedTitle": "An Intention the Size of an Economy",
+    "proposedQuestion": "How large was the2025 Stargate investment intention beside selected annualGDP values, keeping their different time bases visible?",
+    "claim": "The original500billion-dollar Stargate intention provides an explicitly multi-year scale comparison beside annualGDP.",
+    "sourceConnection": "Build transparent scale comparisons while keeping investment commitments distinct from annual output.",
+    "reframeReason": "The original matched-units/time comparison cannot be satisfied by a multi-year intention. Reframe to transparent unlike-measure juxtaposition with no ratio or equivalence.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "The original500billion-dollar Stargate intention provides an explicitly multi-year scale comparison beside annualGDP.",
+      "sourceIds": [
+        "openai-stargate-announcement",
+        "wdi-gdp"
+      ]
+    },
+    "datasetIds": [
+      "society-stargate-scale"
+    ],
+    "designId": "design-385",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No realized investment series, financing certainty or comparable annual expenditure."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How large was the2025 Stargate investment intention beside selected annualGDP values, keeping their different time bases visible?",
+    "rationale": "The original matched-units/time comparison cannot be satisfied by a multi-year intention. Reframe to transparent unlike-measure juxtaposition with no ratio or equivalence.",
+    "searchedSources": [
+      {
+        "url": "https://openai.com/index/announcing-the-stargate-project/",
+        "finding": "Opening paragraph: intent to invest500billion over nextfour years; initial100billion deployment"
+      },
+      {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000",
+        "finding": "NY.GDP.MKTP.CD API result; data[1] records indexed by countryiso3code/date"
+      }
+    ],
+    "missingEvidence": [
+      "No realized investment series, financing certainty or comparable annual expenditure."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "384",
+    "originalSourceUrl": "https://world-processor.com/384/",
+    "originalQuestion": "Which regions resemble one another in AI exposure despite very different incomes or geography?",
+    "proposedTitle": "Unexpected Twins",
+    "proposedQuestion": "Which regions resemble one another in AI exposure despite very different incomes or geography?",
+    "claim": "Exposure peer groups need a harmonized multidimensional region table, not visual similarity or income-group averages.",
+    "sourceConnection": "Find evidence-based peer regions across task exposure, education and digital access.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Exposure peer groups need a harmonized multidimensional region table, not visual similarity or income-group averages.",
+      "sourceIds": [
+        "ilo-exposure",
+        "oecd-exposure"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Acquire a common occupation crosswalk and country/subnational employment weights.",
+      "Predefine peer-distance variables and normalization; test sensitivity and missing data before pairing."
+    ],
+    "limitations": [
+      "Acquire a common occupation crosswalk and country/subnational employment weights.",
+      "Predefine peer-distance variables and normalization; test sensitivity and missing data before pairing."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Exposure peer groups need a harmonized multidimensional region table, not visual similarity or income-group averages.",
+    "rationale": "Exposure peer groups need a harmonized multidimensional region table, not visual similarity or income-group averages.",
+    "searchedSources": [
+      {
+        "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+        "finding": "Task exposure classification is available but needs local occupation-employment weights."
+      },
+      {
+        "url": "https://www.oecd.org/en/topics/sub-issues/ai-and-work.html",
+        "finding": "OECD capability/task measures are not interchangeable with ILO GenAI gradients."
+      }
+    ],
+    "missingEvidence": [
+      "Acquire a common occupation crosswalk and country/subnational employment weights.",
+      "Predefine peer-distance variables and normalization; test sensitivity and missing data before pairing."
+    ],
+    "nextSteps": [
+      "Acquire a common occupation crosswalk and country/subnational employment weights.",
+      "Predefine peer-distance variables and normalization; test sensitivity and missing data before pairing."
+    ]
+  },
+  {
+    "conceptId": "383",
+    "originalSourceUrl": "https://world-processor.com/383/",
+    "originalQuestion": "How unevenly is computing capacity distributed relative to the number of people it could serve?",
+    "proposedTitle": "People per Processor",
+    "proposedQuestion": "How unevenly is computing capacity distributed relative to the number of people it could serve?",
+    "claim": "Public-cloud region presence is not compute capacity per person; mixing them would fabricate a hardware denominator.",
+    "sourceConnection": "Contrast population with disclosed compute capacity without pretending missing capacity is zero.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Public-cloud region presence is not compute capacity per person; mixing them would fabricate a hardware denominator.",
+      "sourceIds": [
+        "oecd-compute-2025",
+        "oecd-secure-2026"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Choose accelerator model-equivalent capacity or explicitly rename to availability zones.",
+      "Retrieve verified country capacity with observation dates and shared/private distinctions, then join same-year population."
+    ],
+    "limitations": [
+      "Choose accelerator model-equivalent capacity or explicitly rename to availability zones.",
+      "Retrieve verified country capacity with observation dates and shared/private distinctions, then join same-year population."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Public-cloud region presence is not compute capacity per person; mixing them would fabricate a hardware denominator.",
+    "rationale": "Public-cloud region presence is not compute capacity per person; mixing them would fabricate a hardware denominator.",
+    "searchedSources": [
+      {
+        "url": "https://www.oecd.org/en/publications/measuring-domestic-public-cloud-compute-availability-for-artificial-intelligence_8602a322-en.html",
+        "finding": "Method counts and categorises cloud regions with AI capabilities, not FLOP/s or accelerator inventories."
+      },
+      {
+        "url": "https://www.oecd.org/en/publications/securing-ai-compute_7f96dc99-en/full-report.html",
+        "finding": "October2026 policy cases discuss capacity access and procurement; no comprehensive compatible per-capita inventory."
+      }
+    ],
+    "missingEvidence": [
+      "Choose accelerator model-equivalent capacity or explicitly rename to availability zones.",
+      "Retrieve verified country capacity with observation dates and shared/private distinctions, then join same-year population."
+    ],
+    "nextSteps": [
+      "Choose accelerator model-equivalent capacity or explicitly rename to availability zones.",
+      "Retrieve verified country capacity with observation dates and shared/private distinctions, then join same-year population."
+    ]
+  },
+  {
+    "conceptId": "375",
+    "originalSourceUrl": "https://world-processor.com/375/",
+    "originalQuestion": "Where are AI-related patents concentrated, and who can actually use the protected inventions?",
+    "proposedTitle": "The Inventor Map",
+    "proposedQuestion": "Where did inventors of the largest reported GenAI patent-family totals work during 2014–2023?",
+    "claim": "WIPO reports a strong concentration of GenAI patent-family inventor locations.",
+    "sourceConnection": "Separate patent counts, inventorship and legal ownership from demonstrated innovation impact.",
+    "reframeReason": "Public summary measures inventor location, not access to protected inventions.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "WIPO reports a strong concentration of GenAI patent-family inventor locations.",
+      "sourceIds": [
+        "wipo-genai-2024"
+      ]
+    },
+    "datasetIds": [
+      "society-patent-inventors"
+    ],
+    "designId": "design-375",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "Complete patent-level legal status and licensing rights are absent."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Where did inventors of the largest reported GenAI patent-family totals work during 2014–2023?",
+    "rationale": "Public summary measures inventor location, not access to protected inventions.",
+    "searchedSources": [
+      {
+        "url": "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+        "finding": "Key findings, top five inventor locations and top ten applicants; simple-patent-family definition"
+      }
+    ],
+    "missingEvidence": [
+      "Complete patent-level legal status and licensing rights are absent."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "369",
+    "originalSourceUrl": "https://world-processor.com/369/",
+    "originalQuestion": "How do AI companies' revenues compare with national production when unlike measures remain clearly labelled?",
+    "proposedTitle": "A Company Beside an Economy",
+    "proposedQuestion": "How does a major AI-platform company’s total revenue compare in dollar scale with selected national GDP values?",
+    "claim": "Microsoft revenue and selected national GDP values can be juxtaposed with explicit accounting and period labels.",
+    "sourceConnection": "Expose corporate scale through carefully labelled comparisons, avoiding revenue-equals-GDP claims.",
+    "reframeReason": "Corporate sales do not equal national value added, and fiscal years do not equal calendar years; preserve both labels.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Microsoft revenue and selected national GDP values can be juxtaposed with explicit accounting and period labels.",
+      "sourceIds": [
+        "microsoft-fy2026",
+        "wdi-gdp"
+      ]
+    },
+    "datasetIds": [
+      "society-company-gdp"
+    ],
+    "designId": "design-369",
+    "verdict": "hold",
+    "candidateVerdict": "context-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No AI-only revenue segmentation or same-period calendarized corporate comparison."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How does a major AI-platform company’s total revenue compare in dollar scale with selected national GDP values?",
+    "rationale": "Corporate sales do not equal national value added, and fiscal years do not equal calendar years; preserve both labels.",
+    "searchedSources": [
+      {
+        "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+        "finding": "Twelve Months Ended June30: revenue, reported GAAP; FY2026 and FY2025 columns"
+      },
+      {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=20000",
+        "finding": "NY.GDP.MKTP.CD API result; data[1] records indexed by countryiso3code/date"
+      }
+    ],
+    "missingEvidence": [
+      "No AI-only revenue segmentation or same-period calendarized corporate comparison."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "367",
+    "originalSourceUrl": "https://world-processor.com/367/",
+    "originalQuestion": "Which countries gain or lose AI research talent according to documented affiliation changes?",
+    "proposedTitle": "The Talent Current",
+    "proposedQuestion": "Which countries gain or lose AI research talent according to documented affiliation changes?",
+    "claim": "Affiliation mobility and self-reported AI-skills migration are different measures; no populated AI-only affiliation panel was verified.",
+    "sourceConnection": "Use dated research-affiliation changes as a limited proxy, not a census of all workers.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Affiliation mobility and self-reported AI-skills migration are different measures; no populated AI-only affiliation panel was verified.",
+      "sourceIds": [
+        "oecd-linkedin",
+        "oecd-reico"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Obtain researcher-level DOI/ORCID affiliation history with AI-field definition and licence.",
+      "Resolve simultaneous affiliations and disambiguation errors; calculate dated net flows with observed coverage only."
+    ],
+    "limitations": [
+      "Obtain researcher-level DOI/ORCID affiliation history with AI-field definition and licence.",
+      "Resolve simultaneous affiliations and disambiguation errors; calculate dated net flows with observed coverage only."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Affiliation mobility and self-reported AI-skills migration are different measures; no populated AI-only affiliation panel was verified.",
+    "rationale": "Affiliation mobility and self-reported AI-skills migration are different measures; no populated AI-only affiliation panel was verified.",
+    "searchedSources": [
+      {
+        "url": "https://oecd.ai/en/linkedin",
+        "finding": "AI talent migration per10000 LinkedIn members uses profile moves and inferred AI skills; platform selection bias applies."
+      },
+      {
+        "url": "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en/full-report/mapping-mobility-in-research-and-innovation-careers_54676672.html",
+        "finding": "Bibliometric affiliation changes can measure researcher mobility, but require field/date disambiguation."
+      }
+    ],
+    "missingEvidence": [
+      "Obtain researcher-level DOI/ORCID affiliation history with AI-field definition and licence.",
+      "Resolve simultaneous affiliations and disambiguation errors; calculate dated net flows with observed coverage only."
+    ],
+    "nextSteps": [
+      "Obtain researcher-level DOI/ORCID affiliation history with AI-field definition and licence.",
+      "Resolve simultaneous affiliations and disambiguation errors; calculate dated net flows with observed coverage only."
+    ]
+  },
+  {
+    "conceptId": "330",
+    "originalSourceUrl": "https://world-processor.com/330/",
+    "originalQuestion": "Who can benefit from AI-mediated reading, and whose language or literacy needs remain unsupported?",
+    "proposedTitle": "The Reading Machine",
+    "proposedQuestion": "What happened in one six-week, teacher-supported AI tutoring trial in Edo State?",
+    "claim": "In one teacher-supported BeninCity trial, table-reportedITT effects were0.310SD composite and0.238SD English, each robustSE0.068 andregressionN654.",
+    "sourceConnection": "Compare accessible AI literacy tools with independently evaluated learning outcomes.",
+    "reframeReason": "A trial is evidence for a defined intervention, not global literacy gains or all languages.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "One randomized intervention reports English and composite learning gains.",
+      "sourceIds": [
+        "wb-nigeria-rct"
+      ]
+    },
+    "datasetIds": [
+      "society-nigeria-tutoring"
+    ],
+    "designId": "design-330",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "Cannot generalize to adult literacy, other languages or national outcomes."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "What happened in one six-week, teacher-supported AI tutoring trial in Edo State?",
+    "rationale": "A trial is evidence for a defined intervention, not global literacy gains or all languages.",
+    "searchedSources": [
+      {
+        "url": "https://reproducibility.worldbank.org/index.php/catalog/419",
+        "finding": "Overview abstract; Data paragraph; metadata licence and revision date"
+      }
+    ],
+    "missingEvidence": [
+      "Cannot generalize to adult literacy, other languages or national outcomes."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "320",
+    "originalSourceUrl": "https://world-processor.com/320/",
+    "originalQuestion": "Who performs the annotation work behind AI, and how much of the final value reaches them?",
+    "proposedTitle": "Coffee and Clickwork",
+    "proposedQuestion": "What do web-platform workers in a recent Latin America and Caribbean survey earn?",
+    "claim": "Surveyed platformworkers report lower hourlypay when unpaidsearch/adminhours are included; distinct means andmedians retained.",
+    "sourceConnection": "Compare documented AI data-labour supply chains with the distribution of compensation and value.",
+    "reframeReason": "AI annotation supply-chain compensation and final value shares are unavailable; broader platform pay is context.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Surveyed platform workers show a wide mean–median earnings gap.",
+      "sourceIds": [
+        "ilo-lac-platform-2025"
+      ]
+    },
+    "datasetIds": [
+      "society-platform-pay"
+    ],
+    "designId": "design-320",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No buyer chain, AI-only subset, or final value denominator."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "What do web-platform workers in a recent Latin America and Caribbean survey earn?",
+    "rationale": "AI annotation supply-chain compensation and final value shares are unavailable; broader platform pay is context.",
+    "searchedSources": [
+      {
+        "url": "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+        "finding": "Key findings, income and overseas-client bullets; original survey n1153 across21 countries"
+      }
+    ],
+    "missingEvidence": [
+      "No buyer chain, AI-only subset, or final value denominator."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "312",
+    "originalSourceUrl": "https://world-processor.com/312/",
+    "originalQuestion": "Whose working night supports the apparent instant response of global AI services?",
+    "proposedTitle": "The Sleepless Shift",
+    "proposedQuestion": "Whose working night supports the apparent instant response of global AI services?",
+    "claim": "Work-hours studies do not identify whose night supports a particular AI-service response.",
+    "sourceConnection": "Investigate documented data-work schedules and cross-time-zone human support.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Work-hours studies do not identify whose night supports a particular AI-service response.",
+      "sourceIds": [
+        "ilo-kenya",
+        "ilo-datawork-2026"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Secure consented annotation-worker schedule diary data with worker timezone and task/customer type.",
+      "Compute paid/unpaid night hours using local definitions; never infer a night shift from longitude."
+    ],
+    "limitations": [
+      "Secure consented annotation-worker schedule diary data with worker timezone and task/customer type.",
+      "Compute paid/unpaid night hours using local definitions; never infer a night shift from longitude."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Work-hours studies do not identify whose night supports a particular AI-service response.",
+    "rationale": "Work-hours studies do not identify whose night supports a particular AI-service response.",
+    "searchedSources": [
+      {
+        "url": "https://www.ilo.org/sites/default/files/2024-06/24004-ILO-Digital-Labour-Kenya-v6%20Final%20May%2031%202024.pdf",
+        "finding": "2022 sector samples report schedules; some night-work values belong to personal services, not AI annotation."
+      },
+      {
+        "url": "https://live.ilo.org/event/particulars-data-work-ais-supply-chain-2026-09-11",
+        "finding": "Current research discusses invisible labour; event summary is not timestamped shift dataset."
+      }
+    ],
+    "missingEvidence": [
+      "Secure consented annotation-worker schedule diary data with worker timezone and task/customer type.",
+      "Compute paid/unpaid night hours using local definitions; never infer a night shift from longitude."
+    ],
+    "nextSteps": [
+      "Secure consented annotation-worker schedule diary data with worker timezone and task/customer type.",
+      "Compute paid/unpaid night hours using local definitions; never infer a night shift from longitude."
+    ]
+  },
+  {
+    "conceptId": "294",
+    "originalSourceUrl": "https://world-processor.com/294/",
+    "originalQuestion": "Is AI investment becoming less geographically concentrated, or only taking new routes through familiar owners?",
+    "proposedTitle": "Money Changes Hemisphere",
+    "proposedQuestion": "Is AI investment becoming less geographically concentrated, or only taking new routes through familiar owners?",
+    "claim": "Digital investment concentration is measured, but ultimate-owner AI flows and consistent South–South classification were not verified.",
+    "sourceConnection": "Track disclosed AI investment by investor, recipient and ultimate ownership rather than destination alone.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Digital investment concentration is measured, but ultimate-owner AI flows and consistent South–South classification were not verified.",
+      "sourceIds": [
+        "unctad-wir2025",
+        "unctad-ai2026"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Obtain transaction records with announced/realised flag, currency/date, ultimate owner and recipient.",
+      "Deduplicate rounds and intermediary jurisdictions; separate AI from broader digital infrastructure."
+    ],
+    "limitations": [
+      "Obtain transaction records with announced/realised flag, currency/date, ultimate owner and recipient.",
+      "Deduplicate rounds and intermediary jurisdictions; separate AI from broader digital infrastructure."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Digital investment concentration is measured, but ultimate-owner AI flows and consistent South–South classification were not verified.",
+    "rationale": "Digital investment concentration is measured, but ultimate-owner AI flows and consistent South–South classification were not verified.",
+    "searchedSources": [
+      {
+        "url": "https://unctad.org/publication/world-investment-report-2025",
+        "finding": "Greenfield digital project concentration spans all digital sectors; is not AI-only realised FDI."
+      },
+      {
+        "url": "https://unctad.org/news/ai-investment-boom-risks-widening-global-development-divide",
+        "finding": "2026 analysis links AI and digital infrastructure investment; lacks accessible matched ultimate-owner transaction rows."
+      }
+    ],
+    "missingEvidence": [
+      "Obtain transaction records with announced/realised flag, currency/date, ultimate owner and recipient.",
+      "Deduplicate rounds and intermediary jurisdictions; separate AI from broader digital infrastructure."
+    ],
+    "nextSteps": [
+      "Obtain transaction records with announced/realised flag, currency/date, ultimate owner and recipient.",
+      "Deduplicate rounds and intermediary jurisdictions; separate AI from broader digital infrastructure."
+    ]
+  },
+  {
+    "conceptId": "284",
+    "originalSourceUrl": "https://world-processor.com/284/",
+    "originalQuestion": "Who invents AI technologies, who registers the patents, and where do the owners reside?",
+    "proposedTitle": "The Applicants",
+    "proposedQuestion": "Which named organisations applied for the most GenAI patent families in 2014–2023?",
+    "claim": "Named applicants have markedly different GenAI patent-family counts.",
+    "sourceConnection": "Separate inventor location, filing jurisdiction and assignee location in AI patent records.",
+    "reframeReason": "Full inventor-owner-residence joins are unavailable; applicants are a distinct supported unit.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Named applicants have markedly different GenAI patent-family counts.",
+      "sourceIds": [
+        "wipo-genai-2024"
+      ]
+    },
+    "datasetIds": [
+      "society-patent-applicants"
+    ],
+    "designId": "design-284",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "Applicant-to-inventor and beneficial-owner linkages are absent."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which named organisations applied for the most GenAI patent families in 2014–2023?",
+    "rationale": "Full inventor-owner-residence joins are unavailable; applicants are a distinct supported unit.",
+    "searchedSources": [
+      {
+        "url": "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+        "finding": "Key findings, top five inventor locations and top ten applicants; simple-patent-family definition"
+      }
+    ],
+    "missingEvidence": [
+      "Applicant-to-inventor and beneficial-owner linkages are absent."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "279",
+    "originalSourceUrl": "https://world-processor.com/279/",
+    "originalQuestion": "Who reaches leadership in AI research and governance, and how is representation changing?",
+    "proposedTitle": "Who Gets to Decide?",
+    "proposedQuestion": "Who reaches leadership in AI research and governance, and how is representation changing?",
+    "claim": "Two UN bodies establish membership milestones, but no longitudinal global AI-leadership representation dataset was verified.",
+    "sourceConnection": "Trace documented representation milestones in AI institutions without reducing inclusion to first appointments.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Two UN bodies establish membership milestones, but no longitudinal global AI-leadership representation dataset was verified.",
+      "sourceIds": [
+        "un-advisory",
+        "un-panel2026"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Retrieve official member list and role dates, plus self-described representation attributes where relevant.",
+      "Define leadership universe and time periods; avoid treating changed institutional mandates as representation trend."
+    ],
+    "limitations": [
+      "Retrieve official member list and role dates, plus self-described representation attributes where relevant.",
+      "Define leadership universe and time periods; avoid treating changed institutional mandates as representation trend."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Two UN bodies establish membership milestones, but no longitudinal global AI-leadership representation dataset was verified.",
+    "rationale": "Two UN bodies establish membership milestones, but no longitudinal global AI-leadership representation dataset was verified.",
+    "searchedSources": [
+      {
+        "url": "https://www.un.org/en/ai-advisory-body/about",
+        "finding": "2023–2024 body had39 members from33 countries; personal capacity, not elected national representation."
+      },
+      {
+        "url": "https://www.un.org/independent-international-scientific-panel-ai/en/panel-members",
+        "finding": "2026 panel lists40 members; fullpage access returned403; do not infer demographic attributes from names."
+      }
+    ],
+    "missingEvidence": [
+      "Retrieve official member list and role dates, plus self-described representation attributes where relevant.",
+      "Define leadership universe and time periods; avoid treating changed institutional mandates as representation trend."
+    ],
+    "nextSteps": [
+      "Retrieve official member list and role dates, plus self-described representation attributes where relevant.",
+      "Define leadership universe and time periods; avoid treating changed institutional mandates as representation trend."
+    ]
+  },
+  {
+    "conceptId": "276",
+    "originalSourceUrl": "https://world-processor.com/276/",
+    "originalQuestion": "What share of disposable income would meaningful access to AI tools consume in different countries?",
+    "proposedTitle": "Before the First Prompt",
+    "proposedQuestion": "What is the median income-relative cost of the connectivity required before an AI prompt?",
+    "claim": "The underlying connection has a documented income-relative cost.",
+    "sourceConnection": "Compare dated prices and income measures without implying a subscription alone provides useful access.",
+    "reframeReason": "Disposable income and harmonized tax-inclusive AI prices are not available; GNI-based broadband affordability is a different labelled measure.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "The underlying connection has a documented income-relative cost.",
+      "sourceIds": [
+        "itu-price-2025"
+      ]
+    },
+    "datasetIds": [
+      "society-broadband-affordability"
+    ],
+    "designId": "design-276",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "Original AI subscription/disposable-income comparison remains unsupported."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "What is the median income-relative cost of the connectivity required before an AI prompt?",
+    "rationale": "Disposable income and harmonized tax-inclusive AI prices are not available; GNI-based broadband affordability is a different labelled measure.",
+    "searchedSources": [
+      {
+        "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-affordability-of-ict-services/",
+        "finding": "First paragraph, global median prices in GNI per capita; affordability-target paragraph"
+      }
+    ],
+    "missingEvidence": [
+      "Original AI subscription/disposable-income comparison remains unsupported."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "251",
+    "originalSourceUrl": "https://world-processor.com/251/",
+    "originalQuestion": "How does AI task exposure differ between countries with growing young workforces and ageing populations?",
+    "proposedTitle": "A Younger Future, Older Models",
+    "proposedQuestion": "How does AI task exposure differ between countries with growing young workforces and ageing populations?",
+    "claim": "Age-related task exposure evidence exists, but a fertility/age-structure-to-exposure country join is not yet populated and validated.",
+    "sourceConnection": "Compare demographic structure with task exposure without claiming AI determines fertility.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Age-related task exposure evidence exists, but a fertility/age-structure-to-exposure country join is not yet populated and validated.",
+      "sourceIds": [
+        "oecd-age2026",
+        "ilo-exposure2025"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Extract age-specific exposure estimates and standard errors under one method.",
+      "Join a fixed-year age structure with occupation weights; distinguish association from demographic or AI causality."
+    ],
+    "limitations": [
+      "Extract age-specific exposure estimates and standard errors under one method.",
+      "Join a fixed-year age structure with occupation weights; distinguish association from demographic or AI causality."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Age-related task exposure evidence exists, but a fertility/age-structure-to-exposure country join is not yet populated and validated.",
+    "rationale": "Age-related task exposure evidence exists, but a fertility/age-structure-to-exposure country join is not yet populated and validated.",
+    "searchedSources": [
+      {
+        "url": "https://www.oecd.org/en/publications/a-potential-boost-from-ai-in-ageing-societies_be002e40-en.html",
+        "finding": "July2026 PIAAC analysis reports age-exposure pattern with education/occupation controls; OECD coverage only."
+      },
+      {
+        "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+        "finding": "Employment task exposure not population fertility; compatible age/occupation weights needed."
+      }
+    ],
+    "missingEvidence": [
+      "Extract age-specific exposure estimates and standard errors under one method.",
+      "Join a fixed-year age structure with occupation weights; distinguish association from demographic or AI causality."
+    ],
+    "nextSteps": [
+      "Extract age-specific exposure estimates and standard errors under one method.",
+      "Join a fixed-year age structure with occupation weights; distinguish association from demographic or AI causality."
+    ]
+  },
+  {
+    "conceptId": "247",
+    "originalSourceUrl": "https://world-processor.com/247/",
+    "originalQuestion": "Which AI development programmes build local capability, and which depend on continuing foreign services?",
+    "proposedTitle": "Partners on Paper",
+    "proposedQuestion": "Where did the UNDP AI Hub name African country partners at its2025 launch?",
+    "claim": "UNDP identifies14 African partner countries in one AI-development initiative.",
+    "sourceConnection": "Compare disclosed AI assistance, contract terms and local capacity outcomes.",
+    "reframeReason": "Programme footprint is verifiable; local capacity outcomes and dependency conditions are not yet comparable.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "UNDP identifies14 African partner countries in one AI-development initiative.",
+      "sourceIds": [
+        "undp-hub-2025"
+      ]
+    },
+    "datasetIds": [
+      "society-ai-development-partners"
+    ],
+    "designId": "design-247",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No evaluated capability gains or contract-dependency measure."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Where did the UNDP AI Hub name African country partners at its2025 launch?",
+    "rationale": "Programme footprint is verifiable; local capacity outcomes and dependency conditions are not yet comparable.",
+    "searchedSources": [
+      {
+        "url": "https://www.undp.org/romecentre/press-releases/g7-endorsed-ai-hub-sustainable-development-launches-rome-forging-25-new-partnerships-catalyze-transformative-potential",
+        "finding": "Paragraph listing14 African partner countries"
+      }
+    ],
+    "missingEvidence": [
+      "No evaluated capability gains or contract-dependency measure."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "215",
+    "originalSourceUrl": "https://world-processor.com/215/",
+    "originalQuestion": "Do languages describe AI in different ways, and do imported terms shape public understanding?",
+    "proposedTitle": "Intelligence in 80 Words",
+    "proposedQuestion": "Do languages describe AI in different ways, and do imported terms shape public understanding?",
+    "claim": "Official multilingual terminology exists, but80-language coverage and effects on public understanding are untested.",
+    "sourceConnection": "Research native terminology and translation choices without treating languages as single uniform communities.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Official multilingual terminology exists, but80-language coverage and effects on public understanding are untested.",
+      "sourceIds": [
+        "unesco-ethics",
+        "undp-language"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Build term records with ISO639 codes, script, native reviewer and source date.",
+      "Commission blinded comprehension evaluation if claiming framing effects; otherwise publish a small labelled lexicon only."
+    ],
+    "limitations": [
+      "Build term records with ISO639 codes, script, native reviewer and source date.",
+      "Commission blinded comprehension evaluation if claiming framing effects; otherwise publish a small labelled lexicon only."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Official multilingual terminology exists, but80-language coverage and effects on public understanding are untested.",
+    "rationale": "Official multilingual terminology exists, but80-language coverage and effects on public understanding are untested.",
+    "searchedSources": [
+      {
+        "url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+        "finding": "Official document provides six language versions; institutional translations do not prove native everyday usage."
+      },
+      {
+        "url": "https://www.undp.org/digital/blog/building-safer-ai-all-languages-collective-pathway-inclusive-human-development",
+        "finding": "2026 programme identifies multilingual safety gaps; no causal terminology/comprehension dataset."
+      }
+    ],
+    "missingEvidence": [
+      "Build term records with ISO639 codes, script, native reviewer and source date.",
+      "Commission blinded comprehension evaluation if claiming framing effects; otherwise publish a small labelled lexicon only."
+    ],
+    "nextSteps": [
+      "Build term records with ISO639 codes, script, native reviewer and source date.",
+      "Commission blinded comprehension evaluation if claiming framing effects; otherwise publish a small labelled lexicon only."
+    ]
+  },
+  {
+    "conceptId": "19-4",
+    "originalSourceUrl": "https://world-processor.com/19-4/",
+    "originalQuestion": "Can AI interpretation help displaced people be understood accurately in high-stakes settings?",
+    "proposedTitle": "A Voice Across the Border",
+    "proposedQuestion": "Can AI interpretation help displaced people be understood accurately in high-stakes settings?",
+    "claim": "Humanitarian AI tools are documented, but no comparable public high-stakes interpretation accuracy table was verified.",
+    "sourceConnection": "Evaluate language-support quality and human review in documented humanitarian settings.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Humanitarian AI tools are documented, but no comparable public high-stakes interpretation accuracy table was verified.",
+      "sourceIds": [
+        "unhcr-ai2026",
+        "undp-saferlang"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Acquire consented, deidentified evaluation corpus with language pair, setting and severity rubric.",
+      "Compare trained human reviewers and model versions with uncertainty; never infer safety from generic translation benchmarks."
+    ],
+    "limitations": [
+      "Acquire consented, deidentified evaluation corpus with language pair, setting and severity rubric.",
+      "Compare trained human reviewers and model versions with uncertainty; never infer safety from generic translation benchmarks."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Humanitarian AI tools are documented, but no comparable public high-stakes interpretation accuracy table was verified.",
+    "rationale": "Humanitarian AI tools are documented, but no comparable public high-stakes interpretation accuracy table was verified.",
+    "searchedSources": [
+      {
+        "url": "https://www.unhcr.org/news/stories/explainer-how-unhcr-using-ai-support-refugees-and-improve-operations",
+        "finding": "2026 explainer describes multilingual information assistance; adoption is not validated interpretation accuracy."
+      },
+      {
+        "url": "https://www.undp.org/digital/blog/building-safer-ai-all-languages-collective-pathway-inclusive-human-development",
+        "finding": "Describes harms and in-language safety evaluation needs, not a certified benchmark for asylum interviews."
+      }
+    ],
+    "missingEvidence": [
+      "Acquire consented, deidentified evaluation corpus with language pair, setting and severity rubric.",
+      "Compare trained human reviewers and model versions with uncertainty; never infer safety from generic translation benchmarks."
+    ],
+    "nextSteps": [
+      "Acquire consented, deidentified evaluation corpus with language pair, setting and severity rubric.",
+      "Compare trained human reviewers and model versions with uncertainty; never infer safety from generic translation benchmarks."
+    ]
+  },
+  {
+    "conceptId": "63",
+    "originalSourceUrl": "https://world-processor.com/0063/",
+    "originalQuestion": "How does practical AI access differ between densely populated cities and remote communities?",
+    "proposedTitle": "The Rural Intelligence Gap",
+    "proposedQuestion": "How unequal is the connectivity prerequisite for AI between urban and rural residents?",
+    "claim": "Global Internet use differs substantially between urban and rural populations.",
+    "sourceConnection": "Study subnational infrastructure and access differences hidden by national averages.",
+    "reframeReason": "AI use by settlement is not measured; show connectivity context explicitly.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Global Internet use differs substantially between urban and rural populations.",
+      "sourceIds": [
+        "itu-rural-2025"
+      ]
+    },
+    "datasetIds": [
+      "society-rural-internet"
+    ],
+    "designId": "design-63",
+    "verdict": "hold",
+    "candidateVerdict": "context-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No direct AI-adoption or local settlement observations."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How unequal is the connectivity prerequisite for AI between urban and rural residents?",
+    "rationale": "AI use by settlement is not measured; show connectivity context explicitly.",
+    "searchedSources": [
+      {
+        "url": "https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use-in-urban-and-rural-areas/",
+        "finding": "First paragraph, global urban85% rural58%"
+      }
+    ],
+    "missingEvidence": [
+      "No direct AI-adoption or local settlement observations."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "78-4",
+    "originalSourceUrl": "https://world-processor.com/078/",
+    "originalQuestion": "What does the AI-access map look like when every person has equal statistical weight?",
+    "proposedTitle": "One Person, One Weight",
+    "proposedQuestion": "How does Internet connectivity look when each person, rather than each country, has equal weight?",
+    "claim": "A population-weighted connectivity map asks a different question from an equal-country percent map.",
+    "sourceConnection": "Build population-weighted views alongside national averages to expose whose experience dominates.",
+    "reframeReason": "Direct AI-adoption denominators are not harmonized; this is openly labelled connectivity context.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "A population-weighted connectivity map asks a different question from an equal-country percent map.",
+      "sourceIds": [
+        "wdi-internet",
+        "wdi-population"
+      ]
+    },
+    "datasetIds": [
+      "society-population-connectivity"
+    ],
+    "designId": "design-78-4",
+    "verdict": "hold",
+    "candidateVerdict": "context-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No direct AI use, affordability, skills or household quality measure."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How does Internet connectivity look when each person, rather than each country, has equal weight?",
+    "rationale": "Direct AI-adoption denominators are not harmonized; this is openly labelled connectivity context.",
+    "searchedSources": [
+      {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/IT.NET.USER.ZS?date=2024&format=json&per_page=20000",
+        "finding": "IT.NET.USER.ZS API result; data[1] records indexed by countryiso3code/date"
+      },
+      {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2024&format=json&per_page=20000",
+        "finding": "SP.POP.TOTL API result; data[1] records indexed by countryiso3code/date"
+      }
+    ],
+    "missingEvidence": [
+      "No direct AI use, affordability, skills or household quality measure."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "83",
+    "originalSourceUrl": "https://world-processor.com/083/",
+    "originalQuestion": "Whose place names do AI systems choose when several communities describe the same landscape?",
+    "proposedTitle": "Naming the World",
+    "proposedQuestion": "Whose place names do AI systems choose when several communities describe the same landscape?",
+    "claim": "Authoritative plural place names can supply a reference, but an audit needs observed versioned model outputs.",
+    "sourceConnection": "Audit naming choices with multilingual references and explicit recognition of disputed or plural names.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Authoritative plural place names can supply a reference, but an audit needs observed versioned model outputs.",
+      "sourceIds": [
+        "ungegn-names",
+        "ungegn-ai2025"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Select documented plural-name cases with local authority and community references.",
+      "Run preregistered multilingual prompts across fixed model versions; record exact outputs, locale and sampling uncertainty."
+    ],
+    "limitations": [
+      "Select documented plural-name cases with local authority and community references.",
+      "Run preregistered multilingual prompts across fixed model versions; record exact outputs, locale and sampling uncertainty."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Authoritative plural place names can supply a reference, but an audit needs observed versioned model outputs.",
+    "rationale": "Authoritative plural place names can supply a reference, but an audit needs observed versioned model outputs.",
+    "searchedSources": [
+      {
+        "url": "https://ungegn.un.org/dashboard/countries/index",
+        "finding": "Reference includes multilingual names and ISO/M49 codes; it does not report AI choices."
+      },
+      {
+        "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/",
+        "finding": "AI standardization sessions discuss Arabic names and scraping; no common prompt/model choice benchmark."
+      }
+    ],
+    "missingEvidence": [
+      "Select documented plural-name cases with local authority and community references.",
+      "Run preregistered multilingual prompts across fixed model versions; record exact outputs, locale and sampling uncertainty."
+    ],
+    "nextSteps": [
+      "Select documented plural-name cases with local authority and community references.",
+      "Run preregistered multilingual prompts across fixed model versions; record exact outputs, locale and sampling uncertainty."
+    ]
+  },
+  {
+    "conceptId": "100",
+    "originalSourceUrl": "https://world-processor.com/100-balance-of-trade-2003/",
+    "originalQuestion": "Which countries sell AI services abroad, and which import capabilities they cannot yet build locally?",
+    "proposedTitle": "The Compute Trade Balance",
+    "proposedQuestion": "Which countries sell AI services abroad, and which import capabilities they cannot yet build locally?",
+    "claim": "AI-service exports cannot be separated from available broad service categories, and a matched import series was not retrieved.",
+    "sourceConnection": "Investigate available digital-trade measures while acknowledging the difficulty of isolating AI services.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "AI-service exports cannot be separated from available broad service categories, and a matched import series was not retrieved.",
+      "sourceIds": [
+        "wto-digital",
+        "wdi-icttrade"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Download official WTO export and import workbook with dataset licence and exact EBOPS scope.",
+      "Rename to digitally delivered service trade context, or obtain AI-specific survey classification; never relabel ICT totals as AI."
+    ],
+    "limitations": [
+      "Download official WTO export and import workbook with dataset licence and exact EBOPS scope.",
+      "Rename to digitally delivered service trade context, or obtain AI-specific survey classification; never relabel ICT totals as AI."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "AI-service exports cannot be separated from available broad service categories, and a matched import series was not retrieved.",
+    "rationale": "AI-service exports cannot be separated from available broad service categories, and a matched import series was not retrieved.",
+    "searchedSources": [
+      {
+        "url": "https://www.wto.org/english/res_e/statis_e/gstdh_digital_services_e.htm",
+        "finding": "July2026 metadata describes2005–2025 mode1 services; directpage returned402 in this environment."
+      },
+      {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/BX.GSR.CCIS.CD?date=2024&format=json&per_page=20000",
+        "finding": "Actual export rows retrieved; not AI-only and no comparable import counterpart under guessed BM.GSR.CCIS.CD code."
+      }
+    ],
+    "missingEvidence": [
+      "Download official WTO export and import workbook with dataset licence and exact EBOPS scope.",
+      "Rename to digitally delivered service trade context, or obtain AI-specific survey classification; never relabel ICT totals as AI."
+    ],
+    "nextSteps": [
+      "Download official WTO export and import workbook with dataset licence and exact EBOPS scope.",
+      "Rename to digitally delivered service trade context, or obtain AI-specific survey classification; never relabel ICT totals as AI."
+    ]
+  },
+  {
+    "conceptId": "154-7",
+    "originalSourceUrl": "https://world-processor.com/154/",
+    "originalQuestion": "Could displaced communities control shared AI tools without surrendering identity or data ownership?",
+    "proposedTitle": "A Network Without a State",
+    "proposedQuestion": "Could displaced communities control shared AI tools without surrendering identity or data ownership?",
+    "claim": "Community-controlled refugee AI is a governance proposal; institutional AI use is not evidence of a community-owned global network.",
+    "sourceConnection": "Explore community-governed AI as a design proposal, not an existing measured global network.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "illustrative",
+      "justification": "Community-controlled refugee AI is a governance proposal; institutional AI use is not evidence of a community-owned global network.",
+      "sourceIds": [
+        "unhcr-aiapproach",
+        "unhcr-refugeeled"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Define what community control means: governance votes, data rights, hosting and exit rights.",
+      "Obtain organisation consent and verified cases before mapping any network; use an explicitly illustrative design if no empirical cases."
+    ],
+    "limitations": [
+      "Define what community control means: governance votes, data rights, hosting and exit rights.",
+      "Obtain organisation consent and verified cases before mapping any network; use an explicitly illustrative design if no empirical cases."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Community-controlled refugee AI is a governance proposal; institutional AI use is not evidence of a community-owned global network.",
+    "rationale": "Community-controlled refugee AI is a governance proposal; institutional AI use is not evidence of a community-owned global network.",
+    "searchedSources": [
+      {
+        "url": "https://www.unhcr.org/digitalstrategy/ai-approach",
+        "finding": "Framework includes community participation and data protection; does not establish community ownership/control."
+      },
+      {
+        "url": "https://data.unhcr.org/en/situations/repository-organisations-led-by-forcibly-displaced-and-stateless",
+        "finding": "Repository identifies refugee-led organisations; AI capability, data governance and consent are not common fields."
+      }
+    ],
+    "missingEvidence": [
+      "Define what community control means: governance votes, data rights, hosting and exit rights.",
+      "Obtain organisation consent and verified cases before mapping any network; use an explicitly illustrative design if no empirical cases."
+    ],
+    "nextSteps": [
+      "Define what community control means: governance votes, data rights, hosting and exit rights.",
+      "Obtain organisation consent and verified cases before mapping any network; use an explicitly illustrative design if no empirical cases."
+    ]
+  },
+  {
+    "conceptId": "155-17",
+    "originalSourceUrl": "https://world-processor.com/155/",
+    "originalQuestion": "How dependent are countries on a small set of foreign AI platforms for everyday digital services?",
+    "proposedTitle": "The Platform Underneath",
+    "proposedQuestion": "Which cloud-provider and AI-developer partnerships did the FTC study in2025?",
+    "claim": "Three studied cloud–model developer links reveal documented organisational interdependence.",
+    "sourceConnection": "Examine documented platform dependencies without presenting revenue and national output as identical measures.",
+    "reframeReason": "Country-level dependency is not observed; a precisely scoped organisational network is supportable.",
+    "aiRelationship": {
+      "class": "direct",
+      "justification": "Three studied cloud–model developer links reveal documented organisational interdependence.",
+      "sourceIds": [
+        "ftc-partnerships-2025"
+      ]
+    },
+    "datasetIds": [
+      "society-platform-partnerships"
+    ],
+    "designId": "design-155-17",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No customer-country matrix, market share or present-day complete partnership graph."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Which cloud-provider and AI-developer partnerships did the FTC study in2025?",
+    "rationale": "Country-level dependency is not observed; a precisely scoped organisational network is supportable.",
+    "searchedSources": [
+      {
+        "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2025/01/behind-ftcs-6b-report-large-ai-partnerships-investments",
+        "finding": "Opening paragraph identifies three studied partnerships; limitations in note12"
+      }
+    ],
+    "missingEvidence": [
+      "No customer-country matrix, market share or present-day complete partnership graph."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "156-8",
+    "originalSourceUrl": "https://world-processor.com/156/",
+    "originalQuestion": "Where does AI-enabled digital work cross borders, and how much is missing from conventional trade statistics?",
+    "proposedTitle": "Trade in Invisible Work",
+    "proposedQuestion": "How often do surveyed digital platform workers serve clients across borders?",
+    "claim": "Cross-border client relationships are common in a surveyed LAC web-platform workforce.",
+    "sourceConnection": "Investigate cross-border digital services with explicit gaps in AI attribution and measurement.",
+    "reframeReason": "A respondent share can describe remote-work links, but cannot measure AI-service trade volume.",
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Cross-border client relationships are common in a surveyed LAC web-platform workforce.",
+      "sourceIds": [
+        "ilo-lac-platform-2025"
+      ]
+    },
+    "datasetIds": [
+      "society-platform-crossborder"
+    ],
+    "designId": "design-156-8",
+    "verdict": "hold",
+    "candidateVerdict": "reframe-ready",
+    "blockers": [
+      "Independent dataset and design review pending."
+    ],
+    "limitations": [
+      "No exhaustive trade matrix or AI-attributable value."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "How often do surveyed digital platform workers serve clients across borders?",
+    "rationale": "A respondent share can describe remote-work links, but cannot measure AI-service trade volume.",
+    "searchedSources": [
+      {
+        "url": "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+        "finding": "Key findings, income and overseas-client bullets; original survey n1153 across21 countries"
+      }
+    ],
+    "missingEvidence": [
+      "No exhaustive trade matrix or AI-attributable value."
+    ],
+    "nextSteps": [
+      "Independent source/value/reuse and design gate review."
+    ]
+  },
+  {
+    "conceptId": "166-2",
+    "originalSourceUrl": "https://world-processor.com/1662-labor-migration-2005/",
+    "originalQuestion": "When work can move through an AI-assisted platform, who still needs to migrate physically?",
+    "proposedTitle": "The Job That Migrates",
+    "proposedQuestion": "When work can move through an AI-assisted platform, who still needs to migrate physically?",
+    "claim": "A survey can identify remote workers and migrants, but cannot establish remote AI work substituted for physical migration.",
+    "sourceConnection": "Compare documented remote-work change and physical migration without claiming one replaces the other.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "A survey can identify remote workers and migrants, but cannot establish remote AI work substituted for physical migration.",
+      "sourceIds": [
+        "ilo-lac-migration",
+        "oecd-migration-series"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Use a panel observing remote work, AI use and migration decisions before/after uptake.",
+      "Predefine counterfactual and controls; without that, reframe to separate descriptive measures, not substitution."
+    ],
+    "limitations": [
+      "Use a panel observing remote work, AI use and migration decisions before/after uptake.",
+      "Predefine counterfactual and controls; without that, reframe to separate descriptive measures, not substitution."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "A survey can identify remote workers and migrants, but cannot establish remote AI work substituted for physical migration.",
+    "rationale": "A survey can identify remote workers and migrants, but cannot establish remote AI work substituted for physical migration.",
+    "searchedSources": [
+      {
+        "url": "https://www.ilo.org/resource/news/ilo-unveils-key-data-web-based-platform-work-latin-america-and-caribbean",
+        "finding": "Eight percent identify as migrants;53percentoverseasclients are different variables, not a causal substitution estimate."
+      },
+      {
+        "url": "https://www.oecd.org/en/data/datasets/overview-data-on-migration-flows-and-migrant-populations.html",
+        "finding": "General migration flows omit individual AI-assisted remote-work treatment histories."
+      }
+    ],
+    "missingEvidence": [
+      "Use a panel observing remote work, AI use and migration decisions before/after uptake.",
+      "Predefine counterfactual and controls; without that, reframe to separate descriptive measures, not substitution."
+    ],
+    "nextSteps": [
+      "Use a panel observing remote work, AI use and migration decisions before/after uptake.",
+      "Predefine counterfactual and controls; without that, reframe to separate descriptive measures, not substitution."
+    ]
+  },
+  {
+    "conceptId": "167",
+    "originalSourceUrl": "https://world-processor.com/167/",
+    "originalQuestion": "What does reliable AI access require for island communities far from major compute centres?",
+    "proposedTitle": "Small Islands, Long Latency",
+    "proposedQuestion": "What does reliable AI access require for island communities far from major compute centres?",
+    "claim": "Island connectivity context is available; comparable AI endpoint latency and resilience measurements are not.",
+    "sourceConnection": "Compare cable connectivity, service latency, resilience and local-language needs across distinct islands.",
+    "reframeReason": null,
+    "aiRelationship": {
+      "class": "context",
+      "justification": "Island connectivity context is available; comparable AI endpoint latency and resilience measurements are not.",
+      "sourceIds": [
+        "itu-sids2024",
+        "itu-sids2026"
+      ]
+    },
+    "datasetIds": [],
+    "designId": null,
+    "verdict": "hold",
+    "candidateVerdict": "hold",
+    "blockers": [
+      "Measure fixed endpoints from consented probes with country, ISP, time, RTT, time-to-first-token and outage definitions.",
+      "Control model load, cache and route variability; distinguish cable distance from measured latency."
+    ],
+    "limitations": [
+      "Measure fixed endpoints from consented probes with country, ISP, time, RTT, time-to-first-token and outage definitions.",
+      "Control model load, cache and route variability; distinguish cable distance from measured latency."
+    ],
+    "scoring": {
+      "type": "none",
+      "reason": "No comparable, validated 1–100 extremity index."
+    },
+    "forecast": {
+      "type": "none",
+      "reason": "No validated forecast for this concept."
+    },
+    "review": {
+      "gates": {
+        "G1": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G2": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G3": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G4": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G5": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G6": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G7": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G8": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G9": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        },
+        "G10": {
+          "status": "unchecked",
+          "evidence": [],
+          "reason": "Independent review pending."
+        }
+      },
+      "score": null,
+      "scoreBreakdown": [],
+      "reviewer": null,
+      "reviewedAt": null,
+      "datasetDigests": {}
+    },
+    "exactScope": "Island connectivity context is available; comparable AI endpoint latency and resilience measurements are not.",
+    "rationale": "Island connectivity context is available; comparable AI endpoint latency and resilience measurements are not.",
+    "searchedSources": [
+      {
+        "url": "https://www.itu.int/itu-d/reports/statistics/facts-figures-for-sids/",
+        "finding": "Latest dedicated2024 report covers penetration/connectivity; these are not applicationlatency measurements."
+      },
+      {
+        "url": "https://www.itu.int/hub/2026/07/itu-kaleidoscope-ai-lessons-from-small-islands-take-first-prize/",
+        "finding": "July2026 research highlights sovereignty constraints; no island-to-model endpoint latency dataset."
+      }
+    ],
+    "missingEvidence": [
+      "Measure fixed endpoints from consented probes with country, ISP, time, RTT, time-to-first-token and outage definitions.",
+      "Control model load, cache and route variability; distinguish cable distance from measured latency."
+    ],
+    "nextSteps": [
+      "Measure fixed endpoints from consented probes with country, ISP, time, RTT, time-to-first-token and outage definitions.",
+      "Control model load, cache and route variability; distinguish cable distance from measured latency."
+    ]
+  }
+]

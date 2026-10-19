@@ -1,0 +1,257 @@
+{
+  "datasetId": "physical-electricity-fuels",
+  "id": "physical-electricity-fuels",
+  "schemaVersion": "1.0",
+  "title": "The fuels behind data-centre electricity",
+  "conceptIds": [
+    "323"
+  ],
+  "metric": "Estimated physical electricity mix serving all data centres",
+  "unit": "%",
+  "denominator": "Data-centre electricity physically consumed in each region",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Selected U.S. and Chinese supply mixes, not AI-specific generation.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2024",
+    "observationEnd": "2024",
+    "publishedAt": "2025-04-10",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "iea25s",
+      "publisher": "International Energy Agency",
+      "title": "Energy and AI: Energy supply for AI",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
+      "locator": "Global electricity supply and Regional outlook",
+      "version": "2025-04-10",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "International Energy Agency — Energy and AI: Energy supply for AI",
+        "verified": true,
+        "notes": "Report explicitly identifies CC BY 4.0."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "iea25s",
+    "publisher": "International Energy Agency",
+    "title": "Energy and AI: Energy supply for AI",
+    "url": "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
+    "locator": "Global electricity supply and Regional outlook",
+    "version": "2025-04-10",
+    "publishedAt": "2025-04-10",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "CC BY 4.0",
+      "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "International Energy Agency — Energy and AI: Energy supply for AI",
+      "verified": true,
+      "notes": "Report explicitly identifies CC BY 4.0."
+    }
+  },
+  "rows": [
+    {
+      "id": "usgas",
+      "entityId": "USA",
+      "name": "United States — gas",
+      "value": 40,
+      "unit": "% of physical DC electricity",
+      "period": "2024",
+      "sourceId": "iea25s",
+      "sourceLocator": "Regional outlook",
+      "status": "estimated",
+      "qualifier": ">",
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Source says over 40%. Physical supply, not contractual certificates."
+    },
+    {
+      "id": "usrenew",
+      "entityId": "USA",
+      "name": "United States — renewables",
+      "value": 24,
+      "unit": "% of physical DC electricity",
+      "period": "2024",
+      "sourceId": "iea25s",
+      "sourceLocator": "Regional outlook",
+      "status": "estimated",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Includes renewable grid supply."
+    },
+    {
+      "id": "usnuclear",
+      "entityId": "USA",
+      "name": "United States — nuclear",
+      "value": 20,
+      "unit": "% of physical DC electricity",
+      "period": "2024",
+      "sourceId": "iea25s",
+      "sourceLocator": "Regional outlook",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Source rounds to around 20%."
+    },
+    {
+      "id": "uscoal",
+      "entityId": "USA",
+      "name": "United States — coal",
+      "value": 15,
+      "unit": "% of physical DC electricity",
+      "period": "2024",
+      "sourceId": "iea25s",
+      "sourceLocator": "Regional outlook",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Source rounds to around 15%."
+    },
+    {
+      "id": "cncoal",
+      "entityId": "CHN",
+      "name": "China — coal",
+      "value": 70,
+      "unit": "% of physical DC electricity",
+      "period": "2024",
+      "sourceId": "iea25s",
+      "sourceLocator": "Regional outlook",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "CHN",
+      "lat": null,
+      "lon": null,
+      "notes": "Source says near 70%."
+    },
+    {
+      "id": "cnrenew",
+      "entityId": "CHN",
+      "name": "China — renewables",
+      "value": 20,
+      "unit": "% of physical DC electricity",
+      "period": "2024",
+      "sourceId": "iea25s",
+      "sourceLocator": "Regional outlook",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "CHN",
+      "lat": null,
+      "lon": null,
+      "notes": "Source says nearly 20%."
+    },
+    {
+      "id": "cnnuclear",
+      "entityId": "CHN",
+      "name": "China — nuclear",
+      "value": 10,
+      "unit": "% of physical DC electricity",
+      "period": "2024",
+      "sourceId": "iea25s",
+      "sourceLocator": "Regional outlook",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "CHN",
+      "lat": null,
+      "lon": null,
+      "notes": "Source says close to 10%."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Selected U.S. and Chinese supply mixes, not AI-specific generation.",
+    "included": "7 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Rounded components need not total 100%. Unreported residual is unknown. 2024 baseline retained because 2026 update does not publish equivalent regional fuel shares. This historical mix cannot locate a specific inference or establish its emissions.",
+  "limitations": [
+    "Rounded components need not total 100%. Unreported residual is unknown.",
+    "2024 baseline retained because 2026 update does not publish equivalent regional fuel shares.",
+    "This historical mix cannot locate a specific inference or establish its emissions."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "usgas",
+      "usrenew",
+      "usnuclear",
+      "uscoal",
+      "cncoal",
+      "cnrenew",
+      "cnnuclear"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": null,
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

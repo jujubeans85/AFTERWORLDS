@@ -1,0 +1,206 @@
+{
+  "datasetId": "physical-weather-cooling",
+  "id": "physical-weather-cooling",
+  "schemaVersion": "1.0",
+  "title": "Cooling water has a climate",
+  "conceptIds": [
+    "406"
+  ],
+  "metric": "Company-reported time using evaporative cooling",
+  "unit": "% of year",
+  "denominator": "Time during a year, for selected Microsoft evaporative-assist facilities",
+  "aiRelationship": "context",
+  "aiRelationshipJustification": "Four company-reported climate examples; observation averaging period not specified.",
+  "geographyMode": "geographic",
+  "geography": {
+    "mode": "geographic",
+    "unit": "Named jurisdiction or company operating region",
+    "definition": "Source-named locations; no unobserved spatial allocation.",
+    "anchorRule": "Coordinates deliberately null; use labeled region selection or validated boundary geometry. Any future centroid is a display anchor, not a facility."
+  },
+  "time": {
+    "observationStart": "2026-06",
+    "observationEnd": "2026-06",
+    "publishedAt": "2026-06-24",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Static verified snapshot; recheck the primary release before updating; no live-data claim."
+  },
+  "sources": [
+    {
+      "sourceId": "ms26",
+      "publisher": "Microsoft",
+      "title": "Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+      "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Water efficiency and climate; alternative water sources",
+      "version": "2026-06-24",
+      "publishedAt": "2026-06-24",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+        "termsUrl": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "attribution": "Microsoft — Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+        "verified": true,
+        "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+      }
+    }
+  ],
+  "source": {
+    "sourceId": "ms26",
+    "publisher": "Microsoft",
+    "title": "Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+    "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+    "locator": "Water efficiency and climate; alternative water sources",
+    "version": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "retrievedAt": "2026-10-19",
+    "reuse": {
+      "basis": "Limited factual extraction; no source assets or substantial prose reproduced",
+      "termsUrl": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "attribution": "Microsoft — Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
+      "verified": true,
+      "notes": "Only selected numbers, proper names and independently worded factual records are packaged. No open licence is claimed; original text, charts and photographs are excluded."
+    }
+  },
+  "rows": [
+    {
+      "id": "dublin",
+      "entityId": "IRL-Dublin",
+      "name": "Dublin",
+      "value": 5,
+      "unit": "% of year",
+      "period": "2026-06",
+      "sourceId": "ms26",
+      "sourceLocator": "Climate and evaporative assistance",
+      "status": "estimated",
+      "qualifier": "<",
+      "geographicId": "IRL-Dublin",
+      "lat": null,
+      "lon": null,
+      "notes": "Share of time evaporative water is used, not share of water saved."
+    },
+    {
+      "id": "amsterdam",
+      "entityId": "NLD-Amsterdam",
+      "name": "Amsterdam",
+      "value": 5,
+      "unit": "% of year",
+      "period": "2026-06",
+      "sourceId": "ms26",
+      "sourceLocator": "Climate and evaporative assistance",
+      "status": "estimated",
+      "qualifier": "<",
+      "geographicId": "NLD-Amsterdam",
+      "lat": null,
+      "lon": null,
+      "notes": "Selected Microsoft cooling design and climate."
+    },
+    {
+      "id": "virginia",
+      "entityId": "US-VA",
+      "name": "Virginia",
+      "value": 10,
+      "unit": "% of year",
+      "period": "2026-06",
+      "sourceId": "ms26",
+      "sourceLocator": "Climate and evaporative assistance",
+      "status": "estimated",
+      "qualifier": "approximately",
+      "geographicId": "US-VA",
+      "lat": null,
+      "lon": null,
+      "notes": "Approximate operation of evaporative assistance."
+    },
+    {
+      "id": "phoenix",
+      "entityId": "USA-Phoenix",
+      "name": "Phoenix",
+      "value": 40,
+      "unit": "% of year",
+      "period": "2026-06",
+      "sourceId": "ms26",
+      "sourceLocator": "Climate and evaporative assistance",
+      "status": "estimated",
+      "qualifier": "up to",
+      "geographicId": "USA-Phoenix",
+      "lat": null,
+      "lon": null,
+      "notes": "Upper phrasing retained: as much as 40%."
+    }
+  ],
+  "columns": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  },
+  "coverage": {
+    "population": "Four company-reported climate examples; observation averaging period not specified.",
+    "included": "4 selected, source-verified records; nonexhaustive unless explicitly stated in metric.",
+    "omitted": "Unreported entities and unavailable measurements. No inference from absence.",
+    "missingness": "Missing is unknown, never zero. Selected company cases are not a world census."
+  },
+  "uncertainty": "Self-reported and not independently measured. Not a map of all facilities; climate alone does not determine water demand. No facility volumes, humidity effect size or cooling efficiency ranking is inferred.",
+  "limitations": [
+    "Self-reported and not independently measured.",
+    "Not a map of all facilities; climate alone does not determine water demand.",
+    "No facility volumes, humidity effect size or cooling efficiency ranking is inferred."
+  ],
+  "transform": {
+    "type": "manual",
+    "description": "Selected facts transcribed from primary sources; wording condensed independently; qualifiers preserved; no interpolation.",
+    "codePath": "research/scripts/physical-complete.py",
+    "inputReferences": [
+      "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+    ],
+    "validation": "All rows checked against source locators by researcher. Independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Primary pages opened and numeric/categorical records manually reconciled at stated locators.",
+    "checkedRows": [
+      "dublin",
+      "amsterdam",
+      "virginia",
+      "phoenix"
+    ],
+    "evidencePaths": [
+      "research/sources/physical-verification.json"
+    ],
+    "reviewer": null,
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "method": "none"
+  },
+  "forecast": {
+    "method": "none",
+    "reason": "No new prediction is computed; dated plans, when present, are categorical disclosures, not observed completion."
+  },
+  "proposedQuestion": null,
+  "fields": {
+    "id": "Stable observation identifier",
+    "entityId": "Stable entity identifier; source region names preserved",
+    "name": "Display label",
+    "value": "Source number or explicit categorical finding",
+    "unit": "Measurement unit or category",
+    "period": "Observation period or dated reported event; never retrieval year",
+    "sourceId": "Join to sources.sourceId",
+    "sourceLocator": "Exact heading/table/paragraph",
+    "status": "Measurement or disclosure status",
+    "qualifier": "Approximation/threshold preserved; null means no qualifier stated",
+    "geographicId": "ISO country/subdivision or named region identifier; null for nongeographic data",
+    "lat": "Null until justified coordinate or display anchor is separately verified",
+    "lon": "Null until justified coordinate or display anchor is separately verified",
+    "notes": "Scope and interpretation"
+  }
+}

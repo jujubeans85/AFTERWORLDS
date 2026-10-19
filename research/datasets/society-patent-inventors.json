@@ -1,0 +1,195 @@
+{
+  "datasetId": "society-patent-inventors",
+  "id": "society-patent-inventors",
+  "title": "GenAI patent-family inventor locations",
+  "conceptIds": [
+    "375"
+  ],
+  "metric": "GenAI patent-family inventor locations",
+  "unit": "simple patent families",
+  "denominator": "Simple patent families with inventors at each location; do not sum as uniquely owned worldwide inventions",
+  "rows": [
+    {
+      "id": "patent-CHN",
+      "entityId": "patent-CHN",
+      "name": "China",
+      "value": 38210,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top five inventor locations",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "CHN",
+      "lat": null,
+      "lon": null,
+      "notes": "Inventor location, not ownership, residency of every inventor, patent quality, grant status or permission to use.",
+      "rank": 1
+    },
+    {
+      "id": "patent-USA",
+      "entityId": "patent-USA",
+      "name": "United States",
+      "value": 6276,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top five inventor locations",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "USA",
+      "lat": null,
+      "lon": null,
+      "notes": "Inventor location, not ownership, residency of every inventor, patent quality, grant status or permission to use.",
+      "rank": 2
+    },
+    {
+      "id": "patent-KOR",
+      "entityId": "patent-KOR",
+      "name": "Republic of Korea",
+      "value": 4155,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top five inventor locations",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "KOR",
+      "lat": null,
+      "lon": null,
+      "notes": "Inventor location, not ownership, residency of every inventor, patent quality, grant status or permission to use.",
+      "rank": 3
+    },
+    {
+      "id": "patent-JPN",
+      "entityId": "patent-JPN",
+      "name": "Japan",
+      "value": 3409,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top five inventor locations",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "JPN",
+      "lat": null,
+      "lon": null,
+      "notes": "Inventor location, not ownership, residency of every inventor, patent quality, grant status or permission to use.",
+      "rank": 4
+    },
+    {
+      "id": "patent-IND",
+      "entityId": "patent-IND",
+      "name": "India",
+      "value": 1350,
+      "unit": "simple patent families",
+      "period": "2014–2023",
+      "sourceId": "wipo-genai-2024",
+      "sourceLocator": "Key findings: top five inventor locations",
+      "status": "observed",
+      "qualifier": null,
+      "geographicId": "IND",
+      "lat": null,
+      "lon": null,
+      "notes": "Inventor location, not ownership, residency of every inventor, patent quality, grant status or permission to use.",
+      "rank": 5
+    }
+  ],
+  "columns": {
+    "id": "Unique stable row ID",
+    "entityId": "Stable entity/category identifier; not necessarily geographic",
+    "name": "Display name",
+    "value": "Source value or null; never treat null as zero",
+    "unit": "Unit of value",
+    "period": "Observation period, not retrieval date",
+    "sourceId": "Identifier in sources",
+    "sourceLocator": "Exact section/table/record",
+    "status": "observed, estimated, modelled, categorical or missing",
+    "qualifier": "Source rounding/inequality qualification",
+    "geographicId": "ISO alpha-3 or explicitly defined region; null for abstract categories",
+    "lat": "Null unless a source validates exact point location",
+    "lon": "Null unless a source validates exact point location",
+    "notes": "Interpretation and scope constraint",
+    "rank": "Rank among the five named inventor locations, not among all inventions"
+  },
+  "geography": {
+    "mode": "geographic",
+    "unit": "country",
+    "definition": "Inventor location reported by WIPO; not filing office or owner.",
+    "anchorRule": "Use true country polygons for ISO-coded rows; use an abstract labelled ring for nongeographic rows. Never scatter aggregate values into cities or invent country intensity."
+  },
+  "time": {
+    "observationStart": "2014",
+    "observationEnd": "2023",
+    "publishedAt": "2024-07-03",
+    "retrievedAt": "2026-10-19",
+    "updateCadence": "Manual reviewed refresh on source revision; never imply a live feed."
+  },
+  "sources": [
+    {
+      "sourceId": "wipo-genai-2024",
+      "publisher": "WIPO",
+      "title": "Patent Landscape Report: Generative Artificial Intelligence",
+      "url": "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html",
+      "locator": "Key findings, top five inventor locations and top ten applicants; simple-patent-family definition",
+      "version": "2014–2023",
+      "publishedAt": "2024-07-03",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY 4.0 for the report; factual extraction from its official release",
+        "termsUrl": "https://www.wipo.int/web-publications/patent-landscape-report-generative-artificial-intelligence-genai/en/copyright-notice.html",
+        "attribution": "WIPO (2024), Patent Landscape Report: Generative Artificial Intelligence. Adaptation: AFTERWORLDS.",
+        "verified": true,
+        "notes": "Original factual data only; no report visuals or third-party illustrations reproduced. The Secretariat of WIPO assumes no liability or responsibility with regard to the transformation or translation of the original content."
+      }
+    }
+  ],
+  "coverage": {
+    "population": "Simple patent families with inventors at each location; do not sum as uniquely owned worldwide inventions",
+    "included": "5 records: 5 populated and 0 explicit nulls",
+    "omitted": "All unlisted entities; this extraction is not necessarily exhaustive.",
+    "missingness": "0 null rows; unknown is not zero. No interpolation or imputation."
+  },
+  "uncertainty": "Source precision retained. No confidence interval is invented. Top five only, 2014–2023 historical window; no 2026 count claimed. Patent count does not measure practical rights to deploy an invention.",
+  "limitations": [
+    "Top five only, 2014–2023 historical window; no 2026 count claimed.",
+    "Patent count does not measure practical rights to deploy an invention."
+  ],
+  "aiRelationship": "direct",
+  "transform": {
+    "type": "manual",
+    "description": "Transcribe published factual values; preserve source grain and period.",
+    "codePath": "research/scripts/society-finish.py",
+    "inputReferences": [
+      "https://www.wipo.int/pressroom/en/articles/2024/article_0009.html"
+    ],
+    "validation": "Source-locator inspection and schema validation; independent review pending."
+  },
+  "verification": {
+    "status": "researcher-checked",
+    "method": "Read primary sources and transcribe exact numbers/qualifiers.",
+    "checkedRows": [
+      "patent-CHN",
+      "patent-USA",
+      "patent-KOR",
+      "patent-JPN",
+      "patent-IND"
+    ],
+    "evidencePaths": [
+      "research/sources/society-research-log.json",
+      "research/sources/society-verified-facts.json"
+    ],
+    "reviewer": "/root/society_research",
+    "checkedAt": "2026-10-19"
+  },
+  "scoring": {
+    "type": "none",
+    "method": "none",
+    "reason": "Show source values; no defensible universal 1–100 AI extremity score."
+  },
+  "forecast": {
+    "type": "none",
+    "method": "none",
+    "reason": "No validated prediction model supplied. Do not extrapolate animation into a forecast."
+  }
+}

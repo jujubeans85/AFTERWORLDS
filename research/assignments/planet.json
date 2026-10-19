@@ -1,0 +1,860 @@
+[
+  {
+    "id": "402",
+    "title": "Maritime Plastic",
+    "url": "https://world-processor.com/402/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Plastic Intelligence",
+    "lens": "biosphere",
+    "question": "Can AI find ocean plastic that conventional observations miss, and who verifies the detections?",
+    "sourceConcept": "Plastic production, river transport and dispersed marine pollution connect land to oceans.",
+    "connection": "Contrast machine-detected marine litter with validated observations and monitoring blind spots.",
+    "slug": "plastic-intelligence",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "402",
+        "year": 2018
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "399",
+    "title": "Acid Rain / Ocean Acidification",
+    "url": "https://world-processor.com/399/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Acid Beyond the Cloud",
+    "lens": "oceans",
+    "question": "Which power-generation emissions associated with computing travel beyond the places that consume it?",
+    "sourceConcept": "Airborne pollution and ocean chemistry show environmental effects crossing political boundaries.",
+    "connection": "Examine power-sector externalities associated with computing without attributing all pollution to AI.",
+    "slug": "acid-beyond-the-cloud",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "399",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "398",
+    "title": "Agricultural Land Use",
+    "url": "https://world-processor.com/398/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Fields Under Instruction",
+    "lens": "biosphere",
+    "question": "Where do AI-guided farming trials save water or fertiliser, and where do results fail to transfer?",
+    "sourceConcept": "Agricultural land serves competing food, feed and fuel uses with management trade-offs.",
+    "connection": "Compare independently evaluated precision-agriculture outcomes across crops and places.",
+    "slug": "fields-under-instruction",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "398",
+        "year": 2016
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "392",
+    "title": "Dead Zones",
+    "url": "https://world-processor.com/392/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Oxygen, Unseen",
+    "lens": "oceans",
+    "question": "Can AI help warn of aquatic oxygen loss where observations are sparse?",
+    "sourceConcept": "Low-oxygen waters expose ecological damage associated with nutrient pollution.",
+    "connection": "Evaluate hypoxia models against sensor coverage and observed events, not decorative risk maps.",
+    "slug": "oxygen-unseen",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "392-2",
+        "year": null
+      },
+      {
+        "label": "392",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "390",
+    "title": "Mercury Pollution",
+    "url": "https://world-processor.com/390/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Toxic Afterlife",
+    "lens": "biosphere",
+    "question": "Where does obsolete computing hardware go, and how much of that flow can be traced?",
+    "sourceConcept": "Mercury contamination sites reveal persistent industrial pollution and human costs.",
+    "connection": "Investigate verified electronics-waste pathways without assigning all waste to AI.",
+    "slug": "toxic-afterlife",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "390",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "388",
+    "title": "Sharks Attacked!",
+    "url": "https://world-processor.com/388/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Who Is the Predator?",
+    "lens": "oceans",
+    "question": "Can automated fishing surveillance improve protection without making wildlife easier to exploit?",
+    "sourceConcept": "Human harm to sharks is set against the much more visible story of shark attacks.",
+    "connection": "Examine the competing conservation and extraction uses of AI-enabled ocean observation.",
+    "slug": "who-is-the-predator",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "388",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "378",
+    "title": "Bird Migration",
+    "url": "https://world-processor.com/378/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Migration, Heard",
+    "lens": "biosphere",
+    "question": "Where can acoustic AI follow migrating species, and where is there nobody listening?",
+    "sourceConcept": "Major bird flyways and species-specific migration paths cross national boundaries.",
+    "connection": "Compare acoustic-monitoring coverage with migration corridors and validated species detection.",
+    "slug": "migration-heard",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "378",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "377",
+    "title": "Life Expctancy: Male Vs. Female",
+    "url": "https://world-processor.com/377/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "A Different Diagnosis",
+    "lens": "science",
+    "question": "Do medical AI systems perform equally across sexes and places in external validation?",
+    "sourceConcept": "Male and female life expectancy are compared by country and disparity.",
+    "connection": "Study independently validated diagnostic performance rather than infer health outcomes from deployment.",
+    "slug": "a-different-diagnosis",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "377",
+        "year": 2013
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "373",
+    "title": "Economic Jurisdiction",
+    "url": "https://world-processor.com/373/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Seabed Has Owners",
+    "lens": "oceans",
+    "question": "Whose consent matters when AI-enabled exploration reaches seabeds and exclusive economic zones?",
+    "sourceConcept": "Maritime economic jurisdictions make ocean resources and boundaries visible.",
+    "connection": "Investigate documented AI-assisted marine exploration within explicitly labelled jurisdictions.",
+    "slug": "the-seabed-has-owners",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "373",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "366",
+    "title": "Submarine Fiber Optic Network",
+    "url": "https://world-processor.com/366/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Wet Internet",
+    "lens": "oceans",
+    "question": "Which subsea connections support access to AI services, and where are the publicly visible bottlenecks?",
+    "sourceConcept": "Submarine fibre routes are contrasted with high-volume voice-traffic corridors.",
+    "connection": "Connect physical cable infrastructure to access and resilience without inventing AI traffic volumes.",
+    "slug": "the-wet-internet",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "366",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "365",
+    "title": "Wine Consumption",
+    "url": "https://world-processor.com/365/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "A Machine's Taste",
+    "lens": "biosphere",
+    "question": "Can AI's predictions of wine quality travel beyond the vineyards and panels that trained them?",
+    "sourceConcept": "Wine production and consumption are compared across world regions.",
+    "connection": "Investigate transferability and cultural bias in sensory prediction and agricultural AI.",
+    "slug": "a-machine-s-taste",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "365-2",
+        "year": 2012
+      },
+      {
+        "label": "365",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "364",
+    "title": "Drifting Ice Stations",
+    "url": "https://world-processor.com/364/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Drift Intelligence",
+    "lens": "science",
+    "question": "Where can AI improve sea-ice forecasts, and where do drifting observations still constrain certainty?",
+    "sourceConcept": "Historical ice-station trajectories show how polar knowledge is gathered while moving.",
+    "connection": "Compare polar prediction systems with the sparse moving observations used to validate them.",
+    "slug": "drift-intelligence",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "364-2",
+        "year": 2016
+      },
+      {
+        "label": "364",
+        "year": 2012
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "359",
+    "title": "Perils of Pleasure Cruises",
+    "url": "https://world-processor.com/359/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Outbreak at Sea",
+    "lens": "science",
+    "question": "Can shipboard outbreak models give useful warning before passengers become ill?",
+    "sourceConcept": "Cruise routes are overlaid with outbreaks and differing numbers of affected passengers.",
+    "connection": "Compare evaluated outbreak-warning systems with observed maritime health events.",
+    "slug": "outbreak-at-sea",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "359",
+        "year": 2011
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "355",
+    "title": "Shark Attacks!",
+    "url": "https://world-processor.com/355/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "A Camera in the Surf",
+    "lens": "oceans",
+    "question": "How reliably can AI detect sharks across changing water, light and species conditions?",
+    "sourceConcept": "Historical shark-attack counts and concentrations are rendered through different regional encodings.",
+    "connection": "Compare validated detection performance with the conditions of actual coastal deployment.",
+    "slug": "a-camera-in-the-surf",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "355-3",
+        "year": 2013
+      },
+      {
+        "label": "355-2",
+        "year": 2012
+      },
+      {
+        "label": "355",
+        "year": 2011
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "348",
+    "title": "Shape of Science",
+    "url": "https://world-processor.com/348/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Science Rewired",
+    "lens": "science",
+    "question": "Which research fields are being connected by AI, and which apparent links are merely citation fashion?",
+    "sourceConcept": "Scientific fields form a sphere of relationships derived from citation networks.",
+    "connection": "Use transparent bibliometric methods to study AI-related links across research disciplines.",
+    "slug": "science-rewired",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "348-8",
+        "year": 2016
+      },
+      {
+        "label": "348-5",
+        "year": 2012
+      },
+      {
+        "label": "348-3",
+        "year": 2010
+      },
+      {
+        "label": "348-2",
+        "year": 2009
+      },
+      {
+        "label": "348",
+        "year": 2009
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "346",
+    "title": "Tectonic Plate Movement",
+    "url": "https://world-processor.com/346/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "The Listening Earth",
+    "lens": "science",
+    "question": "Where do AI earthquake detectors improve catalogue completeness, and where are sensors still absent?",
+    "sourceConcept": "Plate boundaries and movement directions turn slow geological motion into a visible pattern.",
+    "connection": "Compare validated seismic detection gains against instrument coverage and local geological conditions.",
+    "slug": "the-listening-earth",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "346-2",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "319",
+    "title": "Submarine Fiberoptic Network",
+    "url": "https://world-processor.com/319/",
+    "gallery": "301–450",
+    "gallery_url": "https://world-processor.com/",
+    "newTitle": "Latency Has an Ocean",
+    "lens": "oceans",
+    "question": "How do submarine route length and landing access shape the delay of distant AI services?",
+    "sourceConcept": "Submarine cable routes are weighted by capacity while their physical vulnerabilities are described.",
+    "connection": "Study measured latency alongside documented cables without claiming a cable carries specific AI traffic.",
+    "slug": "latency-has-an-ocean",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "319",
+        "year": 2011
+      },
+      {
+        "label": "319-2",
+        "year": 2008
+      },
+      {
+        "label": "319",
+        "year": 2008
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "291",
+    "title": "Aerosol Generators",
+    "url": "https://world-processor.com/291/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Atmosphere, Inferred",
+    "lens": "science",
+    "question": "Can AI distinguish aerosol sources from satellite observations when different sources overlap?",
+    "sourceConcept": "Desertification, volcanic activity and impacts represent different atmospheric particle sources.",
+    "connection": "Evaluate source-attribution models against ground observations and explicit uncertainty.",
+    "slug": "atmosphere-inferred",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "291",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "278",
+    "title": "Nuclear Comprehensive Test Ban Treaty Monitoring Network",
+    "url": "https://world-processor.com/278/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Signals Before Certainty",
+    "lens": "science",
+    "question": "Where can AI assist treaty-monitoring analysis, and how are automated detections independently checked?",
+    "sourceConcept": "Different sensing technologies form an international network for monitoring nuclear tests.",
+    "connection": "Study published monitoring research while preserving the distinction between a signal and a verified event.",
+    "slug": "signals-before-certainty",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "278-4",
+        "year": 2023
+      },
+      {
+        "label": "278-2",
+        "year": 2011
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "262",
+    "title": "Agricultural Biodiversity",
+    "url": "https://world-processor.com/262/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Seeds the Model Missed",
+    "lens": "biosphere",
+    "question": "Which wild crop relatives appear in AI breeding datasets, and which disappear before being represented?",
+    "sourceConcept": "Remaining wild ancestors of cultivated crops reveal the geography of agricultural biodiversity.",
+    "connection": "Study training-data coverage and conservation needs while keeping prediction distinct from field success.",
+    "slug": "seeds-the-model-missed",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "262",
+        "year": 2005
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "232",
+    "title": "DNA Traces, Refugee Populations, Migration Routes",
+    "url": "https://world-processor.com/232/",
+    "gallery": "201–300",
+    "gallery_url": "https://world-processor.com/wp201-300",
+    "newTitle": "Ancestry Is Not Destiny",
+    "lens": "science",
+    "question": "Which populations are absent from genomic AI datasets, and how does that affect external validation?",
+    "sourceConcept": "The source title layers genetic traces, refugee populations and migration routes.",
+    "connection": "Investigate representation in genomic datasets without treating ancestry as a fixed national or biological destiny.",
+    "slug": "ancestry-is-not-destiny",
+    "sourceRead": true,
+    "sourceEvidence": "title-only",
+    "sourceVersions": [
+      {
+        "label": "232",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The public page provides titles or version headings but no explanatory caption. The connection uses that limited evidence."
+  },
+  {
+    "id": "5-6",
+    "title": "Ocean Floor / 海床",
+    "url": "https://world-processor.com/5-6-1/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Unseen Seabed",
+    "lens": "oceans",
+    "question": "Where does AI help interpret real seafloor surveys, and where does it merely fill gaps?",
+    "sourceConcept": "Seafloor mapping is linked to new extraction frontiers and competing economic claims.",
+    "connection": "Distinguish observed bathymetry from modelled seabed estimates and commercial interpretation.",
+    "slug": "the-unseen-seabed",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "5-6",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "6-2",
+    "title": "Ocean World",
+    "url": "https://world-processor.com/6-2-1/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "One Ocean, Many Sensors",
+    "lens": "oceans",
+    "question": "How connected are ocean-monitoring systems that feed AI, and which waters remain unobserved?",
+    "sourceConcept": "The ocean is treated as one continuous planetary body supporting life and transport.",
+    "connection": "Map verified observing coverage and data sharing rather than divide the ocean only by nations.",
+    "slug": "one-ocean-many-sensors",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "6-2",
+        "year": 2005
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "8-17",
+    "title": "Life Expectancy",
+    "url": "https://world-processor.com/810-life-expectancy-2013/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Years We Cannot Promise",
+    "lens": "science",
+    "question": "Which AI health interventions have improved patient outcomes in real-world trials?",
+    "sourceConcept": "Regional and national life-expectancy values reveal unequal lengths of life.",
+    "connection": "Separate clinical outcome evidence from diagnostic benchmarks and speculative longevity claims.",
+    "slug": "years-we-cannot-promise",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "8-17",
+        "year": 2013
+      },
+      {
+        "label": "8-10",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "8-6",
+    "title": "Life Expectancy",
+    "url": "https://world-processor.com/008/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Clinic Out of Reach",
+    "lens": "science",
+    "question": "Where do AI health tools reach underserved patients, and who verifies that care improves?",
+    "sourceConcept": "An earlier life-expectancy globe compares national values with broader regional averages.",
+    "connection": "Focus on access and external evaluation rather than assume geographic deployment equals health benefit.",
+    "slug": "the-clinic-out-of-reach",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "8-6",
+        "year": 2006
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "59-5",
+    "title": "Rain Forest Leftovers",
+    "url": "https://world-processor.com/059/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Forest, Pixel, Proof",
+    "lens": "biosphere",
+    "question": "Where do AI forest-loss alerts lead to independently confirmed detections and useful action?",
+    "sourceConcept": "Surviving and depleted rainforest areas are contrasted spatially.",
+    "connection": "Compare validated forest-monitoring alerts with observation gaps and documented response outcomes.",
+    "slug": "forest-pixel-proof",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "59-5",
+        "year": 2010
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "87-2",
+    "title": "Ring of Fire",
+    "url": "https://world-processor.com/872-ring-of-fire-2005/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Faults in the Forecast",
+    "lens": "science",
+    "question": "Can AI improve earthquake warning without promising predictions that evidence cannot support?",
+    "sourceConcept": "Fault lines and substantial earthquake epicentres expose an active planetary belt.",
+    "connection": "Keep earthquake detection, early warning and long-range prediction as distinct scientific claims.",
+    "slug": "faults-in-the-forecast",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "87-2",
+        "year": 2005
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "107",
+    "title": "Exclusive Economic Zones (Copy)",
+    "url": "https://world-processor.com/107-1/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Waters Without a Dataset",
+    "lens": "oceans",
+    "question": "Who controls the ocean data used to train AI, including information collected beyond national jurisdiction?",
+    "sourceConcept": "Maritime economic zones extend resource rights beyond the coastline.",
+    "connection": "Investigate ocean-data access, licensing and provenance without equating data rights with maritime sovereignty.",
+    "slug": "waters-without-a-dataset",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "107",
+        "year": null
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "115-2",
+    "title": "Wetlands",
+    "url": "https://world-processor.com/115/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Wetland Witness",
+    "lens": "biosphere",
+    "question": "Can AI identify wetland loss early enough to protect places that conventional maps overlook?",
+    "sourceConcept": "Wetlands are presented as ecologically significant environments with diverse forms.",
+    "connection": "Evaluate wetland classification against field validation and changing water conditions.",
+    "slug": "the-wetland-witness",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "115-2",
+        "year": 2016
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "170-3",
+    "title": "Solar System",
+    "url": "https://world-processor.com/1703-solar-system-2009/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "Worlds Found by Machines",
+    "lens": "science",
+    "question": "Which astronomical discoveries credited to AI have been independently confirmed?",
+    "sourceConcept": "Planetary scale leads outward from the solar system to the search for other worlds.",
+    "connection": "Distinguish machine-ranked candidates from confirmed discoveries and preserve the role of follow-up observation.",
+    "slug": "worlds-found-by-machines",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "170-3",
+        "year": 2009
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  },
+  {
+    "id": "175",
+    "title": "Asteroid Impacts",
+    "url": "https://world-processor.com/175/",
+    "gallery": "1–200",
+    "gallery_url": "https://world-processor.com/wp1-200",
+    "newTitle": "The Rock We Almost Missed",
+    "lens": "science",
+    "question": "How much does AI improve near-Earth-object discovery, and which sky regions remain weakly surveyed?",
+    "sourceConcept": "Impact records highlight the difference between events occurring and events being observed.",
+    "connection": "Evaluate validated discovery performance against telescope coverage and detection limits.",
+    "slug": "the-rock-we-almost-missed",
+    "sourceRead": true,
+    "sourceEvidence": "caption",
+    "sourceVersions": [
+      {
+        "label": "175",
+        "year": 2001
+      }
+    ],
+    "status": "research-candidate",
+    "evidenceStatus": "concept",
+    "evidenceNote": "Research concept, not measured AI-impact data. The proposed relationship requires a separately audited dataset.",
+    "geographicNote": "Any animated geography on this concept route is an illustrative composition, not a measured location, intensity, or causal effect.",
+    "sourceNote": "The original source provides the historical artistic framing only; its older numerical claims are not reused as current evidence."
+  }
+]
