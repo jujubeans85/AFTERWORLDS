@@ -1769,3 +1769,26 @@ html[data-reading-size="large"] .statement p { font-size: 18px; }
   .reader-transport { gap: 5px; }
   .reader-count { width: 100%; text-align: right; }
 }
+
+/* Sensory and sharing controls keep the globe navigation unobstructed. */
+.world-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.world-actions button { min-height:44px; padding:10px 12px; border:1px solid #3c535b; border-radius:6px; font:500 10px var(--mono); letter-spacing:.06em; background:#0d171c; color:#d9e8eb; }
+.world-actions button:hover { border-color:var(--accent); color:var(--accent); }
+.sensory-options { display:grid; gap:10px; margin:24px 0; }
+.sensory-options button { display:flex; justify-content:space-between; align-items:center; min-height:48px; padding:12px 16px; border:1px solid #48616b; border-radius:8px; background:#111e24; color:#e8f0f2; text-align:left; }
+.sensory-options button[aria-pressed=true] { border-color:var(--accent); }
+.sensory-options button[aria-pressed=true] span { color:var(--accent); }
+.sensory-options button:disabled { opacity:.5; cursor:not-allowed; }
+.soundscape-id { overflow-wrap:anywhere; color:#9aafb6; }
+.share-link { display:grid; gap:8px; }
+.share-link input { width:100%; min-height:48px; padding:12px; background:#102027; color:#e8f0f2; border:1px solid #6d8a94; border-radius:6px; }
+
+.reader-autoread { display:flex; align-items:center; gap:10px; min-height:44px; margin:10px 0; font:12px/1.5 var(--sans); color:#d4e2e6; cursor:pointer; }
+.reader-autoread input { width:20px; height:20px; accent-color:var(--accent); flex:none; }
+.reader-panel .reader-autoread { margin:6px 0; }
+
+@media(max-width:480px) {
+  .site-header { flex-wrap:wrap; height:auto; min-height:88px; gap:0 16px; padding-top:8px; padding-bottom:8px; }
+  .header-nav { width:100%; justify-content:space-between; gap:12px; }
+  .header-nav a, .header-nav button { min-width:44px; }
+}

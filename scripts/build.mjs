@@ -1,3 +1,4 @@
+import { soundscapeProfile } from "../src/soundscape.js";
 import { motif } from "./thumbnail-effects.mjs";
 import { scoreFor } from "../src/scoring.js";
 import fs from "node:fs/promises";
@@ -211,7 +212,7 @@ for (const f of await fs.readdir(path.join(root, "vendor")))
     path.join(root, "vendor", f),
     path.join(dist, "assets/vendor", f),
   );
-for (const f of ["app.js", "reader.js", "globe.js", "math.js", "scoring.js", "effects.js", "information.js", "style.css", "reset.css"])
+for (const f of ["app.js", "soundscape.js", "sharing.js", "reader.js", "globe.js", "math.js", "scoring.js", "effects.js", "information.js", "style.css", "reset.css"])
   await fs.copyFile(path.join(root, "src", f), path.join(dist, "assets", f));
 await fs.writeFile(
   path.join(dist, "assets/registry.json"),
@@ -335,6 +336,7 @@ function html(e) {
     : "An interactive atlas of AI’s strange geography. Explore sourced evidence and 146 original globe interpretations inspired by World Processor.";
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080d10"><meta name="description" content="${esc(desc)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website"><title>${esc(title)}</title><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="modulepreload" href="/assets/math.js"></head><body><a class="skip" href="#main">Skip to content</a><div id="app"><main id="main" class="boot-error"><div class="eyebrow">AFTERWORLD</div><h1>${esc(e?.newTitle || "A stranger world is already here.")}</h1><p>${esc(desc)}</p><p>Loading the atlas…</p></main></div><noscript><p style="padding:2rem">JavaScript is required for the interactive atlas. <a href="/assets/evidence.json">Read the complete numerical data</a> or <a href="/assets/source-catalog.json">browse the inspiration index</a>.</p></noscript><script type="module" src="/assets/app.js"></script></body></html>`;
 }
+await fs.writeFile(path.join(dist, "assets/soundscape-index.json"), JSON.stringify(entries.map(soundscapeProfile), null, 2));
 await fs.writeFile(path.join(dist, "index.html"), html());
 for (const e of entries) {
   await fs.mkdir(path.join(dist, "globe", e.slug), { recursive: true });

@@ -17,9 +17,10 @@ export function readingText(node) {
   return copy.textContent.replace(/[ \t]+/g, ' ').replace(/ *\n */g, '\n').replace(/\n{3,}/g, '\n\n').trim();
 }
 
-export function createAtlasReader(doc = document, win = window) {
+export function createAtlasReader(doc = document, win = window, onPlaybackChange = () => {}) {
   let prefs = {};
   try { prefs = JSON.parse(win.localStorage.getItem(PREF_KEY) || '{}') || {}; } catch {}
+  if (typeof prefs !== 'object' || Array.isArray(prefs)) prefs = {};
   let activeBlock = null, activeTrigger = null, activeText = '', voices = [], notice = '';
   const supported = !!(win.speechSynthesis && win.SpeechSynthesisUtterance);
   const panel = doc.createElement('section');
@@ -31,13 +32,22 @@ export function createAtlasReader(doc = document, win = window) {
   panel.hidden = true;
   panel.innerHTML = `<div class="reader-heading"><div><span class="reader-brand">JUICE READER</span><span class="reader-title"></span></div><button type="button" data-reader-action="close" aria-label="Close Reader and stop playback">×</button></div>
     <div class="reader-transport" role="group" aria-label="Reading controls"><button type="button" data-reader-action="back" aria-label="Previous passage">←</button><button type="button" data-reader-action="play" class="reader-play">Read aloud</button><button type="button" data-reader-action="next" aria-label="Next passage">→</button><button type="button" data-reader-action="stop">Stop</button><span class="reader-count"></span></div>
-    <progress class="reader-progress" max="100" value="0" aria-label="Reading progress"></progress><p class="reader-passage" tabindex="0"></p><div class="reader-status" role="status" aria-live="polite"></div>
+    <label class="reader-autoread" data-reader-ui><input type="checkbox" data-auto-read> Auto-read text panels</label><progress class="reader-progress" max="100" value="0" aria-label="Reading progress"></progress><p class="reader-passage" tabindex="0"></p><div class="reader-status" role="status" aria-live="polite"></div>
     <details class="reader-settings"><summary>VOICE & READING OPTIONS</summary><div class="reader-options"><label>Voice<select class="reader-voice" aria-label="Reading voice"><option value="">Device default</option></select></label><label>Speed<select class="reader-rate" aria-label="Reading speed">${RATE_OPTIONS.map(rate => `<option value="${rate}">${rate}×</option>`).join('')}</select></label></div><div class="reader-quick-voices" role="group" aria-label="Quick voice choices"></div><div class="reader-extras"><button type="button" data-reader-action="voices">Refresh voices</button><button type="button" data-reader-action="size" aria-pressed="false">Larger text</button></div><p class="reader-help">Uses voices available on this device. Online voices may send text to their provider. Keep this page open while listening.</p></details>`;
   const find = selector => panel.querySelector(selector);
   const engine = new win.JuiceSpeech.Reader(win.speechSynthesis, win.SpeechSynthesisUtterance, update);
   engine.rate = RATE_OPTIONS.includes(prefs.rate) ? prefs.rate : 1;
   find('.reader-rate').value = String(engine.rate);
 
+  function syncAutoRead() {
+    doc.querySelectorAll('[data-auto-read]').forEach(input => { input.checked = prefs.autoRead !== false; });
+    find('[data-auto-read]').checked = prefs.autoRead !== false;
+  }
+  function setAutoRead(enabled) {
+    prefs.autoRead = !!enabled;
+    savePrefs(); syncAutoRead();
+    if (!enabled) engine.stop();
+  }
   function savePrefs() {
     try { win.localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch {}
   }
@@ -58,6 +68,7 @@ export function createAtlasReader(doc = document, win = window) {
   }
   function update(snapshot = engine.snapshot()) {
     const playing = ['playing', 'starting'].includes(snapshot.status);
+    onPlaybackChange(playing);
     const play = find('[data-reader-action="play"]');
     play.textContent = playing ? 'Ⅱ Pause' : snapshot.status === 'finished' ? '↻ Read again' : snapshot.status === 'paused' ? '▷ Resume' : '▷ Read aloud';
     play.setAttribute('aria-label', playing ? 'Pause reading' : snapshot.status === 'finished' ? 'Read again from the beginning' : snapshot.status === 'paused' ? 'Resume reading' : 'Read aloud');
@@ -118,7 +129,7 @@ export function createAtlasReader(doc = document, win = window) {
     panel.style.setProperty('--accent', win.getComputedStyle(block).getPropertyValue('--accent').trim() || '#c5f486');
     panel.hidden = false;
   }
-  function listen(block, trigger, title) {
+  function listen(block, trigger, title, focus = true) {
     const text = readingText(block);
     if (!text) return;
     const same = activeBlock === block && activeText === text && !panel.hidden;
@@ -128,7 +139,8 @@ export function createAtlasReader(doc = document, win = window) {
     if (!same) engine.setText(text);
     if (['playing', 'starting'].includes(engine.status)) engine.pause(); else engine.play();
     update();
-    (supported ? find('[data-reader-action="play"]') : find('[data-reader-action="close"]')).focus({ preventScroll: true });
+    syncAutoRead();
+    if (focus) (supported ? find('[data-reader-action="play"]') : find('[data-reader-action="close"]')).focus({ preventScroll: true });
   }
   function dismiss({ returnFocus = false } = {}) {
     const trigger = activeTrigger;
@@ -148,7 +160,15 @@ export function createAtlasReader(doc = document, win = window) {
     const title = all ? doc.querySelector('#dialog-title')?.textContent || 'Information' : readingText(block).slice(0, 85);
     button.setAttribute('aria-label', `${all ? 'Listen to all information in this overlay' : 'Listen: ' + title}`);
     button.addEventListener('click', () => listen(block, button, all ? title : doc.title.replace(' — AFTERWORLD', '')));
-    if (all) block.prepend(button); else block.append(button);
+    if (all) {
+      block.prepend(button);
+      const label = doc.createElement('label');
+      label.className = 'reader-autoread'; label.dataset.readerUi = '';
+      label.innerHTML = '<input type="checkbox" data-auto-read> Auto-read text panels';
+      label.querySelector('input').checked = prefs.autoRead !== false;
+      label.addEventListener('change', e => setAutoRead(e.target.checked));
+      button.after(label);
+    } else block.append(button);
   }
   function enhance(root = doc.querySelector('#app')) {
     if (!root) return;
@@ -177,7 +197,10 @@ export function createAtlasReader(doc = document, win = window) {
       case 'size': setSize(!prefs.large); savePrefs(); break;
     }
   });
-  panel.addEventListener('change', event => { if (event.target.matches('.reader-voice, .reader-rate')) changeOptions(); });
+  panel.addEventListener('change', event => {
+    if (event.target.matches('[data-auto-read]')) setAutoRead(event.target.checked);
+    if (event.target.matches('.reader-voice, .reader-rate')) changeOptions();
+  });
   doc.addEventListener('keydown', event => {
     if (event.key === 'Escape' && !panel.hidden && panel.dataset.inDialog !== 'true') { event.preventDefault(); dismiss({ returnFocus: true }); }
   });
@@ -190,5 +213,12 @@ export function createAtlasReader(doc = document, win = window) {
   win.addEventListener('pagehide', () => dismiss());
   win.speechSynthesis?.addEventListener('voiceschanged', refreshVoices);
   refreshVoices();
-  return { enhance, dismiss };
+  function opened(block, title) {
+    // Opening a panel is the user gesture. Never invoke this on initial page load.
+    if (prefs.autoRead !== false && supported && block) {
+      listen(block, block.querySelector(':scope > .reader-all'), title, false);
+    }
+  }
+  syncAutoRead();
+  return { enhance, dismiss, opened };
 }

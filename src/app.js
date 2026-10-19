@@ -1,6 +1,8 @@
 import { scoreFor } from "./scoring.js";
 import { informationHTML, visualLegend, scoreExplanation } from "./information.js";
 import { createAtlasReader } from "./reader.js";
+import { SensoryDirector } from "./soundscape.js";
+import { shareWorld } from "./sharing.js";
 import {
   decodeTopology,
   escapeHTML as esc,
@@ -8,7 +10,8 @@ import {
   clamp,
 } from "./math.js";
 const $ = (s) => document.querySelector(s);
-const reader = createAtlasReader();
+const sensory = new SensoryDirector(window, syncSensoryControls);
+const reader = createAtlasReader(document, window, active => sensory.setNarrating(active));
 let registry,
   countries,
   globe,
@@ -30,7 +33,7 @@ function trackLink(path, label, cls = "") {
   return `<a class="${cls}" href="${path}" data-route>${label}</a>`;
 }
 function header() {
-  return `<header class="site-header"><a href="/" data-route class="wordmark" aria-label="AFTERWORLD home"><span class="mark" aria-hidden="true"></span>AFTERWORLD</a><span class="header-meta">AN ATLAS OF THE MACHINE AGE</span><nav class="header-nav" aria-label="Main navigation"><a href="/#index" data-route>INDEX <span aria-hidden="true">↗</span></a><button data-about>ABOUT</button></nav></header>`;
+  return `<header class="site-header"><a href="/" data-route class="wordmark" aria-label="AFTERWORLD home"><span class="mark" aria-hidden="true"></span>AFTERWORLD</a><span class="header-meta">AN ATLAS OF THE MACHINE AGE</span><nav class="header-nav" aria-label="Main navigation"><a href="/#index" data-route>INDEX <span aria-hidden="true">↗</span></a><button data-about>ABOUT</button><button data-sensory-open aria-haspopup="dialog" aria-label="Sound and touch settings">SOUND</button></nav></header>`;
 }
 function footer() {
   return `<footer class="site-footer"><span>AFTERWORLD / LIVING SCULPTURES EDITION<br>Evidence reviewed 20 OCT 2026 · Not a live feed</span><span>Inspired by <a href="https://world-processor.com/" target="_blank" rel="noopener noreferrer">Ingo Günther’s World Processor ↗</a><br>Independent project · ${registry.entries.length} gallery-entry interpretations</span></footer>`;
@@ -116,7 +119,7 @@ function detailsPage(entry) {
     : "Research concept · no measured data";
   document.title = `${entry.newTitle} — AFTERWORLD`;
   $("#app").innerHTML =
-    `${header()}<main id="main" class="globe-page" style="--accent:${entry.color}"><section class="globe-stage" aria-labelledby="world-title"><div class="world-intro"><a href="/#index" data-route class="back-link">← ALL WORLDS</a><div class="eyebrow">WORLD ${esc(entry.number)} / ${esc(entry.lensLabel)}</div><h1 id="world-title">${esc(entry.newTitle)}</h1><p class="world-question">${esc(d?.summary || entry.question)}</p><span class="world-status">${esc(dataLabel)}</span><button class="more-information" id="more-information" aria-haspopup="dialog">MORE INFORMATION <span aria-hidden="true">↗</span></button>${d ? `<label class="place-picker">EXPLORE ${d.geographyMode==='geographic'?'A PLACE':'A CATEGORY'}<select id="place-picker"><option value="">Select to focus…</option>${d.points.map((p,i)=>`<option value="${i}">${esc(p.name)} · ${scoreFor(d,p)}/100</option>`).join('')}</select></label>`:''}</div><div class="world-visual" id="globe-host"><span class="globe-loading">ASSEMBLING A WORLD</span></div><aside class="side-fact" aria-label="World context">${d ? `<div><div class="eyebrow">THE SIGNAL</div><div class="fact-value">${headline(d.headline.value)}</div><div class="fact-unit">${esc(d.headline.unit)}</div></div><div class="fact-label">${esc(d.headline.label)}</div><div class="fact-limit">${esc(d.scope)}${d.id === "power" ? "<br>Map: 2024 shares. Headline: 2025 estimate." : ""}</div>` : `<div><div class="eyebrow">THE QUESTION</div><div class="fact-unit">WP / ${esc(entry.id)}</div></div><div class="fact-label">${esc(entry.connection)}</div><div class="fact-limit">An original visual hypothesis. This page does not establish a measured AI effect.</div>`}</aside><div class="selection-label" id="selection" hidden aria-live="polite"></div>${
+    `${header()}<main id="main" class="globe-page" style="--accent:${entry.color}"><section class="globe-stage" aria-labelledby="world-title"><div class="world-intro"><a href="/#index" data-route class="back-link">← ALL WORLDS</a><div class="eyebrow">WORLD ${esc(entry.number)} / ${esc(entry.lensLabel)}</div><h1 id="world-title">${esc(entry.newTitle)}</h1><p class="world-question">${esc(d?.summary || entry.question)}</p><span class="world-status">${esc(dataLabel)}</span><button class="more-information" id="more-information" aria-haspopup="dialog">MORE INFORMATION <span aria-hidden="true">↗</span></button><div class="world-actions"><button id="world-share">SHARE WORLD ↗</button></div>${d ? `<label class="place-picker">EXPLORE ${d.geographyMode==='geographic'?'A PLACE':'A CATEGORY'}<select id="place-picker"><option value="">Select to focus…</option>${d.points.map((p,i)=>`<option value="${i}">${esc(p.name)} · ${scoreFor(d,p)}/100</option>`).join('')}</select></label>`:''}</div><div class="world-visual" id="globe-host"><span class="globe-loading">ASSEMBLING A WORLD</span></div><aside class="side-fact" aria-label="World context">${d ? `<div><div class="eyebrow">THE SIGNAL</div><div class="fact-value">${headline(d.headline.value)}</div><div class="fact-unit">${esc(d.headline.unit)}</div></div><div class="fact-label">${esc(d.headline.label)}</div><div class="fact-limit">${esc(d.scope)}${d.id === "power" ? "<br>Map: 2024 shares. Headline: 2025 estimate." : ""}</div>` : `<div><div class="eyebrow">THE QUESTION</div><div class="fact-unit">WP / ${esc(entry.id)}</div></div><div class="fact-label">${esc(entry.connection)}</div><div class="fact-limit">An original visual hypothesis. This page does not establish a measured AI effect.</div>`}</aside><div class="selection-label" id="selection" hidden aria-live="polite"></div>${
       d && d.geographyMode === "categorical"
         ? `<div class="category-readout" aria-label="Category preview">${d.points
             .slice(0, 3)
@@ -129,6 +132,7 @@ function detailsPage(entry) {
             )}<div class="concept-label">${d.points.length > 3 ? "ALL CATEGORIES IN EVIDENCE ↗" : "NON-GEOGRAPHIC COMPARISON"}</div></div>`
         : ""
     }<p class="hint">${d?.geographyMode === "geographic" ? "DRAG TO ROTATE · TAP A MARKER · EXPLORE THE OTHER SIDE" : "DRAG TO ROTATE · AN ABSTRACT VIEW OF THE QUESTION"}</p><div class="world-controls" role="group" aria-label="Globe controls"><button class="text-control" id="pause" aria-label="Pause all animation" aria-pressed="false">Ⅱ PAUSE</button><span class="control-divider" aria-hidden="true"></span><button id="left" aria-label="Rotate globe left">←</button><button id="right" aria-label="Rotate globe right">→</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><span class="control-divider" aria-hidden="true"></span><button id="flip" class="text-control" aria-label="Turn globe to the other side">OTHER SIDE</button><button id="reset" aria-label="Reset globe view">↺</button></div><div class="world-bottom"><div class="legend">${legend(d)}</div><button class="evidence-open" id="evidence">${d ? "EVIDENCE & DATA" : "IDEA & INSPIRATION"} <span aria-hidden="true">↗</span></button></div></section><nav class="world-next" aria-label="Adjacent worlds">${trackLink(`/globe/${prev.slug}/`, `<small>← PREVIOUS WORLD</small><p>${esc(prev.newTitle)}</p>`)}${trackLink(`/globe/${next.slug}/`, `<small>NEXT WORLD →</small><p>${esc(next.newTitle)}</p>`)}</nav></main>${footer()}${dialogShell()}`;
+  $("#world-share").addEventListener("click", () => shareCurrent(true));
   $("#pause").addEventListener("click", () => globe?.pause(!globe.paused));
   $("#left").addEventListener("click", () => globe?.rotate(0, -0.3));
   $("#right").addEventListener("click", () => globe?.rotate(0, 0.3));
@@ -154,6 +158,7 @@ async function mountGlobe(entry, hero) {
       dataset: entry.dataset,
       hero,
       onSelect: (p, index) => {
+        sensory.cue("select");
         if ($("#place-picker")) $("#place-picker").value = String(index);
         const el = $("#selection");
         if (el) {
@@ -210,6 +215,7 @@ function openDialog(title, html) {
   reader.enhance($("#dialog-body"));
   modal.scrollTop = 0;
   modal.querySelector("[data-close]").focus();
+  reader.opened($("#dialog-body"), title);
 }
 function closeDialog() {
   const modal = $("#modal");
@@ -260,16 +266,47 @@ function openEvidence(e) {
 function openAbout() {
   openDialog(
     "THE METHOD",
-    `<p class="about-intro">One world.<br>More than one truth.</p><p>AFTERWORLD is a quiet atlas of AI’s physical footprint, uneven benefits and strange consequences. It takes the globe-as-argument idea from Ingo Günther’s World Processor into an interactive, evidence-led form.</p><h4>A COMPLETE INDEX, AN INCOMPLETE SCIENCE</h4><p>We inventoried ${registry.entries.length} entries in the three current public World Processor galleries. Each has a separate page, original research question and visual interpretation. ${registry.evidenceCount} pages currently contain sourced numerical layers. The remaining pages are explicitly labelled research concepts. Historical variants inside gallery pages are not exhaustively re-created.</p><h4>OBSERVATION ≠ CAUSATION</h4><p>Reported observations, model estimates and forecasts have separate labels. Robot installation does not mean job loss. Internet coverage does not mean AI adoption. Data-centre electricity and water include non-AI workloads. A protein prediction is not an experimentally confirmed discovery.</p><h4>THE VISUAL CONTRACT</h4><p>Country and region values are represented by anchors, not exact sites or continuous heatmaps. Each sourced story has a distinct sculpture driven by a documented 1–100 magnitude score. A fixed scale links the raw value to density, height, motion or colour. Speed repeats magnitude; it is not a measured growth rate. Language and work categories occupy abstract sectors, and protein structures appear as global folds. Research sculptures encode no measured quantities. Missing places have no implied value.</p><h4>ACCESS & MOVEMENT</h4><p>Drag or swipe to rotate. Pinch, use +/−, or focus the globe and scroll to zoom. Arrow keys rotate; Space pauses; Home resets. The Other Side button turns 180°. Every mapped value can also be read and located from the evidence table. Reduced-motion preferences stop automatic rotation and all data effects. The Pause button also freezes both. Dragging stops automatic rotation while the sculpture keeps moving.</p><h4>READ OR LISTEN</h4><p>Every information block has a Listen control. Listen to all reads an entire information overlay, including its quick statistics. JUICE Reader offers pause and resume, previous and next passages, device voices, speed and larger text. Opening a different overlay, leaving a world or closing the overlay stops its reading. Playback starts only after a tap; voice and text-size preferences stay on this device.</p><h4>ORIGIN & CREDITS</h4><p><a href="https://world-processor.com/wpp" target="_blank" rel="noopener noreferrer">World Processor</a> by Ingo Günther is the artistic inspiration. This independent project is not affiliated with or endorsed by the artist. No original globe photographs are copied. Geography: Natural Earth via <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener noreferrer">world-atlas</a>. 3D: <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three.js</a>. Type: Space Grotesk and Space Mono, bundled under the SIL Open Font License. Speech: the shared JUICE Reader engine. Sources remain linked on each story.</p><h4>RELEASE STATUS</h4><p>Living sculptures edition, reviewed 20 October 2026. Static engineering and source checks are available; real-device animation, mobile usability and browser performance have not yet passed independent runtime testing. The requested 9.2/10 quality target is not certified.</p><div class="dialog-actions"><a class="outline-button" href="/assets/source-catalog.json" download>DOWNLOAD INSPIRATION INDEX ↓</a></div>`,
+    `<p class="about-intro">One world.<br>More than one truth.</p><p>AFTERWORLD is a quiet atlas of AI’s physical footprint, uneven benefits and strange consequences. It takes the globe-as-argument idea from Ingo Günther’s World Processor into an interactive, evidence-led form.</p><h4>A COMPLETE INDEX, AN INCOMPLETE SCIENCE</h4><p>We inventoried ${registry.entries.length} entries in the three current public World Processor galleries. Each has a separate page, original research question and visual interpretation. ${registry.evidenceCount} pages currently contain sourced numerical layers. The remaining pages are explicitly labelled research concepts. Historical variants inside gallery pages are not exhaustively re-created.</p><h4>OBSERVATION ≠ CAUSATION</h4><p>Reported observations, model estimates and forecasts have separate labels. Robot installation does not mean job loss. Internet coverage does not mean AI adoption. Data-centre electricity and water include non-AI workloads. A protein prediction is not an experimentally confirmed discovery.</p><h4>THE VISUAL CONTRACT</h4><p>Country and region values are represented by anchors, not exact sites or continuous heatmaps. Each sourced story has a distinct sculpture driven by a documented 1–100 magnitude score. A fixed scale links the raw value to density, height, motion or colour. Speed repeats magnitude; it is not a measured growth rate. Language and work categories occupy abstract sectors, and protein structures appear as global folds. Research sculptures encode no measured quantities. Missing places have no implied value.</p><h4>ACCESS & MOVEMENT</h4><p>Drag or swipe to rotate. Pinch, use +/−, or focus the globe and scroll to zoom. Arrow keys rotate; Space pauses; Home resets. The Other Side button turns 180°. Every mapped value can also be read and located from the evidence table. Reduced-motion preferences stop automatic rotation and all data effects. The Pause button also freezes both. Dragging stops automatic rotation while the sculpture keeps moving.</p><h4>READ OR LISTEN</h4><p>Every information block has a Listen control. Listen to all reads an entire information overlay, including its quick statistics. JUICE Reader offers pause and resume, previous and next passages, device voices, speed and larger text. Opening a different overlay, leaving a world or closing the overlay stops its reading. Opening a text panel reads it aloud by default. Turn off Auto-read text panels to use Listen manually. Auto-read, voice and text-size preferences stay on this device. Nothing is read on initial page load.</p><h4>ORIGIN & CREDITS</h4><p><a href="https://world-processor.com/wpp" target="_blank" rel="noopener noreferrer">World Processor</a> by Ingo Günther is the artistic inspiration. This independent project is not affiliated with or endorsed by the artist. No original globe photographs are copied. Geography: Natural Earth via <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener noreferrer">world-atlas</a>. 3D: <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three.js</a>. Type: Space Grotesk and Space Mono, bundled under the SIL Open Font License. Speech: the shared JUICE Reader engine. Sources remain linked on each story.</p><h4>RELEASE STATUS</h4><p>Living sculptures edition, reviewed 20 October 2026. Static engineering and source checks are available; real-device animation, mobile usability and browser performance have not yet passed independent runtime testing. The requested 9.2/10 quality target is not certified.</p><div class="dialog-actions"><a class="outline-button" href="/assets/source-catalog.json" download>DOWNLOAD INSPIRATION INDEX ↓</a></div>`,
   );
 }
-async function copyLink() {
-  try {
-    await navigator.clipboard.writeText(location.href);
-    toast("World link copied.");
-  } catch {
-    toast("Copy this page’s address from your browser.");
+async function shareCurrent(native = true) {
+  if (!current) return;
+  const token = renderToken;
+  const result = await shareWorld(current, location.origin, navigator, native);
+  if (token !== renderToken) return;
+  if (result.status === 'copied') toast('World link copied.');
+  if (result.status === 'manual') {
+    openDialog('SHARE THIS WORLD', `<p>Copy this address to share a single world.</p><label class="share-link">World link<input id="manual-share-url" type="url" readonly value="${esc(result.url)}"></label>`);
+    $('#manual-share-url').focus(); $('#manual-share-url').select();
   }
+}
+function copyLink() { return shareCurrent(false); }
+function syncSensoryControls() {
+  document.querySelectorAll('[data-sensory-open]').forEach(button => {
+    const active = Object.values(sensory.enabled).some(Boolean);
+    button.textContent = active ? 'SOUND · ON' : 'SOUND';
+    button.setAttribute('aria-label', `Sound and touch settings. ${active ? 'Effects enabled' : 'Effects off'}`);
+  });
+  for (const kind of ['ambience', 'effects', 'haptics']) {
+    const b = document.querySelector(`[data-sensory="${kind}"]`);
+    if (b) {
+      b.setAttribute('aria-pressed', String(sensory.enabled[kind]));
+      b.querySelector('span').textContent = sensory.enabled[kind] ? 'On' : 'Off';
+    }
+  }
+}
+function openSensory() {
+  const supported = sensory.audioSupported;
+  openDialog('SOUND & FEEL', `<p>Give this world a quiet atmosphere. Sound and touch start off; choose what you want for this visit.</p><div class="sensory-options">${[['ambience','World atmosphere',supported],['effects','Action sounds',supported],['haptics','Subtle touch',sensory.hapticsSupported]].map(([kind,label,available])=>`<button data-sensory="${kind}" aria-pressed="false" ${available ? '' : 'disabled'}>${label}<span>Off</span></button>`).join('')}<button id="mute-sensory">TURN EFFECTS OFF</button></div><p class="sensory-note">${sensory.hapticsSupported ? 'Touch feedback depends on your browser, device and settings.' : 'Touch feedback is unavailable in this browser.'} ${supported ? 'Atmosphere softens while JUICE Reader speaks. It is an artistic soundtrack, not a measurement.' : 'Web Audio is unavailable in this browser.'}</p><small class="soundscape-id">SOUNDSCAPE ${esc(sensory.profile?.id || 'Open a world to hear its atmosphere')}</small>`);
+  document.querySelectorAll('[data-sensory]').forEach(b => b.addEventListener('click', async () => {
+    b.disabled = true;
+    const kind = b.dataset.sensory;
+    const ok = await sensory.setEnabled(kind, !sensory.enabled[kind]);
+    b.disabled = false;
+    if (!ok) toast('This device could not start that effect. Try again.');
+  }));
+  $('#mute-sensory').addEventListener('click', () => sensory.muteAll());
+  syncSensoryControls();
 }
 function toast(message) {
   clearTimeout(toastTimer);
@@ -281,6 +318,8 @@ function toast(message) {
 }
 function bindCommon() {
   reader.enhance();
+  document.querySelectorAll('[data-sensory-open]').forEach(b => b.addEventListener('click', openSensory));
+  syncSensoryControls();
   document
     .querySelectorAll("[data-about]")
     .forEach((b) => (b.onclick = openAbout));
@@ -316,6 +355,7 @@ function render({ focus = false } = {}) {
   const match = location.pathname.match(/^\/globe\/([^/]+)\/?$/);
   const entry =
     match && registry.entries.find((e) => e.slug === safeDecode(match[1]));
+  sensory.setWorld(entry || null);
   document.documentElement.style.setProperty('--accent', entry?.color || '#c5f486');
   if (entry) detailsPage(entry);
   else if (location.pathname === "/" || location.pathname === "/index.html")
@@ -336,6 +376,12 @@ function render({ focus = false } = {}) {
     requestAnimationFrame(() => $("#index")?.scrollIntoView());
   else scrollTo({ top: 0, behavior: "instant" });
 }
+document.addEventListener('visibilitychange', () => sensory.setVisible(!document.hidden));
+window.addEventListener('pagehide', () => sensory.setVisible(false));
+window.addEventListener('pageshow', () => sensory.setVisible(!document.hidden));
+document.addEventListener('click', e => {
+  if (e.target.closest('button:not([disabled]), a[data-route]') && !e.target.closest('[data-sensory], #mute-sensory')) sensory.cue();
+});
 document.addEventListener("click", (e) => {
   const a = e.target.closest("a[data-route]");
   if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button)
