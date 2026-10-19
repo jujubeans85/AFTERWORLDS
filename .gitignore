@@ -1,0 +1,8 @@
+node_modules/
+.netlify/
+.DS_Store
+*.zip
+qa-screenshots/
+dist/
+research/.cache/
+__pycache__/
