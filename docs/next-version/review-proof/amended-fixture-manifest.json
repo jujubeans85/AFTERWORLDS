@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "local-design-review-only",
+  "createdAt": "2026-10-20T06:39:46.346Z",
+  "authorizesRuntimeActivation": false,
+  "records": [
+    {
+      "conceptId": "74",
+      "fixtureId": "356bc25005a0a70daea5854d3fdbd67950fcd04b7d0b94dd1c69e7b0fab94936",
+      "amendmentSha256": "e2bc9fca60fccc5c0515f99e364ab9207d06e17ee4aa7a50aa7160d2a55d36ac",
+      "datasetSha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+      "designSha256": "93895fdf9388fd75cd1d2df564f3efabe8591456090073676f04ba18f4204b25"
+    },
+    {
+      "conceptId": "156-8",
+      "fixtureId": "26534e401480ebe71ce35dc5591c1cfd04afe080750dd1971655be0f03432625",
+      "amendmentSha256": "e3532ba1ab8c2b70473f29d3a747c96dbb3b2affdd9f3ed860f06dd641cf3177",
+      "datasetSha256": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3",
+      "designSha256": "0a2ce8e2f00ebef89842538329cc16869c8eb480d09bdc19e4636c3cb0287b05"
+    }
+  ]
+}

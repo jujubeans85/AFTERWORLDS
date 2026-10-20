@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "conceptId": "74",
+  "status": "proposed-not-accepted",
+  "reason": "The accepted two-task geometry cannot be implemented from its two included rows: filter literal AIME2026 does not match source benchmark AIME 2026. Both intended model rows for that task are excluded.",
+  "originalDesign": {
+    "path": "research/designs/design-registry.json",
+    "designId": "design-74",
+    "sha256": "15d189d2d273c17edf1eef416ecb3ad655c4fb45d4fb2f6297483cf016001711",
+    "geometry": "Filter to Gemma4 E2B IT Thinking and Gemma3 27B IT on MMLU Pro and AIME 2026. Four exact score markers sit on opposite task rails. Constant-width model ribbons connect their own observations; crossing reveals rank reversal, width carries no measure.",
+    "binding": {
+      "datasetId": "governance-gemma-task-comparison",
+      "path": "research/datasets/governance-gemma-task-comparison.json",
+      "sha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+      "rowCount": 18,
+      "fields": [
+        "id",
+        "name",
+        "value",
+        "unit",
+        "period",
+        "status",
+        "qualifier",
+        "benchmark",
+        "configuration"
+      ],
+      "filter": {
+        "all": [
+          {
+            "field": "name",
+            "op": "in",
+            "values": [
+              "Gemma4 E2B IT Thinking",
+              "Gemma3 27B IT"
+            ]
+          },
+          {
+            "field": "benchmark",
+            "op": "in",
+            "values": [
+              "MMLU Pro",
+              "AIME2026"
+            ]
+          }
+        ]
+      },
+      "includedRowCount": 2,
+      "includedRowIds": [
+        "gemma-0-1",
+        "gemma-0-2"
+      ],
+      "transformation": "Source values unchanged; apply only the explicitly documented geometric scale. Preserve null, qualifier and status.",
+      "sourceGeography": {
+        "mode": "categorical",
+        "unit": "Abstract categorical sphere",
+        "definition": "Records are not geographically allocated.",
+        "anchorRule": "Abstract sphere cells only. Do not place records on country boundaries."
+      },
+      "observationPeriod": {
+        "observationStart": "not reported by source",
+        "observationEnd": "not reported by source",
+        "publishedAt": "2026-07-30",
+        "retrievedAt": "2026-10-19",
+        "updateCadence": "Manual revalidation before implementation and after source updates"
+      }
+    }
+  },
+  "dataset": {
+    "path": "research/datasets/governance-gemma-task-comparison.json",
+    "sha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+    "affectedRows": [
+      {
+        "id": "gemma-0-1",
+        "entityId": "gemma-0-1",
+        "name": "Gemma4 E2B IT Thinking",
+        "value": 60.0,
+        "unit": "benchmark percent",
+        "period": "2026 release-table snapshot",
+        "sourceId": "gemma4-card",
+        "sourceLocator": "Performance table: MMLU Pro × Gemma4 E2B IT Thinking",
+        "status": "observed",
+        "qualifier": null,
+        "geographicId": null,
+        "lat": null,
+        "lon": null,
+        "notes": "Developer-reported benchmark score, not field utility or independent replication.",
+        "benchmark": "MMLU Pro",
+        "configuration": "model-card configuration"
+      },
+      {
+        "id": "gemma-0-2",
+        "entityId": "gemma-0-2",
+        "name": "Gemma3 27B IT",
+        "value": 67.6,
+        "unit": "benchmark percent",
+        "period": "2026 release-table snapshot",
+        "sourceId": "gemma4-card",
+        "sourceLocator": "Performance table: MMLU Pro × Gemma3 27B IT",
+        "status": "observed",
+        "qualifier": null,
+        "geographicId": null,
+        "lat": null,
+        "lon": null,
+        "notes": "Developer-reported benchmark score, not field utility or independent replication.",
+        "benchmark": "MMLU Pro",
+        "configuration": "model-card configuration"
+      },
+      {
+        "id": "gemma-2-1",
+        "entityId": "gemma-2-1",
+        "name": "Gemma4 E2B IT Thinking",
+        "value": 37.5,
+        "unit": "benchmark percent",
+        "period": "2026 release-table snapshot",
+        "sourceId": "gemma4-card",
+        "sourceLocator": "Performance table: AIME 2026 × Gemma4 E2B IT Thinking",
+        "status": "observed",
+        "qualifier": null,
+        "geographicId": null,
+        "lat": null,
+        "lon": null,
+        "notes": "Developer-reported benchmark score, not field utility or independent replication.",
+        "benchmark": "AIME 2026",
+        "configuration": "no tools"
+      },
+      {
+        "id": "gemma-2-2",
+        "entityId": "gemma-2-2",
+        "name": "Gemma3 27B IT",
+        "value": 20.8,
+        "unit": "benchmark percent",
+        "period": "2026 release-table snapshot",
+        "sourceId": "gemma4-card",
+        "sourceLocator": "Performance table: AIME 2026 × Gemma3 27B IT",
+        "status": "observed",
+        "qualifier": null,
+        "geographicId": null,
+        "lat": null,
+        "lon": null,
+        "notes": "Developer-reported benchmark score, not field utility or independent replication.",
+        "benchmark": "AIME 2026",
+        "configuration": "no tools"
+      }
+    ]
+  },
+  "proposedChanges": [
+    {
+      "path": "datasetBindings[0].filter.all[1].values",
+      "value": [
+        "MMLU Pro",
+        "AIME 2026"
+      ]
+    },
+    {
+      "path": "datasetBindings[0].includedRowIds",
+      "value": [
+        "gemma-0-1",
+        "gemma-0-2",
+        "gemma-2-1",
+        "gemma-2-2"
+      ]
+    },
+    {
+      "path": "datasetBindings[0].includedRowCount",
+      "value": 4
+    },
+    {
+      "path": "validationTests",
+      "operation": "append",
+      "value": "Bind exactly two selected models on each of MMLU Pro and AIME 2026, preserving all four source row IDs, benchmark labels and configurations. No overall ranking or temporal interpolation."
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "sourceId": "gemma4-card",
+      "publisher": "Google DeepMind",
+      "title": "Gemma 4 model card",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "locator": "Benchmark Results table; MMLU Pro, MMMU Pro, AIME 2026, LiveCodeBench v6, GPQA Diamond, Tau2 (average over 3) rows",
+      "version": "Last updated 2026-07-30; retrieved 2026-10-19",
+      "publishedAt": "2026-07-30",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "Page footer licenses content CC BY 4.0 except as otherwise noted; factual numeric extraction only",
+        "termsUrl": "https://ai.google.dev/gemma/docs/core/model_card_4",
+        "attribution": "Google DeepMind. Gemma 4 model card. Accessed 2026-10-19.",
+        "verified": true,
+        "notes": "Metadata and brief independently written factual records only; no implication of endorsement. Not a claim that the whole source is openly licensed."
+      }
+    }
+  ],
+  "requiredReview": {
+    "status": "pending",
+    "requirements": [
+      "Independently confirm the source benchmark literal and exact four row identities.",
+      "Confirm that the added AIME 2026 rows use no tools and retain the different task configurations.",
+      "Review exact filter/selection correction and hash-bind effective design outside frozen research.",
+      "Separate actual scene/table/browser/regression runtime approval remains required before activation."
+    ]
+  },
+  "activationAllowed": false
+}

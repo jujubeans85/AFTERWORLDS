@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "stories": {
+    "430": {
+      "question": "What sits behind a seemingly weightless cloud?",
+      "observation": "These annual grid emission factors describe electricity associated with one cloud provider\u2019s regions. The unit is grams of carbon dioxide equivalent per kilowatt-hour. Each column starts at zero on the same fixed scale. The region slots are alphabetical and abstract, not facility locations.",
+      "interaction": "Inspect one region, then another, and compare their grid factors. Read the carbon-free energy matching figures separately: procurement matching is not the inverse of grid carbon.",
+      "boundary": "These are annual averages, not hourly signals, AI-prompt footprints or offsets. The source table preserves every region, its period and its provenance.",
+      "datasetSha256": "1878fd571972c43918ef24a11e2ccee053f772dc68ece9f2afacb728d14922e1"
+    },
+    "408": {
+      "question": "What must be available before a person can ask a machine a question?",
+      "observation": "This world compares basic electricity access as a percentage of each reporting economy\u2019s population. Every observation uses the same zero-to-one-hundred scale. A brighter mapped country has a higher reported access percentage; grey land carries no mapped value.",
+      "interaction": "Choose Next lacking access to explore the lowest reported percentages first. The dial has a fixed size: its filled angle shows the selected percentage. Economies without supported map geometry remain in the table.",
+      "boundary": "Basic access does not establish reliable service, affordable power, device ownership or AI use. A missing observation is not zero.",
+      "datasetSha256": "b1648fb3836c873a1d1cbeb303c209d2704b599eddbd98d26d0ceca79c66bce4"
+    },
+    "5-6": {
+      "question": "How much of the ocean floor has been mapped to modern standards?",
+      "observation": "The two source releases report twenty-seven point three percent in twenty twenty-five and twenty-eight point seven percent in twenty twenty-six. Each complete ring represents the same one hundred percent of the global ocean floor. The filled arc shows the reported mapped fraction.",
+      "interaction": "Select each ring to compare the two release figures. The latest release is in front; the earlier release remains available.",
+      "boundary": "These are rounded global coverage figures. They do not locate unmapped areas, measure depth accuracy, or quantify AI\u2019s contribution. An unfilled arc does not mean that no earlier depth estimate exists.",
+      "datasetSha256": "bd8d9e60a92d9bce53fa889efd3c6218bb0efb6b602b61bfb25ee4740e3df4d2"
+    },
+    "63": {
+      "question": "How wide is the connection gap between urban and rural residents?",
+      "observation": "The twenty twenty-five global estimates report Internet use among eighty-five percent of urban residents and fifty-eight percent of rural residents. Each ring has the same full scale, from zero to one hundred percent of its own resident population.",
+      "interaction": "Select the urban and rural rings to compare their filled arcs. The unfilled remainder represents residents not using the Internet.",
+      "boundary": "These global categories cannot locate a particular town or village. Internet use does not measure AI adoption, electricity reliability, affordability or digital skill.",
+      "datasetSha256": "eaa1ecd9bc5fe0c622886ec4575097bd0b9b62999d6be0961cfc9c9cb7066c57"
+    },
+    "388": {
+      "question": "What can satellite observations reveal about vessel activity missing from public tracking?",
+      "observation": "Within the sampled coastal study waters, the study reports two ranges: seventy-two to seventy-six percent of industrial fishing vessel activity, and twenty-one to thirty percent of other vessel activity, was absent from public tracking. The source supplies ranges without point estimates. A separate set of continental shares describes detected vessel activity.",
+      "interaction": "Select each range observation, then inspect the continental shares on their separate percentage rulers. Their rounded shares are preserved without adjustment.",
+      "boundary": "Publicly untracked activity does not establish illegality. The activity populations and denominators differ, and the study period does not describe a live fleet.",
+      "datasetSha256": "ad94486e86476f9910f1a73ad07094a54fda71e968a5ef4d98824e64df806036",
+      "citations": [
+        "planet-gfw"
+      ]
+    },
+    "330": {
+      "question": "What did a teacher-supported AI tutoring trial measure in Edo State, Nigeria?",
+      "observation": "Two trial estimates are expressed in standard deviations: zero point three one for the composite outcome and zero point two three eight for English. Each whisker extends one robust standard error of zero point zero six eight above and below its estimate. The regression sample contains six hundred and fifty-four students.",
+      "interaction": "Select each outcome and compare its estimate and whisker on the common zero-to-zero-point-four ruler. Read the trial population and period with the result.",
+      "boundary": "These whiskers are one standard error, not ninety-five percent confidence intervals. The intervention combined teaching support with AI tutoring; its result does not establish an effect for every school, country or AI product.",
+      "datasetSha256": "8e316991ef8a2a557606a4cefbf03427fc3ba638137c135d172f41b1feed0c3b",
+      "citations": [
+        "wb-nigeria-rct",
+        "wb-nigeria-paper-tables"
+      ]
+    },
+    "406": {
+      "question": "How much of the year might a cooling design need water at different locations?",
+      "observation": "The source describes less than five percent of the year in Dublin and Amsterdam, approximately ten percent in Virginia, and up to forty percent in Phoenix. Equal full rings represent one hundred percent of a year; their endpoint treatments retain the source bounds.",
+      "interaction": "Select each location and read the qualifier beside its endpoint. An open bound remains distinct from an approximate value or an inclusive upper limit.",
+      "boundary": "These are design claims about time requiring water, not measured water volumes or guaranteed savings. They do not establish the water demand of every data centre in these locations.",
+      "datasetSha256": "8922a67469c023e2b420ee1212805812d77618246c80a56553c30d37312a3c5b",
+      "citations": [
+        "ms26"
+      ]
+    },
+    "193-5": {
+      "question": "How different are the source estimates of data-centre electricity per resident?",
+      "observation": "The source reports approximately five hundred and forty kilowatt-hours per person per year for the United States and less than one for Africa. The main ruler runs from zero to six hundred in that same unit.",
+      "interaction": "Inspect the broad comparison, then use the separately labelled zero-to-five magnifier for the smaller bound. The magnifier repeats the same observation at a different declared scale.",
+      "boundary": "The comparison places one country, the United States, beside a continent, Africa. These regional averages concern all data centres, not AI alone. They do not measure individual electricity use, and the less-than-one figure is an upper bound rather than an exact value.",
+      "datasetSha256": "a6973816d68a2f0901c30408f9fe37a5081482ebd6f105bfd971278e96dea155",
+      "citations": [
+        "iea25d"
+      ]
+    },
+    "372": {
+      "question": "What do two reporting channels reveal about identified deepfake clips?",
+      "observation": "Within the same source reporting window, proactive investigation identified two video clips and public reports identified nineteen. Two separate rulers preserve the native clip counts on a shared zero-to-twenty scale.",
+      "interaction": "Select each reporting channel and compare its count. Turn to the context panel to read what the reporting window and channel can establish.",
+      "boundary": "These counts do not estimate total deepfake prevalence, exposure or harm. A reporting channel is not a population denominator.",
+      "datasetSha256": "67ea54d390106c32e4667d62a34c72ec42e1b9a35954470ec8e11bc710f4a109",
+      "citations": [
+        "hksar-deepfake"
+      ]
+    },
+    "276": {
+      "question": "What does an Internet connection cost relative to income?",
+      "observation": "The global median country price baskets are one point four percent of gross national income per capita for data-only mobile broadband and two point five percent for fixed broadband. Both calipers use the same zero-to-three-percent ruler.",
+      "interaction": "Select each basket and compare the caliper endpoints. Read the price-basket definition with the income denominator.",
+      "boundary": "Country medians can conceal differences within and between countries. These figures are relative to gross national income per capita, not disposable income, and they do not price an AI subscription.",
+      "datasetSha256": "a45ed9cd6319ccd8695fabf2b9cbf225d1429a2df07f3e927874ab2f94ff6053",
+      "citations": [
+        "itu-price-2025"
+      ]
+    },
+    "409": {
+      "question": "How consistent were archived language models when answering territorial questions across languages?",
+      "observation": "Six source-native scores describe cross-language concurrence in an archival benchmark over two hundred and fifty-one territories. Equal model rulers place markers on the source scale from zero to one hundred.",
+      "interaction": "Select a model marker and inspect its response method and metric definition. Compare consistency while keeping the study period visible.",
+      "boundary": "A more consistent answer can still be wrong. These scores neither adjudicate sovereignty nor describe the current capabilities of newer models.",
+      "datasetSha256": "45135c0dc6c9cc497bc41b40a845cc0a12cb1f15e57162f1bc9b47ee83f2da55",
+      "citations": [
+        "borderlines-naacl2024"
+      ]
+    },
+    "369": {
+      "question": "How can corporate revenue and national output be placed beside each other without treating them as equivalent?",
+      "observation": "Six source amounts share a numerical ruler from zero to four hundred billion current US dollars. Corporate revenue appears on one set of panels and national gross domestic product on another. Each observation keeps its own fiscal or calendar period.",
+      "interaction": "Turn between the corporate and national panels. Select an amount to read its account type and exact reporting period before comparing its magnitude.",
+      "boundary": "Revenue measures company sales; gross domestic product measures national value added. Fiscal and calendar years differ. The display provides scale context without an economic-equivalence claim or an AI-only revenue estimate.",
+      "datasetSha256": "c61b06c86f33fe9641a245c4a0e1b2aac3878a002c9cec8fc0f8647447039c02",
+      "citations": [
+        "microsoft-fy2026",
+        "wdi-gdp"
+      ]
+    },
+    "324": {
+      "question": "What do announced nuclear power agreements actually specify?",
+      "observation": "Five contract observations use megawatts on the same zero-to-three-thousand ruler. Each retains its capacity type: restart, existing supply, uprate, or mixed supply. The one hundred and ninety megawatt uprate is already included within the six hundred and ninety megawatt mixed agreement.",
+      "interaction": "Turn through the contract panels and read the buyer, date and capacity type. Compare the ruler lengths while keeping their distinct meanings visible.",
+      "boundary": "Contract quantities are not present delivered loads or interchangeable additions to generation. Expected restart and delivery dates remain plans, and the nested uprate must not be added a second time.",
+      "datasetSha256": "84b8d4be8f8e6a8ffcc5ef34a1c69a37c50de4e27d161e82aa17d616b8b230b5",
+      "citations": [
+        "crane",
+        "talen",
+        "calvert",
+        "google-nuclear"
+      ]
+    },
+    "385": {
+      "question": "How large was the original Stargate investment intention beside selected annual economic output figures?",
+      "observation": "The announcement on the twenty-first of January, twenty twenty-five described a five hundred billion US dollar intention for the following four years. Its outlined panel shares a numerical ruler with three solid panels showing annual gross domestic product in current US dollars.",
+      "interaction": "Turn from the outlined intention to the annual reference panels. Select each observation and read its period and measure type before comparing its magnitude.",
+      "boundary": "The historical announcement is not money spent or a current forecast. A multi-year spending intention and an annual national flow cannot be summed, annualised or treated as economic equivalents here.",
+      "datasetSha256": "375aba92c478c3e99c8e43ba3532ff2273bc8f6e8ce8a8bc8cefbb4d10614ca4",
+      "citations": [
+        "openai-stargate-announcement",
+        "wdi-gdp"
+      ]
+    },
+    "232": {
+      "question": "Whose participant entries appear in the source baseline for genome studies?",
+      "observation": "Six source-curated ancestry categories describe recorded participant entries in the dashboard snapshot. Each has its own zero-to-one-hundred-percent ruler. The European-labelled category accounts for eighty-eight point four percent; the other five shares retain their published precision.",
+      "interaction": "Turn among the category rulers, then choose Show zero-to-ten-percent inset to inspect smaller shares on a separately labelled magnifier. The magnifier repeats the same source entries without renormalising them.",
+      "boundary": "Participant entries can repeat people across studies, and records with unreported ancestry are excluded. These broad source categories are not nationalities or fixed biological races. This is context for model development, not a census of genomic AI training data.",
+      "datasetSha256": "b1f62399ba6fdb205988961609ca5858c5bbde05bb9713c52d8cf8cbcd823e70",
+      "citations": [
+        "planet-gwas",
+        "planet-gwas-methods"
+      ]
+    },
+    "333": {
+      "question": "What does a recorded United Nations vote reveal about one AI governance decision?",
+      "observation": "The source records one hundred and seventeen votes in favour, two against and two abstentions. One hundred and twenty-one equal tiles represent these recorded votes.",
+      "interaction": "Select a category to inspect its count and source details. The anonymous tiles represent units of the count, with country names limited to those actually supplied by the source.",
+      "boundary": "A vote tile is not a population share or a scientific-panel member. The totals do not establish a position for members outside the recorded vote.",
+      "datasetSha256": "1e2a931305de1ab19208cce6148e449eeb0b38afcc57ceac610b936546114984",
+      "citations": [
+        "un-panel-vote2026"
+      ]
+    },
+    "63-8": {
+      "question": "How were the language versions of an evaluation dataset prepared?",
+      "observation": "Forty-two equal tiles represent language versions: one original English version, fourteen professionally translated and post-edited versions, eleven crowdsourced translations and sixteen machine translations.",
+      "interaction": "Select a preparation category and read its source definition. Compare the counts while keeping each tile an anonymous language-version unit.",
+      "boundary": "Preparation method does not establish translation quality or model performance. The counts do not measure population representation, the number of questions, or individual language identities.",
+      "datasetSha256": "0ccdad3caf2fcdc49b3e96f452d91a4086b3a4d6dc1d4d17cacaeb5366ef8d9f",
+      "citations": [
+        "globalmmlu-acl2025"
+      ]
+    },
+    "364": {
+      "question": "In how many reported September comparisons did IceNet outperform two reference methods?",
+      "observation": "At a three-month lead, the source reports higher accuracy in seven of nine comparison years against SEAS5 and eight of nine against a linear trend. Two equal nine-slot rings preserve those count denominators.",
+      "interaction": "Select each comparison ring to inspect its count, lead time and evaluation period. The anonymous filled slots do not identify individual winning years.",
+      "boundary": "The nine years include six validation years used for tuning and three test years. Counts alone do not reveal the accuracy margin, reconstruct an ice edge, or demonstrate future performance.",
+      "datasetSha256": "d25ed03fa50e001134d40bd3f82c4e61a8e05bb669e1a1f9acfcc48df82c6bb6",
+      "citations": [
+        "planet-icenet"
+      ]
+    },
+    "320": {
+      "question": "How does the hourly income picture change when unpaid work time is included?",
+      "observation": "Four observations compare mean and median income in US dollars per hour. With paid and unpaid time included, the median is two dollars and fifty-seven cents and the mean five dollars and forty-eight cents. For paid hours alone, the median is four dollars and the mean eight dollars and thirty-five cents.",
+      "interaction": "Switch between paid hours only and including unpaid time. The selected pair comes forward while the other remains an outline; all four values keep the same zero-to-ten-dollar ruler.",
+      "boundary": "These are two time denominators within a selected web-platform worker sample, not a historical earnings trend or an AI-only labour survey. The source trims the first and ninety-ninth percentiles, and the mean and median describe different features of the distribution.",
+      "datasetSha256": "bff31cf3fed44ce069378696a6469bc6d0f9cd4e46683647531b9c71b66b900d",
+      "citations": [
+        "ilo-lac-platform-2025"
+      ]
+    },
+    "417": {
+      "question": "What does a selected computing consortium represent?",
+      "observation": "Seven equal facets name the first seven source-listed EuroHPC AI Factory selections. The observations record selection status, with host countries and consortium members preserved separately.",
+      "interaction": "Select a consortium to inspect its source-listed members as equal category tokens. Their positions are abstract, not facility locations.",
+      "boundary": "Selection does not establish completed deployment, compute capacity or AI use. A member token does not measure a country\u2019s financial contribution or computing resources.",
+      "datasetSha256": "632a9dc118e1d8d327e214f0cbed00639a50a01c1049715e29755402fe81b331",
+      "citations": [
+        "eurohpc-first7"
+      ]
+    },
+    "415": {
+      "question": "When were these AI Growth Zones announced?",
+      "observation": "Five equal named facets preserve announcement status. A separate date rail orders the actual announcement dates; neither facet size nor position measures a zone\u2019s area.",
+      "interaction": "Select a zone and compare its date with the chronological rail. Read the announcement as a dated source statement.",
+      "boundary": "An announced zone is not proof of construction, delivered capacity or economic benefit. The extract supplies no supported geographic boundaries or site coordinates.",
+      "datasetSha256": "d56884c5dc00ca6c274fc2b7752febbdc626531627d9bada4194eb2d1acfa116",
+      "citations": [
+        "uk-aigz-collection",
+        "uk-aigz-policy"
+      ]
+    },
+    "397": {
+      "question": "Where does a human decision remain in the source-described immigration workflow?",
+      "observation": "Two equal workflow facets describe sponsorship and principal-applicant components. The source describes machine-learning and officer rules, without automated refusal; each component ends with an IRCC officer as final decision-maker.",
+      "interaction": "Select each workflow component and inspect its rule description and final-decision field. Canada remains a jurisdiction caption.",
+      "boundary": "These descriptions do not quantify applicant numbers, refusal rates or fairness. They are a dated account of a specific workflow, not a global census of immigration automation.",
+      "datasetSha256": "6764180ef3425db86c0c9e12c0b775c83fe4d5cbac4c980b905560d74b1d3e7f",
+      "citations": [
+        "ircc-overseas"
+      ]
+    },
+    "382": {
+      "question": "How is an announced site different from announced floorspace?",
+      "observation": "Two equal architectural facets display two thousand two hundred and fifty acres of site and four million square feet of floorspace. Their boundary glyphs distinguish the two definitions while the values remain native-unit text.",
+      "interaction": "Inspect each facet and its measurement label. Compare the definitions before interpreting the announced quantities.",
+      "boundary": "Land and floorspace are different measures. The display supplies no building footprint, land-clearance estimate or conversion into ecological impact, and it does not assert completed construction.",
+      "datasetSha256": "961fe8b274c3ae3f0afc036d89c76b84d77f2e88cef1ea966caeee223ca0f529",
+      "citations": [
+        "meta-land"
+      ]
+    },
+    "371": {
+      "question": "What kind of money does each reported fraud amount describe?",
+      "observation": "Three equal case facets distinguish money involved, reported loss and an instructed transfer. Each retains its own Hong Kong dollar unit, source qualifier and case status at publication.",
+      "interaction": "Select a case and read its amount type, reporting date and qualifier. The same-size typography prevents these unlike amounts from becoming an implied ranking.",
+      "boundary": "These are selected reported cases, not a prevalence estimate. An instructed transfer is not automatically a confirmed loss, and case status belongs to the stated publication date.",
+      "datasetSha256": "961e05e7060b20f0db61ff7307074f8c5cced0169fd0b4a396e9e42dec96df55",
+      "citations": [
+        "hksar-deepfake"
+      ]
+    },
+    "368": {
+      "question": "What did one dated export-policy announcement say about these products?",
+      "observation": "Two equal product frames name H200 and MI325X, with a third linked frame showing a stated testing condition. The values are policy categories rather than export quantities.",
+      "interaction": "Select the product and condition frames to inspect their source descriptions and announcement date. The connecting lines indicate policy association.",
+      "boundary": "A case-by-case licence-review category does not establish approval, shipment or current legal status. No observed exports or compliance rate are inferred.",
+      "datasetSha256": "443ded25249b4ba4e34cbbcbf7053b04254777a44b8c392ec572e5be2de722ea",
+      "citations": [
+        "bis26"
+      ]
+    },
+    "358": {
+      "question": "What does autonomy mean in the source records for these vessels?",
+      "observation": "Three equal facets preserve two project milestones and a separately dated or undated supervision statement. Their category text distinguishes no onboard crew from autonomous operation under human supervision.",
+      "interaction": "Select each evidence facet and read its date and supervision wording. Keep the separate statements attached to their source records.",
+      "boundary": "Milestone locations do not supply a voyage track. These descriptions do not establish continuous unsupervised operation or comparable safety performance.",
+      "datasetSha256": "4925ebb060e855447392eb24cad9b06ff0d065ce1c77b4721c8f82b6c9cfca9e",
+      "citations": [
+        "ibm-mas",
+        "yara"
+      ]
+    },
+    "356": {
+      "question": "What separates an AI assistance role from an oversight statement?",
+      "observation": "Four equal facets distinguish two pilot roles from two later oversight statements. The pilot descriptions concern transcript summaries and policy-information summaries; the oversight records retain their separate June and August dates.",
+      "interaction": "Select a facet and read its dated role or oversight statement. Compare the pilot period with the later correspondence.",
+      "boundary": "The extract does not measure claim volumes, refusal rates or decision quality. A reported absence of a planned audit is a dated statement, not a quantified outcome or a permanent condition.",
+      "datasetSha256": "b7e03872161de1bdde4a3e5d5b8e5c68c3ff5a2684923bc70bdd5859a4aa6ca2",
+      "citations": [
+        "uk-asylum-eval",
+        "uk-asylum-letter-aug",
+        "uk-asylum-letter-june"
+      ]
+    },
+    "348": {
+      "question": "What do five different bibliometric measures actually compare?",
+      "observation": "Five equal facets keep five native definitions separate: annual papers per researcher, annual citations per researcher, a modelled transition measured in years, knowledge extent and follow-on citation engagement. Numerical text retains each ratio, year or percentage unit.",
+      "interaction": "Select each definition before reading its value. The facets remain equal in size because the measures have incompatible meanings.",
+      "boundary": "These study comparisons do not establish a common impact score or prove that AI caused an individual researcher\u2019s outcome. A modelled last-author transition is a proxy, and embedding-based extent is not a direct measure of every kind of scientific knowledge.",
+      "datasetSha256": "005daad12f688d1ca5aaebf9800463e892bf93590de0e93598985ba43db161ae",
+      "citations": [
+        "planet-science"
+      ]
+    },
+    "321": {
+      "question": "How did these sources describe participation in demand response?",
+      "observation": "Seven equal location facets preserve programme and schedule categories. Five European entries share the source\u2019s seventeen-hundred to twenty-one-hundred clock segment; Taiwan summer peaks and the Oregon pilot remain separate qualitative cases.",
+      "interaction": "Select a location and inspect its source schedule and period. The clock segment shows a reported time window rather than electricity saved.",
+      "boundary": "Participation statements do not quantify reduced energy, emissions or delivered grid services. The abstract facets do not locate facilities or imply a common operating schedule across every case.",
+      "datasetSha256": "fee51b865252958da0bc30ef35059464a16dddd12ea988992e6e93a0b88aea02",
+      "citations": [
+        "google-flex"
+      ]
+    },
+    "314": {
+      "question": "What trade-off accompanies a proposed cooling design?",
+      "observation": "Two equal planned-pilot facets face a third facet describing a potential increase in power usage effectiveness. The source records design plans and a caveat, rather than measured water or energy totals.",
+      "interaction": "Select the planned locations and the trade-off facet. Read their shared disclosure date and preserve the word planned.",
+      "boundary": "A closed-loop decorative frame carries no water volume or flow rate. Planned pilots do not establish completed deployment or guaranteed water and energy savings.",
+      "datasetSha256": "9a84ec6ef3f25b05ec216a5b0bca9e04e4e050e3104fa03e60dd1fb0d5c30d10",
+      "citations": [
+        "ms24"
+      ]
+    },
+    "305": {
+      "question": "Which engineering roles are documented in this EUV assembly?",
+      "observation": "Three equal role facets describe Netherlands system integration, United States components and German optics and lasers. A constant-width scaffold connects the documented roles.",
+      "interaction": "Select each role to inspect the source description. Follow the undirected assembly links without interpreting their width as a share.",
+      "boundary": "These selected roles are not a complete supply-chain census. The display does not measure market share, production volume, national control or dependency strength.",
+      "datasetSha256": "fdc38112c680ced459d942333c6ed32bdc9c89a2d8c6bb19830e7b8228a6d88a",
+      "citations": [
+        "asml-euv"
+      ]
+    },
+    "259": {
+      "question": "How does a scientific assessment connect to a governance dialogue?",
+      "observation": "Two equal institutional shells preserve distinct source-defined mandates. A directed annotation shows the annual scientific-panel report being presented at the dialogue.",
+      "interaction": "Select each shell and inspect the mandate, then read the direction of the report handoff.",
+      "boundary": "The annotation describes an institutional process, not a measured information flow or a count of completed reports. Scientific synthesis and governmental coordination retain different roles.",
+      "datasetSha256": "b40102fecb10f1ef36b39cca08292279ae195d203cf5ad09ee708150eb74a0e0",
+      "citations": [
+        "un-ares79325"
+      ]
+    },
+    "256": {
+      "question": "Which onboard applications were reported at launch, and which were planned for later?",
+      "observation": "Six equal application facets use four solid frames for apps reported onboard at launch and two dotted frames for planned later uploads. Every status belongs to the same launch-period record.",
+      "interaction": "Select an app facet and compare its status wording and frame pattern.",
+      "boundary": "A planned later upload is not an observed deployment. The abstract shell supplies no orbit, satellite capacity or current operational-status estimate.",
+      "datasetSha256": "21af5470540060f5d8f03654dd722f2e51f8cdf5eb35d72b7e8a542710fcf6b3",
+      "citations": [
+        "esa-phisat2"
+      ]
+    },
+    "250": {
+      "question": "What does one newsroom policy allow, prohibit or require?",
+      "observation": "Four equal curved pages preserve four editorial-policy categories: reviewed uses, a prohibition, a disclosure requirement and identification with context. Their rule text is shown as policy, not measured output.",
+      "interaction": "Select a page and read its named use and source rule. Keep the policy publication date visible.",
+      "boundary": "A stated policy does not quantify how often a tool was used or establish compliance. These categories belong to one source\u2019s dated editorial standards.",
+      "datasetSha256": "35356e37f06b1d7581300880ccb16eaccc68d59b553523dc63908aff1ed80641",
+      "citations": [
+        "ap-standards2026"
+      ]
+    },
+    "107": {
+      "question": "What conditions accompany access to these ocean-data repositories?",
+      "observation": "Three equal portfolios preserve repository-specific access, attribution and reuse rules. Their front and reverse faces separate repository identity from the source-defined conditions and record-level caveats.",
+      "interaction": "Select a repository and use Show reverse evidence to inspect its access and reuse wording.",
+      "boundary": "An access rule does not measure the quantity of data available. Repository-level statements do not erase record-specific conditions or establish a common licence for every underlying source.",
+      "datasetSha256": "b7876f0c159d935e8f8076aef308b0e1ec6004367d3bd6a8e6ced32a430c7ac3",
+      "citations": [
+        "planet-gebco-terms",
+        "planet-argo-terms",
+        "planet-cchdo-terms"
+      ]
+    },
+    "150-5": {
+      "question": "What automation mechanism do these investigation records describe?",
+      "observation": "Two equal accident-record facets link to a third facet describing threshold-based MCAS stability augmentation. The source observations are mechanism descriptions, with their original dates preserved.",
+      "interaction": "Select the accident records and the mechanism facet to inspect how the source relates them.",
+      "boundary": "Link width measures no causal strength, fatalities or degree of automation. This historical mechanism must not be presented as evidence about modern generative AI or as a complete account of an accident.",
+      "datasetSha256": "84a7b014a79fa53a1368e0ce36f0f3ef42b471f86b6ba5e728c7ad38c39353dc",
+      "citations": [
+        "ntsb19"
+      ]
+    },
+    "155-17": {
+      "question": "Which organisational relationships were examined in this partnership study?",
+      "observation": "Five equal organisation nodes connect through three source-listed partnerships. Microsoft links to OpenAI, while Amazon and Google each link to the same Anthropic node.",
+      "interaction": "Select a partnership and inspect its two endpoints. The shared Anthropic node represents one organisation across two relationships.",
+      "boundary": "These constant-width undirected links do not measure investment, ownership, market power or control. They preserve the scope and date of the studied relationships.",
+      "datasetSha256": "eb1343ea747bfb52f1113477ea07f8b33dc0b6c055e810fb8559a3ab4e917d14",
+      "citations": [
+        "ftc-partnerships-2025"
+      ]
+    },
+    "170-3": {
+      "question": "Which named discoveries were confirmed after machine-learning assistance?",
+      "observation": "Two equal abstract celestial facets name Kepler-90 i and Kepler-80 g with their host stars. Each record preserves its discovery-announcement period and the later archive-confirmation check.",
+      "interaction": "Select a discovery and inspect its host-star and archive names.",
+      "boundary": "Equal decorative spheres are not measured planet radii. The records provide no displayed orbit, sky coordinate or habitability assessment, and two cases do not estimate a global discovery rate.",
+      "datasetSha256": "9ad0b2e35acc81c08d77e746dae5470a8630cc92f07ef8087ee4daa066a4e81a",
+      "citations": [
+        "planet-nasa-discoveries",
+        "planet-nasa-archive"
+      ]
+    },
+    "178": {
+      "question": "How do a treaty mechanism and voluntary reporting differ?",
+      "observation": "Two equal nested-book facets distinguish a treaty with a follow-up mechanism from voluntary reporting. Their inner faces preserve the named mechanisms and scope exclusions.",
+      "interaction": "Select an instrument and use Show reverse evidence to inspect its mechanism and exclusions. Read the category before comparing the procedures.",
+      "boundary": "Equal surface area does not imply equal legal authority, participation or compliance. The records describe dated instruments rather than measured enforcement outcomes.",
+      "datasetSha256": "192e5273f2dec5156d7e6678a50887ef1060a4152c39e5dd775c36c0138a58ec",
+      "citations": [
+        "coe-monitoring",
+        "oecd-haip2"
+      ]
+    },
+    "255": {
+      "question": "What share of disclosed water supply came from alternative sources in three company examples?",
+      "observation": "Three equal reference rings show seventy-four percent for Quincy, ninety-nine percent for Singapore and seventy-nine percent for San Antonio. Each complete ring is the same one hundred percent of that example\u2019s disclosed water supply.",
+      "interaction": "Select each ring and inspect the source location label, source disclosure period and alternative-water description.",
+      "boundary": "The source groups recycled, reused or non-potable contributions. It does not provide comparable volumes or averaging periods, and the percentages do not measure avoided household withdrawals. These are company-selected examples.",
+      "datasetSha256": "a17447025e25b1cddda1a9ba99977dcf958f032b87ba641abc35eab236b9f1b1",
+      "citations": [
+        "ms26"
+      ]
+    },
+    "233-2": {
+      "question": "Across how much of the evaluated grid did the source report forecast skill gains?",
+      "observation": "Two equal reference discs show ninety-six percent of evaluated grid cells with skill gains for week-three extreme precipitation, and ninety-eight percent for precipitation quintiles. The source compares PBC-ECMWF with operationally debiased ECMWF in the twenty sixteen and twenty twenty-four test years. Their arcs preserve the published percentages.",
+      "interaction": "Select each target and read the skill definition and test period before comparing the arcs.",
+      "boundary": "A share of cells with improved skill is not the probability that a forecast is correct. The two targets use different skill measures, and aggregate shares do not identify the locations of winning cells.",
+      "datasetSha256": "a79a1146b3147d27b53e4eb8d1c45b9c99fd487f60483e2f6f7e7e669e43f668",
+      "citations": [
+        "pbc"
+      ]
+    },
+    "422-2": {
+      "question": "How does modelled occupational exposure differ across the source\u2019s gender-dominated occupation categories?",
+      "observation": "Four equal semicircle rulers show shares of occupations. Any exposure is twenty-nine percent for female-dominated and sixteen percent for male-dominated occupations. High exposure, combining gradients three and four, is sixteen and three percent respectively.",
+      "interaction": "Compare the female and male lanes within each exposure category. Read the high-exposure pair as a subset of the any-exposure pair.",
+      "boundary": "These are occupation shares, not employment shares or observed job losses. The overlapping exposure categories must not be added, and modelled exposure does not establish that a job will disappear.",
+      "datasetSha256": "62af6d20aef93ba49214b6621056070d9bcd3a3e9038598eb6419f38019fb5a7",
+      "citations": [
+        "ilo-gender-2026",
+        "ilo-gender-brief-2026"
+      ]
+    },
+    "138-8": {
+      "question": "Which activities appeared in one vendor\u2019s classified account sample?",
+      "observation": "Two separate full reference rings show the published percentages: sixty-seven point three for malware-writing and six point five for lateral movement. The exact source counts remain five hundred and sixty and fifty-four accounts, each within a denominator of eight hundred and thirty-two.",
+      "interaction": "Select a ring and inspect its count, denominator and published percentage together. Each ring remains independent because the activity categories can overlap.",
+      "boundary": "These are vendor-classified accounts, not unique people or confirmed intrusions. The rounded published percentages remain unchanged, and the overlapping categories do not form a single pie or a census of cyber activity.",
+      "datasetSha256": "705504f105faed04b5a71baff09be50ec529e941b0735b88bb833e8316d16284",
+      "citations": [
+        "anthropic-cyber2026"
+      ]
+    },
+    "8-6": {
+      "question": "How often did participants complete an eye exam in this clinical trial?",
+      "observation": "The reported completion percentages are one hundred for the autonomous-AI arm and twenty-two for standard referral. The AI arm\u2019s source-reported ninety-five-percent confidence interval runs from ninety-six to one hundred percent. The referral arm\u2019s ninety-five-percent confidence interval runs from fourteen to thirty-two percent. The analyzed counts are eighty-one of eighty-one and eighteen of eighty-two.",
+      "interaction": "Select each arm to inspect its reported percentage, ninety-five-percent confidence interval and analyzed count. Read the randomized counts of eighty-one and eighty-three separately.",
+      "boundary": "The trial involved young people with diabetes at two Baltimore sites. AI screening occurred at enrollment, while control completion was assessed within six months; one randomized control was excluded. Completion does not establish improved vision or general effectiveness in every population.",
+      "datasetSha256": "410af3cb6635331df5257b335ed984813b6a5547563895671ffa0058d99896c1",
+      "citations": [
+        "planet-access"
+      ]
+    },
+    "428": {
+      "question": "What volume passed through these source-listed energy chokepoints?",
+      "observation": "Seven equal-width gates show throughput in millions of barrels per day on the same zero-to-twenty-five ruler. Six observations describe the first half of twenty twenty-five; Panama retains its distinct fiscal-year period and approximate qualifier.",
+      "interaction": "Select a passage category and inspect its throughput and period. The marked Panama gate calls attention to its different reporting window.",
+      "boundary": "These are abstract passage categories, not mapped crossing locations. The source values do not measure AI-specific fuel use, and different reporting periods limit direct comparison.",
+      "datasetSha256": "851768856b1d57846f0d544cf6b22f91afe0b43b8add558a97922cf94257b5fa",
+      "citations": [
+        "eia26"
+      ]
+    },
+    "407": {
+      "question": "How did surveyed adults in different markets describe their nervousness about AI?",
+      "observation": "Thirty-two equal market rulers show the percentage of surveyed adults agreeing with the source statement. Each uses the same zero-to-one-hundred scale. The alphabetical arrangement is categorical, with Great Britain and mainland China retaining their source scope.",
+      "interaction": "Select a market and read its age range and sample scope beside the percentage. Compare the population coverage before comparing values.",
+      "boundary": "Some samples represent a more connected, urban, educated or affluent segment. These are survey responses within stated age ranges, not a global population census or a measurement of AI-caused harm.",
+      "datasetSha256": "b72f652400456d9b31b6de7d75f896a90c1245b53b6e175f7a0d852b08f43c26",
+      "citations": [
+        "ipsos-2026"
+      ]
+    },
+    "284": {
+      "question": "What does this applicant ranking count?",
+      "observation": "Ten equal-width book spines preserve the source rank and number of simple patent families. Their heights share a zero-to-two-thousand-five-hundred ruler, while angular width stays constant.",
+      "interaction": "Select an applicant and inspect its rank, family count and study period. Keep the source applicant identity attached to the observation.",
+      "boundary": "Patent families are not individual patents, demonstrated capability or commercial value. The display does not infer current ownership, national allocation or the strength of a legal right.",
+      "datasetSha256": "3e79239c6f8254236f6c7fee77c5825132dee03a48ecd38a02d7d437454d45f5",
+      "citations": [
+        "wipo-genai-2024"
+      ]
+    },
+    "202": {
+      "question": "How much rider-only operating exposure was reported for these five areas?",
+      "observation": "Five fixed spool frames show reported operating exposure in millions of rider-only miles on the same zero-to-one-hundred ruler. Ribbon length carries the source quantity; the frame size stays constant.",
+      "interaction": "Select an operating area and inspect its mileage and reporting cutoff. Compare the recorded exposure without treating the abstract ribbons as travel routes.",
+      "boundary": "Mileage alone is not a collision rate, safety comparison or measure of every kind of vehicle operation. These selected operating areas do not supply geographic route geometry.",
+      "datasetSha256": "f626a788aaaa1e2c0435faa5e659263daea3524afcb4bf3c079e9905a3b66896",
+      "citations": [
+        "waymo26"
+      ]
+    },
+    "117": {
+      "question": "How can very different training-compute estimates share a readable ruler?",
+      "observation": "Twenty fixed-size markers retain native floating-point-operation estimates. Their positions use a logarithmic ruler from ten to the twenty-fifth through ten to the twenty-seventh operations, with a labelled tick at each power of ten. Equal steps therefore represent tenfold changes.",
+      "interaction": "Select a model marker and inspect its estimate-confidence category, notes and source reference. The marker\u2019s size remains constant while the ruler position expresses the estimate.",
+      "boundary": "These source estimates are not uniformly disclosed measurements. Confidence labels are categories, not numerical probabilities or invented intervals. Training compute does not by itself measure intelligence, usefulness, inference cost or current model capability.",
+      "datasetSha256": "831895eb4f8d22d6dc30f513f0d4dc118573744c2c862d7334d2e3afe8334ae6",
+      "citations": [
+        "epoch-notable"
+      ]
+    },
+    "402": {
+      "question": "What changes when four methods inspect the same marine-debris benchmark?",
+      "observation": "Twelve source observations compare four methods on intersection over union, pixel accuracy and F-one. Each metric retains its native zero-to-one scale; the three definitions remain separate.",
+      "interaction": "Switch the metric, then select a method to inspect the exact source row. Compare methods within the same metric.",
+      "boundary": "This is marine-debris class performance on one benchmark split. It does not measure ocean coverage, plastic removal or current production performance, and the source table supplies no confidence intervals.",
+      "datasetSha256": "359047235e62d77ea016ce979e31ff476e0f93c85963a6c3dfe855a5c26d3e55",
+      "citations": [
+        "planet-marida"
+      ]
+    },
+    "398": {
+      "question": "Does the AI-managed field always show lower inferred water stress?",
+      "observation": "Eight observations retain water deficit index values for two Kansas corn fields, two growing stages and two seasons. In the twenty twenty-three vegetative stage, Field A is zero point one one and Field B is zero point zero nine, preserving the exception.",
+      "interaction": "Select a field, stage and year to compare the native index values. Read the published descriptive standard deviation as text beside each estimate.",
+      "boundary": "These are two fields without randomized treatment assignment. Hardware and management differ, and the index is satellite-derived. Eight rows are not eight independent trials; the source standard deviations do not establish confidence intervals or causal water savings.",
+      "datasetSha256": "ddef3555e3557f2087816da4d4d85bf84d4c09a5702841bb2da3147615d8a1fd",
+      "citations": [
+        "planet-irrigation"
+      ]
+    },
+    "392": {
+      "question": "How do these oxygen-test configurations compare on the reported observations?",
+      "observation": "Seven configurations each retain accuracy, F-one, precision and recall on a zero-to-one scale. The extracted test contains twelve unshuffled summer samples.",
+      "interaction": "Switch the metric and inspect a configuration. Keep its exact sample definition and source caption discrepancy visible.",
+      "boundary": "Methods and Table Four describe two thousand seven through twenty nineteen, excluding twenty sixteen; another caption gives twenty twenty. Test-era observations appear in spatial augmentation, so this is not an independent unseen-year validation claim.",
+      "datasetSha256": "af68a329c630121c16c57edbbb2e81db41d0bd95784bae24887c4785bbe32e96",
+      "citations": [
+        "planet-hypoxia"
+      ]
+    },
+    "323": {
+      "question": "Which physical fuels served these data-centre electricity estimates?",
+      "observation": "Seven historical observations retain separate United States and Chinese fuel shares for twenty twenty-four. United States gas is more than forty percent; approximate values keep their qualifiers.",
+      "interaction": "Select a fuel and compare its native percentage with the other source-listed fuels in the same region. Inspect the bound marker and period.",
+      "boundary": "Rounded components need not sum to one hundred percent, and an unreported residual is unknown. These historical shares do not locate a particular inference or establish its emissions. No forecast or normalized replacement mix is inferred.",
+      "datasetSha256": "441126d5e98790732d3e8d8b5b92605fa84c64cf3cfa0db2179007e57b88e878",
+      "citations": [
+        "iea25s"
+      ]
+    },
+    "218": {
+      "question": "How do these two disclosed model versions compare across six tasks?",
+      "observation": "Twelve selected benchmark percentages compare Gemma Four E-four-B Thinking with Gemma Three twenty-seven-B IT on six tasks. The full eighteen-row source dataset remains available in the download.",
+      "interaction": "Inspect a task pair and its source configuration. AIME uses no tools; the Tau-two record is the source average over three domains.",
+      "boundary": "These are developer-reported benchmark results. Thinking mode and model generation differ, and effective-size labels are not total-parameter measurements. The comparison does not isolate size or establish universal capability.",
+      "datasetSha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+      "citations": [
+        "gemma4-card"
+      ]
+    },
+    "214": {
+      "question": "How does robot production differ from shipments in this source?",
+      "observation": "Japan production is one hundred seventy-six thousand two hundred fifteen units in twenty twenty-four and two hundred seven thousand four in twenty twenty-five. The twenty twenty-five shipment total is two hundred eleven thousand one hundred thirty-nine, comprising domestic shipments and exports.",
+      "interaction": "Inspect production on the front, then reveal the shipment face and select a component or the total. Each retains its own source measure.",
+      "boundary": "Production and shipments differ through inventory and scope timing. Domestic shipments plus exports form the shipment total; production is not another component. The figures are not counts of AI-enabled robots or a global manufacturing ranking.",
+      "datasetSha256": "7a87d41ac5bd2f097e433640824f262cd509d383539b8fdb52ad5bf6bab68710",
+      "citations": [
+        "jara25"
+      ]
+    },
+    "115-2": {
+      "question": "Which classification errors differ between wetland classes?",
+      "observation": "Eighteen observations pair producer and user accuracy for eight wetland classes plus the non-wetland background. Each retains its native percentage and source parenthetical uncertainty.",
+      "interaction": "Select a class pair to compare reference-class recovery with mapped-class reliability. Read the source parenthetical value as text.",
+      "boundary": "Non-wetland is a background class, not a ninth wetland type. Producer and user accuracy have different denominators. The source parenthetical uncertainty is preserved without assigning an unsupported confidence level or interval.",
+      "datasetSha256": "bb2fc82e339d1229d47216812888d28f3de6d6a3b83f609aebc33f4bc6339691",
+      "citations": [
+        "planet-wetland"
+      ]
+    },
+    "211-4": {
+      "question": "How do injury-involvement rates compare within these five operating areas?",
+      "observation": "Ten source estimates pair Waymo with spatially weighted human benchmarks in crashed vehicles per million vehicle-miles. Each retains its reported ninety-five-percent confidence interval on the same zero-to-seven ruler.",
+      "interaction": "Select a service-area pair and inspect both interval endpoints and observation periods. The human benchmark uses twenty twenty-two; Waymo exposure extends through June twenty twenty-six.",
+      "boundary": "The corrected October second provider CSV is the source. These observational, geographically weighted comparisons are not randomized. The source applies a thirty-two-percent human injury-underreporting correction. Repeated Waymo counts describe the same area and must not be summed across paired rows; these are not counts of injured people or claims about all roads and systems.",
+      "datasetSha256": "be61f9a7db28fc250a6bff215e24612609d90edd5bff473aa4d6287438bcee34",
+      "citations": [
+        "waymo-csv",
+        "waymo-notes",
+        "waymo26"
+      ]
+    },
+    "378": {
+      "question": "What did these recorders detect in the selected source week?",
+      "observation": "Three species each have five hundred twenty-nine source site-week records across twenty-seven Norwegian recorder sites. A filled mark means at least one automated detection. An open mark means no detection with recorded effort; missing effort and absent combinations remain unknown.",
+      "interaction": "Choose a species and week, then select a source observation to read its recording-effort fraction. The effort ring measures recording time, separately from binary detection.",
+      "boundary": "Public coordinates were randomized by up to zero point zero one degrees in the source. They are not exact recorder locations. Automated detections are not individual bird counts; non-detection does not prove absence, and no migration path is inferred.",
+      "datasetSha256": "0bb91ffa890a27c9558f314463677b663ff091522d6eda4f47e6dfc476a8eabf",
+      "citations": [
+        "planet-bird-archive",
+        "planet-bird-study"
+      ]
+    },
+    "375": {
+      "question": "Where did inventors appear in this selected patent-family ranking?",
+      "observation": "Five country summaries retain source counts of simple patent families for twenty fourteen through twenty twenty-three. Equal-width stems use one zero-to-forty-thousand ruler.",
+      "interaction": "Select a source-listed inventor location and inspect its family count and rank. The anchor is inside its country polygon solely to display the country summary.",
+      "boundary": "These are inventor locations, not filing offices, ownership, research-site coordinates or patent quality. The five records do not form a uniquely owned global total, and unlisted countries have no inferred value.",
+      "datasetSha256": "f29ee04a278ffbdd9312c4515bf52ea90f54d4a32927038eee687f98831b3a88",
+      "citations": [
+        "wipo-genai-2024"
+      ]
+    },
+    "247": {
+      "question": "Which countries were named in this programme at launch?",
+      "observation": "Fourteen named partner countries receive the same outline treatment. Programme membership is a category, so no outline is taller or more intense because of funding or population.",
+      "interaction": "Select a country outline and read the programme-membership statement and primary-source locator.",
+      "boundary": "Membership is recorded at the June twentieth, twenty twenty-five launch. It does not establish funds received, completed deployments or local capacity gained. Unlisted countries are outside this source selection, not measured as having no AI activity.",
+      "datasetSha256": "e6b13e0515d733bf9495cde5c585242fdcb51db2e85f1308a3c29bc22ac4c161",
+      "citations": [
+        "undp-hub-2025"
+      ]
+    },
+    "78-4": {
+      "question": "How does the map change when Internet use is shown as people or as a percentage?",
+      "observation": "The source contains two hundred seventeen reporting economies for twenty twenty-four. One hundred eighty-two have both population and Internet-use percentage for the derived count; thirty-five derived counts are missing.",
+      "interaction": "Switch between estimated people and the source Internet-use percentage. Count disks use area, while percentage mode uses a fixed colour scale. Inspect each row\u2019s original inputs and available map coverage.",
+      "boundary": "The derived count is population multiplied by the same-year share, not observed individuals or AI users. A missing input remains unknown, and unsupported boundary joins remain in the table. Country display anchors do not show local density; covered populations do not constitute a complete world total.",
+      "datasetSha256": "36f0f24a3a21541d98cb2e9f63eacbda19c7bfdd7cda50cc780bc75a8c7b4655",
+      "citations": [
+        "wdi-internet",
+        "wdi-population"
+      ]
+    },
+    "394": {
+      "question": "How do Irish metered data-centre demand and later connection policy relate in these records?",
+      "observation": "Eleven annual observations show metered electricity in gigawatt-hours per year, from twenty fifteen through twenty twenty-five. Three separate cards preserve dated twenty twenty-six connection conditions.",
+      "interaction": "Inspect an annual rib on its zero-to-eight-thousand ruler, then reveal the policy panel. Read the meter-series and policy source dates separately.",
+      "boundary": "The history is not AI-only and does not measure proposed capacity, queue length or waiting time. Policy conditions do not extend the measured time series or establish a causal explanation for it; this is a dated policy snapshot, not a current eligibility determination.",
+      "datasetSha256": "041ea80469e7e946590b1911e2ea15e7f5845d4b0d86a98c7f6c87332e59184d",
+      "citations": [
+        "cso25",
+        "eirgrid26"
+      ]
+    },
+    "217": {
+      "question": "What can per-prompt efficiency and aggregate electricity growth tell us separately?",
+      "observation": "One source reports a thirty-three-fold reduction in energy per median text prompt. Separate global context records report seventeen-percent data-centre electricity growth, fifty-percent AI-focused growth, and four hundred eighty-five terawatt-hours of total data-centre electricity in twenty twenty-five.",
+      "interaction": "Select a panel and read its own unit, population and source period. The complete download retains both datasets, while the inference panel selects only the documented efficiency-change row.",
+      "boundary": "The statements have different measurement boundaries and denominators. They cannot be multiplied, cancelled, stacked or subtracted to estimate rebound. Company-reported per-prompt efficiency does not establish global AI electricity use or a universal inference cost.",
+      "datasetSha256": "c3ac83112023e6510da3f228425321b05b4c255ee96e93ef0b84c42a0282dffc",
+      "citations": [
+        "google-inference",
+        "iea26"
+      ]
+    },
+    "56-5": {
+      "question": "How does a national metered share differ from global electricity context?",
+      "observation": "Eleven equal dated rings retain Ireland\u2019s data-centre share of national metered electricity, reaching twenty-three percent in twenty twenty-five. Detached global cards retain four hundred eighty-five terawatt-hours, seventeen-percent data-centre growth and fifty-percent AI-focused growth.",
+      "interaction": "Select a dated ring and inspect both its national percentage and underlying gigawatt-hour source value. Read the separate global cards with their own units and source.",
+      "boundary": "Ireland\u2019s share cannot allocate world or AI electricity demand. Growth percentages are not market shares, and data-centre demand includes non-AI workloads. The two source datasets remain separate in the tables and complete download.",
+      "datasetSha256": "68ed62d71f6f3fd001e63ecd501be9f427285eab1ba8e9e4f560b4c769c09f9d",
+      "citations": [
+        "iea26",
+        "cso25"
+      ]
+    },
+    "390": {
+      "question": "What do generation and formal collection records reveal about electronic waste?",
+      "observation": "Two dated panels compare generated and formally collected or recycled waste in billions of kilograms. Separate context records retain cross-border waste and small IT waste in millions of tonnes, plus the collection percentage for the small IT category.",
+      "interaction": "Compare generation and collection within the same dated scale, then inspect the three context facets and their native units.",
+      "boundary": "These quantities do not form one additive hierarchy. The records cover electrical and electronic waste, not solely AI hardware. Cross-border mass does not supply bilateral routes, and the small IT collection percentage has its own category denominator.",
+      "datasetSha256": "a2f38d5c093ada4ef3d77c70a2c23d10c2e868d9f40f3569e861cbb5754cc5fb",
+      "citations": [
+        "planet-ewaste",
+        "planet-ewaste-release"
+      ]
+    },
+    "325": {
+      "question": "What did this shuttle pilot report about uptake and feedback?",
+      "observation": "The pilot reported more than eleven thousand five hundred unique riders. A separate record reports ninety-nine percent of selected post-ride respondents, from around nine hundred responses, felt safe and would recommend it. Routing requests form a qualitative third panel.",
+      "interaction": "Inspect the open rider threshold, then the feedback ring and its approximate sample caption. Read route requests separately.",
+      "boundary": "Unique riders are not rides or people proven to have gained access. Selected feedback is not a safety rate or a population survey. These records do not establish causal accessibility improvement, disability outcomes or a reason to replace public transit.",
+      "datasetSha256": "a5c708eb4941e51de2acda2e95e3f0a0d26d1b854dbc3447432adea1d424077d",
+      "citations": [
+        "lta-jul"
+      ]
+    },
+    "266-2": {
+      "question": "Which manufacturing milestones and revenue measure are actually disclosed?",
+      "observation": "Four equal location-name panels preserve dated manufacturing statements for Taiwan, Arizona, Kumamoto and Dresden. A detached global company ring shows seventy-four percent of wafer revenue from seven-nanometre and smaller nodes.",
+      "interaction": "Inspect each milestone and its date, then select the separate worldwide revenue ring.",
+      "boundary": "Revenue share is not Taiwan production share or a capacity map. Construction, planned fabs and volume-production milestones remain distinct. These disclosures do not isolate AI-specific wafers, packaging volumes or national market share.",
+      "datasetSha256": "b4bb5a4b57428cd397676cd750ac70c1e02ac8d0f70dd0579ca41b549e590ef3",
+      "citations": [
+        "tsmc25"
+      ]
+    },
+    "8-17": {
+      "question": "What did the ECG-alert trial report about ninety-day mortality?",
+      "observation": "The two trial arms report three point six and four point three percent all-cause mortality within ninety days, with randomized samples of eight thousand one and seven thousand nine hundred sixty-four. A separate rail retains the hazard ratio of zero point eight three and its ninety-five-percent confidence interval from zero point seven zero to zero point nine nine.",
+      "interaction": "Compare the two risk gauges on their shared zero-to-five-percent ruler. Then inspect the hazard-ratio rail and its marked null value of one.",
+      "boundary": "The trial involved two Taiwan hospitals. Rounded risk percentages do not provide exact death counts. A hazard ratio is neither an absolute percentage-point difference nor a life-expectancy gain, and it must remain separate from the risk scale.",
+      "datasetSha256": "b0b1fc7df7293a56d61ddaf4a8b02a661febda6a4386bbf8f7d01214f56b3318",
+      "citations": [
+        "planet-ecg",
+        "planet-ecg-economic"
+      ]
+    },
+    "30-8": {
+      "question": "Which footprint boundaries do these four disclosures describe?",
+      "observation": "Four equal facets retain accumulated lifecycle carbon and water alongside marginal impacts for a four-hundred-token response. Each prints its own native unit and denominator; no shared height compares their magnitudes.",
+      "interaction": "Inspect the lifecycle side, then the marginal-response side, reading the boundary and reporting period with each value.",
+      "boundary": "The source does not provide a training-to-inference ratio or a compatible time series. Marginal response estimates exclude user terminals; water volume is not local water stress. Comparisons with other models require compatible response length, hardware, electricity and measurement boundaries.",
+      "datasetSha256": "b32efbe19a838c80d6f1274aeee14d65fac7e770c7e014dffe794fb6d1e27831",
+      "citations": [
+        "mistral-lca"
+      ]
+    },
+    "111-3": {
+      "question": "What is measured water use, and what is an infrastructure statement?",
+      "observation": "Two Oregon records retain company-reported totals of approximately two hundred eighty-four million U.S. gallons in twenty twenty-four and two hundred forty-two million in twenty twenty-five. Three separate facets describe documented infrastructure dependencies.",
+      "interaction": "Compare the annual water bars on their shared native ruler, then inspect each infrastructure statement and its date.",
+      "boundary": "The annual totals include multiple water sources and cannot all be assigned to a proposed Columbia River intake. Future project capacity is not current withdrawal. No river flow, catchment balance, drinking-water deprivation or ecosystem effect is measured here.",
+      "datasetSha256": "d7de70dc9380c1fe20a2fedb53b00945d60c94357588da534b3336595f608f5b",
+      "citations": [
+        "amazon-oregon",
+        "google-belgium"
+      ]
+    },
+    "365": {
+      "question": "How are expert quality ratings distributed in these wine benchmark samples?",
+      "observation": "Twenty-two bins preserve scores zero through ten for red and white wine separately. The source contains one thousand five hundred ninety-nine red samples and four thousand eight hundred ninety-eight white samples, including explicit zero-frequency bins.",
+      "interaction": "Switch between sample count and share within each wine type. Inspect a score pair and its own denominator; the count ruler stays zero to two thousand five hundred.",
+      "boundary": "These are historical northern Portuguese Vinho Verde benchmark samples released in two thousand nine, not a current wine census. Expert sensory ratings are not consumer preference or model performance, and the two wine types must not share a combined denominator.",
+      "datasetSha256": "2457a08fd117d3efe72f592fa1362e092602a503af66b45ffe51592edcfa193d",
+      "citations": [
+        "planet-wine"
+      ]
+    },
+    "156-8": {
+      "question": "How often did surveyed platform workers report clients across borders?",
+      "observation": "The primary report gives a rounded fifty-three percent of surveyed workers with clients outside their country. The separate ninety-percent figure for clients outside Latin America and the Caribbean uses respondents who know client location as its denominator.",
+      "interaction": "Inspect the two independent percentage panels and their denominator labels. The rounded fifty-three-percent figure has no strict lower-bound arrow.",
+      "boundary": "The denominators differ and the percentages cannot be multiplied without microdata. These survey records are not a complete trade matrix, transaction value or measure of AI-attributable work. The displayed correction requires its separate reviewed design and runtime provenance.",
+      "datasetSha256": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3",
+      "citations": [
+        "ilo-lac-platform-2025"
+      ]
+    },
+    "74": {
+      "question": "Does the ordering of these two models change with the benchmark?",
+      "observation": "Gemma Four E-two-B Thinking scores sixty point zero against Gemma Three twenty-seven-B IT at sixty-seven point six on MMLU Pro. On AIME twenty twenty-six, the corresponding scores are thirty-seven point five and twenty point eight.",
+      "interaction": "Inspect the two task rails and their four exact score markers. Constant-width ribbons connect the same model across tasks, revealing the change in ordering without measuring a flow.",
+      "boundary": "These developer-reported tasks use their stated configurations; AIME uses no tools. The comparison does not establish a universal winner, isolate model size or interpolate performance between tasks. A separately reviewed selection correction preserves the source\u2019s exact AIME label and four row identities.",
+      "datasetSha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+      "citations": [
+        "gemma4-card"
+      ]
+    }
+  }
+}

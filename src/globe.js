@@ -27,8 +27,9 @@ export class Globe {
     this.hero = hero;
     this.cleanup = [];
     this.disposed = false;
-    this.paused = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    this.reduced = this.paused;
+    const media = matchMedia("(prefers-reduced-motion: reduce)");
+    this.reduced = media.matches;
+    this.paused = this.reduced || document.hidden;
     this.visible = true;
     this.moved = 0;
     this.vel = { x: 0, y: 0 };
@@ -37,15 +38,18 @@ export class Globe {
     this.markers = [];
     this.time = 0;
     this.last = 0;
+    this.raf = 0;
+    this.dirty = true;
+    try {
     this.renderer = new THREE.WebGLRenderer({
       alpha: true,
       antialias: true,
       powerPreference: "low-power",
     });
+    this.canvas = this.renderer.domElement;
     this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.8));
     this.renderer.setClearColor(0x000000, 0);
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
-    this.canvas = this.renderer.domElement;
     this.canvas.className = "globe-canvas";
     this.canvas.tabIndex = hero ? -1 : 0;
     this.canvas.setAttribute(
@@ -109,16 +113,17 @@ export class Globe {
     this.observer.observe(host);
     this.io = new IntersectionObserver(([e]) => {
       this.visible = e.isIntersecting;
-      if (this.visible) this.wake();
+      if (!this.visible) this.pause(true);
+      else this.wake();
     });
     this.io.observe(host);
     this.listen(document, "visibilitychange", () => {
-      if (!document.hidden) this.wake();
+      if (document.hidden) this.pause(true);
+      else this.wake();
     });
-    const media = matchMedia("(prefers-reduced-motion: reduce)");
     this.mediaListener = (e) => {
       this.reduced = e.matches;
-      this.pause(e.matches);
+      if (e.matches) this.pause(true);
     };
     media.addEventListener("change", this.mediaListener);
     this.cleanup.push(() =>
@@ -126,8 +131,8 @@ export class Globe {
     );
     this.listen(this.canvas, "webglcontextlost", (e) => {
       e.preventDefault();
-      this.paused = true;
-      this.onMotion(true);
+      this.contextLost = true;
+      this.pause(true);
       host.classList.add("context-lost");
       host.dispatchEvent(
         new CustomEvent("globe-error", {
@@ -140,6 +145,10 @@ export class Globe {
     this.resize();
     this.wake();
     this.onMotion(this.paused);
+    } catch (error) {
+      this.dispose();
+      throw error;
+    }
   }
   listen(el, event, fn, opts) {
     el.addEventListener(event, fn, opts);
@@ -391,7 +400,7 @@ export class Globe {
       const x = ((m.chartLat ?? m.point.lat) * Math.PI) / 180,
         y = (-(m.chartLon ?? m.point.lon) * Math.PI) / 180;
       this.target = { x, y };
-      if (this.reduced) {
+      if (this.reduced || this.paused) {
         this.world.rotation.set(x, y, 0);
         this.target = null;
       }
@@ -411,6 +420,7 @@ export class Globe {
     this.rotate(0, Math.PI);
   }
   zoom(delta) {
+    this.stopRotation();
     this.camera.position.z = clamp(
       this.camera.position.z + delta,
       2.55,
@@ -420,41 +430,56 @@ export class Globe {
     this.wake();
   }
   reset() {
+    this.stopRotation();
     this.world.rotation.set(this.startRotation.x, this.startRotation.y, 0);
     this.camera.position.z = this.baseDistance;
     this.target = null;
-    this.rotationStopped = false;
+    this.rotationStopped = true;
     this.vel = { x: 0, y: 0 };
     this.dirty = true;
     this.wake();
   }
   stopRotation() {
     this.rotationStopped = true;
-    this.vel = {x: 0, y: 0};
-    this.dirty = true;
-    this.wake();
+    this.pause(true);
   }
   pause(value) {
-    this.paused = value;
-    if (!value) this.rotationStopped = false;
-    if (value) this.vel = { x: 0, y: 0 };
-    this.onMotion(value);
+    if (this.disposed) return;
+    this.paused = Boolean(value) || this.reduced || document.hidden || !this.visible || Boolean(this.contextLost);
+    if (!this.paused) this.rotationStopped = false;
+    this.last = 0;
+    if (this.paused) {
+      this.vel = { x: 0, y: 0 };
+      // Preserve an already chosen row's destination, without a paused fly-to.
+      if (this.target) {
+        this.world.rotation.set(this.target.x, this.target.y, 0);
+        this.target = null;
+      }
+      if (this.raf) cancelAnimationFrame(this.raf);
+      this.raf = 0;
+    }
+    this.onMotion(this.paused);
     this.dirty = true;
     this.wake();
   }
   wake() {
-    if (this.disposed || this.raf || !this.visible || document.hidden) return;
+    if (this.disposed || this.raf || !this.visible || document.hidden || this.contextLost ||
+      (this.paused && !this.dirty)) return;
     this.raf = requestAnimationFrame((t) => this.frame(t));
   }
   frame(t) {
     this.raf = 0;
-    if (this.disposed || !this.visible || document.hidden) return;
+    if (this.disposed || this.contextLost) return;
+    if (!this.visible || document.hidden || (this.reduced && !this.paused)) {
+      this.pause(true);
+      return;
+    }
     const dt = Math.min((t - (this.last || t)) / 1000, 0.05);
     this.last = t;
     if (!this.paused) { this.time += dt; this.updateEffects(this.time); }
     let animate = !this.paused;
     if (!this.paused && !this.dragging && !this.rotationStopped) this.world.rotation.y += dt * 0.055;
-    if (this.target) {
+    if (!this.paused && this.target) {
       let dy =
         (this.target.y - this.world.rotation.y + Math.PI) % (Math.PI * 2);
       if (dy < 0) dy += Math.PI * 2;
@@ -468,31 +493,49 @@ export class Globe {
         this.target = null;
       animate = true;
     }
-    if (this.dirty || animate || this.dragging) {
+    if (this.dirty || animate) {
       this.renderer.render(this.scene, this.camera);
       this.dirty = false;
     }
-    if (animate || this.dragging) this.wake();
+    if (animate) this.wake();
   }
   dispose() {
+    if (this.disposed) return;
     this.disposed = true;
-    cancelAnimationFrame(this.raf);
-    this.observer.disconnect();
-    this.io.disconnect();
+    if (this.raf) cancelAnimationFrame(this.raf);
+    this.raf = 0;
+    this.observer?.disconnect();
+    this.io?.disconnect();
     this.cleanup.forEach((fn) => fn());
+    for (const pointerId of this.pointers.keys()) {
+      if (this.canvas?.hasPointerCapture?.(pointerId))
+        this.canvas.releasePointerCapture(pointerId);
+    }
+    this.pointers.clear();
+    this.dragging = false;
+    this.target = null;
     const materials = new Set(),
-      geometries = new Set();
-    this.scene.traverse((o) => {
+      geometries = new Set(), textures = new Set(), instances = new Set();
+    this.scene?.traverse((o) => {
       if (o.geometry) geometries.add(o.geometry);
+      if (o.isInstancedMesh) instances.add(o);
       if (o.material)
         (Array.isArray(o.material) ? o.material : [o.material]).forEach((m) =>
           materials.add(m),
         );
     });
+    materials.forEach((material) => {
+      Object.values(material).forEach(value => { if (value?.isTexture) textures.add(value); });
+      Object.values(material.uniforms || {}).forEach(uniform => {
+        if (uniform.value?.isTexture) textures.add(uniform.value);
+      });
+    });
     geometries.forEach((g) => g.dispose());
     materials.forEach((m) => m.dispose());
-    this.renderer.dispose();
-    this.renderer.forceContextLoss();
-    this.canvas.remove();
+    textures.forEach(texture => texture.dispose());
+    instances.forEach(instance => instance.dispose());
+    this.renderer?.dispose();
+    this.renderer?.forceContextLoss();
+    this.canvas?.remove();
   }
 }

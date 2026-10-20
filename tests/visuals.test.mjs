@@ -29,8 +29,8 @@ test('extrapolations use dates, absolute change, scope and physical bounds',()=>
  assert.equal(outlookFor(data.find(d=>d.id==='languages')).projected,null);
  assert.equal(data.filter(d=>d.brief.timeline?.projection).length,8);
 });
-test('every globe has a concise, escaped information overlay; concepts never acquire scores',()=>{
- for(const e of registry.entries){
+test('legacy worlds have concise escaped information overlays; concepts never acquire scores',()=>{
+ for(const e of registry.entries.filter(e=>!e.research)){
   const html=informationHTML(e);
   assert.ok(!html.includes('undefined')&&!html.includes('NaN'),e.slug);
   assert.equal((html.match(/class="time-card/g)||[]).length,3,e.slug);
@@ -59,7 +59,7 @@ test('14 sourced stories own 14 distinct animation systems with bounded finite g
  for(const d of data){const empty=createEffect(d.visual.effect,0,'#ffffff');assert.equal(empty.group.children.length,0);empty.update(10);}
 });
 test('all concept sculptures construct without fabricating measured marker values',()=>{
- for(const entry of registry.entries.filter(e=>!e.dataset)){
+ for(const entry of registry.entries.filter(e=>!e.dataset&&!e.research)){
   const stub={entry,world:new THREE.Group(),markers:[],color:new THREE.Color(entry.color)};
   const update=addConceptEffects(stub);update(1);assert.ok(stub.world.children.length>0);assert.equal(stub.markers.length,0);
  }

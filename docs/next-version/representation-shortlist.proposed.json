@@ -1,0 +1,992 @@
+{
+  "schemaVersion": 1,
+  "proposalDate": "2026-10-19",
+  "status": "new representation proposal, separate from frozen accepted specifications",
+  "baselineDesignRegistrySha256": "22a88fbd83d1d20b32bcfcfae64e1f02c561a0c3475d5a52852800535f358faa",
+  "baselineAcceptedCount": 73,
+  "shortlistCount": 24,
+  "familyIds": [
+    "earth",
+    "moon-pair",
+    "planet",
+    "star-instrument",
+    "cell",
+    "organ-frame",
+    "relational-atom",
+    "state-sphere",
+    "constellation"
+  ],
+  "literalQubitRenderer": {
+    "status": "held",
+    "acceptedDatasetIds": [],
+    "reason": "None of the 73 accepted datasets provides a compatible quantum state; ordinary benchmark scores must not become Bloch coordinates."
+  },
+  "catalogueConstellation": {
+    "status": "optional-navigation-proposal",
+    "semanticMode": "editorial layout",
+    "sourceKey": "full sourceId",
+    "distanceMeaning": "none",
+    "webglContextsMax": 1,
+    "visibleProxiesMax": 24,
+    "audio": "silent"
+  },
+  "layers": [
+    "evidence",
+    "encoding",
+    "shell",
+    "ambient-frame",
+    "audio-identity"
+  ],
+  "mappings": [
+    {
+      "sourceId": "408",
+      "designId": "design-408",
+      "proposalId": "aw.representation.v2.wp.408",
+      "proposedTitle": "Night-side Earth",
+      "familyId": "earth",
+      "semanticMode": "actual-geography",
+      "persistentLabel": "geographic-observations",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "context-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-408",
+      "acceptedClaim": "Country basic electricity access provides a prerequisite map, not reliable-AI-access measurement.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent of population"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "society-electricity-access",
+          "sha256": "b1648fb3836c873a1d1cbeb303c209d2704b599eddbd98d26d0ceca79c66bce4",
+          "includedRowCount": 217,
+          "rowSelectionRef": "design-408.datasetBindings.society-electricity-access"
+        }
+      ],
+      "ambientRecipeRef": "outer-gimbal",
+      "soundscapeId": "aw:world:408:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "408",
+      "proposedSoundRecipeId": "hollow-tide",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "378",
+      "designId": "design-378",
+      "proposalId": "aw.representation.v2.wp.378",
+      "proposedTitle": "Listening Earth",
+      "familyId": "earth",
+      "semanticMode": "approximate-source-coordinates",
+      "persistentLabel": "geographic-observations",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "direct-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-378",
+      "acceptedClaim": "A public 2026 study archive supports site-week acoustic detections and recorder gaps for three migratory species in Norway in 2022.",
+      "nativeScale": {
+        "type": "categorical-with-separate-effort",
+        "domain": [
+          0,
+          1,
+          null
+        ],
+        "units": {
+          "value": "binary acoustic detection",
+          "uptimeFraction": "fraction of source week with recording effort"
+        }
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-bird-weekly-detections",
+          "sha256": "0bb91ffa890a27c9558f314463677b663ff091522d6eda4f47e6dfc476a8eabf",
+          "includedRowCount": 1587,
+          "rowSelectionRef": "design-378.datasetBindings.planet-bird-weekly-detections"
+        }
+      ],
+      "ambientRecipeRef": "outer-gimbal",
+      "soundscapeId": "aw:world:378:sound:v1",
+      "evolutionMode": "source-indexed-study",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "378",
+      "proposedSoundRecipeId": "hollow-tide",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "170-3",
+      "designId": "design-170-3",
+      "proposalId": "aw.representation.v2.wp.170-3",
+      "proposedTitle": "Twin discovery planets",
+      "familyId": "planet",
+      "semanticMode": "subject-appropriate-abstract",
+      "persistentLabel": "celestial-cases-not-to-scale",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "direct-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-170-3",
+      "acceptedClaim": "NASA documents Kepler-90i and Kepler-80g as ML-assisted discoveries; both are present in the current confirmed-planet archive.",
+      "nativeScale": {
+        "type": "categorical",
+        "domain": [
+          "confirmed ML-assisted discovery"
+        ],
+        "unit": "named confirmed discovery case"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-ai-planets",
+          "sha256": "9ad0b2e35acc81c08d77e746dae5470a8630cc92f07ef8087ee4daa066a4e81a",
+          "includedRowCount": 2,
+          "rowSelectionRef": "design-170-3.datasetBindings.planet-ai-planets"
+        }
+      ],
+      "ambientRecipeRef": "cage-precession",
+      "soundscapeId": "aw:world:170-3:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "170-3",
+      "proposedSoundRecipeId": "glass-air",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "5-6",
+      "designId": "design-5-6",
+      "proposalId": "aw.representation.v2.wp.5-6",
+      "proposedTitle": "Survey moons",
+      "familyId": "moon-pair",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-5-6",
+      "acceptedClaim": "Modern-standard mapped coverage rose from 27.3% in the 2025 release to 28.7% in 2026; this does not quantify AI’s contribution.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent of global ocean floor"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-seabed-coverage",
+          "sha256": "bd8d9e60a92d9bce53fa889efd3c6218bb0efb6b602b61bfb25ee4740e3df4d2",
+          "includedRowCount": 2,
+          "rowSelectionRef": "design-5-6.datasetBindings.planet-seabed-coverage"
+        }
+      ],
+      "ambientRecipeRef": "reference-ring-trace",
+      "soundscapeId": "aw:world:5-6:sound:v1",
+      "evolutionMode": "sparse-observations",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "5-6",
+      "proposedSoundRecipeId": "hollow-tide",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "63",
+      "designId": "design-63",
+      "proposalId": "aw.representation.v2.wp.63",
+      "proposedTitle": "Unequal-connection moons",
+      "familyId": "moon-pair",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "context-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-63",
+      "acceptedClaim": "Global Internet use differs substantially between urban and rural populations.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent of residents"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "society-rural-internet",
+          "sha256": "eaa1ecd9bc5fe0c622886ec4575097bd0b9b62999d6be0961cfc9c9cb7066c57",
+          "includedRowCount": 2,
+          "rowSelectionRef": "design-63.datasetBindings.society-rural-internet"
+        }
+      ],
+      "ambientRecipeRef": "reference-ring-trace",
+      "soundscapeId": "aw:world:63:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "63",
+      "proposedSoundRecipeId": "warm-orbit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "422-2",
+      "designId": "design-422-2",
+      "proposalId": "aw.representation.v2.wp.422-2",
+      "proposedTitle": "Exposure moons with inner rails",
+      "familyId": "moon-pair",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-422-2",
+      "acceptedClaim": "Female-dominated occupations have higher potential GenAI exposure in the 2026 ILO analysis.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent of occupations"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "society-gender-exposure",
+          "sha256": "62af6d20aef93ba49214b6621056070d9bcd3a3e9038598eb6419f38019fb5a7",
+          "includedRowCount": 4,
+          "rowSelectionRef": "design-422-2.datasetBindings.society-gender-exposure"
+        }
+      ],
+      "ambientRecipeRef": "paired-outline-scan",
+      "soundscapeId": "aw:world:422-2:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "422-2",
+      "proposedSoundRecipeId": "warm-orbit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "430",
+      "designId": "design-430",
+      "proposalId": "aw.representation.v2.wp.430",
+      "proposedTitle": "Carbon lantern",
+      "familyId": "star-instrument",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-430",
+      "acceptedClaim": "Annual2025 grid factors across44 GoogleCloud regions; no hourly AI-task footprint.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          700
+        ],
+        "unit": "g CO2eq/kWh"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "physical-cloud-grid-carbon",
+          "sha256": "1878fd571972c43918ef24a11e2ccee053f772dc68ece9f2afacb728d14922e1",
+          "includedRowCount": 44,
+          "rowSelectionRef": "design-430.datasetBindings.physical-cloud-grid-carbon"
+        }
+      ],
+      "ambientRecipeRef": "outer-gimbal",
+      "soundscapeId": "aw:world:430:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "430",
+      "proposedSoundRecipeId": "woven-circuit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "117",
+      "designId": "design-117",
+      "proposalId": "aw.representation.v2.wp.117",
+      "proposedTitle": "Compute corona",
+      "familyId": "star-instrument",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-117",
+      "acceptedClaim": "Twenty qualifying records in the frozen Epoch extract span 2024–2026; their organization affiliation is not a map of physical training sites.",
+      "nativeScale": {
+        "type": "log10-position",
+        "domain": [
+          1e+25,
+          1e+27
+        ],
+        "unit": "estimated training FLOP",
+        "ticks": [
+          1e+25,
+          1e+26,
+          1e+27
+        ]
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "governance-large-training",
+          "sha256": "831895eb4f8d22d6dc30f513f0d4dc118573744c2c862d7334d2e3afe8334ae6",
+          "includedRowCount": 20,
+          "rowSelectionRef": "design-117.datasetBindings.governance-large-training"
+        }
+      ],
+      "ambientRecipeRef": "outer-gimbal",
+      "soundscapeId": "aw:world:117:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "117",
+      "proposedSoundRecipeId": "glass-air",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "284",
+      "designId": "design-284",
+      "proposalId": "aw.representation.v2.wp.284",
+      "proposedTitle": "Applicant star",
+      "familyId": "star-instrument",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-284",
+      "acceptedClaim": "Named applicants have markedly different GenAI patent-family counts.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          2500
+        ],
+        "unit": "simple patent families"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "society-patent-applicants",
+          "sha256": "3e79239c6f8254236f6c7fee77c5825132dee03a48ecd38a02d7d437454d45f5",
+          "includedRowCount": 10,
+          "rowSelectionRef": "design-284.datasetBindings.society-patent-applicants"
+        }
+      ],
+      "ambientRecipeRef": "facet-seam-trace",
+      "soundscapeId": "aw:world:284:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "284",
+      "proposedSoundRecipeId": "warm-orbit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "138-8",
+      "designId": "design-138-8",
+      "proposalId": "aw.representation.v2.wp.138-8",
+      "proposedTitle": "Account membrane",
+      "familyId": "cell",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-138-8",
+      "acceptedClaim": "Anthropic reports malware-writing assistance in560 of832 assessed accounts and lateral-movement assistance in54; the sample cannot estimate worldwide cyberwar.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent of832vendor-classified accounts"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "governance-cyber-observed-accounts",
+          "sha256": "705504f105faed04b5a71baff09be50ec529e941b0735b88bb833e8316d16284",
+          "includedRowCount": 2,
+          "rowSelectionRef": "design-138-8.datasetBindings.governance-cyber-observed-accounts"
+        }
+      ],
+      "ambientRecipeRef": "reference-ring-trace",
+      "soundscapeId": "aw:world:138-8:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "138-8",
+      "proposedSoundRecipeId": "distant-lattice",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "232",
+      "designId": "design-232",
+      "proposalId": "aw.representation.v2.wp.232",
+      "proposedTitle": "Representation cell",
+      "familyId": "cell",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-232",
+      "acceptedClaim": "The 2026 GWAS Diversity Monitor headline remains heavily concentrated in European-labelled participant entries; it is context for model development, not a census of genomic AI training.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent of recorded participant entries"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-gwas-representation",
+          "sha256": "b1f62399ba6fdb205988961609ca5858c5bbde05bb9713c52d8cf8cbcd823e70",
+          "includedRowCount": 6,
+          "rowSelectionRef": "design-232.datasetBindings.planet-gwas-representation"
+        }
+      ],
+      "ambientRecipeRef": "reference-ring-trace",
+      "soundscapeId": "aw:world:232:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "232",
+      "proposedSoundRecipeId": "soft-chamber",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "63-8",
+      "designId": "design-63-8",
+      "proposalId": "aw.representation.v2.wp.63-8",
+      "proposedTitle": "Translation membrane",
+      "familyId": "cell",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-63-8",
+      "acceptedClaim": "The paper reports 14 professionally translated and edited versions, 11 crowdsourced versions and 16 machine-translated versions, alongside English.",
+      "nativeScale": {
+        "type": "count",
+        "domain": [
+          0,
+          42
+        ],
+        "unit": "language versions"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "governance-globalmmlu-translation",
+          "sha256": "0ccdad3caf2fcdc49b3e96f452d91a4086b3a4d6dc1d4d17cacaeb5366ef8d9f",
+          "includedRowCount": 4,
+          "rowSelectionRef": "design-63-8.datasetBindings.governance-globalmmlu-translation"
+        }
+      ],
+      "ambientRecipeRef": "facet-seam-trace",
+      "soundscapeId": "aw:world:63-8:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "63-8",
+      "proposedSoundRecipeId": "glass-air",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "115-2",
+      "designId": "design-115-2",
+      "proposalId": "aw.representation.v2.wp.115-2",
+      "proposedTitle": "Nine-compartment specimen",
+      "familyId": "cell",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-115-2",
+      "acceptedClaim": "A global random-forest wetland product recovers salt marshes, flooded flats and marshes less reliably than permanent water in its 2020 validation sample.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent, source-defined producer/user accuracy"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-wetland-class-accuracy",
+          "sha256": "bb2fc82e339d1229d47216812888d28f3de6d6a3b83f609aebc33f4bc6339691",
+          "includedRowCount": 18,
+          "rowSelectionRef": "design-115-2.datasetBindings.planet-wetland-class-accuracy"
+        }
+      ],
+      "ambientRecipeRef": "paired-outline-scan",
+      "soundscapeId": "aw:world:115-2:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "115-2",
+      "proposedSoundRecipeId": "soft-chamber",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "8-17",
+      "designId": "design-8-17",
+      "proposalId": "aw.representation.v2.wp.8-17",
+      "proposedTitle": "Heart-study frame",
+      "familyId": "organ-frame",
+      "semanticMode": "subject-appropriate-abstract",
+      "persistentLabel": "clinical-study-frame",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "direct-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-8-17",
+      "acceptedClaim": "One Taiwan randomized trial reported 90-day mortality of 3.6% with an AI-alert workflow versus 4.3% with usual care; hazard ratio 0.83, 95% CI 0.70–0.99.",
+      "nativeScale": {
+        "type": "panel-specific",
+        "domains": {
+          "mortality": [
+            0,
+            5
+          ],
+          "hazardRatio": [
+            0,
+            1.2
+          ]
+        },
+        "units": {
+          "mortality": "percent all-cause mortality within90days",
+          "hazardRatio": "hazard ratio"
+        }
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-ecg-mortality-trial",
+          "sha256": "b0b1fc7df7293a56d61ddaf4a8b02a661febda6a4386bbf8f7d01214f56b3318",
+          "includedRowCount": 3,
+          "rowSelectionRef": "design-8-17.datasetBindings.planet-ecg-mortality-trial"
+        }
+      ],
+      "ambientRecipeRef": "tangent-bracket",
+      "soundscapeId": "aw:world:8-17:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "8-17",
+      "proposedSoundRecipeId": "soft-chamber",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "8-6",
+      "designId": "design-8-6",
+      "proposalId": "aw.representation.v2.wp.8-6",
+      "proposedTitle": "Eye-study frame",
+      "familyId": "organ-frame",
+      "semanticMode": "subject-appropriate-abstract",
+      "persistentLabel": "clinical-study-frame",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-8-6",
+      "acceptedClaim": "A two-site randomized trial found higher diabetic eye-exam completion with point-of-care autonomous AI; this measures access, not improved vision.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "percent completing eye exam"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-access-screening-trial",
+          "sha256": "410af3cb6635331df5257b335ed984813b6a5547563895671ffa0058d99896c1",
+          "includedRowCount": 2,
+          "rowSelectionRef": "design-8-6.datasetBindings.planet-access-screening-trial"
+        }
+      ],
+      "ambientRecipeRef": "reference-ring-trace",
+      "soundscapeId": "aw:world:8-6:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "8-6",
+      "proposedSoundRecipeId": "soft-chamber",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "155-17",
+      "designId": "design-155-17",
+      "proposalId": "aw.representation.v2.wp.155-17",
+      "proposedTitle": "Partnership atom",
+      "familyId": "relational-atom",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-documented-network",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-155-17",
+      "acceptedClaim": "Three studied cloud–model developer links reveal documented organisational interdependence.",
+      "nativeScale": {
+        "type": "categorical",
+        "domain": [
+          "studied partnership"
+        ],
+        "unit": "documented organisational relationship"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "society-platform-partnerships",
+          "sha256": "eb1343ea747bfb52f1113477ea07f8b33dc0b6c055e810fb8559a3ab4e917d14",
+          "includedRowCount": 3,
+          "rowSelectionRef": "design-155-17.datasetBindings.society-platform-partnerships"
+        }
+      ],
+      "ambientRecipeRef": "cage-precession",
+      "soundscapeId": "aw:world:155-17:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "155-17",
+      "proposedSoundRecipeId": "woven-circuit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "305",
+      "designId": "design-305",
+      "proposalId": "aw.representation.v2.wp.305",
+      "proposedTitle": "Three-part assembly atom",
+      "familyId": "relational-atom",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-role-assembly",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "context-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-305",
+      "acceptedClaim": "Three country roles in one documented semiconductor-equipment network.",
+      "nativeScale": {
+        "type": "categorical",
+        "domain": "documented supplier roles",
+        "unit": "engineering role"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "physical-euv-dependencies",
+          "sha256": "fdc38112c680ced459d942333c6ed32bdc9c89a2d8c6bb19830e7b8228a6d88a",
+          "includedRowCount": 3,
+          "rowSelectionRef": "design-305.datasetBindings.physical-euv-dependencies"
+        }
+      ],
+      "ambientRecipeRef": "cage-precession",
+      "soundscapeId": "aw:world:305:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "305",
+      "proposedSoundRecipeId": "woven-circuit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "74",
+      "designId": "design-74",
+      "proposalId": "aw.representation.v2.wp.74",
+      "proposedTitle": "Comparison state sphere",
+      "familyId": "state-sphere",
+      "semanticMode": "experimental-abstract-not-qubit",
+      "persistentLabel": "classical-benchmark-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-74",
+      "acceptedClaim": "The pair reverses order: E2B scores 60.0 versus 67.6 on MMLU Pro but 37.5 versus 20.8 on AIME 2026.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          100
+        ],
+        "unit": "developer-reported benchmark percent"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "governance-gemma-task-comparison",
+          "sha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+          "includedRowCount": 2,
+          "rowSelectionRef": "design-74.datasetBindings.governance-gemma-task-comparison"
+        }
+      ],
+      "ambientRecipeRef": "cage-precession",
+      "soundscapeId": "aw:world:74:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "74",
+      "proposedSoundRecipeId": "glass-air",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "417",
+      "designId": "design-417",
+      "proposalId": "aw.representation.v2.wp.417",
+      "proposedTitle": "Consortium constellation",
+      "familyId": "constellation",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-documented-membership",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-417",
+      "acceptedClaim": "Seven named consortia were selected; membership is documented, while selection does not establish delivered computing capacity.",
+      "nativeScale": {
+        "type": "categorical",
+        "domain": [
+          "selected"
+        ],
+        "unit": "selection status"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "governance-eurohpc-cooperation",
+          "sha256": "632a9dc118e1d8d327e214f0cbed00639a50a01c1049715e29755402fe81b331",
+          "includedRowCount": 7,
+          "rowSelectionRef": "design-417.datasetBindings.governance-eurohpc-cooperation"
+        }
+      ],
+      "ambientRecipeRef": "cage-precession",
+      "soundscapeId": "aw:world:417:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "417",
+      "proposedSoundRecipeId": "distant-lattice",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "348",
+      "designId": "design-348",
+      "proposalId": "aw.representation.v2.wp.348",
+      "proposedTitle": "Five-world science observatory",
+      "familyId": "constellation",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-separate-measures",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-348",
+      "acceptedClaim": "One 2026 observational study links AI-augmented research to higher average annual publication/citation measures, earlier modelled last-author transition, lower median embedding-space knowledge extent and lower follow-on citation engagement.",
+      "nativeScale": {
+        "type": "none",
+        "unit": "five separately defined study measures; native-unit text"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-ai-science-comparisons",
+          "sha256": "005daad12f688d1ca5aaebf9800463e892bf93590de0e93598985ba43db161ae",
+          "includedRowCount": 5,
+          "rowSelectionRef": "design-348.datasetBindings.planet-ai-science-comparisons"
+        }
+      ],
+      "ambientRecipeRef": "facet-seam-trace",
+      "soundscapeId": "aw:world:348:sound:v1",
+      "evolutionMode": "comparison",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "348",
+      "proposedSoundRecipeId": "distant-lattice",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "394",
+      "designId": "design-394",
+      "proposalId": "aw.representation.v2.wp.394",
+      "proposedTitle": "History planet with policy shell",
+      "familyId": "planet",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-observed-history",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-394",
+      "acceptedClaim": "Irish2015–25 metered demand alongside dated2026 connection conditions.",
+      "nativeScale": {
+        "type": "panel-specific",
+        "domains": {
+          "history": [
+            0,
+            8000
+          ],
+          "rules": "categorical"
+        },
+        "units": {
+          "history": "GWh/year",
+          "rules": "dated connection conditions"
+        }
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "physical-irish-electricity-series",
+          "sha256": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e",
+          "includedRowCount": 11,
+          "rowSelectionRef": "design-394.datasetBindings.physical-irish-electricity-series"
+        },
+        {
+          "datasetId": "physical-grid-connection-rules",
+          "sha256": "10ba6b71f0aaf33a171d8d568376672d6c98e73ffcc70f7efe282a659530c36c",
+          "includedRowCount": 3,
+          "rowSelectionRef": "design-394.datasetBindings.physical-grid-connection-rules"
+        }
+      ],
+      "ambientRecipeRef": "page-edge-parallax",
+      "soundscapeId": "aw:world:394:sound:v1",
+      "evolutionMode": "observed-sequence",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "394",
+      "proposedSoundRecipeId": "woven-circuit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "56-5",
+      "designId": "design-56-5",
+      "proposalId": "aw.representation.v2.wp.56-5",
+      "proposedTitle": "Share strata",
+      "familyId": "planet",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-observed-history",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "context-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-56-5",
+      "acceptedClaim": "Global2025 demand/growth and a separate national metered-share timeseries.",
+      "nativeScale": {
+        "type": "panel-specific",
+        "domains": {
+          "irishShare": [
+            0,
+            100
+          ]
+        },
+        "units": {
+          "irishShare": "percent of national metered electricity",
+          "globalDemand": "TWh/year",
+          "globalGrowth": "percent year-on-year"
+        }
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "physical-electricity-demand",
+          "sha256": "aa577c85b31ea2d9747940563928a6f51ae9ae56aea23eddc39314b988b99589",
+          "includedRowCount": 3,
+          "rowSelectionRef": "design-56-5.datasetBindings.physical-electricity-demand"
+        },
+        {
+          "datasetId": "physical-irish-electricity-series",
+          "sha256": "da5471b2309e19053e6a6acf944b933fb221b0118dee0afa1e88150558d6de3e",
+          "includedRowCount": 11,
+          "rowSelectionRef": "design-56-5.datasetBindings.physical-irish-electricity-series"
+        }
+      ],
+      "ambientRecipeRef": "reference-ring-trace",
+      "soundscapeId": "aw:world:56-5:sound:v1",
+      "evolutionMode": "observed-sequence",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "56-5",
+      "proposedSoundRecipeId": "woven-circuit",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "390",
+      "designId": "design-390",
+      "proposalId": "aw.representation.v2.wp.390",
+      "proposedTitle": "Two-era waste planet",
+      "familyId": "planet",
+      "semanticMode": "abstract",
+      "persistentLabel": "abstract-sparse-history",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-390",
+      "acceptedClaim": "The global waste ledger records 62 billion kilograms of e-waste in 2022, with 13.8 billion kilograms formally collected and recycled; the AI-hardware share is not identified.",
+      "nativeScale": {
+        "type": "panel-specific",
+        "domains": {
+          "generationCollection": [
+            0,
+            70
+          ]
+        },
+        "units": {
+          "generationCollection": "billionkg",
+          "otherPanels": "source-native units"
+        }
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-ewaste-traceability",
+          "sha256": "a2f38d5c093ada4ef3d77c70a2c23d10c2e868d9f40f3569e861cbb5754cc5fb",
+          "includedRowCount": 7,
+          "rowSelectionRef": "design-390.datasetBindings.planet-ewaste-traceability"
+        }
+      ],
+      "ambientRecipeRef": "counterframe-slide",
+      "soundscapeId": "aw:world:390:sound:v1",
+      "evolutionMode": "sparse-observations",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "390",
+      "proposedSoundRecipeId": "hollow-tide",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    },
+    {
+      "sourceId": "398",
+      "designId": "design-398",
+      "proposalId": "aw.representation.v2.wp.398",
+      "proposedTitle": "Two field specimens",
+      "familyId": "cell",
+      "semanticMode": "subject-appropriate-abstract",
+      "persistentLabel": "abstract-study-comparison",
+      "status": "proposed-shell-adaptation-requires-G10-and-runtime-review",
+      "acceptedEvidenceVerdict": "reframe-ready",
+      "acceptedDesignRef": "research/designs/design-registry.json#design-398",
+      "acceptedClaim": "A two-field Kansas comparison reports lower satellite-derived crop water stress under AI-Radar during reproductive stages, but an opposite numerical result in 2023 vegetative growth.",
+      "nativeScale": {
+        "type": "linear",
+        "domain": [
+          0,
+          1
+        ],
+        "unit": "satellite-derived water deficit index"
+      },
+      "encodingPolicy": "Preserve all accepted source fields, row selection, scales, uncertainty and exclusions. Re-review any new measured transformation.",
+      "datasetBindings": [
+        {
+          "datasetId": "planet-irrigation-field-comparison",
+          "sha256": "ddef3555e3557f2087816da4d4d85bf84d4c09a5702841bb2da3147615d8a1fd",
+          "includedRowCount": 8,
+          "rowSelectionRef": "design-398.datasetBindings.planet-irrigation-field-comparison"
+        }
+      ],
+      "ambientRecipeRef": "counterframe-slide",
+      "soundscapeId": "aw:world:398:sound:v1",
+      "evolutionMode": "source-indexed-study",
+      "forecast": "none",
+      "literalQuantumMeaning": false,
+      "soundscapeWorldId": "398",
+      "proposedSoundRecipeId": "soft-chamber",
+      "soundProfileSource": "src/soundscape.js:soundscapeProfile; dist/assets/soundscape-index.json"
+    }
+  ],
+  "soundContract": "Canonical id/worldId resolve to the implemented sound profile. Proposed recipes do not own frequencies, seed or profile identity."
+}

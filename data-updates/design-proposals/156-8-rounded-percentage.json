@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "conceptId": "156-8",
+  "status": "proposed-not-accepted",
+  "reason": "Frozen design geometry incorrectly encodes a strict lower bound while the bound source row explicitly requires the report-rounded value.",
+  "originalDesign": {
+    "path": "research/designs/design-registry.json",
+    "designId": "design-156-8",
+    "sha256": "783a5aba9f2fde15372cb3c196bd54536cf8e6eee85e715c788e1004825ac4bf",
+    "geometry": "Two separated facets each contain their own 0–100% bar. The over-53% observation uses an open arrow end at 53, not an exact closed endpoint. The 90% panel retains its conditional denominator."
+  },
+  "dataset": {
+    "path": "research/datasets/society-platform-crossborder.json",
+    "sha256": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3",
+    "affectedRow": {
+      "id": "lac-client-foreign",
+      "entityId": "lac-client-foreign",
+      "name": "Workers with clients outside their country",
+      "value": 53,
+      "unit": "percent of surveyed workers",
+      "period": "2023-12-15/2024-03-31",
+      "sourceId": "ilo-lac-platform-2025",
+      "sourceLocator": "Section2.5, printedp23/PDFp27",
+      "status": "estimated",
+      "qualifier": "rounded source percentage",
+      "geographicId": null,
+      "lat": null,
+      "lon": null,
+      "notes": "Primary report prints53percent, described as just over half; pressrelease says over53. Use report-rounded value, not a strict lower bound."
+    }
+  },
+  "proposedChanges": [
+    {
+      "path": "implementation.geometry",
+      "value": "Two separated facets each contain their own 0–100% bar. The first observation displays the primary-report-rounded 53% with an explicit rounded-source label and no strict lower-bound arrow. The 90% panel retains its distinct conditional denominator. Do not multiply the two percentages."
+    },
+    {
+      "path": "validationTests",
+      "operation": "append",
+      "value": "The 53% observation is the rounded primary-report figure, not a strict lower bound. Preserve its qualifier and do not derive a joint percentage from the separate conditional denominator."
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "sourceId": "ilo-lac-platform-2025",
+      "publisher": "ILO",
+      "title": "Survey on workers on web-based digital platforms: new data for Latin America and the Caribbean",
+      "url": "https://www.ilo.org/sites/default/files/2025-04/Informe%20Plataformas%20Digitales_EN_web.pdf",
+      "locator": "Executive summary; section2.5; section4.1 Figure14; Annex2 PDFp65 fieldwork",
+      "version": "Englishreport; DOI10.54394/NDVQ0600; fieldwork2023-12-15/2024-03-31",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-10-19",
+      "reuse": {
+        "basis": "CC BY4.0; primary English report PDFp3",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Cravo,T. (2025), Survey of workers on web-based digital platforms. New data for the Latin American and Caribbean region, Lima: International Labour Office. ©ILO. AFTERWORLDS extracts selected aggregate facts.",
+        "verified": true,
+        "notes": "This is an adaptation of a copyrighted work of the International Labour Organization (ILO). This adaptation has not been prepared, reviewed or endorsed by the ILO and should not be considered an official ILO adaptation. The ILO disclaims all responsibility for its content and accuracy. Responsibility rests solely with the author(s) of the adaptation. No ILO emblem or logo used."
+      }
+    }
+  ],
+  "requiredReview": {
+    "status": "pending",
+    "requirements": [
+      "Independently inspect the cited primary report section2.5 printedp23/PDFp27 and distinguish it from the pressrelease wording.",
+      "Accept or reject the exact proposed geometry and validation change with reviewer identity and source evidence.",
+      "Hash-bind the replacement design and original dataset in a separately reviewed immutable design amendment.",
+      "Add explicit runtime support and tests before activation; frozen research remains unchanged."
+    ]
+  },
+  "activationAllowed": false
+}

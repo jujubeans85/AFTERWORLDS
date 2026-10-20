@@ -1,0 +1,111 @@
+{
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "browser": "Codex in-app browser",
+  "emulatedViewport": true,
+  "physicalDevice": false,
+  "checks": [
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Grid Behind the Cloud"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Lines in the Model"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Before the Prompt"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Cooling Belt"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Dark Fleet"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "An Intention at Scale"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "A Report Is Not an Event"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "A Company Beside an Economy"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Reading Machine"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Grid's New Customer"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Grid Behind the Cloud"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Lines in the Model"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Before the Prompt"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Cooling Belt"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Dark Fleet"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "An Intention at Scale"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "A Report Is Not an Event"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "A Company Beside an Economy"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Reading Machine"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Grid's New Customer"
+    }
+  ]
+}

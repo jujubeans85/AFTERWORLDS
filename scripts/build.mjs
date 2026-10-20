@@ -1,3 +1,8 @@
+import {prepareNarration} from './narration-runtime.mjs';
+import {previewPNG, canonicalOrigin} from './share-previews.mjs';
+import { soundscapeProfile } from "../src/soundscape.js";
+import { prepareResearchRuntime, writeResearchHistory } from "./research-runtime.mjs";
+import { researchThumbnail } from "./research-thumbnail.mjs";
 import { motif } from "./thumbnail-effects.mjs";
 import { scoreFor } from "../src/scoring.js";
 import fs from "node:fs/promises";
@@ -11,12 +16,31 @@ import {
 } from "../src/math.js";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
+const publicOrigin = canonicalOrigin(process.env.PUBLIC_ORIGIN || "https://afterworld-ai-atlas.xntfsstt5z.chatgpt.site");
 const read = async (p) =>
   JSON.parse(await fs.readFile(path.join(root, p), "utf8"));
 const catalogue = await read("data/source-catalog.json");
+const recipeAssignments = await read("docs/next-version/soundscape-registry.proposed.json");
+const recipesById = new Map(recipeAssignments.entries.map(entry=>[entry.worldId,entry.proposedRecipeId]));
 const evidence = await read("data/evidence.json");
 const topo = await read("vendor/countries-110m.json");
 const countries = decodeTopology(topo);
+const researchRuntime = await prepareResearchRuntime(root, dist);
+const researchBundles = Object.fromEntries(await Promise.all(Object.entries(researchRuntime).map(async ([id,summary]) => [id, JSON.parse(await fs.readFile(path.join(dist,summary.release.url), 'utf8'))])));
+await prepareNarration(root,dist,researchRuntime,researchBundles);
+const acceptedManifestPath=path.join(dist,'assets/research/accepted-manifest.json');
+const acceptedManifest=JSON.parse(await fs.readFile(acceptedManifestPath,'utf8'));
+for(const [id,summary] of Object.entries(researchRuntime))if(summary.narrationRef)acceptedManifest.worlds[id].narrationRef=summary.narrationRef;
+for(const [id,reference] of Object.entries(acceptedManifest.history)){
+ const index=JSON.parse(await fs.readFile(path.join(dist,reference.url),'utf8'));
+ for(const [revision,summary] of Object.entries(index.versions)){
+  if(researchRuntime[id]?.revision===revision){if(researchRuntime[id].narrationRef)summary.narrationRef=researchRuntime[id].narrationRef;}
+  else {const bundle=JSON.parse(await fs.readFile(path.join(dist,summary.release.url),'utf8'));await prepareNarration(root,dist,{[id]:summary},{[id]:bundle});}
+ }
+ acceptedManifest.history[id]=await writeResearchHistory(dist,id,index.versions);
+}
+await fs.writeFile(acceptedManifestPath+'.narration.tmp',JSON.stringify(acceptedManifest));
+await fs.rename(acceptedManifestPath+'.narration.tmp',acceptedManifestPath);
 const matches = {
   power: "322",
   capital: "381",
@@ -126,6 +150,7 @@ const editorial = {
 };
 const entries = catalogue.entries.map((e, i) => ({
   ...e,
+  soundRecipe: recipesById.get(e.id),
   ...(dById[e.id] ? editorial[dById[e.id].id] : {}),
   researchProposal: {
     title: e.newTitle,
@@ -133,7 +158,9 @@ const entries = catalogue.entries.map((e, i) => ({
     connection: e.connection,
   },
   dataset: dById[e.id] || null,
-  newTitle: dById[e.id]?.title || e.newTitle,
+  research: researchRuntime[e.id] || null,
+  newTitle: researchRuntime[e.id]?.title || dById[e.id]?.title || e.newTitle,
+  ...(researchRuntime[e.id] ? {question: researchRuntime[e.id].question} : {}),
   number: String(i + 1).padStart(3, "0"),
   color: lenses[e.lens][1],
   lensLabel: lenses[e.lens][0],
@@ -165,9 +192,14 @@ entries.sort((a, b) => {
 });
 const registry = {
   schemaVersion: 2,
+  publicOrigin,
   reviewed: "2026-10-20",
-  evidenceCount: evidence.length,
-  conceptCount: entries.length - evidence.length,
+  evidenceCount: evidence.length + Object.keys(researchRuntime).length,
+  legacyEvidenceCount: evidence.length,
+  researchImplementedCount: Object.keys(researchRuntime).length,
+  researchAcceptedCount: 73,
+  researchHeldCount: 59,
+  conceptCount: entries.length - evidence.length - Object.keys(researchRuntime).length,
   scope: catalogue.meta.coverage,
   entries,
 };
@@ -205,13 +237,15 @@ for (const d of evidence) {
   }
 }
 await fs.mkdir(path.join(dist, "assets/thumbs"), { recursive: true });
+await fs.mkdir(path.join(dist, "assets/previews"), { recursive: true });
 await fs.mkdir(path.join(dist, "assets/vendor"), { recursive: true });
 for (const f of await fs.readdir(path.join(root, "vendor")))
   await fs.copyFile(
     path.join(root, "vendor", f),
     path.join(dist, "assets/vendor", f),
   );
-for (const f of ["app.js", "reader.js", "globe.js", "math.js", "scoring.js", "effects.js", "information.js", "style.css", "reset.css"])
+// Preserve the source module graph as families grow; only browser source assets.
+for (const f of (await fs.readdir(path.join(root, "src"))).filter(name=>/\.(js|css)$/.test(name)))
   await fs.copyFile(path.join(root, "src", f), path.join(dist, "assets", f));
 await fs.writeFile(
   path.join(dist, "assets/registry.json"),
@@ -226,6 +260,7 @@ await fs.copyFile(
   path.join(dist, "assets/evidence.json"),
 );
 function thumbnail(e) {
+  if (e.research) return researchThumbnail(researchBundles[e.id]);
   const seed = hash(e.id);
   const centers = {
     adoption: 90,
@@ -333,10 +368,15 @@ function html(e) {
   const desc = e
     ? e.dataset?.summary || e.question
     : "An interactive atlas of AI’s strange geography. Explore sourced evidence and 146 original globe interpretations inspired by World Processor.";
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080d10"><meta name="description" content="${esc(desc)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website"><title>${esc(title)}</title><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="modulepreload" href="/assets/math.js"></head><body><a class="skip" href="#main">Skip to content</a><div id="app"><main id="main" class="boot-error"><div class="eyebrow">AFTERWORLD</div><h1>${esc(e?.newTitle || "A stranger world is already here.")}</h1><p>${esc(desc)}</p><p>Loading the atlas…</p></main></div><noscript><p style="padding:2rem">JavaScript is required for the interactive atlas. <a href="/assets/evidence.json">Read the complete numerical data</a> or <a href="/assets/source-catalog.json">browse the inspiration index</a>.</p></noscript><script type="module" src="/assets/app.js"></script></body></html>`;
+  const canonical = publicOrigin + (e?.slug ? `/globe/${e.slug}/` : "/");
+  const image = `${publicOrigin}/assets/previews/${e?.slug || "atlas"}.png`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080d10"><meta name="description" content="${esc(desc)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website"><link rel="canonical" href="${esc(canonical)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:image" content="${esc(image)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${esc(title)} — ${e?.research ? "Reviewed native-unit evidence" : e?.dataset ? "Sourced story" : e ? "Research concept" : "Research atlas"}"><meta name="twitter:card" content="summary_large_image"><title>${esc(title)}</title><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="modulepreload" href="/assets/math.js"></head><body><a class="skip" href="#main">Skip to content</a><div id="app"><main id="main" class="boot-error"><div class="eyebrow">AFTERWORLD</div><h1>${esc(e?.newTitle || "A stranger world is already here.")}</h1><p>${esc(desc)}</p><p>Loading the atlas…</p></main></div><noscript><p style="padding:2rem">JavaScript is required for the interactive atlas. <a href="/assets/evidence.json">Read the complete numerical data</a> or <a href="/assets/source-catalog.json">browse the inspiration index</a>.</p></noscript><script type="module" src="/assets/app.js"></script></body></html>`;
 }
+await fs.writeFile(path.join(dist, "assets/soundscape-index.json"), JSON.stringify(entries.map(soundscapeProfile), null, 2));
 await fs.writeFile(path.join(dist, "index.html"), html());
+await fs.writeFile(path.join(dist,"assets/previews/atlas.png"),previewPNG(null));
 for (const e of entries) {
+  await fs.writeFile(path.join(dist,"assets/previews",e.slug+".png"),previewPNG(e,researchBundles[e.id]));
   await fs.mkdir(path.join(dist, "globe", e.slug), { recursive: true });
   await fs.writeFile(path.join(dist, "globe", e.slug, "index.html"), html(e));
   await fs.writeFile(
@@ -364,5 +404,5 @@ await fs.writeFile(
   "User-agent: *\nDisallow: /\n",
 );
 console.log(
-  `Built ${entries.length} globe routes, ${evidence.length} sourced stories, ${registry.conceptCount} labelled concepts. All source and data contracts passed.`,
+  `Built ${entries.length} globe routes, ${evidence.length} legacy sourced stories, ${registry.researchImplementedCount} native-unit research view, ${registry.conceptCount} labelled concepts. All source and data contracts passed.`,
 );

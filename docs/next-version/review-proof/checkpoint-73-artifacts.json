@@ -1,0 +1,42 @@
+{
+  "scope": "73-view development checkpoint; local artifact inspection, not production deployment.",
+  "counts": {
+    "native": 73,
+    "legacy": 14,
+    "held": 59,
+    "routes": 146
+  },
+  "tests": {
+    "pass": 216,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "manifestBytes": 150236,
+  "largestRelease": {
+    "conceptId": "378",
+    "bytes": 1414852
+  },
+  "sha256": {
+    "dist/assets/registry.json": "b3c6583df20a97fc5ac03ae8774b00ba7716145ba2d610bd1843997ed8e6a1bc",
+    "dist/assets/app.js": "b0abcce33a9fb8cc6fa4c63eb1d82cff9f857995579393ce26b51be2909645f3",
+    "dist/assets/research-ui.js": "adab9bc7b094fde8f806e98b2254b309272c4b340880af01f37bd60d24ae4747",
+    "dist/assets/research-view.js": "770375a5d0331513b4102ef4856823f100cb5d614202f6b040d25b83e7c5c79c",
+    "dist/assets/research-panel-scene.js": "2bea3a322185afc6bcc02aa54cb8819f3efb1b7e73b6b6fc83d7c11a787c721b",
+    "dist/assets/research-multi-scene.js": "e65a9192c1b61df0623f790ac06dd181df11b312d9ea3cd62debfe039c5c1374",
+    "dist/assets/research-amended-scene.js": "6131dc477beeeb87c051e8a7a48efff407452a4d286ff7ecd044322e71713355",
+    "dist/assets/research/accepted-manifest.json": "c6d6ae28a6a91aa462cc1683b5181677780eb8a3dace52e9c3ce49af258066da",
+    "dist/assets/previews/the-compute-sprawl.png": "6f2b45e7b090293feea66260d450e739730ea1a8f51a15a262102f1e9af8c7ad",
+    "dist/assets/previews/toxic-afterlife.png": "3db001019e7bb52e7262f8adfedbfc7032f4c6d7d13722062c8779360e30f17e",
+    "dist/assets/previews/a-machine-s-taste.png": "5b0c9470a01b6ded105db9aa8c6096ab51480f54fefcc39f209d668e7875ae7f",
+    "dist/assets/previews/mobility-without-ownership.png": "4c2839ed226d18d49fb0441c69448f89d652db2ca27ee8e16d6f587860e3f19a",
+    "dist/assets/previews/one-island-many-dependencies.png": "53a043b68b797e35fd01da8bfa98bdbc24091f875328a56fa025860b3fe3538b",
+    "dist/assets/previews/the-inference-traffic-jam.png": "b87385b7ca8861a45a5aafe5fe3a0e564f928f2166a92bb87dd624573bd75628",
+    "dist/assets/previews/years-we-cannot-promise.png": "a762723d4ed5a3cbf298f6a1197973b063d4d0aeff9d1696629681ab3de97e2c",
+    "dist/assets/previews/the-inference-spiral.png": "cff6f5b60740df76e0f74301a9da75a9b71e181af6437b7d1f90b9fb73ab3dc5",
+    "dist/assets/previews/the-growing-slice.png": "7078e1b8d4c2e1fc963575a2cdf2f6baa155fc65641ae96bac36436a7db6b057",
+    "dist/assets/previews/the-benchmark-projection.png": "56290c18665ed1532daefd61591748907d5f92798479ef92ce868862ff928208",
+    "dist/assets/previews/a-river-runs-through-it.png": "9219d238f77098785a31dc1e02bf82e2f5d908923c25abc52437e51f9d1185e7",
+    "dist/assets/previews/trade-in-invisible-work.png": "9d0edfb8b777c051dc5d40f59a8cb99da6fc36c22cf0cd1ced1b31c7ec3c3c46"
+  }
+}

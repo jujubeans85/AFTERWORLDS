@@ -1,0 +1,52 @@
+{
+  "id": "aw:world:430:narration:audition-v1",
+  "worldId": "430",
+  "datasetId": "physical-cloud-grid-carbon",
+  "status": "editorial audition; not connected to production narration",
+  "provider": "Runway",
+  "voice": "Miriam",
+  "voiceType": "synthetic feminine narrator; not a human recording",
+  "model": "eleven_v3",
+  "speed": 0.94,
+  "language": "en",
+  "generatedAt": "2026-10-19T22:44:54.671Z",
+  "taskId": "ff22278f-c09c-4037-902a-efaec59fad79",
+  "generationCredits": 8,
+  "transcript": "audition-transcript.txt",
+  "reuseReference": "https://help.runwayml.com/hc/en-us/articles/21668707517587-Can-I-use-the-content-I-made-in-Runway-for-commercial-purposes",
+  "processing": {
+    "tool": "ffmpeg",
+    "filter": "aecho=0.8:0.9:31|43|59:0.045|0.03|0.02,loudnorm=I=-18:TP=-2:LRA=7",
+    "description": "Three quiet early reflections, 31/43/59 ms, then loudness normalization. Dry alternate preserved. This is a light room effect, not a long hall tail."
+  },
+  "roomFileMeasurements": {
+    "durationSeconds": 34.656,
+    "integratedLufs": -18.66,
+    "truePeakDbtp": -3.88,
+    "loudnessRangeLu": 3.6,
+    "method": "ffprobe duration and second FFmpeg loudnorm analysis; not a listening or phone-speaker test"
+  },
+  "files": [
+    {
+      "file": "audition-miriam-dry.mp3",
+      "bytes": 553838,
+      "sha256": "dc99767de5c6444686396a4bbef26b6d3083ad24f23b8a81254892b691961087"
+    },
+    {
+      "file": "audition-miriam-room.mp3",
+      "bytes": 554925,
+      "sha256": "ea1db00dcf6dc69ee63285131ce95979608ce1d300b6143d4f6231218959a703"
+    },
+    {
+      "file": "audition-transcript.txt",
+      "bytes": 400,
+      "sha256": "2d8e002a8d6ba3df44c2c98cdc93fb66b8c90dfe8d8ac1ec61d4a068e15c6c8a"
+    }
+  ],
+  "reviewRequired": [
+    "Human listening for calm delivery, naturalness, intelligibility, pauses and pronunciation",
+    "Headphone, phone speaker and mono comparison of dry vs room mix",
+    "Editorial revision: annual grid emission factors rather than emissions totals; label region slots nongeographic",
+    "Bind final transcript/hash to accepted data/design version; stale audio must not narrate changed values"
+  ]
+}

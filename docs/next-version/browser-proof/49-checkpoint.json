@@ -1,0 +1,80 @@
+{
+  "evidenceClass": "BROWSER",
+  "environment": "local Codex in-app browser; desktop viewport override is not a physical phone",
+  "observedAt": "2026-10-20T06:12:50.549721+00:00",
+  "nativeCount": 49,
+  "builtAssetSha256": {
+    "app.js": "cade09e19e77cce5840ea0d234885419c16f6fcc004c50bf556ee1daf0c645ef",
+    "research-view.js": "1b0bbcdbf659d73b0c56c953be939f8d394e16ca7dd46f30e1b133b9a4e7bb76",
+    "research-ui.js": "267928c5c01b0724f01cf767014ef5bc3edef34f71ae8b6caa2eb1ff86c9047b",
+    "research-architecture-scene.js": "6d10b4c31d3899875897fe8537e2f37b87bb6319876aa3e16592384097c3f966",
+    "research-percentage-scene.js": "af5f148d60d2bf54943a9d936f4422b15c1b469dbf21e6a92bc341b1385712b2"
+  },
+  "observations": [
+    {
+      "conceptId": "138-8",
+      "viewportWidth": 320,
+      "canvasCount": 1,
+      "pageOverflow": false,
+      "publishedPercent": [
+        67.3,
+        6.5
+      ],
+      "counts": [
+        560,
+        54
+      ],
+      "denominator": 832
+    },
+    {
+      "conceptId": "8-6",
+      "viewportWidth": 320,
+      "canvasCount": 1,
+      "pageOverflow": false,
+      "selected": "access-83",
+      "numerator": 18,
+      "analyzedN": 82,
+      "randomizedN": 83,
+      "ci95": [
+        14,
+        32
+      ]
+    },
+    {
+      "conceptId": "422-2",
+      "viewportWidth": 320,
+      "canvasCount": 1,
+      "pageOverflow": false,
+      "action": "Other side, select male high-exposure subset",
+      "value": 3,
+      "unit": "percent of occupations",
+      "subsetWarningVisible": true
+    },
+    {
+      "conceptId": "117",
+      "selected": "epoch-1",
+      "exactValue": 2.0001e+25,
+      "confidence": "Speculative",
+      "logTicks": [
+        "1e25",
+        "1e26",
+        "1e27"
+      ],
+      "focusAndReadModeWorked": true
+    },
+    {
+      "conceptId": "407",
+      "selected": "nervous-CAN",
+      "value": 67,
+      "ageRange": "18\u201374",
+      "sampleScope": "Adult population within age range"
+    }
+  ],
+  "limits": [
+    "No physical-device, listening, screen-reader or frame-pacing claim.",
+    "Percentage observations preceded architecture build; behavior represented here was unchanged during architecture activation.",
+    "Screenshots are representative and may not show every validated DOM field simultaneously.",
+    "Asset digests were captured after the observations; the artifact count at digest capture is recorded separately."
+  ],
+  "artifactNativeCountAtDigestCapture": 57
+}
