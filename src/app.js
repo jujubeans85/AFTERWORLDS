@@ -3,6 +3,8 @@ import { informationHTML, visualLegend, scoreExplanation } from "./information.j
 import { createAtlasReader } from "./reader.js";
 import { SensoryDirector } from "./soundscape.js";
 import { shareWorld } from "./sharing.js";
+import { loadResearchWorld } from './research-data.js';
+import { nativeValue, researchSelectionHTML, researchTableHTML, researchSourcesHTML, researchChartSVG, resolveResearchShare } from './research-ui.js';
 import {
   decodeTopology,
   escapeHTML as esc,
@@ -18,7 +20,10 @@ let registry,
   renderToken = 0,
   current = null,
   activeDialogTrigger = null,
-  toastTimer;
+  toastTimer,
+  researchAbort,
+  researchWorld,
+  selectedResearchIndex = -1;
 const state = { mode: "evidence", query: "", shown: 24 };
 const value = (p) => p.displayValue ?? formatValue(p.value);
 const headline = (n) =>
@@ -36,18 +41,19 @@ function header() {
   return `<header class="site-header"><a href="/" data-route class="wordmark" aria-label="AFTERWORLD home"><span class="mark" aria-hidden="true"></span>AFTERWORLD</a><span class="header-meta">AN ATLAS OF THE MACHINE AGE</span><nav class="header-nav" aria-label="Main navigation"><a href="/#index" data-route>INDEX <span aria-hidden="true">↗</span></a><button data-about>ABOUT</button><button data-sensory-open aria-haspopup="dialog" aria-label="Sound and touch settings">SOUND</button></nav></header>`;
 }
 function footer() {
-  return `<footer class="site-footer"><span>AFTERWORLD / LIVING SCULPTURES EDITION<br>Evidence reviewed 20 OCT 2026 · Not a live feed</span><span>Inspired by <a href="https://world-processor.com/" target="_blank" rel="noopener noreferrer">Ingo Günther’s World Processor ↗</a><br>Independent project · ${registry.entries.length} gallery-entry interpretations</span></footer>`;
+  return `<footer class="site-footer"><span>AFTERWORLD / LIVING SCULPTURES EDITION<br>Source dates on each world · Not a live feed</span><span>Inspired by <a href="https://world-processor.com/" target="_blank" rel="noopener noreferrer">Ingo Günther’s World Processor ↗</a><br>Independent project · ${registry.entries.length} gallery-entry interpretations</span></footer>`;
 }
 function dialogShell() {
   return `<dialog id="modal" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title">THE EVIDENCE</h2><button aria-label="Close dialog" data-close>×</button></div><div class="dialog-content" id="dialog-body"></div></dialog><div id="toast" class="toast" role="status" hidden></div>`;
 }
 function card(entry) {
   const d = entry.dataset;
+  if (entry.research) return `<a href="/globe/${esc(entry.slug)}/" data-route class="world-card" style="--card-color:#f2ba68" aria-label="Explore ${esc(entry.newTitle)}, sourced research view"><div class="card-top"><span>${esc(entry.number)}</span><span>${esc(entry.lensLabel)}</span></div><div class="card-img"><img src="/assets/thumbs/${esc(entry.slug)}.svg" width="300" height="250" alt="" loading="lazy"></div><h3 class="card-title">${esc(entry.newTitle)}</h3><div class="card-bottom"><span class="card-type">ANNUAL 2025 · NATIVE UNITS</span><span class="arrow">↗</span></div></a>`;
   return `<a href="/globe/${esc(entry.slug)}/" data-route class="world-card" style="--card-color:${entry.color}" aria-label="Explore ${esc(entry.newTitle)}, ${d ? "sourced story" : "research concept"}"><div class="card-top"><span>${esc(entry.number)}</span><span>${esc(entry.lensLabel)}</span></div><div class="card-img"><img src="/assets/thumbs/${esc(entry.slug)}.svg" width="300" height="250" alt="" loading="lazy" decoding="async"></div><h3 class="card-title">${esc(entry.newTitle)}</h3><div class="card-bottom"><span class="card-type">${d ? `${esc(d.status.toUpperCase())} · ${esc(d.dataYear)}` : "RESEARCH CONCEPT"}</span><span class="arrow" aria-hidden="true">↗</span></div></a>`;
 }
 function renderCards() {
   const pool = registry.entries.filter(
-    (e) => state.mode === "all" || e.dataset,
+    (e) => state.mode === "all" || e.dataset || e.research,
   );
   const q = state.query.toLowerCase().trim();
   const filtered = pool.filter((e) =>
@@ -105,6 +111,7 @@ function home() {
 const legend = visualLegend;
 function detailsPage(entry) {
   current = entry;
+  if (entry.research) { researchPage(entry); return; }
   const d = entry.dataset;
   const i = registry.entries.indexOf(entry);
   const prev =
@@ -145,6 +152,112 @@ function detailsPage(entry) {
   $("#evidence").addEventListener("click", () => openEvidence(entry));
   mountGlobe(entry, false);
   bindCommon();
+}
+async function researchPage(entry) {
+  const token = renderToken;
+  researchAbort = new AbortController();
+  const controller = researchAbort;
+  const timeout = setTimeout(() => controller.abort(new DOMException('Reviewed data request timed out','TimeoutError')),12000);
+  document.title = `${entry.newTitle} — AFTERWORLD`;
+  $('#app').innerHTML = `${header()}<main id="main" class="research-page" style="--accent:#f2ba68"><a href="/#index" data-route class="back-link">← ALL WORLDS</a><h1>${esc(entry.newTitle)}</h1><p>${esc(entry.question)}</p><p role="status">Checking the reviewed evidence…</p></main>${footer()}${dialogShell()}`;
+  bindCommon();
+  try {
+    const research = await loadResearchWorld(entry.research, {signal:controller.signal});
+    if (token !== renderToken) return;
+    researchWorld = research;
+    const {dataset:d, design} = research;
+    const shared = resolveResearchShare(location.search, research);
+    const restoreHeadingFocus = document.activeElement === $('#main h1');
+    let readMode = false;
+    const i = registry.entries.indexOf(entry);
+    const next = registry.entries[(i+1)%registry.entries.length];
+    $('#main').innerHTML = `<a href="/#index" data-route class="back-link">← ALL WORLDS</a><div class="research-heading"><div><div class="eyebrow">WORLD ${esc(entry.number)} / CONTEXT FOR AI INFRASTRUCTURE</div><h1>${esc(design.title)}</h1><p class="world-question">${esc(design.question)}</p></div><button class="outline-button" id="world-share">SHARE WORLD ↗</button></div>${shared.notice ? `<p class="integrity-note" role="status">${esc(shared.notice)}</p>` : ''}<p class="research-context">Annual ${esc(d.time.observationStart)} · ${research.rows.length} source regions · Source estimates</p><div class="research-layout"><section class="research-guidance" aria-label="How to read this world"><span class="eyebrow">ONE KILOWATT-HOUR</span><p>Each amber column shows an annual grid emission factor. Its length starts at zero on the same fixed scale.</p><p class="native-scale"><strong>0 — 700</strong><br>g CO2eq/kWh</p><p>Compare another region’s grid factor and its separate CFE matching figure.</p><p class="research-boundary">Annual grid averages are not hourly signals, AI-prompt footprints or offsets.</p><button class="outline-button" id="research-information">READ THE EVIDENCE ↗</button></section><section class="research-viewport" aria-label="Abstract region comparison"><p class="research-geography">Abstract data globe — not a geographic map</p><div id="globe-host" class="research-globe"><span class="globe-loading">ASSEMBLING REVIEWED MARKS</span></div><p class="research-motion">Ambient frame motion — not measured change</p><div class="research-controls" role="group" aria-label="Research globe controls"><button id="research-pause">PAUSE</button><button id="research-left" aria-label="Rotate left">←</button><button id="research-right" aria-label="Rotate right">→</button><button id="research-zoom-in" aria-label="Zoom in">+</button><button id="research-zoom-out" aria-label="Zoom out">−</button><button id="research-flip">OTHER SIDE</button><button id="research-reset">RESET</button><button id="research-read-mode" aria-pressed="false">READ MODE</button><button id="research-table-mode" aria-pressed="false">TABLE VIEW</button></div><p class="tiny">Drag to rotate. Read mode lets touch scroll the page. The region picker and table work without dragging.</p></section><section class="research-inspector" aria-label="Inspect a source region"><label class="place-picker">SELECT A REGION<select id="research-picker"><option value="">Choose a region…</option>${research.rows.map((row,index)=>`<option value="${index}">${esc(row.name)} · ${esc(row.id)} · ${esc(nativeValue(row))}</option>`).join('')}</select></label><div id="research-selection" aria-live="polite">${researchSelectionHTML(null)}</div><div class="research-controls"><button id="research-previous" aria-label="Previous region">← PREVIOUS</button><button id="research-next">NEXT REGION →</button><button id="research-focus" disabled>FOCUS REGION</button><button id="research-clear" disabled>CLEAR</button></div></section></div><section id="research-static" hidden><h2>Every region on the same scale</h2><p>The static chart and table retain the same reviewed observations.</p><div class="research-chart-wrap" tabindex="0" role="region" aria-label="Native-unit chart; scroll horizontally to see the full scale">${researchChartSVG(research)}</div></section><section class="research-evidence" aria-labelledby="research-table-title"><div class="research-table-heading"><h2 id="research-table-title">The complete comparison</h2><button class="outline-button" id="research-download">DOWNLOAD DATA & DESIGN ↓</button></div>${researchTableHTML(research)}${researchSourcesHTML(research)}</section><nav class="research-next">${trackLink(`/globe/${next.slug}/`, `EXPLORE ANOTHER WORLD · ${esc(next.newTitle)} ↗`)}</nav>`;
+    if (restoreHeadingFocus) { const heading=$('#main h1'); heading.tabIndex=-1; heading.focus({preventScroll:true}); }
+    $('#world-share').onclick = () => shareCurrent(true);
+    $('#research-information').onclick = () => openDialog('THE GRID BEHIND THE CLOUD', `${researchSourcesHTML(research)}${sourceSection(entry)}`);
+    const inspect = (row,index) => {
+      selectedResearchIndex = index;
+      $('#research-selection').innerHTML = researchSelectionHTML(row);
+      $('#research-picker').value = row ? String(index) : '';
+      $('#research-focus').disabled = !row || !globe;
+      $('#research-clear').disabled = !row;
+      document.querySelectorAll('[data-research-row]').forEach(tr => tr.classList.toggle('selected-row', tr.dataset.researchRow === row?.id));
+      reader.enhance($('#research-selection'));
+      if (row) sensory.cue('select');
+    };
+    const select = index => {
+      if (globe) globe.select(index);
+      else inspect(research.rows[index],index);
+    };
+    $('#research-picker').onchange = e => e.target.value !== '' ? select(Number(e.target.value)) : clear();
+    const clear = () => globe ? globe.clearSelection() : inspect(null,-1);
+    $('#research-clear').onclick = clear;
+    $('#research-previous').onclick = () => select((selectedResearchIndex < 0 ? research.rows.length - 1 : selectedResearchIndex - 1 + research.rows.length) % research.rows.length);
+    $('#research-next').onclick = () => select((selectedResearchIndex+1)%research.rows.length);
+    $('#research-focus').onclick = () => globe?.focusSelection();
+    document.querySelectorAll('[data-research-select]').forEach(button => button.onclick = () => select(Number(button.dataset.researchSelect)));
+    $('#research-pause').onclick = () => globe?.pause(!globe.paused);
+    $('#research-left').onclick = () => globe?.rotate(0,-0.3);
+    $('#research-right').onclick = () => globe?.rotate(0,0.3);
+    $('#research-zoom-in').onclick = () => globe?.zoom(-0.3);
+    $('#research-zoom-out').onclick = () => globe?.zoom(0.3);
+    $('#research-flip').onclick = () => globe?.flip();
+    $('#research-reset').onclick = () => globe?.reset();
+    $('#research-read-mode').onclick = e => {
+      const read = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+      readMode = read;
+      e.currentTarget.setAttribute('aria-pressed',String(read));
+      e.currentTarget.textContent = read ? 'MOVE MODE' : 'READ MODE';
+      globe?.setReadMode(read);
+    };
+    $('#research-table-mode').onclick = e => {
+      const table = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+      e.currentTarget.setAttribute('aria-pressed',String(table));
+      e.currentTarget.textContent = table ? 'GLOBE VIEW' : 'TABLE VIEW';
+      globe?.pause(true);
+      $('#globe-host').hidden = table;
+      $('#research-static').hidden = !table;
+      if (table) $('#research-static').scrollIntoView({block:'start'});
+    };
+    $('#research-download').onclick = () => {
+      const url = URL.createObjectURL(new Blob([JSON.stringify({revision:research.revision,datasetSha256:research.datasetSha256,designSha256:research.designSha256,dataset:d,design},null,2)], {type:'application/json'}));
+      const a=document.createElement('a'); a.href=url; a.download=`afterworld-430-${research.revision.slice(0,12)}.json`; a.click(); setTimeout(()=>URL.revokeObjectURL(url),1000);
+    };
+    reader.enhance();
+    if (shared.index >= 0) select(shared.index);
+    const sceneButtons = '#research-pause,#research-left,#research-right,#research-zoom-in,#research-zoom-out,#research-flip,#research-reset';
+    document.querySelectorAll(sceneButtons).forEach(button=>button.disabled=true);
+    try {
+      const {ResearchGlobe} = await import('./research-view.js');
+      if (token !== renderToken) return;
+      globe = new ResearchGlobe($('#globe-host'), {entry,research,onSelect:inspect,onMotion:paused=>{
+        const button=$('#research-pause'); if (!button) return;
+        button.textContent=paused?'PLAY FRAME':'PAUSE'; button.setAttribute('aria-pressed',String(paused));
+        button.setAttribute('aria-label',paused?'Play ambient frame motion':'Pause ambient frame motion');
+      }});
+      document.querySelectorAll(sceneButtons).forEach(button=>button.disabled=false);
+      if (readMode) globe.setReadMode(true);
+      if (selectedResearchIndex >= 0) globe.select(selectedResearchIndex);
+      $('#globe-host .globe-loading')?.remove();
+      $('#globe-host').addEventListener('globe-error', () => researchFallback());
+    } catch(error) {
+      if (token !== renderToken) return;
+      researchFallback();
+      console.error('Research graphics unavailable',error);
+    }
+  } catch(error) {
+    if (token !== renderToken) return;
+    $('#main').insertAdjacentHTML('beforeend','<div class="integrity-note" role="alert">The reviewed data could not be loaded or verified. No substitute measurements are shown. Reload to retry.</div>');
+    $('#main [role="status"]')?.remove();
+    console.error('Research evidence unavailable',error);
+  } finally { clearTimeout(timeout); }
+}
+function researchFallback() {
+  globe?.dispose(); globe=null;
+  $('#globe-host').innerHTML='<p class="integrity-note">Interactive graphics are unavailable. The complete static chart and source table are available below.</p>';
+  $('#research-static').hidden=false;
+  $('#research-table-mode').disabled=true;
+  document.querySelectorAll('#research-pause,#research-left,#research-right,#research-zoom-in,#research-zoom-out,#research-flip,#research-reset,#research-read-mode,#research-focus').forEach(button=>button.disabled=true);
 }
 async function mountGlobe(entry, hero) {
   const token = renderToken;
@@ -228,6 +341,7 @@ function openInformation(e) {
   $("[data-back-globe]")?.addEventListener("click", closeDialog);
 }
 function sourceSection(e) {
+  if (e.research && researchWorld?.conceptId === e.id) e = {...e, connection:researchWorld.design.sourceInspiration.connection};
   return `<h4>THE ORIGINAL QUESTION</h4><p><a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">World Processor [${esc(e.id)}] · ${esc(e.title)} ↗</a></p><p>${esc(e.sourceConcept)}</p><p>${esc(e.connection)}</p><p class="tiny">Inspiration: Ingo Günther. AFTERWORLD is an independent interpretation; original artwork is not reproduced. A source gallery entry can contain multiple historical versions.</p>`;
 }
 function openEvidence(e) {
@@ -266,13 +380,14 @@ function openEvidence(e) {
 function openAbout() {
   openDialog(
     "THE METHOD",
-    `<p class="about-intro">One world.<br>More than one truth.</p><p>AFTERWORLD is a quiet atlas of AI’s physical footprint, uneven benefits and strange consequences. It takes the globe-as-argument idea from Ingo Günther’s World Processor into an interactive, evidence-led form.</p><h4>A COMPLETE INDEX, AN INCOMPLETE SCIENCE</h4><p>We inventoried ${registry.entries.length} entries in the three current public World Processor galleries. Each has a separate page, original research question and visual interpretation. ${registry.evidenceCount} pages currently contain sourced numerical layers. The remaining pages are explicitly labelled research concepts. Historical variants inside gallery pages are not exhaustively re-created.</p><h4>OBSERVATION ≠ CAUSATION</h4><p>Reported observations, model estimates and forecasts have separate labels. Robot installation does not mean job loss. Internet coverage does not mean AI adoption. Data-centre electricity and water include non-AI workloads. A protein prediction is not an experimentally confirmed discovery.</p><h4>THE VISUAL CONTRACT</h4><p>Country and region values are represented by anchors, not exact sites or continuous heatmaps. Each sourced story has a distinct sculpture driven by a documented 1–100 magnitude score. A fixed scale links the raw value to density, height, motion or colour. Speed repeats magnitude; it is not a measured growth rate. Language and work categories occupy abstract sectors, and protein structures appear as global folds. Research sculptures encode no measured quantities. Missing places have no implied value.</p><h4>ACCESS & MOVEMENT</h4><p>Drag or swipe to rotate. Pinch, use +/−, or focus the globe and scroll to zoom. Arrow keys rotate; Space pauses; Home resets. The Other Side button turns 180°. Every mapped value can also be read and located from the evidence table. Reduced-motion preferences stop automatic rotation and all data effects. The Pause button also freezes both. Dragging stops automatic rotation while the sculpture keeps moving.</p><h4>READ OR LISTEN</h4><p>Every information block has a Listen control. Listen to all reads an entire information overlay, including its quick statistics. JUICE Reader offers pause and resume, previous and next passages, device voices, speed and larger text. Opening a different overlay, leaving a world or closing the overlay stops its reading. Opening a text panel reads it aloud by default. Turn off Auto-read text panels to use Listen manually. Auto-read, voice and text-size preferences stay on this device. Nothing is read on initial page load.</p><h4>ORIGIN & CREDITS</h4><p><a href="https://world-processor.com/wpp" target="_blank" rel="noopener noreferrer">World Processor</a> by Ingo Günther is the artistic inspiration. This independent project is not affiliated with or endorsed by the artist. No original globe photographs are copied. Geography: Natural Earth via <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener noreferrer">world-atlas</a>. 3D: <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three.js</a>. Type: Space Grotesk and Space Mono, bundled under the SIL Open Font License. Speech: the shared JUICE Reader engine. Sources remain linked on each story.</p><h4>RELEASE STATUS</h4><p>Living sculptures edition, reviewed 20 October 2026. Static engineering and source checks are available; real-device animation, mobile usability and browser performance have not yet passed independent runtime testing. The requested 9.2/10 quality target is not certified.</p><div class="dialog-actions"><a class="outline-button" href="/assets/source-catalog.json" download>DOWNLOAD INSPIRATION INDEX ↓</a></div>`,
+    `<p class="about-intro">One world.<br>More than one truth.</p><p>AFTERWORLD is a quiet atlas of AI’s physical footprint, uneven benefits and strange consequences. It takes the globe-as-argument idea from Ingo Günther’s World Processor into an interactive, evidence-led form.</p><h4>A COMPLETE INDEX, AN INCOMPLETE SCIENCE</h4><p>We inventoried ${registry.entries.length} entries in the three current public World Processor galleries. Each has a separate page, original research question and visual interpretation. ${registry.evidenceCount} pages currently contain sourced numerical layers. The remaining pages are explicitly labelled research concepts. Historical variants inside gallery pages are not exhaustively re-created.</p><h4>OBSERVATION ≠ CAUSATION</h4><p>Reported observations, model estimates and forecasts have separate labels. Robot installation does not mean job loss. Internet coverage does not mean AI adoption. Data-centre electricity and water include non-AI workloads. A protein prediction is not an experimentally confirmed discovery.</p><h4>THE VISUAL CONTRACT</h4><p>In the earlier sourced stories, country and region values use display anchors, not exact sites or continuous heatmaps. The new cloud-grid research view uses alphabetical abstract region slots, with no geographic coordinates. The 14 earlier sourced stories use documented 1–100 magnitude scores. New reviewed research views use their accepted native units and fixed scales, without constructed impact scores. In those views, only a separate neutral frame moves; measured marks remain constant. In the earlier views, speed repeats magnitude; it is not a measured growth rate. Language and work categories occupy abstract sectors, and protein structures appear as global folds. Research sculptures encode no measured quantities. Missing places have no implied value.</p><h4>ACCESS & MOVEMENT</h4><p>Drag or swipe to rotate. Pinch, use +/−, or focus the globe and scroll to zoom. Arrow keys rotate; Space pauses; Home resets. The Other Side button turns 180°. Every mapped value can also be read and located from the evidence table. Reduced-motion preferences stop automatic rotation and all data effects. The Pause button also freezes both. In earlier stories, dragging stops automatic rotation while the sculpture keeps moving. In the native-unit research view, manual interaction pauses the separate ambient frame until Play is selected; the camera never autorotates.</p><h4>READ OR LISTEN</h4><p>Every information block has a Listen control. Listen to all reads an entire information overlay, including its quick statistics. JUICE Reader offers pause and resume, previous and next passages, device voices, speed and larger text. Opening a different overlay, leaving a world or closing the overlay stops its reading. Opening a text panel reads it aloud by default. Turn off Auto-read text panels to use Listen manually. Auto-read, voice and text-size preferences stay on this device. Nothing is read on initial page load.</p><h4>ORIGIN & CREDITS</h4><p><a href="https://world-processor.com/wpp" target="_blank" rel="noopener noreferrer">World Processor</a> by Ingo Günther is the artistic inspiration. This independent project is not affiliated with or endorsed by the artist. No original globe photographs are copied. Geography: Natural Earth via <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener noreferrer">world-atlas</a>. 3D: <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three.js</a>. Type: Space Grotesk and Space Mono, bundled under the SIL Open Font License. Speech: the shared JUICE Reader engine. Sources remain linked on each story.</p><h4>RELEASE STATUS</h4><p>Living sculptures edition, reviewed 20 October 2026. Static engineering and source checks are available; real-device animation, mobile usability and browser performance have not yet passed independent runtime testing. The requested 9.2/10 quality target is not certified.</p><div class="dialog-actions"><a class="outline-button" href="/assets/source-catalog.json" download>DOWNLOAD INSPIRATION INDEX ↓</a></div>`,
   );
 }
 async function shareCurrent(native = true) {
   if (!current) return;
   const token = renderToken;
-  const result = await shareWorld(current, location.origin, navigator, native);
+  const state = researchWorld ? {revision:researchWorld.revision, selection:researchWorld.rows[selectedResearchIndex]?.id} : {};
+  const result = await shareWorld(current, location.origin, navigator, native, state);
   if (token !== renderToken) return;
   if (result.status === 'copied') toast('World link copied.');
   if (result.status === 'manual') {
@@ -348,6 +463,8 @@ function safeDecode(s) {
 }
 function render({ focus = false } = {}) {
   reader.dismiss();
+  researchAbort?.abort(); researchAbort=null;
+  researchWorld=null; selectedResearchIndex=-1;
   renderToken++;
   globe?.dispose();
   globe = null;
@@ -389,7 +506,7 @@ document.addEventListener("click", (e) => {
   const url = new URL(a.href);
   if (url.origin !== location.origin) return;
   e.preventDefault();
-  history.pushState({}, "", url.pathname + url.hash);
+  history.pushState({}, "", url.pathname + url.search + url.hash);
   render({ focus: true });
 });
 window.addEventListener("popstate", () => {

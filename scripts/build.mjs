@@ -1,4 +1,6 @@
 import { soundscapeProfile } from "../src/soundscape.js";
+import { prepareResearchRuntime } from "./research-runtime.mjs";
+import { researchThumbnail } from "./research-thumbnail.mjs";
 import { motif } from "./thumbnail-effects.mjs";
 import { scoreFor } from "../src/scoring.js";
 import fs from "node:fs/promises";
@@ -18,6 +20,8 @@ const catalogue = await read("data/source-catalog.json");
 const evidence = await read("data/evidence.json");
 const topo = await read("vendor/countries-110m.json");
 const countries = decodeTopology(topo);
+const researchRuntime = await prepareResearchRuntime(root, dist);
+const researchBundles = Object.fromEntries(await Promise.all(Object.entries(researchRuntime).map(async ([id,summary]) => [id, JSON.parse(await fs.readFile(path.join(dist,summary.release.url), 'utf8'))])));
 const matches = {
   power: "322",
   capital: "381",
@@ -134,7 +138,9 @@ const entries = catalogue.entries.map((e, i) => ({
     connection: e.connection,
   },
   dataset: dById[e.id] || null,
-  newTitle: dById[e.id]?.title || e.newTitle,
+  research: researchRuntime[e.id] || null,
+  newTitle: researchRuntime[e.id]?.title || dById[e.id]?.title || e.newTitle,
+  ...(researchRuntime[e.id] ? {question: researchRuntime[e.id].question} : {}),
   number: String(i + 1).padStart(3, "0"),
   color: lenses[e.lens][1],
   lensLabel: lenses[e.lens][0],
@@ -167,8 +173,12 @@ entries.sort((a, b) => {
 const registry = {
   schemaVersion: 2,
   reviewed: "2026-10-20",
-  evidenceCount: evidence.length,
-  conceptCount: entries.length - evidence.length,
+  evidenceCount: evidence.length + Object.keys(researchRuntime).length,
+  legacyEvidenceCount: evidence.length,
+  researchImplementedCount: Object.keys(researchRuntime).length,
+  researchAcceptedCount: 73,
+  researchHeldCount: 59,
+  conceptCount: entries.length - evidence.length - Object.keys(researchRuntime).length,
   scope: catalogue.meta.coverage,
   entries,
 };
@@ -212,7 +222,7 @@ for (const f of await fs.readdir(path.join(root, "vendor")))
     path.join(root, "vendor", f),
     path.join(dist, "assets/vendor", f),
   );
-for (const f of ["app.js", "soundscape.js", "sharing.js", "reader.js", "globe.js", "math.js", "scoring.js", "effects.js", "information.js", "style.css", "reset.css"])
+for (const f of ["app.js", "soundscape.js", "sharing.js", "reader.js", "globe.js", "research-data.js", "research-view.js", "research-ui.js", "math.js", "scoring.js", "effects.js", "information.js", "style.css", "reset.css"])
   await fs.copyFile(path.join(root, "src", f), path.join(dist, "assets", f));
 await fs.writeFile(
   path.join(dist, "assets/registry.json"),
@@ -227,6 +237,7 @@ await fs.copyFile(
   path.join(dist, "assets/evidence.json"),
 );
 function thumbnail(e) {
+  if (e.research) return researchThumbnail(researchBundles[e.id]);
   const seed = hash(e.id);
   const centers = {
     adoption: 90,
@@ -366,5 +377,5 @@ await fs.writeFile(
   "User-agent: *\nDisallow: /\n",
 );
 console.log(
-  `Built ${entries.length} globe routes, ${evidence.length} sourced stories, ${registry.conceptCount} labelled concepts. All source and data contracts passed.`,
+  `Built ${entries.length} globe routes, ${evidence.length} legacy sourced stories, ${registry.researchImplementedCount} native-unit research view, ${registry.conceptCount} labelled concepts. All source and data contracts passed.`,
 );
