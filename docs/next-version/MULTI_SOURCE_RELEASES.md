@@ -1,0 +1,15 @@
+# Multi-source research release contract
+
+The active adapters for 394, 217 and 56-5 use schema 2. Their original datasets and designs remain frozen. They were activated after matching scenes, accessible tables and source review passed; the 71-view build passed all 210 tests.
+
+A release contains `schemaVersion:2`, `conceptId`, `revision`, `datasetBindingKind:'multiple'`, `datasetSha256`, `designSha256`, `design`, and `datasets`. Each ordered dataset entry contains `datasetId`, its raw frozen `datasetSha256`, its canonical `datasetCanonicalSha256`, and the complete original `dataset`. Source order must equal the exact design-binding order. Dataset hashes are checked independently against the implementation queue, design audit and final review.
+
+At release and summary level, `datasetSha256` is the **binding-set digest**, not a raw file hash: SHA-256 of canonical sorted-key JSON for the ordered array of `{datasetId,datasetSha256}` objects. A revision is SHA-256 of `conceptId:bindingSetDigest:designSha256`. Every original file digest remains available per dataset. Release bytes retain the existing immutable hashed URL and 2,000,000-byte browser limit.
+
+The browser verifies the outer release bytes, design, binding-set digest, every canonical dataset digest and revision before checking exact rows, units, periods, filters and source provenance. It returns `datasets`, `boundRowsByDataset`, and flattened selected `rows` with their original row IDs plus `datasetId`. All selected IDs are globally unique for these three contracts; collisions fail closed. Original source objects remain untouched. The first-source `dataset` alias exists only for temporary internal compatibility and must never be presented as the complete collection.
+
+Summary `datasets` entries carry each raw hash and source observation period. The top-level period has an explicit cross-source scope and serves only as heading context. Per-source tables and labels must retain each actual period and denominator. Narration binds to the binding-set digest and cites the union of source IDs. Complete downloads must include every dataset, not just selected rows or the compatibility alias.
+
+Concept 217 selects only `energychange` from five inference records; all five remain in its immutable source dataset. Its other three rows retain TWh/year and two distinct year-on-year denominators. Concept 394 keeps eleven annual Irish GWh observations separate from three dated categorical policy conditions. Concept 56-5 draws Irish rings from `nationalMeteredSharePercent`, retains underlying GWh in the source/table, and keeps global energy and growth context separate. None receives a combined scale, invented sum or causal rebound estimate.
+
+Tests exercise exact source selection, corruption and stale hashes, unit/period changes, immutable collisions and the public browser loader's streamed-byte bound and cancellation behavior. Public-loader staging tests alter activation only inside disposable copies; repository activation remains unchanged.

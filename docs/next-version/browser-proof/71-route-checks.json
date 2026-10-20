@@ -1,0 +1,97 @@
+{
+  "scope": "Codex in-app browser viewport emulation; no physical device or score claim",
+  "checks": [
+    {
+      "id": "375",
+      "canvas": 1,
+      "observations": 5,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "The Inventor Map",
+      "width": 320
+    },
+    {
+      "id": "247",
+      "canvas": 1,
+      "observations": 14,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "Partners on Paper",
+      "width": 320
+    },
+    {
+      "id": "325",
+      "canvas": 1,
+      "observations": 3,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "The Shuttle People Tried",
+      "width": 320
+    },
+    {
+      "id": "111-3",
+      "canvas": 1,
+      "observations": 5,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "A River Runs Through It",
+      "width": 320
+    },
+    {
+      "id": "266-2",
+      "canvas": 1,
+      "observations": 5,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "One Island, Many Stages",
+      "width": 320
+    },
+    {
+      "id": "390",
+      "canvas": 1,
+      "observations": 7,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "Toxic Afterlife",
+      "width": 320
+    },
+    {
+      "id": "30-8",
+      "canvas": 1,
+      "observations": 4,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "Training Has an Afterlife",
+      "width": 320
+    },
+    {
+      "id": "8-17",
+      "canvas": 1,
+      "observations": 3,
+      "scrollWidth": 320,
+      "staticInvalid": false,
+      "title": "A Trial, Not a Promise",
+      "width": 320
+    },
+    {
+      "id": "394",
+      "canvas": 1,
+      "observations": 14,
+      "scrollWidth": 320,
+      "sourceTables": 2,
+      "staticInvalid": false,
+      "title": "The Compute Sprawl",
+      "width": 320
+    },
+    {
+      "id": "217",
+      "canvas": 1,
+      "observations": 4,
+      "scrollWidth": 320,
+      "sourceTables": 2,
+      "staticInvalid": false,
+      "title": "Efficiency Meets Demand",
+      "width": 320
+    }
+  ]
+}

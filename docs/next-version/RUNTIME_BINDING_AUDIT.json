@@ -2,38 +2,17 @@
   "schemaVersion": 1,
   "purpose": "Derived implementation planning audit; never an activation registry",
   "acceptedCount": 73,
-  "activeCount": 57,
+  "activeCount": 73,
   "groups": {
     "categorical-equal-facets": [],
     "derived-percentage-with-overlap": [],
-    "explicit-denominator-switch": [
-      "365"
-    ],
-    "geographic-join-required": [
-      "378",
-      "375",
-      "247",
-      "78-4"
-    ],
-    "incompatible-unit-panels": [
-      "390",
-      "325",
-      "266-2",
-      "8-17",
-      "30-8",
-      "111-3"
-    ],
+    "explicit-denominator-switch": [],
+    "geographic-join-required": [],
+    "incompatible-unit-panels": [],
     "integer-counts": [],
     "logarithmic-native-values": [],
-    "multiple-dataset-panels": [
-      "394",
-      "217",
-      "56-5"
-    ],
-    "native-linear-rulers": [
-      "74",
-      "156-8"
-    ],
+    "multiple-dataset-panels": [],
+    "native-linear-rulers": [],
     "qualified-intervals-and-bounds": []
   },
   "concepts": [
@@ -1230,7 +1209,7 @@
     {
       "conceptId": "394",
       "title": "The Compute Sprawl",
-      "active": false,
+      "active": true,
       "group": "multiple-dataset-panels",
       "primitive": "metered-history-and-policy-hinge",
       "designSha256": "f2ae1670355499018aa1f106913be9c3dc6628d3c229de54baedb8b40c4042f0",
@@ -1465,7 +1444,7 @@
     {
       "conceptId": "390",
       "title": "Toxic Afterlife",
-      "active": false,
+      "active": true,
       "group": "incompatible-unit-panels",
       "primitive": "waste-generation-collection-ledger",
       "designSha256": "05dc6262f10c789411c72e2b5bc11f12e5668e29a346ddebfd1d299eb4f2d5f7",
@@ -1808,7 +1787,7 @@
     {
       "conceptId": "378",
       "title": "Migration, Heard",
-      "active": false,
+      "active": true,
       "group": "geographic-join-required",
       "primitive": "recorder-detection-and-effort-map",
       "designSha256": "644746bd36fb58a4dd2c57be7f0b4a70999340249c9d9fd9c49022b645085ebd",
@@ -4282,7 +4261,7 @@
     {
       "conceptId": "375",
       "title": "The Inventor Map",
-      "active": false,
+      "active": true,
       "group": "geographic-join-required",
       "primitive": "five-location-count-stems",
       "designSha256": "d57cad8602370399ec96909392f77c8c5e62f21c09c630e3f3379f6a07e8fc93",
@@ -4645,7 +4624,7 @@
     {
       "conceptId": "365",
       "title": "A Machine's Taste",
-      "active": false,
+      "active": true,
       "group": "explicit-denominator-switch",
       "primitive": "double-wine-histogram-corona",
       "designSha256": "5da11e39a9f0c46f6e61c2f2be8711268c9dd98548e7d263dfd95fa5713a9aee",
@@ -5184,7 +5163,7 @@
     {
       "conceptId": "325",
       "title": "The Shuttle People Tried",
-      "active": false,
+      "active": true,
       "group": "incompatible-unit-panels",
       "primitive": "pilot-uptake-feedback-facets",
       "designSha256": "caf95c582f85fdea944e34bf9c1b0337cf85dda86985332a24084cdf742c2bb6",
@@ -5842,7 +5821,7 @@
     {
       "conceptId": "266-2",
       "title": "One Island, Many Stages",
-      "active": false,
+      "active": true,
       "group": "incompatible-unit-panels",
       "primitive": "manufacturing-milestone-and-revenue-ring",
       "designSha256": "153981564d0d91dd53cc28bcfad5582b09a49b24a752ca7b7b821b79dd1434e6",
@@ -6198,7 +6177,7 @@
     {
       "conceptId": "247",
       "title": "Partners on Paper",
-      "active": false,
+      "active": true,
       "group": "geographic-join-required",
       "primitive": "programme-membership-country-outlines",
       "designSha256": "a5b985bdd76bdb91a9347ef91447f579a11c62803cd0ed97832cddb36d98b1bd",
@@ -6512,7 +6491,7 @@
     {
       "conceptId": "217",
       "title": "Efficiency Meets Demand",
-      "active": false,
+      "active": true,
       "group": "multiple-dataset-panels",
       "primitive": "incompatible-scale-reading-panels",
       "designSha256": "47734babab59e91889ccbff1aa478272acf556d5ba5fe6f2865233793ec7eb60",
@@ -6951,7 +6930,7 @@
     {
       "conceptId": "8-17",
       "title": "A Trial, Not a Promise",
-      "active": false,
+      "active": true,
       "group": "incompatible-unit-panels",
       "primitive": "mortality-arms-and-hazard-rail",
       "designSha256": "7542d0f7bed05a0d98c5cb37e278758edf0f4a2aeb2b23f8a440b594496eea0f",
@@ -7137,7 +7116,7 @@
     {
       "conceptId": "30-8",
       "title": "Training Has an Afterlife",
-      "active": false,
+      "active": true,
       "group": "incompatible-unit-panels",
       "primitive": "footprint-boundary-four-panels",
       "designSha256": "b9214052ffe31f1e69523ad7d8cdf5238b55711cf23e471a22f4291262dfd945",
@@ -7206,7 +7185,7 @@
     {
       "conceptId": "56-5",
       "title": "The Growing Slice",
-      "active": false,
+      "active": true,
       "group": "multiple-dataset-panels",
       "primitive": "national-share-history-with-global-context",
       "designSha256": "b5e8f764d50a38e37f0501ff3e5f9cd745ac644b63a644b92982155051e89f8d",
@@ -7484,7 +7463,7 @@
     {
       "conceptId": "74",
       "title": "The Rank Reverses",
-      "active": false,
+      "active": true,
       "group": "native-linear-rulers",
       "primitive": "two-task-crossing-order-ribbons",
       "designSha256": "15d189d2d273c17edf1eef416ecb3ad655c4fb45d4fb2f6297483cf016001711",
@@ -7575,7 +7554,7 @@
     {
       "conceptId": "78-4",
       "title": "One Person, One Weight",
-      "active": false,
+      "active": true,
       "group": "geographic-join-required",
       "primitive": "country-count-percentage-switch",
       "designSha256": "598b9b4582059e118068abf7d02280ef69846426efb180e307e24dcd01d6658a",
@@ -7977,7 +7956,7 @@
     {
       "conceptId": "111-3",
       "title": "A River Runs Through It",
-      "active": false,
+      "active": true,
       "group": "incompatible-unit-panels",
       "primitive": "water-ledger-and-dependency-facets",
       "designSha256": "af4faf3db6da308cba49edcecff35c4d1c1a54a1056f34ea261c1cf0fbe9df16",
@@ -8479,7 +8458,7 @@
     {
       "conceptId": "156-8",
       "title": "Work Without Cargo",
-      "active": false,
+      "active": true,
       "group": "native-linear-rulers",
       "primitive": "conditional-denominator-facets",
       "designSha256": "783a5aba9f2fde15372cb3c196bd54536cf8e6eee85e715c788e1004825ac4bf",

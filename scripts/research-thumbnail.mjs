@@ -1,3 +1,8 @@
+import { AMENDED_CONCEPTS, amendedInstrumentPlan } from "../src/research-amended.js";
+import { MULTI_CONCEPTS, multiInstrumentPlan } from "../src/research-multi-plan.js";
+import { PANEL_CONCEPTS, panelInstrumentPlan } from "../src/research-panels.js";
+import { histogramPlan } from "../src/research-histogram.js";
+import { MAP_CONCEPTS, geographyInstrumentPlan, mapPaintPlan } from "../src/research-maps.js";
 import { COMPARISON_CONCEPTS, comparisonInstrumentPlan } from "../src/research-comparisons.js";
 import { validateResearchBinding } from "../src/research-data.js";
 import { escapeHTML } from "../src/math.js";
@@ -35,6 +40,12 @@ function hull(points) {
  * The oblique, orthographic camera is presentation only; it creates no new data.
  */
 export function researchThumbnail(bundle) {
+  if (String(bundle.conceptId) === "74") return crossingThumbnail(bundle);
+  if (String(bundle.conceptId) === "156-8") return typedPanelThumbnail(bundle);
+  if (MULTI_CONCEPTS.includes(String(bundle.conceptId))) return multiThumbnail(bundle);
+  if (PANEL_CONCEPTS.includes(String(bundle.conceptId))) return typedPanelThumbnail(bundle);
+  if (String(bundle.conceptId) === "365") return histogramThumbnail(bundle);
+  if (MAP_CONCEPTS.includes(String(bundle.conceptId))) return mapThumbnail(bundle);
   if (COMPARISON_CONCEPTS.includes(String(bundle.conceptId))) return comparisonThumbnail(bundle);
   if (String(bundle.conceptId) === "408") return accessThumbnail(bundle);
   if (PAIR_CONCEPTS.includes(String(bundle.conceptId))) return pairThumbnail(bundle);
@@ -470,4 +481,77 @@ function comparisonThumbnail(bundle) {
     plan.conceptId === "115-2" ? "PARENTHETICAL UNCERTAINTY; NO CI INFERRED" : plan.conceptId === "211-4" ? "95% CI; CRASHED VEHICLES / MILLION VEHICLE-MILES" :
     plan.conceptId === "214" ? "PRODUCTION ≠ SHIPMENTS; TOTAL IS NOT AN EXTRA PART" : plan.conceptId === "323" ? "ROUNDED SHARES; NO NORMALISATION" : "SOURCE METRICS REMAIN SEPARATE");
   return `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><title>${escapeHTML(bundle.design.title)}</title><desc>${escapeHTML(bundle.design.legend)}</desc><rect width="300" height="250" fill="#080d10"/><g font-family="sans-serif">${content}<text x="150" y="230" text-anchor="middle" font-size="6.5" fill="#b5c3d0">0–${plan.domain[1]} NATIVE SCALE</text><text x="150" y="242" text-anchor="middle" font-size="5.8" fill="#b5c3d0">${escapeHTML(footer)}</text></g></svg>`;
+}
+
+function mapThumbnail(bundle) {
+  const rows = validateResearchBinding(bundle), plan = geographyInstrumentPlan({ ...bundle, rows });
+  let content = "", footer = "", description = bundle.design.legend;
+  if (plan.conceptId === "378") {
+    const species = plan.species[0], week = plan.weeks[0];
+    const xAt = lon => 25 + (lon - Math.min(...plan.sites.map(site => site.lon))) / (Math.max(...plan.sites.map(site => site.lon)) - Math.min(...plan.sites.map(site => site.lon))) * 250;
+    const yAt = lat => 202 - (lat - Math.min(...plan.sites.map(site => site.lat))) / (Math.max(...plan.sites.map(site => site.lat)) - Math.min(...plan.sites.map(site => site.lat))) * 154;
+    content = plan.sites.map(site => {
+      const item = plan.items.find(item => item.row.name === site.name && item.row.species === species && item.row.week === week);
+      const x = xAt(site.lon), y = yAt(site.lat), fill = !item || item.state === "unknown" ? "url(#geo-missing)" : item.state === "detected" ? "#57d5c4" : "#080d10";
+      const absent = !item ? `<path d="M${x-3},${y-3}l6,6M${x-3},${y+3}l6,-6" stroke="#b5c3d0"/>` : "";
+      const effort = item?.effortAngle == null ? "" : `<circle cx="${x}" cy="${y}" r="5" fill="none" stroke="#344b55"/><circle cx="${x}" cy="${y}" r="5" fill="none" stroke="#b5c3d0" stroke-dasharray="${5 * item.effortAngle} ${5 * (TAU - item.effortAngle)}" transform="rotate(-90 ${x} ${y})"/>`;
+      return `<g data-row-id="${escapeHTML(item?.row.id || "")}" data-source-lat="${site.lat}" data-source-lon="${site.lon}" data-absent="${!item}"><title>${escapeHTML(`${site.name}; ${item?.state || "unknown absent combination"}; ${species}, week ${week}`)}</title>${item ? `<circle cx="${x}" cy="${y}" r="3" fill="${fill}" stroke="${item.state === "not-detected" ? "#88bdf4" : "#66717e"}"/>` : absent}${effort}</g>`;
+    }).join("");
+    footer = `${species.toUpperCase()} · SOURCE WEEK ${week}`;
+    description += " Static first species/week regional coordinate view; remaining observations are selectable in the live scene and table.";
+  } else {
+    const xAt = lon => (lon + 180) / 360 * 276 + 12, yAt = lat => (90 - lat) / 180 * 138 + 42;
+    const paths = (country, fill, stroke = "#182b30") => country.polygons.map(polygon => [-360,0,360].map(shift =>
+      `<path d="${polygon.map(ring => ring.map(([lon,lat],index) => `${index ? "L" : "M"}${xAt(lon+shift)},${yAt(lat)}`).join("")+"Z").join("")}" fill="${fill}" fill-rule="evenodd" stroke="${stroke}" stroke-width=".5"/>`).join("")).join("");
+    const paint = mapPaintPlan(plan, "people");
+    content = `<g clip-path="url(#geo-clip)">${plan.background.map(country => paths(country,"#343e49")).join("")}${paint.countries.map(country => {
+      let mark = "";const anchor = country.displayAnchor;
+      if(plan.conceptId === "375") mark = `<path d="M${xAt(anchor.lon)},${yAt(anchor.lat)}v${-country.length*70}" stroke="#57d5c4" stroke-width="2" data-native-length="${country.length}"/>`;
+      if(plan.conceptId === "78-4" && country.radius !== null) mark = `<circle cx="${xAt(anchor.lon)}" cy="${yAt(anchor.lat)}" r="${country.radius*70}" fill="#57d5c4" data-native-radius="${country.radius}"/>`;
+      return `<g data-row-id="${escapeHTML(country.row.id)}"><title>${escapeHTML(`${country.row.name}; ${rows[country.index].value}; ${rows[country.index].unit}`)}</title>${paths(country, country.row.value === null ? "url(#geo-missing)" : country.fill, plan.conceptId === "78-4" ? "#182b30" : "#57d5c4")}${mark}</g>`;
+    }).join("")}</g>`;
+    footer = `${plan.coverage.mapped} MAPPED · ${plan.coverage.tableOnly} TABLE-ONLY`;
+    description += plan.conceptId === "78-4" ? " Default count-area mode; percentage mode is a separate explicit live control." : " Country summaries; anchors are not observed site locations.";
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><title>${escapeHTML(bundle.design.title)}</title><desc>${escapeHTML(description)}</desc><defs><clipPath id="geo-clip"><rect x="12" y="42" width="276" height="138"/></clipPath><pattern id="geo-missing" width="5" height="5" patternUnits="userSpaceOnUse"><rect width="5" height="5" fill="#66717e"/><path d="M0,5L5,0" stroke="#b5c3d0"/></pattern></defs><rect width="300" height="250" fill="#080d10"/>${content}<text x="150" y="230" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#b5c3d0">${escapeHTML(footer)}</text><text x="150" y="244" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#b5c3d0">${plan.conceptId === "378" ? "PUBLISHED RANDOMISED COORDINATES; UNKNOWN ≠ ABSENT" : "COUNTRY SUMMARY; NO LOCAL DENSITY OR SITE LOCATION"}</text></svg>`;
+}
+
+function typedPanelThumbnail(bundle) {
+  const rows=validateResearchBinding(bundle),plan=AMENDED_CONCEPTS.includes(String(bundle.conceptId))?amendedInstrumentPlan({...bundle,rows}):panelInstrumentPlan({...bundle,rows}),step=190/plan.items.length;
+  const description = plan.conceptId === "156-8"
+    ? "Rounded primary-report 53% of surveyed workers had clients outside their country. Separately, 90% of respondents who knew client location reported clients outside Latin America and the Caribbean. The denominators differ; do not multiply these percentages."
+    : bundle.design.legend;
+  const content=plan.items.map((item,index)=>{
+    const y=27+index*step,qualifier=item.row.qualifier===">"?">":item.row.qualifier==="approximately"?"≈":item.row.qualifier==="rounded source percentage"?"Rounded ":"";
+    const xAt=value=>151+125*value/item.domain[1];let mark="";
+    if(item.kind==="bar")mark=`<path d="M151,${y+8}H276" stroke="#344b55"/><path d="M151,${y+8}H${xAt(item.value)}" stroke="${item.color}" stroke-width="4"/>`;
+    if(item.kind==="hazard")mark=`<path d="M151,${y+8}H276M${xAt(1)},${y+3}v10" stroke="#344b55"/><path d="M${xAt(item.interval[0])},${y+8}H${xAt(item.interval[1])}M${xAt(item.interval[0])},${y+4}v8M${xAt(item.interval[1])},${y+4}v8" stroke="${item.color}" data-lower="${item.interval[0]}" data-upper="${item.interval[1]}"/><circle cx="${xAt(item.value)}" cy="${y+8}" r="3" fill="#080d10" stroke="${item.color}"/>`;
+    if(item.kind==="ring"){const r=Math.min(12,step*.32),c=TAU*r;mark=`<circle cx="260" cy="${y+5}" r="${r}" fill="none" stroke="#344b55"/><circle cx="260" cy="${y+5}" r="${r}" fill="none" stroke="${item.color}" stroke-width="3" stroke-dasharray="${c*item.value/100} ${c*(1-item.value/100)}" transform="rotate(-90 260 ${y+5})"/>`;}
+    return `<g data-row-id="${escapeHTML(item.row.id)}" data-kind="${item.kind}"><title>${escapeHTML(`${item.row.name}; ${qualifier}${item.value}; ${item.row.unit}; ${item.caption}; ${item.row.period}`)}</title><text x="12" y="${y}" font-size="8" fill="${item.color}">${escapeHTML(item.row.name.slice(0,44))}</text><text x="12" y="${y+12}" font-size="7" fill="#b5c3d0">${escapeHTML(`${qualifier}${item.value} ${item.row.unit}`.slice(0,72))}</text>${mark}</g>`;
+  }).join("");
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><title>${escapeHTML(bundle.design.title)}</title><desc>${escapeHTML(description)}</desc><rect width="300" height="250" fill="#080d10"/><g font-family="sans-serif">${content}<text x="150" y="238" text-anchor="middle" fill="#b5c3d0" font-size="8">SEPARATE SOURCE UNITS AND DENOMINATORS</text></g></svg>`;
+}
+function histogramThumbnail(bundle){
+ const plan=histogramPlan({...bundle,rows:validateResearchBinding(bundle)});
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><title>${escapeHTML(bundle.design.title)}</title><desc>Paired source count histograms, zero-frequency bins retained. Red wine N1599; white wine N4898. Share mode remains a separate explicit live control.</desc><rect width="300" height="250" fill="#080d10"/><path d="M18,205H285" stroke="#536872"/>${plan.items.map(item=>{const x=25+item.row.qualityScore*24+(item.row.wineType==="white"?7:0),h=item.length*160;return `<g data-row-id="${escapeHTML(item.row.id)}" data-count="${item.row.value}" data-denominator="${item.row.sampleDenominator}"><title>${escapeHTML(`${item.row.name}: ${item.row.value} / ${item.row.sampleDenominator}`)}</title><rect x="${x}" y="${205-h}" width="5" height="${h}" fill="${item.color}"/><path d="M${x},205h5" stroke="${item.color}"/></g>`;}).join("")}<g fill="#b5c3d0" font-family="sans-serif" font-size="9" text-anchor="middle">${Array.from({length:11},(_,i)=>`<text x="${29+i*24}" y="220">${i}</text>`).join("")}<text x="150" y="20">0–2500 SAMPLES · QUALITY SCORE 0–10</text><text x="150" y="240">AMBER: RED WINE · BLUE: WHITE WINE</text></g></svg>`;
+}
+
+function multiThumbnail(bundle){
+ const plan=multiInstrumentPlan(bundle);
+ const history=plan.history.map((item,index)=>{
+  const x=25+index*25;
+  const mark=item.kind==="chronological-rib"?`<path d="M${x},130V${130-95*item.value/8000}" stroke="${item.color}" stroke-width="4" data-native-length="${item.value/8000}"/>`:
+   `<circle cx="${x}" cy="90" r="8" fill="none" stroke="#344b55"/><circle cx="${x}" cy="90" r="8" fill="none" stroke="${item.color}" stroke-width="2" stroke-dasharray="${16*Math.PI*item.value/100} ${16*Math.PI*(1-item.value/100)}" transform="rotate(-90 ${x} 90)" data-native-angle="${TAU*item.value/100}"/>`;
+  return `<g data-row-id="${escapeHTML(item.row.id)}" data-dataset-id="${escapeHTML(item.row.datasetId)}"><title>${escapeHTML(`${item.row.period}: ${item.value}; ${item.caption}`)}</title>${mark}<text x="${x}" y="146" text-anchor="middle" font-size="6" fill="#b5c3d0">${item.row.period}</text></g>`;
+ }).join("");
+ const context=plan.context.map((item,index)=>{
+  const y=plan.history.length?169+index*23:30+index*48;
+  return `<g data-row-id="${escapeHTML(item.row.id)}" data-dataset-id="${escapeHTML(item.row.datasetId)}"><title>${escapeHTML(`${item.row.name}: ${item.value}; ${item.row.unit}; ${item.caption}`)}</title><text x="12" y="${y}" font-size="8" fill="${item.color}">${escapeHTML(item.row.name.slice(0,45))}</text><text x="12" y="${y+11}" font-size="7" fill="#b5c3d0">${escapeHTML(`${item.value} ${item.row.unit}`.slice(0,72))}</text></g>`;
+ }).join("");
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><title>${escapeHTML(bundle.design.title)}</title><desc>${escapeHTML(bundle.design.legend)}</desc><rect width="300" height="250" fill="#080d10"/><g font-family="sans-serif">${history}${context}<text x="150" y="240" text-anchor="middle" fill="#b5c3d0" font-size="7">DISTINCT SOURCES; NO ALLOCATION OR CANCELLATION</text></g></svg>`;
+}
+
+function crossingThumbnail(bundle){
+ const plan=amendedInstrumentPlan(bundle),positions=plan.items.map(item=>({x:25+250*item.value/100,y:item.index<2?68:170}));
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250"><title>${escapeHTML(bundle.design.title)}</title><desc>Four exact scores on two task rails. Constant-width same-model links show the task-specific rank reversal, not overall ranking.</desc><rect width="300" height="250" fill="#080d10"/><path d="M25,68H275M25,170H275" stroke="#344b55"/>${[[0,2],[1,3]].map(pair=>`<path d="M${positions[pair[0]].x},${positions[pair[0]].y}L${positions[pair[1]].x},${positions[pair[1]].y}" stroke="${plan.items[pair[0]].color}" fill="none"/>`).join("")}${plan.items.map(item=>`<g data-row-id="${escapeHTML(item.row.id)}" data-score="${item.value}"><title>${escapeHTML(`${item.row.name}; ${item.row.benchmark}; ${item.value}%; ${item.row.configuration}`)}</title><circle cx="${positions[item.index].x}" cy="${positions[item.index].y}" r="3" fill="#080d10" stroke="${item.color}"/><text x="${positions[item.index].x}" y="${positions[item.index].y+(item.index%2?16:-9)}" text-anchor="middle" fill="${item.color}" font-family="sans-serif" font-size="9">${item.value}%</text></g>`).join("")}<g font-family="sans-serif" font-size="10" fill="#b5c3d0" text-anchor="middle"><text x="150" y="35">MMLU Pro</text><text x="150" y="205">AIME 2026</text><text x="150" y="228">VIOLET: E2B THINKING · AMBER: 27B IT</text><text x="150" y="242">0–100% · DEVELOPER-REPORTED · AIME: NO TOOLS</text></g></svg>`;
 }

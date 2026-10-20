@@ -175,8 +175,51 @@ The coordinator reports a separate 320-pixel browser check of 392: metric select
 | `dist/assets/previews/oxygen-unseen.png` | `1b8fcbedb9e08e1efe79315821ddce2ec2d0d6667557959eae81761f528d23f1` |
 | `dist/assets/previews/the-wetland-witness.png` | `dd5ce2a3b0b720cd04ab7b434607c01e110e1c6b8e7f50b1178975bda9e9110c` |
 
+## Sixty-one-view development checkpoint
+
+The geographic additions 378, 375, 247 and 78-4 are active. I independently ran the full suite against the editor's integration build: **198 tests passed**, with zero failures, skips or cancellations. The frozen research diff remains empty. The independent geographic coverage tests check every supplied bird record across all species/week selections, distinct absent combinations, connectivity nulls and table-only economies.
+
+Source review caught two integration errors before this checkpoint: absent bird combinations needed a different mark from explicit missing-effort records, and restoring the closest permitted bird camera crop incorrectly zoomed back out. The implemented distinction and camera regression pass in this build. The coordinator also fixed synchronization of species/week controls after row selection. Browser checks remain the coordinator's separate evidence.
+
+I visually inspected the four generated local geographic PNGs. They preserve country-summary and membership meanings, the connectivity area encoding with 167/217 mapped coverage, and the initial bird week with unknown effort. The latter is a sparse all-unknown snapshot, not a zero-detection claim. These are local pixel inspections, not deployment or social-crawler evidence. The next mixed, multiple-dataset and amended designs remain outside this checkpoint.
+
+| Built file | SHA-256 |
+| --- | --- |
+| `dist/assets/app.js` | `412f437a1e498a4b102d2ab5d146651a14948b3a2c460055ae4339770a46be28` |
+| `dist/assets/research-ui.js` | `7b15645ed632d9328b77300b8fde766b2fe0f9bd7e388c8cf21a936581cbfe6c` |
+| `dist/assets/research-view.js` | `9be3d49b420af3fb4c5119d5d0be5ffe103d86c6f1c20832be7f683f575d6e8a` |
+| `dist/assets/research-map-scene.js` | `ff084ec4d66e93ae61101bd3ea02e914b93ce31f30684ae503ed62aed281c164` |
+| `dist/assets/research-maps.js` | `ac164f066d32d0f2e870ec0abc74b63e8c45d1b163137225ed43b7461e2a8141` |
+| `dist/assets/research/accepted-manifest.json` | `14d3a6edddd2c2e85a25d15dd7ebc9a7de9404e4b012f9395465327235eb6c05` |
+
+## Seventy-three-view development checkpoint
+
+All 73 accepted research designs now have native runtime views. The integrated registry retains 14 earlier sourced stories and 59 held concepts across 146 routes; I verified that every registry route has a generated page. I independently ran the complete current suite: **216 tests passed**, with no failures, skips or cancellations. The research validator reports zero errors and warnings, and the frozen `research/` diff against the original baseline remains empty.
+
+The accepted manifest contains 73 worlds and is 150,236 bytes. The largest active release is the 378 bird dataset/scene bundle at 1,414,852 bytes, below the 2 MB loader limit. This is a file-size check, not a network or hardware performance measurement.
+
+I inspected all twelve final mixed, multiple-dataset and amended PNGs. Repeated-name water/history and waste records now include their individual periods; shuttle feedback states “felt safe, would recommend”; and the wine histogram has explicit orange/red and blue/white keys. The amended cross-border preview retains both outcomes and distinct denominators. The corresponding source review is [MIXED_AND_MULTIPLE_SOURCE_REVIEW.md](MIXED_AND_MULTIPLE_SOURCE_REVIEW.md).
+
+Designs 74 and 156-8 passed separate actual independent runtime reviews before activation. [AMENDED_RUNTIME_REVIEW.md](AMENDED_RUNTIME_REVIEW.md) records the exact scope, corrections and evidence. Browser execution is attributed to the coordinator; independent source, geometry, automated checks and pixel review are attributed to this reviewer. The scientific-only amendment records remain distinct from the actual runtime approval records.
+
+I also reviewed the production application update/history code: preparation precedes an offer; stale render tokens cannot mount into a different route; failures clear previous offers; cleanup aborts requests and disposes the monitor; Apply snapshots row/camera/read mode and uses `URL.searchParams` to preserve unrelated query parameters. Missing requested rows select nothing and receive an explicit notice. Existing tests cover that case using valid source data. The component synthetic harness tests real loaders but reimplements application handlers, so it cannot establish production-app behavior; a separate byte-identical built-app fixture is available for the coordinator's behavioral checks.
+
+The [73-view artifact manifest](review-proof/checkpoint-73-artifacts.json) records exact module, manifest, registry and twelve preview hashes. Selected final built hashes:
+
+| Built file | SHA-256 |
+| --- | --- |
+| `dist/assets/app.js` | `b0abcce33a9fb8cc6fa4c63eb1d82cff9f857995579393ce26b51be2909645f3` |
+| `dist/assets/research-ui.js` | `adab9bc7b094fde8f806e98b2254b309272c4b340880af01f37bd60d24ae4747` |
+| `dist/assets/research-view.js` | `770375a5d0331513b4102ef4856823f100cb5d614202f6b040d25b83e7c5c79c` |
+| `dist/assets/research-amended-scene.js` | `6131dc477beeeb87c051e8a7a48efff407452a4d286ff7ecd044322e71713355` |
+| `dist/assets/research/accepted-manifest.json` | `c6d6ae28a6a91aa462cc1683b5181677780eb8a3dace52e9c3ce49af258066da` |
+
 ## Overall evidence limits
 
 No physical device, hearing/listening assessment, screen-reader session, frame/resource trace, native share sheet, social-crawler fetch, participant study or deployment was executed by this reviewer. Parent-agent Firefox observations must be retained and attributed separately. No current result supports a 9.2/10 rating, a physical-phone claim, a preferred narrator claim, a live-measurement badge or a completed production atlas.
 
 The [rollout audit](ROLLOUT_QUALITY_AUDIT.md) records the remaining design families and traps. Counts of activated routes are not counts of independently accepted product designs. The held concepts and the separate 14 legacy scored stories retain their existing scope.
+
+### Coordinator browser follow-up after independent 73-view checkpoint
+
+The coordinator exercised the unchanged built app in an isolated synthetic server: a validated offer left 641 displayed, explicit Apply displayed 642 and retained the stable row, read mode and unrelated query; an old `v` loaded exact 641 from verified history; a corrupt replacement cleared the prior offer without changing the displayed revision; a delayed response did not replace the home route after real SPA navigation. Exact scope and limits are in `browser-proof/actual-app-update.json`. Component-level camera/history observations are separately recorded in `synthetic-module-update.json`. Actual activated 74/156 routes passed 320-pixel DOM/selection checks in `73-controls.json`. These are coordinator observations, not additional independent execution or physical-device certification.

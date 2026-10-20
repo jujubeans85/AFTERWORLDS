@@ -1,0 +1,75 @@
+{
+  "recordedAt": "2026-10-20T06:44:47.883997+00:00",
+  "scope": "Codex in-app browser only. Viewport overrides are not physical-device testing. No browser-engine version, GPU trace, listener approval or quality score is claimed.",
+  "build": "73 native accepted research worlds; 14 earlier sourced stories; 59 held concepts; 146 routes",
+  "checks": [
+    {
+      "id": "378",
+      "viewport": [
+        320,
+        900
+      ],
+      "observations": 1587,
+      "result": "Species/week filters worked; selecting common-chiffchaff row281 changed week20 to21, retained zero-with-effort wording and coordinates. Changing species cleared incompatible selection. Missing and absent sites stayed unknown. Focus and zoom worked; one canvas, document width320."
+    },
+    {
+      "id": "78-4",
+      "viewport": [
+        320,
+        900
+      ],
+      "result": "People-area and percent-fill modes updated static chart labels. Aruba missing input remained null/table-only with focus disabled. One canvas, document width320."
+    },
+    {
+      "id": "365",
+      "viewport": [
+        320,
+        900
+      ],
+      "result": "Count/share mode updated exact22-bin static chart. Red score0 remained selectable with count0/sample1599; reset restored count. One canvas, document width320."
+    },
+    {
+      "id": "56-5",
+      "viewport": [
+        320,
+        900
+      ],
+      "result": "Two separate source tables/provenance groups. Selecting irl-2025 in second table selected global index13, showed7663GWh/year and23% national share. Static11annual rings. One canvas, document width320."
+    },
+    {
+      "id": "8-17",
+      "viewport": [
+        320,
+        900
+      ],
+      "result": "Hazard ratio selection0.83 showed endpoints0.7\u20130.99 with separate units and two-Taiwan-hospital limitation."
+    },
+    {
+      "id": "156-8",
+      "viewport": [
+        320,
+        900
+      ],
+      "result": "Actual activated route: two exact rows, rounded53 guidance and source summary, conditional90 selected with no-product limitation; one canvas, document width320."
+    },
+    {
+      "id": "74",
+      "viewport": [
+        320,
+        900
+      ],
+      "result": "Actual activated route: four table/staticrows; AIME row37.5/no tools selected. Amendment, proposal, factual review and runtime review links present; one canvas, document width320."
+    },
+    {
+      "id": "reader",
+      "result": "217 multi-source story had both citations; opening panel started reader with default Auto-read checked. Unchecking stopped playback. Opt-out persisted across close/reopen and page reload. Manual Listen still started reader. Original checked preference restored and dialog closed. Observed browser statuses, not listening-quality assessment."
+    }
+  ],
+  "artifactSha256": {
+    "dist/assets/app.js": "b0abcce33a9fb8cc6fa4c63eb1d82cff9f857995579393ce26b51be2909645f3",
+    "dist/assets/research-ui.js": "adab9bc7b094fde8f806e98b2254b309272c4b340880af01f37bd60d24ae4747",
+    "dist/assets/research-view.js": "770375a5d0331513b4102ef4856823f100cb5d614202f6b040d25b83e7c5c79c",
+    "dist/assets/research/accepted-manifest.json": "c6d6ae28a6a91aa462cc1683b5181677780eb8a3dace52e9c3ce49af258066da",
+    "dist/assets/registry.json": "b3c6583df20a97fc5ac03ae8774b00ba7716145ba2d610bd1843997ed8e6a1bc"
+  }
+}

@@ -241,3 +241,15 @@ test("camera snapshots restore viewpoint and bounded zoom without restoring ambi
   assert.equal(paused, true);
   assert.equal(view.restoreCamera({ rotation: [0, NaN, 0], zoomRatio: 1 }), false);
 });
+
+test("recorder crop restores its closest allowed zoom without changing viewpoint", () => {
+  const view = Object.assign(Object.create(ResearchGlobe.prototype), {
+    world: new THREE.Group(), camera: new THREE.PerspectiveCamera(), baseDistance: 1.65,
+    layer: { minimumCameraDistance: 1.08 }, pause() {}, wake() {},
+  });
+  view.camera.position.z = 1.08;
+  const state = view.snapshotCamera();
+  view.camera.position.z = 1.65;
+  assert.equal(view.restoreCamera(state), true);
+  assert.equal(view.camera.position.z, 1.08);
+});

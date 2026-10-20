@@ -1,3 +1,7 @@
+import { MIXED_BINDINGS, validateMixedBinding } from './research-mixed-bindings.js';
+import { GEOGRAPHIC_BINDINGS, COUNTRY_JOIN_CONCEPTS, validateGeographicBinding } from './research-geographic-bindings.js';
+import { validDisplayAnchor } from './research-geographic-anchors.js';
+import { validateMultipleRelease } from './research-multiple.js';
 // Native-unit research data is deliberately independent of the legacy scoring
 // and effect systems. Only primitives implemented and reviewed here may load.
 import { LINEAR_BINDINGS, validateLinearScope } from './research-linear-bindings.js';
@@ -7,7 +11,7 @@ const fail = message => { throw new Error(`Research data: ${message}`); };
 const HASH = /^[a-f0-9]{64}$/;
 export const ACTIVE_RESEARCH_CONCEPTS = Object.freeze(['430', '408', '5-6', '63', '388', '330', '406', '193-5', '372', '276', '409', '369', '324', '385', '232', '333', '63-8', '364', '320',
   '417', '415', '397', '382', '371', '368', '358', '356', '348', '321', '314', '305', '259', '256', '250', '107', '150-5', '155-17', '170-3', '178',
-  '255', '233-2', '422-2', '138-8', '8-6', '428', '407', '284', '202', '117', '402', '398', '392', '323', '218', '214', '115-2', '211-4']);
+  '255', '233-2', '422-2', '138-8', '8-6', '428', '407', '284', '202', '117', '402', '398', '392', '323', '218', '214', '115-2', '211-4', '378', '375', '247', '78-4', '390', '325', '266-2', '8-17', '30-8', '111-3', '365', '394', '217', '56-5', '74', '156-8']);
 const PAIR_BINDINGS = {
   '5-6': { datasetId: 'planet-seabed-coverage', primitive: 'mapped-fraction-year-duet', unit: 'percent of global ocean floor', rowIds: ['seabed-2025', 'seabed-2026'], periods: ['GEBCO_2025 release', 'GEBCO_2026 release'] },
   '63': { datasetId: 'society-rural-internet', primitive: 'urban-rural-open-rings', unit: 'percent of residents', rowIds: ['internet-urban', 'internet-rural'], periods: ['2025', '2025'] },
@@ -33,7 +37,7 @@ export async function researchSha256(bytes) {
 }
 
 export function validateResearchBinding({ conceptId, datasetSha256, design, dataset }) {
-  if (!ACTIVE_RESEARCH_CONCEPTS.includes(conceptId) && !LINEAR_BINDINGS[conceptId] && !CATEGORICAL_BINDINGS[conceptId]) fail('unsupported concept');
+  if (!ACTIVE_RESEARCH_CONCEPTS.includes(conceptId) && !LINEAR_BINDINGS[conceptId] && !CATEGORICAL_BINDINGS[conceptId] && !GEOGRAPHIC_BINDINGS[conceptId] && !MIXED_BINDINGS[conceptId]) fail('unsupported concept');
   if (!HASH.test(datasetSha256 || '')) fail('invalid dataset digest');
   if (design?.conceptId !== conceptId || design.designId !== `design-${conceptId}` || design.status !== 'accepted-specification' || design.reviewAcceptancePending !== false) fail('design is not accepted for this concept');
   if (design.scoring?.type !== 'none' || design.forecast?.type !== 'none') fail('unsupported scoring or forecast');
@@ -50,6 +54,8 @@ export function validateResearchBinding({ conceptId, datasetSha256, design, data
   if (!Array.isArray(dataset.sources) || !dataset.sources.length) fail('missing sources');
   const sources = new Set(dataset.sources.map(source => source.sourceId));
   if (sources.size !== dataset.sources.length || sources.has(undefined)) fail('duplicate or missing source IDs');
+  if (MIXED_BINDINGS[conceptId]) return validateMixedBinding({ conceptId, design, dataset, binding, sources }, canonicalReviewedJSON, fail);
+  if (GEOGRAPHIC_BINDINGS[conceptId]) return validateGeographicBinding({ conceptId, design, dataset, binding, sources, datasetSha256 }, canonicalReviewedJSON, fail);
   if (CATEGORICAL_BINDINGS[conceptId]) return validateCategoricalScope({ conceptId, design, dataset, binding, sources }, fail);
   const [minimum, maximum] = design.scale?.domain || [];
   // The reviewed seabed package uses "percent" at dataset level and the more
@@ -125,8 +131,8 @@ export function validateResearchBinding({ conceptId, datasetSha256, design, data
   return rows;
 }
 
-export function validateResearchGeography(geography, rows) {
-  if (geography?.schemaVersion !== 1 || geography.datasetId !== 'society-electricity-access' || !HASH.test(geography.auditSha256 || '') || !HASH.test(geography.boundarySha256 || '') || !Array.isArray(geography.countries) || !Array.isArray(geography.backgroundCountries) || !Array.isArray(geography.unsupported)) fail('invalid geography contract');
+export function validateResearchGeography(geography, rows, datasetId = 'society-electricity-access', conceptId = '408') {
+  if (geography?.schemaVersion !== 1 || !COUNTRY_JOIN_CONCEPTS.includes(conceptId) || geography.datasetId !== datasetId || !HASH.test(geography.auditSha256 || '') || !HASH.test(geography.boundarySha256 || '') || !Array.isArray(geography.countries) || !Array.isArray(geography.backgroundCountries) || !Array.isArray(geography.unsupported)) fail('invalid geography contract');
   const rowMap = new Map(rows.map(row => [row.id, row])), seen = new Set(), geometryIds = new Set();
   for (const country of geography.countries) {
     if (!rowMap.has(country.rowId) || seen.has(country.rowId) || rowMap.get(country.rowId).geographicId !== country.geographicId || !/^\d{3}$/.test(country.geometryId) || geometryIds.has(country.geometryId)) fail('invalid geographic join');
@@ -146,6 +152,7 @@ export function validateResearchGeography(geography, rows) {
       }
     }
   }
+  if (['375', '78-4'].includes(conceptId) && geography.countries.some(country => !validDisplayAnchor(country.displayAnchor, country.polygons))) fail('invalid country-summary display anchor');
   return geography;
 }
 
@@ -180,6 +187,11 @@ export async function loadResearchWorld(summary, { fetchImpl = globalThis.fetch,
   if (signal?.aborted) throw signal.reason || new DOMException('Aborted', 'AbortError');
   if (await researchSha256(bytes) !== summary.release.sha256) fail('release digest mismatch');
   const bundle = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
+  if (bundle.schemaVersion === 2) {
+    const world = await validateMultipleRelease(bundle, summary, { canonical: canonicalReviewedJSON, sha256: researchSha256 });
+    if (signal?.aborted) throw signal.reason || new DOMException('Aborted', 'AbortError');
+    return world;
+  }
   if (bundle.schemaVersion !== 1 || bundle.conceptId !== summary.conceptId || bundle.datasetSha256 !== summary.datasetSha256 || bundle.designSha256 !== summary.designSha256 || bundle.revision !== summary.revision) fail('release identity mismatch');
   if (await researchSha256(canonicalReviewedJSON(bundle.design)) !== bundle.designSha256) fail('design digest mismatch');
   if (await researchSha256(canonicalReviewedJSON(bundle.dataset)) !== bundle.datasetCanonicalSha256) fail('dataset content digest mismatch');
@@ -192,12 +204,12 @@ export async function loadResearchWorld(summary, { fetchImpl = globalThis.fetch,
         await researchSha256(bundle.runtimeApprovalText) !== bundle.runtimeApprovalSha256) fail('runtime approval digest mismatch');
     validateAmendmentRuntimeApproval(JSON.parse(bundle.runtimeApprovalText), bundle.designAmendmentSha256, bundle.conceptId);
   } else if (bundle.designAmendment || bundle.designAmendmentSha256 || summary.designAmendment || bundle.runtimeApprovalText || bundle.runtimeApprovalSha256) fail('unsupported design amendment');
-  if (bundle.conceptId === '408' && (bundle.geographySha256 !== summary.geographySha256 || await researchSha256(canonicalReviewedJSON(bundle.geography)) !== bundle.geographySha256)) fail('geography digest mismatch');
-  const revision = await researchSha256(`${bundle.conceptId}:${bundle.datasetSha256}:${bundle.designSha256}${bundle.conceptId === '408' ? `:${bundle.geographySha256}` : ''}${DESIGN_AMENDMENTS[bundle.conceptId] ? `:${bundle.designAmendmentSha256}:${bundle.runtimeApprovalSha256}` : ''}`);
+  if (COUNTRY_JOIN_CONCEPTS.includes(bundle.conceptId) && (bundle.geographySha256 !== summary.geographySha256 || await researchSha256(canonicalReviewedJSON(bundle.geography)) !== bundle.geographySha256)) fail('geography digest mismatch');
+  const revision = await researchSha256(`${bundle.conceptId}:${bundle.datasetSha256}:${bundle.designSha256}${COUNTRY_JOIN_CONCEPTS.includes(bundle.conceptId) ? `:${bundle.geographySha256}` : ''}${DESIGN_AMENDMENTS[bundle.conceptId] ? `:${bundle.designAmendmentSha256}:${bundle.runtimeApprovalSha256}` : ''}`);
   if (revision !== bundle.revision) fail('revision digest mismatch');
   const rows = validateResearchBinding(bundle);
   if (signal?.aborted) throw signal.reason || new DOMException('Aborted', 'AbortError');
-  const geography = bundle.conceptId === '408' ? validateResearchGeography(bundle.geography, rows) : null;
+  const geography = COUNTRY_JOIN_CONCEPTS.includes(bundle.conceptId) ? validateResearchGeography(bundle.geography, rows, bundle.dataset.datasetId, bundle.conceptId) : null;
   const countryMap = new Map(geography?.countries.map(country => [country.rowId, country]) || []);
   return {
     ...summary, dataset: bundle.dataset, design: bundle.design, datasetCanonicalSha256: bundle.datasetCanonicalSha256, rows, geography,
@@ -207,13 +219,15 @@ export async function loadResearchWorld(summary, { fetchImpl = globalThis.fetch,
       if (bundle.conceptId === '388') return { row, index, kind: row.value === null ? 'interval-only' : 'continental-share', lower: row.lower ?? null, upper: row.upper ?? null, value: row.value };
       if (bundle.conceptId === '330') return { row, index, kind: 'one-robust-standard-error', value: row.value, lower: row.value - row.standardError, upper: row.value + row.standardError };
       if (['406', '193-5'].includes(bundle.conceptId)) return { row, index, kind: row.qualifier === '<' ? 'open-upper-bound' : row.qualifier === 'up to' ? 'inclusive-upper-bound' : 'approximate', threshold: row.value, qualifier: row.qualifier };
+      if (MIXED_BINDINGS[bundle.conceptId]) return { row, index, kind: 'native-separate-panel' };
+      if (GEOGRAPHIC_BINDINGS[bundle.conceptId]) return { row, index, kind: bundle.conceptId === '378' ? 'published-recorder-observation' : 'country-summary', country: countryMap.get(row.id) || null };
       if (CATEGORICAL_BINDINGS[bundle.conceptId]) return { row, index, kind: CATEGORICAL_BINDINGS[bundle.conceptId].type === 'none' ? 'native-text' : 'categorical' };
       if (LINEAR_BINDINGS[bundle.conceptId]) {
         const contract = LINEAR_BINDINGS[bundle.conceptId], visualValue = contract.valueField ? row[contract.valueField] : row.value;
         if (bundle.conceptId === '117') return { row, index, kind: 'logarithmic-position', positionOffset: 0.45 * (Math.log10(row.value) - 25) / 2, value: row.value };
         return { row, index, kind: 'native-ruler', fraction: visualValue / contract.maximum, value: row.value, ...(contract.valueField ? { visualValue, valueField: contract.valueField } : {}) };
       }
-      return { row, index, fraction: row.value === null ? null : row.value / 100, dialAngle: row.value === null ? null : 2 * Math.PI * row.value / 100, ...(bundle.conceptId === '408' ? {country: countryMap.get(row.id) || null} : {}) };
+      return { row, index, fraction: row.value === null ? null : row.value / 100, dialAngle: row.value === null ? null : 2 * Math.PI * row.value / 100, ...(COUNTRY_JOIN_CONCEPTS.includes(bundle.conceptId) ? {country: countryMap.get(row.id) || null} : {}) };
     }),
   };
 }

@@ -1,0 +1,41 @@
+{
+  "reviewedAt": "2026-10-20T06:40:56Z",
+  "scope": "Independent source, geometry, static UI and preview review; browser execution by coordinator, screenshots inspected by reviewer. Local development activation only.",
+  "fixture": {
+    "schemaVersion": 1,
+    "kind": "local-design-review-only",
+    "createdAt": "2026-10-20T06:39:46.346Z",
+    "authorizesRuntimeActivation": false,
+    "records": [
+      {
+        "conceptId": "74",
+        "fixtureId": "356bc25005a0a70daea5854d3fdbd67950fcd04b7d0b94dd1c69e7b0fab94936",
+        "amendmentSha256": "e2bc9fca60fccc5c0515f99e364ab9207d06e17ee4aa7a50aa7160d2a55d36ac",
+        "datasetSha256": "0e336f937febe3f8c5f19b6fd5efdb032c48c18a8c29abbbc7a0a4e52f4bbf2c",
+        "designSha256": "93895fdf9388fd75cd1d2df564f3efabe8591456090073676f04ba18f4204b25"
+      },
+      {
+        "conceptId": "156-8",
+        "fixtureId": "26534e401480ebe71ce35dc5591c1cfd04afe080750dd1971655be0f03432625",
+        "amendmentSha256": "e3532ba1ab8c2b70473f29d3a747c96dbb3b2affdd9f3ed860f06dd641cf3177",
+        "datasetSha256": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3",
+        "designSha256": "0a2ce8e2f00ebef89842538329cc16869c8eb480d09bdc19e4636c3cb0287b05"
+      }
+    ]
+  },
+  "sha256": {
+    "assets/research-amended.js": "29cf92737911631d9133ff94ce0f78698c7b49d1247fda0819b748bc9c576e72",
+    "assets/research-amended-scene.js": "6131dc477beeeb87c051e8a7a48efff407452a4d286ff7ecd044322e71713355",
+    "assets/research-panel-scene.js": "2bea3a322185afc6bcc02aa54cb8819f3efb1b7e73b6b6fc83d7c11a787c721b",
+    "assets/research-view.js": "770375a5d0331513b4102ef4856823f100cb5d614202f6b040d25b83e7c5c79c",
+    "assets/research-ui.js": "adab9bc7b094fde8f806e98b2254b309272c4b340880af01f37bd60d24ae4747",
+    "review.js": "c57ad46a6f287f64635fbfeb6f0c300c236b454268361f8f9940ca2836a18448",
+    "index.html": "bf91b51b7083ab34d07a1587ab03434149324347dfe71b7dd17852a01e22773c",
+    "fixtures/74.png": "56290c18665ed1532daefd61591748907d5f92798479ef92ce868862ff928208",
+    "fixtures/156-8.png": "9d0edfb8b777c051dc5d40f59a8cb99da6fc36c22cf0cd1ced1b31c7ec3c3c46",
+    "docs/next-version/browser-proof/amended-74-review-320.jpg": "b55e5b388f09a20c9ebb688355602977d33539863dc781902d9d37f79c24dbb4",
+    "docs/next-version/browser-proof/amended-74-review-desktop.jpg": "f084178770c7fedb010de5abd2c01c86c27e24b45c6f5f24f84b19846ca6ca8c",
+    "docs/next-version/browser-proof/amended-156-review-320.jpg": "93f4f38be92084e52723e9a9ee9b98c1f6576a5ed92a3dbcfa0ae305f39a825d",
+    "docs/next-version/browser-proof/amended-156-review-desktop.jpg": "b06663d379b4e43b0df626b42db157b21c1a6c55abbea48c48f0a57f37199e4d"
+  }
+}

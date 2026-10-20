@@ -1,3 +1,12 @@
+import { AMENDED_CONCEPTS } from "./research-amended.js";
+import { createAmendedScene } from "./research-amended-scene.js";
+import { MULTI_CONCEPTS } from "./research-multi-plan.js";
+import { createMultiScene } from "./research-multi-scene.js";
+import { PANEL_CONCEPTS } from "./research-panels.js";
+import { createPanelScene } from "./research-panel-scene.js";
+import { createHistogramScene } from "./research-histogram-scene.js";
+import { MAP_CONCEPTS } from "./research-maps.js";
+import { createMapScene } from "./research-map-scene.js";
 import * as THREE from "./vendor/three.module.js";
 import { clamp, fitDistance } from "./math.js";
 import { accessPaintPlan, accessCountryAt, paintAccessTexture } from "./research-geography.js";
@@ -331,6 +340,11 @@ export class ResearchGlobe {
     this.reduced = this.media.matches;
     this.paused = this.reduced || document.hidden;
     this.geographic = String(research.design.conceptId) === "408";
+    this.amendedInstrument = AMENDED_CONCEPTS.includes(String(research.design.conceptId));
+    this.multiInstrument = MULTI_CONCEPTS.includes(String(research.design.conceptId));
+    this.panelInstrument = PANEL_CONCEPTS.includes(String(research.design.conceptId));
+    this.histogramInstrument = String(research.design.conceptId) === "365";
+    this.mapInstrument = MAP_CONCEPTS.includes(String(research.design.conceptId));
     this.paired = PAIR_CONCEPTS.includes(String(research.design.conceptId));
     this.railInstrument = RAIL_CONCEPTS.includes(String(research.design.conceptId));
     this.countInstrument = COUNT_CONCEPTS.includes(String(research.design.conceptId));
@@ -338,8 +352,13 @@ export class ResearchGlobe {
     this.percentageInstrument = PERCENTAGE_CONCEPTS.includes(String(research.design.conceptId));
     this.architectureInstrument = ARCHITECTURE_CONCEPTS.includes(String(research.design.conceptId));
     this.comparisonInstrument = COMPARISON_CONCEPTS.includes(String(research.design.conceptId));
-    this.instrument = this.comparisonInstrument || this.architectureInstrument || this.percentageInstrument || this.categoryInstrument || this.countInstrument || this.railInstrument || INTERVAL_CONCEPTS.includes(String(research.design.conceptId));
+    this.instrument = this.amendedInstrument || this.multiInstrument || this.panelInstrument || this.histogramInstrument || this.mapInstrument || this.comparisonInstrument || this.architectureInstrument || this.percentageInstrument || this.categoryInstrument || this.countInstrument || this.railInstrument || INTERVAL_CONCEPTS.includes(String(research.design.conceptId));
     this.layer = this.geographic ? createAccessScene(research) :
+      this.amendedInstrument ? createAmendedScene(research) :
+      this.multiInstrument ? createMultiScene(research) :
+      this.panelInstrument ? createPanelScene(research) :
+      this.histogramInstrument ? createHistogramScene(research) :
+      this.mapInstrument ? createMapScene(research) :
       this.paired ? createPairScene(research) :
         this.comparisonInstrument ? createComparisonScene(research) :
         this.architectureInstrument ? createArchitectureScene(research) :
@@ -348,6 +367,14 @@ export class ResearchGlobe {
         this.countInstrument ? createCountScene(research) :
         this.railInstrument ? createRailScene(research) :
           this.instrument ? createInstrumentScene(research) : createLanternScene(research);
+    this.histogramModes = this.layer.histogramModes || [];
+    this.histogramMode = this.histogramModes[0] || null;
+    this.species = this.layer.species || [];
+    this.weeks = this.layer.weeks || [];
+    this.speciesSelection = this.species[0] || null;
+    this.weekSelection = this.weeks[0] ?? null;
+    this.mapModes = this.layer.mapModes || [];
+    this.mapMode = this.mapModes[0] || null;
     this.metrics = this.layer.metrics || [];
     this.metric = this.metrics[0] || null;
     this.hasDetailInset = Boolean(this.layer.setDetailInset);
@@ -522,10 +549,10 @@ export class ResearchGlobe {
     this.camera.updateProjectionMatrix();
     if (this.layer.hud) this.layer.hud.scale.setScalar(Math.min(1, this.camera.aspect / 0.75));
     const previous = this.baseDistance;
-    this.baseDistance = fitDistance(width, height, (this.layer.frameRadius || FRAME_RADIUS) + 0.08);
+    this.baseDistance = this.layer.cameraDistance || fitDistance(width, height, (this.layer.frameRadius || FRAME_RADIUS) + 0.08);
     this.camera.position.z = previous
       ? clamp(this.camera.position.z * this.baseDistance / previous,
-        this.baseDistance * 0.72, this.baseDistance * 1.6)
+        (this.layer?.minimumCameraDistance || this.baseDistance * 0.72), this.baseDistance * 1.6)
       : this.baseDistance;
     if (this.layer.dial) {
       const halfHeight = 3 * Math.tan(this.camera.fov * Math.PI / 360);
@@ -540,7 +567,7 @@ export class ResearchGlobe {
     const rect = this.canvas.getBoundingClientRect();
     this.world.updateMatrixWorld(true);
     this.camera.updateMatrixWorld(true);
-    if (this.geographic) {
+    if (this.geographic || this.layer.useCountryPicking) {
       const ray = new THREE.Raycaster();
       // Expand the interaction area, never the measured country shape.
       const offsets = [[0, 0], ...[11, 22].flatMap(radius =>
@@ -556,12 +583,12 @@ export class ResearchGlobe {
         const local = this.world.worldToLocal(hit.point.clone()).normalize();
         const longitude = Math.atan2(local.x, local.z) * 180 / Math.PI;
         const latitude = Math.asin(clamp(local.y, -1, 1)) * 180 / Math.PI;
-        const country = accessCountryAt(this.layer.plan, longitude, latitude);
+        const country = this.layer.countryAt ? this.layer.countryAt(longitude, latitude) : accessCountryAt(this.layer.plan, longitude, latitude);
         if (country) { this.select(country.index); return; }
       }
       return;
     }
-    const targets = this.layer.markers.flatMap(mark => {
+    const targets = this.layer.markers.filter(mark => !mark.hidden).flatMap(mark => {
       const points = mark.hitPoints || (this.paired ? [mark.center, ...Array.from({ length: 32 }, (_, index) =>
         mark.center.clone().add(new THREE.Vector3(
           Math.sin(index * TAU / 32) * this.layer.plan.radius,
@@ -589,6 +616,10 @@ export class ResearchGlobe {
     if (!mark) return;
     this.pause(true);
     this.selected = index;
+    if (this.layer.setObservation && (mark.row.species !== this.speciesSelection || mark.row.week !== this.weekSelection)) {
+      this.speciesSelection = mark.row.species; this.weekSelection = mark.row.week;
+      this.layer.setObservation(this.speciesSelection, this.weekSelection);
+    }
     this.layer.onSelect?.(index);
     if (this.layer.dial) setAccessDial(this.layer, mark.row.value);
     else {
@@ -597,7 +628,7 @@ export class ResearchGlobe {
         : mark.selectionTargets || [{ base: mark.base, normal: mark.normal }];
       [this.layer.ring, ...(this.layer.extraRings || [])].forEach((ring, index) => {
         const target = targets[index];
-        ring.visible = Boolean(target);
+        ring.visible = Boolean(target) && (!this.mapInstrument || this.canFocus(this.selected));
         if (target) {
           ring.position.copy(target.base);
           ring.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), target.normal);
@@ -661,6 +692,27 @@ export class ResearchGlobe {
     this.wake();
   }
 
+  setHistogramMode(mode) {
+    if (!this.histogramModes.includes(mode)) return false;
+    this.pause(true); this.layer.setHistogramMode(mode); this.histogramMode = mode;
+    this.dirty = true; this.wake(); return true;
+  }
+
+  setObservation(species, week) {
+    if (!this.layer.setObservation || !this.species.includes(species) || !this.weeks.includes(week)) return false;
+    this.pause(true);
+    this.layer.setObservation(species, week);
+    this.speciesSelection = species; this.weekSelection = week;
+    if (this.selected >= 0 && this.layer.markers[this.selected].hidden) this.clearSelection();
+    this.dirty = true; this.wake(); return true;
+  }
+
+  setMapMode(mode) {
+    if (!this.mapModes.includes(mode)) return false;
+    this.pause(true); this.layer.setMapMode(mode); this.mapMode = mode;
+    this.dirty = true; this.wake(); return true;
+  }
+
   setMetric(metric) {
     if (!this.metrics?.includes(metric) || !this.layer.setMetric) return false;
     this.pause(true);
@@ -693,7 +745,7 @@ export class ResearchGlobe {
   zoom(delta) {
     this.pause(true);
     this.camera.position.z = clamp(this.camera.position.z + delta,
-      this.baseDistance * 0.72, this.baseDistance * 1.6);
+      (this.layer?.minimumCameraDistance || this.baseDistance * 0.72), this.baseDistance * 1.6);
     this.dirty = true;
     this.wake();
   }
@@ -711,7 +763,7 @@ export class ResearchGlobe {
     const mark = this.layer.markers[index];
     if (this.hasDetailInset && this.detailInset)
       return Boolean(mark?.selectionTargets.some(target => target.detailInset));
-    return Boolean(mark && (!this.geographic || mark.country));
+    return Boolean(mark && !mark.hidden && (!this.geographic || mark.country));
   }
 
   snapshotCamera() {
@@ -719,6 +771,9 @@ export class ResearchGlobe {
       zoomRatio: this.camera.position.z / this.baseDistance,
       ...(this.hasDetailInset ? { detailInset: this.detailInset } : {}),
       ...(this.hasReverseEvidence ? { reverseEvidence: this.reverseEvidence } : {}),
+      ...(this.histogramMode ? { histogramMode: this.histogramMode } : {}),
+      ...(this.mapMode ? { mapMode: this.mapMode } : {}),
+      ...(this.speciesSelection ? { speciesSelection: this.speciesSelection, weekSelection: this.weekSelection } : {}),
       ...(this.metric ? { metric: this.metric } : {}),
       ...(this.timeBasis ? { timeBasis: this.timeBasis } : {}) };
   }
@@ -731,9 +786,13 @@ export class ResearchGlobe {
     if (this.hasReverseEvidence && typeof state.reverseEvidence === "boolean") this.setReverseEvidence(state.reverseEvidence);
     if (this.layer?.setTimeBasis && ["paid hours only", "paid and unpaid hours"].includes(state.timeBasis))
       this.setTimeBasis(state.timeBasis);
+    if (this.histogramModes?.includes(state.histogramMode)) this.setHistogramMode(state.histogramMode);
+    if (this.mapModes?.includes(state.mapMode)) this.setMapMode(state.mapMode);
+    if (this.species?.includes(state.speciesSelection) && this.weeks?.includes(state.weekSelection))
+      this.setObservation(state.speciesSelection, state.weekSelection);
     if (this.metrics?.includes(state.metric)) this.setMetric(state.metric);
     this.world.rotation.set(...state.rotation);
-    this.camera.position.z = this.baseDistance * clamp(state.zoomRatio, 0.72, 1.6);
+    this.camera.position.z = this.baseDistance * clamp(state.zoomRatio, this.layer?.minimumCameraDistance ? this.layer.minimumCameraDistance / this.baseDistance : 0.72, 1.6);
     this.dirty = true;
     this.wake();
     return true;

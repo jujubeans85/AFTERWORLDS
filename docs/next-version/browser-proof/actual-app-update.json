@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-10-20T06:47:54.320975+00:00",
+  "scope": "Local synthetic fixture at127.0.0.1:4176, unchanged built app.js and real app controls; no upstream change or production promotion. Browser versions, physical devices and listening quality not assessed.",
+  "baselineRevision": "e25dfcd811c52646bda3577f27752e3d67639193337c37f55543674f4ef60092",
+  "syntheticRevision": "a4255cce50a230c0965cc11dbc3303ddbdfe0bcbe047f6c697ae5da4c5c6eba9",
+  "appSha256": "b0abcce33a9fb8cc6fa4c63eb1d82cff9f857995579393ce26b51be2909645f3",
+  "checks": {
+    "offer": "After normal30-second focus throttle, Updated data available appeared while Johannesburg remained641gCO2eq/kWh.",
+    "apply": "Actual APPLY REVIEWED UPDATE changed selected Johannesburg to642; stable africa-south1 retained, MOVE MODE aria-pressed=true, one canvas.",
+    "url": "http://127.0.0.1:4176/globe/the-carbon-clock?fixture=preserve-me&row=africa-south1&v=a4255cce50a230c0965cc11dbc3303ddbdfe0bcbe047f6c697ae5da4c5c6eba9",
+    "history": "OPEN HISTORICAL BASELINE loaded exact641 with pinned baselinev+stable row while latest pointer remained syntheticupdate.",
+    "corruptReplacement": "With a prior validatedoffer visible, corrupt pointer onnextnormalfocuscheck hidAPPLY and reported unavailable, retained641.",
+    "delayedNavigation": "Stage delayed5-second release; focus actual app; navigate via real ALL WORLDS SPA link while pending. After delay, home heading remained focused, URL/#index, one decorative canvas, no update button; stale response did not mount old world."
+  },
+  "limits": [
+    "Exact camera numeric retention is separately observed in the component harness; this app check does not expose camera internals.",
+    "Removed-row behavior is covered by source/unit tests, not an invalid shortened430fixture.",
+    "Focus restoration after Apply was not captured before switching focus to fixture controls."
+  ]
+}

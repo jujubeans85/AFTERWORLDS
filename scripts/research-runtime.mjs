@@ -1,8 +1,11 @@
+import { COUNTRY_JOIN_CONCEPTS } from '../src/research-geographic-bindings.js';
+import { prepareMultipleResearchRelease } from './research-multiple.mjs';
+import { MULTIPLE_BINDINGS } from '../src/research-multiple.js';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { ACTIVE_RESEARCH_CONCEPTS, canonicalReviewedJSON, validateResearchBinding, validateResearchGeography } from '../src/research-data.js';
-import { prepareElectricityGeography } from './research-geography.mjs';
+import { prepareElectricityGeography, prepareCountryGeography } from './research-geography.mjs';
 import { readAcceptedWdiRelease, acceptedWdiHistory, latestWdiCheck } from './review-wdi.mjs';
 import { prepareDesignAmendment, prepareAmendmentRuntimeApproval } from './research-design-amendments.mjs';
 
@@ -45,6 +48,11 @@ export async function prepareResearchRuntime(root, dist) {
     if (!(accepted.review?.score >= 92) || accepted.blockers?.length || Array.from({ length: 10 }, (_, index) => `G${index + 1}`).some(gate => accepted.review?.gates?.[gate]?.status !== 'pass')) fail('independent research gates are incomplete');
     const designSha256 = digest(canonicalReviewedJSON(design));
     if (designSha256 !== reviewed.designRecordSha256) fail('stale design digest');
+    if (MULTIPLE_BINDINGS[conceptId]) {
+      const summary = await prepareMultipleResearchRelease({ root, dist, conceptId, queued, design, designSha256, reviewed, accepted, reviewedAt: finalReview.reviewedAt });
+      summaries[conceptId] = summary; versions[conceptId] = { [summary.revision]: summary };
+      continue;
+    }
     if (queued.datasets.length !== 1) fail('unsupported dataset count');
     const reference = queued.datasets[0];
     if (reference.path !== `research/datasets/${reference.datasetId}.json` || !/^[a-z0-9-]+$/.test(reference.datasetId)) fail('invalid dataset path');
@@ -56,11 +64,12 @@ export async function prepareResearchRuntime(root, dist) {
     const runtimeApproval = amendment ? await prepareAmendmentRuntimeApproval(root, amendment, dist) : null;
     const publish = async (dataset, design, datasetSha256, designSha256, acceptance) => {
     const rows = validateResearchBinding({ conceptId, datasetSha256, design, dataset });
-    const geography = conceptId === '408' ? validateResearchGeography(await prepareElectricityGeography(root, dataset), rows) : null;
+    const geography = COUNTRY_JOIN_CONCEPTS.includes(conceptId) ? validateResearchGeography(conceptId === '408' ? await prepareElectricityGeography(root, dataset) : await prepareCountryGeography(root, dataset, { anchors: ['375', '78-4'].includes(conceptId) }), rows, dataset.datasetId, conceptId) : null;
     const geographySha256 = geography ? digest(canonicalReviewedJSON(geography)) : null;
     const revision = digest(`${conceptId}:${datasetSha256}:${designSha256}${geography ? `:${geographySha256}` : ''}${amendment ? `:${amendment.amendmentSha256}:${runtimeApproval.sha256}` : ''}`);
     const bundle = { schemaVersion: 1, conceptId, revision, datasetSha256, designSha256, datasetCanonicalSha256: digest(canonicalReviewedJSON(dataset)), design, dataset, ...(geography ? {geography, geographySha256} : {}), ...(amendment ? { designAmendment: amendment.record, designAmendmentSha256: amendment.amendmentSha256, runtimeApprovalText: runtimeApproval.text, runtimeApprovalSha256: runtimeApproval.sha256 } : {}) };
     const bytes = JSON.stringify(bundle);
+    if (Buffer.byteLength(bytes) > 2_000_000) fail('release exceeds bounded reader size');
     const sha256 = digest(bytes);
     const directory = path.join(dist, 'assets/research');
     const filename = path.join(directory, `${sha256}.json`);

@@ -47,3 +47,14 @@ export async function prepareElectricityGeography(root, dataset) {
     coverage: { total: dataset.rows.length, mapped: countries.length, tableOnly: unsupported.length },
   };
 }
+
+// Deterministic interior display anchors are derived only from audited polygons.
+// They never replace the null observed coordinates in a source row.
+export async function prepareCountryGeography(root, dataset, { anchors = false } = {}) {
+  const geography = await prepareElectricityGeography(root, dataset);
+  if (!anchors) return geography;
+  const { interiorDisplayAnchor } = await import('../src/research-geographic-anchors.js');
+  for (const country of geography.countries) country.displayAnchor = interiorDisplayAnchor(country.polygons);
+  geography.displayAnchorMeaning = 'Polygon-interior display anchors show country summaries; they are not observed facilities, research sites or local density.';
+  return geography;
+}

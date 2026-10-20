@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "conceptId": "156-8",
+  "originalDesignSha256": "783a5aba9f2fde15372cb3c196bd54536cf8e6eee85e715c788e1004825ac4bf",
+  "effectiveDesignSha256": "0a2ce8e2f00ebef89842538329cc16869c8eb480d09bdc19e4636c3cb0287b05",
+  "datasetSha256": "1aa6dcfc1acbdfeb681d48ad4598b91cd2e1138a4bc98fa3beeda64cdffecfa3",
+  "proposalSha256": "1117408097c1011504cf09a0c1dc15e83b8469044d0440b7a98a00f0956ae5a7",
+  "reviewSha256": "afe6aabd191c20a81c90c602ac85869b29685e82496521d71621a022dd87a57b",
+  "amendmentSha256": "e3532ba1ab8c2b70473f29d3a747c96dbb3b2affdd9f3ed860f06dd641cf3177",
+  "decision": "approve-runtime-activation",
+  "independent": true,
+  "reviewerKind": "independent-agent",
+  "reviewer": "/root/quality_challenger",
+  "preparedBy": "/root/creative_designer; /root/evidence_editor; /root",
+  "reviewedAt": "2026-10-20T06:40:56Z",
+  "scope": "Local development runtime activation of the exact reviewed correction. Not production, physical-device, performance, listening or numerical product certification. Reviewer names are project audit labels, not authenticated human signatures.",
+  "report": {
+    "path": "docs/next-version/AMENDED_RUNTIME_REVIEW.md",
+    "sha256": "20b4eac4a7d157b3fda91adb277a4dbf0d6cca79f29ec9fcf25a2342d3de1cbd"
+  },
+  "artifacts": "docs/next-version/review-proof/amended-reviewed-artifacts.json",
+  "checks": {
+    "sourceMeaning": {
+      "status": "pass",
+      "evidence": "Independent primary-report factual review supports rounded 53%, not a strict bound, and distinct 90% conditional client-location denominator. See 156-8_FACTUAL_DESIGN_REVIEW.md and runtime report."
+    },
+    "nativeUnits": {
+      "status": "pass",
+      "evidence": "Separate 0–100 bars 53 and 90, no lower-bound arrow or multiplied percentage; exact static widths and denominators verified."
+    },
+    "scene": {
+      "status": "pass",
+      "evidence": "Independent scene source/geometry review, ambient-invariance tests and final preview/screenshot pixel inspection. Exact module and image SHA 256 values retained in artifact manifest."
+    },
+    "tableParity": {
+      "status": "pass",
+      "evidence": "Independent tests/research-amended-review.test.mjs passes exact selected-row/static parity and source labels; full source dataset remains retained."
+    },
+    "browser": {
+      "status": "pass",
+      "evidence": "Coordinator /root executed refreshed isolated local browser:320 client/scrollwidth, one canvas, rounded Sources, 90 conditional selection, two static bars and proper title/aria. Independent reviewer inspected final 320 and desktop actual-scene screenshots. Not physical device evidence."
+    },
+    "regressions": {
+      "status": "pass",
+      "evidence": "Independent 71 full suite 210 passed; subsequent 19 multi/amendment, 4 scene, 12 harness/panel/amendment and 2 independentUI scoped runs all passed. Staging leaves activation/pointers unchanged. Counts overlap, not additive."
+    }
+  }
+}

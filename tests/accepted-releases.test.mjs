@@ -23,6 +23,8 @@ async function workspace(t) {
     'research/manifest.json', 'research/designs/design-registry.json', 'research/audits/design-contract-review.json',
     'research/audits/final-review.json', 'vendor/countries-110m.json', 'data/geography/un-m49-world-atlas.json',
     'data-updates/design-proposals/156-8-rounded-percentage.json', 'docs/next-version/156-8_FACTUAL_DESIGN_REVIEW.md',
+    'data-updates/design-proposals/74-two-task-selection.json', 'docs/next-version/74_FACTUAL_DESIGN_REVIEW.md',
+    ...['74', '156-8'].filter(id => ACTIVE_RESEARCH_CONCEPTS.includes(id)).map(id => `data-updates/design-activation/${id}.json`),
     ...activeDatasetPaths,
   ]) {
     await fs.mkdir(path.dirname(path.join(directory, file)), { recursive: true });

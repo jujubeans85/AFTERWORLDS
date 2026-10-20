@@ -1,0 +1,83 @@
+{
+  "scope": "Isolated synthetic module harness; not production app integration or upstream change evidence",
+  "before": {
+    "fixtureOnly": true,
+    "revision": "e25dfcd811c52646bda3577f27752e3d67639193337c37f55543674f4ef60092",
+    "selectedRowId": "africa-south1",
+    "selectedValue": 641,
+    "readMode": true,
+    "camera": {
+      "rotation": [
+        0,
+        -2.1419949910839495,
+        0
+      ],
+      "zoomRatio": 1
+    },
+    "offeredRevision": null
+  },
+  "offered": {
+    "fixtureOnly": true,
+    "revision": "e25dfcd811c52646bda3577f27752e3d67639193337c37f55543674f4ef60092",
+    "selectedRowId": "africa-south1",
+    "selectedValue": 641,
+    "readMode": true,
+    "camera": {
+      "rotation": [
+        0,
+        -2.1419949910839495,
+        0
+      ],
+      "zoomRatio": 1
+    },
+    "offeredRevision": "a4255cce50a230c0965cc11dbc3303ddbdfe0bcbe047f6c697ae5da4c5c6eba9"
+  },
+  "applied": {
+    "fixtureOnly": true,
+    "revision": "a4255cce50a230c0965cc11dbc3303ddbdfe0bcbe047f6c697ae5da4c5c6eba9",
+    "selectedRowId": "africa-south1",
+    "selectedValue": 642,
+    "readMode": true,
+    "camera": {
+      "rotation": [
+        0,
+        -2.1419949910839495,
+        0
+      ],
+      "zoomRatio": 1
+    },
+    "offeredRevision": null
+  },
+  "corrupt": {
+    "fixtureOnly": true,
+    "revision": "a4255cce50a230c0965cc11dbc3303ddbdfe0bcbe047f6c697ae5da4c5c6eba9",
+    "selectedRowId": "africa-south1",
+    "selectedValue": 642,
+    "readMode": true,
+    "camera": {
+      "rotation": [
+        0,
+        -2.1419949910839495,
+        0
+      ],
+      "zoomRatio": 1
+    },
+    "offeredRevision": "a4255cce50a230c0965cc11dbc3303ddbdfe0bcbe047f6c697ae5da4c5c6eba9"
+  },
+  "historical": {
+    "fixtureOnly": true,
+    "revision": "e25dfcd811c52646bda3577f27752e3d67639193337c37f55543674f4ef60092",
+    "selectedRowId": "africa-south1",
+    "selectedValue": 641,
+    "readMode": true,
+    "camera": {
+      "rotation": [
+        0,
+        -2.1419949910839495,
+        0
+      ],
+      "zoomRatio": 1
+    },
+    "offeredRevision": null
+  }
+}

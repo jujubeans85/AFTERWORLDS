@@ -17,6 +17,8 @@ const files = [
   ...activeDatasetPaths,
   'data/geography/un-m49-world-atlas.json', 'vendor/countries-110m.json',
   'data-updates/design-proposals/156-8-rounded-percentage.json', 'docs/next-version/156-8_FACTUAL_DESIGN_REVIEW.md',
+    'data-updates/design-proposals/74-two-task-selection.json', 'docs/next-version/74_FACTUAL_DESIGN_REVIEW.md',
+    ...['74', '156-8'].filter(id => ACTIVE_RESEARCH_CONCEPTS.includes(id)).map(id => `data-updates/design-activation/${id}.json`),
 ];
 async function workspace(t, copy = false) {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'afterworld-research-'));
@@ -39,7 +41,7 @@ const respond = bytes => async () => new Response(bytes, { headers: { 'Content-T
 
 test('research build activates the explicit reviewed primitive set and preserves the deterministic 430 release', async t => {
   const { directory, summaries, summary, bytes } = await fixture(t);
-  assert.deepEqual(Object.keys(summaries).sort(), ['430', '408', '5-6', '63', '388', '330', '406', '193-5', '372', '276', '409', '369', '324', '385', '232', '333', '63-8', '364', '320', '417', '415', '397', '382', '371', '368', '358', '356', '348', '321', '314', '305', '259', '256', '250', '107', '150-5', '155-17', '170-3', '178', '255', '233-2', '422-2', '138-8', '8-6', '428', '407', '284', '202', '117', '402', '398', '392', '323', '218', '214', '115-2', '211-4'].sort());
+  assert.deepEqual(Object.keys(summaries).sort(), ['430', '408', '5-6', '63', '388', '330', '406', '193-5', '372', '276', '409', '369', '324', '385', '232', '333', '63-8', '364', '320', '417', '415', '397', '382', '371', '368', '358', '356', '348', '321', '314', '305', '259', '256', '250', '107', '150-5', '155-17', '170-3', '178', '255', '233-2', '422-2', '138-8', '8-6', '428', '407', '284', '202', '117', '402', '398', '392', '323', '218', '214', '115-2', '211-4', '378', '375', '247', '78-4', '390', '325', '266-2', '8-17', '30-8', '111-3', '365', '394', '217', '56-5', '74', '156-8'].sort());
   assert.equal(await researchSha256(bytes), summary.release.sha256);
   assert.deepEqual(await prepareResearchRuntime(root, directory), summaries);
   assert.equal(summary.designSha256, '80c6f80538b3036f9a073be3bba14e6b5944c0b1672ffa574f823da524c35726');

@@ -1,3 +1,8 @@
+import {AMENDED_CONCEPTS,amendedInstrumentPlan} from '../src/research-amended.js';
+import {PANEL_CONCEPTS,panelInstrumentPlan} from '../src/research-panels.js';
+import {histogramPlan} from '../src/research-histogram.js';
+import {MULTI_CONCEPTS,multiInstrumentPlan} from '../src/research-multi-plan.js';
+import {MAP_CONCEPTS,geographyInstrumentPlan} from '../src/research-maps.js';
 import {COMPARISON_CONCEPTS,comparisonInstrumentPlan} from '../src/research-comparisons.js';
 import {ARCHITECTURE_CONCEPTS,architectureInstrumentPlan} from '../src/research-architecture.js';
 import {PERCENTAGE_CONCEPTS,percentageInstrumentPlan} from '../src/research-percentages.js';
@@ -98,6 +103,28 @@ export function previewPNG(entry, bundle) {
   if(plan.kind==='counters')text('3-MONTH LEAD. SEPTEMBER TARGET',800,448,2,[142,165,168]);
   if(plan.kind==='counterweights')text('FIXED SCALE 0-10 USD/HOUR',800,448,2,[142,165,168]);
  }
+ if(MAP_CONCEPTS.includes(bundle?.conceptId)){
+  const plan=geographyInstrumentPlan(bundle),id=bundle.conceptId;rect(780,210,400,256,[12,21,27]);
+  const stroke=(x0,y0,x1,y1,color)=>{const steps=Math.max(Math.abs(x1-x0),Math.abs(y1-y0));for(let i=0;i<=steps;i++){const f=steps?i/steps:0,x=x0+(x1-x0)*f,y=y0+(y1-y0)*f;if(x>=790&&x<1170&&y>=250&&y<440)put(x,y,color);}};
+  if(id==='378'){
+    const species=plan.species[0],week=plan.weeks[0],rows=plan.items.filter(item=>item.row.species===species&&item.row.week===week),bySite=new Map(rows.map(item=>[item.row.name,item]));
+    text('AUTOMATED DETECTION. NOT BIRDS',794,224,2,[142,165,168]);text(`${species.toUpperCase()} WEEK ${week}`,794,247,2,[237,244,250]);
+    const minLat=Math.min(...plan.sites.map(site=>site.lat)),maxLat=Math.max(...plan.sites.map(site=>site.lat)),minLon=Math.min(...plan.sites.map(site=>site.lon)),maxLon=Math.max(...plan.sites.map(site=>site.lon));
+    for(const site of plan.sites){const item=bySite.get(site.name),x=808+(site.lon-minLon)/(maxLon-minLon||1)*335,y=286+(maxLat-site.lat)/(maxLat-minLat||1)*140,color=item?.state==='detected'?[98,196,189]:item?.state==='not-detected'?[136,189,244]:[156,170,187];
+     if(!item){stroke(x-3,y-3,x+3,y+3,color);stroke(x-3,y+3,x+3,y-3,color);}else if(item.state==='unknown'){for(let offset=-3;offset<=3;offset+=3)stroke(x-3,y+offset,x+3,y+offset-3,color);}else if(item.state==='detected')rect(x-2,y-2,5,5,color);else arc(x,y,5,Math.PI*2,color);
+     if(item?.effortAngle!==null&&item?.effortAngle!==undefined)arc(x,y,9,item.effortAngle,color);
+    }
+    text('RINGS: EFFORT. GREY: UNKNOWN',794,448,2,[142,165,168]);
+  }else{
+    for(const country of plan.background)for(const polygon of country.polygons)for(const shift of [-360,0,360])paintPolygon(polygon.map(ring=>ring.map(([x,y])=>[x+shift,y])),[52,62,73]);
+    for(const country of plan.countries){
+     if(id!=='78-4')for(const polygon of country.polygons)for(const ring of polygon)for(const shift of [-360,0,360])for(let i=1;i<ring.length;i++)stroke(790+(ring[i-1][0]+shift+180)*380/360,250+(90-ring[i-1][1])*190/180,790+(ring[i][0]+shift+180)*380/360,250+(90-ring[i][1])*190/180,[98,196,189]);
+     if(country.displayAnchor){const cx=790+(country.displayAnchor.lon+180)*380/360,cy=250+(90-country.displayAnchor.lat)*190/180;if(id==='375'){const h=60*country.row.value/40000;rect(Math.round(cx)-1,Math.round(cy-h),3,Math.max(1,Math.round(h)),[242,186,104]);}else if(id==='78-4'){if(country.row.value===null){stroke(cx-2,cy-2,cx+2,cy+2,[156,170,187]);stroke(cx-2,cy+2,cx+2,cy-2,[156,170,187]);}else{const r=13*Math.sqrt(country.row.value/plan.maxValue);for(let y=-Math.ceil(r);y<=r;y++)for(let x=-Math.ceil(r);x<=r;x++)if(x*x+y*y<=r*r)put(cx+x,cy+y,[98,196,189]);}}}
+    }
+    text(id==='375'?'PATENT FAMILIES. SCALE 0-40000':id==='247'?'14 NAMED COUNTRY PARTNERS':'DISK AREA: ESTIMATED INTERNET USERS',794,224,2,[142,165,168]);
+    text(id==='375'?'COUNTRY SUMMARIES. NOT SITES':id==='247'?'UNIFORM OUTLINES. NO SIZE SCALE':`${plan.coverage.mapped}/${plan.coverage.total} MAPPED. NO LOCAL DENSITY`,794,448,2,[142,165,168]);
+  }
+ }
  if(COMPARISON_CONCEPTS.includes(bundle?.conceptId)){
   const plan=comparisonInstrumentPlan(bundle),items=plan.panels[0].items.slice(0,2);rect(780,210,400,256,[12,21,27]);
   text({'402':'MARIDA. SOURCE METRIC FRACTIONS','398':'WATER DEFICIT INDEX. SD NOT CI','392':'MODEL METRICS. SHARED TEST N12','323':'PHYSICAL ELECTRICITY SHARES (%)','218':'DEVELOPER BENCHMARK SCORES (%)','214':'ROBOTS/YEAR. SOURCE DEFINITIONS','115-2':'PRODUCER / USER ACCURACY (%)','211-4':'ATLANTA. CRASHED VEHICLES'}[bundle.conceptId],794,224,2,[142,165,168]);
@@ -147,7 +174,39 @@ export function previewPNG(entry, bundle) {
   });
   text(bundle.conceptId==='255'?'2 OF 3 SELECTED EXAMPLES':bundle.conceptId==='233-2'?'2016/2024 TESTS. NOT A FORECAST':bundle.conceptId==='422-2'?'HIGH EXPOSURE IS INCLUDED':bundle.conceptId==='138-8'?'832 SELECTED BANNED ACCOUNTS':'CI RULERS: 0-100%. NOT VISION GAINS',794,448,2,[142,165,168]);
  }
- if(['categorical','none'].includes(bundle?.design?.scale?.type)){
+ if(PANEL_CONCEPTS.includes(bundle?.conceptId)||MULTI_CONCEPTS.includes(bundle?.conceptId)){
+  const multi=MULTI_CONCEPTS.includes(bundle.conceptId),plan=multi?multiInstrumentPlan(bundle):panelInstrumentPlan(bundle),items=plan.items.slice(0,2);rect(780,210,400,256,[12,21,27]);
+  text(multi?'DISTINCT SOURCES. NATIVE UNITS':'SEPARATE EVIDENCE PANELS',794,224,2,[142,165,168]);
+  const wrapped=(value,x,y,max=360)=>{let lines=[''];for(const word of String(value).split(/\s+/)){const n=lines.length-1,trial=lines[n]?(lines[n]+' '+word):word;if(textWidth(trial,2)>max&&lines[n])lines.push(word);else lines[n]=trial;}lines.slice(0,2).forEach((line,i)=>text(line,x,y+i*19,2,[237,244,250]));};
+  items.forEach((item,index)=>{const y=262+index*88,row=item.row,color=item.color.slice(1).match(/../g).map(n=>parseInt(n,16));
+   text(row.name.length>32?row.name.slice(0,29)+'...':row.name,794,y,2,[142,165,168]);
+   if(['111-3','390','266-2','394'].includes(bundle.conceptId))text(row.period,794,y+18,2,[142,165,168]);
+   wrapped(`${item.kind==='dated-share-ring'?item.value+'% of national metered electricity':nativeValue(row)+' '+row.unit}`,794,y+(['111-3','390','266-2','394'].includes(bundle.conceptId)?36:22));
+   if(item.domain){const extent=340*item.value/item.domain[1];rect(800,y+72,340,1,[52,62,73]);if(['ring','dated-share-ring'].includes(item.kind)){arc(1155,y+28,16,2*Math.PI,[52,62,73]);arc(1155,y+28,16,2*Math.PI*item.value/100,color);}else rect(800,y+69,extent,6,color);}
+  });
+  const note={'325':'>11500 RIDERS. FEEDBACK N~900','111-3':'WATER 0-300M US GAL/YEAR. NO AI %','266-2':'MILESTONES. GLOBAL REVENUE SEPARATE','390':'WASTE 0-70 BILLION KG. NOT AI WASTE','30-8':'LIFECYCLE VS RESPONSE. NO RATIO','8-17':'RISK 0-5%. HR/95% CI SEPARATE','217':'UNLIKE POPULATIONS. NO REBOUND %','394':'IRELAND 0-8000 GWH. POLICY SEPARATE','56-5':'GLOBAL CONTEXT. IRISH SHARES SEPARATE'}[bundle.conceptId];
+  text(bundle.conceptId==='325'?'99%: FELT SAFE, WOULD RECOMMEND':`2 OF ${plan.items.length} SOURCE RECORDS`,794,428,2,[142,165,168]);text(note,794,448,2,[142,165,168]);
+ }
+ if(AMENDED_CONCEPTS.includes(bundle?.conceptId)){
+  const plan=amendedInstrumentPlan(bundle),items=plan.items.slice(0,2);rect(780,210,400,256,[12,21,27]);
+  text(bundle.conceptId==='74'?'MMLU PRO. DEVELOPER SCORES (%)':'TWO RESPONDENT DENOMINATORS (%)',794,224,2,[142,165,168]);
+  items.forEach((item,index)=>{const y=284+index*84,color=item.color.slice(1).match(/../g).map(n=>parseInt(n,16)),extent=340*item.value/100;
+   const label=bundle.conceptId==='74'?(index?'GEMMA3 27B IT':'GEMMA4 E2B IT THINKING'):(index?'CLIENTS OUTSIDE LATAM/CARIBBEAN':'CLIENTS OUTSIDE WORKER COUNTRY');text(label,794,y-26,2,[237,244,250]);
+   rect(800,y,340,1,[52,62,73]);if(bundle.conceptId==='74')rect(798+extent,y-4,5,9,color);else rect(800,y-3,extent,6,color);
+   text(String(item.value)+'%'+(bundle.conceptId==='156-8'&&index===0?' PRIMARY REPORT ROUNDED':''),794,y+14,2,color);
+   if(bundle.conceptId==='156-8')text(index?'OF RESPONDENTS WHO KNOW LOCATION':'OF SURVEYED WORKERS',794,y+34,2,[142,165,168]);
+  });
+  text(bundle.conceptId==='74'?'2 OF 4. SCALE 0-100. NO OVERALL RANK':'53% ROUNDED. 90% CONDITIONAL.',794,428,2,[142,165,168]);
+  text(bundle.conceptId==='74'?'AIME 2026 NO-TOOLS ROWS IN FULL VIEW':'SCALE 0-100. DO NOT MULTIPLY.',794,448,2,[142,165,168]);
+ }
+ if(bundle?.conceptId==='365'){
+  const plan=histogramPlan(bundle);rect(780,210,400,256,[12,21,27]);text('WINE QUALITY. SAMPLE COUNTS',794,224,2,[142,165,168]);
+  rect(794,249,10,14,[242,186,104]);text('RED N1599',810,249,2,[242,186,104]);rect(970,249,10,14,[136,189,244]);text('WHITE N4898',986,249,2,[136,189,244]);
+  for(const item of plan.items){const x=802+item.row.qualityScore*32+(item.row.wineType==='white'?12:0),height=140*item.length,color=item.color.slice(1).match(/../g).map(n=>parseInt(n,16));rect(x,414-height,9,height,color);rect(x,414,9,2,color);}
+  for(let score=0;score<=10;score++)text(String(score),800+score*32,424,1,[237,244,250]);
+  text('SCORES 0-10. COUNTS 0-2500',794,448,2,[142,165,168]);
+ }
+ if(!MAP_CONCEPTS.includes(bundle?.conceptId)&&!PANEL_CONCEPTS.includes(bundle?.conceptId)&&!MULTI_CONCEPTS.includes(bundle?.conceptId)&&['categorical','none'].includes(bundle?.design?.scale?.type)){
   rect(780,210,400,256,[12,21,27]);text('EQUAL SOURCE RECORDS',800,224,2,[142,165,168]);
   bundle.dataset.rows.slice(0,2).forEach((row,index)=>{const y=264+index*82,name=row.name.length>29?row.name.slice(0,26)+'...':row.name;const value=nativeValue(row);text(name,800,y,2,[237,244,250]);text(value.length>29?value.slice(0,26)+'...':value,800,y+23,2,[98,196,189]);const unit=row.unit.length>29?row.unit.slice(0,26)+'...':row.unit;text(unit,800,y+43,2,[142,165,168]);});
   text(`${Math.min(2,bundle.dataset.rows.length)} OF ${bundle.dataset.rows.length} RECORDS. NO SIZE SCALE`,800,448,2,[142,165,168]);

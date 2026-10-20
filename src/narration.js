@@ -1,3 +1,4 @@
+import {researchSourceList} from './research-records.js';
 import {researchSha256} from './research-data.js';
 export class VoicePriority {
  constructor(onChange=()=>{}){this.owner=null;this.stop=null;this.onChange=onChange;}
@@ -8,7 +9,7 @@ export class VoicePriority {
 export async function validateNarration(record,research) {
  if(record?.schemaVersion!==1||record.conceptId!==research.conceptId||record.datasetSha256!==research.datasetSha256||record.designSha256!==research.designSha256||record.revision!==research.revision)throw Error('Narration is stale for this evidence');
  if(typeof record.transcript!=='string'||!record.transcript||record.transcript.length>12000||await researchSha256(record.transcript)!==record.transcriptSha256)throw Error('Narration transcript integrity failure');
- if(!Array.isArray(record.citations)||!record.citations.length||record.citations.some(id=>!research.dataset.sources.some(source=>source.sourceId===id)))throw Error('Narration citations do not resolve');
+ if(!Array.isArray(record.citations)||!record.citations.length||record.citations.some(id=>!researchSourceList(research).some(source=>source.sourceId===id)))throw Error('Narration citations do not resolve');
  if(record.audio) {
   const {sha256,url,voice,synthetic,review}=record.audio;
   if(!/^[a-f0-9]{64}$/.test(sha256)||url!==`/assets/narration/${sha256}.mp3`||!voice||synthetic!==true||review?.status!=='accepted'||review.transcriptSha256!==record.transcriptSha256||review.datasetSha256!==record.datasetSha256||review.designSha256!==record.designSha256||review.audioSha256!==sha256||!review.reviewer||review.listeningApproved!==true)throw Error('Recorded narration lacks matching listening review');
