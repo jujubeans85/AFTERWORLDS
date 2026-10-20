@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "BROWSER",
+  "operator": "root",
+  "observedAt": "2026-10-20T07:42:05.032Z",
+  "route": "http://127.0.0.1:4177/globe/the-carbon-clock/",
+  "voiceCheckBefore": {
+    "active": "Close dialog",
+    "autoRead": [
+      true,
+      true
+    ],
+    "dialogOpen": true,
+    "overflow": false,
+    "playLabel": "Pause reading",
+    "status": "Reading · 1 min at 1×",
+    "viewport": {
+      "dpr": 2,
+      "height": 720,
+      "width": 1280
+    },
+    "voiceNote": "Read aloud uses your system voice. Choose a voice and speed in JUICE Reader."
+  },
+  "voicePersistCheck": {
+    "autoRead": [
+      false
+    ],
+    "focus": "Close dialog",
+    "height": 720,
+    "readerMounted": false,
+    "width": 1280
+  },
+  "voiceCheckAfter": {
+    "dialogOpen": false,
+    "focus": "research-story",
+    "height": 720,
+    "readerMounted": false,
+    "width": 1280
+  },
+  "legacyLossCheck": {
+    "dialogOpen": true,
+    "focus": "Close dialog",
+    "rows": 3,
+    "viewButtons": [
+      true,
+      true,
+      true
+    ]
+  },
+  "nativeLossCheck": {
+    "canvas": 0,
+    "chartVisible": true,
+    "pauseDisabled": true,
+    "pickerEnabled": true,
+    "rows": 1587
+  },
+  "observations": [
+    "Keyboard opening kept focus on Close dialog and entered Reading status using system speech.",
+    "Unchecking auto-read immediately showed Stopped.",
+    "Opt-out survived reload; reopening did not mount or start the reader.",
+    "Manual Listen after opt-out entered Reading status.",
+    "Auto-read preference was restored to its prior enabled value; Stop was exercised, then dialog closed and focus returned to research-story."
+  ],
+  "limitations": [
+    "Control-flow and DOM observations; no human listening or screen-reader approval.",
+    "Viewport override did not alter this existing tab; these observations are at1280x720, not a320-pixel retest.",
+    "The separate lifecycle fixture uses real app modules with observation wrappers; its export records graphics-loss checks."
+  ],
+  "screenshot": {
+    "path": "/private/tmp/afterworlds-system-voice.jpg",
+    "localOnly": true
+  }
+}

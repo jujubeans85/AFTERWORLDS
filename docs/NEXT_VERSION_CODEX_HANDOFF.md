@@ -4,6 +4,8 @@ Prepared 20 October 2026, Australia/Sydney (19 October UTC). Continue the implem
 
 ## Goal and latest decisions
 
+**Subsequent decision, 20 October 2026:** keep the system voice through JUICE Reader. Continue implementation without waiting for a supplied recording; a custom recording is optional and does not gate the development commit or release. The later implementation status is in `docs/next-version/IMPLEMENTATION_CONTINUATION.md`; the foundation tables below are historical. Preserve the default auto-read and persistent opt-out behavior.
+
 Build an intriguing, quiet, dark atlas: an indexed home page, one independently shareable world per page, and direct manipulation revealing further evidence. Preserve the World Processor source ID as identity. Use the 73 accepted research concepts to expand the existing 14 sourced stories; retain the 59 held concepts with their honest labels. Do not replace all objects with one decorative stock globe.
 
 Add source-appropriate updates that change accepted visual values; a subtle unique sound identity for each world; optional action sounds and hardware-dependent haptics; natural-sounding feminine story narration; and selective alternative forms such as paired moons, cells and constellations. Scientific truth and legibility take precedence over spectacle. All seven requested product categories must eventually clear 9.2/10 independently, with evidence.

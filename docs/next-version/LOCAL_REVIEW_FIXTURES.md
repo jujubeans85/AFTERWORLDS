@@ -23,3 +23,11 @@ The parent control page embeds the real `/globe/the-carbon-clock` route with `fi
 The historical-baseline control opens the original immutable revision through the real `v` lookup while the staged manifest points to the synthetic update. A corrupt-pointer check should start from the baseline: the actual app skips fetching when the offered revision already equals the displayed revision. The delayed stage holds the next release response for five seconds so navigation away can exercise cancellation.
 
 No removed-row test is fabricated: 430's exact accepted binding requires all 44 rows. These local fixtures do not certify physical-device behavior, listening quality, production hosting, or upstream data acceptance.
+
+## Browser lifecycle
+
+`node scripts/review-lifecycle.mjs --serve --port=4178` copies the current build to a disposable directory and verifies every copied file's digest. It substitutes only the local index's entry script so an observation wrapper loads before the real application. All application modules, datasets and accepted pointers remain byte-identical to the build.
+
+The visible local controls run 50 SPA route changes across eight native families and two legacy stories. Each route is brought onscreen, briefly played, then paused; the report compares renderer-frame counters and callback counts during the paused window. It records active scene/canvas counts, renderer draw/geometry/texture/program counters and disposal snapshots. Separate controls deliberately lose the active graphics context and navigate to another real application route.
+
+Exported JSON contains the environment, exact input hashes, observations and errors. These are bounded browser lifecycle checks. Renderer counters and animation-frame fields are proxies, not heap/GPU-byte measurements or a census of live event listeners, observers and audio nodes. The short per-route sampling window does not satisfy the sustained performance or physical-device matrix in `QUALITY_GATES.md`. Keep screenshots local.

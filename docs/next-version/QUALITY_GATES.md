@@ -6,6 +6,8 @@ Independent reviewer: `quality_challenger`. Prepared 19 October 2026 against rep
 
 **User-authorized narration update:** the user subsequently requested “Add auto read on opening a text box as default + option to disable.” This overrides the earlier opt-in-only narration assumption: user-opened text panels should read automatically by default, with a prominent persistent opt-out and immediate Stop/Pause. Page load, route restoration, data refresh and returning from a hidden tab must not begin speech. Ambience, action sounds and haptics remain separately default off. The updated behavior still requires browser/device verification.
 
+**Current voice decision (20 October 2026):** keep system speech through JUICE Reader and continue without waiting for a supplied recording. This supersedes the custom feminine-narrator asset requirement below. A recording may be added later after the applicable source, rights and listening checks; it is not a dependency for a development commit or release. System-reader controls, intelligibility, interruption behavior and transcript accuracy still require the corresponding evidence. This decision does not certify untested audio behavior.
+
 ## Observed baseline
 
 - `npm test` was executed during this review: 22 passed, zero failed. These are code, source-contract and numerical checks, including scene construction and reader state; they are not browser or physical-device tests.
