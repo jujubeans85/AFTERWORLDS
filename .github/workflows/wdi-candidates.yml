@@ -1,0 +1,47 @@
+name: Check WDI electricity revision candidates
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Approximately the reviewed 30-day checking policy; no release cadence claim.
+    - cron: '23 4 1 * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wdi-electricity-candidate-check
+  cancel-in-progress: false
+
+jobs:
+  candidate:
+    # Scheduled execution stays off until the deployment-ready main branch and
+    # repository variable are both present. Manual runs create candidates only.
+    if: github.event_name == 'workflow_dispatch' || (github.ref == 'refs/heads/main' && vars.AFTERWORLDS_WDI_CANDIDATES == 'enabled')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Verify frozen research and candidate boundaries
+        run: |
+          npm run research:validate
+          node --test tests/data-updates.test.mjs tests/accepted-releases.test.mjs tests/research-runtime.test.mjs tests/wdi-ci.test.mjs
+      - name: Check fixed 2024 source and record outcome
+        run: node scripts/check-wdi-ci.mjs
+      - name: Retain immutable candidate and check evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4, source commit verified 2026-10-20
+        with:
+          name: wdi-electricity-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            artifacts/wdi-check/
+            data-updates/checks/society-electricity-access/
+            data-updates/candidates/society-electricity-access/
+          retention-days: 7
+          if-no-files-found: warn
+          overwrite: false

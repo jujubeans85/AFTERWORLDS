@@ -6,3 +6,4 @@ qa-screenshots/
 dist/
 research/.cache/
 __pycache__/
+artifacts/wdi-check/

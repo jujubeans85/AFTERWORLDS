@@ -92,7 +92,7 @@ function content(baseline, rows, annotations = {}) {
   return { datasetId: DATASET_ID, indicator: INDICATOR, period: YEAR, unit: UNIT, aiRelationship: baseline.aiRelationship, geography: baseline.geography, rows: [...rows].sort((a,b) => a.id.localeCompare(b.id)), annotations };
 }
 
-export function buildCandidate({ baseline, baselineBytes, expectedBaselineSha256, countries, observations, indicator, retrievedAt = new Date().toISOString(), rawSources = [] }) {
+export function buildCandidate({ baseline, baselineBytes, expectedBaselineSha256, countries, observations, indicator, retrievedAt = new Date().toISOString(), rawSources = [], comparison = null }) {
   const baselineSha256 = sha256(baselineBytes);
   if (baselineSha256 !== expectedBaselineSha256) fail('Frozen baseline hash mismatch');
   if (canonical(JSON.parse(Buffer.from(baselineBytes).toString('utf8'))) !== canonical(baseline)) fail('Baseline object differs from attested bytes');
@@ -141,8 +141,9 @@ export function buildCandidate({ baseline, baselineBytes, expectedBaselineSha256
   const normalized = content(baseline, rows, annotations), baselineContent = content(baseline, baseline.rows);
   const normalizedSha256 = sha256(canonical(normalized));
   const baselineContentSha256 = sha256(canonical(baselineContent));
-  const status = normalizedSha256 === baselineContentSha256 && !newEconomies.length ? 'no-semantic-change' : 'pending-independent-review';
-  return { schemaVersion: 1, datasetId: DATASET_ID, status, versionId: `${retrievedAt.replace(/[^0-9TZ]/g,'')}-${normalizedSha256.slice(0,12)}`, parentVersionId: `frozen-${baselineSha256.slice(0,12)}`, baselineSha256, baselineContentSha256, normalizedSha256, retrievedAt, adapterVersion: 'wdi-fixed-year-electricity-v1', sourceReleases: [{ sourceId: SOURCE_ID, indicator: INDICATOR, observationYear: YEAR }], rawSources, content: normalized, diff: { changedRows: changes, addedEconomiesNotIncluded: newEconomies, annotationsRequireReview: Object.keys(annotations), missingRows: rows.filter(r => r.value === null).map(r => r.id) }, validation: { baselineIntegrity: 'pass', schema: 'pass', indicatorUnitAndYear: 'pass', geography: 'baseline universe preserved', absencePolicy: 'fail; never create a null from absence' }, review: { status: 'not-reviewed', reviewer: null, acceptedAt: null, blockers: ['Independent source/terms and semantic review required.', ...(newEconomies.length ? ['New source economies require universe/design review.'] : [])] }, designBinding: null, automaticPromotionAllowed: false };
+  if (comparison && (!/^[0-9TZ]+-[a-f0-9]{12}$/.test(comparison.versionId) || !/^[a-f0-9]{64}$/.test(comparison.normalizedSha256))) fail('Invalid accepted comparison reference');
+  const status = normalizedSha256 === (comparison?.normalizedSha256 || baselineContentSha256) && !newEconomies.length ? 'no-semantic-change' : 'pending-independent-review';
+  return { schemaVersion: 1, datasetId: DATASET_ID, status, versionId: `${retrievedAt.replace(/[^0-9TZ]/g,'')}-${normalizedSha256.slice(0,12)}`, parentVersionId: comparison?.versionId || `frozen-${baselineSha256.slice(0,12)}`, comparisonContentSha256: comparison?.normalizedSha256 || baselineContentSha256, baselineSha256, baselineContentSha256, normalizedSha256, retrievedAt, adapterVersion: 'wdi-fixed-year-electricity-v1', sourceReleases: [{ sourceId: SOURCE_ID, indicator: INDICATOR, observationYear: YEAR }], rawSources, content: normalized, diff: { changedRows: changes, addedEconomiesNotIncluded: newEconomies, annotationsRequireReview: Object.keys(annotations), missingRows: rows.filter(r => r.value === null).map(r => r.id) }, validation: { baselineIntegrity: 'pass', schema: 'pass', indicatorUnitAndYear: 'pass', geography: 'baseline universe preserved', absencePolicy: 'fail; never create a null from absence' }, review: { status: 'not-reviewed', reviewer: null, acceptedAt: null, blockers: ['Independent source/terms and semantic review required.', ...(newEconomies.length ? ['New source economies require universe/design review.'] : [])] }, designBinding: null, automaticPromotionAllowed: false };
 }
 
 export async function writeCandidate(candidate, rawPages, outputRoot) {
@@ -164,6 +165,19 @@ export async function writeCandidate(candidate, rawPages, outputRoot) {
   } catch(e) { await fs.rm(staging,{recursive:true,force:true}); throw e; }
 }
 
+export async function writeCheckReceipt(result, root = ROOT) {
+  const receipt = { schemaVersion: 1, datasetId: DATASET_ID, status: result.status, changedRows: result.changedRows, normalizedSha256: result.normalizedSha256, sourceCheck: result.sourceCheck };
+  const bytes = `${JSON.stringify(receipt, null, 2)}\n`;
+  const directory = path.join(root, 'data-updates/checks', DATASET_ID);
+  await fs.mkdir(directory, { recursive: true });
+  const filename = path.join(directory, `${sha256(bytes)}.json`);
+  try { await fs.writeFile(filename, bytes, { flag: 'wx' }); }
+  catch (error) {
+    if (error.code !== 'EEXIST' || await fs.readFile(filename, 'utf8') !== bytes) throw error;
+  }
+  return filename;
+}
+
 export async function runRefresh({ root = ROOT, fetchImpl = fetch } = {}) {
   const baselineBytes = await fs.readFile(path.join(root,'research/datasets',`${DATASET_ID}.json`));
   const baseline = JSON.parse(baselineBytes);
@@ -175,14 +189,21 @@ export async function runRefresh({ root = ROOT, fetchImpl = fetch } = {}) {
   for (const [kind,url] of Object.entries(ENDPOINTS)) acquired[kind] = await fetchCollection(url,{fetchImpl,rateState});
   const rawPages = Object.entries(acquired).flatMap(([kind,v]) => v.pages.map(p => ({...p,kind})));
   const rawSources = rawPages.map((p,i) => ({...p.attestation,kind:p.kind,path:`raw/${i}.json`,metadata:p.metadata}));
-  const candidate = buildCandidate({baseline,baselineBytes,expectedBaselineSha256:entry.baseline.sha256,countries:acquired.countries.rows,observations:acquired.observations.rows,indicator:acquired.indicator.rows,rawSources});
+  const { readAcceptedWdiRelease } = await import('./review-wdi.mjs');
+  const accepted = await readAcceptedWdiRelease({ root });
+  const comparison = accepted ? { versionId: accepted.versionId, normalizedSha256: accepted.normalizedSha256 } : null;
+  const candidate = buildCandidate({baseline,baselineBytes,expectedBaselineSha256:entry.baseline.sha256,countries:acquired.countries.rows,observations:acquired.observations.rows,indicator:acquired.indicator.rows,rawSources,comparison});
   candidate.sourceReleases[0].databaseLastUpdated = acquired.observations.sourceUpdated;
   const result = await writeCandidate(candidate,rawPages,path.join(root,'data-updates/candidates'));
-  return {status:candidate.status,changedRows:candidate.diff.changedRows.length,normalizedSha256:candidate.normalizedSha256,sourceCheck:{checkedAt:candidate.retrievedAt,databaseLastUpdated:acquired.observations.sourceUpdated,rawDigests:rawSources.map(s=>({url:s.url,sha256:s.sha256,bytes:s.bytes}))},...result};
+  const summary = {status:candidate.status,changedRows:candidate.diff.changedRows.length,normalizedSha256:candidate.normalizedSha256,sourceCheck:{checkedAt:candidate.retrievedAt,databaseLastUpdated:acquired.observations.sourceUpdated,rawDigests:rawSources.map(s=>({url:s.url,sha256:s.sha256,bytes:s.bytes}))},...result};
+  const checkReceipt = await writeCheckReceipt(summary, root);
+  return { ...summary, checkReceipt };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   if (process.argv.includes('--help')) console.log('node scripts/refresh-wdi.mjs\nFetch a fixed-2024 electricity-access candidate only; no schedules, acceptance or production mutation.');
   else if (process.argv.length > 2) { console.error('Unknown arguments; use --help'); process.exitCode=1; }
-  else try { console.log(JSON.stringify(await runRefresh(),null,2)); } catch(e) { console.error(e.message); process.exitCode=1; }
+  // Do not hold module evaluation open: the optional accepted-release reader
+  // imports this module's pure normalizer to reproduce the prior snapshot.
+  else runRefresh().then(result => console.log(JSON.stringify(result,null,2)), error => { console.error(error.message); process.exitCode=1; });
 }

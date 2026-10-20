@@ -1,0 +1,13 @@
+{
+  "scope": "19-native-view browser follow-up; earlier 15-view navigation evidence is scoped in independent review",
+  "browser": "Codex in-app browser",
+  "physicalDevice": false,
+  "artifacts": {
+    "app.js": "2d30675aa305392711365967e71367b0f448741d755790aa983c25a3bcc9a000",
+    "research-ui.js": "32c1698389a13e4e9da23078dd282aed57c92d715c4640c5f5ae30149db578c6",
+    "research-view.js": "858a60d72bd077660caefcaa01831b33eae5c328bd75c7e6dcbf749d743701de",
+    "research-data.js": "c3b526d4011a8995361643afc64b3bce6345326a919ceb24d8b5d057b21c9e59",
+    "research/accepted-manifest.json": "16b5d4bc1dcbd7ffed1dff7dbac6c8819dbd9969c482f198a7d08a346093da08",
+    "registry.json": "047092aa8ecd27a9d31c98e1a63a95515dbd1a37e6da8a7ed42f799a804e73ff"
+  }
+}

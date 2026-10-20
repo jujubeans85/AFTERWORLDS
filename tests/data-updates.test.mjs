@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { buildCandidate, canonical, sha256, fetchJson, fetchCollection, writeCandidate, INDICATOR, TITLE, UNIT } from '../scripts/refresh-wdi.mjs';
+import { buildCandidate, canonical, sha256, fetchJson, fetchCollection, writeCandidate, writeCheckReceipt, INDICATOR, TITLE, UNIT } from '../scripts/refresh-wdi.mjs';
+import { latestWdiCheck } from '../scripts/review-wdi.mjs';
 
 const bytes = await fs.readFile(new URL('../research/datasets/society-electricity-access.json', import.meta.url));
 const baseline = JSON.parse(bytes);
@@ -12,6 +13,17 @@ const observationPayload = JSON.parse(await fs.readFile(new URL('../research/sou
 const indicator = [{ id: INDICATOR, name: TITLE, unit: '', source: { id: '2' } }];
 function input() { return { baseline: structuredClone(baseline), baselineBytes: bytes, expectedBaselineSha256: sha256(bytes), countries: structuredClone(countryPayload[1]), observations: structuredClone(observationPayload[1]), indicator: structuredClone(indicator), retrievedAt: '2026-10-19T23:00:00.000Z' }; }
 const jsonResponse = value => new Response(JSON.stringify(value), { headers: { 'content-type': 'application/json' } });
+
+test('no-change receipts retain check time without minting or accepting a release', async t => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'afterworld-check-'));
+  t.after(() => fs.rm(root, { recursive: true, force: true }));
+  const result = { status: 'no-semantic-change', changedRows: 0, normalizedSha256: '1'.repeat(64), sourceCheck: { checkedAt: '2026-10-20T05:00:00Z', databaseLastUpdated: '2026-10-08', rawDigests: [] } };
+  const filename = await writeCheckReceipt(result, root);
+  assert.equal((await latestWdiCheck(root)).sourceCheck.checkedAt, result.sourceCheck.checkedAt);
+  await assert.rejects(fs.access(path.join(root, 'data-updates/accepted-manifest.json')), { code: 'ENOENT' });
+  await fs.appendFile(filename, ' ');
+  await assert.rejects(latestWdiCheck(root), /receipt digest mismatch/);
+});
 
 test('frozen source reproduction is a semantic no-op; explicit nulls are preserved', () => {
   const candidate = buildCandidate(input());

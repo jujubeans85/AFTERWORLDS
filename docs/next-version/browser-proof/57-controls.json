@@ -1,0 +1,38 @@
+{
+  "evidenceClass": "BROWSER",
+  "environment": "local Codex in-app browser; 320x900 viewport override",
+  "observedAt": "2026-10-20T06:18:01.526886+00:00",
+  "observations": [
+    {
+      "conceptId": "392",
+      "metricOptions": [
+        "accuracy",
+        "F1",
+        "precision",
+        "recall"
+      ],
+      "selectedMetric": "recall",
+      "resetMetric": "accuracy",
+      "sharedTestWarningVisible": true,
+      "pageWidth": 320,
+      "documentScrollWidth": 320,
+      "visibleCanvasCount": 1
+    },
+    {
+      "conceptId": "211-4",
+      "selectedRow": "injury-ATL-human benchmark",
+      "value": 6.58034484446148,
+      "unit": "crashed vehicles per million vehicle-miles",
+      "ciLower": 6.511678466493228,
+      "ciUpper": 6.649554869595708,
+      "period": "2022 benchmark, spatially weighted to Waymo driving through 2026-06",
+      "pageWidth": 320,
+      "documentScrollWidth": 320,
+      "visibleCanvasCount": 1
+    }
+  ],
+  "limits": [
+    "Observed before final share-card text and DOM warning-border color corrections.",
+    "No physical mobile, screen-reader, audio or frame-pacing result."
+  ]
+}

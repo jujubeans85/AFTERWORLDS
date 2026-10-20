@@ -1,0 +1,110 @@
+{
+  "viewport": {
+    "width": 320,
+    "height": 740
+  },
+  "browser": "Codex in-app browser",
+  "physicalDevice": false,
+  "checks": [
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Compute Blocs"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Exceptional Machines"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Invisible Fence"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Land, Not Floor"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "A Face, Three Numbers"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Chips Behind the Line"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Uncrewed Crossing"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Behind the Case Summary"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "More Impact, Narrower Space?"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Work That Can Wait"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Waterless, With a Catch"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Compute Continent"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Evidence Enters the Room"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Compute in Orbit"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Synthetic Front Page"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "An Ocean of Conditions"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "When Autopilot Is Not AI"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Platform Underneath"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "Worlds Found by Machines"
+    },
+    {
+      "canvasCount": 1,
+      "overflow": false,
+      "title": "The Promise and the Rule"
+    }
+  ]
+}

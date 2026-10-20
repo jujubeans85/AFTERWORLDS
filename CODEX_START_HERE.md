@@ -2,7 +2,7 @@
 
 Continue on `next-version-foundation` in `jujubeans85/AFTERWORLDS`.
 
-**Continuation:** [The first native-unit slice](docs/next-version/NATIVE_RESEARCH_SLICE.md) implements concept 430 locally with 44 exact rows, immutable binding checks and Firefox observations. Read its [independent review](docs/next-version/NATIVE_SLICE_REVIEW.md) alongside the original handoff. There are now 63 automated tests and 1 of 73 accepted research designs implemented; this branch remains unreleased.
+**Continuation:** [Implementation status](docs/next-version/IMPLEMENTATION_CONTINUATION.md) records the current native-unit rollout and shared systems. Read the [independent continuation review](docs/next-version/CONTINUATION_QUALITY_REVIEW.md) and [binding audit](docs/next-version/RUNTIME_BINDING_GROUPS.md) for verified checkpoints and the remaining queue. The first native slice is historical context. This branch remains unreleased; source/automated acceptance does not imply device or product-quality acceptance.
 
 Read [the full implementation handoff](docs/NEXT_VERSION_CODEX_HANDOFF.md), then the agent-authored documents in `docs/next-version/`. Run the baseline checks before changing code. Keep the evidence reviewer, creative designer and independent quality challenger involved.
 

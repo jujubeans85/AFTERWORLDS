@@ -1,4 +1,5 @@
 // Editorial atmosphere, never a sonification of measured data. No autoplay.
+import { createSoundRecipe, soundRecipePlan } from "./sound-recipes.js";
 export const SOUNDSCAPE_VERSION = 1;
 const FAMILIES = {
   energy: ['power hum', 98, 740], water: ['water glass', 146, 1250],
@@ -28,7 +29,10 @@ export class SensoryDirector {
     this.env = env; this.onChange = onChange; this.context = null; this.profile = null;
     this.enabled = { ambience: false, effects: false, haptics: false };
     this.visible = true; this.narrating = false; this.nodes = []; this.lastCue = -Infinity;
-    this.effects = new Set(); this.disposed = false;
+    this.effects = new Set(); this.disposed = false; this.transitionTimer = null;
+    this.schedule=(env.setTimeout || globalThis.setTimeout).bind(env); this.cancelTimer=(env.clearTimeout || globalThis.clearTimeout).bind(env);
+    this.volumes = { ambience: 1, effects: 1 }; this.mono = false;
+    this.recipeId = null; this.recipeDescription = "Three restrained tonal layers";
   }
   get audioSupported() { return !!(this.env.AudioContext || this.env.webkitAudioContext); }
   get hapticsSupported() { return typeof this.env.navigator?.vibrate === 'function'; }
@@ -41,9 +45,16 @@ export class SensoryDirector {
         if (!this.context) {
           const Audio = this.env.AudioContext || this.env.webkitAudioContext;
           this.context = new Audio();
+          this.outputBus = this.context.createGain();
+          this.outputBus.channelCount = this.mono ? 1 : 2;
+          this.outputBus.channelCountMode = 'explicit';
+          this.outputBus.connect(this.context.destination);
           this.ambientBus = this.context.createGain();
           this.ambientBus.gain.value = 0;
-          this.ambientBus.connect(this.context.destination);
+          this.ambientBus.connect(this.outputBus);
+          this.effectsBus = this.context.createGain();
+          this.effectsBus.gain.value = this.volumes.effects;
+          this.effectsBus.connect(this.outputBus);
         }
         if (this.visible) await this.context.resume();
       }
@@ -55,17 +66,52 @@ export class SensoryDirector {
     this.syncAmbient(); this.onChange(); return this.enabled[kind] === !!value;
   }
   setWorld(entry) {
-    this.stopAmbient(); this.stopEffects();
+    this.stopEffects();
     this.profile = entry ? soundscapeProfile(entry) : null;
-    this.syncAmbient();
+    const recipe = this.profile ? soundRecipePlan(this.profile, entry.soundRecipe) : null;
+    this.recipeId = recipe?.recipeId || null;
+    this.recipeDescription = recipe?.description || "Three restrained tonal layers";
+    if (this.nodes.length && this.profile && this.enabled.ambience && this.visible && !this.disposed && this.context?.state === 'running') {
+      if (this.transitionTimer !== null) this.cancelTimer(this.transitionTimer);
+      const now=this.context.currentTime, gain=this.ambientBus.gain;
+      if(gain.cancelAndHoldAtTime)gain.cancelAndHoldAtTime(now);
+      else {gain.cancelScheduledValues(now);gain.setValueAtTime(gain.value,now);}
+      gain.linearRampToValueAtTime(0,now+.12);
+      this.transitionTimer=this.schedule(()=>{
+        this.transitionTimer=null;
+        this.stopAmbient();
+        this.syncAmbient();
+      },130);
+    } else { this.stopAmbient(); this.syncAmbient(); }
+  }
+  setVolume(kind, value) {
+    if (!(kind in this.volumes) || !Number.isFinite(value) || this.disposed) return false;
+    this.volumes[kind] = Math.max(0, Math.min(1, value));
+    const bus = kind === 'ambience' ? this.ambientBus : this.effectsBus;
+    if (bus && this.context) {
+      const now = this.context.currentTime;
+      const target = kind === 'ambience' && this.transitionTimer !== null ? 0 : this.volumes[kind] * (kind === 'ambience' && this.narrating ? .18 : 1);
+      bus.gain.cancelScheduledValues(now);
+      bus.gain.setTargetAtTime(target, now, .05);
+    }
+    this.onChange(); return true;
+  }
+  setMono(value) {
+    if (this.disposed) return false;
+    this.mono = !!value;
+    if (this.outputBus) {
+      this.outputBus.channelCountMode = 'explicit';
+      this.outputBus.channelCount = this.mono ? 1 : 2;
+    }
+    this.onChange(); return true;
   }
   setNarrating(active) {
     this.narrating = !!active;
-    if (this.ambientBus) {
+    if (this.ambientBus && this.transitionTimer === null) {
       const gain = this.ambientBus.gain, now = this.context.currentTime;
       if (gain.cancelAndHoldAtTime) gain.cancelAndHoldAtTime(now);
       else { gain.cancelScheduledValues(now); gain.setValueAtTime(gain.value, now); }
-      gain.setTargetAtTime(active ? .18 : 1, now, .12);
+      gain.setTargetAtTime(this.volumes.ambience * (active ? .18 : 1), now, .12);
     }
   }
   async setVisible(visible) {
@@ -83,8 +129,20 @@ export class SensoryDirector {
     if (!this.enabled.ambience || !this.profile || !this.visible || this.disposed || this.context?.state !== 'running') {
       this.stopAmbient(); return;
     }
-    if (this.nodes.length) return;
+    if (this.nodes.length || this.transitionTimer !== null) return;
     const c = this.context, p = this.profile;
+    if (this.recipeId && c.createBuffer && c.createBufferSource) {
+      try {
+        const recipe = createSoundRecipe(c, this.ambientBus, p, this.recipeId);
+        this.nodes = recipe.nodes;
+        this.activeRecipe = recipe.plan;
+        this.recipeBufferBytes = recipe.bufferBytes;
+      } catch {
+        // A partial recipe cleans itself up. Preserve the working low-cost fallback.
+        this.activeRecipe = null;
+      }
+    }
+    if (!this.nodes.length) {
     const filter = c.createBiquadFilter(); filter.type = 'lowpass'; filter.frequency.value = p.cutoff;
     filter.connect(this.ambientBus);
     this.nodes.push(filter);
@@ -94,14 +152,18 @@ export class SensoryDirector {
       gain.gain.value = .018 / ratio; osc.connect(gain); gain.connect(filter); osc.start();
       this.nodes.push(osc, gain);
     }
+    }
     this.ambientBus.gain.cancelScheduledValues(c.currentTime);
     this.ambientBus.gain.setValueAtTime(0, c.currentTime);
-    this.ambientBus.gain.linearRampToValueAtTime(this.narrating ? .18 : 1, c.currentTime + .6);
+    this.ambientBus.gain.linearRampToValueAtTime(this.volumes.ambience * (this.narrating ? .18 : 1), c.currentTime + .6);
   }
   stopAmbient() {
-    // Disconnect immediately on route/unmount; no orphaned oscillators or timers.
+    // Mute, hiding and disposal interrupt the bounded route fade immediately.
+    if (this.transitionTimer !== null) this.cancelTimer(this.transitionTimer);
+    this.transitionTimer=null;
     for (const node of this.nodes) { try { node.stop?.(); } catch {} node.disconnect(); }
     this.nodes = [];
+    this.activeRecipe = null; this.recipeBufferBytes = 0;
   }
   stopEffects() {
     for (const voice of [...this.effects]) { try { voice.osc.stop(); } catch {} voice.cleanup(); }
@@ -118,7 +180,7 @@ export class SensoryDirector {
     osc.frequency.exponentialRampToValueAtTime(kind === 'select' ? 930 : 660, t + .07);
     gain.gain.setValueAtTime(0, t); gain.gain.linearRampToValueAtTime(this.narrating ? .004 : .012, t + .008);
     gain.gain.exponentialRampToValueAtTime(.0001, t + .09);
-    osc.connect(gain); gain.connect(c.destination);
+    osc.connect(gain); gain.connect(this.effectsBus);
     const voice = { osc, cleanup: () => { osc.disconnect(); gain.disconnect(); this.effects.delete(voice); } };
     this.effects.add(voice); osc.onended = voice.cleanup; osc.start(); osc.stop(t + .1);
   }
@@ -127,5 +189,10 @@ export class SensoryDirector {
     this.stopAmbient(); this.stopEffects(); this.env.navigator?.vibrate?.(0);
     this.context?.suspend().catch(() => {}); this.onChange();
   }
-  async dispose() { this.muteAll(); this.disposed = true; await this.context?.close(); }
+  async dispose() {
+    if (this.disposed) return;
+    this.muteAll(); this.disposed = true;
+    this.ambientBus?.disconnect(); this.effectsBus?.disconnect(); this.outputBus?.disconnect();
+    await this.context?.close();
+  }
 }

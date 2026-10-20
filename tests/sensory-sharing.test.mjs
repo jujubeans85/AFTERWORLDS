@@ -5,6 +5,10 @@ import { SensoryDirector, soundscapeProfile } from '../src/soundscape.js';
 import { shareWorld, worldShareURL } from '../src/sharing.js';
 
 function harness() {
+  const timers=new Map();let timerId=0;
+  const setTimeout=(callback)=>{timers.set(++timerId,callback);return timerId;};
+  const clearTimeout=id=>timers.delete(id);
+  const flushTransitions=()=>{const callbacks=[...timers.values()];timers.clear();callbacks.forEach(fn=>fn());};
   const contexts = [], nodes = [], vibrations = []; let clock = 0;
   const param = () => ({ value: 0, events: [],
     setValueAtTime(value, at) { this.value = value; this.events.push(['set', value, at]); },
@@ -24,8 +28,8 @@ function harness() {
     createGain() { return node(); } createBiquadFilter() { return node(); } createOscillator() { return node(true); }
     async resume() { this.state = 'running'; } async suspend() { this.state = 'suspended'; } async close() { this.state = 'closed'; }
   }
-  const env = { AudioContext, navigator: { vibrate: v => vibrations.push(v) }, performance: { now: () => clock } };
-  return { director: new SensoryDirector(env), contexts, nodes, vibrations, tick: () => { clock += 200; } };
+  const env = { setTimeout, clearTimeout, AudioContext, navigator: { vibrate: v => vibrations.push(v) }, performance: { now: () => clock } };
+  return { timers, flushTransitions, director: new SensoryDirector(env), contexts, nodes, vibrations, tick: () => { clock += 200; } };
 }
 const world = { id: '82', lens: 'water', slug: 'quiet-water', newTitle: 'Quiet water', question: 'Where does it go?' };
 
@@ -44,7 +48,7 @@ test('silent startup, explicit enabling, narration ducking cancels fade, and rou
   assert.equal(h.contexts.length, 1); assert.equal(d.nodes.filter(n => n.started).length, 3);
   d.setNarrating(true);
   assert.deepEqual(d.ambientBus.gain.events.map(e => e.slice(0, 2)), [['target', .18]]);
-  const old = [...d.nodes]; d.setWorld({ ...world, id: '83' });
+  const old = [...d.nodes]; d.setWorld({ ...world, id: '83' }); assert.equal(h.timers.size,1); h.flushTransitions();
   assert(old.every(n => n.disconnected)); assert(old.filter(n => n.started).every(n => n.stopped));
   assert.equal(d.ambientBus.gain.events.at(-1)[1], .18);
   await d.dispose(); assert.equal(h.contexts[0].state, 'closed'); assert.equal(d.nodes.length, 0);
