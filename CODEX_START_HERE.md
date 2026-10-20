@@ -2,6 +2,8 @@
 
 Continue on `next-version-foundation` in `jujubeans85/AFTERWORLDS`.
 
+**New user intake, 21 October 2026:** Read [JC screenshot/build intake](docs/next-version/JC_INTAKE.md). All ten supplied images are reconciled into 21 tracked points in JUICE, including eight world selections, eleven paper leads, the iPad page-fit bug and image/file ingestion. Use that canonical queue; preserve its evidence holds and unresolved text. This addition captures work and does not report it implemented.
+
 **Continuation:** [Implementation status](docs/next-version/IMPLEMENTATION_CONTINUATION.md) records the current native-unit rollout and shared systems. Read the [independent continuation review](docs/next-version/CONTINUATION_QUALITY_REVIEW.md) and [binding audit](docs/next-version/RUNTIME_BINDING_GROUPS.md) for verified checkpoints and the remaining queue. The first native slice is historical context. This branch remains unreleased; source/automated acceptance does not imply device or product-quality acceptance.
 
 Read [the full implementation handoff](docs/NEXT_VERSION_CODEX_HANDOFF.md), then the agent-authored documents in `docs/next-version/`. Run the baseline checks before changing code. Keep the evidence reviewer, creative designer and independent quality challenger involved.
